@@ -7,6 +7,7 @@
     "choices": ["well", "good", "better", "best"],
     "answerIndex": 3,
     "explanation": "Of all the venues という 3 つ以上の比較範囲があり、直前に the があるので最上級 best が正解。better は 2 者の比較に使う。",
+    "translation": "我々が視察したすべての会場の中で、川沿いのホテルが大規模会議に最も適した設備を備えていた。",
     "difficulty": 1,
     "tags": ["最上級", "of all"]
   },
@@ -18,6 +19,7 @@
     "choices": ["so fast than", "as fast as", "faster as", "as faster than"],
     "answerIndex": 1,
     "explanation": "倍数表現は「倍数 + as + 原級 + as」の語順になるので twice as fast as が正解。比較級 faster を使う場合は as ではなく than を伴うが、倍数とは組み合わせない。",
+    "translation": "新しい包装機械は、置き換えられた旧型のほぼ2倍の速さで稼働する。",
     "difficulty": 2,
     "tags": ["倍数表現", "原級"]
   },
@@ -29,6 +31,7 @@
     "choices": ["little likely", "less likely", "least likely", "less likelier"],
     "answerIndex": 1,
     "explanation": "「The + 比較級 〜, the + 比較級 …（〜すればするほど…）」の構文。likely の比較級は less likely / more likely の形をとる。最上級 least は使えない。",
+    "translation": "アンケートの質問が詳細になるほど、回答者が用紙を最後まで記入する可能性は低くなる。",
     "difficulty": 3,
     "tags": ["the+比較級", "構文"]
   }

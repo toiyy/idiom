@@ -8,6 +8,7 @@
     "choices": ["likewise", "therefore", "however", "furthermore"],
     "answerIndex": 2,
     "explanation": "前半「全ての安全試験に合格」と後半「発売延期」は逆接の関係なので however。therefore（順接）、furthermore（追加）、likewise（同様に）では論理が通らない。",
+    "translation": "その試作品はすべての安全試験に合格した。しかし、発売は3月まで延期された。",
     "difficulty": 1,
     "tags": ["however", "逆接"]
   },
@@ -20,6 +21,7 @@
     "choices": ["however", "otherwise", "therefore", "nevertheless"],
     "answerIndex": 2,
     "explanation": "前半が原因、後半がその結果という順接の関係なので therefore。however / nevertheless は逆接、otherwise は「さもないと」。",
+    "translation": "その供給業者は3回続けて納品を怠った。したがって、我々は契約を打ち切ることに決めた。",
     "difficulty": 1,
     "tags": ["therefore", "順接"]
   },
@@ -32,6 +34,7 @@
     "choices": ["In addition", "On the other hand", "In contrast", "As a result"],
     "answerIndex": 0,
     "explanation": "前後とも会場の利点を並べているので、情報を追加する In addition が正解。In contrast / On the other hand は対比、As a result は結果を表す。",
+    "translation": "その会場は駅の近くにあり便利だ。さらに、200台までの無料駐車場も備えている。",
     "difficulty": 2,
     "tags": ["in addition", "追加"]
   },
@@ -44,6 +47,7 @@
     "choices": ["therefore", "moreover", "similarly", "otherwise"],
     "answerIndex": 3,
     "explanation": "otherwise = さもないと。「金曜までに提出せよ、さもないと審査されない」という条件の裏返しを表す。",
+    "translation": "記入済みの用紙を金曜までに提出してください。さもないと、あなたの申請は検討されません。",
     "difficulty": 2,
     "tags": ["otherwise", "条件"]
   },
@@ -56,6 +60,7 @@
     "choices": ["In contrast", "Consequently", "Likewise", "For instance"],
     "answerIndex": 0,
     "explanation": "ヨーロッパは増加、アジアは減少という対比なので In contrast。Likewise は同じ傾向を並べるとき、Consequently は結果、For instance は例示に使う。",
+    "translation": "前四半期、ヨーロッパの売上は15パーセント増加した。対照的に、アジアの収益はわずかに減少した。",
     "difficulty": 2,
     "tags": ["in contrast", "対比"]
   }

@@ -26,6 +26,8 @@ export const QuestionSchema = z
     answerIndex: z.union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)]),
     /** 日本語の解説。 */
     explanation: z.string().min(1),
+    /** 空所に正解を入れた状態の英文全体の日本語訳。回答後に表示する。 */
+    translation: z.string().min(1),
     /** 難易度（任意）。1=易 / 2=中 / 3=難 */
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]).optional(),
     /** 自由タグ（任意）。復習フィルタ等に使う。 */

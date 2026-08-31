@@ -7,6 +7,7 @@
     "choices": ["since", "in", "at", "on"],
     "answerIndex": 3,
     "explanation": "特定の日付の前には on を用いる（on January 1）。月・年には in、時刻には at。since は継続の起点を表すので意味が合わない。",
+    "translation": "新しい安全指針は1月1日に施行されるため、全職員は事前に内容を確認しなければならない。",
     "difficulty": 1,
     "tags": ["日付", "on"]
   },
@@ -18,6 +19,7 @@
     "choices": ["until", "during", "among", "within"],
     "answerIndex": 3,
     "explanation": "「〜以内に」という期間の範囲を表すのは within。until は「〜までずっと」、during は「〜の間ずっと」で特定の期間を表す名詞が続く。",
+    "translation": "返金は通常、返品を受領してから5営業日以内に処理される。",
     "difficulty": 2,
     "tags": ["期間", "within"]
   },
@@ -29,6 +31,7 @@
     "choices": ["until", "by", "since", "for"],
     "answerIndex": 1,
     "explanation": "「〜までに」という期限を表すのは by。until は「〜までずっと（継続）」なので、submit のような一回で完了する動作には使えない。",
+    "translation": "出張の領収書は金曜の午後までに提出してください。提出が遅れた場合は精算できません。",
     "difficulty": 2,
     "tags": ["期限", "by vs until"]
   }

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { questions } from './data/questions';
 import {
   buildQuizOrder,
@@ -10,7 +10,14 @@ import {
   summarize,
   type QuizMode,
 } from './lib/quiz';
-import { loadProgress, recordAnswer, resetProgress, saveProgress } from './lib/storage';
+import {
+  CONFIDENCES,
+  loadProgress,
+  recordAnswer,
+  resetProgress,
+  saveProgress,
+  type Confidence,
+} from './lib/storage';
 import { HomeScreen } from './components/HomeScreen';
 import { QuestionCard } from './components/QuestionCard';
 import { ResultView } from './components/ResultView';
@@ -24,6 +31,7 @@ export default function App() {
   const [order, setOrder] = useState<Question[]>([]);
   const [cursor, setCursor] = useState(0);
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [progress, setProgress] = useState(() => loadProgress());
 
@@ -40,6 +48,22 @@ export default function App() {
     [order.length, sessionCorrect],
   );
 
+  // 自信度の申告は毎問はさまるので、1〜3 キーでも選べるようにする
+  const awaitingConfidence = screen === 'quiz' && selectedIndex !== null && confidence === null;
+  useEffect(() => {
+    if (!awaitingConfidence) return;
+    function onKeyDown(e: KeyboardEvent) {
+      const i = Number(e.key) - 1;
+      if (i >= 0 && i < CONFIDENCES.length) {
+        e.preventDefault();
+        handleConfidence(CONFIDENCES[i]);
+      }
+    }
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+    // handleConfidence は progress / selectedIndex に依存するため毎回張り直す
+  });
+
   function startQuiz(next: QuizMode) {
     const selected = selectQuestions(questions, next, progress.wrongIds);
     // 復習対象が空になった直後などは出題できないのでホームに戻す
@@ -51,19 +75,26 @@ export default function App() {
     setOrder(buildQuizOrder(selected));
     setCursor(0);
     setSelectedIndex(null);
+    setConfidence(null);
     setSessionCorrect(0);
     setScreen('quiz');
   }
 
   function handleSelect(index: number) {
     if (selectedIndex !== null) return;
-    const current = order[cursor];
     setSelectedIndex(index);
-    const correct = isCorrect(current, index);
+  }
+
+  /** 自信度が決まって初めて正誤を確定し、進捗に記録する。 */
+  function handleConfidence(next: Confidence) {
+    if (selectedIndex === null || confidence !== null) return;
+    const current = order[cursor];
+    const correct = isCorrect(current, selectedIndex);
+    setConfidence(next);
     if (correct) setSessionCorrect((n) => n + 1);
-    const next = recordAnswer(progress, current.id, correct);
-    setProgress(next);
-    saveProgress(next);
+    const updated = recordAnswer(progress, current.id, correct, next);
+    setProgress(updated);
+    saveProgress(updated);
   }
 
   function handleNext() {
@@ -73,6 +104,7 @@ export default function App() {
     }
     setCursor((c) => c + 1);
     setSelectedIndex(null);
+    setConfidence(null);
   }
 
   function handleResetProgress() {
@@ -109,7 +141,9 @@ export default function App() {
             index={cursor}
             total={order.length}
             selectedIndex={selectedIndex}
+            confidence={confidence}
             onSelect={handleSelect}
+            onConfidence={handleConfidence}
             onNext={handleNext}
           />
         </>

@@ -8,6 +8,7 @@
     "choices": ["taken", "put", "brought", "called"],
     "answerIndex": 1,
     "explanation": "put off = 延期する。call off も「中止する」で文法的には成立するが、until the following weekend（翌週末まで）とあるので延期でなければ矛盾する。",
+    "translation": "嵐のため、屋外での式典は翌週末まで延期された。",
     "difficulty": 3,
     "tags": ["put off", "call off"]
   },
@@ -20,6 +21,7 @@
     "choices": ["roll", "take", "put", "bring"],
     "answerIndex": 0,
     "explanation": "roll out = （新製品・サービスを）展開する、市場に投入する。take out は「取り出す」、put out は「消す / 公表する」。",
+    "translation": "その会社は来春、環境に配慮した新しい包装製品を市場に投入する予定だ。",
     "difficulty": 2,
     "tags": ["roll out"]
   },
@@ -32,6 +34,7 @@
     "choices": ["look", "watch", "view", "see"],
     "answerIndex": 0,
     "explanation": "look over = ざっと目を通す、確認する。see / watch / view は over と結びついて句動詞を作らない。",
+    "translation": "署名する前に、契約書によく目を通してください。",
     "difficulty": 2,
     "tags": ["look over"]
   },
@@ -44,6 +47,7 @@
     "choices": ["back", "hold", "set", "keep"],
     "answerIndex": 0,
     "explanation": "back up = バックアップを取る。set up は「設置する」、hold up は「遅らせる」、keep up は「維持する」で文脈に合わない。",
+    "translation": "IT部門はセキュリティ更新を導入する前に、データベースのバックアップを取る。",
     "difficulty": 1,
     "tags": ["back up"]
   },
@@ -56,6 +60,7 @@
     "choices": ["break", "put", "cut", "turn"],
     "answerIndex": 3,
     "explanation": "turn down = 断る、却下する。cut down は「削減する」、break down は「故障する」、put down は「書き留める」。",
+    "translation": "年間予算を超過していたため、我々はその提案を断らざるを得なかった。",
     "difficulty": 2,
     "tags": ["turn down"]
   }

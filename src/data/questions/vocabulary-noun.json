@@ -8,6 +8,7 @@
     "choices": ["objection", "argument", "conflict", "dispute"],
     "answerIndex": 2,
     "explanation": "scheduling conflict = 予定の重複、バッティング。argument / dispute / objection はいずれも人どうしの口論や異議を表すので、部屋の重複には使わない。",
+    "translation": "予定の重複により、金曜日に2つの講習会が同じ部屋で予約されてしまった。",
     "difficulty": 2,
     "tags": ["scheduling conflict"]
   },
@@ -20,6 +21,7 @@
     "choices": ["fee", "payment", "charge", "price"],
     "answerIndex": 2,
     "explanation": "at no additional charge = 追加料金なしで。charge はサービスに対する請求額を指す固定表現で、price（商品の価格）や payment（支払い行為）では置き換えられない。",
+    "translation": "そのホテルは会議の参加者に対し、追加料金なしで空港への送迎サービスを提供している。",
     "difficulty": 2,
     "tags": ["at no additional charge"]
   },
@@ -32,6 +34,7 @@
     "choices": ["suggestion", "proposal", "advice", "recommendation"],
     "answerIndex": 3,
     "explanation": "letter of recommendation = 推薦状。suggestion / proposal / advice はいずれも「提案・助言」で、人物を推薦する書状は表さない。",
+    "translation": "応募者は、前職の雇用主からの推薦状を3通提出する必要がある。",
     "difficulty": 1,
     "tags": ["letter of recommendation"]
   },
@@ -44,6 +47,7 @@
     "choices": ["reimbursement", "return", "refund", "repayment"],
     "answerIndex": 2,
     "explanation": "refund = 購入代金の返金。return は「返品」という行為、reimbursement は社員が立て替えた経費の払い戻しを指すので、店舗の返品には使わない。",
+    "translation": "その店は、購入から30日以内に返品された商品については全額を返金する。",
     "difficulty": 2,
     "tags": ["refund", "reimbursement"]
   },
@@ -56,6 +60,7 @@
     "choices": ["catalog", "brochure", "leaflet", "handbook"],
     "answerIndex": 3,
     "explanation": "employee handbook = 社員便覧、就業規則集。brochure / leaflet は宣伝用の小冊子、catalog は商品目録なので社内規定には使わない。",
+    "translation": "在宅勤務に関する会社の方針については、社員便覧を参照してください。",
     "difficulty": 1,
     "tags": ["employee handbook"]
   }

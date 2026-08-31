@@ -7,6 +7,7 @@
     "choices": ["whom", "whose", "which", "who"],
     "answerIndex": 1,
     "explanation": "空所の直後に無冠詞の名詞 recommendations が続き「そのコンサルタントの提言」という所有関係になるため、所有格の関係代名詞 whose が正解。",
+    "translation": "昨年われわれが提言を採用したコンサルタントが、再び講演に招かれている。",
     "difficulty": 3,
     "tags": ["所有格", "whose"]
   },
@@ -18,6 +19,7 @@
     "choices": ["which", "where", "what", "whose"],
     "answerIndex": 1,
     "explanation": "空所の後ろは the meeting is held と要素の欠けがない完全な文で、先行詞が場所を表す hall なので関係副詞 where が正解。which を使うなら後ろは主語か目的語が欠けた不完全な文でなければならない。",
+    "translation": "年次株主総会が開催される会議場は、最大800人を収容できる。",
     "difficulty": 3,
     "tags": ["関係副詞", "where"]
   },
@@ -29,6 +31,7 @@
     "choices": ["which", "whose", "what", "who"],
     "answerIndex": 0,
     "explanation": "先行詞 a proposal は「もの」で、空所の後ろは主語が欠けた不完全な文。よって主格の関係代名詞 which が正解。what は先行詞をとらない関係代名詞なので不可。",
+    "translation": "アルバレスさんは、審査委員全員に感銘を与えた提案書を提出した。",
     "difficulty": 2,
     "tags": ["主格", "which"]
   }

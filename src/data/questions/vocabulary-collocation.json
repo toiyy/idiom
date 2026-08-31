@@ -8,6 +8,7 @@
     "choices": ["catch", "reach", "achieve", "meet"],
     "answerIndex": 3,
     "explanation": "meet a deadline = 締切に間に合う。日本語の「締切に達する / 間に合う」から reach や catch を選びがちだが、英語では使わない固定表現。",
+    "translation": "その工場は3か月連続で納品期限に間に合っていない。",
     "difficulty": 2,
     "tags": ["meet a deadline"]
   },
@@ -20,6 +21,7 @@
     "choices": ["gained", "reached", "met", "arrived"],
     "answerIndex": 1,
     "explanation": "reach an agreement = 合意に達する。arrive を使うなら arrive at an agreement と前置詞が必要。met / gained は agreement と結びつかない。",
+    "translation": "2社は8か月にわたる交渉の末、ついに合意に達した。",
     "difficulty": 2,
     "tags": ["reach an agreement"]
   },
@@ -32,6 +34,7 @@
     "choices": ["complete", "accomplish", "fulfill", "finish"],
     "answerIndex": 0,
     "explanation": "complete a form = 書類に記入する。finish / accomplish / fulfill も「完了させる」意味だが、書類の記入という文脈では使わない。",
+    "translation": "添付の用紙に記入し、人事部へご返送ください。",
     "difficulty": 2,
     "tags": ["complete a form"]
   },
@@ -44,6 +47,7 @@
     "choices": ["get", "take", "make", "have"],
     "answerIndex": 1,
     "explanation": "take effect = 効力を発する、施行される。固定表現なので他の動詞に置き換えられない。",
+    "translation": "改訂された安全規則は来月1日に施行される。",
     "difficulty": 1,
     "tags": ["take effect"]
   },
@@ -56,6 +60,7 @@
     "choices": ["give", "take", "make", "do"],
     "answerIndex": 2,
     "explanation": "make a decision = 決定する。日本語の「決定を下す / 取る」から take を選びがちだが、英語では make を使う。",
+    "translation": "取締役会は今週中に、業者との契約について決定を下す。",
     "difficulty": 1,
     "tags": ["make a decision"]
   }

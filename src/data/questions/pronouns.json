@@ -7,6 +7,7 @@
     "choices": ["she", "her", "hers", "herself"],
     "answerIndex": 3,
     "explanation": "「彼女自身で」と主語の動作を強調する再帰代名詞 herself が正解。by herself の by が省略された用法。configure の目的語はすでに the new server があるので目的格 her は不可。",
+    "translation": "その日の午後は技術者の手が空いていなかったため、レイエスさんは新しいサーバーを自分で設定した。",
     "difficulty": 2,
     "tags": ["再帰代名詞", "herself"]
   },
@@ -18,6 +19,7 @@
     "choices": ["those", "them", "it", "that"],
     "answerIndex": 0,
     "explanation": "比較の対象は複数形の figures なので、名詞の繰り返しを避ける代名詞も複数形の those を使う。単数なら that。",
+    "translation": "今四半期の売上高は、昨年の同時期の売上高を大幅に上回っている。",
     "difficulty": 3,
     "tags": ["that/those", "比較"]
   },
@@ -29,6 +31,7 @@
     "choices": ["another", "other", "the other", "others"],
     "answerIndex": 2,
     "explanation": "2 つのうち「一方」が One で、残る「もう一方」は 1 つに特定されるので the other が正解。another は「（3 つ以上のうち）不特定のもう 1 つ」を指す。",
+    "translation": "2つの提案のうち一方はコスト削減に重点を置き、もう一方は長期的な成長を重視している。",
     "difficulty": 2,
     "tags": ["the other", "another"]
   }

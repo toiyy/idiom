@@ -8,6 +8,7 @@
     "choices": ["observe", "obey", "adhere", "follow"],
     "answerIndex": 2,
     "explanation": "4 つとも「従う」の意味で、意味では絞れない。決め手は前置詞 to。adhere は自動詞で adhere to の形をとるが、obey / follow / observe はいずれも他動詞なので前置詞は不要。",
+    "translation": "請負業者は全員、現場の入口に掲示された安全規則を遵守しなければならない。",
     "difficulty": 2,
     "tags": ["adhere to", "自動詞"]
   },
@@ -20,6 +21,7 @@
     "choices": ["remove", "dispose", "eliminate", "discard"],
     "answerIndex": 1,
     "explanation": "dispose of = 処分する。discard / remove / eliminate はいずれも他動詞で of をとらず、目的語を直接続ける。",
+    "translation": "IT部門は今月末までに、旧式のサーバーを処分する予定だ。",
     "difficulty": 2,
     "tags": ["dispose of", "自動詞"]
   },
@@ -32,6 +34,7 @@
     "choices": ["argue", "discuss", "talk", "speak"],
     "answerIndex": 1,
     "explanation": "空所の後ろに前置詞がなく目的語が直接続いているので、他動詞の discuss が正解。talk / speak / argue は about などの前置詞が必要（talk about the proposal）。",
+    "translation": "委員会は来週月曜の会議で、修正された提案について協議する。",
     "difficulty": 2,
     "tags": ["discuss", "他動詞"]
   },
@@ -44,6 +47,7 @@
     "choices": ["described", "commented", "mentioned", "stated"],
     "answerIndex": 1,
     "explanation": "comment on = 〜について述べる。mention / state / describe はいずれも他動詞なので on は不要。",
+    "translation": "安全検査官は最終報告書の中で、換気システムの状態について言及した。",
     "difficulty": 2,
     "tags": ["comment on", "自動詞"]
   },
@@ -56,6 +60,7 @@
     "choices": ["applied", "demanded", "required", "requested"],
     "answerIndex": 0,
     "explanation": "apply for = 〜を申し込む、応募する。request / demand / require は他動詞で目的語を直接とるため for は不要。",
+    "translation": "研究チームは臨床試験を完了させるため、追加の資金を申請した。",
     "difficulty": 2,
     "tags": ["apply for", "自動詞"]
   }

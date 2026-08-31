@@ -1,12 +1,16 @@
 import type { Question } from '../types/question';
-import { ChoiceButton } from './ChoiceButton';
+import { CONFIDENCES, CONFIDENCE_LABELS, type Confidence } from '../lib/storage';
+import { ChoiceButton, type ChoiceState } from './ChoiceButton';
 
 interface QuestionCardProps {
   question: Question;
   index: number;
   total: number;
   selectedIndex: number | null;
+  /** 自信度が未申告のあいだは正誤を伏せる。 */
+  confidence: Confidence | null;
   onSelect: (index: number) => void;
+  onConfidence: (confidence: Confidence) => void;
   onNext: () => void;
 }
 
@@ -14,8 +18,11 @@ function choiceState(
   choiceIndex: number,
   answerIndex: number,
   selectedIndex: number | null,
-): 'idle' | 'correct' | 'wrong' | 'missed' {
+  revealed: boolean,
+): ChoiceState {
   if (selectedIndex === null) return 'idle';
+  // 自信度の申告前は、選んだ選択肢を示すだけで正誤は明かさない
+  if (!revealed) return choiceIndex === selectedIndex ? 'selected' : 'idle';
   if (choiceIndex === answerIndex) return 'correct';
   if (choiceIndex === selectedIndex) return 'wrong';
   return 'missed';
@@ -26,11 +33,14 @@ export function QuestionCard({
   index,
   total,
   selectedIndex,
+  confidence,
   onSelect,
+  onConfidence,
   onNext,
 }: QuestionCardProps) {
-  const answered = selectedIndex !== null;
-  const correct = answered && selectedIndex === question.answerIndex;
+  const picked = selectedIndex !== null;
+  const revealed = picked && confidence !== null;
+  const correct = revealed && selectedIndex === question.answerIndex;
   const [before, after] = question.sentence.split('___');
 
   return (
@@ -40,14 +50,14 @@ export function QuestionCard({
           {index + 1} / {total}
         </span>
         <span>
-          Part {question.part} ・ {question.category}
+          Part {question.part} ・ {question.subcategory ?? question.category}
         </span>
       </header>
 
       <p className="card__sentence">
         {before}
         <span className="card__blank">
-          {answered ? question.choices[question.answerIndex] : '___'}
+          {revealed ? question.choices[question.answerIndex] : '___'}
         </span>
         {after}
       </p>
@@ -58,16 +68,42 @@ export function QuestionCard({
             key={i}
             label={choice}
             index={i}
-            state={choiceState(i, question.answerIndex, selectedIndex)}
-            disabled={answered}
+            state={choiceState(i, question.answerIndex, selectedIndex, revealed)}
+            disabled={picked}
             onSelect={onSelect}
           />
         ))}
       </div>
 
-      {answered && (
+      {picked && !revealed && (
+        <div className="confidence">
+          <p className="confidence__prompt">どのくらい自信がありますか？</p>
+          <div className="confidence__buttons">
+            {CONFIDENCES.map((c, i) => (
+              <button
+                key={c}
+                type="button"
+                className={`btn confidence__btn confidence__btn--${c}`}
+                onClick={() => onConfidence(c)}
+              >
+                <span className="confidence__key">{i + 1}</span>
+                {CONFIDENCE_LABELS[c]}
+              </button>
+            ))}
+          </div>
+          <p className="confidence__hint">
+            「自信あり」で正解した問題だけが復習リストから外れます。
+          </p>
+        </div>
+      )}
+
+      {revealed && (
         <div className={`card__result ${correct ? 'is-correct' : 'is-wrong'}`}>
-          <strong>{correct ? '正解' : '不正解'}</strong>
+          <p className="card__verdict">
+            <strong>{correct ? '正解' : '不正解'}</strong>
+            <span className="card__confidence">{CONFIDENCE_LABELS[confidence]}</span>
+          </p>
+          <p className="card__translation">{question.translation}</p>
           <p className="card__explanation">{question.explanation}</p>
           <button type="button" className="btn btn--primary" onClick={onNext}>
             {index + 1 === total ? '結果を見る' : '次の問題へ'}

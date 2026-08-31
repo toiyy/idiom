@@ -7,6 +7,7 @@
     "choices": ["create", "creative", "creativity", "creatively"],
     "answerIndex": 2,
     "explanation": "冠詞 the と前置詞 of に挟まれた位置なので名詞が入る。creativity（創造性）が正解。creative は形容詞、creatively は副詞。",
+    "translation": "取締役会は、新しいデジタル広告キャンペーンの創造性についてマーケティングチームを称賛した。",
     "difficulty": 1,
     "tags": ["名詞", "冠詞+of"]
   },
@@ -18,6 +19,7 @@
     "choices": ["steadiness", "steady", "steadier", "steadily"],
     "answerIndex": 3,
     "explanation": "自動詞 has risen を修飾する位置なので副詞 steadily が正解。形容詞 steady は動詞を修飾できない。",
+    "translation": "任意参加の講習会の出席者数は、開催がオンラインに移行して以来、着実に増加している。",
     "difficulty": 1,
     "tags": ["副詞", "動詞修飾"]
   },
@@ -29,6 +31,7 @@
     "choices": ["clearly", "clarity", "clarify", "clear"],
     "answerIndex": 3,
     "explanation": "冠詞 a と名詞 explanation の間なので、名詞を修飾する形容詞 clear が入る。clearly は副詞、clarity は名詞、clarify は動詞。",
+    "translation": "改訂された手引書には、経費精算の手続きが分かりやすく説明されている。",
     "difficulty": 1,
     "tags": ["形容詞", "冠詞+名詞"]
   }

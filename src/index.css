@@ -276,8 +276,107 @@ body {
   background: color-mix(in srgb, var(--wrong) 12%, transparent);
 }
 
+.choice--selected {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+}
+
 .choice--missed {
   opacity: 0.55;
+}
+
+/* --- 自信度の申告（正誤を出す前） --- */
+
+.confidence {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.confidence__prompt {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.confidence__buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.confidence__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 8px;
+  font-size: 0.9rem;
+}
+
+.confidence__btn:hover {
+  border-color: var(--primary);
+}
+
+.confidence__btn--sure {
+  border-color: color-mix(in srgb, var(--correct) 45%, var(--border));
+}
+
+.confidence__btn--guess {
+  border-color: color-mix(in srgb, var(--wrong) 45%, var(--border));
+}
+
+.confidence__key {
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: var(--border);
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.confidence__hint {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+/* --- 自信度の集計表 --- */
+
+.conf-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 12px;
+  font-size: 0.85rem;
+}
+
+.conf-table th,
+.conf-table td {
+  padding: 6px 4px;
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+}
+
+.conf-table th:first-child,
+.conf-table td:first-child {
+  text-align: left;
+}
+
+.conf-table th {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.conf-table__note {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--wrong) 10%, transparent);
+  color: var(--fg);
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 
 .card__result {
@@ -286,12 +385,33 @@ body {
   border-top: 1px solid var(--border);
 }
 
+.card__verdict {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
 .card__result.is-correct strong {
   color: var(--correct);
 }
 
 .card__result.is-wrong strong {
   color: var(--wrong);
+}
+
+.card__confidence {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.card__translation {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--fg) 5%, transparent);
+  line-height: 1.7;
+  font-size: 0.9rem;
 }
 
 .card__explanation {

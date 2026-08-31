@@ -8,6 +8,7 @@
     "choices": ["identical", "similar", "equal", "consistent"],
     "answerIndex": 3,
     "explanation": "be consistent with = 〜と一致する。similar / equal / identical はいずれも to をとるので with とは結びつかない。意味では絞れず、前置詞だけが決め手になる。",
+    "translation": "今四半期の数値は、我々が取締役会に提示した予測と一致している。",
     "difficulty": 3,
     "tags": ["consistent with"]
   },
@@ -20,6 +21,7 @@
     "choices": ["capable", "able", "skilled", "competent"],
     "answerIndex": 0,
     "explanation": "be capable of doing = 〜する能力がある。able は be able to do、skilled と competent は at / in をとる。",
+    "translation": "応募者は、狭い空間で重機を操作できる能力を備えていなければならない。",
     "difficulty": 2,
     "tags": ["capable of"]
   },
@@ -32,6 +34,7 @@
     "choices": ["attributable", "blamed", "caused", "responsible"],
     "answerIndex": 0,
     "explanation": "be attributable to = 〜に起因する。responsible は for、caused なら by を伴う（was caused by）。blame は blame A on B の形。",
+    "translation": "その遅延は、海外の供給業者からの原材料不足に起因するものだった。",
     "difficulty": 3,
     "tags": ["attributable to"]
   },
@@ -44,6 +47,7 @@
     "choices": ["knowledgeable", "familiar", "aware", "conscious"],
     "answerIndex": 1,
     "explanation": "be familiar with = 〜を熟知している。aware と conscious は of、knowledgeable は about をとる。",
+    "translation": "実験室の職員は全員、緊急避難の手順を熟知していなければならない。",
     "difficulty": 2,
     "tags": ["familiar with"]
   },
@@ -56,6 +60,7 @@
     "choices": ["dependent", "subject", "conditional", "reliant"],
     "answerIndex": 1,
     "explanation": "be subject to = 〜を条件とする、〜次第である。dependent / conditional / reliant はいずれも on をとる。",
+    "translation": "提案されている合併は、いまだ規制当局の承認を条件としている。",
     "difficulty": 3,
     "tags": ["subject to"]
   }

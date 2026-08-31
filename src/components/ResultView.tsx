@@ -1,5 +1,6 @@
 import type { ScoreSummary } from '../lib/quiz';
 import type { Progress } from '../lib/storage';
+import { ConfidenceTable } from './ConfidenceTable';
 
 interface ResultViewProps {
   modeName: string;
@@ -46,6 +47,8 @@ export function ResultView({
           <dd>{reviewCount} 問</dd>
         </div>
       </dl>
+
+      <ConfidenceTable progress={lifetime} />
 
       <div className="result__actions">
         <button type="button" className="btn btn--primary" onClick={onRetry}>

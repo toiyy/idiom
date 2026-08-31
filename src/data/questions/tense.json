@@ -7,6 +7,7 @@
     "choices": ["completes", "will have completed", "has completed", "completed"],
     "answerIndex": 1,
     "explanation": "「By the time + 現在形（未来の意味）」の節があり、その時点までに完了している動作を表すので未来完了形 will have completed が正解。by the time は未来完了とセットで問われる定番。",
+    "translation": "来週月曜に監査人が到着するまでに、財務チームは四半期報告書をすべて仕上げているだろう。",
     "difficulty": 2,
     "tags": ["未来完了", "by the time"]
   },
@@ -18,6 +19,7 @@
     "choices": ["will serve", "serves", "served", "has served"],
     "answerIndex": 3,
     "explanation": "「since + 過去の起点」があり、過去から現在まで継続している状態なので現在完了 has served。単純過去 served では現在まで続いていることを表せない。",
+    "translation": "田中さんは、2019年に大阪支店が開設されて以来、地域統括責任者を務めている。",
     "difficulty": 1,
     "tags": ["現在完了", "since"]
   },
@@ -29,6 +31,7 @@
     "choices": ["is reaching", "reaches", "had reached", "will reach"],
     "answerIndex": 2,
     "explanation": "「警報が出された（過去）」よりさらに前に完了していた動作なので過去完了 had reached。過去の 2 つの出来事の前後関係を示すときに使う。",
+    "translation": "火曜の朝に暴風警報が出される前に、その荷物は倉庫に到着していた。",
     "difficulty": 2,
     "tags": ["過去完了", "before"]
   }

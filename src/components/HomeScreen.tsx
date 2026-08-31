@@ -1,5 +1,6 @@
 import type { CategorySummary, QuizMode } from '../lib/quiz';
 import type { Progress } from '../lib/storage';
+import { ConfidenceTable } from './ConfidenceTable';
 
 interface HomeScreenProps {
   totalQuestions: number;
@@ -115,6 +116,7 @@ export function HomeScreen({
           {progress.correct} / {progress.answered}
           <span className="result__pct">（{Math.round(accuracy * 100)}%）</span>
         </p>
+        <ConfidenceTable progress={progress} />
         <button type="button" className="btn btn--ghost" onClick={onResetProgress}>
           累計と復習リストをリセット
         </button>

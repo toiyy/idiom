@@ -26,6 +26,7 @@ function makeQuestion(
     choices: ['a', 'b', 'c', 'd'],
     answerIndex,
     explanation: 'dummy',
+    translation: 'これはテストです。',
   };
 }
 

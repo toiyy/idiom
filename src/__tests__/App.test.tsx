@@ -4,6 +4,9 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { questions } from '../data/questions';
 
+type User = ReturnType<typeof userEvent.setup>;
+type Label = '自信あり' | '迷った' | '勘';
+
 /** 画面に出ている選択肢ボタン（表示順 = choices の順）。 */
 function choiceButtons(): HTMLButtonElement[] {
   return Array.from(document.querySelectorAll<HTMLButtonElement>('.choice'));
@@ -17,11 +20,12 @@ function currentQuestion() {
   return found;
 }
 
-/** いま出ている問題にわざと誤答して、次の問題（または結果）へ進む。 */
-async function answerIncorrectly(user: ReturnType<typeof userEvent.setup>) {
+/** 選択 → 自信度 → 次へ、の 1 問ぶんを進める。 */
+async function answer(user: User, opts: { correct: boolean; confidence: Label }) {
   const q = currentQuestion();
-  const wrongIndex = (q.answerIndex + 1) % 4;
-  await user.click(choiceButtons()[wrongIndex]);
+  const pick = opts.correct ? q.answerIndex : (q.answerIndex + 1) % 4;
+  await user.click(choiceButtons()[pick]);
+  await user.click(screen.getByRole('button', { name: new RegExp(opts.confidence) }));
   await user.click(screen.getByRole('button', { name: /次の問題へ|結果を見る/ }));
 }
 
@@ -44,7 +48,6 @@ describe('ホーム画面', () => {
 
   it('サブカテゴリを持たない 12 カテゴリがフラットに並ぶ', () => {
     render(<App />);
-    // 最初の .category-list が、サブカテゴリなしカテゴリのグリッド
     const flatGrid = document.querySelector('.card .category-list');
     expect(flatGrid?.querySelectorAll('.category')).toHaveLength(12);
   });
@@ -62,7 +65,6 @@ describe('サブカテゴリ出題', () => {
   it('サブカテゴリを選ぶとその 5 問だけが出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-
     await user.click(screen.getByRole('button', { name: /^句動詞/ }));
     expect(screen.getByText('1 / 5')).toBeInTheDocument();
     expect(screen.getByText('語彙 / 句動詞')).toBeInTheDocument();
@@ -71,78 +73,142 @@ describe('サブカテゴリ出題', () => {
   it('語彙の「すべて」を選ぶと 35 問が出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-
     await user.click(screen.getByRole('button', { name: /^語彙/ }));
     expect(screen.getByText('1 / 35')).toBeInTheDocument();
   });
 });
 
-describe('カテゴリ別 → 復習 の流れ', () => {
+describe('自信度の申告', () => {
+  it('選択肢を選んだ時点では正誤を伏せたままにする', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    await user.click(choiceButtons()[0]);
+    expect(screen.getByText('どのくらい自信がありますか？')).toBeInTheDocument();
+    expect(screen.queryByText('正解')).not.toBeInTheDocument();
+    expect(screen.queryByText('不正解')).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /次の問題へ/ })).not.toBeInTheDocument();
+  });
+
+  it('自信度を選ぶと正誤と日本語訳が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+
+    expect(screen.getByText('正解')).toBeInTheDocument();
+    expect(screen.getByText(q.translation)).toBeInTheDocument();
+    expect(screen.getByText(q.explanation)).toBeInTheDocument();
+  });
+
+  it('1〜3 キーでも自信度を選べる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.keyboard('1');
+
+    expect(screen.getByText('正解')).toBeInTheDocument();
+    expect(screen.getByText('自信あり')).toBeInTheDocument();
+  });
+});
+
+describe('復習リストの判定', () => {
+  it('自信ありで正解した問題は復習対象にならない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    for (let i = 0; i < 3; i++) await answer(user, { correct: true, confidence: '自信あり' });
+
+    expect(document.querySelector('.result__score')).toHaveTextContent('3 / 3');
+    expect(screen.getByRole('button', { name: '復習する（0）' })).toBeDisabled();
+  });
+
+  it('勘で正解した問題は復習対象に残る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    await answer(user, { correct: true, confidence: '勘' });
+    await answer(user, { correct: true, confidence: '迷った' });
+    await answer(user, { correct: true, confidence: '自信あり' });
+
+    // 3 問全問正解でも、確信のない 2 問は復習に残る
+    expect(document.querySelector('.result__score')).toHaveTextContent('3 / 3');
+    expect(screen.getByRole('button', { name: '復習する（2）' })).toBeEnabled();
+  });
+
   it('誤答した問題が復習モードで再出題される', async () => {
     const user = userEvent.setup();
     render(<App />);
-
-    // 「時制」カテゴリ（3 問）を開始
     await user.click(screen.getByRole('button', { name: /^時制/ }));
-    expect(screen.getByText('1 / 3')).toBeInTheDocument();
 
-    // 3 問すべて誤答する
-    await answerIncorrectly(user);
-    await answerIncorrectly(user);
-    await answerIncorrectly(user);
+    for (let i = 0; i < 3; i++) await answer(user, { correct: false, confidence: '勘' });
 
-    // 結果画面: 0 / 3、要復習 3 問
-    expect(screen.getByRole('heading', { name: '時制 の結果' })).toBeInTheDocument();
     expect(document.querySelector('.result__score')).toHaveTextContent('0 / 3');
-    expect(screen.getByRole('button', { name: '復習する（3）' })).toBeEnabled();
-
-    // 復習モードで 3 問が再出題される
     await user.click(screen.getByRole('button', { name: '復習する（3）' }));
     expect(screen.getByText('1 / 3')).toBeInTheDocument();
     expect(screen.getByText('復習')).toBeInTheDocument();
   });
 
-  it('正解した問題は復習対象から外れる', async () => {
+  it('復習で自信ありで正解すると復習対象が空になる', async () => {
     const user = userEvent.setup();
     render(<App />);
-
     await user.click(screen.getByRole('button', { name: /^時制/ }));
 
-    // 1 問目だけ誤答し、残り 2 問は正解する
-    await answerIncorrectly(user);
-    for (let i = 0; i < 2; i++) {
-      const q = currentQuestion();
-      await user.click(choiceButtons()[q.answerIndex]);
-      await user.click(screen.getByRole('button', { name: /次の問題へ|結果を見る/ }));
-    }
-
-    // 要復習は 1 問だけ
-    expect(screen.getByRole('button', { name: '復習する（1）' })).toBeEnabled();
+    await answer(user, { correct: false, confidence: '勘' });
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await answer(user, { correct: true, confidence: '自信あり' });
 
     await user.click(screen.getByRole('button', { name: '復習する（1）' }));
     expect(screen.getByText('1 / 1')).toBeInTheDocument();
 
-    // その 1 問に正解すると復習対象が空になる
-    const q = currentQuestion();
-    await user.click(choiceButtons()[q.answerIndex]);
-    await user.click(screen.getByRole('button', { name: '結果を見る' }));
+    await answer(user, { correct: true, confidence: '自信あり' });
     expect(screen.getByRole('button', { name: '復習する（0）' })).toBeDisabled();
   });
 });
 
+describe('自信度の集計', () => {
+  it('結果画面に自信度ごとの正答率が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await answer(user, { correct: true, confidence: '勘' });
+    await answer(user, { correct: false, confidence: '勘' });
+
+    const rows = document.querySelectorAll('.conf-table tbody tr');
+    expect(rows[0]).toHaveTextContent('自信あり');
+    expect(rows[0]).toHaveTextContent('100%');
+    expect(rows[2]).toHaveTextContent('勘');
+    expect(rows[2]).toHaveTextContent('50%');
+    expect(document.querySelector('.conf-table__note')).toHaveTextContent('1 問');
+  });
+});
+
 describe('進捗の永続化', () => {
-  it('累計が localStorage に保存され、再マウント後も残る', async () => {
+  it('累計と自信度の内訳が再マウント後も残る', async () => {
     const user = userEvent.setup();
     const { unmount } = render(<App />);
 
     await user.click(screen.getByRole('button', { name: /^時制/ }));
-    await answerIncorrectly(user);
+    const q = currentQuestion();
+    await user.click(choiceButtons()[(q.answerIndex + 1) % 4]);
+    await user.click(screen.getByRole('button', { name: /勘/ }));
     await user.click(screen.getByRole('button', { name: '中断' }));
     unmount();
 
     render(<App />);
-    // 1 問回答済み・0 問正解、要復習 1 問なので復習モードが有効になっている
     expect(screen.getByRole('button', { name: /^復習/ })).toBeEnabled();
-    expect(screen.getByText('0 / 1')).toBeInTheDocument();
+    expect(document.querySelector('.result__score')).toHaveTextContent('0 / 1');
+    expect(document.querySelectorAll('.conf-table tbody tr')[2]).toHaveTextContent('勘');
   });
 });

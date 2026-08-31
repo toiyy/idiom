@@ -7,6 +7,7 @@
     "choices": ["While", "Although", "Despite", "Because"],
     "answerIndex": 2,
     "explanation": "空所の後ろは the heavy rain という名詞句であり節ではないので、前置詞である Despite が正解。Although / Because / While はいずれも接続詞で、後ろに「主語＋動詞」の節が必要。",
+    "translation": "大雨にもかかわらず、屋外での製品発表会は予定どおりに進行した。",
     "difficulty": 2,
     "tags": ["前置詞", "despite"]
   },
@@ -18,6 +19,7 @@
     "choices": ["in order to", "because of", "despite", "so that"],
     "answerIndex": 3,
     "explanation": "空所の後ろが employees can access という節で、「〜できるように」という目的を表すので接続詞 so that が正解。in order to の後ろは動詞の原形、because of と despite は前置詞で名詞句が続く。",
+    "translation": "従業員が営業時間中にファイルを利用できるよう、システムの更新は夜間に実施される。",
     "difficulty": 2,
     "tags": ["目的", "so that"]
   },
@@ -29,6 +31,7 @@
     "choices": ["Since", "Because of", "Owing to", "During"],
     "answerIndex": 0,
     "explanation": "空所の後ろは the merger was announced という節なので接続詞が必要。Since は「〜して以来」の接続詞で、主節の現在完了 have risen とも呼応する。During / Because of / Owing to はすべて前置詞。",
+    "translation": "3月に合併が発表されて以来、株価は12パーセント近く上昇している。",
     "difficulty": 2,
     "tags": ["接続詞", "since"]
   }

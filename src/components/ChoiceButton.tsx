@@ -1,7 +1,9 @@
+export type ChoiceState = 'idle' | 'selected' | 'correct' | 'wrong' | 'missed';
+
 interface ChoiceButtonProps {
   label: string;
   index: number;
-  state: 'idle' | 'correct' | 'wrong' | 'missed';
+  state: ChoiceState;
   disabled: boolean;
   onSelect: (index: number) => void;
 }

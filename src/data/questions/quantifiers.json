@@ -7,6 +7,7 @@
     "choices": ["a great deal of", "little", "few", "much"],
     "answerIndex": 2,
     "explanation": "applicants は可算名詞の複数形なので few が正解。little / much / a great deal of はいずれも不可算名詞に用いる。",
+    "translation": "5年の実務経験という要件を満たす応募者はごくわずかだったため、募集期間が延長された。",
     "difficulty": 1,
     "tags": ["可算", "few"]
   },
@@ -18,6 +19,7 @@
     "choices": ["many", "a few", "considerable", "numerous"],
     "answerIndex": 2,
     "explanation": "progress は不可算名詞。many / a few / numerous はいずれも可算名詞にしか使えない。不可算名詞を修飾できる considerable が正解。",
+    "translation": "新しい責任者が任命されて以来、その部署は移行プロジェクトで相当な進展を遂げている。",
     "difficulty": 2,
     "tags": ["不可算", "progress"]
   },
@@ -29,6 +31,7 @@
     "choices": ["Either", "All", "Every", "Both"],
     "answerIndex": 0,
     "explanation": "動詞が単数の has なので、単数扱いの Either が正解。Both は複数扱い、All は 3 つ以上が対象、Every は直後に単数名詞が必要で of は続かない。",
+    "translation": "2人の候補者のどちらも、その職に必要な技術的素養を備えている。",
     "difficulty": 2,
     "tags": ["either", "単数扱い"]
   }

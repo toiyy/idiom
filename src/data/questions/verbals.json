@@ -7,6 +7,7 @@
     "choices": ["to extend", "extending", "extension", "extended"],
     "answerIndex": 1,
     "explanation": "consider は動名詞のみを目的語にとる動詞（consider / enjoy / finish / avoid / suggest など）。to 不定詞は不可。",
+    "translation": "委員会は、助成金申請の締切を2週間延長することを検討している。",
     "difficulty": 2,
     "tags": ["動名詞", "consider"]
   },
@@ -18,6 +19,7 @@
     "choices": ["to complete", "completion", "complete", "completing"],
     "answerIndex": 0,
     "explanation": "encourage は「encourage + 目的語 + to do」の形をとる。受動態になると be encouraged to do となるので to complete が正解。",
+    "translation": "従業員は、四半期末までにオンライン研修講座を修了することが推奨されている。",
     "difficulty": 1,
     "tags": ["to不定詞", "encourage"]
   },
@@ -29,6 +31,7 @@
     "choices": ["Founds", "Founding", "Founded", "To found"],
     "answerIndex": 2,
     "explanation": "主語 Harrow Manufacturing は「設立された」側なので過去分詞で始まる分詞構文 Founded が正解。現在分詞 Founding だと「〜を設立して」という能動の意味になり合わない。",
+    "translation": "1985年に設立されたハロー製造社は、その地域で最大の民間雇用主へと成長した。",
     "difficulty": 3,
     "tags": ["分詞構文", "過去分詞"]
   }

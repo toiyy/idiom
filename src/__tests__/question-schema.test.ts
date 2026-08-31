@@ -11,6 +11,7 @@ const valid = {
   choices: ['work', 'works', 'has worked', 'working'],
   answerIndex: 2,
   explanation: 'since があるので現在完了。',
+  translation: '彼女は 2019 年からここで働いている。',
 };
 
 describe('QuestionSchema', () => {
@@ -35,6 +36,12 @@ describe('QuestionSchema', () => {
 
   it('未知のキーを弾く（strict）', () => {
     const bad = { ...valid, foo: 'bar' };
+    expect(QuestionSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('translation がないと弾く', () => {
+    const bad: Record<string, unknown> = { ...valid };
+    delete bad.translation;
     expect(QuestionSchema.safeParse(bad).success).toBe(false);
   });
 });
@@ -98,6 +105,12 @@ describe('同梱データ', () => {
   it('選択肢に重複がない', () => {
     for (const q of questions) {
       expect(new Set(q.choices).size, `重複あり: ${q.id}`).toBe(4);
+    }
+  });
+
+  it('全問に日本語訳がある', () => {
+    for (const q of questions) {
+      expect(q.translation.length, `訳が短すぎる: ${q.id}`).toBeGreaterThan(5);
     }
   });
 });
