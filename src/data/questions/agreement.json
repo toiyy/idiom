@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p5-agreement-001",
+    "part": 5,
+    "category": "主述の一致",
+    "sentence": "The list of approved vendors ___ updated on the company intranet every March.",
+    "choices": ["are", "is", "were", "have been"],
+    "answerIndex": 1,
+    "explanation": "主語は単数の The list で、of approved vendors は修飾句にすぎない。動詞は単数に合わせて is。直前の複数名詞 vendors に引きずられないことがポイント。",
+    "difficulty": 2,
+    "tags": ["主語の特定", "修飾句"]
+  },
+  {
+    "id": "p5-agreement-002",
+    "part": 5,
+    "category": "主述の一致",
+    "sentence": "Neither the regional managers nor the director ___ available to attend the briefing on Thursday.",
+    "choices": ["are", "were", "is", "have been"],
+    "answerIndex": 2,
+    "explanation": "「Neither A nor B」では動詞に近いほうの B（the director、単数）に一致させる。よって is が正解。",
+    "difficulty": 3,
+    "tags": ["neither nor", "近接の原則"]
+  },
+  {
+    "id": "p5-agreement-003",
+    "part": 5,
+    "category": "主述の一致",
+    "sentence": "Each of the participants ___ a certificate at the end of the training program.",
+    "choices": ["receive", "receives", "are receiving", "have received"],
+    "answerIndex": 1,
+    "explanation": "Each of 〜 は単数扱いなので三人称単数現在の receives が正解。of の後の複数名詞に引きずられない。",
+    "difficulty": 2,
+    "tags": ["each of", "単数扱い"]
+  }
+]

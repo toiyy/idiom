@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p5-quantifier-001",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "Very ___ applicants met the five-year experience requirement, so the search was extended.",
+    "choices": ["little", "few", "much", "a great deal of"],
+    "answerIndex": 1,
+    "explanation": "applicants は可算名詞の複数形なので few が正解。little / much / a great deal of はいずれも不可算名詞に用いる。",
+    "difficulty": 1,
+    "tags": ["可算", "few"]
+  },
+  {
+    "id": "p5-quantifier-002",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "The department has made ___ progress on the migration project since the new lead was appointed.",
+    "choices": ["many", "a few", "considerable", "numerous"],
+    "answerIndex": 2,
+    "explanation": "progress は不可算名詞。many / a few / numerous はいずれも可算名詞にしか使えない。不可算名詞を修飾できる considerable が正解。",
+    "difficulty": 2,
+    "tags": ["不可算", "progress"]
+  },
+  {
+    "id": "p5-quantifier-003",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "___ of the two candidates has the technical background required for the position.",
+    "choices": ["Both", "Either", "All", "Every"],
+    "answerIndex": 1,
+    "explanation": "動詞が単数の has なので、単数扱いの Either が正解。Both は複数扱い、All は 3 つ以上が対象、Every は直後に単数名詞が必要で of は続かない。",
+    "difficulty": 2,
+    "tags": ["either", "単数扱い"]
+  }
+]

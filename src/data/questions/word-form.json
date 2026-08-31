@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p5-wordform-001",
+    "part": 5,
+    "category": "品詞識別",
+    "sentence": "The board praised the marketing team for the ___ of its new digital campaign.",
+    "choices": ["create", "creative", "creativity", "creatively"],
+    "answerIndex": 2,
+    "explanation": "冠詞 the と前置詞 of に挟まれた位置なので名詞が入る。creativity（創造性）が正解。creative は形容詞、creatively は副詞。",
+    "difficulty": 1,
+    "tags": ["名詞", "冠詞+of"]
+  },
+  {
+    "id": "p5-wordform-002",
+    "part": 5,
+    "category": "品詞識別",
+    "sentence": "Attendance at the optional workshops has risen ___ since the sessions were moved online.",
+    "choices": ["steady", "steadier", "steadily", "steadiness"],
+    "answerIndex": 2,
+    "explanation": "自動詞 has risen を修飾する位置なので副詞 steadily が正解。形容詞 steady は動詞を修飾できない。",
+    "difficulty": 1,
+    "tags": ["副詞", "動詞修飾"]
+  },
+  {
+    "id": "p5-wordform-003",
+    "part": 5,
+    "category": "品詞識別",
+    "sentence": "The revised handbook provides a ___ explanation of the reimbursement procedure.",
+    "choices": ["clarify", "clear", "clearly", "clarity"],
+    "answerIndex": 1,
+    "explanation": "冠詞 a と名詞 explanation の間なので、名詞を修飾する形容詞 clear が入る。clearly は副詞、clarity は名詞、clarify は動詞。",
+    "difficulty": 1,
+    "tags": ["形容詞", "冠詞+名詞"]
+  }
+]

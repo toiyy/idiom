@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p5-pronoun-001",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "Because the technician was unavailable that afternoon, Ms. Reyes configured the new server ___.",
+    "choices": ["her", "hers", "herself", "she"],
+    "answerIndex": 2,
+    "explanation": "「彼女自身で」と主語の動作を強調する再帰代名詞 herself が正解。by herself の by が省略された用法。configure の目的語はすでに the new server があるので目的格 her は不可。",
+    "difficulty": 2,
+    "tags": ["再帰代名詞", "herself"]
+  },
+  {
+    "id": "p5-pronoun-002",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "The sales figures for this quarter are significantly higher than ___ of the same period last year.",
+    "choices": ["that", "those", "them", "it"],
+    "answerIndex": 1,
+    "explanation": "比較の対象は複数形の figures なので、名詞の繰り返しを避ける代名詞も複数形の those を使う。単数なら that。",
+    "difficulty": 3,
+    "tags": ["that/those", "比較"]
+  },
+  {
+    "id": "p5-pronoun-003",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "One of the two proposals focuses on cost reduction, while ___ emphasizes long-term growth.",
+    "choices": ["another", "other", "the other", "others"],
+    "answerIndex": 2,
+    "explanation": "2 つのうち「一方」が One で、残る「もう一方」は 1 つに特定されるので the other が正解。another は「（3 つ以上のうち）不特定のもう 1 つ」を指す。",
+    "difficulty": 2,
+    "tags": ["the other", "another"]
+  }
+]

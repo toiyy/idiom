@@ -1,0 +1,35 @@
+[
+  {
+    "id": "p5-subjunctive-001",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "The auditor recommended that the company ___ its inventory records every quarter.",
+    "choices": ["reviews", "reviewed", "review", "reviewing"],
+    "answerIndex": 2,
+    "explanation": "recommend / suggest / insist / demand / require などの後の that 節では動詞は原形になる（仮定法現在）。主語が三人称単数でも s は付かない。",
+    "difficulty": 3,
+    "tags": ["仮定法現在", "recommend that"]
+  },
+  {
+    "id": "p5-subjunctive-002",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "If the supplier ___ us earlier, we could have adjusted the production schedule in time.",
+    "choices": ["notifies", "had notified", "has notified", "notify"],
+    "answerIndex": 1,
+    "explanation": "主節が could have adjusted（仮定法過去完了）なので、if 節は had + 過去分詞にする。過去の事実に反する仮定を表す。",
+    "difficulty": 2,
+    "tags": ["仮定法過去完了", "if"]
+  },
+  {
+    "id": "p5-subjunctive-003",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "Were the budget ___ , the department would hire two additional analysts this year.",
+    "choices": ["approve", "approving", "approved", "approval"],
+    "answerIndex": 2,
+    "explanation": "If the budget were approved の if が省略されて were が文頭に出た倒置形。budget は「承認される」側なので過去分詞 approved が入る。",
+    "difficulty": 3,
+    "tags": ["倒置", "if省略"]
+  }
+]
