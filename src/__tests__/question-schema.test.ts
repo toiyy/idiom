@@ -55,7 +55,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(113);
+    expect(questions.length).toBeGreaterThanOrEqual(183);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -71,11 +71,12 @@ describe('同梱データ', () => {
     }
   });
 
-  it('語彙カテゴリが 7 サブカテゴリを持つ', () => {
+  it('語彙カテゴリが 7 サブカテゴリ × 15 問を持つ', () => {
     const vocab = listCategories(questions).find((c) => c.category === '語彙');
+    expect(vocab?.total).toBe(105);
     expect(vocab?.subcategories).toHaveLength(7);
     for (const s of vocab?.subcategories ?? []) {
-      expect(s.total).toBeGreaterThanOrEqual(5);
+      expect(s.total, `${s.subcategory} の問題数`).toBe(15);
     }
   });
 

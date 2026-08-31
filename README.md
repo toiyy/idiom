@@ -82,7 +82,7 @@ Zod スキーマで一括検証される（不備があれば起動時に例外�
 1. `src/data/questions/<カテゴリ名>.json` を新規作成し、下記スキーマの配列を書く
 2. `npm test` でスキーマ検証（`question-schema.test.ts`）が通ることを確認
 
-現在の同梱データ: **13 カテゴリ / 113 問**（すべて Part 5 形式）。
+現在の同梱データ: **13 カテゴリ / 183 問**（すべて Part 5 形式）。
 
 品詞識別 1 カテゴリ × 3 サブカテゴリ × 15 問 = 45 問:
 
@@ -102,17 +102,20 @@ tense / voice / verbals / relatives / conjunction-preposition / prepositions
 pronouns / comparison / subjunctive / agreement / quantifiers
 ```
 
-語彙 1 カテゴリ × 7 サブカテゴリ × 5 問 = 35 問:
+語彙 1 カテゴリ × 7 サブカテゴリ × 15 問 = 105 問:
 
 ```
-vocabulary-verb-preposition   動詞＋前置詞（adhere to / dispose of …）
-vocabulary-adj-preposition    形容詞＋前置詞（consistent with / subject to …）
-vocabulary-collocation        コロケーション（meet a deadline / take effect …）
-vocabulary-phrasal-verb       句動詞（put off / roll out …）
-vocabulary-confusables        紛らわしい類義語（efficient vs effective …）
-vocabulary-noun               名詞の語彙（scheduling conflict / refund …）
-vocabulary-connectives        接続副詞（however / therefore …）
+vocabulary-verb-preposition   動詞＋前置詞（adhere to / account for / consist of …）
+vocabulary-adj-preposition    形容詞＋前置詞（consistent with / subject to / short of …）
+vocabulary-collocation        コロケーション（meet a deadline / place an order …）
+vocabulary-phrasal-verb       句動詞（put off / carry out / come up with …）
+vocabulary-confusables        紛らわしい類義語（efficient vs effective / ensure vs assure …）
+vocabulary-noun               名詞の語彙（scheduling conflict / turnout vs turnover …）
+vocabulary-connectives        接続副詞（however / nevertheless / accordingly …）
 ```
+
+語彙問題は「選択肢が同じ品詞の別単語」なので、文法のようにルールで消去法が使えず、
+知らなければ 1/4 の運になる。ここが 950 → 990 の壁になりやすいため厚くしてある。
 
 品詞識別と語彙で全体の 7 割を占めるのは意図的です。実際の Part 5 でもこの 2 つが
 出題の大半を占めるため、サブカテゴリを 1 段挟むことでホーム画面のボタンを増やさずに
@@ -127,13 +130,13 @@ vocabulary-connectives        接続副詞（however / therefore …）
 
 ### 問題数の目標
 
-現在 113 問。反復で答えを覚えてしまわないようにするには、1 日 20 問ペースで
+現在 183 問。反復で答えを覚えてしまわないようにするには、1 日 20 問ペースで
 2 週間空けられる **280 問以上**が目安。完成形は約 370 問を想定している。
 
 | フェーズ | 内容                                                                                                                | 状態            |
 | -------- | ------------------------------------------------------------------------------------------------------------------- | --------------- |
 | 1        | 品詞識別を 3 分割 × 15 問                                                                                           | **完了**（+45） |
-| 2        | 語彙 7 サブカテゴリを各 15 問に                                                                                     | 未着手（+70）   |
+| 2        | 語彙 7 サブカテゴリを各 15 問に                                                                                     | **完了**（+70） |
 | 3        | 未カバー 7 カテゴリを新設（助動詞 / 冠詞・限定詞 / 名詞節 / 相関表現 / 倒置・強調・省略 / 文型・語順 / 分詞形容詞） | 未着手（+60）   |
 | 4        | 既存文法カテゴリの厚み増し、準動詞・関係詞の分割                                                                    | 未着手（+90）   |
 | 5        | 難問（もっともらしい 2 択に絞られる問題）                                                                           | 未着手（+35）   |

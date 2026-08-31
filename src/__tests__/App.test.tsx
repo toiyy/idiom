@@ -64,19 +64,19 @@ describe('ホーム画面', () => {
 });
 
 describe('サブカテゴリ出題', () => {
-  it('サブカテゴリを選ぶとその 5 問だけが出る', async () => {
+  it('サブカテゴリを選ぶとその 15 問だけが出る', async () => {
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getByRole('button', { name: /^句動詞/ }));
-    expect(screen.getByText('1 / 5')).toBeInTheDocument();
+    expect(screen.getByText('1 / 15')).toBeInTheDocument();
     expect(screen.getByText('語彙 / 句動詞')).toBeInTheDocument();
   });
 
-  it('語彙の「すべて」を選ぶと 35 問が出る', async () => {
+  it('語彙の「すべて」を選ぶと 105 問が出る', async () => {
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getByRole('button', { name: /^語彙/ }));
-    expect(screen.getByText('1 / 35')).toBeInTheDocument();
+    expect(screen.getByText('1 / 105')).toBeInTheDocument();
   });
 
   it('品詞識別の「すべて」を選ぶと 45 問が出る', async () => {
