@@ -10,6 +10,15 @@ interface HomeScreenProps {
   onResetProgress: () => void;
 }
 
+/** 「12 問 / 要復習 3」のような件数表示。カテゴリとサブカテゴリで共用する。 */
+function Count({ total, wrong }: { total: number; wrong: number }) {
+  return (
+    <span className="category__count">
+      {total} 問{wrong > 0 && <span className="category__wrong"> / 要復習 {wrong}</span>}
+    </span>
+  );
+}
+
 export function HomeScreen({
   totalQuestions,
   reviewCount,
@@ -19,6 +28,8 @@ export function HomeScreen({
   onResetProgress,
 }: HomeScreenProps) {
   const accuracy = progress.answered === 0 ? 0 : progress.correct / progress.answered;
+  const flat = categories.filter((c) => c.subcategories.length === 0);
+  const nested = categories.filter((c) => c.subcategories.length > 0);
 
   return (
     <>
@@ -47,8 +58,10 @@ export function HomeScreen({
 
       <section className="card">
         <h2 className="section__title">カテゴリ別</h2>
+
+        {/* サブカテゴリを持たないカテゴリはグリッドにフラットに並べる */}
         <div className="category-list">
-          {categories.map((c) => (
+          {flat.map((c) => (
             <button
               key={c.category}
               type="button"
@@ -56,13 +69,44 @@ export function HomeScreen({
               onClick={() => onStart({ kind: 'category', category: c.category })}
             >
               <span className="category__name">{c.category}</span>
-              <span className="category__count">
-                {c.total} 問
-                {c.wrong > 0 && <span className="category__wrong"> / 要復習 {c.wrong}</span>}
-              </span>
+              <Count total={c.total} wrong={c.wrong} />
             </button>
           ))}
         </div>
+
+        {/* サブカテゴリを持つカテゴリは、見出し + サブカテゴリの 2 段で出す */}
+        {nested.map((c) => (
+          <div className="category-group" key={c.category}>
+            <button
+              type="button"
+              className="category-group__head"
+              onClick={() => onStart({ kind: 'category', category: c.category })}
+            >
+              <span className="category-group__name">{c.category}</span>
+              <span className="category-group__all">すべて</span>
+              <Count total={c.total} wrong={c.wrong} />
+            </button>
+            <div className="category-list">
+              {c.subcategories.map((s) => (
+                <button
+                  key={s.subcategory}
+                  type="button"
+                  className="category"
+                  onClick={() =>
+                    onStart({
+                      kind: 'subcategory',
+                      category: c.category,
+                      subcategory: s.subcategory,
+                    })
+                  }
+                >
+                  <span className="category__name">{s.subcategory}</span>
+                  <Count total={s.total} wrong={s.wrong} />
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
 
       <section className="card">

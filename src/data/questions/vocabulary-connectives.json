@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab-connective-001",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "接続副詞",
+    "sentence": "The prototype passed every safety test; ___, the launch has been postponed until March.",
+    "choices": ["likewise", "therefore", "however", "furthermore"],
+    "answerIndex": 2,
+    "explanation": "前半「全ての安全試験に合格」と後半「発売延期」は逆接の関係なので however。therefore（順接）、furthermore（追加）、likewise（同様に）では論理が通らない。",
+    "difficulty": 1,
+    "tags": ["however", "逆接"]
+  },
+  {
+    "id": "vocab-connective-002",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "接続副詞",
+    "sentence": "The supplier missed three consecutive deliveries; ___, we have decided to terminate the contract.",
+    "choices": ["however", "otherwise", "therefore", "nevertheless"],
+    "answerIndex": 2,
+    "explanation": "前半が原因、後半がその結果という順接の関係なので therefore。however / nevertheless は逆接、otherwise は「さもないと」。",
+    "difficulty": 1,
+    "tags": ["therefore", "順接"]
+  },
+  {
+    "id": "vocab-connective-003",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "接続副詞",
+    "sentence": "The venue is conveniently located near the station. ___, it offers free parking for up to 200 cars.",
+    "choices": ["In addition", "On the other hand", "In contrast", "As a result"],
+    "answerIndex": 0,
+    "explanation": "前後とも会場の利点を並べているので、情報を追加する In addition が正解。In contrast / On the other hand は対比、As a result は結果を表す。",
+    "difficulty": 2,
+    "tags": ["in addition", "追加"]
+  },
+  {
+    "id": "vocab-connective-004",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "接続副詞",
+    "sentence": "Please submit the completed form by Friday; ___, your application will not be considered.",
+    "choices": ["therefore", "moreover", "similarly", "otherwise"],
+    "answerIndex": 3,
+    "explanation": "otherwise = さもないと。「金曜までに提出せよ、さもないと審査されない」という条件の裏返しを表す。",
+    "difficulty": 2,
+    "tags": ["otherwise", "条件"]
+  },
+  {
+    "id": "vocab-connective-005",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "接続副詞",
+    "sentence": "Sales in Europe rose by 15 percent last quarter. ___, revenue in Asia declined slightly.",
+    "choices": ["In contrast", "Consequently", "Likewise", "For instance"],
+    "answerIndex": 0,
+    "explanation": "ヨーロッパは増加、アジアは減少という対比なので In contrast。Likewise は同じ傾向を並べるとき、Consequently は結果、For instance は例示に使う。",
+    "difficulty": 2,
+    "tags": ["in contrast", "対比"]
+  }
+]

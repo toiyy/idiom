@@ -48,7 +48,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(36);
+    expect(questions.length).toBeGreaterThanOrEqual(71);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -56,11 +56,36 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('12 カテゴリすべてに問題がある', () => {
+  it('13 カテゴリすべてに問題がある', () => {
     const categories = listCategories(questions);
-    expect(categories).toHaveLength(12);
+    expect(categories).toHaveLength(13);
     for (const c of categories) {
       expect(c.total).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it('語彙カテゴリが 7 サブカテゴリを持つ', () => {
+    const vocab = listCategories(questions).find((c) => c.category === '語彙');
+    expect(vocab?.subcategories).toHaveLength(7);
+    for (const s of vocab?.subcategories ?? []) {
+      expect(s.total).toBeGreaterThanOrEqual(5);
+    }
+  });
+
+  it('語彙以外のカテゴリはサブカテゴリを持たない', () => {
+    for (const c of listCategories(questions)) {
+      if (c.category === '語彙') continue;
+      expect(c.subcategories, `${c.category} に想定外のサブカテゴリ`).toEqual([]);
+    }
+  });
+
+  it('正解の位置が特定のインデックスに偏っていない', () => {
+    const counts = [0, 0, 0, 0];
+    for (const q of questions) counts[q.answerIndex] += 1;
+    // 均等なら各 25%。どれも 10%〜45% の範囲に収まっていれば偏りなしとみなす
+    for (const n of counts) {
+      expect(n / questions.length).toBeGreaterThan(0.1);
+      expect(n / questions.length).toBeLessThan(0.45);
     }
   });
 

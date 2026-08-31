@@ -15,8 +15,8 @@
     "part": 5,
     "category": "時制",
     "sentence": "Ms. Tanaka ___ as the regional director since the Osaka branch opened in 2019.",
-    "choices": ["serves", "served", "has served", "will serve"],
-    "answerIndex": 2,
+    "choices": ["will serve", "serves", "served", "has served"],
+    "answerIndex": 3,
     "explanation": "「since + 過去の起点」があり、過去から現在まで継続している状態なので現在完了 has served。単純過去 served では現在まで続いていることを表せない。",
     "difficulty": 1,
     "tags": ["現在完了", "since"]
@@ -26,8 +26,8 @@
     "part": 5,
     "category": "時制",
     "sentence": "The shipment ___ the warehouse before the storm warning was issued on Tuesday morning.",
-    "choices": ["reaches", "had reached", "will reach", "is reaching"],
-    "answerIndex": 1,
+    "choices": ["is reaching", "reaches", "had reached", "will reach"],
+    "answerIndex": 2,
     "explanation": "「警報が出された（過去）」よりさらに前に完了していた動作なので過去完了 had reached。過去の 2 つの出来事の前後関係を示すときに使う。",
     "difficulty": 2,
     "tags": ["過去完了", "before"]

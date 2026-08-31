@@ -1,8 +1,8 @@
 import { z } from 'zod';
 
 /**
- * TOEIC 四択文法問題の 1 問を表すスキーマ。
- * 問題データ（src/data/questions.sample.json 等）はすべてこの形に従う。
+ * TOEIC 四択問題の 1 問を表すスキーマ。
+ * 問題データ（src/data/questions/*.json）はすべてこの形に従う。
  */
 export const QuestionSchema = z
   .object({
@@ -10,8 +10,14 @@ export const QuestionSchema = z
     id: z.string().min(1),
     /** TOEIC の Part。文法問題は Part 5（短文穴埋め）/ Part 6（長文穴埋め）。 */
     part: z.union([z.literal(5), z.literal(6)]),
-    /** 文法カテゴリ。例: "時制", "前置詞", "関係代名詞", "態", "接続詞" */
+    /** カテゴリ。例: "時制", "前置詞", "関係詞", "態", "語彙" */
     category: z.string().min(1),
+    /**
+     * サブカテゴリ（任意）。分量が多く細分化したいカテゴリだけが持つ。
+     * 例: category="語彙" に対して "句動詞" / "コロケーション" など。
+     * 付けなければそのカテゴリはフラットに扱われる。
+     */
+    subcategory: z.string().min(1).optional(),
     /** 問題文。空所は "___"（半角アンダースコア3つ）で表記する。 */
     sentence: z.string().min(1).includes('___'),
     /** 選択肢。必ず 4 つ。 */

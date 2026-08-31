@@ -15,8 +15,8 @@
     "part": 5,
     "category": "品詞識別",
     "sentence": "Attendance at the optional workshops has risen ___ since the sessions were moved online.",
-    "choices": ["steady", "steadier", "steadily", "steadiness"],
-    "answerIndex": 2,
+    "choices": ["steadiness", "steady", "steadier", "steadily"],
+    "answerIndex": 3,
     "explanation": "自動詞 has risen を修飾する位置なので副詞 steadily が正解。形容詞 steady は動詞を修飾できない。",
     "difficulty": 1,
     "tags": ["副詞", "動詞修飾"]
@@ -26,8 +26,8 @@
     "part": 5,
     "category": "品詞識別",
     "sentence": "The revised handbook provides a ___ explanation of the reimbursement procedure.",
-    "choices": ["clarify", "clear", "clearly", "clarity"],
-    "answerIndex": 1,
+    "choices": ["clearly", "clarity", "clarify", "clear"],
+    "answerIndex": 3,
     "explanation": "冠詞 a と名詞 explanation の間なので、名詞を修飾する形容詞 clear が入る。clearly は副詞、clarity は名詞、clarify は動詞。",
     "difficulty": 1,
     "tags": ["形容詞", "冠詞+名詞"]

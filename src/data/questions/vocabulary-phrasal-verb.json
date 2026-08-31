@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab-phrasal-001",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "句動詞",
+    "sentence": "Because of the storm, the outdoor ceremony was ___ off until the following weekend.",
+    "choices": ["taken", "put", "brought", "called"],
+    "answerIndex": 1,
+    "explanation": "put off = 延期する。call off も「中止する」で文法的には成立するが、until the following weekend（翌週末まで）とあるので延期でなければ矛盾する。",
+    "difficulty": 3,
+    "tags": ["put off", "call off"]
+  },
+  {
+    "id": "vocab-phrasal-002",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "句動詞",
+    "sentence": "The company plans to ___ out a new line of eco-friendly packaging next spring.",
+    "choices": ["roll", "take", "put", "bring"],
+    "answerIndex": 0,
+    "explanation": "roll out = （新製品・サービスを）展開する、市場に投入する。take out は「取り出す」、put out は「消す / 公表する」。",
+    "difficulty": 2,
+    "tags": ["roll out"]
+  },
+  {
+    "id": "vocab-phrasal-003",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "句動詞",
+    "sentence": "Please ___ over the contract carefully before signing it.",
+    "choices": ["look", "watch", "view", "see"],
+    "answerIndex": 0,
+    "explanation": "look over = ざっと目を通す、確認する。see / watch / view は over と結びついて句動詞を作らない。",
+    "difficulty": 2,
+    "tags": ["look over"]
+  },
+  {
+    "id": "vocab-phrasal-004",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "句動詞",
+    "sentence": "The IT department will ___ up the database before installing the security update.",
+    "choices": ["back", "hold", "set", "keep"],
+    "answerIndex": 0,
+    "explanation": "back up = バックアップを取る。set up は「設置する」、hold up は「遅らせる」、keep up は「維持する」で文脈に合わない。",
+    "difficulty": 1,
+    "tags": ["back up"]
+  },
+  {
+    "id": "vocab-phrasal-005",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "句動詞",
+    "sentence": "We had to ___ down the proposal because it exceeded our annual budget.",
+    "choices": ["break", "put", "cut", "turn"],
+    "answerIndex": 3,
+    "explanation": "turn down = 断る、却下する。cut down は「削減する」、break down は「故障する」、put down は「書き留める」。",
+    "difficulty": 2,
+    "tags": ["turn down"]
+  }
+]

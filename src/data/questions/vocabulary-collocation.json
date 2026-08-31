@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab-collocation-001",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "コロケーション",
+    "sentence": "The factory has failed to ___ the delivery deadline for three consecutive months.",
+    "choices": ["catch", "reach", "achieve", "meet"],
+    "answerIndex": 3,
+    "explanation": "meet a deadline = 締切に間に合う。日本語の「締切に達する / 間に合う」から reach や catch を選びがちだが、英語では使わない固定表現。",
+    "difficulty": 2,
+    "tags": ["meet a deadline"]
+  },
+  {
+    "id": "vocab-collocation-002",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "コロケーション",
+    "sentence": "The two companies finally ___ an agreement after eight months of negotiation.",
+    "choices": ["gained", "reached", "met", "arrived"],
+    "answerIndex": 1,
+    "explanation": "reach an agreement = 合意に達する。arrive を使うなら arrive at an agreement と前置詞が必要。met / gained は agreement と結びつかない。",
+    "difficulty": 2,
+    "tags": ["reach an agreement"]
+  },
+  {
+    "id": "vocab-collocation-003",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "コロケーション",
+    "sentence": "Please ___ the attached form and return it to the human resources department.",
+    "choices": ["complete", "accomplish", "fulfill", "finish"],
+    "answerIndex": 0,
+    "explanation": "complete a form = 書類に記入する。finish / accomplish / fulfill も「完了させる」意味だが、書類の記入という文脈では使わない。",
+    "difficulty": 2,
+    "tags": ["complete a form"]
+  },
+  {
+    "id": "vocab-collocation-004",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "コロケーション",
+    "sentence": "The revised safety regulations will ___ effect on the first of next month.",
+    "choices": ["get", "take", "make", "have"],
+    "answerIndex": 1,
+    "explanation": "take effect = 効力を発する、施行される。固定表現なので他の動詞に置き換えられない。",
+    "difficulty": 1,
+    "tags": ["take effect"]
+  },
+  {
+    "id": "vocab-collocation-005",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "コロケーション",
+    "sentence": "The board will ___ a decision on the vendor contract before the end of the week.",
+    "choices": ["give", "take", "make", "do"],
+    "answerIndex": 2,
+    "explanation": "make a decision = 決定する。日本語の「決定を下す / 取る」から take を選びがちだが、英語では make を使う。",
+    "difficulty": 1,
+    "tags": ["make a decision"]
+  }
+]

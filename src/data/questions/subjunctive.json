@@ -4,8 +4,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "The auditor recommended that the company ___ its inventory records every quarter.",
-    "choices": ["reviews", "reviewed", "review", "reviewing"],
-    "answerIndex": 2,
+    "choices": ["reviewing", "reviews", "reviewed", "review"],
+    "answerIndex": 3,
     "explanation": "recommend / suggest / insist / demand / require などの後の that 節では動詞は原形になる（仮定法現在）。主語が三人称単数でも s は付かない。",
     "difficulty": 3,
     "tags": ["仮定法現在", "recommend that"]
@@ -26,8 +26,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "Were the budget ___ , the department would hire two additional analysts this year.",
-    "choices": ["approve", "approving", "approved", "approval"],
-    "answerIndex": 2,
+    "choices": ["approval", "approve", "approving", "approved"],
+    "answerIndex": 3,
     "explanation": "If the budget were approved の if が省略されて were が文頭に出た倒置形。budget は「承認される」側なので過去分詞 approved が入る。",
     "difficulty": 3,
     "tags": ["倒置", "if省略"]

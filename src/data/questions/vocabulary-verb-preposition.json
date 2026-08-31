@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab-verbprep-001",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "動詞＋前置詞",
+    "sentence": "All contractors must ___ to the safety regulations posted at the site entrance.",
+    "choices": ["observe", "obey", "adhere", "follow"],
+    "answerIndex": 2,
+    "explanation": "4 つとも「従う」の意味で、意味では絞れない。決め手は前置詞 to。adhere は自動詞で adhere to の形をとるが、obey / follow / observe はいずれも他動詞なので前置詞は不要。",
+    "difficulty": 2,
+    "tags": ["adhere to", "自動詞"]
+  },
+  {
+    "id": "vocab-verbprep-002",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "動詞＋前置詞",
+    "sentence": "The IT department will ___ of the outdated servers by the end of the month.",
+    "choices": ["remove", "dispose", "eliminate", "discard"],
+    "answerIndex": 1,
+    "explanation": "dispose of = 処分する。discard / remove / eliminate はいずれも他動詞で of をとらず、目的語を直接続ける。",
+    "difficulty": 2,
+    "tags": ["dispose of", "自動詞"]
+  },
+  {
+    "id": "vocab-verbprep-003",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "動詞＋前置詞",
+    "sentence": "The committee will ___ the revised proposal at next Monday's meeting.",
+    "choices": ["argue", "discuss", "talk", "speak"],
+    "answerIndex": 1,
+    "explanation": "空所の後ろに前置詞がなく目的語が直接続いているので、他動詞の discuss が正解。talk / speak / argue は about などの前置詞が必要（talk about the proposal）。",
+    "difficulty": 2,
+    "tags": ["discuss", "他動詞"]
+  },
+  {
+    "id": "vocab-verbprep-004",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "動詞＋前置詞",
+    "sentence": "The safety inspector ___ on the condition of the ventilation system in his final report.",
+    "choices": ["described", "commented", "mentioned", "stated"],
+    "answerIndex": 1,
+    "explanation": "comment on = 〜について述べる。mention / state / describe はいずれも他動詞なので on は不要。",
+    "difficulty": 2,
+    "tags": ["comment on", "自動詞"]
+  },
+  {
+    "id": "vocab-verbprep-005",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "動詞＋前置詞",
+    "sentence": "The research team ___ for additional funding to complete the clinical trial.",
+    "choices": ["applied", "demanded", "required", "requested"],
+    "answerIndex": 0,
+    "explanation": "apply for = 〜を申し込む、応募する。request / demand / require は他動詞で目的語を直接とるため for は不要。",
+    "difficulty": 2,
+    "tags": ["apply for", "自動詞"]
+  }
+]

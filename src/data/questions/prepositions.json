@@ -4,8 +4,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The new safety guidelines will take effect ___ January 1, so all staff must review them beforehand.",
-    "choices": ["in", "at", "on", "since"],
-    "answerIndex": 2,
+    "choices": ["since", "in", "at", "on"],
+    "answerIndex": 3,
     "explanation": "特定の日付の前には on を用いる（on January 1）。月・年には in、時刻には at。since は継続の起点を表すので意味が合わない。",
     "difficulty": 1,
     "tags": ["日付", "on"]
@@ -15,8 +15,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "Refunds are normally processed ___ five business days of receiving the returned item.",
-    "choices": ["within", "until", "during", "among"],
-    "answerIndex": 0,
+    "choices": ["until", "during", "among", "within"],
+    "answerIndex": 3,
     "explanation": "「〜以内に」という期間の範囲を表すのは within。until は「〜までずっと」、during は「〜の間ずっと」で特定の期間を表す名詞が続く。",
     "difficulty": 2,
     "tags": ["期間", "within"]

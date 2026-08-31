@@ -4,8 +4,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "Because the technician was unavailable that afternoon, Ms. Reyes configured the new server ___.",
-    "choices": ["her", "hers", "herself", "she"],
-    "answerIndex": 2,
+    "choices": ["she", "her", "hers", "herself"],
+    "answerIndex": 3,
     "explanation": "「彼女自身で」と主語の動作を強調する再帰代名詞 herself が正解。by herself の by が省略された用法。configure の目的語はすでに the new server があるので目的格 her は不可。",
     "difficulty": 2,
     "tags": ["再帰代名詞", "herself"]
@@ -15,8 +15,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "The sales figures for this quarter are significantly higher than ___ of the same period last year.",
-    "choices": ["that", "those", "them", "it"],
-    "answerIndex": 1,
+    "choices": ["those", "them", "it", "that"],
+    "answerIndex": 0,
     "explanation": "比較の対象は複数形の figures なので、名詞の繰り返しを避ける代名詞も複数形の those を使う。単数なら that。",
     "difficulty": 3,
     "tags": ["that/those", "比較"]

@@ -4,8 +4,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "Very ___ applicants met the five-year experience requirement, so the search was extended.",
-    "choices": ["little", "few", "much", "a great deal of"],
-    "answerIndex": 1,
+    "choices": ["a great deal of", "little", "few", "much"],
+    "answerIndex": 2,
     "explanation": "applicants は可算名詞の複数形なので few が正解。little / much / a great deal of はいずれも不可算名詞に用いる。",
     "difficulty": 1,
     "tags": ["可算", "few"]
@@ -26,8 +26,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "___ of the two candidates has the technical background required for the position.",
-    "choices": ["Both", "Either", "All", "Every"],
-    "answerIndex": 1,
+    "choices": ["Either", "All", "Every", "Both"],
+    "answerIndex": 0,
     "explanation": "動詞が単数の has なので、単数扱いの Either が正解。Both は複数扱い、All は 3 つ以上が対象、Every は直後に単数名詞が必要で of は続かない。",
     "difficulty": 2,
     "tags": ["either", "単数扱い"]

@@ -4,7 +4,10 @@ export type RandomFn = () => number;
 
 /** 出題モード。スタート画面での選択結果を表す。 */
 export type QuizMode =
-  { kind: 'all' } | { kind: 'review' } | { kind: 'category'; category: string };
+  | { kind: 'all' }
+  | { kind: 'review' }
+  | { kind: 'category'; category: string }
+  | { kind: 'subcategory'; category: string; subcategory: string };
 
 /**
  * Fisher–Yates シャッフル。元配列は破壊しない。
@@ -37,6 +40,8 @@ export function selectQuestions(
     }
     case 'category':
       return pool.filter((q) => q.category === mode.category);
+    case 'subcategory':
+      return pool.filter((q) => q.category === mode.category && q.subcategory === mode.subcategory);
   }
 }
 
@@ -45,16 +50,27 @@ export function buildQuizOrder(pool: readonly Question[], rng: RandomFn = Math.r
   return shuffle(pool, rng);
 }
 
+export interface SubcategorySummary {
+  subcategory: string;
+  /** そのサブカテゴリの総問題数 */
+  total: number;
+  /** そのサブカテゴリのうち要復習の問題数 */
+  wrong: number;
+}
+
 export interface CategorySummary {
   category: string;
-  /** そのカテゴリの総問題数 */
+  /** そのカテゴリの総問題数（サブカテゴリの合計を含む） */
   total: number;
   /** そのカテゴリのうち要復習の問題数 */
   wrong: number;
+  /** サブカテゴリを持たないカテゴリでは空配列。 */
+  subcategories: SubcategorySummary[];
 }
 
 /**
  * カテゴリ一覧を問題数つきで返す。初出順を保つのでスタート画面の並びが安定する。
+ * subcategory を持つ問題があれば、そのカテゴリの subcategories にぶら下げる。
  */
 export function listCategories(
   pool: readonly Question[],
@@ -62,12 +78,34 @@ export function listCategories(
 ): CategorySummary[] {
   const target = new Set(wrongIds);
   const byCategory = new Map<string, CategorySummary>();
+  // カテゴリごとの「サブカテゴリ名 → 集計」。初出順を保つため Map を使う
+  const subs = new Map<string, Map<string, SubcategorySummary>>();
+
   for (const q of pool) {
-    const entry = byCategory.get(q.category) ?? { category: q.category, total: 0, wrong: 0 };
+    const entry = byCategory.get(q.category) ?? {
+      category: q.category,
+      total: 0,
+      wrong: 0,
+      subcategories: [],
+    };
     entry.total += 1;
     if (target.has(q.id)) entry.wrong += 1;
     byCategory.set(q.category, entry);
+
+    if (q.subcategory === undefined) continue;
+    const bucket = subs.get(q.category) ?? new Map<string, SubcategorySummary>();
+    const sub = bucket.get(q.subcategory) ?? { subcategory: q.subcategory, total: 0, wrong: 0 };
+    sub.total += 1;
+    if (target.has(q.id)) sub.wrong += 1;
+    bucket.set(q.subcategory, sub);
+    subs.set(q.category, bucket);
   }
+
+  for (const [category, bucket] of subs) {
+    const entry = byCategory.get(category);
+    if (entry) entry.subcategories = [...bucket.values()];
+  }
+
   return [...byCategory.values()];
 }
 
@@ -104,5 +142,7 @@ export function modeLabel(mode: QuizMode): string {
       return '復習';
     case 'category':
       return mode.category;
+    case 'subcategory':
+      return `${mode.category} / ${mode.subcategory}`;
   }
 }

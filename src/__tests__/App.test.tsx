@@ -42,9 +42,38 @@ describe('ホーム画面', () => {
     expect(screen.getByRole('button', { name: /^復習/ })).toBeDisabled();
   });
 
-  it('カテゴリが 12 個並ぶ', () => {
+  it('サブカテゴリを持たない 12 カテゴリがフラットに並ぶ', () => {
     render(<App />);
-    expect(document.querySelectorAll('.category')).toHaveLength(12);
+    // 最初の .category-list が、サブカテゴリなしカテゴリのグリッド
+    const flatGrid = document.querySelector('.card .category-list');
+    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(12);
+  });
+
+  it('語彙カテゴリが 7 サブカテゴリを従えて 1 グループになる', () => {
+    render(<App />);
+    const groups = document.querySelectorAll('.category-group');
+    expect(groups).toHaveLength(1);
+    expect(groups[0].querySelector('.category-group__name')).toHaveTextContent('語彙');
+    expect(groups[0].querySelectorAll('.category')).toHaveLength(7);
+  });
+});
+
+describe('サブカテゴリ出題', () => {
+  it('サブカテゴリを選ぶとその 5 問だけが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: /^句動詞/ }));
+    expect(screen.getByText('1 / 5')).toBeInTheDocument();
+    expect(screen.getByText('語彙 / 句動詞')).toBeInTheDocument();
+  });
+
+  it('語彙の「すべて」を選ぶと 35 問が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: /^語彙/ }));
+    expect(screen.getByText('1 / 35')).toBeInTheDocument();
   });
 });
 

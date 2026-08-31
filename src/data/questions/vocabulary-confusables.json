@@ -1,0 +1,62 @@
+[
+  {
+    "id": "vocab-confusable-001",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "紛らわしい類義語",
+    "sentence": "The redesigned assembly line is far more ___, using 30 percent less electricity than before.",
+    "choices": ["affective", "informative", "effective", "efficient"],
+    "answerIndex": 3,
+    "explanation": "efficient = 無駄が少ない、効率的。effective = 効果がある。電力を 30% 削減という文脈なので efficient が正解。",
+    "difficulty": 2,
+    "tags": ["efficient", "effective"]
+  },
+  {
+    "id": "vocab-confusable-002",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "紛らわしい類義語",
+    "sentence": "Buying office supplies in bulk is the most ___ way to reduce our monthly costs.",
+    "choices": ["economic", "economy", "economical", "economically"],
+    "answerIndex": 2,
+    "explanation": "economical = 経済的な、節約になる。economic は「経済の」という意味で economic growth のように使う。コスト削減の文脈なので economical。",
+    "difficulty": 2,
+    "tags": ["economical", "economic"]
+  },
+  {
+    "id": "vocab-confusable-003",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "紛らわしい類義語",
+    "sentence": "The manual provides a ___ overview of every function available in the software.",
+    "choices": ["comprehensible", "comprehending", "comprehensive", "comprehension"],
+    "answerIndex": 2,
+    "explanation": "comprehensive = 包括的な、網羅的な。comprehensible = 理解できる。「すべての機能を扱う概要」なので comprehensive が正解。",
+    "difficulty": 3,
+    "tags": ["comprehensive", "comprehensible"]
+  },
+  {
+    "id": "vocab-confusable-004",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "紛らわしい類義語",
+    "sentence": "All salary information must be kept strictly ___ and shared only with authorized staff.",
+    "choices": ["confidential", "confident", "confiding", "confidence"],
+    "answerIndex": 0,
+    "explanation": "confidential = 機密の。confident = 自信がある。認可された社員にのみ共有という文脈なので confidential。",
+    "difficulty": 1,
+    "tags": ["confidential", "confident"]
+  },
+  {
+    "id": "vocab-confusable-005",
+    "part": 5,
+    "category": "語彙",
+    "subcategory": "紛らわしい類義語",
+    "sentence": "The three department heads submitted their ___ budget proposals before the deadline.",
+    "choices": ["respected", "respective", "respectful", "respectable"],
+    "answerIndex": 1,
+    "explanation": "respective = それぞれの。respectful = 敬意を払う、respectable = 立派な、respected = 尊敬されている。3 人が「それぞれの」予算案を出す文脈。",
+    "difficulty": 3,
+    "tags": ["respective", "respectful"]
+  }
+]

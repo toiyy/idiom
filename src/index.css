@@ -164,6 +164,49 @@ body {
   color: var(--wrong);
 }
 
+/* --- ホーム: サブカテゴリを持つカテゴリ --- */
+
+.category-group {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.category-group__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0 2px 10px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.category-group__head:hover .category-group__name {
+  color: var(--primary);
+}
+
+.category-group__name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.category-group__all {
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.category-group__head .category__count {
+  margin-left: auto;
+}
+
 .card__meta {
   display: flex;
   justify-content: space-between;

@@ -4,8 +4,8 @@
     "part": 5,
     "category": "関係詞",
     "sentence": "The consultant ___ recommendations we adopted last year has been invited to speak again.",
-    "choices": ["who", "whom", "whose", "which"],
-    "answerIndex": 2,
+    "choices": ["whom", "whose", "which", "who"],
+    "answerIndex": 1,
     "explanation": "空所の直後に無冠詞の名詞 recommendations が続き「そのコンサルタントの提言」という所有関係になるため、所有格の関係代名詞 whose が正解。",
     "difficulty": 3,
     "tags": ["所有格", "whose"]
@@ -26,8 +26,8 @@
     "part": 5,
     "category": "関係詞",
     "sentence": "Ms. Alvarez submitted a proposal ___ impressed every member of the review panel.",
-    "choices": ["what", "who", "which", "whose"],
-    "answerIndex": 2,
+    "choices": ["which", "whose", "what", "who"],
+    "answerIndex": 0,
     "explanation": "先行詞 a proposal は「もの」で、空所の後ろは主語が欠けた不完全な文。よって主格の関係代名詞 which が正解。what は先行詞をとらない関係代名詞なので不可。",
     "difficulty": 2,
     "tags": ["主格", "which"]
