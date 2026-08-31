@@ -46,18 +46,20 @@ describe('ホーム画面', () => {
     expect(screen.getByRole('button', { name: /^復習/ })).toBeDisabled();
   });
 
-  it('サブカテゴリを持たない 12 カテゴリがフラットに並ぶ', () => {
+  it('サブカテゴリを持たない 11 カテゴリがフラットに並ぶ', () => {
     render(<App />);
     const flatGrid = document.querySelector('.card .category-list');
-    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(12);
+    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(11);
   });
 
-  it('語彙カテゴリが 7 サブカテゴリを従えて 1 グループになる', () => {
+  it('品詞識別と語彙が 2 段グループになる', () => {
     render(<App />);
-    const groups = document.querySelectorAll('.category-group');
-    expect(groups).toHaveLength(1);
-    expect(groups[0].querySelector('.category-group__name')).toHaveTextContent('語彙');
+    const groups = Array.from(document.querySelectorAll('.category-group'));
+    // 並びは問題ファイル名順（vocabulary-* → word-form-*）で決まる
+    const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
+    expect(names).toEqual(['語彙', '品詞識別']);
     expect(groups[0].querySelectorAll('.category')).toHaveLength(7);
+    expect(groups[1].querySelectorAll('.category')).toHaveLength(3);
   });
 });
 
@@ -75,6 +77,21 @@ describe('サブカテゴリ出題', () => {
     render(<App />);
     await user.click(screen.getByRole('button', { name: /^語彙/ }));
     expect(screen.getByText('1 / 35')).toBeInTheDocument();
+  });
+
+  it('品詞識別の「すべて」を選ぶと 45 問が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^品詞識別/ }));
+    expect(screen.getByText('1 / 45')).toBeInTheDocument();
+  });
+
+  it('副詞の位置を選ぶとその 15 問だけが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^副詞の位置/ }));
+    expect(screen.getByText('1 / 15')).toBeInTheDocument();
+    expect(screen.getByText('品詞識別 / 副詞の位置')).toBeInTheDocument();
   });
 });
 

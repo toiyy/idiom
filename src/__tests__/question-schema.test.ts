@@ -55,7 +55,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(71);
+    expect(questions.length).toBeGreaterThanOrEqual(113);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -79,10 +79,32 @@ describe('同梱データ', () => {
     }
   });
 
-  it('語彙以外のカテゴリはサブカテゴリを持たない', () => {
-    for (const c of listCategories(questions)) {
-      if (c.category === '語彙') continue;
-      expect(c.subcategories, `${c.category} に想定外のサブカテゴリ`).toEqual([]);
+  it('品詞識別カテゴリが 3 サブカテゴリ × 15 問を持つ', () => {
+    const wf = listCategories(questions).find((c) => c.category === '品詞識別');
+    expect(wf?.total).toBe(45);
+    expect(wf?.subcategories.map((s) => s.subcategory)).toEqual([
+      '形容詞の位置',
+      '副詞の位置',
+      '名詞の位置',
+    ]);
+    for (const s of wf?.subcategories ?? []) {
+      expect(s.total).toBe(15);
+    }
+  });
+
+  it('サブカテゴリを持つのは語彙と品詞識別だけ', () => {
+    const nested = listCategories(questions)
+      .filter((c) => c.subcategories.length > 0)
+      .map((c) => c.category);
+    expect(nested.sort()).toEqual(['品詞識別', '語彙']);
+  });
+
+  it('サブカテゴリ内のカテゴリ名が一貫している', () => {
+    for (const q of questions) {
+      if (q.subcategory === undefined) continue;
+      const siblings = questions.filter((o) => o.subcategory === q.subcategory);
+      const cats = new Set(siblings.map((o) => o.category));
+      expect(cats.size, `${q.subcategory} が複数カテゴリに跨っている`).toBe(1);
     }
   });
 
