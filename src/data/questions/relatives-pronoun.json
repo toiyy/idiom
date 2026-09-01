@@ -59,8 +59,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The candidate to ___ we offered the position has accepted all of our terms.",
-    "choices": ["who", "whom", "which", "that"],
-    "answerIndex": 1,
+    "choices": ["which", "that", "who", "whom"],
+    "answerIndex": 3,
     "explanation": "前置詞 to の直後に置ける関係代名詞は目的格の whom。who や that は前置詞の直後には置けない。",
     "translation": "我々がその職を提示した候補者は、こちらの条件をすべて受け入れた。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The factory expanded its output by thirty percent, ___ exceeded the original forecast.",
-    "choices": ["that", "which", "what", "it"],
-    "answerIndex": 1,
+    "choices": ["it", "that", "which", "what"],
+    "answerIndex": 2,
     "explanation": "カンマ以降で前の文全体を受ける非制限用法の which。that は非制限用法には使えない。",
     "translation": "その工場は生産量を30パーセント増やしたが、これは当初の予測を上回るものだった。",
     "choiceNotes": {
@@ -131,8 +131,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The training materials ___ the consultant prepared were praised by every attendee.",
-    "choices": ["what", "who", "that", "whose"],
-    "answerIndex": 2,
+    "choices": ["who", "that", "whose", "what"],
+    "answerIndex": 1,
     "explanation": "先行詞 materials は「もの」で、後ろは目的語が欠けた不完全な文。目的格の関係代名詞 that が入る。what は先行詞をとらない。",
     "translation": "そのコンサルタントが用意した研修資料は、参加者全員から高く評価された。",
     "choiceNotes": {
@@ -149,8 +149,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "___ who complete the certification will be eligible for the senior technician role.",
-    "choices": ["Those", "They", "Them", "Whom"],
-    "answerIndex": 0,
+    "choices": ["Whom", "Those", "They", "Them"],
+    "answerIndex": 1,
     "explanation": "「Those who + 動詞」= 〜する人々。関係代名詞 who の先行詞となる Those を置く。",
     "translation": "認定を修了した人は、上級技術者の職に就く資格を得る。",
     "choiceNotes": {

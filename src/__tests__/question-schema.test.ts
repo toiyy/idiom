@@ -75,7 +75,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(368);
+    expect(questions.length).toBeGreaterThanOrEqual(402);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -90,6 +90,21 @@ describe('同梱データ', () => {
     for (const c of categories) {
       expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(8);
     }
+  });
+
+  it('論点の濃い 6 カテゴリは 15 問に揃っている', () => {
+    const cats = listCategories(questions);
+    for (const name of ['時制', '態', '仮定法', '助動詞', '代名詞', '主述の一致']) {
+      expect(cats.find((c) => c.category === name)?.total, `${name} の問題数`).toBe(15);
+    }
+  });
+
+  it('語彙と品詞識別の合計が全体の 4 割を下回っている', () => {
+    // 実際に解いた感触として偏って感じたため、文法側を厚くして配分を見直した
+    const heavy = questions.filter(
+      (q) => q.category === '語彙' || q.category === '品詞識別',
+    ).length;
+    expect(heavy / questions.length).toBeLessThan(0.4);
   });
 
   it('フェーズ3 で新設した 7 カテゴリが揃っている', () => {

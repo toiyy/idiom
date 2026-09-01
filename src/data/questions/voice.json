@@ -4,8 +4,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The keynote address ___ by the CEO immediately after the awards ceremony concludes.",
-    "choices": ["will be delivered", "has delivered", "delivering", "will deliver"],
-    "answerIndex": 0,
+    "choices": ["delivering", "will deliver", "will be delivered", "has delivered"],
+    "answerIndex": 2,
     "explanation": "主語 The keynote address は「述べられる」側なので受動態。後続の副詞節の内容から未来の事柄とわかるので will be delivered が正解。",
     "translation": "基調講演は、授賞式の終了直後にCEOによって行われる。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "態",
     "sentence": "All expense reports must ___ to the accounting department by the fifth of each month.",
-    "choices": ["submitting", "been submitted", "submit", "be submitted"],
-    "answerIndex": 3,
+    "choices": ["submit", "be submitted", "submitting", "been submitted"],
+    "answerIndex": 1,
     "explanation": "助動詞 must の後ろは動詞の原形。報告書は「提出される」側なので受動態の原形 be submitted が正解。been submitted は have が必要。",
     "translation": "経費報告書はすべて、毎月5日までに経理部へ提出しなければならない。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The renovation project ___ by an unexpected shortage of construction materials last spring.",
-    "choices": ["delay", "delayed", "was delayed", "has delaying"],
-    "answerIndex": 2,
+    "choices": ["delayed", "was delayed", "has delaying", "delay"],
+    "answerIndex": 1,
     "explanation": "主語 The renovation project は「遅らされた」側であり、後ろに by（動作主）が続いているので受動態 was delayed。delay は他動詞なので能動態なら目的語が必要になる。",
     "translation": "その改修工事は、昨春の予期せぬ建設資材の不足によって遅延した。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The safety inspection ___ completed before the auditors arrived on Tuesday morning.",
-    "choices": ["was been", "has", "had been", "has being"],
-    "answerIndex": 2,
+    "choices": ["has being", "was been", "has", "had been"],
+    "answerIndex": 3,
     "explanation": "監査人が到着した（過去）よりさらに前に完了していたので、過去完了の受動態 had been completed。",
     "translation": "安全点検は、監査人が火曜の朝に到着する前に完了していた。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "態",
     "sentence": "A serious problem ___ during the final stage of the software migration.",
-    "choices": ["is occurred", "was occurred", "occurred", "has been occurred"],
-    "answerIndex": 2,
+    "choices": ["occurred", "has been occurred", "is occurred", "was occurred"],
+    "answerIndex": 0,
     "explanation": "occur は自動詞なので受動態にできない。能動の occurred が正解。",
     "translation": "ソフトウェア移行の最終段階で、深刻な問題が発生した。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The east parking lot ___ resurfaced this week, so please use the north entrance.",
-    "choices": ["is been", "has being", "is", "is being"],
-    "answerIndex": 3,
+    "choices": ["is being", "is been", "has being", "is"],
+    "answerIndex": 0,
     "explanation": "今まさに舗装をやり直している最中なので、現在進行形の受動態 is being resurfaced。",
     "translation": "東駐車場は今週舗装をやり直しているので、北口をご利用ください。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The auditorium was filled ___ delegates from more than thirty countries.",
-    "choices": ["by", "with", "of", "from"],
-    "answerIndex": 1,
+    "choices": ["of", "from", "by", "with"],
+    "answerIndex": 3,
     "explanation": "be filled with = 〜で満たされている。動作主を示す by ではなく with を使う定型表現。",
     "translation": "講堂は30か国を超える国からの代表者で埋まっていた。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "態",
     "sentence": "Employees ___ to submit their expense reports through the new online portal.",
-    "choices": ["requiring", "require", "requires", "are required"],
-    "answerIndex": 3,
+    "choices": ["are required", "requiring", "require", "requires"],
+    "answerIndex": 0,
     "explanation": "従業員は「求められる」側なので受動態。be required to do の形になる。",
     "translation": "従業員は、新しいオンラインポータル経由で経費報告書を提出することが求められている。",
     "choiceNotes": {
@@ -156,5 +156,107 @@
     },
     "difficulty": 3,
     "tags": ["受動態", "助動詞+完了"]
+  },
+  {
+    "id": "p5-voice-010",
+    "part": 5,
+    "category": "態",
+    "sentence": "The revised safety protocol ___ to all branch offices since the beginning of the year.",
+    "choices": ["has been distributed", "is distributing", "distributes", "has distributed"],
+    "answerIndex": 0,
+    "explanation": "since で過去の起点が示されているので現在完了。protocol は「配布される」側なので受動態にする。",
+    "translation": "改訂された安全手順は、年明け以来すべての支店に配布されている。",
+    "choiceNotes": {
+      "has distributed": "能動の現在完了。手順書が何かを配布したことになってしまう",
+      "is distributing": "能動の現在進行形。since と組めず、態も合わない",
+      "distributes": "能動の現在形。since による継続を表せない"
+    },
+    "difficulty": 2,
+    "tags": ["現在完了の受動態"]
+  },
+  {
+    "id": "p5-voice-011",
+    "part": 5,
+    "category": "態",
+    "sentence": "By the end of next quarter, all outdated terminals ___ with newer models.",
+    "choices": ["will have replaced", "will have been replaced", "are replacing", "will replace"],
+    "answerIndex": 1,
+    "explanation": "By the end of next quarter というその時点までの完了を表すので未来完了。端末は「交換される」側なので受動態にする。",
+    "translation": "来四半期の終わりまでに、旧式の端末はすべて新しい機種に交換されているだろう。",
+    "choiceNotes": {
+      "will replace": "能動の未来形。端末が何かを交換することになってしまう",
+      "will have replaced": "能動の未来完了。主語が交換する側になり意味が逆になる",
+      "are replacing": "能動の現在進行形。By the end of 〜 という完了の意味が出ない"
+    },
+    "difficulty": 3,
+    "tags": ["未来完了の受動態"]
+  },
+  {
+    "id": "p5-voice-012",
+    "part": 5,
+    "category": "態",
+    "sentence": "The new alloy ___ to be significantly more durable than the material it replaces.",
+    "choices": ["saying", "says", "is said", "has said"],
+    "answerIndex": 2,
+    "explanation": "be said to do =「〜だと言われている」。主語 alloy は「言われる」側なので受動態にする。",
+    "translation": "その新しい合金は、置き換える素材よりもはるかに耐久性が高いと言われている。",
+    "choiceNotes": {
+      "says": "能動態。合金が何かを言うことになってしまう",
+      "has said": "能動の現在完了。主語が言う側になり意味が合わない",
+      "saying": "現在分詞。文の述語動詞にならない"
+    },
+    "difficulty": 3,
+    "tags": ["be said to do"]
+  },
+  {
+    "id": "p5-voice-013",
+    "part": 5,
+    "category": "態",
+    "sentence": "The Kyoto plant ___ throughout the industry for its exceptionally low defect rate.",
+    "choices": ["has known", "knowing", "knows", "is known"],
+    "answerIndex": 3,
+    "explanation": "be known for =「〜で知られている」。工場は「知られる」側なので受動態にする。",
+    "translation": "京都工場は、極めて低い不良率で業界中に知られている。",
+    "choiceNotes": {
+      "knows": "能動態。工場が何かを知っていることになってしまう",
+      "has known": "能動の現在完了。主語が知る側になり意味が合わない",
+      "knowing": "現在分詞。文の述語動詞にならない"
+    },
+    "difficulty": 2,
+    "tags": ["be known for"]
+  },
+  {
+    "id": "p5-voice-014",
+    "part": 5,
+    "category": "態",
+    "sentence": "Visitors ___ to sign the confidentiality agreement before entering the research wing.",
+    "choices": ["are made", "make", "made", "are making"],
+    "answerIndex": 0,
+    "explanation": "使役動詞 make は能動では原形をとるが（make O do）、受動態になると to が現れて be made to do の形になる。",
+    "translation": "来訪者は、研究棟に入る前に守秘義務契約に署名させられる。",
+    "choiceNotes": {
+      "make": "能動態。来訪者が誰かにさせる側になってしまう",
+      "made": "能動の過去形。目的語がなく、態も合わない",
+      "are making": "能動の現在進行形。署名させられる側なので受動が必要"
+    },
+    "difficulty": 3,
+    "tags": ["be made to do", "使役の受動"]
+  },
+  {
+    "id": "p5-voice-015",
+    "part": 5,
+    "category": "態",
+    "sentence": "Three separate departments ___ in the preparation of the annual sustainability report.",
+    "choices": ["involve", "are involved", "involving", "have involved"],
+    "answerIndex": 1,
+    "explanation": "be involved in =「〜に関わっている」。部署は「関与させられている」側なので受動態にする。",
+    "translation": "3つの別々の部署が、年次の持続可能性報告書の作成に関わっている。",
+    "choiceNotes": {
+      "involve": "能動態。involve は他動詞なので目的語が必要になる",
+      "involving": "現在分詞。文の述語動詞にならない",
+      "have involved": "能動の現在完了。部署が何かを巻き込んだことになってしまう"
+    },
+    "difficulty": 2,
+    "tags": ["be involved in"]
   }
 ]

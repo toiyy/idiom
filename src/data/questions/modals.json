@@ -4,8 +4,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "Visitors to the plant must ___ protective eyewear at all times.",
-    "choices": ["wear", "to wear", "worn", "wearing"],
-    "answerIndex": 0,
+    "choices": ["worn", "wearing", "wear", "to wear"],
+    "answerIndex": 2,
     "explanation": "助動詞 must の後ろは必ず動詞の原形。wear が正解。",
     "translation": "工場の来訪者は常時、保護メガネを着用しなければならない。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "We ___ reserved the larger meeting room; twelve people could not find seats.",
-    "choices": ["must have", "should have", "can have", "may have"],
-    "answerIndex": 1,
+    "choices": ["may have", "must have", "should have", "can have"],
+    "answerIndex": 2,
     "explanation": "「〜すべきだったのに（しなかった）」という後悔は should have + 過去分詞。",
     "translation": "もっと大きな会議室を予約しておくべきだった。12人が席を見つけられなかった。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "You ___ have submitted the receipts twice; a single copy would have been sufficient.",
-    "choices": ["could not", "must not", "need not", "should not"],
-    "answerIndex": 2,
+    "choices": ["must not", "need not", "should not", "could not"],
+    "answerIndex": 1,
     "explanation": "need not have + 過去分詞 = 〜する必要はなかったのに（実際にはした）。must not have は「〜してはいけなかった」という禁止のニュアンスになり合わない。",
     "translation": "領収書を2回提出する必要はなかった。1部で十分だっただろう。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "You ___ confirm the shipping address before the order is processed.",
-    "choices": ["have better", "had better", "will better", "would better"],
-    "answerIndex": 1,
+    "choices": ["would better", "have better", "had better", "will better"],
+    "answerIndex": 2,
     "explanation": "had better + 動詞の原形 = 〜したほうがよい。had は過去形だが意味は現在・未来を指す固定表現。",
     "translation": "注文が処理される前に、配送先住所を確認したほうがよい。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "The company ___ to publish its newsletter quarterly, but it now appears every month.",
-    "choices": ["was used", "is used", "used", "has used"],
-    "answerIndex": 2,
+    "choices": ["is used", "used", "has used", "was used"],
+    "answerIndex": 1,
     "explanation": "used to + 動詞の原形 = 以前は〜していた（今は違う）。be used to は「〜に慣れている」で後ろに動名詞が続くため、原形 publish とは結びつかない。",
     "translation": "その会社は以前、社報を四半期ごとに発行していたが、今では毎月出ている。",
     "choiceNotes": {
@@ -140,8 +140,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "After twelve years in the field, the technicians are used to ___ in extreme temperatures.",
-    "choices": ["work", "working", "have worked", "worked"],
-    "answerIndex": 1,
+    "choices": ["working", "have worked", "worked", "work"],
+    "answerIndex": 0,
     "explanation": "be used to の to は前置詞なので後ろは動名詞。used to + 原形（以前は〜した）と混同しやすい典型問題。",
     "translation": "その分野で12年働いてきた技術者たちは、極端な気温の中で作業することに慣れている。",
     "choiceNotes": {
@@ -157,8 +157,8 @@
     "part": 5,
     "category": "助動詞",
     "sentence": "Given the current pace of construction, the project ___ finish ahead of schedule.",
-    "choices": ["should be", "may well", "may be", "can well"],
-    "answerIndex": 1,
+    "choices": ["can well", "should be", "may well", "may be"],
+    "answerIndex": 2,
     "explanation": "may well + 動詞の原形 = 十分に〜しそうだ。may be / should be の後ろには形容詞や名詞が来るので、動詞の原形 finish は続かない。",
     "translation": "現在の工事の進み具合からすると、そのプロジェクトは予定より早く終わりそうだ。",
     "choiceNotes": {
@@ -168,5 +168,90 @@
     },
     "difficulty": 3,
     "tags": ["may well"]
+  },
+  {
+    "id": "p5-modal-11",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "All fire extinguishers ___ to be inspected at least once every twelve months.",
+    "choices": ["ought", "should", "must", "can"],
+    "answerIndex": 0,
+    "explanation": "空所の後ろが to be なので、to 不定詞をとる ought が正解。should / must / can はいずれも直後に動詞の原形が来る。",
+    "translation": "消火器はすべて、少なくとも12か月に1回は点検されるべきである。",
+    "choiceNotes": {
+      "should": "直後に動詞の原形が来る助動詞。to は続かない",
+      "must": "直後に動詞の原形が来る助動詞。to は続かない",
+      "can": "直後に動詞の原形が来る助動詞。to は続かない"
+    },
+    "difficulty": 2,
+    "tags": ["ought to"]
+  },
+  {
+    "id": "p5-modal-12",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Since the afternoon meeting has been cancelled, we ___ as well use the time to finish the report.",
+    "choices": ["can", "will", "would", "may"],
+    "answerIndex": 3,
+    "explanation": "may as well + 動詞の原形 =「〜したほうがよい・どうせなら〜しよう」。as well と組むのは may（または might）。",
+    "translation": "午後の会議が中止になったので、どうせならその時間で報告書を仕上げてしまおう。",
+    "choiceNotes": {
+      "can": "can as well という決まった形はない",
+      "will": "will as well という決まった形はない",
+      "would": "would rather なら成立するが、as well とは組まない"
+    },
+    "difficulty": 3,
+    "tags": ["may as well"]
+  },
+  {
+    "id": "p5-modal-13",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Attendance is entirely optional, so staff ___ attend the Friday briefing if they are busy.",
+    "choices": ["should not", "must not", "need not", "cannot"],
+    "answerIndex": 2,
+    "explanation": "need not =「〜する必要がない」。optional（任意）とあるので不要を表す。must not / cannot / should not はいずれも禁止や不可を表し、任意という前提と矛盾する。",
+    "translation": "出席は完全に任意なので、忙しければ金曜の説明会に出なくてもよい。",
+    "choiceNotes": {
+      "must not": "「〜してはいけない」という禁止。任意という前提と矛盾する",
+      "cannot": "「〜できない」という不可。出席が任意である文脈に合わない",
+      "should not": "「〜すべきでない」という否定的な助言。不要とは意味が異なる"
+    },
+    "difficulty": 2,
+    "tags": ["need not", "禁止との区別"]
+  },
+  {
+    "id": "p5-modal-14",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "The contractors ___ to complete the wiring by Friday, but heavy rain delayed the work.",
+    "choices": ["are supposing", "supposed", "are supposed", "suppose"],
+    "answerIndex": 2,
+    "explanation": "be supposed to do =「〜することになっている」。予定と実際が食い違う場面でよく使う。",
+    "translation": "請負業者は金曜までに配線を終える予定だったが、大雨で作業が遅れた。",
+    "choiceNotes": {
+      "suppose": "能動の現在形。請負業者が何かを推測することになってしまう",
+      "are supposing": "能動の現在進行形。決まった予定を表す形にならない",
+      "supposed": "過去分詞または過去形。be 動詞がないと述語にならない"
+    },
+    "difficulty": 2,
+    "tags": ["be supposed to"]
+  },
+  {
+    "id": "p5-modal-15",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Because the server failed during the audit, the team ___ recreate three months of records by hand.",
+    "choices": ["had to", "ought to", "may", "must"],
+    "answerIndex": 0,
+    "explanation": "must には過去形がないので、過去の義務は had to で表す。前半が過去形 failed なので過去の話。",
+    "translation": "監査中にサーバーが故障したため、チームは3か月分の記録を手作業で作り直さなければならなかった。",
+    "choiceNotes": {
+      "must": "現在の義務を表す。過去形がないので過去の話には使えない",
+      "ought to": "「〜すべき」という助言。実際にそうした過去の事実を表さない",
+      "may": "「〜かもしれない」という推量。義務を表さない"
+    },
+    "difficulty": 2,
+    "tags": ["had to", "must の過去"]
   }
 ]

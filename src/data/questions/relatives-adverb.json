@@ -23,8 +23,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "March is the month ___ the company finalizes its budget for the following fiscal year.",
-    "choices": ["what", "whom", "which", "when"],
-    "answerIndex": 3,
+    "choices": ["whom", "which", "when", "what"],
+    "answerIndex": 2,
     "explanation": "先行詞が時を表す the month で、後ろが完全な文なので関係副詞 when。",
     "translation": "3月は、その会社が翌年度の予算を確定させる月だ。",
     "choiceNotes": {
@@ -77,8 +77,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "The service is available ___ a stable internet connection can be established.",
-    "choices": ["whichever", "however", "whenever", "wherever"],
-    "answerIndex": 3,
+    "choices": ["whenever", "wherever", "whichever", "however"],
+    "answerIndex": 1,
     "explanation": "場所を表す複合関係副詞 wherever = 〜する場所ならどこでも。",
     "translation": "そのサービスは、安定したインターネット接続が確立できる場所ならどこでも利用できる。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "___ complex the request may be, the support team responds within one business day.",
-    "choices": ["Whatever", "Whenever", "Wherever", "However"],
-    "answerIndex": 3,
+    "choices": ["Whenever", "Wherever", "However", "Whatever"],
+    "answerIndex": 2,
     "explanation": "「However + 形容詞 + 主語 + 動詞」= どれほど〜であっても。形容詞 complex が直後に来ている点が手がかり。",
     "translation": "どれほど複雑な依頼であっても、サポートチームは1営業日以内に対応する。",
     "choiceNotes": {

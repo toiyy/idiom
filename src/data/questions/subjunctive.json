@@ -4,8 +4,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "The auditor recommended that the company ___ its inventory records every quarter.",
-    "choices": ["reviews", "reviewed", "review", "reviewing"],
-    "answerIndex": 2,
+    "choices": ["reviewed", "review", "reviewing", "reviews"],
+    "answerIndex": 1,
     "explanation": "recommend / suggest / insist / demand / require などの後の that 節では動詞は原形になる（仮定法現在）。主語が三人称単数でも s は付かない。",
     "translation": "監査人は、その会社が四半期ごとに在庫記録を見直すことを勧告した。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "If the supplier ___ us earlier, we could have adjusted the production schedule in time.",
-    "choices": ["has notified", "notify", "notifies", "had notified"],
-    "answerIndex": 3,
+    "choices": ["had notified", "has notified", "notify", "notifies"],
+    "answerIndex": 0,
     "explanation": "主節が could have adjusted（仮定法過去完了）なので、if 節は had + 過去分詞にする。過去の事実に反する仮定を表す。",
     "translation": "もし供給業者がもっと早く連絡してくれていれば、生産計画を間に合うように調整できたのだが。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "Were the budget ___, the department would hire two additional analysts this year.",
-    "choices": ["approving", "approved", "approval", "approve"],
-    "answerIndex": 1,
+    "choices": ["approved", "approval", "approve", "approving"],
+    "answerIndex": 0,
     "explanation": "If the budget were approved の if が省略されて were が文頭に出た倒置形。budget は「承認される」側なので過去分詞 approved が入る。",
     "translation": "予算が承認されれば、その部署は今年さらに2名のアナリストを雇用するだろう。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "If the company ___ more warehouse space, it could stock a wider range of products.",
-    "choices": ["will have", "would have", "has", "had"],
-    "answerIndex": 3,
+    "choices": ["had", "will have", "would have", "has"],
+    "answerIndex": 0,
     "explanation": "主節が could + 動詞の原形なので、if 節は過去形にする（仮定法過去）。現在の事実に反する仮定を表す。",
     "translation": "もしその会社にもっと倉庫の空きがあれば、より幅広い商品を在庫できるのだが。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "The project team wishes they ___ allocated more time to the testing phase.",
-    "choices": ["would have", "have", "had", "has"],
-    "answerIndex": 2,
+    "choices": ["had", "has", "would have", "have"],
+    "answerIndex": 0,
     "explanation": "wish + 過去完了 = 〜だったらよかったのに。過去の事実に反する願望を表す。",
     "translation": "プロジェクトチームは、試験段階にもっと時間を割いておけばよかったと思っている。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "The new system responds as if it ___ been trained on far more data than it actually was.",
-    "choices": ["had", "have", "would", "has"],
-    "answerIndex": 0,
+    "choices": ["have", "would", "has", "had"],
+    "answerIndex": 3,
     "explanation": "as if + 過去完了 = まるで〜だったかのように。実際はそうではないことを表す。",
     "translation": "新しいシステムは、実際よりもはるかに多くのデータで学習してきたかのように応答する。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "___ the generous support of local sponsors, the festival would have been cancelled.",
-    "choices": ["Without", "Unless", "Despite", "Except"],
-    "answerIndex": 0,
+    "choices": ["Except", "Without", "Unless", "Despite"],
+    "answerIndex": 1,
     "explanation": "Without 〜 = 〜がなければ。仮定法過去完了の主節（would have been）と呼応する。Unless は接続詞なので節が必要。",
     "translation": "地元スポンサーの手厚い支援がなければ、その祭りは中止になっていただろう。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "仮定法",
     "sentence": "It is time the department ___ its outdated inventory tracking system.",
-    "choices": ["has replaced", "replaces", "replaced", "will replace"],
-    "answerIndex": 2,
+    "choices": ["replaces", "replaced", "will replace", "has replaced"],
+    "answerIndex": 1,
     "explanation": "「It is time + 主語 + 過去形」= もう〜してもよいころだ。形は過去だが意味は現在を指す。",
     "translation": "その部署は、時代遅れの在庫管理システムをそろそろ入れ替えてもよいころだ。",
     "choiceNotes": {
@@ -151,5 +151,107 @@
     },
     "difficulty": 3,
     "tags": ["仮定法現在", "require that"]
+  },
+  {
+    "id": "p5-subjunctive-010",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "If the company had invested in automation earlier, it ___ far more competitive today.",
+    "choices": ["is", "would be", "would have been", "will be"],
+    "answerIndex": 1,
+    "explanation": "if 節は過去完了（過去の事実に反する）だが、主節は today とあり現在のことを述べている。こうした混合型では主節を would + 動詞の原形にする。",
+    "translation": "その会社がもっと早く自動化に投資していれば、今ごろはずっと競争力があるだろうに。",
+    "choiceNotes": {
+      "would have been": "仮定法過去完了の主節。today と時が合わない",
+      "will be": "直説法の未来形。事実に反する仮定の帰結にならない",
+      "is": "直説法の現在形。仮定の帰結を表せない"
+    },
+    "difficulty": 3,
+    "tags": ["混合仮定法"]
+  },
+  {
+    "id": "p5-subjunctive-011",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "___ the supplier informed us of the delay, we could have rescheduled the installation.",
+    "choices": ["Did", "Were", "Had", "If"],
+    "answerIndex": 2,
+    "explanation": "If the supplier had informed 〜 の if が省略され、had が文頭に出た倒置形。主節が could have + 過去分詞なので仮定法過去完了。",
+    "translation": "供給業者が遅延を知らせてくれていれば、設置の日程を組み直せたのだが。",
+    "choiceNotes": {
+      "If": "接続詞。倒置ではないので後ろに had が必要になる",
+      "Did": "過去形の助動詞。後ろの informed と重複してしまう",
+      "Were": "be 動詞の倒置。後ろが過去分詞ではないので合わない"
+    },
+    "difficulty": 3,
+    "tags": ["倒置", "if省略"]
+  },
+  {
+    "id": "p5-subjunctive-012",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "It is essential that every applicant ___ a valid work permit at the time of hiring.",
+    "choices": ["holds", "hold", "held", "holding"],
+    "answerIndex": 1,
+    "explanation": "essential / important / necessary などの形容詞に続く that 節でも、動詞は原形になる（仮定法現在）。",
+    "translation": "応募者は全員、採用の時点で有効な就労許可を持っていることが不可欠である。",
+    "choiceNotes": {
+      "holds": "三単現。仮定法現在なので原形を使う",
+      "held": "過去形。仮定法現在では原形が入る",
+      "holding": "現在分詞。that 節の述語動詞にならない"
+    },
+    "difficulty": 3,
+    "tags": ["仮定法現在", "essential that"]
+  },
+  {
+    "id": "p5-subjunctive-013",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "___ it not for the backup generator, the facility would be without power right now.",
+    "choices": ["Had", "If", "Was", "Were"],
+    "answerIndex": 3,
+    "explanation": "If it were not for 〜（〜がなければ）の if が省略された倒置形。主節が would be なので現在の事実に反する仮定。",
+    "translation": "予備の発電機がなければ、その施設は今ごろ停電しているだろう。",
+    "choiceNotes": {
+      "Had": "Had it not been for なら過去の話。主節が would be なので現在の仮定に合わない",
+      "If": "接続詞。倒置ではないので後ろに it were not for が必要になる",
+      "Was": "仮定法では主語が何であっても were を使う"
+    },
+    "difficulty": 3,
+    "tags": ["were it not for", "倒置"]
+  },
+  {
+    "id": "p5-subjunctive-014",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "The client would rather the presentation ___ on Thursday than on Friday afternoon.",
+    "choices": ["is held", "be held", "were held", "will be held"],
+    "answerIndex": 2,
+    "explanation": "would rather の後ろに「主語 + 動詞」が続く場合、動詞は過去形にして願望を表す（仮定法過去）。",
+    "translation": "その顧客は、発表会を金曜の午後よりも木曜に開いてほしいと思っている。",
+    "choiceNotes": {
+      "is held": "直説法の現在形。would rather の後ろの節では過去形を使う",
+      "be held": "原形。would rather + S の形では過去形になる",
+      "will be held": "未来形。would rather の後ろの節では使わない"
+    },
+    "difficulty": 3,
+    "tags": ["would rather + S + 過去形"]
+  },
+  {
+    "id": "p5-subjunctive-015",
+    "part": 5,
+    "category": "仮定法",
+    "sentence": "If the additional funding ___ approved last year, the research would have been completed by now.",
+    "choices": ["were", "was", "had been", "has been"],
+    "answerIndex": 2,
+    "explanation": "主節が would have been completed なので仮定法過去完了。資金は「承認される」側なので had been + 過去分詞にする。",
+    "translation": "追加の資金が昨年承認されていれば、その研究は今ごろ完了していただろう。",
+    "choiceNotes": {
+      "was": "直説法の過去形。過去の事実に反する仮定は過去完了で表す",
+      "has been": "現在完了。仮定法過去完了の if 節にならない",
+      "were": "仮定法過去。主節が完了形なので if 節も過去完了にする"
+    },
+    "difficulty": 2,
+    "tags": ["仮定法過去完了", "受動態"]
   }
 ]

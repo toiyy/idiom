@@ -4,8 +4,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "Because the technician was unavailable that afternoon, Ms. Reyes configured the new server ___.",
-    "choices": ["hers", "herself", "she", "her"],
-    "answerIndex": 1,
+    "choices": ["her", "hers", "herself", "she"],
+    "answerIndex": 2,
     "explanation": "「彼女自身で」と主語の動作を強調する再帰代名詞 herself が正解。by herself の by が省略された用法。configure の目的語はすでに the new server があるので目的格 her は不可。",
     "translation": "その日の午後は技術者の手が空いていなかったため、レイエスさんは新しいサーバーを自分で設定した。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "The sales figures for this quarter are significantly higher than ___ of the same period last year.",
-    "choices": ["those", "them", "it", "that"],
-    "answerIndex": 0,
+    "choices": ["that", "those", "them", "it"],
+    "answerIndex": 1,
     "explanation": "比較の対象は複数形の figures なので、名詞の繰り返しを避ける代名詞も複数形の those を使う。単数なら that。",
     "translation": "今四半期の売上高は、昨年の同時期の売上高を大幅に上回っている。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "One of the two proposals focuses on cost reduction, while ___ emphasizes long-term growth.",
-    "choices": ["other", "the other", "others", "another"],
-    "answerIndex": 1,
+    "choices": ["another", "other", "the other", "others"],
+    "answerIndex": 2,
     "explanation": "2 つのうち「一方」が One で、残る「もう一方」は 1 つに特定されるので the other が正解。another は「（3 つ以上のうち）不特定のもう 1 つ」を指す。",
     "translation": "2つの提案のうち一方はコスト削減に重点を置き、もう一方は長期的な成長を重視している。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "If the current printer breaks down again, the office will purchase a new ___.",
-    "choices": ["other", "it", "one", "that"],
-    "answerIndex": 2,
+    "choices": ["that", "other", "it", "one"],
+    "answerIndex": 3,
     "explanation": "前に出た名詞と同種の「不特定の1つ」を指すので one。it は同一のものを指すため合わない。",
     "translation": "現在のプリンターがまた故障したら、事務所は新しいものを購入する。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "The two departments now share their sales forecasts with ___ every quarter.",
-    "choices": ["another", "each other", "themselves", "one and other"],
-    "answerIndex": 1,
+    "choices": ["each other", "themselves", "one and other", "another"],
+    "answerIndex": 0,
     "explanation": "「お互いに」は each other。themselves は「自分たち自身」で意味が異なる。",
     "translation": "その2つの部署は現在、四半期ごとに互いの売上予測を共有している。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "The board members reviewed every application ___ rather than delegating the task.",
-    "choices": ["them", "they", "themselves", "their"],
-    "answerIndex": 2,
+    "choices": ["themselves", "their", "them", "they"],
+    "answerIndex": 0,
     "explanation": "「自分たち自身で」と主語の動作を強調する再帰代名詞 themselves。",
     "translation": "取締役会のメンバーは、その作業を任せるのではなく自分たちで全応募書類を確認した。",
     "choiceNotes": {
@@ -140,8 +140,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "The output of the Kyoto plant now exceeds ___ of the Nagoya facility.",
-    "choices": ["those", "that", "them", "it"],
-    "answerIndex": 1,
+    "choices": ["it", "those", "that", "them"],
+    "answerIndex": 2,
     "explanation": "比較対象は単数の output なので、繰り返しを避ける代名詞は単数の that。複数なら those。",
     "translation": "京都工場の生産量は現在、名古屋工場の生産量を上回っている。",
     "choiceNotes": {
@@ -157,8 +157,8 @@
     "part": 5,
     "category": "代名詞",
     "sentence": "Three of the five machines have been serviced; ___ are scheduled for next week.",
-    "choices": ["the others", "another", "other", "others"],
-    "answerIndex": 0,
+    "choices": ["others", "the others", "another", "other"],
+    "answerIndex": 1,
     "explanation": "5台のうち3台を除いた「残り全部」が特定されるので the others。others は不特定の「他のもの」を指す。",
     "translation": "5台のうち3台は整備済みで、残りは来週の予定だ。",
     "choiceNotes": {
@@ -168,5 +168,90 @@
     },
     "difficulty": 3,
     "tags": ["the others", "others"]
+  },
+  {
+    "id": "p5-pronoun-011",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "Some of the attendees preferred the morning session, while ___ found the afternoon slot easier.",
+    "choices": ["other", "others", "the others", "another"],
+    "answerIndex": 1,
+    "explanation": "Some 〜, others … =「〜する人もいれば、…する人もいる」。残り全体を指しているわけではないので the others ではない。",
+    "translation": "午前の部を好む参加者もいれば、午後の枠のほうが都合がよいという人もいた。",
+    "choiceNotes": {
+      "another": "「もう1つ」という単数。動詞 found の主語として複数を受けられない",
+      "other": "単独では代名詞にならず、後ろに名詞が必要",
+      "the others": "「残り全部」と特定する形。ここは残り全員とは限らない"
+    },
+    "difficulty": 2,
+    "tags": ["some ... others"]
+  },
+  {
+    "id": "p5-pronoun-012",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "___ who wishes to attend the workshop must register with the front desk by Thursday.",
+    "choices": ["Anyone", "Those", "They", "Them"],
+    "answerIndex": 0,
+    "explanation": "関係詞の中の動詞が三単現の wishes なので、先行詞は単数の Anyone。Those なら wish と複数形になる。",
+    "translation": "講習会への参加を希望する人は、木曜までに受付で登録しなければならない。",
+    "choiceNotes": {
+      "Those": "複数を受ける形。動詞が wishes と単数なので合わない",
+      "They": "関係代名詞 who の先行詞にはなれない",
+      "Them": "目的格。文の主語にはなれない"
+    },
+    "difficulty": 2,
+    "tags": ["anyone who", "単数扱い"]
+  },
+  {
+    "id": "p5-pronoun-013",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "___ takes approximately forty minutes to travel from the airport to the conference center.",
+    "choices": ["That", "This", "It", "There"],
+    "answerIndex": 2,
+    "explanation": "所要時間を表す文では、意味を持たない形式的な主語として it を使う。",
+    "translation": "空港から会議場までは、移動におよそ40分かかる。",
+    "choiceNotes": {
+      "There": "存在を表す構文を作る語。takes という一般動詞とは組まない",
+      "That": "特定のものを指す代名詞。時間や距離を表す形式主語にならない",
+      "This": "特定のものを指す代名詞。所要時間の主語にはならない"
+    },
+    "difficulty": 2,
+    "tags": ["非人称の it"]
+  },
+  {
+    "id": "p5-pronoun-014",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "The device will shut ___ down if the internal temperature exceeds the safe operating range.",
+    "choices": ["its", "oneself", "itself", "it"],
+    "answerIndex": 2,
+    "explanation": "主語 The device が自分自身を停止させるので再帰代名詞 itself。さらに句動詞 shut down の目的語が代名詞のときは、動詞と副詞の間に置く。",
+    "translation": "その装置は、内部温度が安全な動作範囲を超えると自動的に停止する。",
+    "choiceNotes": {
+      "it": "目的格。主語と同じものを指すときは再帰代名詞を使う",
+      "its": "所有格。後ろに名詞が必要",
+      "oneself": "一般論で使う再帰代名詞。特定の主語 The device は受けられない"
+    },
+    "difficulty": 2,
+    "tags": ["再帰代名詞", "句動詞の語順"]
+  },
+  {
+    "id": "p5-pronoun-015",
+    "part": 5,
+    "category": "代名詞",
+    "sentence": "Both candidates have strong technical skills, but only ___ has managed a team of this size.",
+    "choices": ["latter", "the late", "later", "the latter"],
+    "answerIndex": 3,
+    "explanation": "2 つのうち後者を指すときは the latter。必ず定冠詞を伴う。前者なら the former。",
+    "translation": "2人の候補者はどちらも高い技術力を持つが、この規模のチームを率いた経験があるのは後者だけだ。",
+    "choiceNotes": {
+      "latter": "必ず the を伴って the latter の形で使う",
+      "the late": "「故〜・遅れた」という別の意味",
+      "later": "「後で」という副詞・比較級。2 者の後者を指す用法はない"
+    },
+    "difficulty": 3,
+    "tags": ["the latter"]
   }
 ]

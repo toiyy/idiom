@@ -5,8 +5,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ in 1985, Harrow Manufacturing has grown into the region's largest private employer.",
-    "choices": ["Founded", "To found", "Founds", "Founding"],
-    "answerIndex": 0,
+    "choices": ["Founds", "Founding", "Founded", "To found"],
+    "answerIndex": 2,
     "explanation": "主語 Harrow Manufacturing は「設立された」側なので過去分詞で始まる分詞構文。現在分詞 Founding だと能動の意味になり合わない。",
     "translation": "1985年に設立されたハロー製造社は、その地域で最大の民間雇用主へと成長した。",
     "choiceNotes": {
@@ -59,8 +59,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ that the shipment would be delayed, the manager notified all affected clients.",
-    "choices": ["Known", "To know", "Know", "Knowing"],
-    "answerIndex": 3,
+    "choices": ["To know", "Know", "Knowing", "Known"],
+    "answerIndex": 2,
     "explanation": "主語 the manager が「知っていた」側なので、能動を表す現在分詞の分詞構文。",
     "translation": "出荷が遅れると分かっていたので、部長は影響を受ける顧客全員に連絡した。",
     "choiceNotes": {
@@ -113,8 +113,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "The ___ figures show a twelve percent increase over the same period last year.",
-    "choices": ["revised", "revision", "revise", "revising"],
-    "answerIndex": 0,
+    "choices": ["revising", "revised", "revision", "revise"],
+    "answerIndex": 1,
     "explanation": "名詞 figures を前から修飾する分詞。数値は「修正される」側なので過去分詞 revised。",
     "translation": "修正後の数値は、昨年の同時期より12パーセントの増加を示している。",
     "choiceNotes": {
@@ -131,8 +131,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ by heavy snowfall, the delivery trucks arrived four hours behind schedule.",
-    "choices": ["Delay", "Delaying", "Delayed", "To delay"],
-    "answerIndex": 2,
+    "choices": ["Delayed", "To delay", "Delay", "Delaying"],
+    "answerIndex": 0,
     "explanation": "主語 the trucks は「遅らされた」側なので、受動を表す過去分詞の分詞構文。",
     "translation": "大雪で遅れたため、配送トラックは予定より4時間遅れて到着した。",
     "choiceNotes": {

@@ -21,8 +21,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "Please keep the storage room ___ at all times when it is not in use.",
-    "choices": ["locking", "lock", "locks", "locked"],
-    "answerIndex": 3,
+    "choices": ["locks", "locked", "locking", "lock"],
+    "answerIndex": 1,
     "explanation": "「keep + 目的語 + 補語」の形。部屋は「施錠される」側なので過去分詞 locked が補語になる。",
     "translation": "保管室は、使用していないときは常に施錠しておいてください。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "Participants found the workshop materials ___ and easy to apply on the job.",
-    "choices": ["practical", "practicing", "practically", "practice"],
-    "answerIndex": 0,
+    "choices": ["practically", "practice", "practical", "practicing"],
+    "answerIndex": 2,
     "explanation": "「find + 目的語 + 補語」の形で、補語には形容詞が入る。practical（実用的な）が正解。",
     "translation": "参加者は、講習会の資料が実用的で仕事にも応用しやすいと感じた。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The technician checked each monitor in the server room and then turned ___.",
-    "choices": ["it off", "off them", "them off", "off it"],
-    "answerIndex": 2,
+    "choices": ["them off", "off it", "it off", "off them"],
+    "answerIndex": 0,
     "explanation": "句動詞の目的語が代名詞のときは、必ず動詞と副詞の間に置く（turn them off）。名詞なら turn off the monitors の語順も可。monitor は複数あるので them。",
     "translation": "技術者はサーバー室の各モニターを確認し、それから電源を切った。",
     "choiceNotes": {
