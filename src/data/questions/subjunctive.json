@@ -37,7 +37,7 @@
     "id": "p5-subjunctive-003",
     "part": 5,
     "category": "仮定法",
-    "sentence": "Were the budget ___ , the department would hire two additional analysts this year.",
+    "sentence": "Were the budget ___, the department would hire two additional analysts this year.",
     "choices": ["approved", "approval", "approve", "approving"],
     "answerIndex": 0,
     "explanation": "If the budget were approved の if が省略されて were が文頭に出た倒置形。budget は「承認される」側なので過去分詞 approved が入る。",

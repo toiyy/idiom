@@ -139,17 +139,22 @@
     "id": "p5-voice-009",
     "part": 5,
     "category": "態",
-    "sentence": "The error ___ have been detected earlier if the logs had been reviewed daily.",
-    "choices": ["must", "can", "will", "should"],
+    "sentence": "The error ___ earlier if the logs had been reviewed daily.",
+    "choices": [
+      "should be detected",
+      "should detect",
+      "should have detected",
+      "should have been detected"
+    ],
     "answerIndex": 3,
-    "explanation": "「〜されるべきだった（のにされなかった）」を表すので should have been + 過去分詞。",
+    "explanation": "error は「発見される」側なので受動態。さらに過去に実際には行われなかったことを表すので should have been + 過去分詞にする。",
     "translation": "日誌が毎日確認されていれば、その誤りはもっと早く発見されていたはずだ。",
     "choiceNotes": {
-      "must": "must have been は「〜されたに違いない」。実際は発見されていない",
-      "can": "can have been は疑問文・否定文以外ではほとんど使わない",
-      "will": "will have been は未来完了。過去への後悔は表せない"
+      "should detect": "能動態。error は発見する側ではなく発見される側",
+      "should have detected": "能動の完了形。error が何かを発見したことになってしまう",
+      "should be detected": "受動だが現在の話になる。過去に発見されなかった内容なので完了形が必要"
     },
     "difficulty": 3,
-    "tags": ["助動詞+完了受動態"]
+    "tags": ["受動態", "助動詞+完了"]
   }
 ]

@@ -158,7 +158,7 @@
       "take": "take a survey は「アンケートに答える」側の意味になる",
       "do": "口語では使われることもあるが、正式には conduct を用いる"
     },
-    "difficulty": 2,
+    "difficulty": 3,
     "tags": ["conduct a survey"]
   },
   {
@@ -194,7 +194,7 @@
       "enlarge": "「大きくする」。deadline とは結びつかない",
       "prolong": "「時間を長引かせる」。deadline とは組まない"
     },
-    "difficulty": 2,
+    "difficulty": 3,
     "tags": ["extend a deadline"]
   },
   {
@@ -266,7 +266,7 @@
       "give": "give a complaint とは言わない",
       "put": "put a complaint という形はない"
     },
-    "difficulty": 2,
+    "difficulty": 3,
     "tags": ["file a complaint"]
   }
 ]

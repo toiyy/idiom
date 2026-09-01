@@ -23,14 +23,14 @@
     "category": "語彙",
     "subcategory": "句動詞",
     "sentence": "The company plans to ___ out a new line of eco-friendly packaging next spring.",
-    "choices": ["take", "put", "bring", "roll"],
+    "choices": ["carry", "hold", "run", "roll"],
     "answerIndex": 3,
-    "explanation": "roll out = （新製品・サービスを）展開する、市場に投入する。take out は「取り出す」、put out は「消す / 公表する」。",
+    "explanation": "roll out = （新製品・サービスを）展開する、市場に投入する。carry out は計画や調査を「実施する」、hold out は「持ちこたえる」、run out は「尽きる」。",
     "translation": "その会社は来春、環境に配慮した新しい包装製品を市場に投入する予定だ。",
     "choiceNotes": {
-      "take": "take out は「取り出す」。新製品の展開にはならない",
-      "put": "put out は「消す・公表する」で意味が合わない",
-      "bring": "bring out は「世に出す」だが、out と組んで市場展開を表す定型は roll out"
+      "carry": "carry out は計画や調査を「実施する」。製品の市場投入には使わない",
+      "hold": "hold out は「持ちこたえる・差し出す」の意味",
+      "run": "run out は「尽きる」。製品を世に出す意味にならない"
     },
     "difficulty": 2,
     "tags": ["roll out"]

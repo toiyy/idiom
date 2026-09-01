@@ -72,13 +72,13 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The temperature in the storage room must remain below five degrees ___ the year.",
-    "choices": ["between", "during", "throughout", "among"],
+    "choices": ["between", "along", "throughout", "among"],
     "answerIndex": 2,
-    "explanation": "throughout = 〜の間ずっと（全期間にわたって）。during よりも「全期間」という継続性が明確になる。",
+    "explanation": "throughout = 〜の間ずっと（全期間にわたって）。between / along / among はいずれも期間の継続を表せない。",
     "translation": "保管室の温度は、一年を通じて5度未満に保たれなければならない。",
     "choiceNotes": {
       "between": "2 者の間を表す。期間全体の継続は表さない",
-      "during": "「〜の間」を表せるが、全期間にわたる継続は throughout が明確",
+      "along": "「〜に沿って」。期間を表す名詞とは組まない",
       "among": "3 者以上の中を表す。期間には使わない"
     },
     "difficulty": 2,

@@ -4,14 +4,14 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The supervisor sent ___ a detailed summary of the safety findings.",
-    "choices": ["each member", "for each member", "each member to", "to each member"],
+    "choices": ["each member", "for each member", "each member to", "each members"],
     "answerIndex": 0,
     "explanation": "send は「send + 人 + もの」の二重目的語をとれる。to を使う場合は send a summary to each member の語順になる。",
     "translation": "その監督者は各メンバーに、安全調査結果の詳細な要約を送った。",
     "choiceNotes": {
       "for each member": "send は for ではなく to を使う",
       "each member to": "語順が誤り。to は名詞の前に置く",
-      "to each member": "to を使うなら send a summary to each member の語順になる"
+      "each members": "each の後ろは単数名詞。members と複数形にはできない"
     },
     "difficulty": 2,
     "tags": ["SVOO", "二重目的語"]

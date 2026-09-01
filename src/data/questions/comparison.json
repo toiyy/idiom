@@ -122,13 +122,13 @@
     "id": "p5-comparison-008",
     "part": 5,
     "category": "比較",
-    "sentence": "Among all the branches, the Sapporo office reported the ___ number of customer complaints.",
+    "sentence": "Among all the branches, the Sapporo office reported the ___ customer complaints.",
     "choices": ["less", "few", "fewer", "fewest"],
     "answerIndex": 3,
-    "explanation": "Among all 〜 という3つ以上の比較範囲があり the が付いているので最上級。number は可算なので less ではなく fewest。",
-    "translation": "全支店の中で、札幌事務所が報告した顧客からの苦情件数が最も少なかった。",
+    "explanation": "Among all 〜 という 3 つ以上の比較範囲があり the が付いているので最上級。complaints は可算名詞なので less ではなく fewest。",
+    "translation": "全支店の中で、札幌事務所が報告した顧客からの苦情が最も少なかった。",
     "choiceNotes": {
-      "less": "不可算名詞に使う。number は可算なので不可",
+      "less": "不可算名詞に使う。complaints は可算の複数形",
       "few": "原級。the が付いているので最上級が必要",
       "fewer": "比較級。Among all という 3 つ以上の範囲には最上級を使う"
     },
