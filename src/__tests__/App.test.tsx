@@ -29,6 +29,24 @@ async function answer(user: User, opts: { correct: boolean; confidence: Label })
   await user.click(screen.getByRole('button', { name: /次の問題へ|結果を見る/ }));
 }
 
+/** 出題中セッションの総問題数（「1 / 6」の 6）。問題を増やしてもテストが壊れないよう画面から読む。 */
+function sessionTotal(): number {
+  const text = document.querySelector('.card__meta span')?.textContent ?? '';
+  const total = Number(text.split('/')[1]?.trim());
+  if (!Number.isFinite(total)) throw new Error(`問題数を読み取れませんでした: "${text}"`);
+  return total;
+}
+
+/** セッションを最後まで解き切る。plan(i) が i 問目の解き方を返す。 */
+async function answerAll(user: User, plan: (i: number) => { correct: boolean; confidence: Label }) {
+  const total = sessionTotal();
+  for (let i = 0; i < total; i++) await answer(user, plan(i));
+  return total;
+}
+
+/** 問題数が最も少ないカテゴリ。セッション全体を解き切るテストを短く保つために使う。 */
+const SHORT = { name: /^関係副詞/, size: 6 };
+
 beforeEach(() => {
   localStorage.clear();
 });
@@ -46,20 +64,22 @@ describe('ホーム画面', () => {
     expect(screen.getByRole('button', { name: /^復習/ })).toBeDisabled();
   });
 
-  it('サブカテゴリを持たない 18 カテゴリがフラットに並ぶ', () => {
+  it('サブカテゴリを持たない 16 カテゴリがフラットに並ぶ', () => {
     render(<App />);
     const flatGrid = document.querySelector('.card .category-list');
-    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(18);
+    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(16);
   });
 
-  it('品詞識別と語彙が 2 段グループになる', () => {
+  it('4 カテゴリが 2 段グループになる', () => {
     render(<App />);
     const groups = Array.from(document.querySelectorAll('.category-group'));
-    // 並びは問題ファイル名順（vocabulary-* → word-form-*）で決まる
+    // 並びは問題ファイル名順（relatives-* → verbals-* → vocabulary-* → word-form-*）で決まる
     const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
-    expect(names).toEqual(['語彙', '品詞識別']);
-    expect(groups[0].querySelectorAll('.category')).toHaveLength(7);
+    expect(names).toEqual(['関係詞', '準動詞', '語彙', '品詞識別']);
+    expect(groups[0].querySelectorAll('.category')).toHaveLength(2);
     expect(groups[1].querySelectorAll('.category')).toHaveLength(3);
+    expect(groups[2].querySelectorAll('.category')).toHaveLength(7);
+    expect(groups[3].querySelectorAll('.category')).toHaveLength(3);
   });
 });
 
@@ -140,49 +160,50 @@ describe('復習リストの判定', () => {
   it('自信ありで正解した問題は復習対象にならない', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    for (let i = 0; i < 3; i++) await answer(user, { correct: true, confidence: '自信あり' });
+    const n = await answerAll(user, () => ({ correct: true, confidence: '自信あり' }));
 
-    expect(document.querySelector('.result__score')).toHaveTextContent('3 / 3');
+    expect(document.querySelector('.result__score')).toHaveTextContent(`${n} / ${n}`);
     expect(screen.getByRole('button', { name: '復習する（0）' })).toBeDisabled();
   });
 
-  it('勘で正解した問題は復習対象に残る', async () => {
+  it('勘や迷いで正解した問題は復習対象に残る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    await answer(user, { correct: true, confidence: '勘' });
-    await answer(user, { correct: true, confidence: '迷った' });
-    await answer(user, { correct: true, confidence: '自信あり' });
+    // 最初の 2 問だけ確信なし、残りは自信ありで、いずれも正解する
+    const n = await answerAll(user, (i) => ({
+      correct: true,
+      confidence: i === 0 ? '勘' : i === 1 ? '迷った' : '自信あり',
+    }));
 
-    // 3 問全問正解でも、確信のない 2 問は復習に残る
-    expect(document.querySelector('.result__score')).toHaveTextContent('3 / 3');
+    // 全問正解でも、確信のない 2 問は復習に残る
+    expect(document.querySelector('.result__score')).toHaveTextContent(`${n} / ${n}`);
     expect(screen.getByRole('button', { name: '復習する（2）' })).toBeEnabled();
   });
 
   it('誤答した問題が復習モードで再出題される', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    for (let i = 0; i < 3; i++) await answer(user, { correct: false, confidence: '勘' });
+    const n = await answerAll(user, () => ({ correct: false, confidence: '勘' }));
 
-    expect(document.querySelector('.result__score')).toHaveTextContent('0 / 3');
-    await user.click(screen.getByRole('button', { name: '復習する（3）' }));
-    expect(screen.getByText('1 / 3')).toBeInTheDocument();
+    expect(document.querySelector('.result__score')).toHaveTextContent(`0 / ${n}`);
+    await user.click(screen.getByRole('button', { name: `復習する（${n}）` }));
+    expect(screen.getByText(`1 / ${n}`)).toBeInTheDocument();
     expect(screen.getByText('復習')).toBeInTheDocument();
   });
 
   it('復習で自信ありで正解すると復習対象が空になる', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    await answer(user, { correct: false, confidence: '勘' });
-    await answer(user, { correct: true, confidence: '自信あり' });
-    await answer(user, { correct: true, confidence: '自信あり' });
+    // 1 問目だけ落とし、残りは自信ありで正解する
+    await answerAll(user, (i) => ({ correct: i !== 0, confidence: i === 0 ? '勘' : '自信あり' }));
 
     await user.click(screen.getByRole('button', { name: '復習する（1）' }));
     expect(screen.getByText('1 / 1')).toBeInTheDocument();
@@ -196,18 +217,29 @@ describe('自信度の集計', () => {
   it('結果画面に自信度ごとの正答率が出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    await answer(user, { correct: true, confidence: '自信あり' });
-    await answer(user, { correct: true, confidence: '勘' });
-    await answer(user, { correct: false, confidence: '勘' });
+    // 自信あり 2/2、迷った 1/2、勘 1/2 になるよう解く
+    const plan: { correct: boolean; confidence: Label }[] = [
+      { correct: true, confidence: '自信あり' },
+      { correct: true, confidence: '自信あり' },
+      { correct: true, confidence: '迷った' },
+      { correct: false, confidence: '迷った' },
+      { correct: true, confidence: '勘' },
+      { correct: false, confidence: '勘' },
+    ];
+    expect(sessionTotal()).toBe(plan.length);
+    await answerAll(user, (i) => plan[i]);
 
     const rows = document.querySelectorAll('.conf-table tbody tr');
     expect(rows[0]).toHaveTextContent('自信あり');
     expect(rows[0]).toHaveTextContent('100%');
+    expect(rows[1]).toHaveTextContent('迷った');
+    expect(rows[1]).toHaveTextContent('50%');
     expect(rows[2]).toHaveTextContent('勘');
     expect(rows[2]).toHaveTextContent('50%');
-    expect(document.querySelector('.conf-table__note')).toHaveTextContent('1 問');
+    // 確信なしで正解した 2 問（迷った 1 + 勘 1）が注記に出る
+    expect(document.querySelector('.conf-table__note')).toHaveTextContent('2 問');
   });
 });
 

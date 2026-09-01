@@ -55,7 +55,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(243);
+    expect(questions.length).toBeGreaterThanOrEqual(333);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -63,11 +63,12 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('20 カテゴリすべてに問題がある', () => {
+  it('20 カテゴリすべてに 8 問以上ある', () => {
     const categories = listCategories(questions);
     expect(categories).toHaveLength(20);
+    // フェーズ4 で薄いカテゴリを解消したので、以後 8 問を下限として維持する
     for (const c of categories) {
-      expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(3);
+      expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(8);
     }
   });
 
@@ -108,11 +109,26 @@ describe('同梱データ', () => {
     }
   });
 
-  it('サブカテゴリを持つのは語彙と品詞識別だけ', () => {
+  it('サブカテゴリを持つのは 4 カテゴリ', () => {
     const nested = listCategories(questions)
       .filter((c) => c.subcategories.length > 0)
       .map((c) => c.category);
-    expect(nested.sort()).toEqual(['品詞識別', '語彙']);
+    expect(nested.sort()).toEqual(['品詞識別', '準動詞', '語彙', '関係詞']);
+  });
+
+  it('準動詞が 3 サブカテゴリ、関係詞が 2 サブカテゴリに分かれている', () => {
+    const cats = listCategories(questions);
+    const verbals = cats.find((c) => c.category === '準動詞');
+    expect(verbals?.subcategories.map((s) => s.subcategory).sort()).toEqual([
+      '不定詞',
+      '分詞',
+      '動名詞',
+    ]);
+    const relatives = cats.find((c) => c.category === '関係詞');
+    expect(relatives?.subcategories.map((s) => s.subcategory).sort()).toEqual([
+      '関係代名詞',
+      '関係副詞',
+    ]);
   });
 
   it('サブカテゴリ内のカテゴリ名が一貫している', () => {

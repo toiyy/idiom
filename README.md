@@ -82,7 +82,7 @@ Zod スキーマで一括検証される（不備があれば起動時に例外�
 1. `src/data/questions/<カテゴリ名>.json` を新規作成し、下記スキーマの配列を書く
 2. `npm test` でスキーマ検証（`question-schema.test.ts`）が通ることを確認
 
-現在の同梱データ: **20 カテゴリ / 243 問**（すべて Part 5 形式）。
+現在の同梱データ: **20 カテゴリ / 333 問**（すべて Part 5 形式）。各カテゴリ 8 問以上。
 
 品詞識別 1 カテゴリ × 3 サブカテゴリ × 15 問 = 45 問:
 
@@ -95,14 +95,24 @@ word-form-adverb      副詞の位置（助動詞+___+動詞 / be+___+過去分�
 品詞識別が最も厚いのは、本番の Part 5 でこの型が最頻出（30 問中 8〜10 問が目安）
 だからです。位置さえ見れば意味を知らなくても解けるので、確実に取り切りたい領域。
 
-文法 18 カテゴリ = 93 問:
+準動詞 1 カテゴリ × 3 サブカテゴリ = 24 問 / 関係詞 1 カテゴリ × 2 サブカテゴリ = 15 問:
 
 ```
-# 初期からある 11 カテゴリ（各 3 問）
-tense / voice / verbals / relatives / conjunction-preposition / prepositions
+verbals-infinitive     不定詞（目的 / easy to do / too ... to / enough to …）
+verbals-gerund         動名詞（avoid / finish / look forward to / be worth …）
+verbals-participle     分詞（後置修飾 / 分詞構文 / compared with …）
+relatives-pronoun      関係代名詞（who / whom / whose / 前置詞+which / 非制限用法 …）
+relatives-adverb       関係副詞（where / when / why / how / wherever / however …）
+```
+
+文法 16 カテゴリ = 144 問:
+
+```
+# 初期からあるカテゴリ（各 9〜10 問）
+tense / voice / conjunction-preposition / prepositions
 pronouns / comparison / subjunctive / agreement / quantifiers
 
-# フェーズ3 で新設した 7 カテゴリ
+# フェーズ3 で新設した 7 カテゴリ（各 8〜10 問）
 modals                  助動詞（must have / should have / used to vs be used to …）
 articles                冠詞・限定詞（a university / an hour / most of / none of …）
 noun-clauses            名詞節（whether vs if / 同格の that / 先行詞を含む what …）
@@ -137,21 +147,21 @@ vocabulary-connectives        接続副詞（however / nevertheless / accordingl
 ### サブカテゴリ
 
 `subcategory` は**任意**のフィールドで、分量が多く細分化したいカテゴリだけが持ちます。
-現在は `語彙`（7 分割）と `品詞識別`（3 分割）だけ。時制などは付けないため、
-ホーム画面ではフラットなボタンとして並びます。将来 `準動詞` を
-「不定詞 / 動名詞 / 分詞」に割りたくなったときも、同じ仕組みで分割できます。
+現在は `語彙`（7 分割）/ `品詞識別`（3 分割）/ `準動詞`（3 分割）/ `関係詞`（2 分割）の
+4 カテゴリ。時制などの残り 16 カテゴリは付けないため、ホーム画面ではフラットな
+ボタンとして並びます。問題が増えたカテゴリは、いつでも同じ仕組みで後から分割できます。
 
 ### 問題数の目標
 
-現在 243 問。反復で答えを覚えてしまわないようにするには、1 日 20 問ペースで
-2 週間空けられる **280 問以上**が目安。完成形は約 370 問を想定している。
+現在 333 問。反復で答えを覚えてしまわないための目安である **280 問**（1 日 20 問
+ペースで 2 週間空けられる量）は超えた。完成形は約 370 問を想定している。
 
 | フェーズ | 内容                                                                                                                | 状態            |
 | -------- | ------------------------------------------------------------------------------------------------------------------- | --------------- |
 | 1        | 品詞識別を 3 分割 × 15 問                                                                                           | **完了**（+45） |
 | 2        | 語彙 7 サブカテゴリを各 15 問に                                                                                     | **完了**（+70） |
 | 3        | 未カバー 7 カテゴリを新設（助動詞 / 冠詞・限定詞 / 名詞節 / 相関表現 / 倒置・強調・省略 / 文型・語順 / 分詞形容詞） | **完了**（+60） |
-| 4        | 既存文法カテゴリの厚み増し、準動詞・関係詞の分割                                                                    | 未着手（+90）   |
+| 4        | 既存文法カテゴリの厚み増し、準動詞・関係詞の分割                                                                    | **完了**（+90） |
 | 5        | 難問（もっともらしい 2 択に絞られる問題）                                                                           | 未着手（+35）   |
 
 ### 1 問のスキーマ
@@ -203,6 +213,6 @@ src/
 │   └── storage.ts         # localStorage ラッパ・自信度と復習判定
 ├── components/            # HomeScreen / QuestionCard / ChoiceButton /
 │                          # ConfidenceTable / ResultView
-├── __tests__/             # Vitest（80 tests）
+├── __tests__/             # Vitest（81 tests）
 └── App.tsx                # home / quiz / result の画面遷移
 ```
