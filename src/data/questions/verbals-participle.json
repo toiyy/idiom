@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "主語 Harrow Manufacturing は「設立された」側なので過去分詞で始まる分詞構文。現在分詞 Founding だと能動の意味になり合わない。",
     "translation": "1985年に設立されたハロー製造社は、その地域で最大の民間雇用主へと成長した。",
+    "choiceNotes": {
+      "Founding": "現在分詞。会社は設立される側なので能動では意味が逆になる",
+      "To found": "to 不定詞。目的を表す形になり、時期を示す in 1985 と合わない",
+      "Founds": "三単現の動詞。カンマの前に述語動詞は置けない"
+    },
     "difficulty": 3,
     "tags": ["分詞構文", "過去分詞"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 3,
     "explanation": "名詞 employees を後ろから修飾する分詞。employees は「参加する」側なので能動の現在分詞。",
     "translation": "試験プログラムに参加する従業員は、追加の研修単位を得られる。",
+    "choiceNotes": {
+      "participated": "過去分詞。employees は参加する側なので能動が必要",
+      "to participate": "to 不定詞。「これから参加する」の意味になり文意が変わる",
+      "participate": "動詞の原形。すでに述語動詞 will receive がある"
+    },
     "difficulty": 2,
     "tags": ["分詞", "後置修飾"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 3,
     "explanation": "名詞 items を後ろから修飾する分詞。items は「購入される」側なので受動の過去分詞。",
     "translation": "在庫処分セール期間中に購入された商品はすべて、14日以内であれば交換できる。",
+    "choiceNotes": {
+      "to purchase": "to 不定詞。「これから購入する商品」となり文意に合わない",
+      "purchase": "動詞の原形。すでに述語動詞 are がある",
+      "purchasing": "現在分詞。items は購入される側なので受動が必要"
+    },
     "difficulty": 2,
     "tags": ["分詞", "後置修飾"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 2,
     "explanation": "主語 the manager が「知っていた」側なので、能動を表す現在分詞の分詞構文。",
     "translation": "出荷が遅れると分かっていたので、部長は影響を受ける顧客全員に連絡した。",
+    "choiceNotes": {
+      "To know": "to 不定詞。目的を表す形になり文意に合わない",
+      "Know": "動詞の原形。カンマの前に述語動詞は置けない",
+      "Known": "過去分詞。部長は知っている側なので能動が必要"
+    },
     "difficulty": 3,
     "tags": ["分詞構文", "現在分詞"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 1,
     "explanation": "Compared with 〜 = 〜と比べると。主語 the printer は「比較される」側なので過去分詞。",
     "translation": "従来機と比べると、新しいプリンターはトナーの使用量が40パーセント少ない。",
+    "choiceNotes": {
+      "Comparing": "現在分詞。プリンターは比較される側なので受動が必要",
+      "To compare": "to 不定詞。目的を表す形になり文意に合わない",
+      "Compare": "動詞の原形。カンマの前に述語動詞は置けない"
+    },
     "difficulty": 3,
     "tags": ["分詞構文", "compared with"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 2,
     "explanation": "副詞節の「主語 + be 動詞」が省略された形。省略された主語 you は「操作する」側なので現在分詞が残る。",
     "translation": "切断機を操作する際は、必ず絶縁手袋と保護ゴーグルを着用してください。",
+    "choiceNotes": {
+      "to operate": "When の後ろに to 不定詞は続かない",
+      "operate": "動詞の原形。When 節の主語が省略されているので分詞が入る",
+      "operated": "過去分詞。省略された主語 you は操作する側なので能動が必要"
+    },
     "difficulty": 3,
     "tags": ["分詞", "接続詞+分詞"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 1,
     "explanation": "名詞 figures を前から修飾する分詞。数値は「修正される」側なので過去分詞 revised。",
     "translation": "修正後の数値は、昨年の同時期より12パーセントの増加を示している。",
+    "choiceNotes": {
+      "revising": "現在分詞。数値は修正される側なので受動が必要",
+      "revision": "名詞。The revision figures とは言わない",
+      "revise": "動詞の原形。名詞 figures を修飾できない"
+    },
     "difficulty": 2,
     "tags": ["分詞", "前置修飾"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 0,
     "explanation": "主語 the trucks は「遅らされた」側なので、受動を表す過去分詞の分詞構文。",
     "translation": "大雪で遅れたため、配送トラックは予定より4時間遅れて到着した。",
+    "choiceNotes": {
+      "To delay": "to 不定詞。目的を表す形になり文意に合わない",
+      "Delay": "動詞の原形。カンマの前に述語動詞は置けない",
+      "Delaying": "現在分詞。トラックは遅らされた側なので受動が必要"
+    },
     "difficulty": 3,
     "tags": ["分詞構文", "過去分詞"]
   }

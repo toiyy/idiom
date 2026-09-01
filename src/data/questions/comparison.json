@@ -8,6 +8,11 @@
     "answerIndex": 1,
     "explanation": "Of all the venues という 3 つ以上の比較範囲があり、直前に the があるので最上級 best が正解。better は 2 者の比較に使う。",
     "translation": "我々が視察したすべての会場の中で、川沿いのホテルが大規模会議に最も適した設備を備えていた。",
+    "choiceNotes": {
+      "better": "比較級。2 者の比較に使う語で、Of all とは合わない",
+      "well": "副詞。名詞 facilities を修飾できない",
+      "good": "原級。the が付いているので最上級が必要"
+    },
     "difficulty": 1,
     "tags": ["最上級", "of all"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 3,
     "explanation": "倍数表現は「倍数 + as + 原級 + as」の語順になるので twice as fast as が正解。比較級 faster を使う場合は as ではなく than を伴うが、倍数とは組み合わせない。",
     "translation": "新しい包装機械は、置き換えられた旧型のほぼ2倍の速さで稼働する。",
+    "choiceNotes": {
+      "faster as": "比較級は than を伴う。as とは組まない",
+      "as faster than": "as と比較級 faster を同時に使うことはできない",
+      "so fast than": "so ... than という組み合わせは存在しない"
+    },
     "difficulty": 2,
     "tags": ["倍数表現", "原級"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 3,
     "explanation": "「The + 比較級 〜, the + 比較級 …（〜すればするほど…）」の構文。likely の比較級は less likely / more likely の形をとる。最上級 least は使えない。",
     "translation": "アンケートの質問が詳細になるほど、回答者が用紙を最後まで記入する可能性は低くなる。",
+    "choiceNotes": {
+      "least likely": "最上級。The 〜, the 〜 構文には比較級が入る",
+      "less likelier": "less と比較級 likelier の重複で成立しない",
+      "little likely": "little は比較級を作れず、構文にも合わない"
+    },
     "difficulty": 3,
     "tags": ["the+比較級", "構文"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 2,
     "explanation": "than があるので比較級 higher。much は比較級を強める副詞。",
     "translation": "今年の参加者数は、当初の見積もりで予想していたよりもはるかに多かった。",
+    "choiceNotes": {
+      "more high": "high の比較級は higher。more は付けない",
+      "high": "原級。than があるので比較級が必要",
+      "highest": "最上級。than とは組まない"
+    },
     "difficulty": 1,
     "tags": ["比較級"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "「as + 原級 + as」の形。肯定文では so ... as の形は使わない。",
     "translation": "小型モデルは大型機とほぼ同じ性能だが、価格は20パーセント安い。",
+    "choiceNotes": {
+      "so": "肯定文では so ... as の形は使わない",
+      "more": "more powerful なら than が必要。as とは組まない",
+      "very": "原級を強めるだけで、as ... as の構文を作らない"
+    },
     "difficulty": 2,
     "tags": ["原級比較"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 3,
     "explanation": "「of the two」という2者の比較では、比較級に the を付けて the more とする。",
     "translation": "2つの提案のうち、現在の人員体制には2つ目のほうが現実的だ。",
+    "choiceNotes": {
+      "most": "最上級。2 者の比較には使わない",
+      "the most": "最上級。of the two とは組まない",
+      "more": "比較級だが、of the two では the を付ける"
+    },
     "difficulty": 3,
     "tags": ["the + 比較級", "2者比較"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 1,
     "explanation": "比較級を強めるのは much / far / even / a lot。very は原級を強める語なので比較級には使えない。",
     "translation": "改訂された床の配置は、置き換えられた従来のものよりもはるかに効率的だ。",
+    "choiceNotes": {
+      "very": "原級を強める語。比較級 more efficient は修飾できない",
+      "so": "so ... that の構文を作る語で、比較級は強められない",
+      "too": "「〜すぎる」。比較級とは組まない"
+    },
     "difficulty": 2,
     "tags": ["比較級の強調"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 3,
     "explanation": "Among all 〜 という3つ以上の比較範囲があり the が付いているので最上級。number は可算なので less ではなく fewest。",
     "translation": "全支店の中で、札幌事務所が報告した顧客からの苦情件数が最も少なかった。",
+    "choiceNotes": {
+      "less": "不可算名詞に使う。number は可算なので不可",
+      "few": "原級。the が付いているので最上級が必要",
+      "fewer": "比較級。Among all という 3 つ以上の範囲には最上級を使う"
+    },
     "difficulty": 3,
     "tags": ["最上級", "few/less"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 2,
     "explanation": "no later than = 遅くとも〜までに。than を伴うので比較級 later が入る。",
     "translation": "記入済みの用紙は、遅くとも月の15日までにご提出ください。",
+    "choiceNotes": {
+      "lately": "副詞「最近」。than とは組まない",
+      "late": "原級。no ... than の形には比較級が入る",
+      "latest": "最上級。than とは組まない"
+    },
     "difficulty": 2,
     "tags": ["no later than"]
   }

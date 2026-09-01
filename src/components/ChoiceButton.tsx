@@ -5,12 +5,14 @@ interface ChoiceButtonProps {
   index: number;
   state: ChoiceState;
   disabled: boolean;
+  /** 回答後に表示する「なぜ違うか」。不正解の選択肢にだけ渡す。 */
+  note?: string;
   onSelect: (index: number) => void;
 }
 
 const MARKS = ['A', 'B', 'C', 'D'];
 
-export function ChoiceButton({ label, index, state, disabled, onSelect }: ChoiceButtonProps) {
+export function ChoiceButton({ label, index, state, disabled, note, onSelect }: ChoiceButtonProps) {
   return (
     <button
       type="button"
@@ -19,7 +21,10 @@ export function ChoiceButton({ label, index, state, disabled, onSelect }: Choice
       onClick={() => onSelect(index)}
     >
       <span className="choice__mark">{MARKS[index] ?? index + 1}</span>
-      <span className="choice__label">{label}</span>
+      <span className="choice__body">
+        <span className="choice__label">{label}</span>
+        {note && <span className="choice__note">{note}</span>}
+      </span>
     </button>
   );
 }

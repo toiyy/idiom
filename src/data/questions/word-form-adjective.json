@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "冠詞 a と名詞 explanation の間なので、名詞を修飾する形容詞 clear が入る。clearly は副詞、clarity は名詞、clarify は動詞。",
     "translation": "改訂された手引書には、経費精算の手続きが分かりやすく説明されている。",
+    "choiceNotes": {
+      "clarify": "動詞「明確にする」。a と explanation の間には入らない",
+      "clearly": "副詞。名詞 explanation を修飾できない",
+      "clarity": "名詞「明快さ」。a clarity explanation とは言わない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "冠詞+名詞"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 3,
     "explanation": "be 動詞の補語にあたる位置なので形容詞。optional（任意の）が正解。副詞 optionally は補語になれない。",
     "translation": "金曜のセミナーへの出席は、6月より前に採用された従業員にとっては任意である。",
+    "choiceNotes": {
+      "option": "名詞。「出席は選択肢だ」となり意味が通らない",
+      "options": "名詞の複数形。単数の Attendance の補語にならない",
+      "optionally": "副詞。be 動詞の補語にはなれない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "補語"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "名詞 solutions を前から修飾する位置なので形容詞。innovative（革新的な）が正解。",
     "translation": "その会社は、中規模の製造業者向けの革新的な解決策を専門としている。",
+    "choiceNotes": {
+      "innovation": "名詞。名詞 solutions を修飾できない",
+      "innovatively": "副詞。名詞 solutions を修飾できない",
+      "innovate": "動詞。前置詞 in の後ろに原形は置けない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "名詞修飾"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "remain は補語をとる動詞なので、後ろには形容詞が入る。optimistic（楽観的な）が正解。副詞 optimistically は補語になれない。",
     "translation": "市場の低迷にもかかわらず、その会社の見通しは依然として楽観的だ。",
+    "choiceNotes": {
+      "optimism": "名詞「楽観主義」。見通しの性質を表すなら形容詞",
+      "optimistically": "副詞。remains の補語にはなれない",
+      "optimist": "名詞「楽観主義者」。outlook は人ではない"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "remain"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 1,
     "explanation": "所有格 Their と名詞 response の間なので形容詞。prompt（迅速な）が正解。",
     "translation": "苦情に対する彼らの迅速な対応が、事態の悪化を防いだ。",
+    "choiceNotes": {
+      "prompted": "過去分詞「促された」。response の性質を表さない",
+      "promptly": "副詞。名詞 response を修飾できない",
+      "promptness": "名詞「迅速さ」。Their promptness response とは言わない"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "所有格+名詞"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 3,
     "explanation": "数量詞 Many と名詞 employees の間なので形容詞。enthusiastic（熱心な）が正解。",
     "translation": "多くの熱心な従業員が、地域貢献プログラムを率いることを申し出た。",
+    "choiceNotes": {
+      "enthusiastically": "副詞。名詞 employees を修飾できない",
+      "enthusiast": "名詞「熱心な人」。employees を修飾する形にならない",
+      "enthusiasm": "名詞「熱意」。Many enthusiasm employees とは言わない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "名詞修飾"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "become は補語をとる動詞なので後ろは形容詞。accessible（利用できる）が正解。accessibility は名詞。",
     "translation": "その研修プラットフォームは、12拠点すべての従業員が利用できるようになった。",
+    "choiceNotes": {
+      "accessibly": "副詞。become の補語にはなれない",
+      "access": "名詞・動詞。become access では意味が通らない",
+      "accessibility": "名詞「利用しやすさ」。プラットフォーム自体がそれになるわけではない"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "become"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "「make + 目的語 + 補語」の形で、目的語 trends の状態を説明するので形容詞。visible（見える）が正解。",
     "translation": "更新されたダッシュボードによって、地域マネージャーは四半期の傾向をずっと把握しやすくなる。",
+    "choiceNotes": {
+      "visibility": "名詞。make O C の C には形容詞が入る",
+      "visibly": "副詞。補語にはなれない",
+      "vision": "名詞「視力・展望」。trends の状態を表さない"
+    },
     "difficulty": 3,
     "tags": ["形容詞", "make O C"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 0,
     "explanation": "冠詞 a と名詞 advantage の間なので形容詞。significant（かなりの）が正解。",
     "translation": "その移転は、輸送費の面で大きな利点をもたらす。",
+    "choiceNotes": {
+      "signify": "動詞「意味する」。a と advantage の間には入らない",
+      "significantly": "副詞。名詞 advantage を修飾できない",
+      "significance": "名詞「重要性」。a significance advantage とは言わない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "冠詞+名詞"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 3,
     "explanation": "seem は補語をとる動詞なので後ろは形容詞。reasonable（妥当な）が正解。",
     "translation": "プロジェクトの規模を考えると、当初の費用見積もりは妥当に思えた。",
+    "choiceNotes": {
+      "reasoning": "名詞「推論」。見積もりがそれになるわけではない",
+      "reason": "名詞「理由」。seem の補語として意味が通らない",
+      "reasonably": "副詞。seem の補語にはなれない"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "seem"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 0,
     "explanation": "名詞 support を前から修飾する位置なので形容詞。financial（資金面の）が正解。",
     "translation": "その助成金は、再生可能エネルギーの初期段階の研究に資金面での支援を提供する。",
+    "choiceNotes": {
+      "financier": "名詞「金融業者」。support を修飾する形にならない",
+      "finance": "名詞・動詞。financial support という決まった形にならない",
+      "financially": "副詞。名詞 support を修飾できない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "名詞修飾"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 3,
     "explanation": "be 動詞の補語にあたる位置なので形容詞。available（利用できる）が正解。availability は名詞なので補語にすると意味が通らない。",
     "translation": "そのモバイルアプリは、安全講習を修了した人なら誰でも利用できる。",
+    "choiceNotes": {
+      "availed": "過去分詞。avail oneself of 以外の形ではほぼ使わない",
+      "availability": "名詞「利用可能性」。アプリ自体がそれになるわけではない",
+      "avail": "動詞・名詞。be avail という形はない"
+    },
     "difficulty": 1,
     "tags": ["形容詞", "補語"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "名詞 disruption を修飾する位置なので形容詞。considerable（かなりの）が正解。副詞 considerably は名詞を修飾できない。",
     "translation": "その改修工事は、倉庫の日常業務にかなりの混乱を引き起こした。",
+    "choiceNotes": {
+      "consideration": "名詞「考慮」。名詞 disruption を修飾できない",
+      "considerably": "副詞。名詞 disruption を修飾できない",
+      "consider": "動詞。caused の目的語の前には形容詞が必要"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "名詞修飾"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 3,
     "explanation": "the most と名詞 factor に挟まれた位置なので、最上級を作る形容詞が入る。critical（極めて重要な）が正解。",
     "translation": "安全性は、チームが下すあらゆる設計上の判断において最も重要な要素であり続けている。",
+    "choiceNotes": {
+      "criticism": "名詞「批判」。the most に続けて factor を修飾できない",
+      "critically": "副詞。名詞 factor を修飾できない",
+      "critic": "名詞「批評家」。factor を修飾する形にならない"
+    },
     "difficulty": 2,
     "tags": ["形容詞", "最上級"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "prove は「〜だと分かる」の意味で補語をとるので、後ろは形容詞。reliable（信頼できる）が正解。",
     "translation": "先月の嵐で停電した際、予備の発電機は信頼できることが証明された。",
+    "choiceNotes": {
+      "reliance": "名詞「依存」。prove の補語として意味が通らない",
+      "rely": "動詞。prove の後ろに原形は置けない",
+      "reliably": "副詞。prove の補語にはなれない"
+    },
     "difficulty": 3,
     "tags": ["形容詞", "prove"]
   }

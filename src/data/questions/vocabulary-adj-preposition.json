@@ -9,6 +9,11 @@
     "answerIndex": 0,
     "explanation": "be consistent with = 〜と一致する。similar / equal / identical はいずれも to をとるので with とは結びつかない。意味では絞れず、前置詞だけが決め手になる。",
     "translation": "今四半期の数値は、我々が取締役会に提示した予測と一致している。",
+    "choiceNotes": {
+      "identical": "to をとる（identical to）。with とは結びつかない",
+      "similar": "to をとる（similar to）。with は不可",
+      "equal": "to をとる（equal to）。with とは組まない"
+    },
     "difficulty": 3,
     "tags": ["consistent with"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 3,
     "explanation": "be capable of doing = 〜する能力がある。able は be able to do、skilled と competent は at / in をとる。",
     "translation": "応募者は、狭い空間で重機を操作できる能力を備えていなければならない。",
+    "choiceNotes": {
+      "able": "be able to do の形。of は続かない",
+      "skilled": "at / in をとる（skilled at）。of は不可",
+      "competent": "at / in をとる。of とは結びつかない"
+    },
     "difficulty": 2,
     "tags": ["capable of"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 3,
     "explanation": "be attributable to = 〜に起因する。responsible は for、caused なら by を伴う（was caused by）。blame は blame A on B の形。",
     "translation": "その遅延は、海外の供給業者からの原材料不足に起因するものだった。",
+    "choiceNotes": {
+      "blamed": "blame A on B の形。was blamed on なら可だが to は不可",
+      "caused": "受動なら by を伴う（was caused by）。to は続かない",
+      "responsible": "for をとる（responsible for）。to は不可"
+    },
     "difficulty": 3,
     "tags": ["attributable to"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 1,
     "explanation": "be familiar with = 〜を熟知している。aware と conscious は of、knowledgeable は about をとる。",
     "translation": "実験室の職員は全員、緊急避難の手順を熟知していなければならない。",
+    "choiceNotes": {
+      "knowledgeable": "about をとる（knowledgeable about）。with は不可",
+      "aware": "of をとる（aware of）。with とは組まない",
+      "conscious": "of をとる（conscious of）。with は不可"
+    },
     "difficulty": 2,
     "tags": ["familiar with"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 0,
     "explanation": "be subject to = 〜を条件とする、〜次第である。dependent / conditional / reliant はいずれも on をとる。",
     "translation": "提案されている合併は、いまだ規制当局の承認を条件としている。",
+    "choiceNotes": {
+      "conditional": "on をとる（conditional on）。to は不可",
+      "reliant": "on をとる（reliant on）。to とは組まない",
+      "dependent": "on をとる（dependent on）。to は不可"
+    },
     "difficulty": 3,
     "tags": ["subject to"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 2,
     "explanation": "be eligible for = 〜の資格がある。entitled / accustomed / opposed はいずれも to をとる。",
     "translation": "週20時間を超えて勤務する従業員は、会社の健康保険制度に加入する資格がある。",
+    "choiceNotes": {
+      "opposed": "to をとる（opposed to）。for は不可",
+      "entitled": "to をとる（entitled to）。for とは組まない",
+      "accustomed": "to をとる（accustomed to）。for は不可"
+    },
     "difficulty": 2,
     "tags": ["eligible for"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 2,
     "explanation": "be aware of = 〜を認識している。familiar と consistent は with、attentive は to をとる。",
     "translation": "管理職は四半期が終わる前に、新しい報告期限を認識しておくべきだ。",
+    "choiceNotes": {
+      "consistent": "with をとる（consistent with）。of は不可",
+      "familiar": "with をとる（familiar with）。of とは組まない",
+      "attentive": "to をとる（attentive to）。of は不可"
+    },
     "difficulty": 2,
     "tags": ["aware of"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "be comparable to = 〜に匹敵する、〜と同程度である。consistent / compatible / familiar はいずれも with をとる。",
     "translation": "今年の手法は、細かな調整を除けば昨年のものとほぼ同じだ。",
+    "choiceNotes": {
+      "compatible": "with をとる（compatible with）。to は不可",
+      "familiar": "with をとる（familiar with）。to とは組まない",
+      "consistent": "with をとる（consistent with）。to は不可"
+    },
     "difficulty": 3,
     "tags": ["comparable to"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 1,
     "explanation": "be committed to doing = 〜することに尽力している。この to は前置詞なので動名詞 reducing が続く。eager / reluctant / determined はいずれも to 不定詞（to reduce）をとるため、動名詞とは結びつかない。",
     "translation": "その会社は、2030年までに炭素排出量を半減させることに取り組んでいる。",
+    "choiceNotes": {
+      "eager": "to 不定詞をとる（eager to reduce）。動名詞 reducing とは続かない",
+      "reluctant": "to 不定詞をとる（reluctant to reduce）。動名詞は不可",
+      "determined": "to 不定詞をとる（determined to reduce）。動名詞とは組まない"
+    },
     "difficulty": 3,
     "tags": ["committed to", "to不定詞との区別"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 1,
     "explanation": "be satisfied with = 〜に満足している。appreciative は of、thankful は for、enthusiastic は about をとる。",
     "translation": "参加者の大半は、会議で提供された講習会の幅広さに大いに満足していた。",
+    "choiceNotes": {
+      "thankful": "for をとる（thankful for）。with は不可",
+      "enthusiastic": "about をとる（enthusiastic about）。with とは組まない",
+      "appreciative": "of をとる（appreciative of）。with は不可"
+    },
     "difficulty": 2,
     "tags": ["satisfied with"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 3,
     "explanation": "be dependent on = 〜に左右される。subject / relative / sensitive はいずれも to をとる。",
     "translation": "工事の日程は、その地域の天候に大きく左右される。",
+    "choiceNotes": {
+      "subject": "to をとる（subject to）。on は不可",
+      "relative": "to をとる（relative to）。on とは組まない",
+      "sensitive": "to をとる（sensitive to）。on は不可"
+    },
     "difficulty": 2,
     "tags": ["dependent on"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 3,
     "explanation": "be short of = 〜に届かない、〜が不足している。below / behind / under はそれ自体が前置詞なので、of を伴わず直接名詞が続く。",
     "translation": "北部事業部は、売上目標におよそ5パーセント届かないまま四半期を終えた。",
+    "choiceNotes": {
+      "behind": "それ自体が前置詞。of を伴わず直接名詞が続く",
+      "under": "それ自体が前置詞。of は付けない",
+      "below": "それ自体が前置詞。of を伴わない"
+    },
     "difficulty": 3,
     "tags": ["short of"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 3,
     "explanation": "be responsible for doing = 〜する責任がある。obliged / required / assigned はいずれも to 不定詞をとる（be required to inspect）。",
     "translation": "保守作業員は、毎月初めにエレベーターを点検する責任を負っている。",
+    "choiceNotes": {
+      "assigned": "to 不定詞をとる（assigned to inspect）。for + 動名詞にはならない",
+      "obliged": "to 不定詞をとる（obliged to inspect）。for は不可",
+      "required": "to 不定詞をとる（required to inspect）。for とは組まない"
+    },
     "difficulty": 2,
     "tags": ["responsible for"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 3,
     "explanation": "be opposed to = 〜に反対している。reluctant と hesitant は to 不定詞、critical は of をとる。",
     "translation": "数名の住民は、高速道路の拡張案に依然として強く反対している。",
+    "choiceNotes": {
+      "reluctant": "to 不定詞をとる（reluctant to accept）。to + 名詞にはならない",
+      "hesitant": "to 不定詞をとる（hesitant to accept）。名詞は続かない",
+      "critical": "of をとる（critical of）。to は不可"
+    },
     "difficulty": 2,
     "tags": ["opposed to"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 3,
     "explanation": "become accustomed to = 〜に慣れる。familiar と comfortable は with、aware は of をとる。",
     "translation": "新入社員はすぐに、その会社の柔軟な勤務時間制度に慣れる。",
+    "choiceNotes": {
+      "comfortable": "with をとる（comfortable with）。to は不可",
+      "aware": "of をとる（aware of）。to とは組まない",
+      "familiar": "with をとる（familiar with）。to は不可"
+    },
     "difficulty": 2,
     "tags": ["accustomed to"]
   }

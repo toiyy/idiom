@@ -9,6 +9,11 @@
     "answerIndex": 3,
     "explanation": "自動詞 has risen を修飾する位置なので副詞 steadily が正解。形容詞 steady は動詞を修飾できない。",
     "translation": "任意参加の講習会の出席者数は、開催がオンラインに移行して以来、着実に増加している。",
+    "choiceNotes": {
+      "steadiness": "名詞。has risen の後ろで動詞を修飾できない",
+      "steady": "形容詞。動詞 has risen を修飾できない",
+      "steadier": "形容詞の比較級。than もなく、動詞も修飾できない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "動詞修飾"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 1,
     "explanation": "助動詞 will と動詞の原形 inspect の間なので副詞。thoroughly（徹底的に）が正解。thorough は形容詞、through は前置詞。",
     "translation": "技術者は年次監査の前に、換気システムを徹底的に点検する。",
+    "choiceNotes": {
+      "through": "前置詞「〜を通って」。綴りが似ているだけで品詞も意味も異なる",
+      "thorough": "形容詞「徹底的な」。動詞 inspect を修飾できない",
+      "thoroughness": "名詞。助動詞と動詞の間には入らない"
+    },
     "difficulty": 2,
     "tags": ["副詞", "助動詞+動詞の間"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 0,
     "explanation": "be 動詞と過去分詞 reviewed の間なので副詞。carefully（注意深く）が正解。",
     "translation": "投稿はすべて、出版前に2名の独立した編集者によって注意深く査読される。",
+    "choiceNotes": {
+      "careful": "形容詞。過去分詞 reviewed を修飾できない",
+      "caring": "形容詞・動名詞「思いやりのある」。品詞も意味も合わない",
+      "care": "名詞・動詞。be と過去分詞の間には入らない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "受動態の間"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 3,
     "explanation": "形容詞 consistent を修飾する位置なので副詞。remarkably（著しく）が正解。形容詞 remarkable は形容詞を修飾できない。",
     "translation": "試験運用の結果は、チームの当初の仮説と著しく一致していた。",
+    "choiceNotes": {
+      "remarkable": "形容詞。形容詞 consistent を修飾できない",
+      "remarking": "現在分詞。were の補語として意味が通らない",
+      "remark": "名詞・動詞。consistent の前には副詞が必要"
+    },
     "difficulty": 2,
     "tags": ["副詞", "形容詞修飾"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 2,
     "explanation": "助動詞 have と過去分詞 exceeded の間なので副詞。consistently（一貫して）が正解。",
     "translation": "北部地域の売上は、過去3年間にわたり一貫して予測を上回っている。",
+    "choiceNotes": {
+      "consistency": "名詞。have と過去分詞の間には入らない",
+      "consistent": "形容詞。動詞 exceeded を修飾できない",
+      "consist": "動詞。have consist という形はない"
+    },
     "difficulty": 2,
     "tags": ["副詞", "完了形の間"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 1,
     "explanation": "自動詞 concluded の後ろで文の要素は揃っているため、動詞を修飾する副詞が入る。successfully（首尾よく）が正解。",
     "translation": "契約交渉は3日間の集中的な議論の末、首尾よく妥結した。",
+    "choiceNotes": {
+      "successful": "形容詞。自動詞 concluded を修飾できない",
+      "succeed": "動詞。concluded の後ろに原形は置けない",
+      "success": "名詞。concluded は目的語をとらない自動詞"
+    },
     "difficulty": 1,
     "tags": ["副詞", "動詞修飾"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 2,
     "explanation": "カンマで区切られた文頭から文全体を修飾するので副詞。Fortunately（幸いにも）が正解。",
     "translation": "幸いにも、交換部品は休業に入る2日前に到着した。",
+    "choiceNotes": {
+      "Fortunes": "名詞の複数形。文修飾にはならない",
+      "Fortunate": "形容詞。単独で文全体を修飾できない",
+      "Fortune": "名詞「幸運・財産」。カンマで区切って文を修飾する形にならない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "文修飾"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "他動詞 examined と目的語 the records がすでに揃っているので、動詞を修飾する副詞が入る。closely（綿密に）が正解。",
     "translation": "監査人は最終報告書を出す前に、経費の記録を綿密に調べた。",
+    "choiceNotes": {
+      "close": "形容詞・動詞。ここは動詞 examined を修飾する副詞が必要",
+      "closeness": "名詞「近さ」。examined の目的語はすでにある",
+      "closer": "形容詞の比較級。than もなく、動詞も修飾できない"
+    },
     "difficulty": 2,
     "tags": ["副詞", "動詞修飾"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 0,
     "explanation": "数量表現 two weeks を修飾する位置なので副詞。approximately（およそ）が正解。",
     "translation": "その橋の工事は、修正後の予定よりおよそ2週間早く完了した。",
+    "choiceNotes": {
+      "approximated": "過去分詞。two weeks を修飾できない",
+      "approximate": "形容詞「おおよその」。数量表現の前には副詞が必要",
+      "approximation": "名詞。was completed の後ろには入らない"
+    },
     "difficulty": 2,
     "tags": ["副詞", "数量修飾"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 1,
     "explanation": "形容詞 suitable を修飾する位置なので副詞。particularly（とりわけ）が正解。",
     "translation": "その川沿いの会場は、500人を超える規模の催しにとりわけ適している。",
+    "choiceNotes": {
+      "particular": "形容詞。形容詞 suitable を修飾できない",
+      "particularize": "動詞「詳述する」。be の後ろに原形は置けない",
+      "particulars": "名詞「詳細」。suitable の前には副詞が必要"
+    },
     "difficulty": 2,
     "tags": ["副詞", "形容詞修飾"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 3,
     "explanation": "自動詞 communicate を修飾する位置なので副詞。efficiently（効率的に）が正解。",
     "translation": "2つの部署は現在、共有のプロジェクト管理ボードを通じて効率的に連絡を取り合っている。",
+    "choiceNotes": {
+      "efficient": "形容詞。自動詞 communicate を修飾できない",
+      "efficiency": "名詞。communicate は目的語をとらない自動詞",
+      "efficiencies": "名詞の複数形。動詞を修飾できない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "動詞修飾"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 2,
     "explanation": "be 動詞と過去分詞 enforced の間なので副詞。strictly（厳格に）が正解。",
     "translation": "改訂された安全指針は、12か所すべての製造拠点で厳格に運用されている。",
+    "choiceNotes": {
+      "stricter": "形容詞の比較級。過去分詞 enforced を修飾できない",
+      "strictness": "名詞。be と過去分詞の間には入らない",
+      "strict": "形容詞。動詞を修飾できない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "受動態の間"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 2,
     "explanation": "助動詞 should と動詞の原形 review の間なので副詞。regularly（定期的に）が正解。",
     "translation": "管理職は、四半期目標に対するチームの進捗を定期的に確認すべきである。",
+    "choiceNotes": {
+      "regular": "形容詞。動詞 review を修飾できない",
+      "regularity": "名詞。助動詞と動詞の間には入らない",
+      "regulate": "動詞「規制する」。should の後ろに動詞は 1 つしか置けない"
+    },
     "difficulty": 1,
     "tags": ["副詞", "助動詞+動詞の間"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 0,
     "explanation": "all of 〜 という数量表現を前から修飾する位置なので副詞。Nearly（ほぼ）が正解。Near は前置詞・形容詞で数量表現を修飾できない。",
     "translation": "参加者のほぼ全員が、その入門セミナーを「優れている」と評価した。",
+    "choiceNotes": {
+      "Nearness": "名詞「近さ」。文の主語として意味が通らない",
+      "Near": "前置詞・形容詞。all of 〜 という数量表現を修飾できない",
+      "Nearest": "形容詞の最上級。数量表現を修飾できない"
+    },
     "difficulty": 3,
     "tags": ["副詞", "数量修飾"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 2,
     "explanation": "比較級 more quietly を強める位置なので副詞。significantly（著しく）が正解。形容詞 significant は副詞を修飾できない。",
     "translation": "最新モデルは、置き換えられた旧版よりも著しく静かに稼働する。",
+    "choiceNotes": {
+      "signify": "動詞。runs の後ろに原形は置けない",
+      "significance": "名詞。比較級 more quietly を修飾できない",
+      "significant": "形容詞。副詞 more quietly を修飾できない"
+    },
     "difficulty": 2,
     "tags": ["副詞", "比較級修飾"]
   }

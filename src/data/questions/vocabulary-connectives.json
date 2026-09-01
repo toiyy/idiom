@@ -9,6 +9,11 @@
     "answerIndex": 0,
     "explanation": "前半「全ての安全試験に合格」と後半「発売延期」は逆接の関係なので however。therefore（順接）、furthermore（追加）、likewise（同様に）では論理が通らない。",
     "translation": "その試作品はすべての安全試験に合格した。しかし、発売は3月まで延期された。",
+    "choiceNotes": {
+      "furthermore": "追加「さらに」。前後が逆接なので合わない",
+      "likewise": "並列「同様に」。逆の内容が続くので不可",
+      "therefore": "順接「したがって」。試験に合格したのに延期という流れに合わない"
+    },
     "difficulty": 1,
     "tags": ["however", "逆接"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 0,
     "explanation": "前半が原因、後半がその結果という順接の関係なので therefore。however / nevertheless は逆接、otherwise は「さもないと」。",
     "translation": "その供給業者は3回続けて納品を怠った。したがって、我々は契約を打ち切ることに決めた。",
+    "choiceNotes": {
+      "nevertheless": "逆接「それにもかかわらず」。原因と結果の関係なので不可",
+      "however": "逆接「しかし」。前後は素直な因果関係",
+      "otherwise": "「さもないと」。条件の裏返しを示す語で合わない"
+    },
     "difficulty": 1,
     "tags": ["therefore", "順接"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "前後とも会場の利点を並べているので、情報を追加する In addition が正解。In contrast / On the other hand は対比、As a result は結果を表す。",
     "translation": "その会場は駅の近くにあり便利だ。さらに、200台までの無料駐車場も備えている。",
+    "choiceNotes": {
+      "In contrast": "対比「対照的に」。前後とも会場の利点で対立していない",
+      "As a result": "結果「その結果」。駅が近いから駐車場があるわけではない",
+      "On the other hand": "対比「他方で」。並べているのは同種の利点"
+    },
     "difficulty": 2,
     "tags": ["in addition", "追加"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 1,
     "explanation": "otherwise = さもないと。「金曜までに提出せよ、さもないと審査されない」という条件の裏返しを表す。",
     "translation": "記入済みの用紙を金曜までに提出してください。さもないと、あなたの申請は検討されません。",
+    "choiceNotes": {
+      "similarly": "並列「同様に」。条件の裏返しを示す語ではない",
+      "therefore": "順接「したがって」。提出しなかった場合の帰結は表せない",
+      "moreover": "追加「さらに」。前文の条件と結びつかない"
+    },
     "difficulty": 2,
     "tags": ["otherwise", "条件"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 0,
     "explanation": "ヨーロッパは増加、アジアは減少という対比なので In contrast。Likewise は同じ傾向を並べるとき、Consequently は結果、For instance は例示に使う。",
     "translation": "前四半期、ヨーロッパの売上は15パーセント増加した。対照的に、アジアの収益はわずかに減少した。",
+    "choiceNotes": {
+      "Consequently": "結果「その結果」。欧州の増加がアジアの減少の原因ではない",
+      "Likewise": "並列「同様に」。増加と減少で傾向が逆",
+      "For instance": "例示「たとえば」。アジアは欧州の例ではない"
+    },
     "difficulty": 2,
     "tags": ["in contrast", "対比"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 3,
     "explanation": "前半（結果がまちまち）と後半（次段階へ進む）が逆接の関係なので nevertheless。consequently は順接、similarly は並列、meanwhile は同時進行を表す。",
     "translation": "最初の試験ではまちまちな結果が出た。それにもかかわらず、研究チームは第2段階へ進むことを決めた。",
+    "choiceNotes": {
+      "similarly": "並列「同様に」。前後の内容が対立している",
+      "meanwhile": "「その間に」。時間の並行ではなく逆接の関係",
+      "consequently": "結果「その結果」。まちまちな結果から次段階へ進むのは順接ではない"
+    },
     "difficulty": 2,
     "tags": ["nevertheless", "逆接"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "「その間」という期間の並行を表すので Meanwhile。Therefore は因果、Otherwise は「さもないと」、In contrast は対比。",
     "translation": "更新の第1段階は月曜に始まり、2週間かかる。その間、旧システムは引き続き利用できる。",
+    "choiceNotes": {
+      "Otherwise": "「さもないと」。条件の裏返しではない",
+      "In contrast": "対比「対照的に」。旧システムが使えるのは対立ではなく並行",
+      "Therefore": "順接「したがって」。更新するから旧システムが残るという因果ではない"
+    },
     "difficulty": 2,
     "tags": ["meanwhile", "同時進行"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 1,
     "explanation": "前文の一般的な内容に対して具体例を挙げているので for instance。in contrast は対比、as a result は結果を表す。",
     "translation": "いくつかの部署が新しいソフトウェアを導入している。たとえば財務チームは、すでに月次報告書を自動化している。",
+    "choiceNotes": {
+      "nevertheless": "逆接「それにもかかわらず」。財務チームは前文の一例",
+      "as a result": "結果「その結果」。因果関係ではなく例示",
+      "in contrast": "対比「対照的に」。前文と対立していない"
+    },
     "difficulty": 2,
     "tags": ["for instance", "例示"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 1,
     "explanation": "前文が原因、後文がその結果なので As a result。In addition は追加、Nonetheless は逆接、Likewise は並列。",
     "translation": "主要な供給業者が6月に破産を申請した。その結果、生産は3週間停止した。",
+    "choiceNotes": {
+      "In addition": "追加「さらに」。破産と生産停止は因果関係",
+      "Nonetheless": "逆接「それでも」。素直な結果なので合わない",
+      "Likewise": "並列「同様に」。同種の事柄を並べる語"
+    },
     "difficulty": 1,
     "tags": ["as a result", "結果"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 3,
     "explanation": "「〜しない。その代わりに〜する」という代替案を示すので instead。前半は後半の原因ではないため therefore は成立しない。",
     "translation": "その会社は今年、大阪に支店を開設しない。その代わりに、オンラインサービスを拡充する予定だ。",
+    "choiceNotes": {
+      "therefore": "順接「したがって」。支店を開かないことがオンライン拡充の原因ではない",
+      "likewise": "並列「同様に」。対になる代替案を示す語ではない",
+      "moreover": "追加「さらに」。前文を否定したうえでの代案には使わない"
+    },
     "difficulty": 3,
     "tags": ["instead", "代替"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 0,
     "explanation": "両拠点とも削減という同じ傾向を並べているので Similarly。In contrast は逆の傾向を示すときに使う。",
     "translation": "東京事務所はエネルギー使用量を20パーセント削減した。同様に、大阪支店も消費量を4分の1近く減らした。",
+    "choiceNotes": {
+      "Nevertheless": "逆接「それにもかかわらず」。両拠点とも削減で同じ傾向",
+      "Otherwise": "「さもないと」。条件を示す語で文脈に合わない",
+      "In contrast": "対比「対照的に」。逆の傾向のときに使う"
+    },
     "difficulty": 2,
     "tags": ["similarly", "並列"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 2,
     "explanation": "利点を重ねて挙げているので追加を表す Furthermore。However と Instead は逆接・代替で論理が合わない。",
     "translation": "その新しい複合素材は鋼鉄より軽い。さらに、製造費用も約30パーセント安い。",
+    "choiceNotes": {
+      "However": "逆接「しかし」。軽さと安さはどちらも利点",
+      "Otherwise": "「さもないと」。条件の裏返しではない",
+      "Instead": "「その代わりに」。代替案ではなく利点の追加"
+    },
     "difficulty": 1,
     "tags": ["furthermore", "追加"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "前文を受けて「それどころか実際には」と内容を強めているので In fact。",
     "translation": "料金の値上げ後も参加者数は減らなかった。それどころか翌月には12パーセント増加した。",
+    "choiceNotes": {
+      "Meanwhile": "「その間に」。時間の並行ではなく前文の強調",
+      "However": "逆接「しかし」。前文を打ち消すのではなく補強している",
+      "Therefore": "順接「したがって」。減らなかったことが増加の原因ではない"
+    },
     "difficulty": 3,
     "tags": ["in fact", "強調"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 3,
     "explanation": "監査結果を受けて対応したという順接の関係なので accordingly（それに応じて）。nevertheless は逆接、alternatively は代替案を示す。",
     "translation": "安全監査で3つの重大なリスクが特定された。それに応じて、該当するすべての機械が点検のため停止された。",
+    "choiceNotes": {
+      "similarly": "並列「同様に」。監査結果への対応という因果関係",
+      "nevertheless": "逆接「それにもかかわらず」。素直な対応なので合わない",
+      "alternatively": "「代わりに」。別案を示す語で文脈に合わない"
+    },
     "difficulty": 3,
     "tags": ["accordingly", "順接"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "時系列で「その後」を表すので Subsequently。Conversely と Nevertheless は逆接、Alternatively は代替を示す。",
     "translation": "供給契約は3月3日に締結された。その後、最初の出荷が1週間以内に工場を出発した。",
+    "choiceNotes": {
+      "Conversely": "逆接「逆に」。契約後に出荷という自然な流れ",
+      "Nevertheless": "逆接「それにもかかわらず」。対立する内容ではない",
+      "Alternatively": "「代わりに」。別案を示す語で時系列を表さない"
+    },
     "difficulty": 3,
     "tags": ["subsequently", "時系列"]
   }

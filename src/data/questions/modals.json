@@ -8,6 +8,11 @@
     "answerIndex": 1,
     "explanation": "助動詞 must の後ろは必ず動詞の原形。wear が正解。",
     "translation": "工場の来訪者は常時、保護メガネを着用しなければならない。",
+    "choiceNotes": {
+      "wearing": "現在分詞。助動詞の後ろには原形が来る",
+      "to wear": "to 不定詞。must の後ろに to は付けない",
+      "worn": "過去分詞。must の後ろには原形が必要"
+    },
     "difficulty": 1,
     "tags": ["must", "原形"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 0,
     "explanation": "助動詞 will と can を並べることはできないので、can を be able to に置き換えて will be able to とする。",
     "translation": "新しいサーバーが導入されれば、職員はどの支店からでもデータベースにアクセスできるようになる。",
+    "choiceNotes": {
+      "are able": "現在形。新サーバー導入後という未来の話に合わない",
+      "will can": "助動詞 will と can は並べられない",
+      "can to": "can の後ろに to は付かない"
+    },
     "difficulty": 2,
     "tags": ["be able to", "助動詞の重複"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 2,
     "explanation": "「〜だったに違いない」という過去についての強い推量は must have + 過去分詞。",
     "translation": "その荷物は誤った住所に配達されたに違いない。当社の事務所には一度も届かなかった。",
+    "choiceNotes": {
+      "can have": "疑問文・否定文以外ではほとんど使わない形",
+      "would have": "仮定法の帰結。過去についての推量にはならない",
+      "should have": "「〜すべきだった」という後悔。届かなかった事実の推量ではない"
+    },
     "difficulty": 2,
     "tags": ["must have + p.p.", "推量"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 0,
     "explanation": "「〜すべきだったのに（しなかった）」という後悔は should have + 過去分詞。",
     "translation": "もっと大きな会議室を予約しておくべきだった。12人が席を見つけられなかった。",
+    "choiceNotes": {
+      "can have": "疑問文・否定文以外ではほとんど使わない形",
+      "may have": "「〜したかもしれない」という推量。後悔は表せない",
+      "must have": "「〜したに違いない」という推量。予約しなかった後悔にならない"
+    },
     "difficulty": 2,
     "tags": ["should have + p.p.", "後悔"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 1,
     "explanation": "need not have + 過去分詞 = 〜する必要はなかったのに（実際にはした）。must not have は「〜してはいけなかった」という禁止のニュアンスになり合わない。",
     "translation": "領収書を2回提出する必要はなかった。1部で十分だっただろう。",
+    "choiceNotes": {
+      "must not": "「〜してはいけなかった」という禁止のニュアンスになる",
+      "should not": "「〜すべきでなかった」。不要だったという意味とはずれる",
+      "could not": "「〜できなかった」。実際には提出しているので合わない"
+    },
     "difficulty": 3,
     "tags": ["need not have + p.p."]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 3,
     "explanation": "had better + 動詞の原形 = 〜したほうがよい。had は過去形だが意味は現在・未来を指す固定表現。",
     "translation": "注文が処理される前に、配送先住所を確認したほうがよい。",
+    "choiceNotes": {
+      "will better": "そのような形は存在しない",
+      "would better": "would better という形は使わない",
+      "have better": "had better の had を have にすることはできない"
+    },
     "difficulty": 2,
     "tags": ["had better"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 0,
     "explanation": "would rather A than B = B よりむしろ A したい。than と組むのは rather。",
     "translation": "その顧客は四半期報告書を、郵送よりも電子データで受け取りたいと思っている。",
+    "choiceNotes": {
+      "sooner or": "would sooner なら可だが、or ではなく than と組む",
+      "prefer": "would prefer to do の形になり、than とは組まない",
+      "better": "had better は than を伴わない"
+    },
     "difficulty": 2,
     "tags": ["would rather ... than"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 3,
     "explanation": "used to + 動詞の原形 = 以前は〜していた（今は違う）。be used to は「〜に慣れている」で後ろに動名詞が続くため、原形 publish とは結びつかない。",
     "translation": "その会社は以前、社報を四半期ごとに発行していたが、今では毎月出ている。",
+    "choiceNotes": {
+      "has used": "現在完了。「以前は〜していた」という意味にならない",
+      "was used": "be used to は「慣れている」で、後ろは動名詞になる",
+      "is used": "be used to の形。後ろに原形 publish は続かない"
+    },
     "difficulty": 2,
     "tags": ["used to", "過去の習慣"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 0,
     "explanation": "be used to の to は前置詞なので後ろは動名詞。used to + 原形（以前は〜した）と混同しやすい典型問題。",
     "translation": "その分野で12年働いてきた技術者たちは、極端な気温の中で作業することに慣れている。",
+    "choiceNotes": {
+      "have worked": "完了形。be used to の to は前置詞なので動名詞が入る",
+      "worked": "過去形。前置詞の後ろには置けない",
+      "work": "原形。used to + 原形と混同しやすいが、ここは前置詞の to"
+    },
     "difficulty": 3,
     "tags": ["be used to + 動名詞"]
   },
@@ -116,6 +161,11 @@
     "answerIndex": 1,
     "explanation": "may well + 動詞の原形 = 十分に〜しそうだ。may be や should be の後ろには形容詞や名詞が続くため、動詞 open とは結びつかない。",
     "translation": "現在の工事の進み具合からすると、その施設は予定より早く開業しそうだ。",
+    "choiceNotes": {
+      "should be": "be の後ろには形容詞や名詞が必要で、動詞 open は続かない",
+      "may be": "be の後ろに動詞の原形 open は続かない",
+      "can well": "can well という形は通常使わない"
+    },
     "difficulty": 3,
     "tags": ["may well"]
   }

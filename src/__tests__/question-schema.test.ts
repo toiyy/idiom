@@ -12,6 +12,11 @@ const valid = {
   answerIndex: 2,
   explanation: 'since があるので現在完了。',
   translation: '彼女は 2019 年からここで働いている。',
+  choiceNotes: {
+    work: '原形。主語が三人称単数なので合わない。',
+    works: '現在形。since と組んで継続を表せない。',
+    working: '現在分詞。単独では述語動詞にならない。',
+  },
 };
 
 describe('QuestionSchema', () => {
@@ -43,6 +48,21 @@ describe('QuestionSchema', () => {
     const bad: Record<string, unknown> = { ...valid };
     delete bad.translation;
     expect(QuestionSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('不正解の選択肢の理由が欠けていると弾く', () => {
+    const bad = { ...valid, choiceNotes: { work: '原形。', works: '現在形。' } };
+    expect(QuestionSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('choiceNotes に選択肢にないキーがあると弾く', () => {
+    const bad = { ...valid, choiceNotes: { ...valid.choiceNotes, worked: '過去形。' } };
+    expect(QuestionSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('正解の選択肢に理由を付けても受理する（表示はされない）', () => {
+    const ok = { ...valid, choiceNotes: { ...valid.choiceNotes, 'has worked': 'これが正解。' } };
+    expect(QuestionSchema.safeParse(ok).success).toBe(true);
   });
 });
 
@@ -165,6 +185,18 @@ describe('同梱データ', () => {
   it('全問に日本語訳がある', () => {
     for (const q of questions) {
       expect(q.translation.length, `訳が短すぎる: ${q.id}`).toBeGreaterThan(5);
+    }
+  });
+
+  it('全問の不正解 3 つに理由が付いている', () => {
+    for (const q of questions) {
+      for (const [i, choice] of q.choices.entries()) {
+        if (i === q.answerIndex) continue;
+        expect(
+          q.choiceNotes[choice]?.length,
+          `理由が短すぎる: ${q.id} / ${choice}`,
+        ).toBeGreaterThan(5);
+      }
     }
   });
 });

@@ -27,6 +27,7 @@ function makeQuestion(
     answerIndex,
     explanation: 'dummy',
     translation: 'これはテストです。',
+    choiceNotes: { a: 'dummy', b: 'dummy', c: 'dummy', d: 'dummy' },
   };
 }
 

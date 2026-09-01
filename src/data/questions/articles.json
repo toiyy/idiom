@@ -8,6 +8,11 @@
     "answerIndex": 3,
     "explanation": "university は綴りこそ母音字 u で始まるが、発音は /juː/ という子音で始まるため冠詞は a を使う。",
     "translation": "その候補者は機械工学の大学の学位を持っている。",
+    "choiceNotes": {
+      "the": "特定の学位を指す文脈ではないので定冠詞は合わない",
+      "any": "「どれでも」。学位を 1 つ持っているという意味にならない",
+      "an": "university は /juː/ という子音で始まる発音なので an は使えない"
+    },
     "difficulty": 2,
     "tags": ["a / an", "発音基準"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 3,
     "explanation": "only や最上級が付いた名詞は 1 つに特定されるので、定冠詞 the を使う。",
     "translation": "フェラーラさんは、両分野での経験を持つ唯一の応募者だった。",
+    "choiceNotes": {
+      "some": "only と組んで 1 人に特定する意味にならない",
+      "a": "only が付いて 1 人に特定されるので定冠詞が必要",
+      "an": "不定冠詞であることに加え、applicant は子音で始まる"
+    },
     "difficulty": 1,
     "tags": ["the", "only"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 1,
     "explanation": "「〜につき」という単位を表す不定冠詞。hour は h を発音しないため母音で始まるので an を使う。",
     "translation": "そのコンサルタントは、現地での技術支援に1時間あたり200ドルを請求する。",
+    "choiceNotes": {
+      "one": "数を強調する語。単位を表す用法ではない",
+      "the": "「1 時間につき」という単位には不定冠詞を使う",
+      "a": "hour は h を発音しないため母音で始まる。a ではなく an"
+    },
     "difficulty": 2,
     "tags": ["an", "単位"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 0,
     "explanation": "same は必ず定冠詞を伴い the same の形で使う。",
     "translation": "両支店とも、前四半期に来店客の同様の減少を報告した。",
+    "choiceNotes": {
+      "their": "same は the と組むのが決まった形",
+      "some": "the same という定型を崩してしまう",
+      "a": "same には必ず the を付ける"
+    },
     "difficulty": 2,
     "tags": ["the same"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろが単数名詞 employee なので、単数名詞を直接修飾できる Every が正解。All / Most / Several はいずれも複数名詞をとる。",
     "translation": "従業員は全員、年末までにコンプライアンス講座を修了しなければならない。",
+    "choiceNotes": {
+      "Several": "複数名詞をとる。後ろは単数の employee",
+      "All": "複数名詞または不可算名詞をとる",
+      "Most": "複数名詞をとる。単数名詞は直接修飾できない"
+    },
     "difficulty": 2,
     "tags": ["every", "単数名詞"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 0,
     "explanation": "Most of + the + 名詞 = 〜の大部分。Almost は副詞なので直接 of を続けられない（almost all of なら可）。",
     "translation": "参加者の大半が、追加の講習にも出席すると答えた。",
+    "choiceNotes": {
+      "The most": "最上級。of the participants と組んで「大部分」を表さない",
+      "Almost": "副詞。直接 of を続けられない（almost all of なら可）",
+      "Mostly": "副詞「主に」。主語にはなれない"
+    },
     "difficulty": 3,
     "tags": ["most of", "almost"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 3,
     "explanation": "None of + 名詞 = 〜のどれも〜ない。No は名詞を直接修飾する形（no proposals）なので of を続けられない。",
     "translation": "3つの提案のいずれも、委員会の予算要件を満たしていなかった。",
+    "choiceNotes": {
+      "Not": "副詞。of を続けて主語にはならない",
+      "Nothing": "「何も〜ない」。of the three proposals とは組まない",
+      "No": "名詞を直接修飾する形（no proposals）。of は続かない"
+    },
     "difficulty": 2,
     "tags": ["none of", "no"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 1,
     "explanation": "不可算名詞 equipment を受けるので All が正解。Every と Each は可算の単数名詞、Both は 2 つのものにしか使えない。",
     "translation": "西棟の設備はすべて、昨夏の改修工事の際に交換された。",
+    "choiceNotes": {
+      "Each": "可算の単数名詞をとる。equipment は不可算",
+      "Both": "2 つのものにしか使えない",
+      "Every": "可算の単数名詞が必要。equipment は不可算"
+    },
     "difficulty": 2,
     "tags": ["all", "不可算"]
   }

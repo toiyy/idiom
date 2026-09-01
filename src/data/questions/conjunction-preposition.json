@@ -8,6 +8,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろは the heavy rain という名詞句であり節ではないので、前置詞である Despite が正解。Although / Because / While はいずれも接続詞で、後ろに「主語＋動詞」の節が必要。",
     "translation": "大雨にもかかわらず、屋外での製品発表会は予定どおりに進行した。",
+    "choiceNotes": {
+      "Although": "接続詞。後ろに「主語 + 動詞」の節が必要",
+      "Because": "接続詞。名詞句だけを続けることはできない",
+      "While": "接続詞。後ろには節が来る"
+    },
     "difficulty": 2,
     "tags": ["前置詞", "despite"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろが employees can access という節で、「〜できるように」という目的を表すので接続詞 so that が正解。in order to の後ろは動詞の原形、because of と despite は前置詞で名詞句が続く。",
     "translation": "従業員が営業時間中にファイルを利用できるよう、システムの更新は夜間に実施される。",
+    "choiceNotes": {
+      "despite": "前置詞。後ろは名詞句でなければならない",
+      "in order to": "後ろは動詞の原形。employees can access という節は続かない",
+      "because of": "前置詞句。後ろは名詞句で、節は続かない"
+    },
     "difficulty": 2,
     "tags": ["目的", "so that"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 0,
     "explanation": "空所の後ろは the merger was announced という節なので接続詞が必要。Since は「〜して以来」の接続詞で、主節の現在完了 have risen とも呼応する。During / Because of / Owing to はすべて前置詞。",
     "translation": "3月に合併が発表されて以来、株価は12パーセント近く上昇している。",
+    "choiceNotes": {
+      "Because of": "前置詞句。後ろに節は続かない",
+      "Owing to": "前置詞句。名詞句しか続けられない",
+      "During": "前置詞。後ろは期間を表す名詞になる"
+    },
     "difficulty": 2,
     "tags": ["接続詞", "since"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 0,
     "explanation": "空所の後ろは名詞句 the renovation なので前置詞の During。While / Although / Because はすべて接続詞で節が必要。",
     "translation": "改修工事の間、図書館はオーク通りの仮設場所で運営される。",
+    "choiceNotes": {
+      "Although": "接続詞。後ろに節が必要",
+      "Because": "接続詞。名詞句だけでは成立しない",
+      "While": "接続詞。the renovation という名詞句は続かない"
+    },
     "difficulty": 2,
     "tags": ["during", "前置詞"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "空所の後ろは節なので接続詞の While。During / Despite / In spite of はすべて前置詞。",
     "translation": "技術者がサーバーを交換している間、オンラインサービスはすべて利用できなかった。",
+    "choiceNotes": {
+      "Despite": "前置詞。後ろは名詞句でなければならない",
+      "In spite of": "前置詞句。節は続かない",
+      "During": "前置詞。後ろは期間を表す名詞になる"
+    },
     "difficulty": 2,
     "tags": ["while", "接続詞"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろは名詞句なので前置詞句の because of。because は接続詞で節が必要。",
     "translation": "予期せぬ雷雨のため、屋外の催しは屋内に移された。",
+    "choiceNotes": {
+      "because": "接続詞。後ろに「主語 + 動詞」が必要",
+      "although": "接続詞。名詞句だけでは成立せず、意味も逆接になる",
+      "so": "接続詞。前後の節をつなぐ語で名詞句は続かない"
+    },
     "difficulty": 2,
     "tags": ["because of", "前置詞句"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろは名詞句 repeated delays なので前置詞句の In spite of。他の3つはすべて接続詞。",
     "translation": "度重なる遅れにもかかわらず、建設チームは当初の完成日を守った。",
+    "choiceNotes": {
+      "Although": "接続詞。後ろに節が必要",
+      "Even though": "接続詞。名詞句だけでは成立しない",
+      "Whereas": "接続詞。後ろには節が来る"
+    },
     "difficulty": 2,
     "tags": ["in spite of", "前置詞句"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 3,
     "explanation": "空所の後ろは節なので接続詞。「〜しない限り」の意味の unless が正解。without / except / besides はいずれも前置詞。",
     "translation": "認可されていない技術者が装置を開けない限り、保証は有効なままである。",
+    "choiceNotes": {
+      "without": "前置詞。後ろに節は続かない",
+      "except": "前置詞。except that なら節を導けるが that が必要",
+      "besides": "前置詞。「〜に加えて」で意味も合わない"
+    },
     "difficulty": 3,
     "tags": ["unless", "接続詞"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろは節なので接続詞の in case（〜する場合に備えて）。in case of / instead of / because of はすべて前置詞句。",
     "translation": "発表中にプロジェクターが故障した場合に備えて、議題の印刷版を手元に置いてください。",
+    "choiceNotes": {
+      "instead of": "前置詞句。後ろは名詞句で、節は続かない",
+      "because of": "前置詞句。節を導けず、意味も理由になってしまう",
+      "in case of": "前置詞句。in case of failure のように名詞句が続く"
+    },
     "difficulty": 3,
     "tags": ["in case", "接続詞"]
   },
@@ -116,6 +161,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろは名詞句なので前置詞句の owing to。since / although / whereas はすべて接続詞。",
     "translation": "大西洋上の悪天候のため、その大西洋横断便は日程が変更された。",
+    "choiceNotes": {
+      "whereas": "接続詞。後ろに節が必要",
+      "since": "接続詞。名詞句だけでは成立しない",
+      "although": "接続詞。節が必要で、意味も逆接になる"
+    },
     "difficulty": 2,
     "tags": ["owing to", "前置詞句"]
   }

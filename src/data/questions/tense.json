@@ -8,6 +8,11 @@
     "answerIndex": 0,
     "explanation": "「By the time + 現在形（未来の意味）」の節があり、その時点までに完了している動作を表すので未来完了形 will have completed が正解。by the time は未来完了とセットで問われる定番。",
     "translation": "来週月曜に監査人が到着するまでに、財務チームは四半期報告書をすべて仕上げているだろう。",
+    "choiceNotes": {
+      "has completed": "現在完了。来週という未来の時点までの完了は表せない",
+      "completed": "過去形。未来の話なので合わない",
+      "completes": "現在形。完了しているという意味が出ない"
+    },
     "difficulty": 2,
     "tags": ["未来完了", "by the time"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 1,
     "explanation": "「since + 過去の起点」があり、過去から現在まで継続している状態なので現在完了 has served。単純過去 served では現在まで続いていることを表せない。",
     "translation": "田中さんは、2019年に大阪支店が開設されて以来、地域統括責任者を務めている。",
+    "choiceNotes": {
+      "served": "過去形。過去に終わった話になり、現在まで続く意味が出ない",
+      "will serve": "未来形。since 2019 という過去の起点と矛盾する",
+      "serves": "現在形。since と組んで継続を表せない"
+    },
     "difficulty": 1,
     "tags": ["現在完了", "since"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 3,
     "explanation": "「警報が出された（過去）」よりさらに前に完了していた動作なので過去完了 had reached。過去の 2 つの出来事の前後関係を示すときに使う。",
     "translation": "火曜の朝に暴風警報が出される前に、その荷物は倉庫に到着していた。",
+    "choiceNotes": {
+      "will reach": "未来形。警報が出たのは過去なので合わない",
+      "is reaching": "現在進行形。過去の出来事の前後関係を表せない",
+      "reaches": "現在形。過去より前という関係が出ない"
+    },
     "difficulty": 2,
     "tags": ["過去完了", "before"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 1,
     "explanation": "since 以下に起点が示され、今も続いている動作なので現在完了進行形 has been working。",
     "translation": "保守作業員は今朝早くから、換気システムの作業を続けている。",
+    "choiceNotes": {
+      "works": "現在形。since で示された起点からの継続を表せない",
+      "is working": "現在進行形。今の動作は表せるが since との継続が出ない",
+      "worked": "過去形。今も続いているという意味にならない"
+    },
     "difficulty": 2,
     "tags": ["現在完了進行形", "since"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 2,
     "explanation": "時を表す副詞節（as soon as 〜）の中では、未来のことでも現在形を使う。",
     "translation": "修正後の予定表は、部長が最終版を承認し次第、掲示される。",
+    "choiceNotes": {
+      "is approving": "現在進行形。時の副詞節で未来を表す形ではない",
+      "will approve": "時・条件を表す副詞節の中では will を使わない",
+      "approved": "過去形。これから承認する話なので合わない"
+    },
     "difficulty": 3,
     "tags": ["時・条件の副詞節"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 2,
     "explanation": "last year という明確な過去を示す語句があるので、現在完了ではなく単純過去を使う。",
     "translation": "その2社は、昨年4月に提携契約を結んだ。",
+    "choiceNotes": {
+      "sign": "現在形。last year という過去を示す語句と合わない",
+      "have signed": "現在完了。明確な過去を示す語句とは一緒に使えない",
+      "had signed": "過去完了。比較すべき別の過去の出来事がない"
+    },
     "difficulty": 2,
     "tags": ["過去形", "現在完了との区別"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 1,
     "explanation": "主節の動詞が過去形 said なので、従属節の時制も過去に合わせて would arrive になる（時制の一致）。",
     "translation": "その監督者は、交換部品が週末までに届くだろうと言った。",
+    "choiceNotes": {
+      "will arrive": "主節が過去形 said なので、時制の一致で would になる",
+      "arrive": "現在形。said に対して時制が合っていない",
+      "have arrived": "現在完了。すでに届いた意味になり、by the week と矛盾する"
+    },
     "difficulty": 3,
     "tags": ["時制の一致"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 3,
     "explanation": "not yet があり「まだ〜していない」という現在までの状況を表すので現在完了 has not yet reviewed。",
     "translation": "経理部は、先週金曜に提出された領収書をまだ確認していない。",
+    "choiceNotes": {
+      "did": "did not review なら過去形。yet と組んで現在までの状況は表せない",
+      "is": "is not reviewed だと受動態になり、後ろの目的語と合わない",
+      "does": "現在形の否定。yet と組んで「まだ〜していない」を表せない"
+    },
     "difficulty": 2,
     "tags": ["現在完了", "yet"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 1,
     "explanation": "require のような状態を表す動詞は通常進行形にしない。主語 The new packaging は単数なので requires。",
     "translation": "新しい包装は、従来の設計よりも棚のスペースを大幅に取らない。",
+    "choiceNotes": {
+      "is requiring": "require は状態を表す動詞なので通常進行形にしない",
+      "require": "主語が単数なので三単現の s が必要",
+      "is required": "受動態。後ろに目的語 space があるので能動でなければならない"
+    },
     "difficulty": 3,
     "tags": ["状態動詞", "進行形不可"]
   }

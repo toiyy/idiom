@@ -8,6 +8,11 @@
     "answerIndex": 2,
     "explanation": "applicants は可算名詞の複数形なので few が正解。little / much / a great deal of はいずれも不可算名詞に用いる。",
     "translation": "5年の実務経験という要件を満たす応募者はごくわずかだったため、募集期間が延長された。",
+    "choiceNotes": {
+      "a great deal of": "不可算名詞に使う。applicants は可算の複数形",
+      "little": "不可算名詞に使う。可算名詞には few",
+      "much": "不可算名詞に使う。applicants は数えられる"
+    },
     "difficulty": 1,
     "tags": ["可算", "few"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 0,
     "explanation": "progress は不可算名詞。many / a few / numerous はいずれも可算名詞にしか使えない。不可算名詞を修飾できる considerable が正解。",
     "translation": "新しい責任者が任命されて以来、その部署は移行プロジェクトで相当な進展を遂げている。",
+    "choiceNotes": {
+      "numerous": "可算名詞にしか使えない。progress は不可算",
+      "many": "可算名詞に使う。progress は数えられない",
+      "a few": "可算名詞に使う。不可算の progress には合わない"
+    },
     "difficulty": 2,
     "tags": ["不可算", "progress"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 3,
     "explanation": "動詞が単数の has なので、単数扱いの Either が正解。Both は複数扱い、All は 3 つ以上が対象、Every は直後に単数名詞が必要で of は続かない。",
     "translation": "2人の候補者のどちらも、その職に必要な技術的素養を備えている。",
+    "choiceNotes": {
+      "All": "3 つ以上が対象。ここは 2 人なので合わない",
+      "Every": "直後に単数名詞が必要で、of は続かない",
+      "Both": "複数扱いなので動詞 has と一致しない"
+    },
     "difficulty": 2,
     "tags": ["either", "単数扱い"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 2,
     "explanation": "time は不可算名詞なので much。many / few / several はすべて可算名詞に用いる。",
     "translation": "委員会には、締切前にすべての提出物を確認するだけの時間がなかった。",
+    "choiceNotes": {
+      "several": "可算名詞に使う。time は不可算",
+      "many": "可算名詞に使う。time は数えられない",
+      "few": "可算名詞に使う。不可算の time には合わない"
+    },
     "difficulty": 1,
     "tags": ["much", "不可算"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "paperwork は不可算名詞なので a great deal of。a great many / a number of は可算名詞に用いる。",
     "translation": "その移転には、法務チームが予想していなかった大量の書類仕事が必要だった。",
+    "choiceNotes": {
+      "a great many": "可算名詞に使う。paperwork は不可算",
+      "many": "可算名詞に使い、of を続ける形にもならない",
+      "a number": "a number of は可算名詞に使う。paperwork は不可算"
+    },
     "difficulty": 3,
     "tags": ["a great deal of", "不可算"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 0,
     "explanation": "名詞 damage を直接修飾して「まったく〜ない」を表すのは no。none は代名詞なので名詞を修飾できない。",
     "translation": "技術者は、装置が落下した後も外装に損傷はなかったと報告した。",
+    "choiceNotes": {
+      "none": "代名詞。名詞 damage を直接修飾できない",
+      "not": "副詞。名詞を直接修飾できない",
+      "any": "否定文なら使えるが、この文は肯定形なので成立しない"
+    },
     "difficulty": 2,
     "tags": ["no", "none"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 3,
     "explanation": "proposals は可算名詞の複数形なので Several。Much と A little は不可算名詞、Every は直後に単数名詞が必要。",
     "translation": "今年提出された提案のうちいくつかは、持続可能性に直接言及していた。",
+    "choiceNotes": {
+      "A little": "不可算名詞に使う。proposals は可算の複数形",
+      "Every": "直後に単数名詞が必要で、of は続かない",
+      "Much": "不可算名詞に使う。proposals は数えられる"
+    },
     "difficulty": 2,
     "tags": ["several", "可算"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 1,
     "explanation": "steps は可算名詞の複数形なので fewer。less は不可算名詞に用いる。",
     "translation": "新しい手順は従来のものより工程が少なく、約10分の短縮になる。",
+    "choiceNotes": {
+      "less": "不可算名詞に使う。steps は可算の複数形",
+      "lesser": "「より小さい・劣った」という別の意味の形容詞",
+      "little": "不可算名詞に使い、than とも組まない"
+    },
     "difficulty": 2,
     "tags": ["fewer", "less"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 2,
     "explanation": "Almost は副詞で every を修飾できる（almost every = ほとんどすべての）。Most は形容詞なので every の前には置けない。",
     "translation": "ほぼすべての部署が、共有文書システムへの移行を完了している。",
+    "choiceNotes": {
+      "The most": "最上級。every の前には置けない",
+      "Most": "形容詞・代名詞。every の前には置けない",
+      "Mostly": "副詞「主に」。every を修飾する用法はない"
+    },
     "difficulty": 3,
     "tags": ["almost", "most"]
   }

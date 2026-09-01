@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "efficient = 無駄が少ない、効率的。effective = 効果がある。電力を 30% 削減という文脈なので efficient が正解。",
     "translation": "再設計された組立ラインははるかに効率的で、以前より30パーセント少ない電力しか使わない。",
+    "choiceNotes": {
+      "effective": "「効果がある」。電力を減らすのは効率の話なので合わない",
+      "affective": "「感情に関わる」という心理学用語。綴りが似ているだけ",
+      "informative": "「有益な情報を与える」。組立ラインの性能を表さない"
+    },
     "difficulty": 2,
     "tags": ["efficient", "effective"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 0,
     "explanation": "economical = 経済的な、節約になる。economic は「経済の」という意味で economic growth のように使う。コスト削減の文脈なので economical。",
     "translation": "事務用品をまとめ買いすることが、月々の経費を削減する最も経済的な方法だ。",
+    "choiceNotes": {
+      "economically": "副詞。way を修飾する形容詞が必要な位置",
+      "economic": "「経済の」（economic growth など）。節約になるという意味はない",
+      "economy": "名詞「経済」。way を修飾できない"
+    },
     "difficulty": 2,
     "tags": ["economical", "economic"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 1,
     "explanation": "comprehensive = 包括的な、網羅的な。comprehensible = 理解できる。「すべての機能を扱う概要」なので comprehensive が正解。",
     "translation": "その手引書には、ソフトウェアで利用できる全機能の包括的な概要が載っている。",
+    "choiceNotes": {
+      "comprehending": "現在分詞「理解している」。概要の性質を表さない",
+      "comprehension": "名詞「理解力」。overview を修飾できない",
+      "comprehensible": "「理解できる」。全機能を扱うという網羅性は表さない"
+    },
     "difficulty": 3,
     "tags": ["comprehensive", "comprehensible"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 1,
     "explanation": "confidential = 機密の。confident = 自信がある。認可された社員にのみ共有という文脈なので confidential。",
     "translation": "給与に関する情報はすべて厳重に機密として扱い、権限のある職員とのみ共有しなければならない。",
+    "choiceNotes": {
+      "confidence": "名詞「自信・信頼」。kept の補語になる形容詞が必要",
+      "confident": "「自信がある」。情報の性質としては合わない",
+      "confiding": "「信頼して打ち明ける」。人の態度を表す語"
+    },
     "difficulty": 1,
     "tags": ["confidential", "confident"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 3,
     "explanation": "respective = それぞれの。respectful = 敬意を払う、respectable = 立派な、respected = 尊敬されている。3 人が「それぞれの」予算案を出す文脈。",
     "translation": "3人の部門長は期限までに、それぞれの予算案を提出した。",
+    "choiceNotes": {
+      "respectful": "「敬意を払う」。予算案が敬意を払うわけではない",
+      "respectable": "「立派な・見苦しくない」。「それぞれの」の意味にならない",
+      "respected": "「尊敬されている」。3 人それぞれを指す意味は持たない"
+    },
     "difficulty": 3,
     "tags": ["respective", "respectful"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 1,
     "explanation": "considerate = 思いやりのある。considerable は「かなりの（量・程度）」で人の配慮は表さない。",
     "translation": "その監督者は、夜勤の職員のために会議の日程を組み直すだけの心遣いがあった。",
+    "choiceNotes": {
+      "considering": "現在分詞・前置詞「〜を考慮すると」。人の性質を表さない",
+      "consideration": "名詞「考慮」。was の補語として意味が通らない",
+      "considerable": "「かなりの（量・程度）」。人の配慮は表さない"
+    },
     "difficulty": 3,
     "tags": ["considerate", "considerable"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 2,
     "explanation": "successive = 連続する。successful は「成功した」。「途切れのない連続記録」という文脈なので successive。",
     "translation": "その会社は5四半期連続で過去最高益を計上しており、2021年以来記録が途切れていない。",
+    "choiceNotes": {
+      "successful": "「成功した」。途切れのない連続という意味は持たない",
+      "succeeding": "「後に続く」。過去の 5 期を指す語としては不自然",
+      "success": "名詞「成功」。quarters を修飾できない"
+    },
     "difficulty": 3,
     "tags": ["successive", "successful"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "industrious = 勤勉な。industrial は「産業の」で、人を評価する文脈には合わない。",
     "translation": "その年次表彰は、目標を常に上回る勤勉な従業員を称えるものだ。",
+    "choiceNotes": {
+      "industry": "名詞「産業・勤勉」。employees を修飾する形にならない",
+      "industrial": "「産業の」。人の働きぶりを表す語ではない",
+      "industrially": "副詞。名詞 employees を修飾できない"
+    },
     "difficulty": 3,
     "tags": ["industrious", "industrial"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 2,
     "explanation": "be reliant on = 〜に依存している。reliable は「信頼できる」という意味で on を伴わない。reliance は名詞。",
     "translation": "その製造業者は、すべての部品を単一の海外工場に過度に依存してきた。",
+    "choiceNotes": {
+      "reliance": "名詞「依存」。be 動詞の補語として on と組めない",
+      "reliably": "副詞。be の補語にはなれない",
+      "reliable": "「信頼できる」。on を伴わず、意味も依存を表さない"
+    },
     "difficulty": 3,
     "tags": ["reliant", "reliable"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 1,
     "explanation": "be sensitive to = 〜に敏感である。sensible は「分別のある」で意味がまったく異なる。",
     "translation": "その計測機器は湿度の変化に非常に敏感なので、慎重に保管しなければならない。",
+    "choiceNotes": {
+      "sensible": "「分別のある」。機器が湿度に反応する意味にならない",
+      "sensory": "「感覚の」。to と組んで反応しやすさを表さない",
+      "sensation": "名詞「感覚」。be highly sensation とは言わない"
+    },
     "difficulty": 2,
     "tags": ["sensitive", "sensible"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 1,
     "explanation": "favorable = 好意的な。favorite は「お気に入りの」で、反応の性質を表す語ではない。",
     "translation": "移転案は、3名の地域責任者全員から好意的な反応を得た。",
+    "choiceNotes": {
+      "favoring": "現在分詞「支持している」。response の性質を表す形ではない",
+      "favor": "名詞・動詞「好意・支持する」。a favor response とは言わない",
+      "favorite": "「お気に入りの」。反応の性質を表す語ではない"
+    },
     "difficulty": 2,
     "tags": ["favorable", "favorite"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 0,
     "explanation": "be beneficial to = 〜に有益である。beneficiary は「受益者」という名詞で、be 動詞の補語として意味が通らない。",
     "translation": "定期的な保守は、機械の長期的な性能にとって有益である。",
+    "choiceNotes": {
+      "beneficiary": "名詞「受益者」。保守作業が受益者になるわけではない",
+      "benefited": "過去分詞。be beneficial to の形にならない",
+      "benefit": "名詞・動詞「利益・利する」。be benefit to という形はない"
+    },
     "difficulty": 2,
     "tags": ["beneficial", "beneficiary"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 3,
     "explanation": "complimentary = 無料の。complementary は「補完的な」で、綴りが 1 文字違うだけなので混同しやすい。",
     "translation": "2泊以上滞在するお客様は全員、毎朝無料の朝食を受けられる。",
+    "choiceNotes": {
+      "complement": "名詞・動詞「補完（する）」。無料の意味はない",
+      "complementary": "「補完的な」。綴りが 1 文字違うだけで意味が異なる",
+      "compliment": "名詞・動詞「褒め言葉」。breakfast を修飾できない"
+    },
     "difficulty": 3,
     "tags": ["complimentary", "complementary"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 2,
     "explanation": "ensure that 〜 = 〜を確実にする。assure は「人に保証する（assure 人 that）」で目的語に人が必要、insure は「保険をかける」。",
     "translation": "機械を始動させる前に、すべての安全カバーが所定の位置にあることを確認してください。",
+    "choiceNotes": {
+      "reassure": "「安心させる」。目的語に人が必要で that 節だけでは成立しない",
+      "insure": "「保険をかける」。確認の意味にならない",
+      "assure": "「人に保証する」。assure someone that の形で目的語に人が要る"
+    },
     "difficulty": 3,
     "tags": ["ensure", "assure/insure"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 0,
     "explanation": "principal = 主要な（形容詞）。principle は「原則」という名詞なので、名詞 reason を修飾できない。発音が同じで綴りが紛らわしい。",
     "translation": "遅延の主な理由は、資格を持つ検査員の不足だった。",
+    "choiceNotes": {
+      "principled": "「信念のある」。理由の性質を表す語ではない",
+      "principle": "名詞「原則」。名詞 reason を修飾できない",
+      "principally": "副詞「主に」。名詞 reason を修飾できない"
+    },
     "difficulty": 3,
     "tags": ["principal", "principle"]
   }

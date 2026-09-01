@@ -8,6 +8,11 @@
     "answerIndex": 3,
     "explanation": "主語は単数の The list で、of approved vendors は修飾句にすぎない。動詞は単数に合わせて is。直前の複数名詞 vendors に引きずられないことがポイント。",
     "translation": "承認済み取引先の一覧は、毎年3月に社内イントラネット上で更新される。",
+    "choiceNotes": {
+      "were": "複数の過去形。主語は単数の The list",
+      "have been": "複数に対応する形。主語は単数なので has been になる",
+      "are": "複数形。直前の vendors に引きずられている"
+    },
     "difficulty": 2,
     "tags": ["主語の特定", "修飾句"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 1,
     "explanation": "「Neither A nor B」では動詞に近いほうの B（the director、単数）に一致させる。よって is が正解。",
     "translation": "地域マネージャーも部長も、木曜日の説明会には出席できない。",
+    "choiceNotes": {
+      "were": "複数の過去形。近いほうの the director は単数",
+      "have been": "複数に対応する形。単数の director に一致させる",
+      "are": "複数形。Neither A nor B は近いほうに合わせる"
+    },
     "difficulty": 3,
     "tags": ["neither nor", "近接の原則"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 1,
     "explanation": "Each of 〜 は単数扱いなので三人称単数現在の receives が正解。of の後の複数名詞に引きずられない。",
     "translation": "参加者はそれぞれ、研修プログラムの終了時に修了証を受け取る。",
+    "choiceNotes": {
+      "receive": "複数に対応する形。Each of 〜 は単数扱い",
+      "are receiving": "複数形。主語 Each は単数",
+      "have received": "複数に対応する形。単数扱いなので has received になる"
+    },
     "difficulty": 2,
     "tags": ["each of", "単数扱い"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 1,
     "explanation": "The number of 〜 は「〜の数」という意味で単数扱い。A number of 〜（多くの〜）とは扱いが逆になる。",
     "translation": "オンラインで提出された申請の件数は、ウェブサイトの改訂以来急激に増加している。",
+    "choiceNotes": {
+      "have": "複数に対応する形。The number of 〜 は単数扱い",
+      "are": "複数形。主語は単数の The number",
+      "were": "複数の過去形。単数扱いなので合わない"
+    },
     "difficulty": 3,
     "tags": ["the number of"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "A number of + 複数名詞 は「多くの〜」で複数扱い。The number of（〜の数）とは逆になる。",
     "translation": "多くの従業員が、新しいメンター制度に関心を示している。",
+    "choiceNotes": {
+      "is": "単数形。A number of 〜 は複数扱い",
+      "was": "単数の過去形。複数扱いなので合わない",
+      "has": "単数に対応する形。A number of の後ろは複数扱い"
+    },
     "difficulty": 3,
     "tags": ["a number of"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 2,
     "explanation": "「Either A or B」は動詞に近いほうの B（the branch managers、複数）に一致させる。",
     "translation": "地域統括責任者か支店長のいずれかが、その申請の承認に責任を持つ。",
+    "choiceNotes": {
+      "has been": "単数に対応する形。近いほうの managers は複数",
+      "is": "単数形。Either A or B は近いほうに合わせる",
+      "was": "単数の過去形。複数の managers に一致させる"
+    },
     "difficulty": 3,
     "tags": ["either or", "近接の原則"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 2,
     "explanation": "along with 〜 は挿入句にすぎず主語には含まれない。主語は単数の The chief engineer なので is。",
     "translation": "主任技師は、2名の上級技術者とともに現場を視察する予定だ。",
+    "choiceNotes": {
+      "are": "複数形。along with 〜 は挿入句で主語に含まれない",
+      "were": "複数の過去形。主語は単数の The chief engineer",
+      "have been": "複数に対応する形。単数扱いなので合わない"
+    },
     "difficulty": 3,
     "tags": ["挿入句", "主語の特定"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 2,
     "explanation": "equipment は不可算名詞なので単数扱い。修飾句 in the storage room に引きずられない。",
     "translation": "保管室の機材は、年に2回外部業者によって点検される。",
+    "choiceNotes": {
+      "have been": "複数に対応する形。equipment は不可算で単数扱い",
+      "are": "複数形。equipment は不可算名詞",
+      "were being": "複数の進行形。単数扱いなので合わない"
+    },
     "difficulty": 2,
     "tags": ["不可算名詞", "主語の特定"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 0,
     "explanation": "There 構文では be 動詞の後ろの名詞が主語。discrepancies は複数なので are。",
     "translation": "署名済み契約書の2つの版の間には、いくつかの相違点がある。",
+    "choiceNotes": {
+      "has been": "単数に対応する形。主語 discrepancies は複数",
+      "is": "単数形。There の後ろの名詞が主語で、ここでは複数",
+      "was": "単数の過去形。複数の discrepancies に一致させる"
+    },
     "difficulty": 2,
     "tags": ["there構文"]
   }

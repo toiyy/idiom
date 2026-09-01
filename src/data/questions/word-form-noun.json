@@ -9,6 +9,11 @@
     "answerIndex": 0,
     "explanation": "冠詞 the と前置詞 of に挟まれた位置なので名詞が入る。creativity（創造性）が正解。creative は形容詞、creatively は副詞、create は動詞。",
     "translation": "取締役会は、新しいデジタル広告キャンペーンの創造性についてマーケティングチームを称賛した。",
+    "choiceNotes": {
+      "creatively": "副詞。the と of に挟まれた位置には入らない",
+      "create": "動詞の原形。冠詞 the の後ろには名詞が必要",
+      "creative": "形容詞「創造的な」。修飾する名詞が後ろにない"
+    },
     "difficulty": 1,
     "tags": ["名詞", "the ... of"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 2,
     "explanation": "前置詞 without の目的語であり、the と of に挟まれた位置なので名詞。approval（承認）が正解。",
     "translation": "市の都市計画委員会の承認がなければ、工事を開始することはできない。",
+    "choiceNotes": {
+      "approving": "動名詞・現在分詞。the ... of の形には入らない",
+      "approved": "過去分詞。名詞が必要な位置",
+      "approve": "動詞の原形。冠詞 the の後ろには置けない"
+    },
     "difficulty": 1,
     "tags": ["名詞", "the ... of"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 0,
     "explanation": "所有格 Our の直後は名詞。さらに文全体の主語で、動詞 has wavered に対応するので commitment（責務）が正解。",
     "translation": "顧客データを保護するという我々の責務が揺らいだことは一度もない。",
+    "choiceNotes": {
+      "committing": "動名詞。名詞 commitment があるときはそちらを使う",
+      "commit": "動詞の原形。所有格 Our の後ろには名詞が必要",
+      "committed": "過去分詞。文の主語になれない"
+    },
     "difficulty": 2,
     "tags": ["名詞", "所有格の後"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "他動詞 submitted の目的語であり、所有格 its の直後でもあるので名詞。proposal（提案書）が正解。",
     "translation": "財務チームは金曜日に、来年度のマーケティング予算に関する提案書を提出した。",
+    "choiceNotes": {
+      "proposed": "過去分詞・過去形。submitted の目的語になれない",
+      "proposing": "動名詞。its proposing とは言わず名詞 proposal を使う",
+      "propose": "動詞の原形。所有格 its の後ろには名詞が必要"
+    },
     "difficulty": 1,
     "tags": ["名詞", "目的語"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 3,
     "explanation": "文の主語にあたる位置で、動詞 will begin に対応するので名詞。Distribution（配布）が正解。",
     "translation": "新しいソフトウェアの配布は、来月から東部地域で始まる。",
+    "choiceNotes": {
+      "Distributed": "過去分詞。主語の位置には名詞が必要",
+      "Distributing": "動名詞。主語にはなれるが of ではなく目的語を直接とる形になる",
+      "Distribute": "動詞の原形。文の主語にはならない"
+    },
     "difficulty": 2,
     "tags": ["名詞", "主語"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 3,
     "explanation": "冠詞 a と形容詞 substantial に続く位置なので名詞。donation（寄付）が正解。",
     "translation": "その美術館は昨春、民間財団から多額の寄付を受け取った。",
+    "choiceNotes": {
+      "donate": "動詞の原形。冠詞 a の後ろには名詞が必要",
+      "donated": "過去分詞。a substantial に続けられない",
+      "donating": "動名詞。a を付けて数えることはできない"
+    },
     "difficulty": 1,
     "tags": ["名詞", "冠詞+形容詞の後"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 1,
     "explanation": "数量を表す Several の直後は可算名詞の複数形。動詞 have been made の主語でもあるので revisions（修正）が正解。",
     "translation": "3月の見直し以降、元の設計図にはいくつかの修正が加えられている。",
+    "choiceNotes": {
+      "revising": "動名詞。Several で数えられる形ではない",
+      "revised": "過去分詞。Several の直後には置けない",
+      "revise": "動詞の原形。数量詞 Several の後ろには名詞が必要"
+    },
     "difficulty": 2,
     "tags": ["名詞", "数量詞の後"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 3,
     "explanation": "名詞 desk を前から修飾して複合名詞を作るので名詞。reception desk（受付）が正解。receptive は「受容力のある」という形容詞で意味が合わない。",
     "translation": "来訪者は全員、実験室に入る前に受付で記帳しなければならない。",
+    "choiceNotes": {
+      "receive": "動詞の原形。名詞 desk を修飾できない",
+      "receptive": "形容詞だが「受容力のある」の意味で、受付の意味にならない",
+      "received": "過去分詞。「受け取られた机」となり意味が通らない"
+    },
     "difficulty": 2,
     "tags": ["名詞", "複合名詞"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 2,
     "explanation": "冠詞 a と形容詞 strict に続き、be 動詞の補語にあたる位置なので名詞。requirement（要件）が正解。",
     "translation": "時間を守ることは、顧客と接する全職員にとって厳格な要件である。",
+    "choiceNotes": {
+      "require": "動詞の原形。a strict の後ろには名詞が必要",
+      "required": "過去分詞。冠詞 a に続けて補語にはできない",
+      "requiring": "動名詞。a を付けて数えられない"
+    },
     "difficulty": 1,
     "tags": ["名詞", "補語"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 2,
     "explanation": "Each の直後は単数名詞。審査される対象は書類なので application（申請書）が正解。applicant（応募者）も名詞だが、人が「審査される」という文脈ではない。",
     "translation": "各申請書は、入学審査委員会の2名によって審査される。",
+    "choiceNotes": {
+      "applicant": "名詞だが「応募者（人）」。審査されるのは書類なので合わない",
+      "apply": "動詞の原形。Each の後ろには単数名詞が必要",
+      "applied": "過去分詞。名詞が必要な位置"
+    },
     "difficulty": 3,
     "tags": ["名詞", "人vs事柄"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 0,
     "explanation": "Every の直後は単数名詞。提出という動作をするのは人なので applicant（応募者）が正解。application（申請書）は提出される側なので主語にならない。",
     "translation": "応募者は全員、記入済みの登録用紙とあわせて作品集を提出しなければならない。",
+    "choiceNotes": {
+      "applied": "過去分詞。名詞が必要な位置",
+      "application": "名詞だが「申請書」。提出する動作の主語は人でなければならない",
+      "apply": "動詞の原形。Every の後ろには単数名詞が必要"
+    },
     "difficulty": 3,
     "tags": ["名詞", "人vs事柄"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 3,
     "explanation": "他動詞 offered の目的語で、形容詞 valuable に続く位置なので名詞。advice（助言）が正解。advise は動詞で綴りが似ているため混同しやすい。",
     "translation": "そのコンサルタントは、営業部門の再編について貴重な助言を与えた。",
+    "choiceNotes": {
+      "advise": "動詞「助言する」。名詞は advice で、綴りの違いに注意",
+      "advised": "過去分詞。形容詞 valuable に続けられない",
+      "advising": "動名詞。valuable advising とは言わない"
+    },
     "difficulty": 2,
     "tags": ["名詞", "advice / advise"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "the と of に挟まれた位置なので名詞。inspection（検査）が正解。動名詞 inspecting は「the ... of」の形には入らない。",
     "translation": "その監督者は、入荷するすべての荷物の検査に責任を負っている。",
+    "choiceNotes": {
+      "inspect": "動詞の原形。冠詞 the の後ろには名詞が必要",
+      "inspecting": "動名詞。the ... of の形には入らない",
+      "inspected": "過去分詞。名詞が必要な位置"
+    },
     "difficulty": 2,
     "tags": ["名詞", "動名詞との区別"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 2,
     "explanation": "文の主語で、動詞 has slowed に対応するので名詞。Growth（成長）が正解。",
     "translation": "製造業部門の成長は、今四半期にかなり鈍化した。",
+    "choiceNotes": {
+      "Grow": "動詞の原形。文の主語にはならない",
+      "Growing": "動名詞。in 〜 を続けて has slowed の主語にするのは不自然",
+      "Grown": "過去分詞。主語の位置には名詞が必要"
+    },
     "difficulty": 2,
     "tags": ["名詞", "主語"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 0,
     "explanation": "形容詞 insufficient に続き、前置詞 of が後続するので名詞。documentation（証拠書類）が正解。不可算名詞なので冠詞がなくても成立する。",
     "translation": "その請求は、修理費用を裏付ける書類が不十分だったため却下された。",
+    "choiceNotes": {
+      "documenting": "動名詞。insufficient documenting とは言わない",
+      "documented": "過去分詞。of が続く名詞が必要な位置",
+      "document": "名詞でもあるが可算名詞なので、冠詞か複数形が必要"
+    },
     "difficulty": 3,
     "tags": ["名詞", "不可算"]
   }

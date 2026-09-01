@@ -8,6 +8,11 @@
     "answerIndex": 0,
     "explanation": "前置詞 on の後ろに名詞節を置く場合、if は使えず whether を用いる。",
     "translation": "最終的な決定は、供給業者が当社の納品スケジュールに対応できるかどうかにかかっている。",
+    "choiceNotes": {
+      "that": "前置詞 on の後ろに that 節は置けない",
+      "what": "先行詞を含む関係代名詞。後ろが完全な文なので入らない",
+      "if": "前置詞の後ろでは if を使えない"
+    },
     "difficulty": 3,
     "tags": ["whether", "前置詞の後"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 2,
     "explanation": "名詞 announcement の内容を説明する同格の that 節。後ろが要素の欠けていない完全な文なので which や what は入らない。",
     "translation": "工場が閉鎖されるという発表は、町全体に衝撃を与えた。",
+    "choiceNotes": {
+      "what": "先行詞を含む関係代名詞。後ろが完全な文なので入らない",
+      "whether": "「〜かどうか」。発表の内容を説明する同格にならない",
+      "which": "関係代名詞。後ろが完全な文なので入らない"
+    },
     "difficulty": 3,
     "tags": ["that", "同格"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろは主語が欠けた不完全な文で、先行詞もないため「〜のもの・こと」を表す関係代名詞 what が正解。",
     "translation": "委員会は、最終報告書に何を含めるべきかで合意できなかった。",
+    "choiceNotes": {
+      "whether": "「〜かどうか」。後ろは主語が欠けた不完全な文",
+      "that": "接続詞。後ろには完全な文が必要",
+      "which": "先行詞がなく、単独では名詞節を作れない"
+    },
     "difficulty": 3,
     "tags": ["what", "不完全な文"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 1,
     "explanation": "後ろに真の主語となる that 節が続くので、形式主語の It を置く。",
     "translation": "すべての安全点検が保守記録簿に記載されることが重要である。",
+    "choiceNotes": {
+      "That": "That is important that ... という二重の形にはならない",
+      "What": "後ろが完全な文なので入らない",
+      "There": "There is important という形は成立しない"
+    },
     "difficulty": 2,
     "tags": ["形式主語 it"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "or not を直後に伴えるのは whether だけ。if or not という形は使えない。",
     "translation": "宿泊が必要かどうかをお知らせください。",
+    "choiceNotes": {
+      "that": "that or not という形はない",
+      "what": "後ろが完全な文で、or not とも組まない",
+      "if": "if or not という形は使えない"
+    },
     "difficulty": 2,
     "tags": ["whether or not"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 1,
     "explanation": "「疑問詞 + to 不定詞」で名詞句を作る。how to replace = 交換する方法。",
     "translation": "その説明書には、装置全体を外さずにフィルターを交換する方法が説明されている。",
+    "choiceNotes": {
+      "replacing": "動名詞。how の後ろには to 不定詞が来る",
+      "replaced": "過去分詞。how と組んで名詞句を作らない",
+      "replaces": "三単現。how の後ろに主語がなく成立しない"
+    },
     "difficulty": 2,
     "tags": ["疑問詞 + to不定詞"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 2,
     "explanation": "suggest の目的語となる名詞節で、後ろが完全な文なので接続詞の that が正解。what の後ろには不完全な文が続く。",
     "translation": "調査結果は、顧客が価格よりも配送の速さを重視していることを示唆している。",
+    "choiceNotes": {
+      "which": "先行詞がなく、後ろも完全な文",
+      "what": "後ろは要素の欠けていない完全な文なので入らない",
+      "whether": "「〜かどうか」。調査結果が示唆する内容としては不自然"
+    },
     "difficulty": 2,
     "tags": ["that", "目的語"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 0,
     "explanation": "whether to do A or do B = A するか B するか。if は直後に to 不定詞を続けられない。",
     "translation": "取締役会は、既存の施設を改修するか新しく建てるかをまだ決めていない。",
+    "choiceNotes": {
+      "if": "if の直後に to 不定詞は続かない",
+      "that": "that to do という形は存在しない",
+      "either": "either A or B は名詞や句を並べる形。to 不定詞の選択には使わない"
+    },
     "difficulty": 2,
     "tags": ["whether to"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろは主語が欠けた不完全な文で、その全体が文の主語になっている。先行詞を含む関係代名詞 What が正解。",
     "translation": "審査員に最も感銘を与えたのは、そのチームの細部への配慮だった。",
+    "choiceNotes": {
+      "That": "後ろは主語が欠けた不完全な文なので that は入らない",
+      "It": "形式主語なら was の後ろに真主語が必要だが、そうなっていない",
+      "Which": "先行詞がなく、単独では主語になる名詞節を作れない"
+    },
     "difficulty": 3,
     "tags": ["what", "主語"]
   },
@@ -116,6 +161,11 @@
     "answerIndex": 1,
     "explanation": "名詞節の中で動詞 submits の主語になるので、主格の Whoever（〜する人は誰でも）が正解。",
     "translation": "優勝作品を提出した人は誰でも、2週間の有給滞在制作の機会を得る。",
+    "choiceNotes": {
+      "However": "「どのように〜しても」。submits の主語にならない",
+      "Whomever": "目的格。ここでは submits の主語なので主格が必要",
+      "Whichever": "「どちらでも」。選択の対象を示す名詞が必要"
+    },
     "difficulty": 3,
     "tags": ["whoever", "複合関係代名詞"]
   }

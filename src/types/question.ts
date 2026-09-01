@@ -28,12 +28,39 @@ export const QuestionSchema = z
     explanation: z.string().min(1),
     /** 空所に正解を入れた状態の英文全体の日本語訳。回答後に表示する。 */
     translation: z.string().min(1),
+    /**
+     * 不正解の選択肢が「なぜ違うか」。回答後に各選択肢の下へ表示する。
+     * choices のインデックスではなく**選択肢の文字列をキー**にしているので、
+     * 選択肢の並べ替えで対応が壊れない。不正解 3 つ分がすべて必要。
+     */
+    choiceNotes: z.record(z.string().min(1), z.string().min(1)),
     /** 難易度（任意）。1=易 / 2=中 / 3=難 */
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]).optional(),
     /** 自由タグ（任意）。復習フィルタ等に使う。 */
     tags: z.array(z.string().min(1)).optional(),
   })
-  .strict();
+  .strict()
+  .superRefine((q, ctx) => {
+    const wrong = q.choices.filter((_, i) => i !== q.answerIndex);
+    for (const choice of wrong) {
+      if (!q.choiceNotes[choice]) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: `不正解の選択肢 "${choice}" の理由がありません`,
+          path: ['choiceNotes'],
+        });
+      }
+    }
+    for (const key of Object.keys(q.choiceNotes)) {
+      if (!q.choices.includes(key)) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: `choiceNotes のキー "${key}" が choices にありません`,
+          path: ['choiceNotes', key],
+        });
+      }
+    }
+  });
 
 export type Question = z.infer<typeof QuestionSchema>;
 

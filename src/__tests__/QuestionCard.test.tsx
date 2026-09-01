@@ -14,6 +14,11 @@ const question: Question = {
   answerIndex: 2,
   explanation: '曜日の前は on。',
   translation: 'それは月曜日に始まる。',
+  choiceNotes: {
+    in: '月や年に使う前置詞。曜日には使わない',
+    at: '時刻に使う前置詞。曜日には使わない',
+    since: '継続の起点を表す。開始日には使わない',
+  },
 };
 
 function setup(selectedIndex: number | null, confidence: Confidence | null, index = 0) {
@@ -62,6 +67,28 @@ describe('QuestionCard', () => {
     expect(screen.getByText('曜日の前は on。')).toBeInTheDocument();
     expect(screen.getByText('迷った')).toBeInTheDocument();
     expect(screen.getByRole('button', { name: '次の問題へ' })).toBeInTheDocument();
+  });
+
+  it('回答前は不正解の理由を出さない', () => {
+    setup(null, null);
+    expect(document.querySelectorAll('.choice__note')).toHaveLength(0);
+  });
+
+  it('自信度の申告前も不正解の理由は伏せたまま', () => {
+    setup(1, null);
+    expect(document.querySelectorAll('.choice__note')).toHaveLength(0);
+  });
+
+  it('回答後は不正解 3 つにだけ理由が出る', () => {
+    setup(1, 'unsure');
+    const notes = Array.from(document.querySelectorAll('.choice__note')).map(
+      (n) => n.textContent ?? '',
+    );
+    expect(notes).toHaveLength(3);
+    expect(notes).toContain('月や年に使う前置詞。曜日には使わない');
+    // 正解の on には理由を付けない（理由は解説にまとめてある）
+    const correct = document.querySelectorAll('.choice--correct .choice__note');
+    expect(correct).toHaveLength(0);
   });
 
   it('正解時は正解と表示される', () => {

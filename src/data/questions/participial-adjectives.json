@@ -8,6 +8,11 @@
     "answerIndex": 2,
     "explanation": "主語 presentation は人を「感動させる」側なので、現在分詞の inspiring が正解。過去分詞 inspired は「感動させられた」側に使う。",
     "translation": "基調講演者の発表はあまりに感動的で、聴衆は総立ちで拍手を送った。",
+    "choiceNotes": {
+      "inspire": "動詞の原形。be 動詞の後ろで so に続く補語にならない",
+      "inspired": "過去分詞「感動させられた」。発表は感動させる側",
+      "inspires": "三単現。すでに述語動詞 was がある"
+    },
     "difficulty": 2,
     "tags": ["-ing", "もの主語"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 2,
     "explanation": "主語 customers は人で「混乱させられた」側なので、過去分詞 confused が正解。",
     "translation": "多くの顧客が、返品規定の突然の変更に戸惑った。",
+    "choiceNotes": {
+      "confuse": "動詞の原形。were の補語にならない",
+      "confusing": "現在分詞「混乱させる」。顧客は混乱させられる側",
+      "confuses": "三単現。すでに述語動詞 were がある"
+    },
     "difficulty": 2,
     "tags": ["-ed", "人主語"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 0,
     "explanation": "主語 results は人を「勇気づける」側なので、現在分詞 encouraging が正解。",
     "translation": "試験運用の結果は、全面展開を正当化できるほど有望だった。",
+    "choiceNotes": {
+      "encourages": "三単現。すでに述語動詞 were がある",
+      "encouraged": "過去分詞「勇気づけられた」。結果は勇気づける側",
+      "encourage": "動詞の原形。were の補語にならない"
+    },
     "difficulty": 2,
     "tags": ["-ing", "もの主語"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 1,
     "explanation": "主語 employees は人で「満足させられている」側なので、過去分詞 satisfied が正解。",
     "translation": "現在の職務に満足している従業員は、会社を辞める可能性がはるかに低い。",
+    "choiceNotes": {
+      "satisfaction": "名詞「満足」。feel の補語としては形容詞が必要",
+      "satisfying": "現在分詞「満足させる」。従業員は満足させられる側",
+      "satisfy": "動詞の原形。feel の後ろに原形は置けない"
+    },
     "difficulty": 2,
     "tags": ["-ed", "人主語"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 0,
     "explanation": "主語 instructions は人を「誤解させる」側なので、現在分詞 misleading が正解。",
     "translation": "包装に書かれた説明は誤解を招くもので、複数の利用者が装置を誤って組み立てる結果になった。",
+    "choiceNotes": {
+      "misleads": "三単現。すでに述語動詞 were がある",
+      "misled": "過去分詞「誤解させられた」。説明書は誤解させる側",
+      "mislead": "動詞の原形。were の補語にならない"
+    },
     "difficulty": 3,
     "tags": ["-ing", "もの主語"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 1,
     "explanation": "主語 board は人の集まりで「喜ばされた」側なので、過去分詞 pleased が正解。be pleased with の形で覚える。",
     "translation": "取締役会は、合併が完了した速さに満足していた。",
+    "choiceNotes": {
+      "pleasing": "現在分詞「喜ばせる」。取締役会は喜ばされる側",
+      "please": "動詞の原形。was の補語にならない",
+      "pleasure": "名詞「喜び」。be pleased with という形が決まっている"
+    },
     "difficulty": 2,
     "tags": ["-ed", "be pleased with"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 1,
     "explanation": "名詞 sessions を修飾し、人に「歯ごたえを感じさせる」側なので現在分詞 challenging が正解。",
     "translation": "参加者はその研修を、その年で最も歯ごたえのある講習の一つだと評した。",
+    "choiceNotes": {
+      "challenges": "名詞の複数形または三単現。sessions を修飾できない",
+      "challenged": "過去分詞「挑まれた」。講習は歯ごたえを感じさせる側",
+      "challenge": "名詞・動詞。the most に続けて sessions を修飾できない"
+    },
     "difficulty": 2,
     "tags": ["-ing", "名詞修飾"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 2,
     "explanation": "名詞 participants を修飾し、参加者は「登録された」側なので過去分詞 Registered が正解。",
     "translation": "登録済みの参加者は、9時前に受付でネームバッジをお受け取りください。",
+    "choiceNotes": {
+      "Registering": "現在分詞。参加者は登録される側なので過去分詞が必要",
+      "Register": "動詞の原形。名詞 participants を修飾できない",
+      "Registration": "名詞。participants を修飾する形にならない"
+    },
     "difficulty": 2,
     "tags": ["-ed", "名詞修飾"]
   }

@@ -59,6 +59,10 @@ npm run dev        # 開発サーバ（http://localhost:5173）
 選択肢をクリック  →  自信度を選ぶ（1〜3 キーでも可）  →  正誤 / 日本語訳 / 解説
 ```
 
+回答後は**不正解 3 つそれぞれの下に「なぜ違うか」が出る**。正解の理由は解説に
+まとめてあるので、正解の選択肢には付けない。4 択で 1 つを選べても、
+残り 3 つを切れる理由まで言えないと本番では落とすため。
+
 | 自信度      | 結果   | 復習リスト |
 | ----------- | ------ | ---------- |
 | 自信あり    | 正解   | **外れる** |
@@ -177,6 +181,13 @@ vocabulary-connectives        接続副詞（however / nevertheless / accordingl
   "answerIndex": 1, // 0..3
   "explanation": "日本語の解説",
   "translation": "空所に正解を入れた英文全体の日本語訳", // 必須
+  // 不正解 3 つの「なぜ違うか」。必須。選択肢の文字列をキーにするので
+  // 並べ替えても対応が壊れない。正解の選択肢に付けるのは任意
+  "choiceNotes": {
+    "completes": "現在形。完了しているという意味が出ない",
+    "completed": "過去形。未来の話なので合わない",
+    "has completed": "現在完了。未来の時点までの完了は表せない",
+  },
   "difficulty": 2, // 任意: 1 | 2 | 3
   "tags": ["未来完了"], // 任意
 }
@@ -188,6 +199,7 @@ vocabulary-connectives        接続副詞（however / nevertheless / accordingl
 
 - 4 モード（全問 / 復習 / カテゴリ別 / サブカテゴリ別）のシャッフル出題
 - 4 択選択 → 自信度の申告 → 正誤判定 → 日本語訳 → 解説 → 次へ
+- 不正解 3 つそれぞれに「なぜ違うか」を選択肢の下へインライン表示
 - 自信度別の正答率集計と、「確信なしで正解した数」の可視化
 - セッション正答率、累計正答率の保存・表示、要復習リストの自動更新
 - 途中中断してホームに戻る
@@ -213,6 +225,6 @@ src/
 │   └── storage.ts         # localStorage ラッパ・自信度と復習判定
 ├── components/            # HomeScreen / QuestionCard / ChoiceButton /
 │                          # ConfidenceTable / ResultView
-├── __tests__/             # Vitest（81 tests）
+├── __tests__/             # Vitest（88 tests）
 └── App.tsx                # home / quiz / result の画面遷移
 ```

@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "meet a deadline = 締切に間に合う。日本語の「締切に達する / 間に合う」から reach や catch を選びがちだが、英語では使わない固定表現。",
     "translation": "その工場は3か月連続で納品期限に間に合っていない。",
+    "choiceNotes": {
+      "achieve": "「達成する」だが deadline とは結びつかない",
+      "catch": "「捕まえる」。日本語の「締切に間に合う」から選びがちだが英語では使わない",
+      "reach": "「到達する」。deadline には使わず meet を用いる"
+    },
     "difficulty": 2,
     "tags": ["meet a deadline"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 1,
     "explanation": "reach an agreement = 合意に達する。arrive を使うなら arrive at an agreement と前置詞が必要。met / gained は agreement と結びつかない。",
     "translation": "2社は8か月にわたる交渉の末、ついに合意に達した。",
+    "choiceNotes": {
+      "gained": "「獲得する」。agreement とは結びつかない",
+      "met": "「満たす」。met an agreement とは言わない",
+      "arrived": "自動詞。arrive at an agreement なら成立するが at が必要"
+    },
     "difficulty": 2,
     "tags": ["reach an agreement"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 1,
     "explanation": "complete a form = 書類に記入する。finish / accomplish / fulfill も「完了させる」意味だが、書類の記入という文脈では使わない。",
     "translation": "添付の用紙に記入し、人事部へご返送ください。",
+    "choiceNotes": {
+      "finish": "「終える」。書類への記入には使わない",
+      "accomplish": "「成し遂げる」。form とは結びつかない",
+      "fulfill": "「果たす」。義務や条件には使うが form には使わない"
+    },
     "difficulty": 2,
     "tags": ["complete a form"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "take effect = 効力を発する、施行される。固定表現なので他の動詞に置き換えられない。",
     "translation": "改訂された安全規則は来月1日に施行される。",
+    "choiceNotes": {
+      "make": "make effect という形はない",
+      "have": "have effect on なら可だが、施行の意味では take effect を使う",
+      "get": "get effect とは言わない"
+    },
     "difficulty": 1,
     "tags": ["take effect"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 1,
     "explanation": "make a decision = 決定する。日本語の「決定を下す / 取る」から take を選びがちだが、英語では make を使う。",
     "translation": "取締役会は今週中に、業者との契約について決定を下す。",
+    "choiceNotes": {
+      "take": "日本語の「決定を取る」から選びがちだが、英語では make a decision",
+      "do": "do a decision という形はない",
+      "give": "give a decision とは言わない"
+    },
     "difficulty": 1,
     "tags": ["make a decision"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 3,
     "explanation": "place an order = 注文する。put / set / do はいずれも order とは結びつかない固定表現。",
     "translation": "50個を超える注文をご希望のお客様は、営業窓口までご連絡ください。",
+    "choiceNotes": {
+      "do": "do an order という形はない",
+      "put": "put an order とは言わず place an order を使う",
+      "set": "set an order という形はない"
+    },
     "difficulty": 2,
     "tags": ["place an order"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 1,
     "explanation": "meet requirements = 要件を満たす。meet は deadline / requirement / standard / demand と結びつく最重要動詞。",
     "translation": "応募者は全員、求人票に記載された最低要件を満たさなければならない。",
+    "choiceNotes": {
+      "answer": "「答える」。requirements とは結びつかない",
+      "reach": "「到達する」。requirements には使わない",
+      "fill": "fill a requirement とは言わない"
+    },
     "difficulty": 1,
     "tags": ["meet requirements"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "raise concerns = 懸念を表明する。rise は自動詞なので目的語をとれない。lift / grow は concerns と結びつかない。",
     "translation": "数名の住民が、夜間工事の騒音レベルについて懸念を表明した。",
+    "choiceNotes": {
+      "rose": "rise は自動詞なので目的語 concerns をとれない",
+      "lifted": "「持ち上げる」。concerns とは結びつかない",
+      "grew": "「育つ・育てる」。concerns の目的語をとる用法はない"
+    },
     "difficulty": 2,
     "tags": ["raise concerns", "raise/rise"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 3,
     "explanation": "conduct a survey = 調査を実施する。conduct は research / interview / inspection とも結びつく。take a survey は「アンケートに答える」側の意味になる。",
     "translation": "マーケティングチームは来月初めに、顧客満足度の調査を実施する。",
+    "choiceNotes": {
+      "make": "make a survey とは言わない",
+      "take": "take a survey は「アンケートに答える」側の意味になる",
+      "do": "口語では使われることもあるが、正式には conduct を用いる"
+    },
     "difficulty": 2,
     "tags": ["conduct a survey"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 0,
     "explanation": "implement a policy = 方針を実施する。perform / commit / practice はいずれも policy と結びつかない。",
     "translation": "その会社は4月から、全支店で新しい勤怠方針を実施する。",
+    "choiceNotes": {
+      "perform": "「実行する」。policy とは結びつかない",
+      "commit": "「委ねる・犯す」。policy の目的語はとらない",
+      "practice": "「実践する」。policy を導入する意味にはならない"
+    },
     "difficulty": 2,
     "tags": ["implement a policy"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 1,
     "explanation": "extend a deadline = 締切を延長する。expand は規模を広げる、enlarge は大きくするの意味で期限には使わない。prolong は「時間を長引かせる」で deadline とは結びつかない。",
     "translation": "主催者は、提出期限を1週間延長することに同意した。",
+    "choiceNotes": {
+      "expand": "「規模を広げる」。期限には使わない",
+      "enlarge": "「大きくする」。deadline とは結びつかない",
+      "prolong": "「時間を長引かせる」。deadline とは組まない"
+    },
     "difficulty": 2,
     "tags": ["extend a deadline"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 2,
     "explanation": "hold a conference = 会議を開催する。open / carry / bring はいずれも conference と結びつかない。",
     "translation": "その協会は今年9月、年次会議をバンクーバーで開催する。",
+    "choiceNotes": {
+      "open": "「開く」。会議の開催には hold を使う",
+      "carry": "carry out なら「実施する」だが、out がなければ成立しない",
+      "bring": "「持ってくる」。conference とは結びつかない"
+    },
     "difficulty": 1,
     "tags": ["hold a conference"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "meet demand = 需要に応える。meet は deadline / requirement / demand / standard と結びつく。",
     "translation": "その工場は、海外市場からの高まる需要に応えるため生産ラインを拡張した。",
+    "choiceNotes": {
+      "answer": "「答える」。demand とは結びつかない",
+      "reply": "自動詞。reply to の形が必要で demand には使わない",
+      "fill": "fill an order なら可だが demand には使わない"
+    },
     "difficulty": 2,
     "tags": ["meet demand"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 0,
     "explanation": "launch a product = 製品を発売する、市場に投入する。start / open / begin はいずれも product と結びつかない。",
     "translation": "その会社はベルリンの見本市で、タブレット端末の新シリーズを発売する予定だ。",
+    "choiceNotes": {
+      "open": "「開く」。製品の発売には使わない",
+      "begin": "「始める」。product を目的語にとる用法はない",
+      "start": "「始める」。新製品の発売には launch を使う"
+    },
     "difficulty": 1,
     "tags": ["launch a product"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "file a complaint = 苦情を申し立てる。file は report / claim / application とも結びつく。",
     "translation": "お客様はどなたでも、オンラインのサポート窓口から苦情を申し立てることができる。",
+    "choiceNotes": {
+      "place": "place an order なら可だが complaint には使わない",
+      "give": "give a complaint とは言わない",
+      "put": "put a complaint という形はない"
+    },
     "difficulty": 2,
     "tags": ["file a complaint"]
   }

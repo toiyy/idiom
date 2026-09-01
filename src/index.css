@@ -234,7 +234,7 @@ body {
 
 .choice {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   width: 100%;
   padding: 12px 14px;
@@ -245,6 +245,19 @@ body {
   font: inherit;
   text-align: left;
   cursor: pointer;
+}
+
+.choice__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.choice__note {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.6;
 }
 
 .choice:disabled {

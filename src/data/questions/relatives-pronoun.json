@@ -9,6 +9,11 @@
     "answerIndex": 2,
     "explanation": "空所の直後に無冠詞の名詞 recommendations が続き「そのコンサルタントの提言」という所有関係になるため、所有格の whose が正解。",
     "translation": "昨年われわれが提言を採用したコンサルタントが、再び講演に招かれている。",
+    "choiceNotes": {
+      "who": "主格。後ろに無冠詞の名詞が続くので所有格が必要",
+      "whom": "目的格。recommendations という名詞が直後に来る形にならない",
+      "which": "先行詞が人なので不可。所有関係も表せない"
+    },
     "difficulty": 3,
     "tags": ["whose", "所有格"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 2,
     "explanation": "先行詞 a proposal は「もの」で、空所の後ろは主語が欠けた不完全な文。よって主格の which が正解。what は先行詞をとらない。",
     "translation": "アルバレスさんは、審査委員全員に感銘を与えた提案書を提出した。",
+    "choiceNotes": {
+      "what": "先行詞をとらない関係代名詞。すでに a proposal がある",
+      "who": "先行詞 proposal は人ではない",
+      "whose": "所有格。後ろに名詞が続いていない"
+    },
     "difficulty": 2,
     "tags": ["which", "主格"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "先行詞 engineer は人で、空所の後ろは主語が欠けた不完全な文なので主格の who。",
     "translation": "冷却システムを設計した技師が、会議でその調査結果を発表する。",
+    "choiceNotes": {
+      "which": "先行詞 engineer は人なので不可",
+      "whose": "所有格。後ろに名詞が続いていない",
+      "whom": "目的格。後ろは主語が欠けているので主格が必要"
+    },
     "difficulty": 1,
     "tags": ["who", "主格"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "前置詞 to の直後に置ける関係代名詞は目的格の whom。who や that は前置詞の直後には置けない。",
     "translation": "我々がその職を提示した候補者は、こちらの条件をすべて受け入れた。",
+    "choiceNotes": {
+      "which": "先行詞 candidate は人なので不可",
+      "that": "前置詞の直後には置けない",
+      "who": "主格。前置詞 to の直後には目的格 whom が入る"
+    },
     "difficulty": 3,
     "tags": ["whom", "前置詞+関係代名詞"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 3,
     "explanation": "前置詞 in の直後には which を置く。that は前置詞の直後に置けず、where は前置詞と一緒には使わない。",
     "translation": "組織標本が保管されている実験室は、一定の温度に保たれている。",
+    "choiceNotes": {
+      "where": "関係副詞。前置詞 in と一緒には使えない",
+      "what": "先行詞をとらない関係代名詞。前置詞の後ろにも置けない",
+      "that": "前置詞の直後には置けない"
+    },
     "difficulty": 3,
     "tags": ["which", "前置詞+関係代名詞"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 0,
     "explanation": "カンマ以降で前の文全体を受ける非制限用法の which。that は非制限用法には使えない。",
     "translation": "その工場は生産量を30パーセント増やしたが、これは当初の予測を上回るものだった。",
+    "choiceNotes": {
+      "what": "先行詞をとらない。前の文全体を受ける用法もない",
+      "it": "代名詞。カンマだけで 2 つの文をつなぐことはできない",
+      "that": "非制限用法（カンマの後）では使えない"
+    },
     "difficulty": 3,
     "tags": ["which", "非制限用法"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろに無冠詞の名詞 delivery times が続き「その業者の納期」という所有関係になるので whose。先行詞が人でなくても whose は使える。",
     "translation": "納期が最も短かった供給業者が、総合評価で最高点を得た。",
+    "choiceNotes": {
+      "which": "主格・目的格。後ろに無冠詞の名詞が続くので所有格が必要",
+      "whom": "目的格。名詞が直後に来る形にならない",
+      "who": "主格。所有関係を表せない"
+    },
     "difficulty": 3,
     "tags": ["whose", "所有格"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 0,
     "explanation": "先行詞 materials は「もの」で、後ろは目的語が欠けた不完全な文。目的格の関係代名詞 that が入る。what は先行詞をとらない。",
     "translation": "そのコンサルタントが用意した研修資料は、参加者全員から高く評価された。",
+    "choiceNotes": {
+      "whose": "所有格。後ろに名詞ではなく主語 + 動詞が続いている",
+      "what": "先行詞をとらない関係代名詞。すでに materials がある",
+      "who": "先行詞 materials は人ではない"
+    },
     "difficulty": 2,
     "tags": ["that", "目的格"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 2,
     "explanation": "「Those who + 動詞」= 〜する人々。関係代名詞 who の先行詞となる Those を置く。",
     "translation": "認定を修了した人は、上級技術者の職に就く資格を得る。",
+    "choiceNotes": {
+      "Them": "目的格。文の主語にはなれない",
+      "Whom": "目的格。後ろに who が続く形にならない",
+      "They": "関係代名詞 who の先行詞にはなれない"
+    },
     "difficulty": 2,
     "tags": ["those who"]
   }

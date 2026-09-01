@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "put off = 延期する。call off も「中止する」で文法的には成立するが、until the following weekend（翌週末まで）とあるので延期でなければ矛盾する。",
     "translation": "嵐のため、屋外での式典は翌週末まで延期された。",
+    "choiceNotes": {
+      "taken": "take off は「離陸する・脱ぐ」で意味が合わない",
+      "brought": "bring off は「やってのける」。延期の意味にならない",
+      "called": "call off は「中止する」。until the following weekend と矛盾する"
+    },
     "difficulty": 3,
     "tags": ["put off", "call off"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 3,
     "explanation": "roll out = （新製品・サービスを）展開する、市場に投入する。take out は「取り出す」、put out は「消す / 公表する」。",
     "translation": "その会社は来春、環境に配慮した新しい包装製品を市場に投入する予定だ。",
+    "choiceNotes": {
+      "take": "take out は「取り出す」。新製品の展開にはならない",
+      "put": "put out は「消す・公表する」で意味が合わない",
+      "bring": "bring out は「世に出す」だが、out と組んで市場展開を表す定型は roll out"
+    },
     "difficulty": 2,
     "tags": ["roll out"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 3,
     "explanation": "look over = ざっと目を通す、確認する。see / watch / view は over と結びついて句動詞を作らない。",
     "translation": "署名する前に、契約書によく目を通してください。",
+    "choiceNotes": {
+      "watch": "watch over は「見守る」。書類を確認する意味にならない",
+      "view": "view over という句動詞はない",
+      "see": "see over はほとんど使われず、確認の意味にならない"
+    },
     "difficulty": 2,
     "tags": ["look over"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 2,
     "explanation": "back up = バックアップを取る。set up は「設置する」、hold up は「遅らせる」、keep up は「維持する」で文脈に合わない。",
     "translation": "IT部門はセキュリティ更新を導入する前に、データベースのバックアップを取る。",
+    "choiceNotes": {
+      "set": "set up は「設置する」。データの保存の意味にならない",
+      "keep": "keep up は「維持する」で文脈に合わない",
+      "hold": "hold up は「遅らせる・持ちこたえる」の意味"
+    },
     "difficulty": 1,
     "tags": ["back up"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 3,
     "explanation": "turn down = 断る、却下する。cut down は「削減する」、break down は「故障する」、put down は「書き留める」。",
     "translation": "年間予算を超過していたため、我々はその提案を断らざるを得なかった。",
+    "choiceNotes": {
+      "break": "break down は「故障する・内訳を示す」の意味",
+      "put": "put down は「書き留める・置く」で却下の意味にならない",
+      "cut": "cut down は「削減する・切り倒す」の意味"
+    },
     "difficulty": 2,
     "tags": ["turn down"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 2,
     "explanation": "carry out = （計画・調査を）実施する。bring out は「世に出す」、take out は「取り出す」、hold out は「持ちこたえる」。",
     "translation": "安全管理チームは来週火曜日に、荷積み場の全面点検を実施する。",
+    "choiceNotes": {
+      "hold": "hold out は「持ちこたえる・差し出す」の意味",
+      "bring": "bring out は「世に出す」で点検の実施にはならない",
+      "take": "take out は「取り出す」の意味"
+    },
     "difficulty": 2,
     "tags": ["carry out"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "hand in = 提出する。give in は「屈する」、put in は「投入する」、take in は「理解する・取り込む」。",
     "translation": "記入済みの勤務時間表は、水曜日までに給与課へ提出してください。",
+    "choiceNotes": {
+      "give": "give in は「屈する・降参する」の意味",
+      "put": "put in は「投入する・申し込む」で提出の意味にならない",
+      "take": "take in は「理解する・取り込む」の意味"
+    },
     "difficulty": 2,
     "tags": ["hand in"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 2,
     "explanation": "set up = 設置する、準備する。put up は「掲げる・宿泊させる」、bring up は「話題に出す」。",
     "translation": "IT部門は東会議室に、臨時の作業席を設置する。",
+    "choiceNotes": {
+      "put": "put up は「掲げる・宿泊させる」の意味",
+      "make": "make up は「構成する・でっちあげる」で設置の意味にならない",
+      "bring": "bring up は「話題に出す・育てる」の意味"
+    },
     "difficulty": 1,
     "tags": ["set up"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 1,
     "explanation": "run out of = 〜を切らす、使い果たす。go out of / get out of / come out of はいずれもこの意味にならない。",
     "translation": "倉庫は繁忙期の3日前に、梱包材を切らしてしまった。",
+    "choiceNotes": {
+      "got": "get out of は「〜から出る・逃れる」の意味",
+      "came": "come out of は「〜から出てくる」で在庫切れを表さない",
+      "went": "go out of は「〜から出る」。go out of business のような形で使う"
+    },
     "difficulty": 2,
     "tags": ["run out of"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 3,
     "explanation": "take over = 引き継ぐ。hand over は「引き渡す」で主語と目的の関係が逆になる。turn over は「引き渡す・ひっくり返す」。",
     "translation": "現在の担当者が6月に退職する際、チェンさんが北部地域を引き継ぐ。",
+    "choiceNotes": {
+      "hand": "hand over は「引き渡す」で、引き継ぐ側が主語のこの文には合わない",
+      "turn": "turn over は「引き渡す・ひっくり返す」の意味",
+      "get": "get over は「乗り越える」の意味"
+    },
     "difficulty": 2,
     "tags": ["take over"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 0,
     "explanation": "come up with = （案を）思いつく。put up with は「我慢する」、bring up は「話題に出す」で意味が異なる。",
     "translation": "デザインチームは金曜のレビューまでに、3つの新しい案を出す必要がある。",
+    "choiceNotes": {
+      "put": "put up with は「我慢する」の意味",
+      "make": "make up は「構成する・でっちあげる」で案を出す意味にならない",
+      "bring": "bring up は「話題に出す」の意味"
+    },
     "difficulty": 2,
     "tags": ["come up with"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 0,
     "explanation": "fill out = （書類に）記入する。fill in も同義で使われるが、write out / take out / hold out はこの意味にならない。",
     "translation": "応募者は、添付の登録用紙に黒インクのみで記入してください。",
+    "choiceNotes": {
+      "hold": "hold out は「持ちこたえる」の意味",
+      "write": "write out は「清書する」で書類への記入にはならない",
+      "take": "take out は「取り出す」の意味"
+    },
     "difficulty": 1,
     "tags": ["fill out"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 3,
     "explanation": "cut back on = 〜を削減する。hold back は「抑える」、bring back は「戻す」、turn back は「引き返す」。",
     "translation": "その部署は今四半期、裁量的な支出を削減するよう求められた。",
+    "choiceNotes": {
+      "hold": "hold back は「抑える・引き止める」の意味",
+      "bring": "bring back は「戻す・思い出させる」の意味",
+      "turn": "turn back は「引き返す」で削減の意味にならない"
+    },
     "difficulty": 2,
     "tags": ["cut back on"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 3,
     "explanation": "look into = 調査する。see / watch / check は into と結びついて句動詞を作らない。",
     "translation": "コンプライアンス担当者が、先月の在庫報告書の食い違いを調査する。",
+    "choiceNotes": {
+      "watch": "watch into という句動詞はない",
+      "check": "check into は「宿泊手続きをする」の意味",
+      "see": "see into は「見通す」で調査の意味にはならない"
+    },
     "difficulty": 2,
     "tags": ["look into"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "step down = 辞任する、退く。put down は「書き留める・置く」、take down は「取り外す・書き取る」、get down は「降りる」。",
     "translation": "最高財務責任者は、今年度末で退任する。",
+    "choiceNotes": {
+      "take": "take down は「取り外す・書き取る」の意味",
+      "get": "get down は「降りる・書き留める」で辞任の意味にならない",
+      "put": "put down は「書き留める・置く」の意味"
+    },
     "difficulty": 3,
     "tags": ["step down"]
   }

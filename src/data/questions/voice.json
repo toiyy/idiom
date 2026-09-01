@@ -8,6 +8,11 @@
     "answerIndex": 0,
     "explanation": "主語 The keynote address は「述べられる」側なので受動態。後続の副詞節の内容から未来の事柄とわかるので will be delivered が正解。",
     "translation": "基調講演は、授賞式の終了直後にCEOによって行われる。",
+    "choiceNotes": {
+      "has delivered": "能動の現在完了。講演が誰かを届けるわけではない",
+      "delivering": "現在分詞。単独では述語動詞にならない",
+      "will deliver": "能動態。主語 address は届けられる側なので受動が必要"
+    },
     "difficulty": 2,
     "tags": ["受動態", "未来"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 2,
     "explanation": "助動詞 must の後ろは動詞の原形。報告書は「提出される」側なので受動態の原形 be submitted が正解。been submitted は have が必要。",
     "translation": "経費報告書はすべて、毎月5日までに経理部へ提出しなければならない。",
+    "choiceNotes": {
+      "been submitted": "been の前に have が必要。must の後ろには置けない",
+      "submit": "能動態。報告書は提出される側なので受動が必要",
+      "submitting": "現在分詞。助動詞 must の後ろには原形が来る"
+    },
     "difficulty": 1,
     "tags": ["受動態", "助動詞"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 3,
     "explanation": "主語 The renovation project は「遅らされた」側であり、後ろに by（動作主）が続いているので受動態 was delayed。delay は他動詞なので能動態なら目的語が必要になる。",
     "translation": "その改修工事は、昨春の予期せぬ建設資材の不足によって遅延した。",
+    "choiceNotes": {
+      "has delaying": "has の後ろは過去分詞。has delaying という形はない",
+      "delay": "現在形。後ろに by 〜 があるので受動でなければならない",
+      "delayed": "能動の過去形。他動詞 delay の目的語がなく成立しない"
+    },
     "difficulty": 1,
     "tags": ["受動態", "by"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 1,
     "explanation": "監査人が到着した（過去）よりさらに前に完了していたので、過去完了の受動態 had been completed。",
     "translation": "安全点検は、監査人が火曜の朝に到着する前に完了していた。",
+    "choiceNotes": {
+      "has": "現在完了。監査人の到着（過去）より前という関係が出ない",
+      "has being": "has being という形は存在しない",
+      "was been": "was been という形は存在しない"
+    },
     "difficulty": 3,
     "tags": ["過去完了の受動態"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 2,
     "explanation": "occur は自動詞なので受動態にできない。能動の occurred が正解。",
     "translation": "ソフトウェア移行の最終段階で、深刻な問題が発生した。",
+    "choiceNotes": {
+      "is occurred": "occur は自動詞なので受動態にできない",
+      "was occurred": "occur は自動詞。受動態の形をとらない",
+      "has been occurred": "自動詞は受動態にならないため誤り"
+    },
     "difficulty": 3,
     "tags": ["自動詞", "受動態にしない動詞"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 0,
     "explanation": "今まさに舗装をやり直している最中なので、現在進行形の受動態 is being resurfaced。",
     "translation": "東駐車場は今週舗装をやり直しているので、北口をご利用ください。",
+    "choiceNotes": {
+      "is been": "is been という形は存在しない",
+      "has being": "has being という形は存在しない",
+      "is": "受動態にするには is being + 過去分詞が必要。今まさに進行中の意味も出ない"
+    },
     "difficulty": 3,
     "tags": ["進行形の受動態"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 3,
     "explanation": "be filled with = 〜で満たされている。動作主を示す by ではなく with を使う定型表現。",
     "translation": "講堂は30か国を超える国からの代表者で埋まっていた。",
+    "choiceNotes": {
+      "of": "be filled of とは言わない",
+      "from": "be filled from という定型はない",
+      "by": "動作主を示す by。be filled は with と組むのが決まった形"
+    },
     "difficulty": 2,
     "tags": ["受動態", "by以外の前置詞"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 1,
     "explanation": "従業員は「求められる」側なので受動態。be required to do の形になる。",
     "translation": "従業員は、新しいオンラインポータル経由で経費報告書を提出することが求められている。",
+    "choiceNotes": {
+      "requires": "能動態。従業員は求められる側なので受動が必要",
+      "requiring": "現在分詞。単独では述語動詞にならない",
+      "require": "能動態。後ろが to submit なので be required to の形にする"
+    },
     "difficulty": 2,
     "tags": ["受動態", "be required to"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 3,
     "explanation": "「〜されるべきだった（のにされなかった）」を表すので should have been + 過去分詞。",
     "translation": "日誌が毎日確認されていれば、その誤りはもっと早く発見されていたはずだ。",
+    "choiceNotes": {
+      "must": "must have been は「〜されたに違いない」。実際は発見されていない",
+      "can": "can have been は疑問文・否定文以外ではほとんど使わない",
+      "will": "will have been は未来完了。過去への後悔は表せない"
+    },
     "difficulty": 3,
     "tags": ["助動詞+完了受動態"]
   }

@@ -9,6 +9,11 @@
     "answerIndex": 3,
     "explanation": "consider は動名詞のみを目的語にとる動詞（consider / enjoy / finish / avoid / suggest など）。to 不定詞は不可。",
     "translation": "委員会は、助成金申請の締切を2週間延長することを検討している。",
+    "choiceNotes": {
+      "extension": "名詞。後ろの目的語 the deadline を直接とれない",
+      "extended": "過去分詞。consider の目的語にならない",
+      "to extend": "consider は動名詞のみを目的語にとる"
+    },
     "difficulty": 2,
     "tags": ["動名詞", "consider"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 2,
     "explanation": "前置詞 for の後ろに動詞を続けるときは動名詞にする。",
     "translation": "その技術者は、四半期ごとに校正記録を更新する責任を負っている。",
+    "choiceNotes": {
+      "update": "動詞の原形。前置詞 for の後ろには置けない",
+      "to update": "前置詞 for の後ろに to 不定詞は続かない",
+      "updated": "過去分詞。前置詞の目的語にならない"
+    },
     "difficulty": 1,
     "tags": ["動名詞", "前置詞の後"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "avoid は動名詞のみを目的語にとる動詞。to 不定詞は続けられない。",
     "translation": "運転手は午前7時から9時の間、荷積み場に入ることを避けるべきだ。",
+    "choiceNotes": {
+      "enter": "動詞の原形。avoid の目的語にならない",
+      "to enter": "avoid は動名詞のみを目的語にとる",
+      "entered": "過去分詞。avoid の目的語にならない"
+    },
     "difficulty": 2,
     "tags": ["動名詞", "avoid"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 1,
     "explanation": "finish は動名詞のみを目的語にとる動詞。",
     "translation": "作業班は予定されていた点検の2日前に、倉庫の屋根の修理を終えた。",
+    "choiceNotes": {
+      "to repair": "finish は動名詞のみを目的語にとる",
+      "repaired": "過去分詞。finish の目的語にならない",
+      "repair": "動詞の原形。finish の後ろには動名詞が必要"
+    },
     "difficulty": 2,
     "tags": ["動名詞", "finish"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 0,
     "explanation": "look forward to の to は前置詞なので後ろは動名詞。to 不定詞と混同しやすい代表例。",
     "translation": "修正案についてご連絡いただけることを楽しみにしております。",
+    "choiceNotes": {
+      "heard": "過去分詞。前置詞 to の後ろには置けない",
+      "hear": "動詞の原形。look forward to の to は前置詞なので原形は続かない",
+      "to hear": "to が重複してしまう。to は前置詞なので動名詞が来る"
+    },
     "difficulty": 3,
     "tags": ["動名詞", "look forward to"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 3,
     "explanation": "文の主語になり、かつ後ろに目的語 the filters を直接とれるのは動名詞。名詞 Replacement では of が必要になる。",
     "translation": "フィルターを定期的に交換することで、換気システムの寿命は大きく延びる。",
+    "choiceNotes": {
+      "Replacement": "名詞。目的語 the filters を直接とるには of が必要",
+      "Replace": "動詞の原形。文の主語にはならない",
+      "Replaced": "過去分詞。主語にはなれない"
+    },
     "difficulty": 3,
     "tags": ["動名詞", "主語"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 3,
     "explanation": "be worth + 動名詞 = 〜する価値がある。to 不定詞は使えない。",
     "translation": "旧式の機器は、まるごと買い替えるよりも修理する価値がまだある。",
+    "choiceNotes": {
+      "repaired": "過去分詞。be worth の後ろには動名詞が来る",
+      "repair": "動詞の原形。worth の後ろに原形は置けない",
+      "to repair": "be worth は to 不定詞をとらない"
+    },
     "difficulty": 3,
     "tags": ["動名詞", "be worth"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 1,
     "explanation": "stop + 動名詞 = 〜するのをやめる。stop + to 不定詞は「〜するために立ち止まる」と意味が変わるので注意。",
     "translation": "そのチームは2023年に旧来のデータベースの更新をやめ、すべてをクラウドに移行した。",
+    "choiceNotes": {
+      "to update": "stop to do は「〜するために立ち止まる」。やめる意味にならない",
+      "updated": "過去分詞。stop の目的語にならない",
+      "update": "動詞の原形。stop の後ろには動名詞が必要"
+    },
     "difficulty": 3,
     "tags": ["動名詞", "stop doing/to do"]
   }

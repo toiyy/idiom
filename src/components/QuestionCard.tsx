@@ -70,6 +70,8 @@ export function QuestionCard({
             index={i}
             state={choiceState(i, question.answerIndex, selectedIndex, revealed)}
             disabled={picked}
+            // 正解の理由は解説にまとめてあるので、不正解の選択肢にだけ理由を添える
+            note={revealed && i !== question.answerIndex ? question.choiceNotes[choice] : undefined}
             onSelect={onSelect}
           />
         ))}

@@ -8,6 +8,11 @@
     "answerIndex": 0,
     "explanation": "recommend / suggest / insist / demand / require などの後の that 節では動詞は原形になる（仮定法現在）。主語が三人称単数でも s は付かない。",
     "translation": "監査人は、その会社が四半期ごとに在庫記録を見直すことを勧告した。",
+    "choiceNotes": {
+      "reviewing": "動名詞。that 節の中には述語動詞が必要",
+      "reviews": "三単現。recommend の後の that 節では原形を使う",
+      "reviewed": "過去形。仮定法現在なので原形が入る"
+    },
     "difficulty": 3,
     "tags": ["仮定法現在", "recommend that"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 3,
     "explanation": "主節が could have adjusted（仮定法過去完了）なので、if 節は had + 過去分詞にする。過去の事実に反する仮定を表す。",
     "translation": "もし供給業者がもっと早く連絡してくれていれば、生産計画を間に合うように調整できたのだが。",
+    "choiceNotes": {
+      "has notified": "現在完了。主節が could have adjusted なので過去完了が必要",
+      "notify": "原形。if 節の述語動詞にならない",
+      "notifies": "現在形。過去の事実に反する仮定を表せない"
+    },
     "difficulty": 2,
     "tags": ["仮定法過去完了", "if"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 0,
     "explanation": "If the budget were approved の if が省略されて were が文頭に出た倒置形。budget は「承認される」側なので過去分詞 approved が入る。",
     "translation": "予算が承認されれば、その部署は今年さらに2名のアナリストを雇用するだろう。",
+    "choiceNotes": {
+      "approval": "名詞。Were の補語としては受動の意味が出ない",
+      "approve": "動詞の原形。budget は承認される側なので過去分詞が必要",
+      "approving": "現在分詞。予算が承認する側になってしまう"
+    },
     "difficulty": 3,
     "tags": ["倒置", "if省略"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 3,
     "explanation": "主節が could + 動詞の原形なので、if 節は過去形にする（仮定法過去）。現在の事実に反する仮定を表す。",
     "translation": "もしその会社にもっと倉庫の空きがあれば、より幅広い商品を在庫できるのだが。",
+    "choiceNotes": {
+      "will have": "未来形。主節が could + 原形なので仮定法過去にする",
+      "would have": "if 節の中では would を使わない",
+      "has": "現在形。現在の事実に反する仮定は過去形で表す"
+    },
     "difficulty": 2,
     "tags": ["仮定法過去"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 2,
     "explanation": "wish + 過去完了 = 〜だったらよかったのに。過去の事実に反する願望を表す。",
     "translation": "プロジェクトチームは、試験段階にもっと時間を割いておけばよかったと思っている。",
+    "choiceNotes": {
+      "would have": "wish の後ろに would have は続かない",
+      "have": "原形。wish の後ろには時制をずらした形が入る",
+      "has": "現在形。過去への願望は過去完了で表す"
+    },
     "difficulty": 3,
     "tags": ["wish + 過去完了"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 3,
     "explanation": "as if + 過去完了 = まるで〜だったかのように。実際はそうではないことを表す。",
     "translation": "新しいシステムは、実際よりもはるかに多くのデータで学習してきたかのように応答する。",
+    "choiceNotes": {
+      "have": "原形。as if の後ろには時制をずらした形が入る",
+      "would": "as if would been という形は存在しない",
+      "has": "現在完了。事実に反する内容は過去完了で表す"
+    },
     "difficulty": 3,
     "tags": ["as if + 過去完了"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 2,
     "explanation": "Without 〜 = 〜がなければ。仮定法過去完了の主節（would have been）と呼応する。Unless は接続詞なので節が必要。",
     "translation": "地元スポンサーの手厚い支援がなければ、その祭りは中止になっていただろう。",
+    "choiceNotes": {
+      "Despite": "「〜にもかかわらず」。支援がなかった場合という仮定を表せない",
+      "Except": "「〜を除いて」。仮定法の条件節にならない",
+      "Unless": "接続詞。後ろに「主語 + 動詞」の節が必要"
+    },
     "difficulty": 3,
     "tags": ["without", "仮定法"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 3,
     "explanation": "「It is time + 主語 + 過去形」= もう〜してもよいころだ。形は過去だが意味は現在を指す。",
     "translation": "その部署は、時代遅れの在庫管理システムをそろそろ入れ替えてもよいころだ。",
+    "choiceNotes": {
+      "will replace": "未来形。It is time の後ろは過去形にする",
+      "has replaced": "現在完了。すでに入れ替えた意味になり矛盾する",
+      "replaces": "現在形。It is time の後ろでは過去形を使う"
+    },
     "difficulty": 3,
     "tags": ["it is time + 過去形"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 3,
     "explanation": "require / demand / insist / propose などの後の that 節では動詞は原形（仮定法現在）。受動なら be + 過去分詞。",
     "translation": "規則は、すべての容器が出荷前に明確にラベル表示されることを求めている。",
+    "choiceNotes": {
+      "was": "過去形。require の後の that 節では原形を使う",
+      "being": "現在分詞。that 節の述語動詞にならない",
+      "is": "現在形。仮定法現在なので原形 be が入る"
+    },
     "difficulty": 3,
     "tags": ["仮定法現在", "require that"]
   }

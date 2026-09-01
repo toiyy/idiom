@@ -9,6 +9,11 @@
     "answerIndex": 2,
     "explanation": "scheduling conflict = 予定の重複、バッティング。argument / dispute / objection はいずれも人どうしの口論や異議を表すので、部屋の重複には使わない。",
     "translation": "予定の重複により、金曜日に2つの講習会が同じ部屋で予約されてしまった。",
+    "choiceNotes": {
+      "objection": "「異議」。人が申し立てるもので、予定の重複は表さない",
+      "argument": "「口論・議論」。日程がぶつかる意味にならない",
+      "dispute": "「論争」。人どうしの争いを指す"
+    },
     "difficulty": 2,
     "tags": ["scheduling conflict"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 1,
     "explanation": "at no additional charge = 追加料金なしで。charge はサービスに対する請求額を指す固定表現で、price（商品の価格）や payment（支払い行為）では置き換えられない。",
     "translation": "そのホテルは会議の参加者に対し、追加料金なしで空港への送迎サービスを提供している。",
+    "choiceNotes": {
+      "payment": "「支払い（行為）」。at no additional payment とは言わない",
+      "price": "「商品の価格」。サービスの追加料金には charge を使う",
+      "fee": "「手数料・会費」。at no additional fee という定型はない"
+    },
     "difficulty": 2,
     "tags": ["at no additional charge"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 1,
     "explanation": "letter of recommendation = 推薦状。suggestion / proposal / advice はいずれも「提案・助言」で、人物を推薦する書状は表さない。",
     "translation": "応募者は、前職の雇用主からの推薦状を3通提出する必要がある。",
+    "choiceNotes": {
+      "advice": "「助言」。不可算名詞で three letters of advice とは言わない",
+      "suggestion": "「提案」。人物を推薦する書状は表さない",
+      "proposal": "「提案書」。前職の雇用主が出す推薦状ではない"
+    },
     "difficulty": 1,
     "tags": ["letter of recommendation"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 2,
     "explanation": "refund = 購入代金の返金。return は「返品」という行為、reimbursement は社員が立て替えた経費の払い戻しを指すので、店舗の返品には使わない。",
     "translation": "その店は、購入から30日以内に返品された商品については全額を返金する。",
+    "choiceNotes": {
+      "reimbursement": "「立て替え経費の払い戻し」。店舗の返品には使わない",
+      "return": "「返品」という行為そのもの。返金額は表さない",
+      "repayment": "「借金の返済」。購入代金の返金とは異なる"
+    },
     "difficulty": 2,
     "tags": ["refund", "reimbursement"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 3,
     "explanation": "employee handbook = 社員便覧、就業規則集。brochure / leaflet は宣伝用の小冊子、catalog は商品目録なので社内規定には使わない。",
     "translation": "在宅勤務に関する会社の方針については、社員便覧を参照してください。",
+    "choiceNotes": {
+      "catalog": "「商品目録」。社内規定は載らない",
+      "brochure": "「宣伝用の小冊子」。就業規則を指さない",
+      "leaflet": "「ちらし」。社内文書には使わない"
+    },
     "difficulty": 1,
     "tags": ["employee handbook"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 2,
     "explanation": "take inventory = 棚卸しをする。supply（供給）/ reserve（備蓄）/ storage（保管）はこの定型表現には入らない。",
     "translation": "その店は棚卸しのため、毎月最終日曜日は2時間早く閉店する。",
+    "choiceNotes": {
+      "storage": "「保管（場所）」。take storage という定型はない",
+      "supply": "「供給・備品」。棚卸しの意味にならない",
+      "reserve": "「備蓄」。take reserve とは言わない"
+    },
     "difficulty": 2,
     "tags": ["take inventory"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "itinerary = 旅程表。agenda は会議の議題、calendar は暦、timetable は交通機関の時刻表を指す。",
     "translation": "旅行代理店は、3都市を巡る出張の詳細な旅程表をメールで送ってきた。",
+    "choiceNotes": {
+      "agenda": "「会議の議題」。移動を含む旅程は表さない",
+      "calendar": "「暦・予定表」。出張の行程表には使わない",
+      "timetable": "「交通機関の時刻表」。個人の旅程は指さない"
+    },
     "difficulty": 3,
     "tags": ["itinerary"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 0,
     "explanation": "agenda = 会議の議題一覧。itinerary は旅程、inventory は在庫目録、directory は名簿。",
     "translation": "木曜の会議の議題には、3件の予算案件と人員配置の最新報告が含まれている。",
+    "choiceNotes": {
+      "inventory": "「在庫目録」。会議で扱う項目一覧ではない",
+      "directory": "「名簿」。会議の議題は載らない",
+      "itinerary": "「旅程表」。会議の議題一覧とは異なる"
+    },
     "difficulty": 2,
     "tags": ["agenda"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 0,
     "explanation": "staff directory = 社員名簿。catalog は商品目録、index は本の索引、register は出席簿などの登録簿。",
     "translation": "従業員の連絡先は、オンラインの社員名簿に掲載されている。",
+    "choiceNotes": {
+      "register": "「登録簿・出席簿」。連絡先一覧の定型表現ではない",
+      "catalog": "「商品目録」。社員の連絡先は載らない",
+      "index": "「索引」。本の巻末にあるもの"
+    },
     "difficulty": 2,
     "tags": ["directory"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 2,
     "explanation": "expiration date = 有効期限、賞味期限。termination は契約などの解除、conclusion は結論・締結を指す。",
     "translation": "製品を発送する前に、包装に印字された有効期限を確認してください。",
+    "choiceNotes": {
+      "ending": "「終わり」。日付と組んで有効期限を表す定型にならない",
+      "termination": "「契約などの解除」。商品の期限には使わない",
+      "conclusion": "「結論・締結」。期限の意味は持たない"
+    },
     "difficulty": 2,
     "tags": ["expiration date"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 3,
     "explanation": "shortage = 不足。decrease / reduction / decline はいずれも「減少」という変化を表す語で、必要量に足りていない状態そのものは表さない。",
     "translation": "資格を持つ技術者の不足により、新しいサービスセンターの開設が遅れている。",
+    "choiceNotes": {
+      "decline": "「減少」という変化。足りていない状態そのものは表さない",
+      "decrease": "「減少」。量が不足している状態は指さない",
+      "reduction": "「削減」。意図的に減らすことを表す"
+    },
     "difficulty": 2,
     "tags": ["shortage"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 1,
     "explanation": "turnout = 参加者数、人出。turnover は離職率や売上高、output は生産量で意味が異なる。",
     "translation": "ボランティア行事の参加者数は、主催者の予想を100人近く上回った。",
+    "choiceNotes": {
+      "outcome": "「結果」。人が何人集まったかは表さない",
+      "output": "「生産量」。行事の参加者数には使わない",
+      "turnover": "「離職率・売上高」。参加者数とは意味が異なる"
+    },
     "difficulty": 3,
     "tags": ["turnout", "turnover"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "turnover = 離職率。turnout は参加者数、handover は引き継ぎ、takeover は企業買収を指す。",
     "translation": "その会社は、柔軟な勤務時間制度を導入することで離職率を下げた。",
+    "choiceNotes": {
+      "takeover": "「企業買収」。従業員が辞める割合は表さない",
+      "turnout": "「参加者数」。離職率とは意味が逆方向",
+      "handover": "「業務の引き継ぎ」。離職率は表さない"
+    },
     "difficulty": 3,
     "tags": ["turnover", "turnout"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 3,
     "explanation": "estimate = （費用の）見積もり、見積書という具体的な書類を指す。estimation は「評価・判断」という抽象的な意味なので合わない。",
     "translation": "その請負業者は、作業を始める前に修理費用の見積書を書面で提示した。",
+    "choiceNotes": {
+      "calculation": "「計算」。書面で示す費用の見積書は指さない",
+      "estimation": "「評価・判断」という抽象的な意味。書類は表さない",
+      "evaluation": "「評価」。費用の見積書という意味にはならない"
+    },
     "difficulty": 3,
     "tags": ["estimate", "estimation"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "backlog = 未処理のまま溜まった仕事や注文。delay は遅延そのもの、queue は人や物の列、surplus は余剰を指す。",
     "translation": "3日間のシステム障害の間に、未処理の注文が山積みになった。",
+    "choiceNotes": {
+      "delay": "「遅延」そのもの。溜まった注文の山は表さない",
+      "queue": "「人や物の列」。未処理の仕事の蓄積とは異なる",
+      "surplus": "「余剰」。処理しきれず溜まった状態は表さない"
+    },
     "difficulty": 3,
     "tags": ["backlog"]
   }

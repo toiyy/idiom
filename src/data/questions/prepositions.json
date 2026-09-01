@@ -8,6 +8,11 @@
     "answerIndex": 3,
     "explanation": "特定の日付の前には on を用いる（on January 1）。月・年には in、時刻には at。since は継続の起点を表すので意味が合わない。",
     "translation": "新しい安全指針は1月1日に施行されるため、全職員は事前に内容を確認しなければならない。",
+    "choiceNotes": {
+      "since": "継続の起点を表す。これから施行される話なので合わない",
+      "in": "月や年に使う。特定の日付には使わない",
+      "at": "時刻に使う。日付には使わない"
+    },
     "difficulty": 1,
     "tags": ["日付", "on"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 0,
     "explanation": "「〜以内に」という期間の範囲を表すのは within。until は「〜までずっと」、during は「〜の間ずっと」で特定の期間を表す名詞が続く。",
     "translation": "返金は通常、返品を受領してから5営業日以内に処理される。",
+    "choiceNotes": {
+      "until": "「〜までずっと」。期間の範囲内という意味にならない",
+      "during": "「〜の間ずっと」。特定の期間を表す名詞が必要",
+      "among": "「〜の中で」。3 者以上の位置関係を表す語"
+    },
     "difficulty": 2,
     "tags": ["期間", "within"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 1,
     "explanation": "「〜までに」という期限を表すのは by。until は「〜までずっと（継続）」なので、submit のような一回で完了する動作には使えない。",
     "translation": "出張の領収書は金曜の午後までに提出してください。提出が遅れた場合は精算できません。",
+    "choiceNotes": {
+      "until": "「〜までずっと」。submit のような 1 回で終わる動作には使えない",
+      "since": "継続の起点。締切を表さない",
+      "for": "期間の長さを表す。期限の意味にならない"
+    },
     "difficulty": 2,
     "tags": ["期限", "by vs until"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 2,
     "explanation": "手段・方法を表す by。by credit card のように冠詞を付けずに用いる。",
     "translation": "支払いは予約時に、クレジットカードまたは銀行振込で行える。",
+    "choiceNotes": {
+      "in": "in cash なら可だが、カードや振込の手段には by を使う",
+      "on": "on credit（つけで）は別の意味になる",
+      "with": "with a credit card のように冠詞が要り、無冠詞では使えない"
+    },
     "difficulty": 2,
     "tags": ["by", "手段"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 2,
     "explanation": "throughout = 〜の間ずっと（全期間にわたって）。during よりも「全期間」という継続性が明確になる。",
     "translation": "保管室の温度は、一年を通じて5度未満に保たれなければならない。",
+    "choiceNotes": {
+      "between": "2 者の間を表す。期間全体の継続は表さない",
+      "during": "「〜の間」を表せるが、全期間にわたる継続は throughout が明確",
+      "among": "3 者以上の中を表す。期間には使わない"
+    },
     "difficulty": 2,
     "tags": ["throughout"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 3,
     "explanation": "3者以上に対しては among を使う。between は基本的に2者の間を表す。",
     "translation": "その賞金は、研究を共同執筆した3名の研究者で分け合われる。",
+    "choiceNotes": {
+      "along": "「〜に沿って」。分け合う相手を示せない",
+      "across": "「〜を横切って」。配分の相手を表さない",
+      "between": "基本的に 2 者の間。3 名には among を使う"
+    },
     "difficulty": 2,
     "tags": ["among", "between"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 3,
     "explanation": "regarding = 〜に関して。despite（〜にもかかわらず）/ among / toward は意味が合わない。",
     "translation": "新しい休暇制度に関するご質問は、人事部までご連絡ください。",
+    "choiceNotes": {
+      "despite": "「〜にもかかわらず」。質問の内容を示す語ではない",
+      "among": "「〜の中で」。連絡の用件を表さない",
+      "toward": "「〜に向かって」。主題を示す用法はない"
+    },
     "difficulty": 2,
     "tags": ["regarding"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 0,
     "explanation": "prior to = 〜より前に。to と組んで前置詞句を作れるのは prior。before は単独で前置詞として使う。",
     "translation": "すべての機材は、建設現場で初めて使用する前に点検されなければならない。",
+    "choiceNotes": {
+      "previous": "形容詞。previous to も稀に使うが、標準は prior to",
+      "before": "単独で前置詞として使う語。before to とは言わない",
+      "earlier": "副詞・形容詞。earlier to という形はない"
+    },
     "difficulty": 3,
     "tags": ["prior to"]
   },
@@ -104,6 +144,11 @@
     "answerIndex": 2,
     "explanation": "in accordance with = 〜に従って。決まった形なので他の語形では成立しない。",
     "translation": "組織標本は、その研究所の文書化された安全手順に従って取り扱われた。",
+    "choiceNotes": {
+      "according": "according to なら「〜によれば」。in according with とは言わない",
+      "accordingly": "副詞「それに応じて」。in ... with の形に入らない",
+      "accord": "名詞「合意」。in accord with も使うが、規則遵守は in accordance with"
+    },
     "difficulty": 3,
     "tags": ["in accordance with"]
   },
@@ -116,6 +161,11 @@
     "answerIndex": 0,
     "explanation": "on behalf of = 〜を代表して。決まった前置詞なので他には置き換えられない。",
     "translation": "副社長が研究チーム全体を代表して、その賞を受け取った。",
+    "choiceNotes": {
+      "in": "in behalf of も稀に使うが、標準は on behalf of",
+      "for": "for behalf of という形はない",
+      "at": "at behalf of とは言わない"
+    },
     "difficulty": 2,
     "tags": ["on behalf of"]
   }

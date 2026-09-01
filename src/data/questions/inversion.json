@@ -8,6 +8,11 @@
     "answerIndex": 0,
     "explanation": "否定の副詞句 Never before が文頭に出ると、後ろは「助動詞 + 主語」の倒置になる。主語 the company は単数なので has。",
     "translation": "その会社が海外からの注文でこれほど急激な増加を記録したことは、かつてなかった。",
+    "choiceNotes": {
+      "have": "主語 the company は単数なので has",
+      "did": "recorded と組むと重複する。現在完了の倒置が必要",
+      "it has": "主語 the company があるので it は不要"
+    },
     "difficulty": 3,
     "tags": ["倒置", "never"]
   },
@@ -20,6 +25,11 @@
     "answerIndex": 1,
     "explanation": "Only で始まる副詞句が文頭に出ると倒置が起こり、「did + 主語 + 動詞の原形」の語順になる。",
     "translation": "監査が完了して初めて、取締役会は予算の修正を承認した。",
+    "choiceNotes": {
+      "was": "後ろが動詞の原形 approve なので be 動詞は入らない",
+      "it did": "主語 the board があるので it は不要",
+      "had": "had の後ろは過去分詞。approve という原形は続かない"
+    },
     "difficulty": 3,
     "tags": ["倒置", "only"]
   },
@@ -32,6 +42,11 @@
     "answerIndex": 3,
     "explanation": "「It is / was A that ...」の強調構文。強調される the marketing team が後半の主語の役割を果たしている。what は先行詞を含むので使えない。",
     "translation": "消費者の嗜好の変化を最初に見抜いたのは、マーケティングチームだった。",
+    "choiceNotes": {
+      "whom": "強調されている the marketing team は後半の主語。目的格は不可",
+      "whose": "所有格。後ろに名詞が続いていない",
+      "what": "先行詞を含む関係代名詞。強調構文には使えない"
+    },
     "difficulty": 2,
     "tags": ["強調構文", "it is ... that"]
   },
@@ -44,6 +59,11 @@
     "answerIndex": 0,
     "explanation": "副詞節の主語が主節と同じ場合、「主語 + be 動詞」を省略できる。While (you are) following ... の形なので現在分詞が残る。",
     "translation": "新しい手順に従う際は、ドアの脇に掲示されたチェックリストを参照してください。",
+    "choiceNotes": {
+      "followed": "過去分詞。省略された主語 you は従う側なので能動が必要",
+      "follow": "原形。While の後ろに主語なしで原形は置けない",
+      "follows": "三単現。主語が省略されているので分詞になる"
+    },
     "difficulty": 3,
     "tags": ["省略", "分詞構文"]
   },
@@ -56,6 +76,11 @@
     "answerIndex": 3,
     "explanation": "「so + 助動詞 + 主語」で「〜もまたそうだ」を表す。肯定文を受けているので neither ではなく so。",
     "translation": "大阪支店は年間目標を上回り、名古屋事務所もまた同様だった。",
+    "choiceNotes": {
+      "also": "「〜もまた」だが、助動詞 + 主語の倒置を作らない",
+      "neither": "否定文を受ける語。前half は肯定文",
+      "such": "倒置して「〜もそうだ」を表す用法はない"
+    },
     "difficulty": 2,
     "tags": ["so + 助動詞 + 主語"]
   },
@@ -68,6 +93,11 @@
     "answerIndex": 2,
     "explanation": "否定文を受けて「〜もまたそうでない」と続けるので「neither + 助動詞 + 主語」。so は肯定文を受けるときに使う。",
     "translation": "最初の試作品は検査に通らず、2台目も同様だった。",
+    "choiceNotes": {
+      "too": "文末に置く語で、倒置を作らない",
+      "so": "肯定文を受ける語。前半は否定文",
+      "also": "倒置を作らず、否定を受ける用法もない"
+    },
     "difficulty": 2,
     "tags": ["neither + 助動詞 + 主語"]
   },
@@ -80,6 +110,11 @@
     "answerIndex": 1,
     "explanation": "If you should require ... の if が省略されて Should が文頭に出た倒置形。「万一〜なら」という丁寧な条件を表す。",
     "translation": "さらに支援が必要な場合は、内線401のヘルプデスクまでご連絡ください。",
+    "choiceNotes": {
+      "Would": "倒置で条件を表す用法はない",
+      "Could": "文頭に出して条件節を作る用法はない",
+      "Might": "倒置による条件節を作らない"
+    },
     "difficulty": 3,
     "tags": ["倒置", "if省略"]
   },
@@ -92,6 +127,11 @@
     "answerIndex": 2,
     "explanation": "補語が文頭に出た倒置で「Enclosed is + 主語」の形。書類を同封するときの定型表現。",
     "translation": "記録用に、署名済み契約書の写しを同封いたします。",
+    "choiceNotes": {
+      "Enclosing": "現在分詞。書類は同封される側なので受動が必要",
+      "Enclose": "命令形になり、後ろの is と両立しない",
+      "Encloses": "三単現。後ろに is があるので述語動詞が重複する"
+    },
     "difficulty": 3,
     "tags": ["倒置", "enclosed is"]
   }

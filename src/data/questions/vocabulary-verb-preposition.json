@@ -9,6 +9,11 @@
     "answerIndex": 1,
     "explanation": "4 つとも「従う」の意味で、意味では絞れない。決め手は前置詞 to。adhere は自動詞で adhere to の形をとるが、obey / follow / observe はいずれも他動詞なので前置詞は不要。",
     "translation": "請負業者は全員、現場の入口に掲示された安全規則を遵守しなければならない。",
+    "choiceNotes": {
+      "obey": "他動詞「従う」。to を伴わず目的語を直接とる",
+      "follow": "他動詞「従う」。to は不要",
+      "observe": "他動詞。「規則を守る」の意味もあるが to は伴わない"
+    },
     "difficulty": 2,
     "tags": ["adhere to", "自動詞"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 0,
     "explanation": "dispose of = 処分する。discard / remove / eliminate はいずれも他動詞で of をとらず、目的語を直接続ける。",
     "translation": "IT部門は今月末までに、旧式のサーバーを処分する予定だ。",
+    "choiceNotes": {
+      "eliminate": "他動詞「除去する」。of ではなく目的語を直接とる",
+      "discard": "他動詞「捨てる」。of は不要",
+      "remove": "他動詞「取り除く」。of は不要"
+    },
     "difficulty": 2,
     "tags": ["dispose of", "自動詞"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "空所の後ろに前置詞がなく目的語が直接続いているので、他動詞の discuss が正解。talk / speak / argue は about などの前置詞が必要（talk about the proposal）。",
     "translation": "委員会は来週月曜の会議で、修正された提案について協議する。",
+    "choiceNotes": {
+      "speak": "自動詞。speak about / speak to のように前置詞が必要",
+      "argue": "自動詞。argue about の形にする必要がある",
+      "talk": "自動詞。talk about the proposal なら成立する"
+    },
     "difficulty": 2,
     "tags": ["discuss", "他動詞"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "comment on = 〜について述べる。mention / state / describe はいずれも他動詞なので on は不要。",
     "translation": "安全検査官は最終報告書の中で、換気システムの状態について言及した。",
+    "choiceNotes": {
+      "mentioned": "他動詞「言及する」。on は不要で目的語を直接とる",
+      "stated": "他動詞「述べる」。on を伴わない",
+      "described": "他動詞「描写する」。on は不要"
+    },
     "difficulty": 2,
     "tags": ["comment on", "自動詞"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 2,
     "explanation": "apply for = 〜を申し込む、応募する。request / demand / require は他動詞で目的語を直接とるため for は不要。",
     "translation": "研究チームは臨床試験を完了させるため、追加の資金を申請した。",
+    "choiceNotes": {
+      "required": "他動詞「必要とする」。for は不要",
+      "requested": "他動詞「要請する」。目的語を直接とる",
+      "demanded": "他動詞「要求する」。for を伴わない"
+    },
     "difficulty": 2,
     "tags": ["apply for", "自動詞"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 0,
     "explanation": "object to = 〜に反対する。oppose / reject / deny はいずれも他動詞で、目的語を直接とるため to は不要。",
     "translation": "数名の役員が、報酬制度の変更案に反対した。",
+    "choiceNotes": {
+      "rejected": "他動詞「拒否する」。to は不要",
+      "denied": "他動詞「否定する」。to を伴わない",
+      "opposed": "他動詞「反対する」。be opposed to なら可だが、ここは能動なので to は不要"
+    },
     "difficulty": 2,
     "tags": ["object to", "自動詞"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "refer to = 〜を参照する。consult / check / review は他動詞で目的語を直接とるため to は不要。",
     "translation": "保証条件の全文については、取扱説明書の12ページを参照してください。",
+    "choiceNotes": {
+      "consult": "他動詞「参照する」。consult page 12 のように to は不要",
+      "check": "他動詞。目的語を直接とる",
+      "review": "他動詞「見直す」。to は不要"
+    },
     "difficulty": 1,
     "tags": ["refer to", "自動詞"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 3,
     "explanation": "account for = 〜を占める。represent / constitute / comprise はいずれも他動詞で for をとらない。",
     "translation": "海外での売上は、その会社の年間収益の40パーセント近くを占めている。",
+    "choiceNotes": {
+      "constitute": "他動詞「構成する」。for は不要",
+      "comprise": "他動詞「〜から成る」。for を伴わない",
+      "represent": "他動詞「占める・表す」。for は不要"
+    },
     "difficulty": 2,
     "tags": ["account for", "自動詞"]
   },
@@ -113,6 +153,11 @@
     "answerIndex": 0,
     "explanation": "participate in = 〜に参加する。attend / join / enter はいずれも他動詞なので in が不要。",
     "translation": "先週末、200名を超える従業員が毎年恒例のチャリティーマラソンに参加した。",
+    "choiceNotes": {
+      "entered": "他動詞「入る」。in は不要",
+      "attended": "他動詞「出席する」。in を伴わない",
+      "joined": "他動詞「加わる」。目的語を直接とる"
+    },
     "difficulty": 2,
     "tags": ["participate in", "自動詞"]
   },
@@ -126,6 +171,11 @@
     "answerIndex": 3,
     "explanation": "cope with = 〜に対処する。handle / manage / address はいずれも他動詞で with をとらない。",
     "translation": "サポートチームは、繁忙期の大量の問い合わせに対処できるよう訓練されている。",
+    "choiceNotes": {
+      "address": "他動詞「対処する」。with は不要",
+      "handle": "他動詞「処理する」。with を伴わない",
+      "manage": "他動詞「対処する」。with は不要"
+    },
     "difficulty": 2,
     "tags": ["cope with", "自動詞"]
   },
@@ -139,6 +189,11 @@
     "answerIndex": 1,
     "explanation": "空所の後ろに前置詞がなく目的語 the supplier が直接続くので他動詞。approach（〜に打診する）が正解。talk / speak / appeal はいずれも to が必要。",
     "translation": "交渉チームは、長期供給契約について供給業者に打診する予定だ。",
+    "choiceNotes": {
+      "appeal": "自動詞。appeal to the supplier のように to が必要",
+      "talk": "自動詞。talk to the supplier の形にする必要がある",
+      "speak": "自動詞。speak to / speak with のように前置詞が要る"
+    },
     "difficulty": 3,
     "tags": ["approach", "他動詞"]
   },
@@ -152,6 +207,11 @@
     "answerIndex": 1,
     "explanation": "enter は他動詞で目的語を直接とる。go into / arrive at / proceed to のように、他の3つは前置詞が必要。",
     "translation": "来訪者は全員、研究施設に入る前に身分証を提示しなければならない。",
+    "choiceNotes": {
+      "arrive": "自動詞。arrive at the facility のように前置詞が必要",
+      "proceed": "自動詞。proceed to the facility の形になる",
+      "go": "自動詞。go into the facility のように前置詞が要る"
+    },
     "difficulty": 2,
     "tags": ["enter", "他動詞"]
   },
@@ -165,6 +225,11 @@
     "answerIndex": 1,
     "explanation": "reach は他動詞で目的語を直接とる。arrive at / get to / come to のように、他の3つは前置詞が必要。",
     "translation": "配送トラックは木曜の正午までに配送センターに到着する。",
+    "choiceNotes": {
+      "arrive": "自動詞。arrive at the center のように at が必要",
+      "get": "自動詞。get to the center の形になる",
+      "come": "自動詞。come to the center のように to が要る"
+    },
     "difficulty": 2,
     "tags": ["reach", "他動詞"]
   },
@@ -178,6 +243,11 @@
     "answerIndex": 0,
     "explanation": "consist of = 〜から成る。comprise / include / contain はいずれも他動詞で of をとらない。",
     "translation": "その評価委員会は、3名の外部専門家と2名の職員で構成されている。",
+    "choiceNotes": {
+      "includes": "他動詞「含む」。of は不要で目的語を直接とる",
+      "contains": "他動詞「含む」。of を伴わない",
+      "comprises": "他動詞「〜から成る」。of は付けないのが原則"
+    },
     "difficulty": 3,
     "tags": ["consist of", "自動詞"]
   },
@@ -191,6 +261,11 @@
     "answerIndex": 1,
     "explanation": "result in = 〜という結果になる。cause / produce / generate はいずれも他動詞で in が不要。",
     "translation": "その合併は、今後3年間で大幅な費用削減をもたらすと見込まれている。",
+    "choiceNotes": {
+      "produce": "他動詞「生み出す」。in は不要",
+      "generate": "他動詞「生み出す」。in を伴わない",
+      "cause": "他動詞「引き起こす」。in は不要"
+    },
     "difficulty": 2,
     "tags": ["result in", "自動詞"]
   }

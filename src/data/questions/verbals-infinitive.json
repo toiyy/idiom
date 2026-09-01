@@ -9,6 +9,11 @@
     "answerIndex": 0,
     "explanation": "encourage は「encourage + 目的語 + to do」の形をとる。受動態になると be encouraged to do となる。",
     "translation": "従業員は、四半期末までにオンライン研修講座を修了することが推奨されている。",
+    "choiceNotes": {
+      "completion": "名詞。be encouraged の後ろには to 不定詞が来る",
+      "complete": "動詞の原形。encourage は to 不定詞をとる",
+      "completing": "動名詞。be encouraged to do の形が決まっている"
+    },
     "difficulty": 1,
     "tags": ["to不定詞", "encourage"]
   },
@@ -22,6 +27,11 @@
     "answerIndex": 3,
     "explanation": "「〜するために」という目的を表す副詞的用法の to 不定詞。",
     "translation": "その会社はエネルギー消費をリアルタイムで監視するため、センサーを追加設置した。",
+    "choiceNotes": {
+      "monitoring": "動名詞・現在分詞。目的を表すなら to 不定詞",
+      "monitored": "過去分詞。目的を表す形にならない",
+      "monitor": "動詞の原形。1 つの文に述語動詞が 2 つ並ぶことはできない"
+    },
     "difficulty": 1,
     "tags": ["to不定詞", "目的"]
   },
@@ -35,6 +45,11 @@
     "answerIndex": 2,
     "explanation": "「be + 形容詞 + to 不定詞」の形。easy to follow で「従いやすい」という意味になる。",
     "translation": "改訂された指針は分かりやすく、追加の職員研修も必要ない。",
+    "choiceNotes": {
+      "followed": "過去分詞。easy の後ろには to 不定詞が来る",
+      "follow": "動詞の原形。形容詞の後ろに原形は置けない",
+      "following": "動名詞。easy following とは言わない"
+    },
     "difficulty": 2,
     "tags": ["to不定詞", "形容詞+to do"]
   },
@@ -48,6 +63,11 @@
     "answerIndex": 0,
     "explanation": "It is + 形容詞 + to 不定詞の形式主語構文。It が指す真の主語が to store 以下。",
     "translation": "一日の終わりには、機密文書をすべて施錠できるキャビネットに保管することが不可欠だ。",
+    "choiceNotes": {
+      "storing": "動名詞。It is essential の真主語には to 不定詞を使う",
+      "stored": "過去分詞。形式主語構文の真主語にならない",
+      "store": "動詞の原形。essential の後ろに原形は置けない"
+    },
     "difficulty": 2,
     "tags": ["to不定詞", "形式主語"]
   },
@@ -61,6 +81,11 @@
     "answerIndex": 1,
     "explanation": "「形容詞 + enough + to 不定詞」の語順。enough は形容詞を後ろから修飾する。",
     "translation": "その会議室は、40名の参加者全員をゆったり収容できる大きさだ。",
+    "choiceNotes": {
+      "as large": "as ... as の比較。もう一方の as がなく成立しない",
+      "enough large": "enough は形容詞を後ろから修飾するので語順が逆",
+      "too large": "「大きすぎる」となり、収容できるという文意と矛盾する"
+    },
     "difficulty": 3,
     "tags": ["enough to"]
   },
@@ -74,6 +99,11 @@
     "answerIndex": 2,
     "explanation": "「too + 形容詞 + for A + to 不定詞」= A が〜するには…すぎる。so や very はこの構文を作らない。",
     "translation": "当初の締切は、チームが完全な品質確認を終えるには厳しすぎた。",
+    "choiceNotes": {
+      "very": "「非常に」。for A to do を伴う構文を作らない",
+      "enough": "tight enough なら語順が逆で、意味も「十分厳しい」になる",
+      "so": "so ... that の形になり、for A to do とは組まない"
+    },
     "difficulty": 3,
     "tags": ["too ... to"]
   },
@@ -87,6 +117,11 @@
     "answerIndex": 0,
     "explanation": "名詞 authority を後ろから修飾する形容詞的用法の to 不定詞。",
     "translation": "その委員会には、5万ドルを超える契約を承認する権限はない。",
+    "choiceNotes": {
+      "approving": "動名詞。名詞 authority を修飾するなら to 不定詞",
+      "approved": "過去分詞。「承認された契約」となり意味が通らない",
+      "approve": "動詞の原形。名詞の後ろに原形は置けない"
+    },
     "difficulty": 2,
     "tags": ["to不定詞", "名詞修飾"]
   },
@@ -100,6 +135,11 @@
     "answerIndex": 0,
     "explanation": "in order to + 動詞の原形 = 〜するために。so that の後ろには節、because や due の後ろには節や名詞句が続く。",
     "translation": "その工場は閑散期の残業費を抑えるため、夜勤を縮小した。",
+    "choiceNotes": {
+      "so that": "後ろには「主語 + 動詞」の節が必要。to lower とは続かない",
+      "because": "接続詞。後ろに節が必要で to 不定詞は続かない",
+      "due": "due to は前置詞句なので後ろは名詞。to lower の to とは別物"
+    },
     "difficulty": 2,
     "tags": ["in order to"]
   }
