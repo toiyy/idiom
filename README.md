@@ -24,17 +24,28 @@ npm run dev        # 開発サーバ（http://localhost:5173）
 
 ## npm スクリプト
 
-| コマンド               | 内容                               |
-| ---------------------- | ---------------------------------- |
-| `npm run dev`          | 開発サーバ起動                     |
-| `npm run build`        | 型チェック + 本番ビルド（`dist/`） |
-| `npm run preview`      | ビルド結果をローカル確認           |
-| `npm test`             | テストを 1 回実行                  |
-| `npm run test:watch`   | テストを watch 実行                |
-| `npm run lint`         | ESLint                             |
-| `npm run format`       | Prettier で整形                    |
-| `npm run format:check` | 整形差分チェック（CI 用）          |
-| `npm run typecheck`    | 型チェックのみ                     |
+| コマンド               | 内容                                    |
+| ---------------------- | --------------------------------------- |
+| `npm run dev`          | 開発サーバ起動                          |
+| `npm run build`        | 型チェック + 本番ビルド（`dist/`）      |
+| `npm run preview`      | ビルド結果をローカル確認                |
+| `npm test`             | テストを 1 回実行                       |
+| `npm run test:watch`   | テストを watch 実行                     |
+| `npm run lint`         | ESLint                                  |
+| `npm run format`       | Prettier で整形                         |
+| `npm run format:check` | 整形差分チェック（CI 用）               |
+| `npm run typecheck`    | 型チェックのみ                          |
+| `npm run export`       | 全問の英文を `sentences.txt` に書き出し |
+| `npm run export:check` | `sentences.txt` が最新か確認（CI 用）   |
+
+## 英文の書き出し（`sentences.txt`）
+
+`npm run export` で、全問の英文を空所に正解を入れた完全な文にして
+`sentences.txt` に 1 行 1 文で書き出す（別で作ったリスニングアプリ用）。
+出題順（ファイル名順 → 配列順）で並ぶのでカテゴリごとにまとまる。
+
+問題を追加・変更したら `npm run export` で更新する。CI（`export:check`）で
+`sentences.txt` がコミットされた問題データと一致しているか検証している。
 
 ## 学習モード
 
