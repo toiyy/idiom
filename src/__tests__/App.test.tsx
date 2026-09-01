@@ -46,10 +46,10 @@ describe('ホーム画面', () => {
     expect(screen.getByRole('button', { name: /^復習/ })).toBeDisabled();
   });
 
-  it('サブカテゴリを持たない 11 カテゴリがフラットに並ぶ', () => {
+  it('サブカテゴリを持たない 18 カテゴリがフラットに並ぶ', () => {
     render(<App />);
     const flatGrid = document.querySelector('.card .category-list');
-    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(11);
+    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(18);
   });
 
   it('品詞識別と語彙が 2 段グループになる', () => {

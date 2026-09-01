@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p5-participle-01",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The keynote speaker's presentation was so ___ that the audience gave a standing ovation.",
+    "choices": ["inspired", "inspiring", "inspires", "inspire"],
+    "answerIndex": 1,
+    "explanation": "主語 presentation は人を「感動させる」側なので、現在分詞の inspiring が正解。過去分詞 inspired は「感動させられた」側に使う。",
+    "translation": "基調講演者の発表はあまりに感動的で、聴衆は総立ちで拍手を送った。",
+    "difficulty": 2,
+    "tags": ["-ing", "もの主語"]
+  },
+  {
+    "id": "p5-participle-02",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "Many customers were ___ by the sudden change in the return policy.",
+    "choices": ["confused", "confuses", "confuse", "confusing"],
+    "answerIndex": 0,
+    "explanation": "主語 customers は人で「混乱させられた」側なので、過去分詞 confused が正解。",
+    "translation": "多くの顧客が、返品規定の突然の変更に戸惑った。",
+    "difficulty": 2,
+    "tags": ["-ed", "人主語"]
+  },
+  {
+    "id": "p5-participle-03",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The results of the pilot program were ___ enough to justify a full rollout.",
+    "choices": ["encourage", "encouraging", "encourages", "encouraged"],
+    "answerIndex": 1,
+    "explanation": "主語 results は人を「勇気づける」側なので、現在分詞 encouraging が正解。",
+    "translation": "試験運用の結果は、全面展開を正当化できるほど有望だった。",
+    "difficulty": 2,
+    "tags": ["-ing", "もの主語"]
+  },
+  {
+    "id": "p5-participle-04",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "Employees who feel ___ in their current roles are far less likely to leave the company.",
+    "choices": ["satisfaction", "satisfied", "satisfying", "satisfy"],
+    "answerIndex": 1,
+    "explanation": "主語 employees は人で「満足させられている」側なので、過去分詞 satisfied が正解。",
+    "translation": "現在の職務に満足している従業員は、会社を辞める可能性がはるかに低い。",
+    "difficulty": 2,
+    "tags": ["-ed", "人主語"]
+  },
+  {
+    "id": "p5-participle-05",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The instructions on the packaging were ___ and led several users to assemble the unit incorrectly.",
+    "choices": ["misleads", "misled", "mislead", "misleading"],
+    "answerIndex": 3,
+    "explanation": "主語 instructions は人を「誤解させる」側なので、現在分詞 misleading が正解。",
+    "translation": "包装に書かれた説明は誤解を招くもので、複数の利用者が装置を誤って組み立てる結果になった。",
+    "difficulty": 3,
+    "tags": ["-ing", "もの主語"]
+  },
+  {
+    "id": "p5-participle-06",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The board was ___ with the speed at which the merger was completed.",
+    "choices": ["please", "pleasure", "pleasing", "pleased"],
+    "answerIndex": 3,
+    "explanation": "主語 board は人の集まりで「喜ばされた」側なので、過去分詞 pleased が正解。be pleased with の形で覚える。",
+    "translation": "取締役会は、合併が完了した速さに満足していた。",
+    "difficulty": 2,
+    "tags": ["-ed", "be pleased with"]
+  },
+  {
+    "id": "p5-participle-07",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "Attendees described the training as one of the most ___ sessions of the year.",
+    "choices": ["challenged", "challenge", "challenges", "challenging"],
+    "answerIndex": 3,
+    "explanation": "名詞 sessions を修飾し、人に「歯ごたえを感じさせる」側なので現在分詞 challenging が正解。",
+    "translation": "参加者はその研修を、その年で最も歯ごたえのある講習の一つだと評した。",
+    "difficulty": 2,
+    "tags": ["-ing", "名詞修飾"]
+  },
+  {
+    "id": "p5-participle-08",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "___ participants should collect their name badges at the front desk before nine o'clock.",
+    "choices": ["Registered", "Registration", "Registering", "Register"],
+    "answerIndex": 0,
+    "explanation": "名詞 participants を修飾し、参加者は「登録された」側なので過去分詞 Registered が正解。",
+    "translation": "登録済みの参加者は、9時前に受付でネームバッジをお受け取りください。",
+    "difficulty": 2,
+    "tags": ["-ed", "名詞修飾"]
+  }
+]

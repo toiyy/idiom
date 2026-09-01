@@ -1,0 +1,122 @@
+[
+  {
+    "id": "p5-modal-01",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Visitors to the plant must ___ protective eyewear at all times.",
+    "choices": ["wear", "to wear", "worn", "wearing"],
+    "answerIndex": 0,
+    "explanation": "助動詞 must の後ろは必ず動詞の原形。wear が正解。",
+    "translation": "工場の来訪者は常時、保護メガネを着用しなければならない。",
+    "difficulty": 1,
+    "tags": ["must", "原形"]
+  },
+  {
+    "id": "p5-modal-02",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Once the new server is installed, staff ___ access the database from any branch office.",
+    "choices": ["can to", "will be able to", "are able", "will can"],
+    "answerIndex": 1,
+    "explanation": "助動詞 will と can を並べることはできないので、can を be able to に置き換えて will be able to とする。",
+    "translation": "新しいサーバーが導入されれば、職員はどの支店からでもデータベースにアクセスできるようになる。",
+    "difficulty": 2,
+    "tags": ["be able to", "助動詞の重複"]
+  },
+  {
+    "id": "p5-modal-03",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "The package ___ been delivered to the wrong address; it never reached our office.",
+    "choices": ["must have", "should have", "can have", "would have"],
+    "answerIndex": 0,
+    "explanation": "「〜だったに違いない」という過去についての強い推量は must have + 過去分詞。",
+    "translation": "その荷物は誤った住所に配達されたに違いない。当社の事務所には一度も届かなかった。",
+    "difficulty": 2,
+    "tags": ["must have + p.p.", "推量"]
+  },
+  {
+    "id": "p5-modal-04",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "We ___ reserved the larger meeting room; twelve people could not find seats.",
+    "choices": ["may have", "must have", "should have", "can have"],
+    "answerIndex": 2,
+    "explanation": "「〜すべきだったのに（しなかった）」という後悔は should have + 過去分詞。",
+    "translation": "もっと大きな会議室を予約しておくべきだった。12人が席を見つけられなかった。",
+    "difficulty": 2,
+    "tags": ["should have + p.p.", "後悔"]
+  },
+  {
+    "id": "p5-modal-05",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "You ___ have submitted the receipts twice; a single copy would have been sufficient.",
+    "choices": ["should not", "could not", "must not", "need not"],
+    "answerIndex": 3,
+    "explanation": "need not have + 過去分詞 = 〜する必要はなかったのに（実際にはした）。must not have は「〜してはいけなかった」という禁止のニュアンスになり合わない。",
+    "translation": "領収書を2回提出する必要はなかった。1部で十分だっただろう。",
+    "difficulty": 3,
+    "tags": ["need not have + p.p."]
+  },
+  {
+    "id": "p5-modal-06",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "You ___ confirm the shipping address before the order is processed.",
+    "choices": ["had better", "will better", "would better", "have better"],
+    "answerIndex": 0,
+    "explanation": "had better + 動詞の原形 = 〜したほうがよい。had は過去形だが意味は現在・未来を指す固定表現。",
+    "translation": "注文が処理される前に、配送先住所を確認したほうがよい。",
+    "difficulty": 2,
+    "tags": ["had better"]
+  },
+  {
+    "id": "p5-modal-07",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "The client would ___ receive the quarterly report electronically than by postal mail.",
+    "choices": ["sooner or", "prefer", "better", "rather"],
+    "answerIndex": 3,
+    "explanation": "would rather A than B = B よりむしろ A したい。than と組むのは rather。",
+    "translation": "その顧客は四半期報告書を、郵送よりも電子データで受け取りたいと思っている。",
+    "difficulty": 2,
+    "tags": ["would rather ... than"]
+  },
+  {
+    "id": "p5-modal-08",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "The company ___ to publish its newsletter quarterly, but it now appears every month.",
+    "choices": ["has used", "was used", "is used", "used"],
+    "answerIndex": 3,
+    "explanation": "used to + 動詞の原形 = 以前は〜していた（今は違う）。be used to は「〜に慣れている」で後ろに動名詞が続くため、原形 publish とは結びつかない。",
+    "translation": "その会社は以前、社報を四半期ごとに発行していたが、今では毎月出ている。",
+    "difficulty": 2,
+    "tags": ["used to", "過去の習慣"]
+  },
+  {
+    "id": "p5-modal-09",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "After twelve years in the field, the technicians are used to ___ in extreme temperatures.",
+    "choices": ["worked", "work", "working", "have worked"],
+    "answerIndex": 2,
+    "explanation": "be used to の to は前置詞なので後ろは動名詞。used to + 原形（以前は〜した）と混同しやすい典型問題。",
+    "translation": "その分野で12年働いてきた技術者たちは、極端な気温の中で作業することに慣れている。",
+    "difficulty": 3,
+    "tags": ["be used to + 動名詞"]
+  },
+  {
+    "id": "p5-modal-10",
+    "part": 5,
+    "category": "助動詞",
+    "sentence": "Given the current pace of construction, the facility ___ open ahead of schedule.",
+    "choices": ["may be", "can well", "should be", "may well"],
+    "answerIndex": 3,
+    "explanation": "may well + 動詞の原形 = 十分に〜しそうだ。may be や should be の後ろには形容詞や名詞が続くため、動詞 open とは結びつかない。",
+    "translation": "現在の工事の進み具合からすると、その施設は予定より早く開業しそうだ。",
+    "difficulty": 3,
+    "tags": ["may well"]
+  }
+]

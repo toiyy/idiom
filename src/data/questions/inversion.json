@@ -1,0 +1,98 @@
+[
+  {
+    "id": "p5-inversion-01",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "Never before ___ the company recorded such a sharp increase in overseas orders.",
+    "choices": ["it has", "has", "have", "did"],
+    "answerIndex": 1,
+    "explanation": "否定の副詞句 Never before が文頭に出ると、後ろは「助動詞 + 主語」の倒置になる。主語 the company は単数なので has。",
+    "translation": "その会社が海外からの注文でこれほど急激な増加を記録したことは、かつてなかった。",
+    "difficulty": 3,
+    "tags": ["倒置", "never"]
+  },
+  {
+    "id": "p5-inversion-02",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "Only after the audit was complete ___ the board approve the budget revision.",
+    "choices": ["had", "was", "did", "it did"],
+    "answerIndex": 2,
+    "explanation": "Only で始まる副詞句が文頭に出ると倒置が起こり、「did + 主語 + 動詞の原形」の語順になる。",
+    "translation": "監査が完了して初めて、取締役会は予算の修正を承認した。",
+    "difficulty": 3,
+    "tags": ["倒置", "only"]
+  },
+  {
+    "id": "p5-inversion-03",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "It was the marketing team ___ first identified the shift in consumer preferences.",
+    "choices": ["what", "that", "whom", "whose"],
+    "answerIndex": 1,
+    "explanation": "「It is / was A that ...」の強調構文。強調される the marketing team が後半の主語の役割を果たしている。what は先行詞を含むので使えない。",
+    "translation": "消費者の嗜好の変化を最初に見抜いたのは、マーケティングチームだった。",
+    "difficulty": 2,
+    "tags": ["強調構文", "it is ... that"]
+  },
+  {
+    "id": "p5-inversion-04",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "While ___ the new procedure, please refer to the checklist posted by the door.",
+    "choices": ["follows", "following", "followed", "follow"],
+    "answerIndex": 1,
+    "explanation": "副詞節の主語が主節と同じ場合、「主語 + be 動詞」を省略できる。While (you are) following ... の形なので現在分詞が残る。",
+    "translation": "新しい手順に従う際は、ドアの脇に掲示されたチェックリストを参照してください。",
+    "difficulty": 3,
+    "tags": ["省略", "分詞構文"]
+  },
+  {
+    "id": "p5-inversion-05",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "The Osaka branch exceeded its annual target, and ___ did the Nagoya office.",
+    "choices": ["such", "so", "also", "neither"],
+    "answerIndex": 1,
+    "explanation": "「so + 助動詞 + 主語」で「〜もまたそうだ」を表す。肯定文を受けているので neither ではなく so。",
+    "translation": "大阪支店は年間目標を上回り、名古屋事務所もまた同様だった。",
+    "difficulty": 2,
+    "tags": ["so + 助動詞 + 主語"]
+  },
+  {
+    "id": "p5-inversion-06",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "The first prototype did not pass inspection, and ___ did the second.",
+    "choices": ["too", "so", "neither", "also"],
+    "answerIndex": 2,
+    "explanation": "否定文を受けて「〜もまたそうでない」と続けるので「neither + 助動詞 + 主語」。so は肯定文を受けるときに使う。",
+    "translation": "最初の試作品は検査に通らず、2台目も同様だった。",
+    "difficulty": 2,
+    "tags": ["neither + 助動詞 + 主語"]
+  },
+  {
+    "id": "p5-inversion-07",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "___ you require additional assistance, please contact the help desk at extension 401.",
+    "choices": ["Would", "Should", "Could", "Might"],
+    "answerIndex": 1,
+    "explanation": "If you should require ... の if が省略されて Should が文頭に出た倒置形。「万一〜なら」という丁寧な条件を表す。",
+    "translation": "さらに支援が必要な場合は、内線401のヘルプデスクまでご連絡ください。",
+    "difficulty": 3,
+    "tags": ["倒置", "if省略"]
+  },
+  {
+    "id": "p5-inversion-08",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "___ is a copy of the signed agreement for your records.",
+    "choices": ["Encloses", "Enclosing", "Enclose", "Enclosed"],
+    "answerIndex": 3,
+    "explanation": "補語が文頭に出た倒置で「Enclosed is + 主語」の形。書類を同封するときの定型表現。",
+    "translation": "記録用に、署名済み契約書の写しを同封いたします。",
+    "difficulty": 3,
+    "tags": ["倒置", "enclosed is"]
+  }
+]

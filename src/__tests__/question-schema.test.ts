@@ -55,7 +55,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(183);
+    expect(questions.length).toBeGreaterThanOrEqual(243);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -63,11 +63,26 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('13 カテゴリすべてに問題がある', () => {
+  it('20 カテゴリすべてに問題がある', () => {
     const categories = listCategories(questions);
-    expect(categories).toHaveLength(13);
+    expect(categories).toHaveLength(20);
     for (const c of categories) {
-      expect(c.total).toBeGreaterThanOrEqual(3);
+      expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(3);
+    }
+  });
+
+  it('フェーズ3 で新設した 7 カテゴリが揃っている', () => {
+    const names = listCategories(questions).map((c) => c.category);
+    for (const c of [
+      '助動詞',
+      '冠詞・限定詞',
+      '名詞節',
+      '相関表現',
+      '倒置・強調・省略',
+      '文型・語順',
+      '分詞形容詞',
+    ]) {
+      expect(names, `${c} が見つからない`).toContain(c);
     }
   });
 
