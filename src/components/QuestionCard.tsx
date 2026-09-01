@@ -49,9 +49,12 @@ export function QuestionCard({
         <span>
           {index + 1} / {total}
         </span>
-        <span>
-          Part {question.part} ・ {question.subcategory ?? question.category}
-        </span>
+        {/* カテゴリは解く前だとヒントになるので、回答後にだけ出す */}
+        {revealed && (
+          <span>
+            Part {question.part} ・ {question.subcategory ?? question.category}
+          </span>
+        )}
       </header>
 
       <p className="card__sentence">

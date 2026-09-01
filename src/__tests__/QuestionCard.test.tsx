@@ -79,6 +79,23 @@ describe('QuestionCard', () => {
     expect(document.querySelectorAll('.choice__note')).toHaveLength(0);
   });
 
+  it('回答前はカテゴリを出さない（ヒントになるため）', () => {
+    setup(null, null);
+    expect(screen.queryByText(/前置詞/)).not.toBeInTheDocument();
+    // 進捗表示（1 / 3）は残る
+    expect(document.querySelector('.card__meta')?.textContent).toContain('1 / 3');
+  });
+
+  it('自信度の申告前もカテゴリは伏せたまま', () => {
+    setup(1, null);
+    expect(screen.queryByText(/前置詞/)).not.toBeInTheDocument();
+  });
+
+  it('回答後はカテゴリが出る', () => {
+    setup(1, 'unsure');
+    expect(screen.getByText(/Part 5 ・ 前置詞/)).toBeInTheDocument();
+  });
+
   it('回答後は不正解 3 つにだけ理由が出る', () => {
     setup(1, 'unsure');
     const notes = Array.from(document.querySelectorAll('.choice__note')).map(
