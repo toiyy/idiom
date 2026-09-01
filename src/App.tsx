@@ -18,6 +18,7 @@ import {
   saveProgress,
   type Confidence,
 } from './lib/storage';
+import { clearSession, loadSession, saveSession } from './lib/session';
 import { HomeScreen } from './components/HomeScreen';
 import { QuestionCard } from './components/QuestionCard';
 import { ResultView } from './components/ResultView';
@@ -26,13 +27,17 @@ import type { Question } from './types/question';
 type Screen = 'home' | 'quiz' | 'result';
 
 export default function App() {
-  const [screen, setScreen] = useState<Screen>('home');
-  const [mode, setMode] = useState<QuizMode>({ kind: 'all' });
-  const [order, setOrder] = useState<Question[]>([]);
-  const [cursor, setCursor] = useState(0);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-  const [confidence, setConfidence] = useState<Confidence | null>(null);
-  const [sessionCorrect, setSessionCorrect] = useState(0);
+  // マウント時に一度だけ読む。解きかけのセッションがあればその状態から始める
+  const [restored] = useState(() => loadSession(questions));
+  const [screen, setScreen] = useState<Screen>(restored?.onQuiz ? 'quiz' : 'home');
+  const [mode, setMode] = useState<QuizMode>(restored?.mode ?? { kind: 'all' });
+  const [order, setOrder] = useState<Question[]>(restored?.order ?? []);
+  const [cursor, setCursor] = useState(restored?.cursor ?? 0);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(
+    restored?.selectedIndex ?? null,
+  );
+  const [confidence, setConfidence] = useState<Confidence | null>(restored?.confidence ?? null);
+  const [sessionCorrect, setSessionCorrect] = useState(restored?.sessionCorrect ?? 0);
   const [progress, setProgress] = useState(() => loadProgress());
 
   const reviewCount = useMemo(
@@ -63,6 +68,25 @@ export default function App() {
     return () => window.removeEventListener('keydown', onKeyDown);
     // handleConfidence は progress / selectedIndex に依存するため毎回張り直す
   });
+
+  // 解きかけの状態を毎回書き出しておき、タブを閉じても続きから戻れるようにする。
+  // 結果画面まで到達したセッションは用済みなので消す。
+  useEffect(() => {
+    if (screen === 'result' || order.length === 0) {
+      if (screen === 'result') clearSession();
+      return;
+    }
+    saveSession({
+      mode,
+      orderIds: order.map((q) => q.id),
+      cursor,
+      selectedIndex,
+      confidence,
+      sessionCorrect,
+      // クイズ画面で離れたなら次回はそのまま再開、中断でホームに戻ったなら「続きから」で待つ
+      onQuiz: screen === 'quiz',
+    });
+  }, [screen, mode, order, cursor, selectedIndex, confidence, sessionCorrect]);
 
   function startQuiz(next: QuizMode) {
     const selected = selectQuestions(questions, next, progress.wrongIds);
@@ -111,6 +135,22 @@ export default function App() {
     setProgress(resetProgress());
   }
 
+  /** 結果を見終えたセッションは捨てる。order を空にすると「続きから」も消える。 */
+  function handleFinishToHome() {
+    setOrder([]);
+    setCursor(0);
+    setSelectedIndex(null);
+    setConfidence(null);
+    setSessionCorrect(0);
+    setScreen('home');
+  }
+
+  // ホームに戻っていて、まだ解き終えていないセッションが残っている状態
+  const suspended =
+    screen === 'home' && order.length > 0
+      ? { modeName: modeLabel(mode), cursor, total: order.length }
+      : null;
+
   return (
     <main className="app">
       <header className="app__header">
@@ -128,6 +168,8 @@ export default function App() {
           reviewCount={reviewCount}
           categories={categories}
           progress={progress}
+          suspended={suspended}
+          onResume={() => setScreen('quiz')}
           onStart={startQuiz}
           onResetProgress={handleResetProgress}
         />
@@ -157,7 +199,7 @@ export default function App() {
           reviewCount={reviewCount}
           onRetry={() => startQuiz(mode)}
           onReview={() => startQuiz({ kind: 'review' })}
-          onHome={() => setScreen('home')}
+          onHome={handleFinishToHome}
         />
       )}
     </main>

@@ -261,3 +261,106 @@ describe('進捗の永続化', () => {
     expect(document.querySelectorAll('.conf-table tbody tr')[2]).toHaveTextContent('勘');
   });
 });
+
+describe('学習の再開', () => {
+  it('クイズ中に離れると次回そのまま再開する', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await answer(user, { correct: true, confidence: '自信あり' });
+    expect(screen.getByText(`3 / ${SHORT.size}`)).toBeInTheDocument();
+
+    // 中断ボタンを押さずにタブを閉じた状況
+    unmount();
+    render(<App />);
+
+    // ホームを経由せず 3 問目から続く
+    expect(screen.getByText(`3 / ${SHORT.size}`)).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /^全問/ })).not.toBeInTheDocument();
+  });
+
+  it('選択肢を選んだ直後に離れても、自信度の申告から続く', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await user.click(choiceButtons()[0]);
+    unmount();
+
+    render(<App />);
+    expect(screen.getByText('どのくらい自信がありますか？')).toBeInTheDocument();
+    expect(document.querySelectorAll('.choice--selected')).toHaveLength(1);
+  });
+
+  it('中断したときはホームに「続きから」が出る', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    unmount();
+
+    render(<App />);
+    // 自動再開はせず、ホームに再開ボタンが並ぶ
+    expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
+    const resume = screen.getByRole('button', { name: /^関係詞 \/ 関係副詞/ });
+    expect(resume).toHaveTextContent(`2 / ${SHORT.size} 問`);
+
+    await user.click(resume);
+    expect(screen.getByText(`2 / ${SHORT.size}`)).toBeInTheDocument();
+  });
+
+  it('別のモードを始めると続きは上書きされる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    // 再開カードは後から始めた「時制」を指している
+    const card = document.querySelector('.card--resume');
+    expect(card?.querySelector('.mode__name')).toHaveTextContent('時制');
+    expect(card?.textContent).not.toContain('関係副詞');
+  });
+
+  it('最後まで解き切ると続きは残らない', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answerAll(user, () => ({ correct: true, confidence: '自信あり' }));
+    await user.click(screen.getByRole('button', { name: 'ホームへ' }));
+
+    expect(document.querySelector('.card--resume')).toBeNull();
+    unmount();
+
+    render(<App />);
+    expect(document.querySelector('.card--resume')).toBeNull();
+    expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
+  });
+
+  it('問題データから id が消えた続きは破棄する', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    unmount();
+
+    // 保存済みの出題順に、存在しない id を混ぜる
+    const raw = JSON.parse(localStorage.getItem('idiom.session.v1') ?? '{}');
+    raw.orderIds = [...raw.orderIds, 'deleted-question-id'];
+    localStorage.setItem('idiom.session.v1', JSON.stringify(raw));
+
+    render(<App />);
+    expect(document.querySelector('.card--resume')).toBeNull();
+    expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
+  });
+});

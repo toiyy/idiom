@@ -125,6 +125,17 @@ body {
   font-size: 0.85rem;
 }
 
+/* --- ホーム: 中断したセッションの再開 --- */
+
+.card--resume {
+  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
+}
+
+.mode--resume {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
 /* --- ホーム: カテゴリ一覧 --- */
 
 .category-list {

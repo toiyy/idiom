@@ -7,6 +7,9 @@ interface HomeScreenProps {
   reviewCount: number;
   categories: CategorySummary[];
   progress: Progress;
+  /** 中断して残っているセッション。なければ null。 */
+  suspended: { modeName: string; cursor: number; total: number } | null;
+  onResume: () => void;
   onStart: (mode: QuizMode) => void;
   onResetProgress: () => void;
 }
@@ -25,6 +28,8 @@ export function HomeScreen({
   reviewCount,
   categories,
   progress,
+  suspended,
+  onResume,
   onStart,
   onResetProgress,
 }: HomeScreenProps) {
@@ -34,6 +39,18 @@ export function HomeScreen({
 
   return (
     <>
+      {suspended && (
+        <section className="card card--resume">
+          <h2 className="section__title">続きから</h2>
+          <button type="button" className="mode mode--resume" onClick={onResume}>
+            <span className="mode__name">{suspended.modeName}</span>
+            <span className="mode__count">
+              {suspended.cursor + 1} / {suspended.total} 問
+            </span>
+          </button>
+        </section>
+      )}
+
       <section className="card">
         <h2 className="section__title">モードを選ぶ</h2>
 
