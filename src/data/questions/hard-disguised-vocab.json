@@ -1,0 +1,218 @@
+[
+  {
+    "id": "p5-hard-vocab-01",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The report examines the ___ impact of the new import tariffs on regional manufacturers.",
+    "choices": ["economically", "economy", "economical", "economic"],
+    "answerIndex": 3,
+    "explanation": "economical と economic はどちらも形容詞なので、位置だけでは決まらない。economic は「経済の」、economical は「節約になる」。関税が経済に与える影響なので economic。",
+    "translation": "その報告書は、新しい輸入関税が地域の製造業者に与える経済的影響を検証している。",
+    "choiceNotes": {
+      "economical": "同じく形容詞だが「節約になる・費用対効果が高い」の意味。関税の影響には合わない",
+      "economically": "副詞。名詞 impact を修飾できない",
+      "economy": "名詞。impact を修飾する形にならない"
+    },
+    "difficulty": 3,
+    "tags": ["economic / economical", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-02",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The factory will need to hire additional ___ before the third production line opens in May.",
+    "choices": ["personal", "personnel", "personally", "persons"],
+    "answerIndex": 1,
+    "explanation": "personnel は「職員・人員」を表す名詞で、hire の目的語になる。綴りの似た personal は形容詞で名詞にならない。",
+    "translation": "その工場は、5月に第3生産ラインが稼働する前に追加の人員を雇う必要がある。",
+    "choiceNotes": {
+      "personal": "形容詞「個人の」。hire の目的語になる名詞ではない",
+      "personally": "副詞。目的語の位置には入らない",
+      "persons": "名詞ではあるが、企業が雇う人員をまとめて指すには personnel を使う"
+    },
+    "difficulty": 3,
+    "tags": ["personnel / personal", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-03",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The office manager orders ___ supplies such as envelopes and printer paper every quarter.",
+    "choices": ["stationed", "stationary", "stationery", "station"],
+    "answerIndex": 2,
+    "explanation": "stationery（文房具）と stationary（動かない）は発音が同じで綴りが 1 文字違うだけ。封筒や用紙を指すので stationery。",
+    "translation": "事務長は、封筒やプリンター用紙といった文房具を四半期ごとに発注する。",
+    "choiceNotes": {
+      "stationary": "「静止した・動かない」という形容詞。封筒や用紙の説明にならない",
+      "station": "名詞「駅・部署」。supplies を修飾して文房具の意味にはならない",
+      "stationed": "過去分詞「配置された」。備品の種類を表さない"
+    },
+    "difficulty": 3,
+    "tags": ["stationery / stationary", "同音異義"]
+  },
+  {
+    "id": "p5-hard-vocab-04",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The sensor provides ___ monitoring of the tank temperature without any interruption.",
+    "choices": ["continuous", "continually", "continuity", "continual"],
+    "answerIndex": 0,
+    "explanation": "continual と continuous はどちらも形容詞。continuous は「途切れない」、continual は「断続的に繰り返される」。without any interruption とあるので continuous。",
+    "translation": "そのセンサーは、タンクの温度を一切途切れることなく監視し続ける。",
+    "choiceNotes": {
+      "continual": "同じく形容詞だが「繰り返し起こる」の意味。途切れがないという文脈と矛盾する",
+      "continually": "副詞。名詞 monitoring を修飾できない",
+      "continuity": "名詞「連続性」。monitoring を修飾する形にならない"
+    },
+    "difficulty": 3,
+    "tags": ["continuous / continual", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-05",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The signing of the trade agreement was widely regarded as a ___ moment for both economies.",
+    "choices": ["historically", "history", "historical", "historic"],
+    "answerIndex": 3,
+    "explanation": "historic と historical はどちらも形容詞。historic は「歴史に残るほど重要な」、historical は「歴史に関する」。重大な節目を指すので historic。",
+    "translation": "その通商協定の調印は、双方の経済にとって歴史的な瞬間だと広くみなされた。",
+    "choiceNotes": {
+      "historical": "同じく形容詞だが「歴史上の・史実の」の意味。重要性を表す語ではない",
+      "historically": "副詞。名詞 moment を修飾できない",
+      "history": "名詞。a ... moment の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["historic / historical", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-06",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "There has been an ___ improvement in response times since the new server was installed.",
+    "choices": ["appreciable", "appreciatively", "appreciation", "appreciative"],
+    "answerIndex": 0,
+    "explanation": "appreciable と appreciative はどちらも形容詞。appreciable は「目に見えるほどの・相当な」、appreciative は「感謝している」で人について使う。",
+    "translation": "新しいサーバーが導入されて以来、応答時間に目に見える改善があった。",
+    "choiceNotes": {
+      "appreciative": "同じく形容詞だが「感謝している」の意味で、人の気持ちを表す",
+      "appreciatively": "副詞。名詞 improvement を修飾できない",
+      "appreciation": "名詞「感謝・理解」。an ... improvement の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["appreciable / appreciative", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-07",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The legal team carried out an ___ review of every clause, leaving nothing unchecked.",
+    "choices": ["exhausting", "exhaustive", "exhaustively", "exhaustion"],
+    "answerIndex": 1,
+    "explanation": "exhaustive と exhausting はどちらも形容詞。exhaustive は「網羅的な」、exhausting は「疲れさせる」。leaving nothing unchecked とあるので網羅性を表す exhaustive。",
+    "translation": "法務チームは全条項を精査し、確認漏れが一切ない徹底的な見直しを行った。",
+    "choiceNotes": {
+      "exhausting": "同じく形容詞だが「疲れさせる」の意味。網羅性を表す語ではない",
+      "exhaustively": "副詞。名詞 review を修飾できない",
+      "exhaustion": "名詞「疲労」。an ... review の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["exhaustive / exhausting", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-08",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The closing ceremony was a ___ occasion that former participants still talk about today.",
+    "choices": ["memorable", "memorably", "memory", "memorial"],
+    "answerIndex": 0,
+    "explanation": "memorable と memorial はどちらも形容詞になりうる。memorable は「記憶に残る」、memorial は「追悼の」。今も語り草になっている行事なので memorable。",
+    "translation": "その閉会式は、かつての参加者が今も語り草にするほど記憶に残る行事だった。",
+    "choiceNotes": {
+      "memorial": "「追悼の・記念の」という意味で、亡くなった人を偲ぶ場面に使う",
+      "memorably": "副詞。名詞 occasion を修飾できない",
+      "memory": "名詞「記憶」。a ... occasion の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["memorable / memorial", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-09",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The design team was praised for its ___ use of recycled materials in the packaging.",
+    "choices": ["imaginative", "imaginatively", "imagination", "imaginary"],
+    "answerIndex": 0,
+    "explanation": "imaginative と imaginary はどちらも形容詞。imaginative は「創意に富む」、imaginary は「架空の・実在しない」。称賛されているので imaginative。",
+    "translation": "そのデザインチームは、包装への再生素材の独創的な使い方を称賛された。",
+    "choiceNotes": {
+      "imaginary": "同じく形容詞だが「架空の・実在しない」の意味。実際の取り組みを表さない",
+      "imaginatively": "副詞。名詞 use を修飾できない",
+      "imagination": "名詞「想像力」。its ... use の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["imaginative / imaginary", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-10",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The translator was criticized for a ___ rendering that ignored the idioms of the original.",
+    "choices": ["literal", "literally", "literacy", "literate"],
+    "answerIndex": 0,
+    "explanation": "literal と literate はどちらも形容詞。literal は「文字どおりの」、literate は「読み書きができる」。慣用表現を無視した直訳なので literal。",
+    "translation": "その翻訳者は、原文の慣用表現を無視した直訳的な訳文で批判された。",
+    "choiceNotes": {
+      "literate": "同じく形容詞だが「読み書きができる」の意味。訳し方の性質を表さない",
+      "literally": "副詞。名詞 rendering を修飾できない",
+      "literacy": "名詞「識字能力」。a ... rendering の位置に入らない"
+    },
+    "difficulty": 3,
+    "tags": ["literal / literate", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-11",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The firm has built a ___ reputation for delivering complex projects on schedule.",
+    "choices": ["respectively", "respective", "respectful", "respectable"],
+    "answerIndex": 3,
+    "explanation": "respectable / respectful / respective はいずれも形容詞。respectable は「立派な・評価に値する」、respectful は「敬意を払う」、respective は「それぞれの」。評判の質を表すので respectable。",
+    "translation": "その会社は、複雑な案件を期日どおりに仕上げるという立派な評判を築いてきた。",
+    "choiceNotes": {
+      "respective": "同じく形容詞だが「それぞれの」の意味。複数のものを受ける文脈がない",
+      "respectful": "同じく形容詞だが「敬意を払う」の意味。評判の質を表さない",
+      "respectively": "副詞。名詞 reputation を修飾できない"
+    },
+    "difficulty": 3,
+    "tags": ["respectable / respectful / respective", "意味で決まる"]
+  },
+  {
+    "id": "p5-hard-vocab-12",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "品詞に見せかけた語彙",
+    "sentence": "The proposed tariff will ___ the cost of imported components far more than analysts expected.",
+    "choices": ["affection", "effective", "effect", "affect"],
+    "answerIndex": 3,
+    "explanation": "affect と effect はどちらも動詞になりうる。affect は「影響を与える」、effect は「（変化などを）もたらす」で change や reform を目的語にとる。cost を目的語にするので affect。",
+    "translation": "提案されている関税は、輸入部品の費用にアナリストの予想をはるかに超える影響を与えるだろう。",
+    "choiceNotes": {
+      "effect": "動詞としては effect change のように「変化をもたらす」の意味。cost を目的語にとらない",
+      "affection": "名詞「愛情」。述語動詞にならない",
+      "effective": "形容詞「効果的な」。will の後ろには動詞の原形が必要"
+    },
+    "difficulty": 3,
+    "tags": ["affect / effect", "同音異義"]
+  }
+]

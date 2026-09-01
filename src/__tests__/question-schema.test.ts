@@ -75,7 +75,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(333);
+    expect(questions.length).toBeGreaterThanOrEqual(368);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -83,9 +83,9 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('20 カテゴリすべてに 8 問以上ある', () => {
+  it('21 カテゴリすべてに 8 問以上ある', () => {
     const categories = listCategories(questions);
-    expect(categories).toHaveLength(20);
+    expect(categories).toHaveLength(21);
     // フェーズ4 で薄いカテゴリを解消したので、以後 8 問を下限として維持する
     for (const c of categories) {
       expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(8);
@@ -129,11 +129,24 @@ describe('同梱データ', () => {
     }
   });
 
-  it('サブカテゴリを持つのは 4 カテゴリ', () => {
+  it('サブカテゴリを持つのは 5 カテゴリ', () => {
     const nested = listCategories(questions)
       .filter((c) => c.subcategories.length > 0)
       .map((c) => c.category);
-    expect(nested.sort()).toEqual(['品詞識別', '準動詞', '語彙', '関係詞']);
+    expect(nested.sort()).toEqual(['品詞識別', '準動詞', '語彙', '関係詞', '難問']);
+  });
+
+  it('難問カテゴリが 3 サブカテゴリ × 35 問を持ち、すべて難易度 3', () => {
+    const hard = listCategories(questions).find((c) => c.category === '難問');
+    expect(hard?.total).toBe(35);
+    expect(hard?.subcategories.map((s) => s.subcategory).sort()).toEqual([
+      '2択の詰め',
+      '品詞に見せかけた語彙',
+      '構造の取り違え',
+    ]);
+    for (const q of questions.filter((q) => q.category === '難問')) {
+      expect(q.difficulty, `${q.id} は難易度 3 であるべき`).toBe(3);
+    }
   });
 
   it('準動詞が 3 サブカテゴリ、関係詞が 2 サブカテゴリに分かれている', () => {

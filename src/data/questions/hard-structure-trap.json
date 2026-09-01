@@ -1,0 +1,200 @@
+[
+  {
+    "id": "p5-hard-struct-01",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The effectiveness of the safety measures, which were introduced last spring, ___ still being evaluated.",
+    "choices": ["are", "is", "were", "have been"],
+    "answerIndex": 1,
+    "explanation": "主語は単数の The effectiveness。of the safety measures も関係詞節 which were introduced も修飾部分にすぎない。直前の複数名詞と were に引きずられないこと。",
+    "translation": "昨春に導入された安全対策の有効性は、いまも評価が続けられている。",
+    "choiceNotes": {
+      "are": "複数形。主語は単数の The effectiveness で、measures ではない",
+      "were": "複数の過去形。主語が単数であるうえ、現在の状況を述べている",
+      "have been": "複数に対応する形。単数扱いなので has been になる"
+    },
+    "difficulty": 3,
+    "tags": ["主語の特定", "修飾句に注意"]
+  },
+  {
+    "id": "p5-hard-struct-02",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "A list of the documents that applicants are required to submit ___ available on the company Web site.",
+    "choices": ["is", "have been", "are", "were"],
+    "answerIndex": 0,
+    "explanation": "主語は単数の A list。of the documents と that 節はいずれも修飾部分で、間に複数名詞が 2 つ挟まっている。",
+    "translation": "応募者が提出を求められる書類の一覧は、会社のウェブサイトで閲覧できる。",
+    "choiceNotes": {
+      "are": "複数形。主語は A list で、documents や applicants ではない",
+      "were": "複数の過去形。主語が単数であるうえ、現在の状態を述べている",
+      "have been": "複数に対応する形。単数扱いなので has been になる"
+    },
+    "difficulty": 3,
+    "tags": ["主語の特定", "修飾句に注意"]
+  },
+  {
+    "id": "p5-hard-struct-03",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "Neither of the two proposals submitted by the outside consultants ___ the committee's cost requirements.",
+    "choices": ["meets", "were meeting", "have met", "meet"],
+    "answerIndex": 0,
+    "explanation": "Neither of 〜 は単数扱い。後ろに proposals と consultants という複数名詞が続くが、主語はあくまで Neither。",
+    "translation": "外部コンサルタントが提出した2つの提案は、どちらも委員会の費用要件を満たしていない。",
+    "choiceNotes": {
+      "meet": "複数に対応する形。Neither of 〜 は単数扱い",
+      "were meeting": "複数の過去進行形。主語は単数で、時制も現在の状況を述べている",
+      "have met": "複数に対応する形。単数扱いなので has met になる"
+    },
+    "difficulty": 3,
+    "tags": ["neither of", "単数扱い"]
+  },
+  {
+    "id": "p5-hard-struct-04",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "There ___ a number of unresolved issues in the draft agreement that the legal team must review.",
+    "choices": ["was", "are", "has been", "is"],
+    "answerIndex": 1,
+    "explanation": "There 構文では be 動詞の後ろの名詞が主語。a number of + 複数名詞 は複数扱いなので are。直後の a に引きずられないこと。",
+    "translation": "契約書の草案には、法務チームが確認しなければならない未解決の点がいくつもある。",
+    "choiceNotes": {
+      "is": "単数形。主語は a number of issues で複数扱い",
+      "was": "単数の過去形。複数扱いであるうえ、現在の状態を述べている",
+      "has been": "単数に対応する形。複数扱いなので have been になる"
+    },
+    "difficulty": 3,
+    "tags": ["there構文", "a number of"]
+  },
+  {
+    "id": "p5-hard-struct-05",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The company offers a range of maintenance services that ___ designed specifically for small factories.",
+    "choices": ["are", "has been", "is", "was"],
+    "answerIndex": 0,
+    "explanation": "関係代名詞 that が受けているのは直前の複数名詞 services であって、単数の a range ではない。よって are designed。",
+    "translation": "その会社は、小規模工場向けに特別に設計された各種の保守サービスを提供している。",
+    "choiceNotes": {
+      "is": "単数形。that が受けているのは services で、a range ではない",
+      "was": "単数の過去形。先行詞が複数であるうえ、現在の状態を述べている",
+      "has been": "単数に対応する形。先行詞が複数なので have been になる"
+    },
+    "difficulty": 3,
+    "tags": ["関係詞の先行詞", "主述の一致"]
+  },
+  {
+    "id": "p5-hard-struct-06",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The instructions printed on the back of the package ___ difficult to read in dim lighting.",
+    "choices": ["was", "has been", "is", "are"],
+    "answerIndex": 3,
+    "explanation": "主語は複数の The instructions。printed 以下は分詞による修飾部分で、直前の単数名詞 package に引きずられないこと。",
+    "translation": "包装の裏面に印刷された説明書きは、薄暗いところでは読みにくい。",
+    "choiceNotes": {
+      "is": "単数形。主語は instructions で、package ではない",
+      "was": "単数の過去形。主語が複数であるうえ、現在の状態を述べている",
+      "has been": "単数に対応する形。複数扱いなので have been になる"
+    },
+    "difficulty": 3,
+    "tags": ["主語の特定", "分詞の修飾"]
+  },
+  {
+    "id": "p5-hard-struct-07",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The proposal that the board approved at last week's meeting ___ significant changes to the reporting structure.",
+    "choices": ["introduces", "introducing", "to introduce", "introduce"],
+    "answerIndex": 0,
+    "explanation": "文全体の主語は単数の The proposal。that 以下は修飾する関係詞節で、その中の主語 the board に引きずられないこと。",
+    "translation": "取締役会が先週の会議で承認した提案は、報告体制に大きな変更をもたらす。",
+    "choiceNotes": {
+      "introduce": "複数に対応する形。主語は単数の The proposal",
+      "introducing": "現在分詞。文の述語動詞にならない",
+      "to introduce": "to 不定詞。文の述語動詞にならない"
+    },
+    "difficulty": 3,
+    "tags": ["主語の特定", "関係詞節"]
+  },
+  {
+    "id": "p5-hard-struct-08",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "Attendance at the optional afternoon sessions ___ noticeably lower than at the morning ones.",
+    "choices": ["have been", "were", "are", "was"],
+    "answerIndex": 3,
+    "explanation": "主語は不可算名詞の Attendance で単数扱い。前置詞句 at the ... sessions の中の複数名詞に引きずられないこと。",
+    "translation": "任意参加の午後の講習は、午前のものより出席率が目に見えて低かった。",
+    "choiceNotes": {
+      "were": "複数の過去形。主語は不可算の Attendance で単数扱い",
+      "are": "複数形。主語が単数であるうえ、過去の話を述べている",
+      "have been": "複数に対応する形。単数扱いなので has been になる"
+    },
+    "difficulty": 3,
+    "tags": ["不可算名詞", "主語の特定"]
+  },
+  {
+    "id": "p5-hard-struct-09",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "Not only the packaging but also the shipping labels ___ redesigned to meet the new regulations.",
+    "choices": ["were", "has been", "was", "is"],
+    "answerIndex": 0,
+    "explanation": "「Not only A but also B」は動詞に近いほうの B に一致させる。ここでは複数の the shipping labels なので were。",
+    "translation": "包装だけでなく配送ラベルも、新しい規制に合うよう再設計された。",
+    "choiceNotes": {
+      "was": "単数の過去形。近いほうの labels は複数",
+      "is": "単数形。近いほうの名詞が複数であるうえ、時制も過去の話",
+      "has been": "単数に対応する形。labels が複数なので have been になる"
+    },
+    "difficulty": 3,
+    "tags": ["not only but also", "近接の原則"]
+  },
+  {
+    "id": "p5-hard-struct-10",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The recommendations made by the external auditors last quarter ___ into the revised policy.",
+    "choices": ["incorporating", "has been incorporated", "have been incorporated", "incorporates"],
+    "answerIndex": 2,
+    "explanation": "主語は複数の The recommendations。made 以下は分詞による修飾で、直前の単数名詞 quarter に引きずられない。提言は「反映される」側なので受動態。",
+    "translation": "外部監査人が前四半期に行った提言は、改訂後の方針に反映されている。",
+    "choiceNotes": {
+      "has been incorporated": "単数に対応する形。主語は複数の recommendations",
+      "incorporates": "能動態かつ単数形。提言は反映される側なので受動態が必要",
+      "incorporating": "現在分詞。文の述語動詞にならない"
+    },
+    "difficulty": 3,
+    "tags": ["主語の特定", "受動態"]
+  },
+  {
+    "id": "p5-hard-struct-11",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "構造の取り違え",
+    "sentence": "The technician was asked to inspect the wiring, replace the faulty relay, and ___ the system before leaving.",
+    "choices": ["to restart", "restarting", "restarted", "restart"],
+    "answerIndex": 3,
+    "explanation": "to inspect / replace / restart という 3 つの動作が and で並んでいる。最初の to が 3 つ全体にかかるので、空所には原形が入る。",
+    "translation": "その技術者は、配線を点検し、故障したリレーを交換し、退出前にシステムを再起動するよう求められた。",
+    "choiceNotes": {
+      "restarting": "動名詞。inspect / replace と形がそろわない",
+      "restarted": "過去分詞。並列されている原形と形がそろわない",
+      "to restart": "to は先頭に一度出ているので、繰り返すと inspect / replace と形がずれる"
+    },
+    "difficulty": 3,
+    "tags": ["並列", "to不定詞の共有"]
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "id": "p5-hard-2way-01",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "Employees must ___ their supervisor of any change of address within ten days.",
+    "choices": ["report", "mention", "announce", "notify"],
+    "answerIndex": 3,
+    "explanation": "4 つとも「知らせる」系で意味は通る。決め手は「人 + of」をとれるかどうかで、notify A of B の形をとれるのは notify だけ。",
+    "translation": "従業員は住所の変更があった場合、10日以内に上司に知らせなければならない。",
+    "choiceNotes": {
+      "announce": "announce は「announce B to A」。人を目的語にとって of を続けられない",
+      "report": "report は「report B to A」。人を直接の目的語にしない",
+      "mention": "mention は「mention B to A」。人を目的語にとれない"
+    },
+    "difficulty": 3,
+    "tags": ["notify A of B", "語法"]
+  },
+  {
+    "id": "p5-hard-2way-02",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The auditor ___ the discrepancy to a data-entry error made during the system migration.",
+    "choices": ["assigned", "blamed", "credited", "attributed"],
+    "answerIndex": 3,
+    "explanation": "「原因を〜に帰する」を to で表せるのは attribute。blame は「blame B on A」で前置詞が on になる。",
+    "translation": "監査人はその不一致を、システム移行中に生じた入力ミスによるものとした。",
+    "choiceNotes": {
+      "blamed": "blame は「blame B on A」の形。to は続かない",
+      "credited": "credit A to B の形はあるが、良い結果を誰かの功績とするときに使う",
+      "assigned": "assign A to B は「割り当てる」。原因を帰する意味にならない"
+    },
+    "difficulty": 3,
+    "tags": ["attribute A to B", "blame との対比"]
+  },
+  {
+    "id": "p5-hard-2way-03",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "Management ___ the three-week delay on an unexpected shortage of raw materials.",
+    "choices": ["credited", "ascribed", "attributed", "blamed"],
+    "answerIndex": 3,
+    "explanation": "前置詞が on なので blame A on B の形。attribute と ascribe はどちらも to をとるので入らない。",
+    "translation": "経営陣は3週間の遅延を、予期せぬ原材料不足のせいだとした。",
+    "choiceNotes": {
+      "ascribed": "ascribe A to B の形。on は続かない",
+      "attributed": "attribute A to B の形。on ではなく to をとる",
+      "credited": "credit A to B の形。on は続かず、意味も良い結果に使う"
+    },
+    "difficulty": 3,
+    "tags": ["blame A on B", "attribute との対比"]
+  },
+  {
+    "id": "p5-hard-2way-04",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The revised contract ___ the supplier to give ninety days' notice before any price increase.",
+    "choices": ["requires", "suggests", "demands", "insists"],
+    "answerIndex": 0,
+    "explanation": "4 つとも「求める」系だが、「目的語 + to 不定詞」をとれるのは require だけ。他は that 節や前置詞を伴う形になる。",
+    "translation": "改訂された契約は、値上げの前に90日前の通知を出すことを供給業者に義務づけている。",
+    "choiceNotes": {
+      "demands": "demand は「demand that S + 原形」。目的語 + to 不定詞はとらない",
+      "insists": "insist は「insist that S + 原形」または insist on。この形はとらない",
+      "suggests": "suggest は「suggest that S + 原形」。目的語 + to 不定詞はとらない"
+    },
+    "difficulty": 3,
+    "tags": ["require O to do", "語法"]
+  },
+  {
+    "id": "p5-hard-2way-05",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The consultant was asked to ___ the committee on the feasibility of the proposed merger.",
+    "choices": ["recommend", "suggest", "propose", "advise"],
+    "answerIndex": 3,
+    "explanation": "4 つとも「助言・提案する」系だが、人を直接の目的語にとれるのは advise だけ。advise A on B の形。",
+    "translation": "そのコンサルタントは、合併案の実現可能性について委員会に助言するよう依頼された。",
+    "choiceNotes": {
+      "recommend": "recommend は「recommend B to A」。人を直接の目的語にしない",
+      "suggest": "suggest も「suggest B to A」。人を目的語にとれない",
+      "propose": "propose も「propose B to A」の形になる"
+    },
+    "difficulty": 3,
+    "tags": ["advise A on B", "語法"]
+  },
+  {
+    "id": "p5-hard-2way-06",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The safety manual ___ particular emphasis on the identification of chemical hazards.",
+    "choices": ["gives", "places", "takes", "makes"],
+    "answerIndex": 1,
+    "explanation": "emphasis と組んで「重点を置く」を表すのは place emphasis on。give を使うなら give emphasis to で前置詞が変わる。",
+    "translation": "その安全マニュアルは、化学的危険の識別に特に重点を置いている。",
+    "choiceNotes": {
+      "makes": "make emphasis という組み合わせはない",
+      "gives": "give emphasis to の形になる。on とは組まない",
+      "takes": "take emphasis という組み合わせはない"
+    },
+    "difficulty": 3,
+    "tags": ["place emphasis on", "コロケーション"]
+  },
+  {
+    "id": "p5-hard-2way-07",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The manufacturer's warranty ___ only to defects in materials and workmanship.",
+    "choices": ["concerns", "covers", "includes", "applies"],
+    "answerIndex": 3,
+    "explanation": "空所の後ろが to なので、自動詞として to をとる apply が正解。cover / include / concern はいずれも他動詞で目的語を直接とる。",
+    "translation": "その製造業者の保証は、素材と製造上の欠陥にのみ適用される。",
+    "choiceNotes": {
+      "covers": "他動詞。covers defects のように目的語を直接とり、to は続かない",
+      "includes": "他動詞。to を伴わず目的語を直接とる",
+      "concerns": "他動詞。to は続かない"
+    },
+    "difficulty": 3,
+    "tags": ["apply to", "自動詞"]
+  },
+  {
+    "id": "p5-hard-2way-08",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The finance team raised an ___ to the timing of the proposed payment schedule.",
+    "choices": ["rejection", "refusal", "opposition", "objection"],
+    "answerIndex": 3,
+    "explanation": "4 つとも「反対・拒否」系だが、raise an ... to の形をとれるのは objection だけ。",
+    "translation": "財務チームは、提案された支払い日程のタイミングに異議を唱えた。",
+    "choiceNotes": {
+      "opposition": "不可算で使うのが普通で、raise an opposition という形はとらない",
+      "rejection": "raise と組まない。「却下」という結果を表す語",
+      "refusal": "raise と組まない。「拒否」という行為そのものを表す語"
+    },
+    "difficulty": 3,
+    "tags": ["raise an objection to", "コロケーション"]
+  },
+  {
+    "id": "p5-hard-2way-09",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The director ___ the project team on completing the audit two weeks ahead of schedule.",
+    "choices": ["congratulated", "thanked", "rewarded", "praised"],
+    "answerIndex": 0,
+    "explanation": "4 つとも「ねぎらう」系だが、前置詞が on なので congratulate A on B の形。他の 3 つはいずれも for をとる。",
+    "translation": "部長は、監査を予定より2週間早く終えたことでプロジェクトチームを祝福した。",
+    "choiceNotes": {
+      "praised": "praise A for B の形。on は続かない",
+      "thanked": "thank A for B の形。on とは組まない",
+      "rewarded": "reward A for B の形。on は続かない"
+    },
+    "difficulty": 3,
+    "tags": ["congratulate A on B", "for との対比"]
+  },
+  {
+    "id": "p5-hard-2way-10",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The ventilation system ___ three times since it was originally installed in 2019.",
+    "choices": ["had been upgraded", "has been upgraded", "was upgraded", "is upgraded"],
+    "answerIndex": 1,
+    "explanation": "since で過去の起点が示され、現在までの回数を数えているので現在完了。system は「更新される」側なので受動態にする。",
+    "translation": "その換気システムは、2019年に最初に設置されて以来、3回更新されている。",
+    "choiceNotes": {
+      "was upgraded": "単純過去。since で示された起点から現在までの積み重ねを表せない",
+      "is upgraded": "現在形。過去から現在までの回数を表せない",
+      "had been upgraded": "過去完了。比較すべき別の過去の時点が文中にない"
+    },
+    "difficulty": 3,
+    "tags": ["現在完了 + since", "受動態"]
+  },
+  {
+    "id": "p5-hard-2way-11",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The revised bid ___ short of the technical criteria set out in the tender documents.",
+    "choices": ["dropped", "went", "fell", "turned"],
+    "answerIndex": 2,
+    "explanation": "「基準に届かない」は fall short of という決まった形。drop / go / turn は short と組んでこの意味を作らない。",
+    "translation": "修正された入札は、入札書類に示された技術基準に届かなかった。",
+    "choiceNotes": {
+      "dropped": "drop short という組み合わせはない",
+      "went": "go short of は「〜を切らす」で、基準に届かない意味にならない",
+      "turned": "turn short という組み合わせはない"
+    },
+    "difficulty": 3,
+    "tags": ["fall short of", "コロケーション"]
+  },
+  {
+    "id": "p5-hard-2way-12",
+    "part": 5,
+    "category": "難問",
+    "subcategory": "2択の詰め",
+    "sentence": "The incoming director will take ___ at the beginning of the next fiscal year.",
+    "choices": ["post", "role", "position", "office"],
+    "answerIndex": 3,
+    "explanation": "「就任する」は take office という無冠詞の決まった形。position / post / role を使うなら take up a position のように冠詞や up が必要になる。",
+    "translation": "新任の部長は、次年度の初めに就任する。",
+    "choiceNotes": {
+      "position": "take up a position のように up と冠詞が必要",
+      "post": "take up a post の形になる。無冠詞では使えない",
+      "role": "take on a role の形になる"
+    },
+    "difficulty": 3,
+    "tags": ["take office", "コロケーション"]
+  }
+]

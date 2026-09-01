@@ -21,8 +21,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "Many customers were ___ by the sudden change in the return policy.",
-    "choices": ["confuse", "confusing", "confused", "confuses"],
-    "answerIndex": 2,
+    "choices": ["confused", "confuses", "confuse", "confusing"],
+    "answerIndex": 0,
     "explanation": "主語 customers は人で「混乱させられた」側なので、過去分詞 confused が正解。",
     "translation": "多くの顧客が、返品規定の突然の変更に戸惑った。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "The results of the pilot program were ___ enough to justify a full rollout.",
-    "choices": ["encouraging", "encourages", "encouraged", "encourage"],
-    "answerIndex": 0,
+    "choices": ["encourages", "encouraged", "encourage", "encouraging"],
+    "answerIndex": 3,
     "explanation": "主語 results は人を「勇気づける」側なので、現在分詞 encouraging が正解。",
     "translation": "試験運用の結果は、全面展開を正当化できるほど有望だった。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "Employees who feel ___ in their current roles are far less likely to leave the company.",
-    "choices": ["satisfaction", "satisfied", "satisfying", "satisfy"],
-    "answerIndex": 1,
+    "choices": ["satisfying", "satisfy", "satisfaction", "satisfied"],
+    "answerIndex": 3,
     "explanation": "主語 employees は人で「満足させられている」側なので、過去分詞 satisfied が正解。",
     "translation": "現在の職務に満足している従業員は、会社を辞める可能性がはるかに低い。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "The board was ___ with the speed at which the merger was completed.",
-    "choices": ["pleasing", "pleased", "please", "pleasure"],
-    "answerIndex": 1,
+    "choices": ["please", "pleasure", "pleasing", "pleased"],
+    "answerIndex": 3,
     "explanation": "主語 board は人の集まりで「喜ばされた」側なので、過去分詞 pleased が正解。be pleased with の形で覚える。",
     "translation": "取締役会は、合併が完了した速さに満足していた。",
     "choiceNotes": {

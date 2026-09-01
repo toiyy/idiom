@@ -70,16 +70,17 @@ describe('ホーム画面', () => {
     expect(flatGrid?.querySelectorAll('.category')).toHaveLength(16);
   });
 
-  it('4 カテゴリが 2 段グループになる', () => {
+  it('5 カテゴリが 2 段グループになる', () => {
     render(<App />);
     const groups = Array.from(document.querySelectorAll('.category-group'));
-    // 並びは問題ファイル名順（relatives-* → verbals-* → vocabulary-* → word-form-*）で決まる
+    // 並びは問題ファイル名順（hard-* → relatives-* → verbals-* → vocabulary-* → word-form-*）
     const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
-    expect(names).toEqual(['関係詞', '準動詞', '語彙', '品詞識別']);
-    expect(groups[0].querySelectorAll('.category')).toHaveLength(2);
-    expect(groups[1].querySelectorAll('.category')).toHaveLength(3);
-    expect(groups[2].querySelectorAll('.category')).toHaveLength(7);
-    expect(groups[3].querySelectorAll('.category')).toHaveLength(3);
+    expect(names).toEqual(['難問', '関係詞', '準動詞', '語彙', '品詞識別']);
+    expect(groups[0].querySelectorAll('.category')).toHaveLength(3);
+    expect(groups[1].querySelectorAll('.category')).toHaveLength(2);
+    expect(groups[2].querySelectorAll('.category')).toHaveLength(3);
+    expect(groups[3].querySelectorAll('.category')).toHaveLength(7);
+    expect(groups[4].querySelectorAll('.category')).toHaveLength(3);
   });
 });
 
