@@ -4,8 +4,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "The final decision depends on ___ the supplier can meet our delivery schedule.",
-    "choices": ["that", "what", "if", "whether"],
-    "answerIndex": 3,
+    "choices": ["whether", "that", "what", "if"],
+    "answerIndex": 0,
     "explanation": "前置詞 on の後ろに名詞節を置く場合、if は使えず whether を用いる。",
     "translation": "最終的な決定は、供給業者が当社の納品スケジュールに対応できるかどうかにかかっている。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "The announcement ___ the factory will close came as a shock to the entire town.",
-    "choices": ["whether", "that", "which", "what"],
-    "answerIndex": 1,
+    "choices": ["which", "what", "whether", "that"],
+    "answerIndex": 3,
     "explanation": "名詞 announcement の内容を説明する同格の that 節。後ろが要素の欠けていない完全な文なので which や what は入らない。",
     "translation": "工場が閉鎖されるという発表は、町全体に衝撃を与えた。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "The committee could not agree on ___ should be included in the final report.",
-    "choices": ["which", "whether", "that", "what"],
-    "answerIndex": 3,
+    "choices": ["what", "which", "whether", "that"],
+    "answerIndex": 0,
     "explanation": "空所の後ろは主語が欠けた不完全な文で、先行詞もないため「〜のもの・こと」を表す関係代名詞 what が正解。",
     "translation": "委員会は、最終報告書に何を含めるべきかで合意できなかった。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "___ is important that all safety checks be recorded in the maintenance logbook.",
-    "choices": ["It", "What", "There", "That"],
-    "answerIndex": 0,
+    "choices": ["What", "There", "That", "It"],
+    "answerIndex": 3,
     "explanation": "後ろに真の主語となる that 節が続くので、形式主語の It を置く。",
     "translation": "すべての安全点検が保守記録簿に記載されることが重要である。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "Please indicate ___ or not you will require overnight accommodation.",
-    "choices": ["whether", "that", "what", "if"],
-    "answerIndex": 0,
+    "choices": ["what", "if", "whether", "that"],
+    "answerIndex": 2,
     "explanation": "or not を直後に伴えるのは whether だけ。if or not という形は使えない。",
     "translation": "宿泊が必要かどうかをお知らせください。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "The board has not decided ___ to renovate the existing facility or build a new one.",
-    "choices": ["whether", "if", "that", "either"],
-    "answerIndex": 0,
+    "choices": ["either", "whether", "if", "that"],
+    "answerIndex": 1,
     "explanation": "whether to do A or do B = A するか B するか。if は直後に to 不定詞を続けられない。",
     "translation": "取締役会は、既存の施設を改修するか新しく建てるかをまだ決めていない。",
     "choiceNotes": {
@@ -140,8 +140,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "___ impressed the judges most was the team's attention to detail.",
-    "choices": ["That", "What", "It", "Which"],
-    "answerIndex": 1,
+    "choices": ["What", "It", "Which", "That"],
+    "answerIndex": 0,
     "explanation": "空所の後ろは主語が欠けた不完全な文で、その全体が文の主語になっている。先行詞を含む関係代名詞 What が正解。",
     "translation": "審査員に最も感銘を与えたのは、そのチームの細部への配慮だった。",
     "choiceNotes": {
@@ -157,8 +157,8 @@
     "part": 5,
     "category": "名詞節",
     "sentence": "___ submits the winning design will receive a two-week paid residency.",
-    "choices": ["Whoever", "Whomever", "Whichever", "However"],
-    "answerIndex": 0,
+    "choices": ["Whichever", "However", "Whoever", "Whomever"],
+    "answerIndex": 2,
     "explanation": "名詞節の中で動詞 submits の主語になるので、主格の Whoever（〜する人は誰でも）が正解。",
     "translation": "優勝作品を提出した人は誰でも、2週間の有給滞在制作の機会を得る。",
     "choiceNotes": {
@@ -168,5 +168,90 @@
     },
     "difficulty": 3,
     "tags": ["whoever", "複合関係代名詞"]
+  },
+  {
+    "id": "p5-nounclause-11",
+    "part": 5,
+    "category": "名詞節",
+    "sentence": "The receptionist asked ___ the delivery could be rescheduled for Monday afternoon.",
+    "choices": ["whose", "if", "that", "what"],
+    "answerIndex": 1,
+    "explanation": "ask の目的語となる名詞節では if を使える（「〜かどうか」）。前置詞の後ろでは if が使えないのと対比して覚える。",
+    "translation": "受付係は、配送を月曜の午後に変更できるかどうか尋ねた。",
+    "choiceNotes": {
+      "that": "「〜ということ」。疑問の内容を尋ねる文脈に合わない",
+      "what": "後ろが完全な文なので入らない",
+      "whose": "所有格。後ろに名詞が続いていない"
+    },
+    "difficulty": 2,
+    "tags": ["if", "動詞の目的語"]
+  },
+  {
+    "id": "p5-nounclause-12",
+    "part": 5,
+    "category": "名詞節",
+    "sentence": "The main concern is ___ the current staffing level cannot support the planned expansion.",
+    "choices": ["what", "whether", "which", "that"],
+    "answerIndex": 3,
+    "explanation": "be 動詞の補語になる名詞節で、後ろが要素の欠けていない完全な文なので接続詞の that。",
+    "translation": "主な懸念は、現在の人員体制では計画中の拡大を支えきれないということだ。",
+    "choiceNotes": {
+      "what": "先行詞を含む関係代名詞。後ろが完全な文なので入らない",
+      "whether": "「〜かどうか」。断定している内容なので合わない",
+      "which": "関係代名詞。先行詞がなく、後ろも完全な文"
+    },
+    "difficulty": 2,
+    "tags": ["that", "補語"]
+  },
+  {
+    "id": "p5-nounclause-13",
+    "part": 5,
+    "category": "名詞節",
+    "sentence": "The committee could not determine ___ signature appeared on the revised application form.",
+    "choices": ["who", "what", "that", "whose"],
+    "answerIndex": 3,
+    "explanation": "空所の直後に名詞 signature が続き「誰の署名か」という所有の意味になるので whose。",
+    "translation": "委員会は、改訂された申請書に誰の署名があったのか特定できなかった。",
+    "choiceNotes": {
+      "who": "主格。直後に名詞が続く形にならない",
+      "what": "直後に名詞を伴うこともあるが、ここは所有の意味なので whose",
+      "that": "接続詞。後ろが完全な文でなければならない"
+    },
+    "difficulty": 3,
+    "tags": ["whose", "名詞節"]
+  },
+  {
+    "id": "p5-nounclause-14",
+    "part": 5,
+    "category": "名詞節",
+    "sentence": "The organizers have not yet decided ___ the keynote address will begin.",
+    "choices": ["what", "when", "when will", "that"],
+    "answerIndex": 1,
+    "explanation": "間接疑問では「疑問詞 + 主語 + 動詞」の平叙文の語順になる。when the address will begin が正しい形。",
+    "translation": "主催者は、基調講演を何時に始めるかまだ決めていない。",
+    "choiceNotes": {
+      "when will": "疑問文の語順。名詞節の中では平叙文の語順にする",
+      "that": "「〜ということ」。開始時刻という情報が抜けてしまう",
+      "what": "後ろが完全な文なので入らない"
+    },
+    "difficulty": 3,
+    "tags": ["間接疑問", "語順"]
+  },
+  {
+    "id": "p5-nounclause-15",
+    "part": 5,
+    "category": "名詞節",
+    "sentence": "The team submitted ___ information they had gathered during the two-day site visit.",
+    "choices": ["that", "which", "whose", "what"],
+    "answerIndex": 3,
+    "explanation": "「what + 名詞」で「〜するすべての…」という名詞節を作る。what information = 集めた情報のすべて。",
+    "translation": "チームは、2日間の現地調査で集めた情報をすべて提出した。",
+    "choiceNotes": {
+      "that": "接続詞。名詞 information を直接修飾する形にならない",
+      "which": "先行詞が必要。ここでは information の前に置けない",
+      "whose": "所有格。「誰の情報か」という意味になり文脈に合わない"
+    },
+    "difficulty": 3,
+    "tags": ["what + 名詞", "関係形容詞"]
   }
 ]

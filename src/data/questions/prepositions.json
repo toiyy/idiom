@@ -21,8 +21,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "Refunds are normally processed ___ five business days of receiving the returned item.",
-    "choices": ["among", "within", "until", "during"],
-    "answerIndex": 1,
+    "choices": ["within", "until", "during", "among"],
+    "answerIndex": 0,
     "explanation": "「〜以内に」という期間の範囲を表すのは within。until は「〜までずっと」、during は「〜の間ずっと」で特定の期間を表す名詞が続く。",
     "translation": "返金は通常、返品を受領してから5営業日以内に処理される。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "Please submit your travel receipts ___ Friday afternoon; late submissions cannot be reimbursed.",
-    "choices": ["until", "by", "since", "for"],
-    "answerIndex": 1,
+    "choices": ["for", "until", "by", "since"],
+    "answerIndex": 2,
     "explanation": "「〜までに」という期限を表すのは by。until は「〜までずっと（継続）」なので、submit のような一回で完了する動作には使えない。",
     "translation": "出張の領収書は金曜の午後までに提出してください。提出が遅れた場合は精算できません。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "Payments can be made ___ credit card or bank transfer at the time of booking.",
-    "choices": ["on", "by", "with", "in"],
-    "answerIndex": 1,
+    "choices": ["in", "on", "by", "with"],
+    "answerIndex": 2,
     "explanation": "手段・方法を表す by。by credit card のように冠詞を付けずに用いる。",
     "translation": "支払いは予約時に、クレジットカードまたは銀行振込で行える。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The temperature in the storage room must remain below five degrees ___ the year.",
-    "choices": ["between", "along", "throughout", "among"],
-    "answerIndex": 2,
+    "choices": ["along", "throughout", "among", "between"],
+    "answerIndex": 1,
     "explanation": "throughout = 〜の間ずっと（全期間にわたって）。between / along / among はいずれも期間の継続を表せない。",
     "translation": "保管室の温度は、一年を通じて5度未満に保たれなければならない。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The prize money is shared ___ the three researchers who co-authored the study.",
-    "choices": ["between", "among", "along", "across"],
-    "answerIndex": 1,
+    "choices": ["among", "along", "across", "between"],
+    "answerIndex": 0,
     "explanation": "3者以上に対しては among を使う。between は基本的に2者の間を表す。",
     "translation": "その賞金は、研究を共同執筆した3名の研究者で分け合われる。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "Please contact the human resources department ___ any questions about the new leave policy.",
-    "choices": ["regarding", "despite", "among", "toward"],
-    "answerIndex": 0,
+    "choices": ["despite", "among", "toward", "regarding"],
+    "answerIndex": 3,
     "explanation": "regarding = 〜に関して。despite（〜にもかかわらず）/ among / toward は意味が合わない。",
     "translation": "新しい休暇制度に関するご質問は、人事部までご連絡ください。",
     "choiceNotes": {
@@ -140,8 +140,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The tissue samples were handled in ___ with the laboratory's written safety protocol.",
-    "choices": ["accordingly", "accordance", "accord", "according"],
-    "answerIndex": 1,
+    "choices": ["accordance", "accord", "according", "accordingly"],
+    "answerIndex": 0,
     "explanation": "in accordance with = 〜に従って。決まった形なので他の語形では成立しない。",
     "translation": "組織標本は、その研究所の文書化された安全手順に従って取り扱われた。",
     "choiceNotes": {
@@ -157,8 +157,8 @@
     "part": 5,
     "category": "前置詞",
     "sentence": "The vice president accepted the award ___ behalf of the entire research team.",
-    "choices": ["in", "for", "at", "on"],
-    "answerIndex": 3,
+    "choices": ["at", "on", "in", "for"],
+    "answerIndex": 1,
     "explanation": "on behalf of = 〜を代表して。決まった前置詞なので他には置き換えられない。",
     "translation": "副社長が研究チーム全体を代表して、その賞を受け取った。",
     "choiceNotes": {
@@ -168,5 +168,90 @@
     },
     "difficulty": 2,
     "tags": ["on behalf of"]
+  },
+  {
+    "id": "p5-preposition-011",
+    "part": 5,
+    "category": "前置詞",
+    "sentence": "The travelling exhibition will remain open ___ six weeks before moving to another city.",
+    "choices": ["for", "during", "since", "while"],
+    "answerIndex": 0,
+    "explanation": "「六週間」という期間の長さを表すので for。during は特定の期間を表す名詞（during the summer など）とともに使う。",
+    "translation": "その巡回展は6週間開催されたのち、別の都市へ移動する。",
+    "choiceNotes": {
+      "during": "「〜の間」を表すが、six weeks のような長さを示す語とは組まない",
+      "since": "継続の起点を表す。期間の長さは表せない",
+      "while": "接続詞。後ろに節が必要"
+    },
+    "difficulty": 2,
+    "tags": ["for", "期間の長さ"]
+  },
+  {
+    "id": "p5-preposition-012",
+    "part": 5,
+    "category": "前置詞",
+    "sentence": "The vending machine on the third floor has been ___ order since Monday morning.",
+    "choices": ["out of", "off", "away from", "outside"],
+    "answerIndex": 0,
+    "explanation": "out of order =「故障している」という決まった表現。",
+    "translation": "3階の自動販売機は月曜の朝から故障している。",
+    "choiceNotes": {
+      "off": "off order という表現はない",
+      "away from": "「〜から離れて」。故障を表す定型にならない",
+      "outside": "「〜の外側に」。order と組んでこの意味を作らない"
+    },
+    "difficulty": 2,
+    "tags": ["out of order"]
+  },
+  {
+    "id": "p5-preposition-013",
+    "part": 5,
+    "category": "前置詞",
+    "sentence": "Ms. Park will be ___ charge of the new distribution center starting in April.",
+    "choices": ["in", "on", "at", "under"],
+    "answerIndex": 0,
+    "explanation": "be in charge of =「〜を担当している」という決まった表現。",
+    "translation": "パクさんは4月から、新しい配送センターの責任者になる。",
+    "choiceNotes": {
+      "on": "on charge of という表現はない",
+      "at": "at charge of という表現はない",
+      "under": "under someone's charge なら「〜の管理下で」だが、この語順では成立しない"
+    },
+    "difficulty": 2,
+    "tags": ["in charge of"]
+  },
+  {
+    "id": "p5-preposition-014",
+    "part": 5,
+    "category": "前置詞",
+    "sentence": "___ the first of next month, all invoices must be submitted through the online portal.",
+    "choices": ["As of", "As for", "As to", "As well as"],
+    "answerIndex": 0,
+    "explanation": "as of =「〜付けで・〜以降」。日付とともに使い、制度の開始時点を示す。",
+    "translation": "来月1日付けで、すべての請求書はオンラインの窓口から提出しなければならない。",
+    "choiceNotes": {
+      "As for": "「〜に関して」。話題を示す語で、日付とは組まない",
+      "As to": "「〜については」。日付を示す用法はない",
+      "As well as": "「〜と同様に」。時点を示す語ではない"
+    },
+    "difficulty": 3,
+    "tags": ["as of"]
+  },
+  {
+    "id": "p5-preposition-015",
+    "part": 5,
+    "category": "前置詞",
+    "sentence": "The registration desk will remain open Monday ___ Friday during the week of the conference.",
+    "choices": ["until", "by", "among", "through"],
+    "answerIndex": 3,
+    "explanation": "Monday through Friday =「月曜から金曜まで（金曜を含む）」。from を伴わずに範囲を示せるのは through。",
+    "translation": "会議が開かれる週は、受付は月曜から金曜まで開いている。",
+    "choiceNotes": {
+      "until": "起点を示す from が必要で、until 単独ではこの形にならない",
+      "by": "「〜までに」という期限。曜日の範囲を示さない",
+      "among": "「〜の中で」。期間の範囲を表せない"
+    },
+    "difficulty": 3,
+    "tags": ["through", "期間の範囲"]
   }
 ]

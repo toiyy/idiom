@@ -21,8 +21,8 @@
     "part": 5,
     "category": "倒置・強調・省略",
     "sentence": "Only after the audit was complete ___ the board approve the budget revision.",
-    "choices": ["had", "was", "did", "it did"],
-    "answerIndex": 2,
+    "choices": ["was", "did", "it did", "had"],
+    "answerIndex": 1,
     "explanation": "Only で始まる副詞句が文頭に出ると倒置が起こり、「did + 主語 + 動詞の原形」の語順になる。",
     "translation": "監査が完了して初めて、取締役会は予算の修正を承認した。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "倒置・強調・省略",
     "sentence": "It was the marketing team ___ first identified the shift in consumer preferences.",
-    "choices": ["that", "whom", "whose", "what"],
-    "answerIndex": 0,
+    "choices": ["whom", "whose", "what", "that"],
+    "answerIndex": 3,
     "explanation": "「It is / was A that ...」の強調構文。強調される the marketing team が後半の主語の役割を果たしている。what は先行詞を含むので使えない。",
     "translation": "消費者の嗜好の変化を最初に見抜いたのは、マーケティングチームだった。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "倒置・強調・省略",
     "sentence": "The first prototype did not pass inspection, and ___ did the second.",
-    "choices": ["also", "too", "so", "neither"],
-    "answerIndex": 3,
+    "choices": ["so", "neither", "also", "too"],
+    "answerIndex": 1,
     "explanation": "否定文を受けて「〜もまたそうでない」と続けるので「neither + 助動詞 + 主語」。so は肯定文を受けるときに使う。",
     "translation": "最初の試作品は検査に通らず、2台目も同様だった。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "倒置・強調・省略",
     "sentence": "___ is a copy of the signed agreement for your records.",
-    "choices": ["Encloses", "Enclosing", "Enclose", "Enclosed"],
-    "answerIndex": 3,
+    "choices": ["Enclosing", "Enclose", "Enclosed", "Encloses"],
+    "answerIndex": 2,
     "explanation": "補語が文頭に出た倒置で「Enclosed is + 主語」の形。書類を同封するときの定型表現。",
     "translation": "記録用に、署名済み契約書の写しを同封いたします。",
     "choiceNotes": {
@@ -134,5 +134,124 @@
     },
     "difficulty": 3,
     "tags": ["倒置", "enclosed is"]
+  },
+  {
+    "id": "p5-inversion-09",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "___ should confidential personnel files be removed from the building.",
+    "choices": ["At all times", "Under no circumstances", "Without exception", "In any case"],
+    "answerIndex": 1,
+    "explanation": "否定を含む副詞句が文頭に出ているため、後ろが should + 主語 + 原形と倒置している。倒置を引き起こすのは否定の意味を持つ Under no circumstances。",
+    "translation": "いかなる場合でも、機密の人事ファイルを建物の外に持ち出してはならない。",
+    "choiceNotes": {
+      "Without exception": "否定語を含まないので倒置を起こさない",
+      "In any case": "「いずれにせよ」。否定の意味がなく倒置しない",
+      "At all times": "「常に」。肯定の意味なので倒置は起こらない"
+    },
+    "difficulty": 3,
+    "tags": ["倒置", "否定の副詞句"]
+  },
+  {
+    "id": "p5-inversion-10",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "Not until the third inspection ___ the engineers discover the crack in the support beam.",
+    "choices": ["had", "were", "have", "did"],
+    "answerIndex": 3,
+    "explanation": "Not until 〜 が文頭に出ると倒置が起こり、「did + 主語 + 動詞の原形」の語順になる。",
+    "translation": "3回目の点検になって初めて、技術者たちは支柱の亀裂に気づいた。",
+    "choiceNotes": {
+      "had": "後ろが原形 discover なので、過去分詞をとる had は入らない",
+      "were": "後ろが原形なので be 動詞は入らない",
+      "have": "後ろが原形であるうえ、過去の出来事なので現在完了にもならない"
+    },
+    "difficulty": 3,
+    "tags": ["倒置", "not until"]
+  },
+  {
+    "id": "p5-inversion-11",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "Little ___ the organizers expect that attendance would double within a single year.",
+    "choices": ["did", "had", "were", "do"],
+    "answerIndex": 0,
+    "explanation": "否定の意味を持つ Little が文頭に出ると倒置が起こる。expect が原形なので did + 主語 + 原形の形。",
+    "translation": "参加者数が1年で倍増するとは、主催者はほとんど思っていなかった。",
+    "choiceNotes": {
+      "had": "後ろが原形 expect なので、過去分詞をとる had は入らない",
+      "were": "後ろが原形なので be 動詞は入らない",
+      "do": "過去の出来事を述べているので現在形は合わない"
+    },
+    "difficulty": 3,
+    "tags": ["倒置", "little did"]
+  },
+  {
+    "id": "p5-inversion-12",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "It was not until the audit was complete ___ the discrepancy finally came to light.",
+    "choices": ["which", "then", "that", "when"],
+    "answerIndex": 2,
+    "explanation": "「It is not until A that B」=「A になって初めて B する」。強調構文の一種で、that を使う。",
+    "translation": "監査が完了して初めて、その食い違いがようやく明るみに出た。",
+    "choiceNotes": {
+      "when": "強調構文では that を使う。when は入らない",
+      "which": "関係代名詞。強調構文には使えない",
+      "then": "副詞。2 つの節をつなげない"
+    },
+    "difficulty": 3,
+    "tags": ["強調構文", "not until"]
+  },
+  {
+    "id": "p5-inversion-13",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "The team was asked to submit the report by Friday, but they were simply unable ___.",
+    "choices": ["to do", "doing", "so", "to"],
+    "answerIndex": 3,
+    "explanation": "前に出た submit the report の繰り返しを避けて to だけを残す代不定詞。",
+    "translation": "チームは金曜までに報告書を提出するよう求められたが、どうしてもできなかった。",
+    "choiceNotes": {
+      "to do": "do では submit the report の内容を受けきれず、代不定詞は to だけで足りる",
+      "doing": "動名詞。be unable は to 不定詞をとる",
+      "so": "do so なら可能だが、unable の後ろには to が必要"
+    },
+    "difficulty": 3,
+    "tags": ["代不定詞"]
+  },
+  {
+    "id": "p5-inversion-14",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "Please note any defects, ___ any, on the inspection form before signing it.",
+    "choices": ["if", "with", "for", "as"],
+    "answerIndex": 0,
+    "explanation": "if any =「もしあれば」。if there are any の there are が省略された形。",
+    "translation": "署名する前に、不具合があれば点検表に記入してください。",
+    "choiceNotes": {
+      "with": "「〜とともに」。省略表現を作らない",
+      "for": "「〜のために」。any と組んでこの意味にならない",
+      "as": "「〜として」。省略の定型にならない"
+    },
+    "difficulty": 3,
+    "tags": ["if any", "省略"]
+  },
+  {
+    "id": "p5-inversion-15",
+    "part": 5,
+    "category": "倒置・強調・省略",
+    "sentence": "The revised manual ___ address the issue of chemical storage, though only briefly.",
+    "choices": ["is", "has", "makes", "does"],
+    "answerIndex": 3,
+    "explanation": "動詞の前に do / does / did を置いて「確かに〜する」と強調する用法。後ろが原形 address なので does。",
+    "translation": "改訂された手引書は、簡潔にではあるが化学物質の保管について確かに触れている。",
+    "choiceNotes": {
+      "is": "後ろが原形 address なので be 動詞は入らない",
+      "has": "後ろが原形なので、過去分詞をとる has は入らない",
+      "makes": "後ろに原形が続く使役の形になるが、目的語がなく成立しない"
+    },
+    "difficulty": 3,
+    "tags": ["強調の do"]
   }
 ]

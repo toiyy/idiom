@@ -21,8 +21,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "Many customers were ___ by the sudden change in the return policy.",
-    "choices": ["confuses", "confuse", "confusing", "confused"],
-    "answerIndex": 3,
+    "choices": ["confusing", "confused", "confuses", "confuse"],
+    "answerIndex": 1,
     "explanation": "主語 customers は人で「混乱させられた」側なので、過去分詞 confused が正解。",
     "translation": "多くの顧客が、返品規定の突然の変更に戸惑った。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "Employees who feel ___ in their current roles are far less likely to leave the company.",
-    "choices": ["satisfy", "satisfaction", "satisfied", "satisfying"],
-    "answerIndex": 2,
+    "choices": ["satisfying", "satisfy", "satisfaction", "satisfied"],
+    "answerIndex": 3,
     "explanation": "主語 employees は人で「満足させられている」側なので、過去分詞 satisfied が正解。",
     "translation": "現在の職務に満足している従業員は、会社を辞める可能性がはるかに低い。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "The instructions on the packaging were ___ and led several users to assemble the unit incorrectly.",
-    "choices": ["mislead", "misleading", "misleads", "misled"],
-    "answerIndex": 1,
+    "choices": ["misleads", "misled", "mislead", "misleading"],
+    "answerIndex": 3,
     "explanation": "主語 instructions は人を「誤解させる」側なので、現在分詞 misleading が正解。",
     "translation": "包装に書かれた説明は誤解を招くもので、複数の利用者が装置を誤って組み立てる結果になった。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "The board was ___ with the speed at which the merger was completed.",
-    "choices": ["please", "pleasure", "pleasing", "pleased"],
-    "answerIndex": 3,
+    "choices": ["pleasure", "pleasing", "pleased", "please"],
+    "answerIndex": 2,
     "explanation": "主語 board は人の集まりで「喜ばされた」側なので、過去分詞 pleased が正解。be pleased with の形で覚える。",
     "translation": "取締役会は、合併が完了した速さに満足していた。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "Attendees described the training as one of the most ___ sessions of the year.",
-    "choices": ["challenged", "challenge", "challenges", "challenging"],
-    "answerIndex": 3,
+    "choices": ["challenges", "challenging", "challenged", "challenge"],
+    "answerIndex": 1,
     "explanation": "名詞 sessions を修飾し、人に「歯ごたえを感じさせる」側なので現在分詞 challenging が正解。",
     "translation": "参加者はその研修を、その年で最も歯ごたえのある講習の一つだと評した。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "分詞形容詞",
     "sentence": "___ participants should collect their name badges at the front desk before nine o'clock.",
-    "choices": ["Registered", "Registration", "Registering", "Register"],
-    "answerIndex": 0,
+    "choices": ["Registration", "Registering", "Register", "Registered"],
+    "answerIndex": 3,
     "explanation": "名詞 participants を修飾し、参加者は「登録された」側なので過去分詞 Registered が正解。",
     "translation": "登録済みの参加者は、9時前に受付でネームバッジをお受け取りください。",
     "choiceNotes": {
@@ -134,5 +134,124 @@
     },
     "difficulty": 2,
     "tags": ["-ed", "名詞修飾"]
+  },
+  {
+    "id": "p5-participle-09",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The quarterly results were ___ given the unusually strong performance in the first half.",
+    "choices": ["disappointing", "disappointed", "disappoint", "disappointment"],
+    "answerIndex": 0,
+    "explanation": "主語 results は人を「失望させる」側なので現在分詞 disappointing。",
+    "translation": "上半期の業績が異例に好調だったことを考えると、四半期の結果は期待外れだった。",
+    "choiceNotes": {
+      "disappointed": "過去分詞「失望した」。人が主語のときに使う",
+      "disappoint": "動詞の原形。were の補語にならない",
+      "disappointment": "名詞「失望」。結果そのものが失望という感情にはならない"
+    },
+    "difficulty": 2,
+    "tags": ["-ing", "もの主語"]
+  },
+  {
+    "id": "p5-participle-10",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "Employees who are ___ in the mentoring program should contact human resources by Friday.",
+    "choices": ["interesting", "interested", "interest", "interests"],
+    "answerIndex": 1,
+    "explanation": "主語 Employees は人で「興味を持たされている」側なので過去分詞 interested。be interested in の形。",
+    "translation": "メンター制度に関心のある従業員は、金曜までに人事部に連絡してください。",
+    "choiceNotes": {
+      "interesting": "現在分詞「興味を起こさせる」。人が主語のときには使わない",
+      "interest": "名詞・動詞。be 動詞の補語として形容詞が必要",
+      "interests": "名詞の複数形または三単現。補語の位置に入らない"
+    },
+    "difficulty": 2,
+    "tags": ["-ed", "人主語"]
+  },
+  {
+    "id": "p5-participle-11",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The announcement of the merger was ___ news for shareholders who had waited two years.",
+    "choices": ["excitement", "exciting", "excited", "excite"],
+    "answerIndex": 1,
+    "explanation": "名詞 news を修飾し、人を「わくわくさせる」側なので現在分詞 exciting。",
+    "translation": "合併の発表は、2年待った株主にとって心躍る知らせだった。",
+    "choiceNotes": {
+      "excited": "過去分詞「興奮した」。人の状態を表すので news は修飾しない",
+      "excite": "動詞の原形。名詞 news を修飾できない",
+      "excitement": "名詞「興奮」。excitement news という形にはならない"
+    },
+    "difficulty": 2,
+    "tags": ["-ing", "名詞修飾"]
+  },
+  {
+    "id": "p5-participle-12",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The auditors were ___ by the number of discrepancies found in the inventory records.",
+    "choices": ["surprisingly", "surprising", "surprised", "surprise"],
+    "answerIndex": 2,
+    "explanation": "主語 auditors は人で「驚かされた」側なので過去分詞 surprised。",
+    "translation": "監査人たちは、在庫記録に見つかった食い違いの多さに驚いた。",
+    "choiceNotes": {
+      "surprising": "現在分詞「驚かせる」。人が主語のときには使わない",
+      "surprise": "名詞・動詞。be 動詞の補語として形容詞が必要",
+      "surprisingly": "副詞。補語にはなれない"
+    },
+    "difficulty": 2,
+    "tags": ["-ed", "人主語"]
+  },
+  {
+    "id": "p5-participle-13",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "Customers became increasingly ___ with the long wait times at the call center.",
+    "choices": ["frustrating", "frustrated", "frustrate", "frustration"],
+    "answerIndex": 1,
+    "explanation": "主語 Customers は人で「いらだたされた」側なので過去分詞 frustrated。become の補語になる。",
+    "translation": "顧客は、コールセンターの長い待ち時間にますますいらだつようになった。",
+    "choiceNotes": {
+      "frustrating": "現在分詞「いらだたせる」。人が主語のときには使わない",
+      "frustrate": "動詞の原形。become の補語にならない",
+      "frustration": "名詞「いらだち」。人がその感情そのものにはならない"
+    },
+    "difficulty": 2,
+    "tags": ["-ed", "人主語"]
+  },
+  {
+    "id": "p5-participle-14",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The new system will run alongside the ___ database until the migration is complete.",
+    "choices": ["existed", "exist", "existence", "existing"],
+    "answerIndex": 3,
+    "explanation": "exist は自動詞なので過去分詞で名詞を修飾できない。「現に存在している」は現在分詞 existing で表す。",
+    "translation": "移行が完了するまで、新しいシステムは既存のデータベースと並行して稼働する。",
+    "choiceNotes": {
+      "existed": "過去分詞。exist は自動詞なので受動の意味を持てず、名詞を修飾できない",
+      "exist": "動詞の原形。名詞 database を修飾できない",
+      "existence": "名詞「存在」。existence database という形にはならない"
+    },
+    "difficulty": 3,
+    "tags": ["自動詞", "現在分詞のみ"]
+  },
+  {
+    "id": "p5-participle-15",
+    "part": 5,
+    "category": "分詞形容詞",
+    "sentence": "The ___ tickets will be released to the general public on Monday morning at nine.",
+    "choices": ["remainder", "remaining", "remained", "remain"],
+    "answerIndex": 1,
+    "explanation": "remain は自動詞なので過去分詞で名詞を修飾できない。「残っている」は現在分詞 remaining で表す。",
+    "translation": "残っているチケットは、月曜の朝9時に一般向けに販売される。",
+    "choiceNotes": {
+      "remained": "過去分詞。remain は自動詞なので名詞を修飾できない",
+      "remain": "動詞の原形。名詞 tickets を修飾できない",
+      "remainder": "名詞「残り」。remainder tickets という形にはならない"
+    },
+    "difficulty": 3,
+    "tags": ["自動詞", "現在分詞のみ"]
   }
 ]

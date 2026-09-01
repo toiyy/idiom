@@ -4,8 +4,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The supervisor sent ___ a detailed summary of the safety findings.",
-    "choices": ["each member to", "each members", "each member", "for each member"],
-    "answerIndex": 2,
+    "choices": ["for each member", "each member to", "each members", "each member"],
+    "answerIndex": 3,
     "explanation": "send は「send + 人 + もの」の二重目的語をとれる。to を使う場合は send a summary to each member の語順になる。",
     "translation": "その監督者は各メンバーに、安全調査結果の詳細な要約を送った。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "Please keep the storage room ___ at all times when it is not in use.",
-    "choices": ["locks", "locked", "locking", "lock"],
-    "answerIndex": 1,
+    "choices": ["locked", "locking", "lock", "locks"],
+    "answerIndex": 0,
     "explanation": "「keep + 目的語 + 補語」の形。部屋は「施錠される」側なので過去分詞 locked が補語になる。",
     "translation": "保管室は、使用していないときは常に施錠しておいてください。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "Participants found the workshop materials ___ and easy to apply on the job.",
-    "choices": ["practically", "practice", "practical", "practicing"],
-    "answerIndex": 2,
+    "choices": ["practical", "practicing", "practically", "practice"],
+    "answerIndex": 0,
     "explanation": "「find + 目的語 + 補語」の形で、補語には形容詞が入る。practical（実用的な）が正解。",
     "translation": "参加者は、講習会の資料が実用的で仕事にも応用しやすいと感じた。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The new authentication step makes employees ___ their identity twice before logging in.",
-    "choices": ["verified", "verify", "to verify", "verifying"],
-    "answerIndex": 1,
+    "choices": ["to verify", "verifying", "verified", "verify"],
+    "answerIndex": 3,
     "explanation": "使役動詞 make は「make + 目的語 + 動詞の原形」の形をとる。to 不定詞にはならない。",
     "translation": "新しい認証手順により、従業員はログイン前に2回本人確認を行うことになる。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The manager had the defective units ___ before the shipment was released.",
-    "choices": ["to replace", "replace", "replacing", "replaced"],
-    "answerIndex": 3,
+    "choices": ["replace", "replacing", "replaced", "to replace"],
+    "answerIndex": 2,
     "explanation": "「have + 目的語 + 過去分詞」で「〜してもらう・〜される」を表す。unit は「交換される」側なので過去分詞。",
     "translation": "部長は出荷前に、不良品の交換を済ませておいた。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The updated software allows users ___ reports directly from the dashboard.",
-    "choices": ["generated", "generate", "to generate", "generating"],
-    "answerIndex": 2,
+    "choices": ["generate", "to generate", "generating", "generated"],
+    "answerIndex": 1,
     "explanation": "allow は「allow + 目的語 + to 不定詞」の形をとる。make のような原形不定詞にはならない。",
     "translation": "更新されたソフトウェアにより、利用者はダッシュボードから直接レポートを作成できる。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "The technician checked each monitor in the server room and then turned ___.",
-    "choices": ["them off", "off it", "it off", "off them"],
-    "answerIndex": 0,
+    "choices": ["off it", "it off", "off them", "them off"],
+    "answerIndex": 3,
     "explanation": "句動詞の目的語が代名詞のときは、必ず動詞と副詞の間に置く（turn them off）。名詞なら turn off the monitors の語順も可。monitor は複数あるので them。",
     "translation": "技術者はサーバー室の各モニターを確認し、それから電源を切った。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "文型・語順",
     "sentence": "___ have been several complaints about the noise from the ventilation system.",
-    "choices": ["They", "Those", "It", "There"],
-    "answerIndex": 3,
+    "choices": ["It", "There", "They", "Those"],
+    "answerIndex": 1,
     "explanation": "「There + be 動詞 + 主語」で存在を表す構文。主語 complaints が複数なので have been が続く。",
     "translation": "換気システムの騒音について、いくつか苦情が寄せられている。",
     "choiceNotes": {
@@ -134,5 +134,124 @@
     },
     "difficulty": 1,
     "tags": ["there構文"]
+  },
+  {
+    "id": "p5-pattern-09",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The department bought ___ a new ergonomic chair as a retirement gift last Friday.",
+    "choices": ["the supervisor", "for the supervisor", "to the supervisor", "the supervisor to"],
+    "answerIndex": 0,
+    "explanation": "buy は「buy + 人 + もの」の二重目的語をとれる。前置詞を使う場合は buy a chair for the supervisor の語順になる。",
+    "translation": "その部署は先週金曜、退職祝いとして監督者に新しい人間工学に基づく椅子を買った。",
+    "choiceNotes": {
+      "for the supervisor": "前置詞を使うなら buy a chair for the supervisor の語順になる",
+      "to the supervisor": "buy は for をとる動詞。to は使わない",
+      "the supervisor to": "語順が誤り。前置詞は名詞の前に置く"
+    },
+    "difficulty": 2,
+    "tags": ["SVOO", "buy 人 もの"]
+  },
+  {
+    "id": "p5-pattern-10",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The manager patiently explained ___ the revised procedure for handling customer complaints.",
+    "choices": ["the team to", "for the team", "to the team", "the team"],
+    "answerIndex": 2,
+    "explanation": "explain は二重目的語をとらないので、人を示すには to が必要。explain B to A の形になる。",
+    "translation": "部長はチームに、顧客からの苦情に対応する改訂後の手順を根気よく説明した。",
+    "choiceNotes": {
+      "the team": "explain は explain 人 もの という二重目的語の形をとらない",
+      "the team to": "語順が誤り。前置詞は名詞の前に置く",
+      "for the team": "explain は to をとる動詞。for は使わない"
+    },
+    "difficulty": 3,
+    "tags": ["explain to 人", "SVOOとの区別"]
+  },
+  {
+    "id": "p5-pattern-11",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The board regards the six-month pilot program ___ a significant operational success.",
+    "choices": ["to be", "for", "like", "as"],
+    "answerIndex": 3,
+    "explanation": "regard A as B =「A を B とみなす」。regard と組むのは as。",
+    "translation": "取締役会は、6か月間の試験運用を運用面での大きな成功とみなしている。",
+    "choiceNotes": {
+      "to be": "consider なら to be も使えるが、regard は as をとる",
+      "for": "regard for は「〜への配慮」という別の意味になる",
+      "like": "「〜のように」。regard の補語を導く形にならない"
+    },
+    "difficulty": 2,
+    "tags": ["regard A as B"]
+  },
+  {
+    "id": "p5-pattern-12",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The revised policy lets employees ___ their own schedules within the agreed core hours.",
+    "choices": ["adjusted", "adjust", "to adjust", "adjusting"],
+    "answerIndex": 1,
+    "explanation": "使役動詞 let は「let + 目的語 + 動詞の原形」の形をとる。to 不定詞にはならない。",
+    "translation": "改訂された方針により、従業員は合意されたコアタイムの範囲で自分の勤務時間を調整できる。",
+    "choiceNotes": {
+      "to adjust": "let は to 不定詞をとらない。allow なら to adjust になる",
+      "adjusting": "現在分詞。let の後ろには原形が来る",
+      "adjusted": "過去分詞。従業員は調整する側なので能動が必要"
+    },
+    "difficulty": 2,
+    "tags": ["let O do", "使役"]
+  },
+  {
+    "id": "p5-pattern-13",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The company provides all new hires ___ a comprehensive safety handbook on their first day.",
+    "choices": ["with", "to", "for", "of"],
+    "answerIndex": 0,
+    "explanation": "provide A with B =「A に B を提供する」。人を目的語にとる場合は with が続く。",
+    "translation": "その会社は、初日にすべての新入社員へ包括的な安全の手引書を渡している。",
+    "choiceNotes": {
+      "to": "provide B to A なら成立するが、その場合はものが先に来る",
+      "for": "provide B for A の語順になり、人を先に置く形では使えない",
+      "of": "provide of という組み合わせはない"
+    },
+    "difficulty": 2,
+    "tags": ["provide A with B"]
+  },
+  {
+    "id": "p5-pattern-14",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "The system automatically reminds staff ___ their network passwords every ninety days.",
+    "choices": ["changing", "changed", "change", "to change"],
+    "answerIndex": 3,
+    "explanation": "remind は「remind + 目的語 + to 不定詞」の形をとる。make のような原形不定詞にはならない。",
+    "translation": "そのシステムは、90日ごとにネットワークのパスワードを変更するよう職員に自動で通知する。",
+    "choiceNotes": {
+      "change": "動詞の原形。remind は to 不定詞をとる",
+      "changing": "動名詞。remind O to do の形が決まっている",
+      "changed": "過去分詞。職員は変更する側なので能動が必要"
+    },
+    "difficulty": 2,
+    "tags": ["remind O to do"]
+  },
+  {
+    "id": "p5-pattern-15",
+    "part": 5,
+    "category": "文型・語順",
+    "sentence": "There ___ to be some confusion about which form applicants should use for renewals.",
+    "choices": ["is seeming", "seems", "seem", "seeming"],
+    "answerIndex": 1,
+    "explanation": "There seems to be 〜 =「〜があるようだ」。be 動詞の後ろの名詞 confusion が単数（不可算）なので seems。",
+    "translation": "更新の際にどの用紙を使うべきか、いくらか混乱があるようだ。",
+    "choiceNotes": {
+      "seem": "複数に対応する形。confusion は不可算で単数扱い",
+      "seeming": "現在分詞。文の述語動詞にならない",
+      "is seeming": "seem は状態を表す動詞なので通常進行形にしない"
+    },
+    "difficulty": 3,
+    "tags": ["there seems to be"]
   }
 ]

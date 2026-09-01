@@ -4,8 +4,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "Very ___ applicants met the five-year experience requirement, so the search was extended.",
-    "choices": ["few", "much", "a great deal of", "little"],
-    "answerIndex": 0,
+    "choices": ["little", "few", "much", "a great deal of"],
+    "answerIndex": 1,
     "explanation": "applicants は可算名詞の複数形なので few が正解。little / much / a great deal of はいずれも不可算名詞に用いる。",
     "translation": "5年の実務経験という要件を満たす応募者はごくわずかだったため、募集期間が延長された。",
     "choiceNotes": {
@@ -38,8 +38,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "___ of the two candidates has the technical background required for the position.",
-    "choices": ["All", "Every", "Both", "Either"],
-    "answerIndex": 3,
+    "choices": ["Every", "Both", "Either", "All"],
+    "answerIndex": 2,
     "explanation": "動詞が単数の has なので、単数扱いの Either が正解。Both は複数扱い、All は 3 つ以上が対象、Every は直後に単数名詞が必要で of は続かない。",
     "translation": "2人の候補者のどちらも、その職に必要な技術的素養を備えている。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "The committee did not have ___ time to review all the submissions before the deadline.",
-    "choices": ["several", "many", "much", "few"],
-    "answerIndex": 2,
+    "choices": ["much", "few", "several", "many"],
+    "answerIndex": 0,
     "explanation": "time は不可算名詞なので much。many / few / several はすべて可算名詞に用いる。",
     "translation": "委員会には、締切前にすべての提出物を確認するだけの時間がなかった。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "The relocation required ___ of paperwork that the legal team had not anticipated.",
-    "choices": ["a number", "a great deal", "a great many", "many"],
-    "answerIndex": 1,
+    "choices": ["a great deal", "a great many", "many", "a number"],
+    "answerIndex": 0,
     "explanation": "paperwork は不可算名詞なので a great deal of。a great many / a number of は可算名詞に用いる。",
     "translation": "その移転には、法務チームが予想していなかった大量の書類仕事が必要だった。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "___ of the proposals submitted this year addressed sustainability directly.",
-    "choices": ["Much", "Several", "A little", "Every"],
-    "answerIndex": 1,
+    "choices": ["Every", "Much", "Several", "A little"],
+    "answerIndex": 2,
     "explanation": "proposals は可算名詞の複数形なので Several。Much と A little は不可算名詞、Every は直後に単数名詞が必要。",
     "translation": "今年提出された提案のうちいくつかは、持続可能性に直接言及していた。",
     "choiceNotes": {
@@ -140,8 +140,8 @@
     "part": 5,
     "category": "数量詞",
     "sentence": "___ every department has now migrated to the shared document system.",
-    "choices": ["The most", "Most", "Almost", "Mostly"],
-    "answerIndex": 2,
+    "choices": ["Most", "Almost", "Mostly", "The most"],
+    "answerIndex": 1,
     "explanation": "Almost は副詞で every を修飾できる（almost every = ほとんどすべての）。Most は形容詞なので every の前には置けない。",
     "translation": "ほぼすべての部署が、共有文書システムへの移行を完了している。",
     "choiceNotes": {
@@ -151,5 +151,107 @@
     },
     "difficulty": 3,
     "tags": ["almost", "most"]
+  },
+  {
+    "id": "p5-quantifier-010",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "There is ___ of storage space in the new warehouse for the entire winter inventory.",
+    "choices": ["many", "several", "few", "plenty"],
+    "answerIndex": 3,
+    "explanation": "plenty of =「たっぷりの」。可算・不可算どちらにも使える。space は不可算なので many / several / few は使えない。",
+    "translation": "新しい倉庫には、冬季の在庫すべてを収めるだけの十分な保管場所がある。",
+    "choiceNotes": {
+      "many": "可算名詞に使う。space は不可算",
+      "several": "可算名詞の複数に使う。space は数えられない",
+      "few": "可算名詞に使う。不可算名詞には little を使う"
+    },
+    "difficulty": 2,
+    "tags": ["plenty of"]
+  },
+  {
+    "id": "p5-quantifier-011",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "___ of the two shortlisted candidates was available for a second interview in March.",
+    "choices": ["All", "Neither", "None", "Both"],
+    "answerIndex": 1,
+    "explanation": "対象が 2 人で、動詞が単数の was なので Neither。None は 3 つ以上に使い、Both と All は複数扱いなので were になる。",
+    "translation": "最終候補に残った2名の候補者は、どちらも3月の二次面接に応じられなかった。",
+    "choiceNotes": {
+      "None": "3 つ以上のものに使う。2 つなら neither を使う",
+      "Both": "複数扱いなので動詞は were になる",
+      "All": "3 つ以上を指すうえ、複数扱いなので were になる"
+    },
+    "difficulty": 2,
+    "tags": ["neither of", "2者"]
+  },
+  {
+    "id": "p5-quantifier-012",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "Unfortunately there was ___ time left to review the final section before the deadline.",
+    "choices": ["little", "a little", "few", "a few"],
+    "answerIndex": 0,
+    "explanation": "little =「ほとんどない」という否定的な意味。Unfortunately とあるので不足を表す little。a little なら「少しはある」と肯定的になる。",
+    "translation": "あいにく、締切前に最終節を見直す時間はほとんど残っていなかった。",
+    "choiceNotes": {
+      "a little": "「少しはある」という肯定的な意味。Unfortunately と合わない",
+      "few": "可算名詞に使う。time は不可算",
+      "a few": "可算名詞に使い、意味も肯定的になる"
+    },
+    "difficulty": 3,
+    "tags": ["little / a little"]
+  },
+  {
+    "id": "p5-quantifier-013",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "___ of the feedback collected during the trial period was overwhelmingly positive.",
+    "choices": ["Much", "Many", "Few", "Several"],
+    "answerIndex": 0,
+    "explanation": "feedback は不可算名詞なので Much。動詞が was と単数であることも手がかりになる。",
+    "translation": "試用期間中に集められた意見の多くは、圧倒的に好意的なものだった。",
+    "choiceNotes": {
+      "Many": "可算名詞に使う。feedback は不可算",
+      "Few": "可算名詞に使い、意味も否定的になる",
+      "Several": "可算名詞の複数に使う。動詞 was とも一致しない"
+    },
+    "difficulty": 2,
+    "tags": ["much of", "不可算"]
+  },
+  {
+    "id": "p5-quantifier-014",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "If ___ of the sensors fails, the control system will trigger an alert immediately.",
+    "choices": ["some", "every", "most", "any"],
+    "answerIndex": 3,
+    "explanation": "条件を表す if 節では any を使う。動詞が fails と単数なのは any of + 複数名詞を単数扱いにしているため。",
+    "translation": "センサーのいずれかが故障した場合、制御システムはただちに警報を発する。",
+    "choiceNotes": {
+      "some": "肯定文で使うのが原則。条件節では any を使う",
+      "every": "直後に単数名詞が必要で、of は続かない",
+      "most": "「大部分」という意味になり、条件を表す文脈に合わない"
+    },
+    "difficulty": 3,
+    "tags": ["any of", "条件節"]
+  },
+  {
+    "id": "p5-quantifier-015",
+    "part": 5,
+    "category": "数量詞",
+    "sentence": "There were ___ any complaints about the new seating arrangement in the main hall.",
+    "choices": ["nearly", "rarely", "hardly", "almost"],
+    "answerIndex": 2,
+    "explanation": "hardly any =「ほとんど〜ない」。almost / nearly は any と組んでこの意味を作らない。",
+    "translation": "大ホールの新しい座席配置について、苦情はほとんど出なかった。",
+    "choiceNotes": {
+      "almost": "almost no なら成立するが、almost any はこの意味にならない",
+      "nearly": "nearly any という組み合わせはこの意味で使わない",
+      "rarely": "頻度を表す副詞。any と組んで数の少なさを表さない"
+    },
+    "difficulty": 3,
+    "tags": ["hardly any"]
   }
 ]

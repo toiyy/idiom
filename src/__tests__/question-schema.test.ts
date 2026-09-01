@@ -75,7 +75,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(402);
+    expect(questions.length).toBeGreaterThanOrEqual(464);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -92,10 +92,11 @@ describe('同梱データ', () => {
     }
   });
 
-  it('論点の濃い 6 カテゴリは 15 問に揃っている', () => {
-    const cats = listCategories(questions);
-    for (const name of ['時制', '態', '仮定法', '助動詞', '代名詞', '主述の一致']) {
-      expect(cats.find((c) => c.category === name)?.total, `${name} の問題数`).toBe(15);
+  it('サブカテゴリを持たない 16 カテゴリはすべて 15 問に揃っている', () => {
+    const flat = listCategories(questions).filter((c) => c.subcategories.length === 0);
+    expect(flat).toHaveLength(16);
+    for (const c of flat) {
+      expect(c.total, `${c.category} の問題数`).toBe(15);
     }
   });
 
@@ -104,7 +105,7 @@ describe('同梱データ', () => {
     const heavy = questions.filter(
       (q) => q.category === '語彙' || q.category === '品詞識別',
     ).length;
-    expect(heavy / questions.length).toBeLessThan(0.4);
+    expect(heavy / questions.length).toBeLessThan(0.33);
   });
 
   it('フェーズ3 で新設した 7 カテゴリが揃っている', () => {

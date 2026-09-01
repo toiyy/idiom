@@ -4,8 +4,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "The renovation not only improved energy efficiency ___ also reduced maintenance costs.",
-    "choices": ["and", "but", "or", "nor"],
-    "answerIndex": 1,
+    "choices": ["or", "nor", "and", "but"],
+    "answerIndex": 3,
     "explanation": "not only A but also B = A だけでなく B も。not only と組むのは but。",
     "translation": "その改修は省エネ性能を高めただけでなく、保守費用も削減した。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "The grant covers both equipment purchases ___ staff training expenses.",
-    "choices": ["but", "with", "or", "and"],
-    "answerIndex": 3,
+    "choices": ["or", "and", "but", "with"],
+    "answerIndex": 1,
     "explanation": "both A and B = A と B の両方。both は必ず and と組む。",
     "translation": "その助成金は、機器の購入費と職員の研修費の両方を対象としている。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "The delay was caused not by a shortage of materials ___ by a scheduling error.",
-    "choices": ["or", "but", "nor", "and"],
-    "answerIndex": 1,
+    "choices": ["but", "nor", "and", "or"],
+    "answerIndex": 0,
     "explanation": "not A but B = A ではなく B。",
     "translation": "その遅延は資材不足ではなく、日程調整のミスによって生じた。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "The demand was ___ great that the manufacturer added a third production shift.",
-    "choices": ["very", "too", "such", "so"],
-    "answerIndex": 3,
+    "choices": ["so", "very", "too", "such"],
+    "answerIndex": 0,
     "explanation": "so + 形容詞 + that 節 = とても〜なので…。such を使う場合は「such a + 形容詞 + 名詞 + that」の形になる。",
     "translation": "需要が非常に大きかったため、その製造業者は3交代目の生産シフトを追加した。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "It was ___ a successful launch that the company doubled its production target.",
-    "choices": ["very", "too", "so", "such"],
-    "answerIndex": 3,
+    "choices": ["so", "such", "very", "too"],
+    "answerIndex": 1,
     "explanation": "such a + 形容詞 + 名詞 + that 節の形。so を使うなら so successful a launch という語順になる。",
     "translation": "発売があまりに成功したため、その会社は生産目標を倍に引き上げた。",
     "choiceNotes": {
@@ -123,8 +123,8 @@
     "part": 5,
     "category": "相関表現",
     "sentence": "Not only ___ the new system faster, but it is also easier to maintain.",
-    "choices": ["does", "has", "it is", "is"],
-    "answerIndex": 3,
+    "choices": ["has", "it is", "is", "does"],
+    "answerIndex": 2,
     "explanation": "否定語句 Not only が文頭に出ると、後ろは疑問文の語順に倒置される。よって is the new system faster の語順になる。",
     "translation": "新しいシステムは高速なだけでなく、保守も容易である。",
     "choiceNotes": {
@@ -134,5 +134,124 @@
     },
     "difficulty": 3,
     "tags": ["not only", "倒置"]
+  },
+  {
+    "id": "p5-correlative-09",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The renovation will improve energy efficiency ___ reduce long-term maintenance costs.",
+    "choices": ["as well as", "as well", "so as to", "such as"],
+    "answerIndex": 0,
+    "explanation": "A as well as B =「B だけでなく A も」。空所の後ろに動詞の原形 reduce が続くので as well as が正解。",
+    "translation": "その改修は省エネ性能を高めるだけでなく、長期的な保守費用も削減する。",
+    "choiceNotes": {
+      "as well": "副詞句。文末に置く語で、2 つの要素をつなげない",
+      "so as to": "「〜するために」。目的を表す形で、並列にならない",
+      "such as": "「〜のような」。例示を表す語で動詞は続かない"
+    },
+    "difficulty": 2,
+    "tags": ["as well as"]
+  },
+  {
+    "id": "p5-correlative-10",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The delay was not so much a technical problem ___ a simple scheduling oversight.",
+    "choices": ["but", "like", "as", "than"],
+    "answerIndex": 2,
+    "explanation": "not so much A as B =「A というよりむしろ B」。so much と組むのは as。",
+    "translation": "その遅れは技術的な問題というより、単なる日程調整の見落としだった。",
+    "choiceNotes": {
+      "than": "比較級とともに使う。so much とは組まない",
+      "but": "not A but B なら成立するが、so much が入るとこの形にならない",
+      "like": "「〜のような」。相関表現を作らない"
+    },
+    "difficulty": 3,
+    "tags": ["not so much A as B"]
+  },
+  {
+    "id": "p5-correlative-11",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The committee decided to renovate the existing hall ___ than build an entirely new one.",
+    "choices": ["more", "rather", "other", "better"],
+    "answerIndex": 1,
+    "explanation": "rather than =「〜よりむしろ」。than と組んで選択を表せるのは rather。",
+    "translation": "委員会は、まったく新しいホールを建てるよりも既存のホールを改修することにした。",
+    "choiceNotes": {
+      "other": "other than は「〜以外の」で、選択の意味にならない",
+      "better": "better than なら比較級だが、動詞の原形 build とは組まない",
+      "more": "more than は程度や数量の比較。動詞の選択を表さない"
+    },
+    "difficulty": 2,
+    "tags": ["rather than"]
+  },
+  {
+    "id": "p5-correlative-12",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The technician had ___ sooner replaced the filter than the warning light came on again.",
+    "choices": ["no", "not", "any", "never"],
+    "answerIndex": 0,
+    "explanation": "no sooner ... than 〜 =「…するやいなや〜」。sooner と組むのは no。",
+    "translation": "技師がフィルターを交換したとたん、警告灯がまた点灯した。",
+    "choiceNotes": {
+      "not": "not sooner という組み合わせはない",
+      "any": "any sooner は疑問文や否定文で使うが、この構文は作らない",
+      "never": "never sooner という決まった形はない"
+    },
+    "difficulty": 3,
+    "tags": ["no sooner ... than"]
+  },
+  {
+    "id": "p5-correlative-13",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The delegates had hardly taken their seats ___ the opening presentation began.",
+    "choices": ["while", "when", "than", "that"],
+    "answerIndex": 1,
+    "explanation": "hardly ... when 〜 =「…するやいなや〜」。hardly と組むのは when（または before）。than と組むのは no sooner のほう。",
+    "translation": "代表者たちが席に着くやいなや、開会の発表が始まった。",
+    "choiceNotes": {
+      "than": "than と組むのは no sooner。hardly とは組まない",
+      "that": "hardly that という相関表現はない",
+      "while": "「〜する間」。同時ではなく直後を表す構文には使わない"
+    },
+    "difficulty": 3,
+    "tags": ["hardly ... when"]
+  },
+  {
+    "id": "p5-correlative-14",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The revised contract distinguishes clearly ___ routine maintenance and emergency repairs.",
+    "choices": ["between", "among", "from", "with"],
+    "answerIndex": 0,
+    "explanation": "distinguish between A and B =「A と B を区別する」。and と組んで 2 つを対比できるのは between。",
+    "translation": "改訂された契約は、定期保守と緊急修理をはっきり区別している。",
+    "choiceNotes": {
+      "among": "3 つ以上の中を表す。and で 2 つを並べる形にならない",
+      "from": "distinguish A from B の形になり、and とは組まない",
+      "with": "distinguish with という組み合わせはない"
+    },
+    "difficulty": 2,
+    "tags": ["between A and B"]
+  },
+  {
+    "id": "p5-correlative-15",
+    "part": 5,
+    "category": "相関表現",
+    "sentence": "The training course covers everything ___ basic safety procedures to advanced troubleshooting.",
+    "choices": ["from", "between", "among", "since"],
+    "answerIndex": 0,
+    "explanation": "from A to B =「A から B まで」。to と組んで範囲を示せるのは from。",
+    "translation": "その研修は、基本的な安全手順から高度な故障対応まですべてを扱う。",
+    "choiceNotes": {
+      "between": "between A and B の形になる。to とは組まない",
+      "among": "3 つ以上の中を表す語。範囲の起点を示さない",
+      "since": "時間の起点を表す。事柄の範囲には使わない"
+    },
+    "difficulty": 2,
+    "tags": ["from A to B"]
   }
 ]

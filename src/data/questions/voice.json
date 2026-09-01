@@ -4,8 +4,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The keynote address ___ by the CEO immediately after the awards ceremony concludes.",
-    "choices": ["delivering", "will deliver", "will be delivered", "has delivered"],
-    "answerIndex": 2,
+    "choices": ["has delivered", "delivering", "will deliver", "will be delivered"],
+    "answerIndex": 3,
     "explanation": "主語 The keynote address は「述べられる」側なので受動態。後続の副詞節の内容から未来の事柄とわかるので will be delivered が正解。",
     "translation": "基調講演は、授賞式の終了直後にCEOによって行われる。",
     "choiceNotes": {
@@ -21,8 +21,8 @@
     "part": 5,
     "category": "態",
     "sentence": "All expense reports must ___ to the accounting department by the fifth of each month.",
-    "choices": ["submit", "be submitted", "submitting", "been submitted"],
-    "answerIndex": 1,
+    "choices": ["been submitted", "submit", "be submitted", "submitting"],
+    "answerIndex": 2,
     "explanation": "助動詞 must の後ろは動詞の原形。報告書は「提出される」側なので受動態の原形 be submitted が正解。been submitted は have が必要。",
     "translation": "経費報告書はすべて、毎月5日までに経理部へ提出しなければならない。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The safety inspection ___ completed before the auditors arrived on Tuesday morning.",
-    "choices": ["has being", "was been", "has", "had been"],
-    "answerIndex": 3,
+    "choices": ["has", "had been", "has being", "was been"],
+    "answerIndex": 1,
     "explanation": "監査人が到着した（過去）よりさらに前に完了していたので、過去完了の受動態 had been completed。",
     "translation": "安全点検は、監査人が火曜の朝に到着する前に完了していた。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "態",
     "sentence": "A serious problem ___ during the final stage of the software migration.",
-    "choices": ["occurred", "has been occurred", "is occurred", "was occurred"],
-    "answerIndex": 0,
+    "choices": ["has been occurred", "is occurred", "was occurred", "occurred"],
+    "answerIndex": 3,
     "explanation": "occur は自動詞なので受動態にできない。能動の occurred が正解。",
     "translation": "ソフトウェア移行の最終段階で、深刻な問題が発生した。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The east parking lot ___ resurfaced this week, so please use the north entrance.",
-    "choices": ["is being", "is been", "has being", "is"],
-    "answerIndex": 0,
+    "choices": ["has being", "is", "is being", "is been"],
+    "answerIndex": 2,
     "explanation": "今まさに舗装をやり直している最中なので、現在進行形の受動態 is being resurfaced。",
     "translation": "東駐車場は今週舗装をやり直しているので、北口をご利用ください。",
     "choiceNotes": {
@@ -106,8 +106,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The auditorium was filled ___ delegates from more than thirty countries.",
-    "choices": ["of", "from", "by", "with"],
-    "answerIndex": 3,
+    "choices": ["by", "with", "of", "from"],
+    "answerIndex": 1,
     "explanation": "be filled with = 〜で満たされている。動作主を示す by ではなく with を使う定型表現。",
     "translation": "講堂は30か国を超える国からの代表者で埋まっていた。",
     "choiceNotes": {
@@ -141,12 +141,12 @@
     "category": "態",
     "sentence": "The error ___ earlier if the logs had been reviewed daily.",
     "choices": [
-      "should detect",
-      "should have detected",
       "should have been detected",
-      "should be detected"
+      "should be detected",
+      "should detect",
+      "should have detected"
     ],
-    "answerIndex": 2,
+    "answerIndex": 0,
     "explanation": "error は「発見される」側なので受動態。さらに過去に実際には行われなかったことを表すので should have been + 過去分詞にする。",
     "translation": "日誌が毎日確認されていれば、その誤りはもっと早く発見されていたはずだ。",
     "choiceNotes": {
@@ -162,8 +162,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The revised safety protocol ___ to all branch offices since the beginning of the year.",
-    "choices": ["has been distributed", "is distributing", "distributes", "has distributed"],
-    "answerIndex": 0,
+    "choices": ["distributes", "has distributed", "has been distributed", "is distributing"],
+    "answerIndex": 2,
     "explanation": "since で過去の起点が示されているので現在完了。protocol は「配布される」側なので受動態にする。",
     "translation": "改訂された安全手順は、年明け以来すべての支店に配布されている。",
     "choiceNotes": {
@@ -196,8 +196,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The new alloy ___ to be significantly more durable than the material it replaces.",
-    "choices": ["saying", "says", "is said", "has said"],
-    "answerIndex": 2,
+    "choices": ["has said", "saying", "says", "is said"],
+    "answerIndex": 3,
     "explanation": "be said to do =「〜だと言われている」。主語 alloy は「言われる」側なので受動態にする。",
     "translation": "その新しい合金は、置き換える素材よりもはるかに耐久性が高いと言われている。",
     "choiceNotes": {
@@ -213,8 +213,8 @@
     "part": 5,
     "category": "態",
     "sentence": "The Kyoto plant ___ throughout the industry for its exceptionally low defect rate.",
-    "choices": ["has known", "knowing", "knows", "is known"],
-    "answerIndex": 3,
+    "choices": ["is known", "has known", "knowing", "knows"],
+    "answerIndex": 0,
     "explanation": "be known for =「〜で知られている」。工場は「知られる」側なので受動態にする。",
     "translation": "京都工場は、極めて低い不良率で業界中に知られている。",
     "choiceNotes": {
@@ -230,8 +230,8 @@
     "part": 5,
     "category": "態",
     "sentence": "Visitors ___ to sign the confidentiality agreement before entering the research wing.",
-    "choices": ["are made", "make", "made", "are making"],
-    "answerIndex": 0,
+    "choices": ["make", "made", "are making", "are made"],
+    "answerIndex": 3,
     "explanation": "使役動詞 make は能動では原形をとるが（make O do）、受動態になると to が現れて be made to do の形になる。",
     "translation": "来訪者は、研究棟に入る前に守秘義務契約に署名させられる。",
     "choiceNotes": {
@@ -247,8 +247,8 @@
     "part": 5,
     "category": "態",
     "sentence": "Three separate departments ___ in the preparation of the annual sustainability report.",
-    "choices": ["involve", "are involved", "involving", "have involved"],
-    "answerIndex": 1,
+    "choices": ["have involved", "involve", "are involved", "involving"],
+    "answerIndex": 2,
     "explanation": "be involved in =「〜に関わっている」。部署は「関与させられている」側なので受動態にする。",
     "translation": "3つの別々の部署が、年次の持続可能性報告書の作成に関わっている。",
     "choiceNotes": {

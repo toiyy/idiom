@@ -38,8 +38,8 @@
     "part": 5,
     "category": "比較",
     "sentence": "The more detailed the survey questions become, the ___ respondents are to complete the form.",
-    "choices": ["little likely", "less likely", "least likely", "less likelier"],
-    "answerIndex": 1,
+    "choices": ["least likely", "less likelier", "little likely", "less likely"],
+    "answerIndex": 3,
     "explanation": "「The + 比較級 〜, the + 比較級 …（〜すればするほど…）」の構文。likely の比較級は less likely / more likely の形をとる。最上級 least は使えない。",
     "translation": "アンケートの質問が詳細になるほど、回答者が用紙を最後まで記入する可能性は低くなる。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "比較",
     "sentence": "This year's turnout was much ___ than we had anticipated in our original estimate.",
-    "choices": ["highest", "more high", "high", "higher"],
-    "answerIndex": 3,
+    "choices": ["higher", "highest", "more high", "high"],
+    "answerIndex": 0,
     "explanation": "than があるので比較級 higher。much は比較級を強める副詞。",
     "translation": "今年の参加者数は、当初の見積もりで予想していたよりもはるかに多かった。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "比較",
     "sentence": "The compact model is nearly ___ powerful as the full-sized unit but costs twenty percent less.",
-    "choices": ["very", "as", "so", "more"],
-    "answerIndex": 1,
+    "choices": ["as", "so", "more", "very"],
+    "answerIndex": 0,
     "explanation": "「as + 原級 + as」の形。肯定文では so ... as の形は使わない。",
     "translation": "小型モデルは大型機とほぼ同じ性能だが、価格は20パーセント安い。",
     "choiceNotes": {
@@ -151,5 +151,107 @@
     },
     "difficulty": 2,
     "tags": ["no later than"]
+  },
+  {
+    "id": "p5-comparison-010",
+    "part": 5,
+    "category": "比較",
+    "sentence": "The queue at the service counter grew ___ as the submission deadline approached.",
+    "choices": ["the longer", "longer and longer", "long and long", "more and more long"],
+    "answerIndex": 1,
+    "explanation": "「比較級 + and + 比較級」で「だんだん〜になる」を表す。long は er 型なので longer and longer。",
+    "translation": "提出期限が近づくにつれて、窓口の列はどんどん長くなった。",
+    "choiceNotes": {
+      "long and long": "原級を並べても「だんだん〜」の意味にならない",
+      "more and more long": "long は er を付けて比較級を作るので more は付けない",
+      "the longer": "「The + 比較級 〜, the + 比較級 …」の片方だけでは成立しない"
+    },
+    "difficulty": 2,
+    "tags": ["比較級 and 比較級"]
+  },
+  {
+    "id": "p5-comparison-011",
+    "part": 5,
+    "category": "比較",
+    "sentence": "Please submit the completed questionnaire as ___ as possible after the session ends.",
+    "choices": ["soon", "sooner", "soonest", "more soon"],
+    "answerIndex": 0,
+    "explanation": "as ... as possible の間には原級が入る。as soon as possible =「できるだけ早く」。",
+    "translation": "講習が終わったら、記入済みのアンケートをできるだけ早く提出してください。",
+    "choiceNotes": {
+      "sooner": "比較級。as ... as の間には原級が入る",
+      "soonest": "最上級。as ... as の構文には入らない",
+      "more soon": "soon の比較級は sooner。more は付けない"
+    },
+    "difficulty": 2,
+    "tags": ["as ... as possible"]
+  },
+  {
+    "id": "p5-comparison-012",
+    "part": 5,
+    "category": "比較",
+    "sentence": "The compact model is ___ expensive than the standard version but performs almost as well.",
+    "choices": ["fewer", "lesser", "little", "less"],
+    "answerIndex": 3,
+    "explanation": "「less + 形容詞 + than」で「〜ほど…でない」という劣勢比較を表す。expensive は形容詞なので fewer は使えない。",
+    "translation": "小型モデルは標準版ほど高価ではないが、性能はほぼ同等だ。",
+    "choiceNotes": {
+      "fewer": "可算名詞の数に使う。形容詞 expensive を修飾できない",
+      "lesser": "「より小さい・劣った」という別の意味の形容詞",
+      "little": "原級。than とは組まない"
+    },
+    "difficulty": 2,
+    "tags": ["劣勢比較", "less + 形容詞"]
+  },
+  {
+    "id": "p5-comparison-013",
+    "part": 5,
+    "category": "比較",
+    "sentence": "___ two hundred delegates attended the opening session, far exceeding the organizers' expectations.",
+    "choices": ["As much as", "So many as", "Very many", "As many as"],
+    "answerIndex": 3,
+    "explanation": "as many as + 数詞 =「〜もの（多くの）」と数の多さを強調する。delegates は可算名詞なので much ではなく many。",
+    "translation": "開会式には200人もの代表者が出席し、主催者の予想を大きく上回った。",
+    "choiceNotes": {
+      "As much as": "不可算名詞や金額に使う。可算名詞の数には many を使う",
+      "So many as": "肯定文では as many as の形を使う",
+      "Very many": "数を強調する定型表現にならない"
+    },
+    "difficulty": 3,
+    "tags": ["as many as", "数の強調"]
+  },
+  {
+    "id": "p5-comparison-014",
+    "part": 5,
+    "category": "比較",
+    "sentence": "The revised floor plan is essentially the same ___ the one proposed at last year's meeting.",
+    "choices": ["like", "as", "than", "with"],
+    "answerIndex": 1,
+    "explanation": "the same as 〜 =「〜と同じ」。the same は必ず as と組む。",
+    "translation": "改訂された間取り図は、昨年の会議で提案されたものと本質的に同じだ。",
+    "choiceNotes": {
+      "than": "比較級とともに使う。the same とは組まない",
+      "with": "the same with という組み合わせはない",
+      "like": "「〜のような」。the same の後ろには as が来る"
+    },
+    "difficulty": 2,
+    "tags": ["the same as"]
+  },
+  {
+    "id": "p5-comparison-015",
+    "part": 5,
+    "category": "比較",
+    "sentence": "Most respondents said that they ___ online training to in-person workshops.",
+    "choices": ["prefer", "rather", "better", "like"],
+    "answerIndex": 0,
+    "explanation": "prefer A to B =「B より A のほうを好む」。to と組んで比較を表せるのは prefer。",
+    "translation": "回答者の大半が、対面の講習よりオンライン研修のほうを好むと答えた。",
+    "choiceNotes": {
+      "rather": "would rather A than B の形で使う。to とは組まない",
+      "better": "like A better than B の形になる。to とは組まない",
+      "like": "like A better than B のように than を使う。to とは組まない"
+    },
+    "difficulty": 3,
+    "tags": ["prefer A to B"]
   }
 ]

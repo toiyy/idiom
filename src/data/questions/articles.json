@@ -21,8 +21,8 @@
     "part": 5,
     "category": "冠詞・限定詞",
     "sentence": "Ms. Ferrara was ___ only applicant with experience in both fields.",
-    "choices": ["some", "a", "an", "the"],
-    "answerIndex": 3,
+    "choices": ["a", "an", "the", "some"],
+    "answerIndex": 2,
     "explanation": "only や最上級が付いた名詞は 1 つに特定されるので、定冠詞 the を使う。",
     "translation": "フェラーラさんは、両分野での経験を持つ唯一の応募者だった。",
     "choiceNotes": {
@@ -55,8 +55,8 @@
     "part": 5,
     "category": "冠詞・限定詞",
     "sentence": "Both branches reported ___ same decline in walk-in customers last quarter.",
-    "choices": ["the", "their", "some", "a"],
-    "answerIndex": 0,
+    "choices": ["their", "some", "a", "the"],
+    "answerIndex": 3,
     "explanation": "same は必ず定冠詞を伴い the same の形で使う。",
     "translation": "両支店とも、前四半期に来店客の同様の減少を報告した。",
     "choiceNotes": {
@@ -72,8 +72,8 @@
     "part": 5,
     "category": "冠詞・限定詞",
     "sentence": "___ employee must complete the compliance course before the end of the year.",
-    "choices": ["All", "Every", "Most", "Several"],
-    "answerIndex": 1,
+    "choices": ["Several", "All", "Every", "Most"],
+    "answerIndex": 2,
     "explanation": "空所の後ろが単数名詞 employee なので、単数名詞を直接修飾できる Every が正解。All / Most / Several はいずれも複数名詞をとる。",
     "translation": "従業員は全員、年末までにコンプライアンス講座を修了しなければならない。",
     "choiceNotes": {
@@ -89,8 +89,8 @@
     "part": 5,
     "category": "冠詞・限定詞",
     "sentence": "___ of the participants said they would attend the follow-up session as well.",
-    "choices": ["Most", "The most", "Almost", "Mostly"],
-    "answerIndex": 0,
+    "choices": ["Mostly", "Most", "The most", "Almost"],
+    "answerIndex": 1,
     "explanation": "Most of + the + 名詞 = 〜の大部分。Almost は副詞なので直接 of を続けられない（almost all of なら可）。",
     "translation": "参加者の大半が、追加の講習にも出席すると答えた。",
     "choiceNotes": {
@@ -134,5 +134,124 @@
     },
     "difficulty": 2,
     "tags": ["all", "不可算"]
+  },
+  {
+    "id": "p5-article-09",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "The successful candidate holds ___ MBA from a well-known European business school.",
+    "choices": ["any", "a", "an", "the"],
+    "answerIndex": 2,
+    "explanation": "MBA は文字を一つずつ読み、頭の M は「エム」と母音で始まる発音になるので an を使う。綴りではなく発音で決まる。",
+    "translation": "採用された候補者は、著名なヨーロッパのビジネススクールの経営学修士号を持っている。",
+    "choiceNotes": {
+      "a": "子音で始まる発音の前に使う。MBA の M は母音で始まる発音",
+      "the": "特定の学位を指す文脈ではないので定冠詞は合わない",
+      "any": "「どれでも」。学位を 1 つ持っているという意味にならない"
+    },
+    "difficulty": 2,
+    "tags": ["an", "発音基準"]
+  },
+  {
+    "id": "p5-article-10",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "The museum offers discounted annual memberships to ___ elderly and full-time students.",
+    "choices": ["a", "the", "an", "some"],
+    "answerIndex": 1,
+    "explanation": "「the + 形容詞」で「〜な人々」という複数の集団を表す。the elderly = 高齢者。",
+    "translation": "その美術館は、高齢者と常勤の学生に割引価格の年間会員権を提供している。",
+    "choiceNotes": {
+      "a": "不定冠詞。形容詞を名詞化して集団を表す用法にはならない",
+      "an": "不定冠詞であるうえ、elderly は子音で始まる発音",
+      "some": "「いくらかの」。形容詞を名詞化する働きはない"
+    },
+    "difficulty": 3,
+    "tags": ["the + 形容詞", "人々"]
+  },
+  {
+    "id": "p5-article-11",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "This is ___ third time the installation deadline has been extended this quarter.",
+    "choices": ["the", "one", "a", "an"],
+    "answerIndex": 0,
+    "explanation": "序数（third など）が付いた名詞は 1 つに特定されるので定冠詞 the を使う。",
+    "translation": "設置期限が延長されるのは、今四半期でこれが3回目だ。",
+    "choiceNotes": {
+      "a": "不定冠詞。序数が付いて特定されているので定冠詞が必要",
+      "an": "不定冠詞であるうえ、third は子音で始まる発音",
+      "one": "数を表す語。the third time という定型にならない"
+    },
+    "difficulty": 2,
+    "tags": ["the", "序数"]
+  },
+  {
+    "id": "p5-article-12",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "The engineering team will require ___ two weeks to complete the final round of testing.",
+    "choices": ["another", "other", "others", "the other"],
+    "answerIndex": 0,
+    "explanation": "「another + 数詞 + 複数名詞」で「さらに〜の」を表す。another は本来単数につく語だが、数のまとまりを一つと見るこの形は例外。",
+    "translation": "技術チームが最終試験を終えるには、さらに2週間かかる。",
+    "choiceNotes": {
+      "other": "単独では数詞の前に置けない。other two weeks とは言わない",
+      "others": "代名詞。名詞 weeks を修飾できない",
+      "the other": "「残りのもう一方」と特定する形。追加の期間を表さない"
+    },
+    "difficulty": 3,
+    "tags": ["another + 数詞", "例外"]
+  },
+  {
+    "id": "p5-article-13",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "The ___ building was evacuated within four minutes of the fire alarm sounding.",
+    "choices": ["every", "each", "all", "whole"],
+    "answerIndex": 3,
+    "explanation": "「the whole + 単数名詞」で「〜全体」を表す。all を使うなら all the building ではなく all of the building の語順になる。",
+    "translation": "火災警報が鳴ってから4分以内に、建物全体が避難を完了した。",
+    "choiceNotes": {
+      "all": "the の後ろには置けない。all the building という語順になる",
+      "every": "直後に単数名詞をとるが、the とは併用しない",
+      "each": "直後に単数名詞をとるが、the とは併用しない"
+    },
+    "difficulty": 3,
+    "tags": ["the whole", "all との違い"]
+  },
+  {
+    "id": "p5-article-14",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "___ of the parking spaces will be unavailable during the two-day resurfacing work.",
+    "choices": ["Each", "Half", "Halves", "Every"],
+    "answerIndex": 1,
+    "explanation": "half of + 名詞 =「〜の半分」。数を表す語なので複数形にはしない。",
+    "translation": "2日間の舗装工事の間、駐車スペースの半分が使えなくなる。",
+    "choiceNotes": {
+      "Halves": "複数形。half of という定型では単数形を使う",
+      "Every": "直後に単数名詞が必要で、of は続かない",
+      "Each": "単数扱いなので動詞 will be unavailable の主語としては不自然"
+    },
+    "difficulty": 2,
+    "tags": ["half of"]
+  },
+  {
+    "id": "p5-article-15",
+    "part": 5,
+    "category": "冠詞・限定詞",
+    "sentence": "___ kind of defect is usually caused by improper storage rather than by faulty assembly.",
+    "choices": ["Those", "Them", "This", "These"],
+    "answerIndex": 2,
+    "explanation": "kind は単数形なので、それを指す指示形容詞も単数の This にする。複数なら These kinds となる。",
+    "translation": "この種の欠陥は通常、組み立ての不良ではなく不適切な保管によって生じる。",
+    "choiceNotes": {
+      "These": "複数を指す形。kind は単数なので合わない",
+      "Those": "複数を指す形。単数名詞 kind は修飾できない",
+      "Them": "目的格の代名詞。名詞を修飾できない"
+    },
+    "difficulty": 2,
+    "tags": ["this / these", "数の一致"]
   }
 ]
