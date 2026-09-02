@@ -80,9 +80,9 @@ function toStat(raw: unknown): ConfidenceStat {
   };
 }
 
-/** 保存済み JSON を Progress に正規化する。壊れた値は既定値で埋める。 */
-function normalize(raw: string): Progress {
-  const parsed = JSON.parse(raw) as Partial<Progress>;
+/** 読み込んだ値を Progress に正規化する。壊れた値は既定値で埋める。 */
+function normalize(raw: unknown): Progress {
+  const parsed = (raw ?? {}) as Partial<Progress>;
   const stats = (parsed.byConfidence ?? {}) as Partial<ConfidenceStats>;
   return {
     answered: typeof parsed.answered === 'number' ? parsed.answered : 0,
@@ -106,7 +106,7 @@ export function loadProgress(): Progress {
     // v2 がなければ v1 から累計と復習リストだけ引き継ぐ（自信度の内訳は不明なので空のまま）
     const raw = store.getItem(STORAGE_KEY) ?? store.getItem(LEGACY_KEY);
     if (!raw) return makeEmptyProgress();
-    return normalize(raw);
+    return normalize(JSON.parse(raw));
   } catch {
     return makeEmptyProgress();
   }
@@ -168,4 +168,56 @@ export function resetProgress(): Progress {
     }
   }
   return makeEmptyProgress();
+}
+
+/**
+ * 書き出し JSON の形。端末をまたいで進捗を移すときに使う。
+ * localStorage の生の値をそのまま貼られても取り込めるよう、中身は Progress のまま包むだけにする。
+ */
+export interface ProgressExport {
+  app: 'idiom';
+  kind: 'progress';
+  version: 2;
+  exportedAt: string;
+  progress: Progress;
+}
+
+export function exportProgress(progress: Progress): string {
+  const payload: ProgressExport = {
+    app: 'idiom',
+    kind: 'progress',
+    version: 2,
+    exportedAt: new Date().toISOString(),
+    progress,
+  };
+  return JSON.stringify(payload, null, 2);
+}
+
+function isCount(n: unknown): n is number {
+  return typeof n === 'number' && Number.isFinite(n) && n >= 0;
+}
+
+/**
+ * 書き出した JSON を Progress に戻す。取り込めない入力は null を返す。
+ * 包んだ形（{ progress: ... }）と、localStorage の生の値の両方を受け付ける。
+ */
+export function parseProgress(text: string): Progress | null {
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(text);
+  } catch {
+    return null;
+  }
+  if (typeof parsed !== 'object' || parsed === null) return null;
+
+  const inner = (parsed as { progress?: unknown }).progress;
+  const body = typeof inner === 'object' && inner !== null ? inner : parsed;
+  const o = body as Partial<Progress>;
+
+  // 進捗として最低限の形がそろっていなければ、無関係な JSON を貼られたとみなす
+  if (!isCount(o.answered) || !isCount(o.correct)) return null;
+  if (!Array.isArray(o.wrongIds)) return null;
+  if (o.correct > o.answered) return null;
+
+  return normalize(body);
 }

@@ -509,3 +509,43 @@ body {
   flex-wrap: wrap;
   gap: 8px;
 }
+
+/* --- 書き出し／取り込み --- */
+
+.transfer__lead {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.transfer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.transfer__area {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: inherit;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.transfer__area + .btn {
+  margin-top: 8px;
+}
+
+.transfer__message {
+  margin: 12px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}

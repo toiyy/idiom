@@ -1,8 +1,9 @@
 import { beforeEach, describe, expect, it } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { questions } from '../data/questions';
+import { parseProgress } from '../lib/storage';
 
 type User = ReturnType<typeof userEvent.setup>;
 type Label = '自信あり' | '迷った' | '勘';
@@ -363,5 +364,78 @@ describe('学習の再開', () => {
     render(<App />);
     expect(document.querySelector('.card--resume')).toBeNull();
     expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
+  });
+});
+
+describe('データの書き出し／取り込み', () => {
+  /** ホームの「累計」カードに出ている「7 / 10」を読む。 */
+  function lifetimeScore(): string {
+    return (document.querySelector('.result__score')?.textContent ?? '').split('（')[0].trim();
+  }
+
+  function transferArea(): HTMLTextAreaElement {
+    return document.querySelector('.transfer__area') as HTMLTextAreaElement;
+  }
+
+  it('書き出すと取り込み可能な JSON が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: '書き出す' }));
+
+    const payload = JSON.parse(transferArea().value);
+    expect(payload.app).toBe('idiom');
+    expect(parseProgress(transferArea().value)).not.toBeNull();
+  });
+
+  it('解いた結果が書き出しに含まれる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    await user.click(screen.getByRole('button', { name: '書き出す' }));
+
+    const parsed = parseProgress(transferArea().value);
+    expect(parsed?.answered).toBe(1);
+    expect(parsed?.correct).toBe(1);
+  });
+
+  it('取り込むと累計が置き換わり、保存もされる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    expect(lifetimeScore()).toBe('0 / 0');
+
+    await user.click(screen.getByRole('button', { name: '取り込む' }));
+    fireEvent.change(transferArea(), {
+      target: {
+        value: JSON.stringify({
+          answered: 10,
+          correct: 7,
+          wrongIds: [questions[0].id],
+          byConfidence: {
+            sure: { answered: 6, correct: 6 },
+            unsure: { answered: 2, correct: 1 },
+            guess: { answered: 2, correct: 0 },
+          },
+          updatedAt: '2026-09-02T00:00:00.000Z',
+        }),
+      },
+    });
+    await user.click(screen.getByRole('button', { name: '読み込む' }));
+
+    expect(lifetimeScore()).toBe('7 / 10');
+    expect(screen.getByRole('button', { name: /^復習/ })).toHaveTextContent('1 問');
+    expect(JSON.parse(localStorage.getItem('idiom.progress.v2') ?? '{}').answered).toBe(10);
+  });
+
+  it('壊れた入力は取り込まず、その旨を出す', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: '取り込む' }));
+    fireEvent.change(transferArea(), { target: { value: '{"foo":1}' } });
+    await user.click(screen.getByRole('button', { name: '読み込む' }));
+
+    expect(screen.getByRole('status')).toHaveTextContent('読み込めませんでした');
+    expect(lifetimeScore()).toBe('0 / 0');
   });
 });

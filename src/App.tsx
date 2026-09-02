@@ -17,6 +17,7 @@ import {
   resetProgress,
   saveProgress,
   type Confidence,
+  type Progress,
 } from './lib/storage';
 import { clearSession, loadSession, saveSession } from './lib/session';
 import { HomeScreen } from './components/HomeScreen';
@@ -135,6 +136,12 @@ export default function App() {
     setProgress(resetProgress());
   }
 
+  /** 別端末から書き出した進捗で置き換える。解きかけのセッションはそのまま残す。 */
+  function handleImportProgress(next: Progress) {
+    setProgress(next);
+    saveProgress(next);
+  }
+
   /** 結果を見終えたセッションは捨てる。order を空にすると「続きから」も消える。 */
   function handleFinishToHome() {
     setOrder([]);
@@ -172,6 +179,7 @@ export default function App() {
           onResume={() => setScreen('quiz')}
           onStart={startQuiz}
           onResetProgress={handleResetProgress}
+          onImportProgress={handleImportProgress}
         />
       )}
 
