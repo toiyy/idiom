@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { questions } from '../data/questions';
-import { parseProgress } from '../lib/storage';
+import { parseBackup } from '../lib/backup';
 
 type User = ReturnType<typeof userEvent.setup>;
 type Label = '自信あり' | '迷った' | '勘';
@@ -384,7 +384,7 @@ describe('データの書き出し／取り込み', () => {
 
     const payload = JSON.parse(transferArea().value);
     expect(payload.app).toBe('idiom');
-    expect(parseProgress(transferArea().value)).not.toBeNull();
+    expect(parseBackup(transferArea().value)).not.toBeNull();
   });
 
   it('解いた結果が書き出しに含まれる', async () => {
@@ -395,7 +395,7 @@ describe('データの書き出し／取り込み', () => {
     await user.click(screen.getByRole('button', { name: '中断' }));
     await user.click(screen.getByRole('button', { name: '書き出す' }));
 
-    const parsed = parseProgress(transferArea().value);
+    const parsed = parseBackup(transferArea().value)?.progress;
     expect(parsed?.answered).toBe(1);
     expect(parsed?.correct).toBe(1);
   });
@@ -437,5 +437,83 @@ describe('データの書き出し／取り込み', () => {
 
     expect(screen.getByRole('status')).toHaveTextContent('読み込めませんでした');
     expect(lifetimeScore()).toBe('0 / 0');
+  });
+});
+
+describe('メモ', () => {
+  it('回答後に書いたメモがホームの一覧と localStorage に残る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+    await user.type(screen.getByLabelText('メモ'), '完全文なので関係副詞');
+
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    expect(screen.getByRole('heading', { name: 'メモ（1 件）' })).toBeInTheDocument();
+    expect(screen.getByText('完全文なので関係副詞')).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem('idiom.notes.v1') ?? '{}')).toEqual({
+      [q.id]: '完全文なので関係副詞',
+    });
+  });
+
+  it('同じ問題に戻ると書いたメモが入っている', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+    await user.type(screen.getByLabelText('メモ'), 'おぼえる');
+    unmount();
+
+    // 解きかけのセッションごと復元されるので、同じ問題のメモが読み込まれている
+    render(<App />);
+    expect(screen.getByLabelText('メモ')).toHaveValue('おぼえる');
+  });
+
+  it('一覧から削除できる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+    await user.type(screen.getByLabelText('メモ'), 'けす');
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getByRole('button', { name: `${q.id} のメモを削除` }));
+    expect(screen.getByRole('heading', { name: 'メモ（0 件）' })).toBeInTheDocument();
+    expect(JSON.parse(localStorage.getItem('idiom.notes.v1') ?? '{}')).toEqual({});
+  });
+
+  it('書き出しにメモが含まれ、取り込むと復元される', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+    await user.type(screen.getByLabelText('メモ'), 'もちだす');
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getByRole('button', { name: '書き出す' }));
+    const json = (document.querySelector('.transfer__area') as HTMLTextAreaElement).value;
+    expect(parseBackup(json)?.notes).toEqual({ [q.id]: 'もちだす' });
+
+    // 消してから取り込み直すと戻る
+    await user.click(screen.getByRole('button', { name: `${q.id} のメモを削除` }));
+    expect(screen.getByRole('heading', { name: 'メモ（0 件）' })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: '取り込む' }));
+    fireEvent.change(document.querySelector('.transfer__area') as HTMLTextAreaElement, {
+      target: { value: json },
+    });
+    await user.click(screen.getByRole('button', { name: '読み込む' }));
+    expect(screen.getByRole('heading', { name: 'メモ（1 件）' })).toBeInTheDocument();
+    expect(screen.getByText('もちだす')).toBeInTheDocument();
   });
 });

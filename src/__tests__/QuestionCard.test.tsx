@@ -21,10 +21,11 @@ const question: Question = {
   },
 };
 
-function setup(selectedIndex: number | null, confidence: Confidence | null, index = 0) {
+function setup(selectedIndex: number | null, confidence: Confidence | null, index = 0, note = '') {
   const onSelect = vi.fn();
   const onConfidence = vi.fn();
   const onNext = vi.fn();
+  const onNoteChange = vi.fn();
   render(
     <QuestionCard
       question={question}
@@ -35,9 +36,11 @@ function setup(selectedIndex: number | null, confidence: Confidence | null, inde
       onSelect={onSelect}
       onConfidence={onConfidence}
       onNext={onNext}
+      note={note}
+      onNoteChange={onNoteChange}
     />,
   );
-  return { onSelect, onConfidence, onNext };
+  return { onSelect, onConfidence, onNext, onNoteChange };
 }
 
 describe('QuestionCard', () => {
@@ -116,5 +119,30 @@ describe('QuestionCard', () => {
   it('最終問題では「結果を見る」になる', () => {
     setup(0, 'sure', 2);
     expect(screen.getByRole('button', { name: '結果を見る' })).toBeInTheDocument();
+  });
+});
+
+describe('メモ欄', () => {
+  it('回答前は出ない', () => {
+    setup(null, null);
+    expect(screen.queryByLabelText('メモ')).toBeNull();
+  });
+
+  it('自信度を申告するまでは出ない', () => {
+    setup(2, null);
+    expect(screen.queryByLabelText('メモ')).toBeNull();
+  });
+
+  it('回答後に出て、保存済みのメモが入っている', () => {
+    setup(2, 'sure', 0, '後ろが不完全なので主格');
+    expect(screen.getByLabelText('メモ')).toHaveValue('後ろが不完全なので主格');
+  });
+
+  it('入力するたびに通知する', async () => {
+    const user = userEvent.setup();
+    const { onNoteChange } = setup(2, 'sure');
+    await user.type(screen.getByLabelText('メモ'), 'ab');
+    expect(onNoteChange).toHaveBeenCalledTimes(2);
+    expect(onNoteChange).toHaveBeenLastCalledWith('b');
   });
 });

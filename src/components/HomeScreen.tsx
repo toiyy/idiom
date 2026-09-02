@@ -2,6 +2,10 @@ import type { CategorySummary, QuizMode } from '../lib/quiz';
 import type { Progress } from '../lib/storage';
 import { ConfidenceTable } from './ConfidenceTable';
 import { ProgressTransfer } from './ProgressTransfer';
+import { NoteList } from './NoteList';
+import type { Notes } from '../lib/notes';
+import type { Backup } from '../lib/backup';
+import type { Question } from '../types/question';
 
 interface HomeScreenProps {
   totalQuestions: number;
@@ -13,7 +17,10 @@ interface HomeScreenProps {
   onResume: () => void;
   onStart: (mode: QuizMode) => void;
   onResetProgress: () => void;
-  onImportProgress: (next: Progress) => void;
+  onImportBackup: (next: Backup) => void;
+  notes: Notes;
+  pool: readonly Question[];
+  onDeleteNote: (questionId: string) => void;
 }
 
 /** 「12 問 / 要復習 3」のような件数表示。カテゴリとサブカテゴリで共用する。 */
@@ -34,7 +41,10 @@ export function HomeScreen({
   onResume,
   onStart,
   onResetProgress,
-  onImportProgress,
+  onImportBackup,
+  notes,
+  pool,
+  onDeleteNote,
 }: HomeScreenProps) {
   const accuracy = progress.answered === 0 ? 0 : progress.correct / progress.answered;
   const flat = categories.filter((c) => c.subcategories.length === 0);
@@ -142,7 +152,9 @@ export function HomeScreen({
         </button>
       </section>
 
-      <ProgressTransfer progress={progress} onImport={onImportProgress} />
+      <NoteList notes={notes} pool={pool} onDelete={onDeleteNote} />
+
+      <ProgressTransfer backup={{ progress, notes }} onImport={onImportBackup} />
     </>
   );
 }

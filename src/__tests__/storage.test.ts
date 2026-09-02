@@ -1,11 +1,9 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import {
-  exportProgress,
   isMastered,
   MAX_WRONG_IDS,
   loadProgress,
   makeEmptyProgress,
-  parseProgress,
   recordAnswer,
   resetProgress,
   saveProgress,
@@ -128,65 +126,6 @@ describe('resetProgress', () => {
     saveProgress(recordAnswer(makeEmptyProgress(), 'q1', true, 'sure'));
     resetProgress();
     expect(loadProgress()).toEqual(makeEmptyProgress());
-  });
-});
-
-describe('exportProgress / parseProgress', () => {
-  const sample = (() => {
-    let p = makeEmptyProgress();
-    p = recordAnswer(p, 'q1', true, 'sure');
-    p = recordAnswer(p, 'q2', false, 'guess');
-    p = recordAnswer(p, 'q3', true, 'unsure');
-    return p;
-  })();
-
-  it('書き出して取り込むと元に戻る', () => {
-    expect(parseProgress(exportProgress(sample))).toEqual(sample);
-  });
-
-  it('書き出した JSON に目印が入っている', () => {
-    const payload = JSON.parse(exportProgress(sample));
-    expect(payload.app).toBe('idiom');
-    expect(payload.kind).toBe('progress');
-    expect(payload.version).toBe(2);
-    expect(typeof payload.exportedAt).toBe('string');
-  });
-
-  it('localStorage の生の値をそのまま貼っても取り込める', () => {
-    saveProgress(sample);
-    const raw = localStorage.getItem('idiom.progress.v2') ?? '';
-    expect(parseProgress(raw)).toEqual(sample);
-  });
-
-  it('自信度の内訳が欠けていても既定値で埋めて取り込む', () => {
-    const parsed = parseProgress('{"answered":3,"correct":2,"wrongIds":["q1"]}');
-    expect(parsed?.answered).toBe(3);
-    expect(parsed?.byConfidence).toEqual(makeEmptyProgress().byConfidence);
-  });
-
-  it('壊れた入力や無関係な JSON は null', () => {
-    for (const bad of [
-      '',
-      'not json',
-      'null',
-      '[]',
-      '123',
-      '"文字列"',
-      '{}',
-      '{"foo":"bar"}',
-      '{"answered":3,"correct":2}',
-      '{"answered":"3","correct":2,"wrongIds":[]}',
-      '{"answered":-1,"correct":0,"wrongIds":[]}',
-      // 正解数が回答数を超えるのは進捗として成立しない
-      '{"answered":2,"correct":5,"wrongIds":[]}',
-    ]) {
-      expect(parseProgress(bad), `受理してはいけない: ${bad}`).toBeNull();
-    }
-  });
-
-  it('wrongIds の文字列でない要素は落とす', () => {
-    const parsed = parseProgress('{"answered":1,"correct":0,"wrongIds":["q1",42,null]}');
-    expect(parsed?.wrongIds).toEqual(['q1']);
   });
 });
 

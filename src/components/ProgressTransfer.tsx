@@ -1,25 +1,26 @@
 import { useState } from 'react';
-import { exportProgress, parseProgress, type Progress } from '../lib/storage';
+import { exportBackup, parseBackup, type Backup } from '../lib/backup';
+import { countNotes } from '../lib/notes';
 
 /** 開いているパネル。null なら閉じている。 */
 type Panel = null | 'export' | 'import';
 
 interface ProgressTransferProps {
-  progress: Progress;
-  onImport: (next: Progress) => void;
+  backup: Backup;
+  onImport: (next: Backup) => void;
 }
 
 /**
  * 進捗の書き出し／取り込み。
  * localStorage は端末ごとに独立しているため、スマホで解いた結果を PC に移す手段がこれしかない。
  */
-export function ProgressTransfer({ progress, onImport }: ProgressTransferProps) {
+export function ProgressTransfer({ backup, onImport }: ProgressTransferProps) {
   const [panel, setPanel] = useState<Panel>(null);
   const [text, setText] = useState('');
   const [message, setMessage] = useState('');
 
   async function handleExport() {
-    const json = exportProgress(progress);
+    const json = exportBackup(backup);
     setPanel('export');
     setText(json);
     // クリップボードが使えない環境もあるので、まずは手でコピーする案内を出しておく
@@ -39,7 +40,7 @@ export function ProgressTransfer({ progress, onImport }: ProgressTransferProps) 
   }
 
   function handleApplyImport() {
-    const next = parseProgress(text);
+    const next = parseBackup(text);
     if (!next) {
       setMessage('読み込めませんでした。書き出した JSON をそのまま貼り付けてください。');
       return;
@@ -48,7 +49,8 @@ export function ProgressTransfer({ progress, onImport }: ProgressTransferProps) 
     setPanel(null);
     setText('');
     setMessage(
-      `取り込みました（累計 ${next.correct} / ${next.answered} 問、要復習 ${next.wrongIds.length} 問）。`,
+      `取り込みました（累計 ${next.progress.correct} / ${next.progress.answered} 問、` +
+        `要復習 ${next.progress.wrongIds.length} 問、メモ ${countNotes(next.notes)} 件）。`,
     );
   }
 
@@ -62,8 +64,8 @@ export function ProgressTransfer({ progress, onImport }: ProgressTransferProps) 
     <section className="card">
       <h2 className="section__title">データの書き出し／取り込み</h2>
       <p className="transfer__lead">
-        進捗はブラウザごとに保存されます。端末をまたいで引き継ぐときはここから移してください。
-        取り込むと現在の累計と復習リストは<strong>置き換わります</strong>。
+        進捗とメモはブラウザごとに保存されます。端末をまたいで引き継ぐときはここから移してください。
+        取り込むと現在の累計・復習リスト・メモは<strong>置き換わります</strong>。
       </p>
 
       <div className="transfer__actions">

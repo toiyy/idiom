@@ -17,9 +17,10 @@ import {
   resetProgress,
   saveProgress,
   type Confidence,
-  type Progress,
 } from './lib/storage';
 import { clearSession, loadSession, saveSession } from './lib/session';
+import { loadNotes, saveNotes, setNote, type Notes } from './lib/notes';
+import type { Backup } from './lib/backup';
 import { HomeScreen } from './components/HomeScreen';
 import { QuestionCard } from './components/QuestionCard';
 import { ResultView } from './components/ResultView';
@@ -40,6 +41,7 @@ export default function App() {
   const [confidence, setConfidence] = useState<Confidence | null>(restored?.confidence ?? null);
   const [sessionCorrect, setSessionCorrect] = useState(restored?.sessionCorrect ?? 0);
   const [progress, setProgress] = useState(() => loadProgress());
+  const [notes, setNotes] = useState<Notes>(() => loadNotes());
 
   const reviewCount = useMemo(
     () => countReviewable(questions, progress.wrongIds),
@@ -136,10 +138,19 @@ export default function App() {
     setProgress(resetProgress());
   }
 
-  /** 別端末から書き出した進捗で置き換える。解きかけのセッションはそのまま残す。 */
-  function handleImportProgress(next: Progress) {
-    setProgress(next);
-    saveProgress(next);
+  /** 別端末から書き出したデータで置き換える。解きかけのセッションはそのまま残す。 */
+  function handleImportBackup(next: Backup) {
+    setProgress(next.progress);
+    saveProgress(next.progress);
+    setNotes(next.notes);
+    saveNotes(next.notes);
+  }
+
+  /** メモは打つそばから保存する。保存ボタンを挟むとスマホで書き捨てになりやすい。 */
+  function handleNoteChange(questionId: string, text: string) {
+    const next = setNote(notes, questionId, text);
+    setNotes(next);
+    saveNotes(next);
   }
 
   /** 結果を見終えたセッションは捨てる。order を空にすると「続きから」も消える。 */
@@ -179,7 +190,10 @@ export default function App() {
           onResume={() => setScreen('quiz')}
           onStart={startQuiz}
           onResetProgress={handleResetProgress}
-          onImportProgress={handleImportProgress}
+          onImportBackup={handleImportBackup}
+          notes={notes}
+          pool={questions}
+          onDeleteNote={(id) => handleNoteChange(id, '')}
         />
       )}
 
@@ -195,6 +209,8 @@ export default function App() {
             onSelect={handleSelect}
             onConfidence={handleConfidence}
             onNext={handleNext}
+            note={notes[order[cursor].id] ?? ''}
+            onNoteChange={(text) => handleNoteChange(order[cursor].id, text)}
           />
         </>
       )}

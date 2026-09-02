@@ -549,3 +549,96 @@ body {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
+/* --- メモ --- */
+
+.note {
+  display: block;
+  margin: 16px 0;
+}
+
+.note__label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.note__area {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  color: inherit;
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.note-list__empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.note-item {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.note-item__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 0 6px;
+}
+
+.note-item__category {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.note-item__delete {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.note-item__sentence {
+  margin: 0 0 4px;
+  line-height: 1.6;
+}
+
+.note-item__answer {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  color: var(--correct);
+}
+
+.note-item__note {
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: var(--bg);
+  white-space: pre-wrap;
+  line-height: 1.6;
+}

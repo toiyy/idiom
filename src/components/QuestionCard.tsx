@@ -12,6 +12,9 @@ interface QuestionCardProps {
   onSelect: (index: number) => void;
   onConfidence: (confidence: Confidence) => void;
   onNext: () => void;
+  /** この問題に付けたメモ。未記入なら空文字。 */
+  note: string;
+  onNoteChange: (text: string) => void;
 }
 
 function choiceState(
@@ -37,6 +40,8 @@ export function QuestionCard({
   onSelect,
   onConfidence,
   onNext,
+  note,
+  onNoteChange,
 }: QuestionCardProps) {
   const picked = selectedIndex !== null;
   const revealed = picked && confidence !== null;
@@ -110,6 +115,19 @@ export function QuestionCard({
           </p>
           <p className="card__translation">{question.translation}</p>
           <p className="card__explanation">{question.explanation}</p>
+
+          {/* 間違えた理由や自分なりの覚え方を残す。入力するそばから保存する */}
+          <label className="note">
+            <span className="note__label">メモ</span>
+            <textarea
+              className="note__area"
+              rows={2}
+              placeholder="間違えた理由や覚え方をここに"
+              value={note}
+              onChange={(e) => onNoteChange(e.target.value)}
+            />
+          </label>
+
           <button type="button" className="btn btn--primary" onClick={onNext}>
             {index + 1 === total ? '結果を見る' : '次の問題へ'}
           </button>
