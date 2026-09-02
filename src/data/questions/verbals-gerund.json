@@ -166,54 +166,54 @@
     "part": 5,
     "category": "準動詞",
     "subcategory": "動名詞",
-    "sentence": "The manufacturer is committed to ___ its carbon emissions by forty percent before 2030.",
-    "choices": ["reduce", "reducing", "reduction", "reduced"],
-    "answerIndex": 1,
-    "explanation": "be committed to の to は前置詞なので、後ろは動名詞。to 不定詞と取り違えやすい代表例。",
-    "translation": "そのメーカーは、2030年までに炭素排出量を40パーセント削減することを約束している。",
+    "sentence": "The intake filters need ___ every three months, even in low-dust environments.",
+    "choices": ["replacing", "to replace", "replace", "replaced"],
+    "answerIndex": 0,
+    "explanation": "need + 動名詞は「〜される必要がある」という受動の意味になる。need to be replaced と同じ内容を表す。",
+    "translation": "吸気フィルターは、粉塵の少ない環境でも3か月ごとに交換する必要がある。",
     "choiceNotes": {
-      "reduce": "原形。前置詞 to の後ろには置けない",
-      "reduction": "名詞。後ろに目的語 its carbon emissions を直接とれない",
-      "reduced": "過去分詞。前置詞の後ろで目的語をとる形にならない"
+      "to replace": "能動の意味になり、フィルターが交換する側になってしまう",
+      "replace": "原形。need の後ろに直接は置けない",
+      "replaced": "過去分詞。need の後ろには置けない"
     },
     "difficulty": 3,
-    "tags": ["be committed to", "to が前置詞"]
+    "tags": ["need doing", "受動の意味"]
   },
   {
     "id": "p5-verbal-ger-11",
     "part": 5,
     "category": "準動詞",
     "subcategory": "動名詞",
-    "sentence": "Would you mind ___ the budget review until the finance director returns?",
-    "choices": ["postpone", "postponing", "postponed", "to postpone"],
-    "answerIndex": 1,
-    "explanation": "mind は動名詞のみを目的語にとる動詞。Would you mind doing 〜? で丁寧な依頼を表す。",
-    "translation": "財務部長が戻るまで予算の見直しを延期していただけますか。",
+    "sentence": "The design team spent nearly three weeks ___ the interface before the usability trial.",
+    "choices": ["refine", "to refine", "refining", "refined"],
+    "answerIndex": 2,
+    "explanation": "「spend + 時間 + 動名詞」= 〜するのに時間を費やす。to 不定詞は続けられない。",
+    "translation": "設計チームは、使用性試験の前にインターフェースの改良に3週間近くを費やした。",
     "choiceNotes": {
-      "to postpone": "mind は to 不定詞を目的語にとらない",
-      "postpone": "原形。mind の目的語にならない",
-      "postponed": "過去形・過去分詞。目的語の位置に置けない"
+      "refine": "原形。時間を表す語の後ろには置けない",
+      "to refine": "spend + 時間 の後ろに to 不定詞は続かない",
+      "refined": "過去分詞。目的語 the interface をとる形にならない"
     },
     "difficulty": 2,
-    "tags": ["mind", "動名詞のみ"]
+    "tags": ["spend 時間 doing"]
   },
   {
     "id": "p5-verbal-ger-12",
     "part": 5,
     "category": "準動詞",
     "subcategory": "動名詞",
-    "sentence": "The vendor denied ___ any confidential specifications with its competitors.",
-    "choices": ["share", "shared", "sharing", "to share"],
-    "answerIndex": 2,
-    "explanation": "deny は動名詞のみを目的語にとる動詞（deny / admit / avoid / postpone など）。",
-    "translation": "その業者は、機密の仕様書を競合他社と共有したことを否定した。",
+    "sentence": "The plant reduced its energy costs by ___ all lighting to LED fixtures last autumn.",
+    "choices": ["switching", "switch", "to switch", "switched"],
+    "answerIndex": 0,
+    "explanation": "前置詞 by の後ろに動詞を続けるときは動名詞にする。by doing 〜 = 〜することによって。",
+    "translation": "その工場は、昨秋にすべての照明をLED器具へ切り替えることで電力コストを削減した。",
     "choiceNotes": {
-      "to share": "deny は to 不定詞を目的語にとらない",
-      "share": "原形。他動詞 denied の目的語にならない",
-      "shared": "過去形・過去分詞。目的語の位置に置けない"
+      "switch": "原形。前置詞 by の後ろには置けない",
+      "to switch": "前置詞 by の後ろに to 不定詞は続かない",
+      "switched": "過去分詞。前置詞の後ろで目的語をとる形にならない"
     },
     "difficulty": 2,
-    "tags": ["deny", "動名詞のみ"]
+    "tags": ["by doing", "前置詞+動名詞"]
   },
   {
     "id": "p5-verbal-ger-13",

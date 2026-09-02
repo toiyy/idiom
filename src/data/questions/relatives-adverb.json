@@ -202,18 +202,18 @@
     "part": 5,
     "category": "関係詞",
     "subcategory": "関係副詞",
-    "sentence": "___ quickly the maintenance crew works, the repairs cannot be finished before Friday.",
-    "choices": ["Whatever", "Wherever", "However", "Whenever"],
+    "sentence": "Page four lists the date ___ which the revised payment terms take effect.",
+    "choices": ["at", "in", "on", "for"],
     "answerIndex": 2,
-    "explanation": "「However + 副詞 + 主語 + 動詞」= どれほど〜でも。副詞 quickly が直後に来ている点が手がかり。",
-    "translation": "整備班がどれほど速く作業しても、修理は金曜より前には終わらない。",
+    "explanation": "「前置詞 + which」は関係副詞に相当する。先行詞が the date なので、日付に使う前置詞 on を選び on which = when となる。",
+    "translation": "4ページ目に、改定後の支払条件が発効する日付が記載されている。",
     "choiceNotes": {
-      "Whenever": "時を表すので、直後に副詞を置く形にはならない",
-      "Whatever": "名詞を修飾するか単独で使う語で、副詞は続けられない",
-      "Wherever": "場所を表すので、直後に副詞を置く形にはならない"
+      "at": "時刻に使う前置詞で、日付には合わない",
+      "in": "月や年に使う前置詞で、特定の日付には合わない",
+      "for": "期間を表す前置詞で、発効する時点を示せない"
     },
     "difficulty": 3,
-    "tags": ["however", "副詞の修飾"]
+    "tags": ["前置詞+which", "on which"]
   },
   {
     "id": "p5-reladv-13",

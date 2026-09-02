@@ -220,18 +220,18 @@
     "part": 5,
     "category": "関係詞",
     "subcategory": "関係代名詞",
-    "sentence": "The board approved ___ the finance committee had proposed at the previous session.",
-    "choices": ["which", "that", "what", "whose"],
-    "answerIndex": 2,
-    "explanation": "空所の前に先行詞がなく、後ろは proposed の目的語が欠けた不完全な文。先行詞を含む関係代名詞 what（〜したこと）が入る。",
-    "translation": "取締役会は、財務委員会が前回の会議で提案した内容を承認した。",
+    "sentence": "The dealership offers the same extended warranty ___ its two largest competitors do.",
+    "choices": ["as", "that", "which", "what"],
+    "answerIndex": 0,
+    "explanation": "the same 〜 as ... で「…と同じ〜」。the same と組む関係代名詞は as で、that や which は使えない。",
+    "translation": "その販売店は、最大手の競合2社と同じ延長保証を提供している。",
     "choiceNotes": {
-      "which": "先行詞が必要だが、前に名詞がない",
-      "that": "先行詞が必要。approved の直後に置くことはできない",
-      "whose": "所有格。後ろに名詞が続いていない"
+      "that": "the same と組んで「…と同じ」を表すことはできない",
+      "which": "the same と組んで「…と同じ」を表すことはできない",
+      "what": "先行詞をとらない関係代名詞。すでに warranty がある"
     },
     "difficulty": 3,
-    "tags": ["what", "先行詞を含む"]
+    "tags": ["the same as", "擬似関係代名詞"]
   },
   {
     "id": "p5-relpron-14",

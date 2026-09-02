@@ -148,18 +148,18 @@
     "part": 5,
     "category": "準動詞",
     "subcategory": "分詞",
-    "sentence": "The company had all the defective units ___ by the manufacturer at no additional cost.",
-    "choices": ["to replace", "replace", "replacing", "replaced"],
-    "answerIndex": 3,
-    "explanation": "「have + 目的語 + 過去分詞」= 〜してもらう・〜される。units は「交換される」側なので過去分詞。",
-    "translation": "その会社は、不良品をすべてメーカーに追加費用なしで交換してもらった。",
+    "sentence": "A maintenance worker noticed coolant ___ from a cracked seal on the second pump.",
+    "choices": ["leak", "leaking", "leaked", "to leak"],
+    "answerIndex": 1,
+    "explanation": "「知覚動詞 + 目的語 + 現在分詞」で、進行中の動作を表す。coolant は「漏れている」側なので能動の leaking。",
+    "translation": "整備員は、2番ポンプのひび割れたシールから冷却液が漏れているのに気づいた。",
     "choiceNotes": {
-      "replace": "原形にすると units が交換する側になり、意味が合わない",
-      "replacing": "現在分詞にすると units が交換する側になり、意味が合わない",
-      "to replace": "have + 目的語の後ろに to 不定詞は続かない"
+      "leak": "原形にすると最初から最後まで見届けた意味になり、進行中の場面に合わない",
+      "leaked": "過去分詞にすると coolant が漏らされる側になり、意味が合わない",
+      "to leak": "知覚動詞は目的語の後ろに to 不定詞をとらない"
     },
     "difficulty": 3,
-    "tags": ["have + O + 過去分詞", "使役"]
+    "tags": ["知覚動詞", "現在分詞"]
   },
   {
     "id": "p5-verbal-ptcp-10",
