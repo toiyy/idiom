@@ -41,6 +41,13 @@ export interface Progress {
   updatedAt: string;
 }
 
+/**
+ * 復習リストに残す上限。
+ * 問題バンクの総数を十分に上回る値にしておく（超えると古い間違いから復習に出てこなくなる）。
+ * プールにない id は出題時に無視されるため、多少余分に持っていても害はない。
+ */
+export const MAX_WRONG_IDS = 2000;
+
 function emptyStats(): ConfidenceStats {
   return {
     sure: { answered: 0, correct: 0 },
@@ -139,7 +146,7 @@ export function recordAnswer(
   const mastered = isMastered(correct, confidence);
   const wrongIds = mastered
     ? prev.wrongIds.filter((id) => id !== questionId)
-    : [questionId, ...prev.wrongIds.filter((id) => id !== questionId)].slice(0, 200);
+    : [questionId, ...prev.wrongIds.filter((id) => id !== questionId)].slice(0, MAX_WRONG_IDS);
 
   const stat = prev.byConfidence[confidence];
   return {

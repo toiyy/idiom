@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import {
   exportProgress,
   isMastered,
+  MAX_WRONG_IDS,
   loadProgress,
   makeEmptyProgress,
   parseProgress,
@@ -9,6 +10,7 @@ import {
   resetProgress,
   saveProgress,
 } from '../lib/storage';
+import { questions } from '../data/questions';
 
 beforeEach(() => {
   localStorage.clear();
@@ -185,5 +187,28 @@ describe('exportProgress / parseProgress', () => {
   it('wrongIds の文字列でない要素は落とす', () => {
     const parsed = parseProgress('{"answered":1,"correct":0,"wrongIds":["q1",42,null]}');
     expect(parsed?.wrongIds).toEqual(['q1']);
+  });
+});
+
+describe('復習リストの上限', () => {
+  it('問題バンクの総数を上回っている', () => {
+    // 上限が総数を下回ると、古く間違えた問題が復習モードに出てこなくなる
+    expect(MAX_WRONG_IDS).toBeGreaterThan(questions.length);
+  });
+
+  it('全問を未習得にしても 1 問も落ちない', () => {
+    let p = makeEmptyProgress();
+    for (const q of questions) p = recordAnswer(p, q.id, false, 'guess');
+    expect(p.wrongIds).toHaveLength(questions.length);
+    for (const q of questions) expect(p.wrongIds, `${q.id} が欠けている`).toContain(q.id);
+  });
+
+  it('上限を超えたぶんは古いものから捨てる', () => {
+    let p = makeEmptyProgress();
+    for (let i = 0; i < MAX_WRONG_IDS + 5; i++) p = recordAnswer(p, `q${i}`, false, 'guess');
+    expect(p.wrongIds).toHaveLength(MAX_WRONG_IDS);
+    // 直近が先頭、いちばん古い q0 は落ちている
+    expect(p.wrongIds[0]).toBe(`q${MAX_WRONG_IDS + 4}`);
+    expect(p.wrongIds).not.toContain('q0');
   });
 });
