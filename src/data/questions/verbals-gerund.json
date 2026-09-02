@@ -5,8 +5,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "The committee is considering ___ the deadline for grant applications by two weeks.",
-    "choices": ["to extend", "extending", "extension", "extended"],
-    "answerIndex": 1,
+    "choices": ["extending", "extension", "extended", "to extend"],
+    "answerIndex": 0,
     "explanation": "consider は動名詞のみを目的語にとる動詞（consider / enjoy / finish / avoid / suggest など）。to 不定詞は不可。",
     "translation": "委員会は、助成金申請の締切を2週間延長することを検討している。",
     "choiceNotes": {
@@ -23,8 +23,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "The technician is responsible for ___ the calibration records at the end of every quarter.",
-    "choices": ["to update", "updating", "updated", "update"],
-    "answerIndex": 1,
+    "choices": ["updating", "updated", "update", "to update"],
+    "answerIndex": 0,
     "explanation": "前置詞 for の後ろに動詞を続けるときは動名詞にする。",
     "translation": "その技術者は、四半期ごとに校正記録を更新する責任を負っている。",
     "choiceNotes": {
@@ -41,8 +41,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "Drivers should avoid ___ the loading area between seven and nine in the morning.",
-    "choices": ["to enter", "entering", "entered", "enter"],
-    "answerIndex": 1,
+    "choices": ["entering", "entered", "enter", "to enter"],
+    "answerIndex": 0,
     "explanation": "avoid は動名詞のみを目的語にとる動詞。to 不定詞は続けられない。",
     "translation": "運転手は午前7時から9時の間、荷積み場に入ることを避けるべきだ。",
     "choiceNotes": {
@@ -59,8 +59,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "The crew finished ___ the warehouse roof two days before the scheduled inspection.",
-    "choices": ["repaired", "repair", "to repair", "repairing"],
-    "answerIndex": 3,
+    "choices": ["repair", "to repair", "repairing", "repaired"],
+    "answerIndex": 2,
     "explanation": "finish は動名詞のみを目的語にとる動詞。",
     "translation": "作業班は予定されていた点検の2日前に、倉庫の屋根の修理を終えた。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "___ the filters regularly extends the life of the ventilation system significantly.",
-    "choices": ["Replace", "Replaced", "Replacing", "Replacement"],
-    "answerIndex": 2,
+    "choices": ["Replaced", "Replacing", "Replacement", "Replace"],
+    "answerIndex": 1,
     "explanation": "文の主語になり、かつ後ろに目的語 the filters を直接とれるのは動名詞。名詞 Replacement では of が必要になる。",
     "translation": "フィルターを定期的に交換することで、換気システムの寿命は大きく延びる。",
     "choiceNotes": {
@@ -113,8 +113,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "The older equipment is still worth ___ rather than replacing outright.",
-    "choices": ["to repair", "repairing", "repaired", "repair"],
-    "answerIndex": 1,
+    "choices": ["repair", "to repair", "repairing", "repaired"],
+    "answerIndex": 2,
     "explanation": "be worth + 動名詞 = 〜する価値がある。to 不定詞は使えない。",
     "translation": "旧式の機器は、まるごと買い替えるよりも修理する価値がまだある。",
     "choiceNotes": {
@@ -131,8 +131,8 @@
     "category": "準動詞",
     "subcategory": "動名詞",
     "sentence": "The team stopped ___ the legacy database in 2023 and moved everything to the cloud.",
-    "choices": ["updated", "update", "to update", "updating"],
-    "answerIndex": 3,
+    "choices": ["update", "to update", "updating", "updated"],
+    "answerIndex": 2,
     "explanation": "stop + 動名詞 = 〜するのをやめる。stop + to 不定詞は「〜するために立ち止まる」と意味が変わるので注意。",
     "translation": "そのチームは2023年に旧来のデータベースの更新をやめ、すべてをクラウドに移行した。",
     "choiceNotes": {
@@ -142,5 +142,131 @@
     },
     "difficulty": 3,
     "tags": ["動名詞", "stop doing/to do"]
+  },
+  {
+    "id": "p5-verbal-ger-09",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "The consultant suggested ___ the two regional offices into a single location.",
+    "choices": ["merged", "to merge", "merging", "merge"],
+    "answerIndex": 2,
+    "explanation": "suggest は動名詞を目的語にとる動詞。suggest to do の形はとらない。",
+    "translation": "コンサルタントは、2つの地域事務所を1か所に統合することを提案した。",
+    "choiceNotes": {
+      "to merge": "suggest は to 不定詞を目的語にとらない",
+      "merge": "原形。他動詞 suggested の目的語にならない",
+      "merged": "過去形・過去分詞。目的語の位置に置けない"
+    },
+    "difficulty": 2,
+    "tags": ["suggest", "動名詞のみ"]
+  },
+  {
+    "id": "p5-verbal-ger-10",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "The manufacturer is committed to ___ its carbon emissions by forty percent before 2030.",
+    "choices": ["reduce", "reducing", "reduction", "reduced"],
+    "answerIndex": 1,
+    "explanation": "be committed to の to は前置詞なので、後ろは動名詞。to 不定詞と取り違えやすい代表例。",
+    "translation": "そのメーカーは、2030年までに炭素排出量を40パーセント削減することを約束している。",
+    "choiceNotes": {
+      "reduce": "原形。前置詞 to の後ろには置けない",
+      "reduction": "名詞。後ろに目的語 its carbon emissions を直接とれない",
+      "reduced": "過去分詞。前置詞の後ろで目的語をとる形にならない"
+    },
+    "difficulty": 3,
+    "tags": ["be committed to", "to が前置詞"]
+  },
+  {
+    "id": "p5-verbal-ger-11",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "Would you mind ___ the budget review until the finance director returns?",
+    "choices": ["postpone", "postponing", "postponed", "to postpone"],
+    "answerIndex": 1,
+    "explanation": "mind は動名詞のみを目的語にとる動詞。Would you mind doing 〜? で丁寧な依頼を表す。",
+    "translation": "財務部長が戻るまで予算の見直しを延期していただけますか。",
+    "choiceNotes": {
+      "to postpone": "mind は to 不定詞を目的語にとらない",
+      "postpone": "原形。mind の目的語にならない",
+      "postponed": "過去形・過去分詞。目的語の位置に置けない"
+    },
+    "difficulty": 2,
+    "tags": ["mind", "動名詞のみ"]
+  },
+  {
+    "id": "p5-verbal-ger-12",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "The vendor denied ___ any confidential specifications with its competitors.",
+    "choices": ["share", "shared", "sharing", "to share"],
+    "answerIndex": 2,
+    "explanation": "deny は動名詞のみを目的語にとる動詞（deny / admit / avoid / postpone など）。",
+    "translation": "その業者は、機密の仕様書を競合他社と共有したことを否定した。",
+    "choiceNotes": {
+      "to share": "deny は to 不定詞を目的語にとらない",
+      "share": "原形。他動詞 denied の目的語にならない",
+      "shared": "過去形・過去分詞。目的語の位置に置けない"
+    },
+    "difficulty": 2,
+    "tags": ["deny", "動名詞のみ"]
+  },
+  {
+    "id": "p5-verbal-ger-13",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "We greatly appreciate ___ submitting the compliance report ahead of the deadline.",
+    "choices": ["you are", "your", "yours", "of you"],
+    "answerIndex": 1,
+    "explanation": "動名詞 submitting の意味上の主語は所有格で表す。your submitting 〜 で「あなたが提出してくれたこと」。",
+    "translation": "期限前にコンプライアンス報告書を提出していただき、たいへん感謝しています。",
+    "choiceNotes": {
+      "you are": "節を作る形。appreciate の目的語に that なしでは置けない",
+      "yours": "所有代名詞。後ろに動名詞を続けられない",
+      "of you": "前置詞句。appreciate の目的語にならない"
+    },
+    "difficulty": 3,
+    "tags": ["意味上の主語", "所有格+動名詞"]
+  },
+  {
+    "id": "p5-verbal-ger-14",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "I clearly remember ___ the signed invoice to the accounting department last Tuesday.",
+    "choices": ["send", "sent", "to send", "sending"],
+    "answerIndex": 3,
+    "explanation": "remember + 動名詞 = （過去に）〜したことを覚えている。last Tuesday があるので既に済んだ行為を指す。remember to do は「これから〜するのを忘れない」で意味が変わる。",
+    "translation": "先週の火曜日に署名済みの請求書を経理部へ送ったことをはっきり覚えている。",
+    "choiceNotes": {
+      "to send": "「これから送るのを忘れない」の意味になり、last Tuesday と合わない",
+      "send": "原形。remember の目的語にならない",
+      "sent": "過去形・過去分詞。remember の目的語にならない"
+    },
+    "difficulty": 3,
+    "tags": ["remember doing", "動名詞と不定詞の意味差"]
+  },
+  {
+    "id": "p5-verbal-ger-15",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "動名詞",
+    "sentence": "New users often have difficulty ___ the reporting module without a short tutorial.",
+    "choices": ["navigating", "navigated", "navigate", "to navigate"],
+    "answerIndex": 0,
+    "explanation": "have difficulty (in) doing = 〜するのに苦労する。in が省略された形で、後ろは動名詞になる。",
+    "translation": "新規利用者は、短い説明なしではレポート機能を操作するのに苦労することが多い。",
+    "choiceNotes": {
+      "navigate": "原形。difficulty の後ろには置けない",
+      "to navigate": "have difficulty は to 不定詞を続けない",
+      "navigated": "過去分詞。目的語 the reporting module をとる形にならない"
+    },
+    "difficulty": 3,
+    "tags": ["have difficulty doing"]
   }
 ]

@@ -5,8 +5,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "The conference hall ___ the annual shareholders' meeting is held seats up to 800 people.",
-    "choices": ["whose", "which", "where", "what"],
-    "answerIndex": 2,
+    "choices": ["where", "what", "whose", "which"],
+    "answerIndex": 0,
     "explanation": "空所の後ろは要素の欠けていない完全な文で、先行詞が場所を表す hall なので関係副詞 where。which なら後ろは不完全な文でなければならない。",
     "translation": "年次株主総会が開催される会議場は、最大800人を収容できる。",
     "choiceNotes": {
@@ -23,8 +23,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "March is the month ___ the company finalizes its budget for the following fiscal year.",
-    "choices": ["whom", "which", "when", "what"],
-    "answerIndex": 2,
+    "choices": ["when", "what", "whom", "which"],
+    "answerIndex": 0,
     "explanation": "先行詞が時を表す the month で、後ろが完全な文なので関係副詞 when。",
     "translation": "3月は、その会社が翌年度の予算を確定させる月だ。",
     "choiceNotes": {
@@ -41,8 +41,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "The report does not explain the reason ___ the shipment was rerouted through Seattle.",
-    "choices": ["how", "which", "why", "what"],
-    "answerIndex": 2,
+    "choices": ["what", "how", "which", "why"],
+    "answerIndex": 3,
     "explanation": "先行詞が the reason で後ろが完全な文なので関係副詞 why。",
     "translation": "その報告書は、なぜ荷物がシアトル経由に変更されたのか理由を説明していない。",
     "choiceNotes": {
@@ -59,8 +59,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "The manual describes ___ the filters should be cleaned and reinstalled after each use.",
-    "choices": ["where", "how", "which", "what"],
-    "answerIndex": 1,
+    "choices": ["what", "where", "how", "which"],
+    "answerIndex": 2,
     "explanation": "「方法」を表す関係副詞 how。the way how とは言わず、how 単独か the way 単独で使う。",
     "translation": "その説明書には、使用のたびにフィルターをどう洗浄し再取り付けするかが記されている。",
     "choiceNotes": {
@@ -77,8 +77,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "The service is available ___ a stable internet connection can be established.",
-    "choices": ["however", "whenever", "wherever", "whichever"],
-    "answerIndex": 2,
+    "choices": ["whenever", "wherever", "whichever", "however"],
+    "answerIndex": 1,
     "explanation": "場所を表す複合関係副詞 wherever = 〜する場所ならどこでも。",
     "translation": "そのサービスは、安定したインターネット接続が確立できる場所ならどこでも利用できる。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "関係詞",
     "subcategory": "関係副詞",
     "sentence": "___ complex the request may be, the support team responds within one business day.",
-    "choices": ["Wherever", "However", "Whatever", "Whenever"],
-    "answerIndex": 1,
+    "choices": ["However", "Whatever", "Whenever", "Wherever"],
+    "answerIndex": 0,
     "explanation": "「However + 形容詞 + 主語 + 動詞」= どれほど〜であっても。形容詞 complex が直後に来ている点が手がかり。",
     "translation": "どれほど複雑な依頼であっても、サポートチームは1営業日以内に対応する。",
     "choiceNotes": {
@@ -106,5 +106,167 @@
     },
     "difficulty": 3,
     "tags": ["however", "複合関係副詞"]
+  },
+  {
+    "id": "p5-reladv-07",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "The monitoring system sends an alert ___ the storage temperature exceeds five degrees.",
+    "choices": ["whoever", "however", "wherever", "whenever"],
+    "answerIndex": 3,
+    "explanation": "時を表す複合関係副詞 whenever = 〜するときはいつでも。後ろは要素の欠けていない完全な文。",
+    "translation": "監視システムは、保管温度が5度を超えるたびに警報を送る。",
+    "choiceNotes": {
+      "wherever": "場所を表すので温度の条件には合わない",
+      "whoever": "複合関係代名詞。後ろが完全な文なので入らない",
+      "however": "「どれほど〜でも」の意味で、直後に形容詞か副詞が必要"
+    },
+    "difficulty": 2,
+    "tags": ["whenever"]
+  },
+  {
+    "id": "p5-reladv-08",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "The department will implement ___ solution the external consultants recommend.",
+    "choices": ["whatever", "wherever", "however", "whenever"],
+    "answerIndex": 0,
+    "explanation": "「whatever + 名詞」= どんな〜でも。空所の直後に名詞 solution が続いている点が手がかり。",
+    "translation": "その部署は、外部コンサルタントが推奨するどんな解決策でも実行する。",
+    "choiceNotes": {
+      "however": "直後に形容詞か副詞が必要で、名詞は続けられない",
+      "whenever": "時を表す副詞なので名詞を修飾できない",
+      "wherever": "場所を表す副詞なので名詞を修飾できない"
+    },
+    "difficulty": 2,
+    "tags": ["whatever"]
+  },
+  {
+    "id": "p5-reladv-09",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "___ how carefully the glassware is packed, a small percentage always arrives broken.",
+    "choices": ["Even", "Regardless", "No matter", "Whether"],
+    "answerIndex": 2,
+    "explanation": "「No matter how + 副詞 + 主語 + 動詞」= どれほど〜でも。However carefully 〜 と同じ意味を表す。",
+    "translation": "どれほど丁寧にガラス製品を梱包しても、ごく一部は必ず割れた状態で届く。",
+    "choiceNotes": {
+      "Even": "Even how という形はない。even if なら後ろは節になる",
+      "Whether": "「〜かどうか」の意味で how とは組まない",
+      "Regardless": "regardless は of が必要で、単独では how を続けられない"
+    },
+    "difficulty": 3,
+    "tags": ["no matter how", "however"]
+  },
+  {
+    "id": "p5-reladv-10",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "The negotiations have reached a point ___ neither side is willing to make further concessions.",
+    "choices": ["where", "what", "when", "which"],
+    "answerIndex": 0,
+    "explanation": "後ろは要素の欠けていない完全な文なので関係副詞。point や situation, case のような抽象名詞にも where を使う。",
+    "translation": "交渉は、どちらの側もこれ以上譲歩する気がない段階に達している。",
+    "choiceNotes": {
+      "which": "関係代名詞。後ろが完全な文なので入らない",
+      "what": "先行詞をとらない関係代名詞。すでに a point がある",
+      "when": "先行詞が時を表していないので合わない"
+    },
+    "difficulty": 3,
+    "tags": ["where", "抽象名詞の先行詞"]
+  },
+  {
+    "id": "p5-reladv-11",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "The audit will begin in early October, ___ most of the accounting staff have returned from leave.",
+    "choices": ["when", "where", "that", "which"],
+    "answerIndex": 0,
+    "explanation": "カンマ以降で時を補足する非制限用法。先行詞は October で後ろが完全な文なので関係副詞 when。that は非制限用法では使えない。",
+    "translation": "監査は10月初旬に始まる予定で、そのころには経理部員の大半が休暇から戻っている。",
+    "choiceNotes": {
+      "that": "非制限用法（カンマの後）では使えない",
+      "which": "関係代名詞。後ろが完全な文なので入らない",
+      "where": "先行詞が場所ではないので合わない"
+    },
+    "difficulty": 3,
+    "tags": ["when", "非制限用法"]
+  },
+  {
+    "id": "p5-reladv-12",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "___ quickly the maintenance crew works, the repairs cannot be finished before Friday.",
+    "choices": ["Whatever", "Wherever", "However", "Whenever"],
+    "answerIndex": 2,
+    "explanation": "「However + 副詞 + 主語 + 動詞」= どれほど〜でも。副詞 quickly が直後に来ている点が手がかり。",
+    "translation": "整備班がどれほど速く作業しても、修理は金曜より前には終わらない。",
+    "choiceNotes": {
+      "Whenever": "時を表すので、直後に副詞を置く形にはならない",
+      "Whatever": "名詞を修飾するか単独で使う語で、副詞は続けられない",
+      "Wherever": "場所を表すので、直後に副詞を置く形にはならない"
+    },
+    "difficulty": 3,
+    "tags": ["however", "副詞の修飾"]
+  },
+  {
+    "id": "p5-reladv-13",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "Please store the tissue samples ___ the temperature remains below five degrees at all times.",
+    "choices": ["where", "what", "which", "that"],
+    "answerIndex": 0,
+    "explanation": "先行詞がなくても where は「〜する場所に」という意味で単独で使える。後ろは完全な文。",
+    "translation": "組織サンプルは、常に温度が5度未満に保たれる場所に保管してください。",
+    "choiceNotes": {
+      "which": "先行詞が必要で、後ろも完全な文なので入らない",
+      "that": "先行詞が必要で、後ろも完全な文なので入らない",
+      "what": "「〜のもの」の意味で場所を表せない"
+    },
+    "difficulty": 3,
+    "tags": ["where", "先行詞なし"]
+  },
+  {
+    "id": "p5-reladv-14",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "Employees may select ___ health plan best suits their family situation.",
+    "choices": ["whichever", "however", "whoever", "whenever"],
+    "answerIndex": 0,
+    "explanation": "「whichever + 名詞」= どちらの〜でも。限られた選択肢の中から選ぶ場面で使い、直後に名詞 health plan が続く。",
+    "translation": "従業員は、自分の家庭の状況に最も合う健康保険をどれでも選ぶことができる。",
+    "choiceNotes": {
+      "whoever": "人を表す複合関係代名詞で、名詞を修飾できない",
+      "whenever": "時を表す副詞なので名詞を修飾できない",
+      "however": "直後に形容詞か副詞が必要"
+    },
+    "difficulty": 2,
+    "tags": ["whichever"]
+  },
+  {
+    "id": "p5-reladv-15",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係副詞",
+    "sentence": "The distribution center ___ the company acquired last spring will be expanded next year.",
+    "choices": ["when", "what", "where", "which"],
+    "answerIndex": 3,
+    "explanation": "空所の後ろは acquired の目的語が欠けた不完全な文なので、関係副詞 where は使えず関係代名詞 which が入る。先行詞が場所でも、後ろが不完全なら関係代名詞になる。",
+    "translation": "その会社が昨春に取得した配送センターは、来年拡張される予定だ。",
+    "choiceNotes": {
+      "where": "関係副詞。後ろは完全な文でなければならない",
+      "when": "先行詞が時ではなく、後ろも不完全な文",
+      "what": "先行詞をとらない関係代名詞。すでに center がある"
+    },
+    "difficulty": 3,
+    "tags": ["where と which の識別", "不完全な文"]
   }
 ]

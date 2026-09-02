@@ -23,8 +23,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "The employees ___ in the pilot program will receive additional training credits.",
-    "choices": ["participated", "to participate", "participate", "participating"],
-    "answerIndex": 3,
+    "choices": ["to participate", "participate", "participating", "participated"],
+    "answerIndex": 2,
     "explanation": "名詞 employees を後ろから修飾する分詞。employees は「参加する」側なので能動の現在分詞。",
     "translation": "試験プログラムに参加する従業員は、追加の研修単位を得られる。",
     "choiceNotes": {
@@ -41,8 +41,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "All items ___ during the clearance sale are eligible for exchange within fourteen days.",
-    "choices": ["to purchase", "purchase", "purchasing", "purchased"],
-    "answerIndex": 3,
+    "choices": ["purchased", "to purchase", "purchase", "purchasing"],
+    "answerIndex": 0,
     "explanation": "名詞 items を後ろから修飾する分詞。items は「購入される」側なので受動の過去分詞。",
     "translation": "在庫処分セール期間中に購入された商品はすべて、14日以内であれば交換できる。",
     "choiceNotes": {
@@ -59,8 +59,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ that the shipment would be delayed, the manager notified all affected clients.",
-    "choices": ["Known", "To know", "Know", "Knowing"],
-    "answerIndex": 3,
+    "choices": ["To know", "Know", "Knowing", "Known"],
+    "answerIndex": 2,
     "explanation": "主語 the manager が「知っていた」側なので、能動を表す現在分詞の分詞構文。",
     "translation": "出荷が遅れると分かっていたので、部長は影響を受ける顧客全員に連絡した。",
     "choiceNotes": {
@@ -77,8 +77,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ with the previous model, the new printer uses forty percent less toner.",
-    "choices": ["To compare", "Compare", "Comparing", "Compared"],
-    "answerIndex": 3,
+    "choices": ["Comparing", "Compared", "To compare", "Compare"],
+    "answerIndex": 1,
     "explanation": "Compared with 〜 = 〜と比べると。主語 the printer は「比較される」側なので過去分詞。",
     "translation": "従来機と比べると、新しいプリンターはトナーの使用量が40パーセント少ない。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "When ___ the cutting machine, always wear insulated gloves and safety goggles.",
-    "choices": ["operated", "to operate", "operate", "operating"],
-    "answerIndex": 3,
+    "choices": ["operate", "operating", "operated", "to operate"],
+    "answerIndex": 1,
     "explanation": "副詞節の「主語 + be 動詞」が省略された形。省略された主語 you は「操作する」側なので現在分詞が残る。",
     "translation": "切断機を操作する際は、必ず絶縁手袋と保護ゴーグルを着用してください。",
     "choiceNotes": {
@@ -113,8 +113,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "The ___ figures show a twelve percent increase over the same period last year.",
-    "choices": ["revising", "revised", "revision", "revise"],
-    "answerIndex": 1,
+    "choices": ["revision", "revise", "revising", "revised"],
+    "answerIndex": 3,
     "explanation": "名詞 figures を前から修飾する分詞。数値は「修正される」側なので過去分詞 revised。",
     "translation": "修正後の数値は、昨年の同時期より12パーセントの増加を示している。",
     "choiceNotes": {
@@ -131,8 +131,8 @@
     "category": "準動詞",
     "subcategory": "分詞",
     "sentence": "___ by heavy snowfall, the delivery trucks arrived four hours behind schedule.",
-    "choices": ["Delaying", "Delayed", "To delay", "Delay"],
-    "answerIndex": 1,
+    "choices": ["Delay", "Delaying", "Delayed", "To delay"],
+    "answerIndex": 2,
     "explanation": "主語 the trucks は「遅らされた」側なので、受動を表す過去分詞の分詞構文。",
     "translation": "大雪で遅れたため、配送トラックは予定より4時間遅れて到着した。",
     "choiceNotes": {
@@ -142,5 +142,131 @@
     },
     "difficulty": 3,
     "tags": ["分詞構文", "過去分詞"]
+  },
+  {
+    "id": "p5-verbal-ptcp-09",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "The company had all the defective units ___ by the manufacturer at no additional cost.",
+    "choices": ["to replace", "replace", "replacing", "replaced"],
+    "answerIndex": 3,
+    "explanation": "「have + 目的語 + 過去分詞」= 〜してもらう・〜される。units は「交換される」側なので過去分詞。",
+    "translation": "その会社は、不良品をすべてメーカーに追加費用なしで交換してもらった。",
+    "choiceNotes": {
+      "replace": "原形にすると units が交換する側になり、意味が合わない",
+      "replacing": "現在分詞にすると units が交換する側になり、意味が合わない",
+      "to replace": "have + 目的語の後ろに to 不定詞は続かない"
+    },
+    "difficulty": 3,
+    "tags": ["have + O + 過去分詞", "使役"]
+  },
+  {
+    "id": "p5-verbal-ptcp-10",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "With the lobby renovation ___, the building will reopen to tenants on Monday morning.",
+    "choices": ["to complete", "completing", "completed", "complete"],
+    "answerIndex": 2,
+    "explanation": "「with + 目的語 + 分詞」の付帯状況。renovation は「完了させられる」側なので過去分詞。",
+    "translation": "ロビーの改装が完了したので、そのビルは月曜の朝にテナントへ再開放される。",
+    "choiceNotes": {
+      "completing": "現在分詞にすると renovation が完了させる側になり、意味が合わない",
+      "complete": "形容詞や原形では with の後ろの分詞構文にならない",
+      "to complete": "with + 目的語の後ろに to 不定詞は続かない"
+    },
+    "difficulty": 3,
+    "tags": ["with + O + 分詞", "付帯状況"]
+  },
+  {
+    "id": "p5-verbal-ptcp-11",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "___ worked in three different countries, Mr. Diaz brings an unusually broad perspective to the role.",
+    "choices": ["Have", "Had", "Having", "Having been"],
+    "answerIndex": 2,
+    "explanation": "分詞構文が主節より前の出来事を表すときは完了形の Having + 過去分詞。work は自動詞なので受動の Having been にはしない。",
+    "translation": "3つの異なる国で働いた経験から、ディアス氏はこの職務に非常に幅広い視野をもたらしている。",
+    "choiceNotes": {
+      "Have": "原形では分詞構文にならない",
+      "Had": "過去形では分詞構文にならない",
+      "Having been": "受動の形。work は自動詞なので受動にできない"
+    },
+    "difficulty": 3,
+    "tags": ["完了分詞構文", "Having + 過去分詞"]
+  },
+  {
+    "id": "p5-verbal-ptcp-12",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "___ knowing that the submission deadline had been moved up, several team members filed their reports late.",
+    "choices": ["Nothing", "None", "No", "Not"],
+    "answerIndex": 3,
+    "explanation": "分詞構文を否定するときは分詞の直前に Not を置く。Not doing 〜 = 〜しないので。",
+    "translation": "提出期限が前倒しされたことを知らなかったため、数名のチーム員が報告書を遅れて提出した。",
+    "choiceNotes": {
+      "No": "名詞を打ち消す語で、分詞は打ち消せない",
+      "None": "代名詞なので分詞の前には置けない",
+      "Nothing": "代名詞なので分詞の前には置けない"
+    },
+    "difficulty": 3,
+    "tags": ["分詞構文の否定", "Not + 分詞"]
+  },
+  {
+    "id": "p5-verbal-ptcp-13",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "The prototype ___ tested in the Munich laboratory was donated by a local engineering firm.",
+    "choices": ["is", "been", "being", "be"],
+    "answerIndex": 2,
+    "explanation": "名詞を後ろから修飾する分詞。「いま試験されている最中の」という進行中の受動を表すので being + 過去分詞。",
+    "translation": "ミュンヘンの研究所で現在試験されている試作品は、地元の技術系企業から寄贈されたものだ。",
+    "choiceNotes": {
+      "been": "been の前には have か be が必要で、単独では名詞を修飾できない",
+      "be": "原形では名詞を修飾できない",
+      "is": "定形動詞。関係代名詞なしでは名詞を修飾できない"
+    },
+    "difficulty": 3,
+    "tags": ["being + 過去分詞", "後置修飾"]
+  },
+  {
+    "id": "p5-verbal-ptcp-14",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "Three major suppliers raised their prices in June, ___ in a twelve percent increase in production costs.",
+    "choices": ["resulting", "to result", "result", "resulted"],
+    "answerIndex": 0,
+    "explanation": "カンマ以降で前の内容の結果を表す分詞構文。resulting in 〜 = その結果〜になる。",
+    "translation": "主要な供給業者3社が6月に値上げを行い、その結果、生産コストが12パーセント上昇した。",
+    "choiceNotes": {
+      "result": "原形。接続詞がないので定形動詞は置けない",
+      "resulted": "過去形。接続詞がないので定形動詞は置けない",
+      "to result": "目的を表す形になり、実際に起きた結果を表せない"
+    },
+    "difficulty": 2,
+    "tags": ["結果の分詞構文", "resulting in"]
+  },
+  {
+    "id": "p5-verbal-ptcp-15",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "分詞",
+    "sentence": "___ from the preliminary sales figures, the autumn campaign comfortably exceeded its targets.",
+    "choices": ["Judgment", "Judge", "Judged", "Judging"],
+    "answerIndex": 3,
+    "explanation": "Judging from 〜 = 〜から判断すると。意味上の主語が文の主語と一致しない慣用的な分詞構文で、形が決まっている。",
+    "translation": "暫定の売上高から判断すると、秋のキャンペーンは目標を余裕をもって上回った。",
+    "choiceNotes": {
+      "Judged": "受動の形。この慣用表現では使われない",
+      "Judge": "原形。分詞構文にならない",
+      "Judgment": "名詞。分詞構文にならない"
+    },
+    "difficulty": 3,
+    "tags": ["慣用的分詞構文", "judging from"]
   }
 ]

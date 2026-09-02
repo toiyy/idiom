@@ -5,8 +5,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "Employees are encouraged ___ the online training module before the end of the quarter.",
-    "choices": ["complete", "completing", "to complete", "completion"],
-    "answerIndex": 2,
+    "choices": ["completion", "complete", "completing", "to complete"],
+    "answerIndex": 3,
     "explanation": "encourage は「encourage + 目的語 + to do」の形をとる。受動態になると be encouraged to do となる。",
     "translation": "従業員は、四半期末までにオンライン研修講座を修了することが推奨されている。",
     "choiceNotes": {
@@ -23,8 +23,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "The company installed additional sensors ___ energy consumption in real time.",
-    "choices": ["monitored", "monitor", "to monitor", "monitoring"],
-    "answerIndex": 2,
+    "choices": ["to monitor", "monitoring", "monitored", "monitor"],
+    "answerIndex": 0,
     "explanation": "「〜するために」という目的を表す副詞的用法の to 不定詞。",
     "translation": "その会社はエネルギー消費をリアルタイムで監視するため、センサーを追加設置した。",
     "choiceNotes": {
@@ -41,8 +41,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "The revised guidelines are easy ___ and require no additional staff training.",
-    "choices": ["followed", "follow", "to follow", "following"],
-    "answerIndex": 2,
+    "choices": ["follow", "to follow", "following", "followed"],
+    "answerIndex": 1,
     "explanation": "「be + 形容詞 + to 不定詞」の形。easy to follow で「従いやすい」という意味になる。",
     "translation": "改訂された指針は分かりやすく、追加の職員研修も必要ない。",
     "choiceNotes": {
@@ -59,8 +59,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "It is essential ___ all confidential documents in the locked cabinet at the end of the day.",
-    "choices": ["stored", "store", "to store", "storing"],
-    "answerIndex": 2,
+    "choices": ["store", "to store", "storing", "stored"],
+    "answerIndex": 1,
     "explanation": "It is + 形容詞 + to 不定詞の形式主語構文。It が指す真の主語が to store 以下。",
     "translation": "一日の終わりには、機密文書をすべて施錠できるキャビネットに保管することが不可欠だ。",
     "choiceNotes": {
@@ -77,8 +77,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "The conference room is ___ to accommodate all forty participants comfortably.",
-    "choices": ["too large", "as large", "large enough", "enough large"],
-    "answerIndex": 2,
+    "choices": ["large enough", "enough large", "too large", "as large"],
+    "answerIndex": 0,
     "explanation": "「形容詞 + enough + to 不定詞」の語順。enough は形容詞を後ろから修飾する。",
     "translation": "その会議室は、40名の参加者全員をゆったり収容できる大きさだ。",
     "choiceNotes": {
@@ -95,8 +95,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "The original deadline was ___ tight for the team to complete a full quality review.",
-    "choices": ["so", "very", "enough", "too"],
-    "answerIndex": 3,
+    "choices": ["enough", "too", "so", "very"],
+    "answerIndex": 1,
     "explanation": "「too + 形容詞 + for A + to 不定詞」= A が〜するには…すぎる。so や very はこの構文を作らない。",
     "translation": "当初の締切は、チームが完全な品質確認を終えるには厳しすぎた。",
     "choiceNotes": {
@@ -113,8 +113,8 @@
     "category": "準動詞",
     "subcategory": "不定詞",
     "sentence": "The committee has no authority ___ contracts worth more than fifty thousand dollars.",
-    "choices": ["approved", "approve", "to approve", "approving"],
-    "answerIndex": 2,
+    "choices": ["approving", "approved", "approve", "to approve"],
+    "answerIndex": 3,
     "explanation": "名詞 authority を後ろから修飾する形容詞的用法の to 不定詞。",
     "translation": "その委員会には、5万ドルを超える契約を承認する権限はない。",
     "choiceNotes": {
@@ -142,5 +142,131 @@
     },
     "difficulty": 2,
     "tags": ["in order to"]
+  },
+  {
+    "id": "p5-verbal-inf-09",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "The container shipment appears ___ been held at customs since the end of last month.",
+    "choices": ["having", "had", "to be", "to have"],
+    "answerIndex": 3,
+    "explanation": "主節の appears より前の出来事なので完了不定詞 to have + 過去分詞。to have been held で「留め置かれてきたようだ」。",
+    "translation": "そのコンテナ貨物は、先月末から税関に留め置かれているようだ。",
+    "choiceNotes": {
+      "to be": "to be been という形はない。been の前には have が必要",
+      "having": "appear は to 不定詞を続ける動詞で、動名詞は続けられない",
+      "had": "過去形。appears の後ろには to 不定詞が必要"
+    },
+    "difficulty": 3,
+    "tags": ["完了不定詞", "to have + 過去分詞"]
+  },
+  {
+    "id": "p5-verbal-inf-10",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "Two licensing issues remain ___ before the software can be released to the public.",
+    "choices": ["resolved", "to resolve", "resolving", "to be resolved"],
+    "answerIndex": 3,
+    "explanation": "主語 issues は「解決される」側なので、不定詞も受動の to be + 過去分詞にする。",
+    "translation": "ソフトウェアを一般公開する前に、ライセンスに関する2つの問題が未解決のまま残っている。",
+    "choiceNotes": {
+      "to resolve": "能動の形。issues は解決する側ではなく解決される側",
+      "resolving": "能動の意味になり、後ろに目的語も必要になる",
+      "resolved": "remain resolved では「解決されたままだ」となり文意が逆になる"
+    },
+    "difficulty": 3,
+    "tags": ["受動の不定詞", "to be + 過去分詞"]
+  },
+  {
+    "id": "p5-verbal-inf-11",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "The team rushed to complete the prototype, ___ discover a critical flaw during final testing.",
+    "choices": ["so as to", "only to", "in order to", "such as to"],
+    "answerIndex": 1,
+    "explanation": "「only to + 動詞の原形」= （〜したが）結局〜しただけだった、という予期しない結果を表す。",
+    "translation": "チームは急いで試作品を完成させたが、最終試験で重大な欠陥が見つかっただけだった。",
+    "choiceNotes": {
+      "so as to": "「〜するために」という目的を表すので、望まない結果には合わない",
+      "in order to": "「〜するために」という目的を表すので文意に合わない",
+      "such as to": "such as to は「〜するほどの」の意味で、この位置では使えない"
+    },
+    "difficulty": 3,
+    "tags": ["only to", "結果の不定詞"]
+  },
+  {
+    "id": "p5-verbal-inf-12",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "It is essential ___ every applicant to submit two references before the interview.",
+    "choices": ["for", "to", "that", "of"],
+    "answerIndex": 0,
+    "explanation": "「It is + 形容詞 + for A + to 不定詞」で A が不定詞の意味上の主語になる。essential は人の性質を評価する形容詞ではないので of は使えない。",
+    "translation": "すべての応募者が面接前に2通の推薦状を提出することが不可欠だ。",
+    "choiceNotes": {
+      "of": "of を使うのは kind や careless など人の性質を評価する形容詞のとき",
+      "to": "意味上の主語を示す働きがない",
+      "that": "後ろは節でなければならず、to 不定詞は続けられない"
+    },
+    "difficulty": 3,
+    "tags": ["意味上の主語", "for + to 不定詞"]
+  },
+  {
+    "id": "p5-verbal-inf-13",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "Ms. Nakamura was the first ___ identify the discrepancy in the quarterly inventory count.",
+    "choices": ["for", "identifying", "to", "identified"],
+    "answerIndex": 2,
+    "explanation": "the first / the last / the only や最上級の後ろは to 不定詞で修飾する。the first to do = 最初に〜した人。",
+    "translation": "中村氏は、四半期の在庫数の不一致に最初に気づいた人物だった。",
+    "choiceNotes": {
+      "identifying": "動名詞では the first を修飾できない",
+      "identified": "過去分詞では the first を修飾できない",
+      "for": "前置詞の後ろに動詞の原形は続かない"
+    },
+    "difficulty": 2,
+    "tags": ["序数 + to 不定詞", "the first to do"]
+  },
+  {
+    "id": "p5-verbal-inf-14",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "The union refused ___ the revised terms until the safety clause was reinstated.",
+    "choices": ["to accept", "accept", "accepted", "accepting"],
+    "answerIndex": 0,
+    "explanation": "refuse は to 不定詞のみを目的語にとる動詞（refuse / decide / promise / hope / agree など）。動名詞は続けられない。",
+    "translation": "労働組合は、安全条項が復活するまで改定条件を受け入れることを拒んだ。",
+    "choiceNotes": {
+      "accepting": "refuse は動名詞を目的語にとらない",
+      "accept": "原形。refused の目的語にならない",
+      "accepted": "過去形・過去分詞。目的語の位置に置けない"
+    },
+    "difficulty": 2,
+    "tags": ["refuse", "不定詞のみ"]
+  },
+  {
+    "id": "p5-verbal-inf-15",
+    "part": 5,
+    "category": "準動詞",
+    "subcategory": "不定詞",
+    "sentence": "It was careless ___ the supplier to ship the wrong model to our largest client.",
+    "choices": ["with", "to", "for", "of"],
+    "answerIndex": 3,
+    "explanation": "careless や kind のように人の性質を評価する形容詞では、意味上の主語を of で示す。for を使うのは essential や difficult などの場合。",
+    "translation": "最大の取引先へ誤った型番を出荷したのは、その業者の不注意だった。",
+    "choiceNotes": {
+      "for": "for を使うのは essential や difficult など人の性質を評価しない形容詞のとき",
+      "with": "意味上の主語を示す働きがない",
+      "to": "意味上の主語を示す働きがない"
+    },
+    "difficulty": 3,
+    "tags": ["意味上の主語", "of + to 不定詞"]
   }
 ]

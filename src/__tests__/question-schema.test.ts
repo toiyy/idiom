@@ -75,7 +75,7 @@ describe('QuestionListSchema', () => {
 
 describe('同梱データ', () => {
   it('src/data/questions/*.json を読み込めている', () => {
-    expect(questions.length).toBeGreaterThanOrEqual(464);
+    expect(questions.length).toBeGreaterThanOrEqual(500);
   });
 
   it('全問がスキーマに適合する', () => {
@@ -142,6 +142,18 @@ describe('同梱データ', () => {
     ]);
     for (const s of wf?.subcategories ?? []) {
       expect(s.total).toBe(15);
+    }
+  });
+
+  it('準動詞と関係詞のサブカテゴリも 15 問に揃っている', () => {
+    // 実際に解いた結果、この 5 つの落とし方が突出していたので他と同じ厚みまで増やした
+    const cats = listCategories(questions).filter(
+      (c) => c.category === '準動詞' || c.category === '関係詞',
+    );
+    for (const c of cats) {
+      for (const s of c.subcategories) {
+        expect(s.total, `${c.category} / ${s.subcategory} の問題数`).toBe(15);
+      }
     }
   });
 

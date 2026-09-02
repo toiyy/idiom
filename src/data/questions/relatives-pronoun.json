@@ -5,8 +5,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The consultant ___ recommendations we adopted last year has been invited to speak again.",
-    "choices": ["whom", "whose", "which", "who"],
-    "answerIndex": 1,
+    "choices": ["whose", "which", "who", "whom"],
+    "answerIndex": 0,
     "explanation": "空所の直後に無冠詞の名詞 recommendations が続き「そのコンサルタントの提言」という所有関係になるため、所有格の whose が正解。",
     "translation": "昨年われわれが提言を採用したコンサルタントが、再び講演に招かれている。",
     "choiceNotes": {
@@ -23,8 +23,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "Ms. Alvarez submitted a proposal ___ impressed every member of the review panel.",
-    "choices": ["whose", "what", "who", "which"],
-    "answerIndex": 3,
+    "choices": ["who", "which", "whose", "what"],
+    "answerIndex": 1,
     "explanation": "先行詞 a proposal は「もの」で、空所の後ろは主語が欠けた不完全な文。よって主格の which が正解。what は先行詞をとらない。",
     "translation": "アルバレスさんは、審査委員全員に感銘を与えた提案書を提出した。",
     "choiceNotes": {
@@ -41,8 +41,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The engineer ___ designed the cooling system will present the findings at the conference.",
-    "choices": ["whom", "which", "whose", "who"],
-    "answerIndex": 3,
+    "choices": ["which", "whose", "who", "whom"],
+    "answerIndex": 2,
     "explanation": "先行詞 engineer は人で、空所の後ろは主語が欠けた不完全な文なので主格の who。",
     "translation": "冷却システムを設計した技師が、会議でその調査結果を発表する。",
     "choiceNotes": {
@@ -113,8 +113,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The supplier ___ delivery times were the shortest received the highest overall rating.",
-    "choices": ["which", "whose", "whom", "who"],
-    "answerIndex": 1,
+    "choices": ["whose", "whom", "who", "which"],
+    "answerIndex": 0,
     "explanation": "空所の後ろに無冠詞の名詞 delivery times が続き「その業者の納期」という所有関係になるので whose。先行詞が人でなくても whose は使える。",
     "translation": "納期が最も短かった供給業者が、総合評価で最高点を得た。",
     "choiceNotes": {
@@ -131,8 +131,8 @@
     "category": "関係詞",
     "subcategory": "関係代名詞",
     "sentence": "The training materials ___ the consultant prepared were praised by every attendee.",
-    "choices": ["what", "who", "that", "whose"],
-    "answerIndex": 2,
+    "choices": ["that", "whose", "what", "who"],
+    "answerIndex": 0,
     "explanation": "先行詞 materials は「もの」で、後ろは目的語が欠けた不完全な文。目的格の関係代名詞 that が入る。what は先行詞をとらない。",
     "translation": "そのコンサルタントが用意した研修資料は、参加者全員から高く評価された。",
     "choiceNotes": {
@@ -160,5 +160,113 @@
     },
     "difficulty": 2,
     "tags": ["those who"]
+  },
+  {
+    "id": "p5-relpron-10",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "Ms. Tan, ___ has managed the Osaka office since 2019, will lead the merger team.",
+    "choices": ["that", "which", "whose", "who"],
+    "answerIndex": 3,
+    "explanation": "カンマで区切られた非制限用法。先行詞は人の Ms. Tan で、後ろは主語が欠けた不完全な文なので主格の who。that は非制限用法では使えない。",
+    "translation": "タン氏は2019年から大阪支社を統括しており、合併チームを率いることになる。",
+    "choiceNotes": {
+      "that": "非制限用法（カンマの後）では使えない",
+      "which": "先行詞が人なので使えない",
+      "whose": "所有格。後ろに名詞が続いていない"
+    },
+    "difficulty": 2,
+    "tags": ["非制限用法", "who"]
+  },
+  {
+    "id": "p5-relpron-11",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "The firm employs sixty engineers, many of ___ specialize in structural analysis.",
+    "choices": ["whom", "who", "which", "them"],
+    "answerIndex": 0,
+    "explanation": "「数量詞 + of + 関係代名詞」で 2 つの文をつなぐ形。前置詞 of の後ろなので目的格の whom。them では接続詞がなく 2 文をつなげない。",
+    "translation": "その会社は60人の技術者を雇用しており、その多くは構造解析を専門としている。",
+    "choiceNotes": {
+      "them": "代名詞。接続詞がないので 2 つの文をつなげない",
+      "who": "主格。前置詞 of の後ろには置けない",
+      "which": "先行詞が人なので使えない"
+    },
+    "difficulty": 3,
+    "tags": ["数量詞+of+関係代名詞", "whom"]
+  },
+  {
+    "id": "p5-relpron-12",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "The auditors examined all the invoices ___ had been issued during the third quarter.",
+    "choices": ["what", "that", "who", "whose"],
+    "answerIndex": 1,
+    "explanation": "先行詞が all the invoices で、後ろは主語が欠けた不完全な文。all や最上級が付いた先行詞では関係代名詞 that を使う。",
+    "translation": "監査人は第3四半期に発行されたすべての請求書を精査した。",
+    "choiceNotes": {
+      "what": "先行詞をとらない関係代名詞。すでに invoices がある",
+      "who": "先行詞が人ではないので使えない",
+      "whose": "所有格。後ろに名詞が続いていない"
+    },
+    "difficulty": 2,
+    "tags": ["that", "all+that"]
+  },
+  {
+    "id": "p5-relpron-13",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "The board approved ___ the finance committee had proposed at the previous session.",
+    "choices": ["which", "that", "what", "whose"],
+    "answerIndex": 2,
+    "explanation": "空所の前に先行詞がなく、後ろは proposed の目的語が欠けた不完全な文。先行詞を含む関係代名詞 what（〜したこと）が入る。",
+    "translation": "取締役会は、財務委員会が前回の会議で提案した内容を承認した。",
+    "choiceNotes": {
+      "which": "先行詞が必要だが、前に名詞がない",
+      "that": "先行詞が必要。approved の直後に置くことはできない",
+      "whose": "所有格。後ろに名詞が続いていない"
+    },
+    "difficulty": 3,
+    "tags": ["what", "先行詞を含む"]
+  },
+  {
+    "id": "p5-relpron-14",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "The startup, ___ founder previously worked at a major investment bank, raised twelve million dollars.",
+    "choices": ["that", "who", "which", "whose"],
+    "answerIndex": 3,
+    "explanation": "空所の後ろに無冠詞の名詞 founder が続き「その新興企業の創業者」という所有関係になるので whose。非制限用法でも whose はそのまま使える。",
+    "translation": "その新興企業は、創業者が以前大手投資銀行に勤めていたが、1200万ドルを調達した。",
+    "choiceNotes": {
+      "which": "後ろに名詞が続いているので所有格が必要",
+      "that": "非制限用法（カンマの後）では使えない",
+      "who": "後ろに名詞が続いているので所有格が必要"
+    },
+    "difficulty": 3,
+    "tags": ["whose", "非制限用法"]
+  },
+  {
+    "id": "p5-relpron-15",
+    "part": 5,
+    "category": "関係詞",
+    "subcategory": "関係代名詞",
+    "sentence": "The candidate ___ we believe is best qualified for the position has withdrawn her application.",
+    "choices": ["whom", "who", "whose", "which"],
+    "answerIndex": 1,
+    "explanation": "we believe は挿入で、取り除くと「the candidate ___ is best qualified」となり主語が欠けている。挿入があっても主格の who のまま。",
+    "translation": "最も適任だと我々が考えていた候補者が、応募を取り下げた。",
+    "choiceNotes": {
+      "whom": "目的格。挿入を除くと is の主語が欠けているので主格が要る",
+      "whose": "所有格。後ろに名詞が続いていない",
+      "which": "先行詞が人なので使えない"
+    },
+    "difficulty": 3,
+    "tags": ["who", "連鎖関係代名詞"]
   }
 ]

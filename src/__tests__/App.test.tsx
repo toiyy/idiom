@@ -13,11 +13,12 @@ function choiceButtons(): HTMLButtonElement[] {
   return Array.from(document.querySelectorAll<HTMLButtonElement>('.choice'));
 }
 
-/** 表示中の選択肢の並びから、いま出題されている問題を特定する。 */
+/** 表示中の英文から、いま出題されている問題を特定する。
+ *  is / are / be / being のように選択肢が完全に一致する問題どうしがあるため、英文で照合する。 */
 function currentQuestion() {
-  const labels = choiceButtons().map((b) => b.querySelector('.choice__label')?.textContent);
-  const found = questions.find((q) => q.choices.every((c, i) => c === labels[i]));
-  if (!found) throw new Error(`出題中の問題を特定できませんでした: ${labels.join(' / ')}`);
+  const sentence = document.querySelector('.card__sentence')?.textContent ?? '';
+  const found = questions.find((q) => q.sentence === sentence);
+  if (!found) throw new Error(`出題中の問題を特定できませんでした: ${sentence}`);
   return found;
 }
 
@@ -46,7 +47,7 @@ async function answerAll(user: User, plan: (i: number) => { correct: boolean; co
 }
 
 /** 問題数が最も少ないカテゴリ。セッション全体を解き切るテストを短く保つために使う。 */
-const SHORT = { name: /^関係副詞/, size: 6 };
+const SHORT = { name: /^構造の取り違え/, label: /^難問 \/ 構造の取り違え/, size: 11 };
 
 beforeEach(() => {
   localStorage.clear();
@@ -221,17 +222,16 @@ describe('自信度の集計', () => {
     render(<App />);
     await user.click(screen.getByRole('button', { name: SHORT.name }));
 
-    // 自信あり 2/2、迷った 1/2、勘 1/2 になるよう解く
-    const plan: { correct: boolean; confidence: Label }[] = [
-      { correct: true, confidence: '自信あり' },
-      { correct: true, confidence: '自信あり' },
+    // 迷った 1/2、勘 1/2 と解き、残りはすべて自信ありで正解する。
+    // 問題数が変わってもこの比率が保たれるよう、先頭だけ指定して残りは埋める
+    const head: { correct: boolean; confidence: Label }[] = [
       { correct: true, confidence: '迷った' },
       { correct: false, confidence: '迷った' },
       { correct: true, confidence: '勘' },
       { correct: false, confidence: '勘' },
     ];
-    expect(sessionTotal()).toBe(plan.length);
-    await answerAll(user, (i) => plan[i]);
+    expect(sessionTotal()).toBeGreaterThan(head.length);
+    await answerAll(user, (i) => head[i] ?? { correct: true, confidence: '自信あり' });
 
     const rows = document.querySelectorAll('.conf-table tbody tr');
     expect(rows[0]).toHaveTextContent('自信あり');
@@ -308,7 +308,7 @@ describe('学習の再開', () => {
     render(<App />);
     // 自動再開はせず、ホームに再開ボタンが並ぶ
     expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
-    const resume = screen.getByRole('button', { name: /^関係詞 \/ 関係副詞/ });
+    const resume = screen.getByRole('button', { name: SHORT.label });
     expect(resume).toHaveTextContent(`2 / ${SHORT.size} 問`);
 
     await user.click(resume);
