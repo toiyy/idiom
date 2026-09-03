@@ -1020,3 +1020,18 @@ body {
   font-size: 0.8rem;
   line-height: 1.7;
 }
+
+/* 回答後にその論点の解説へ飛ぶ */
+.card__guide {
+  display: block;
+  margin: 12px 0 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  font: inherit;
+  font-size: 0.9rem;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}

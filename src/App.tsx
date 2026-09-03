@@ -59,6 +59,8 @@ export default function App() {
   const [records, setRecords] = useState<StudyRecord[]>(() => loadRecords());
   // 表示中の解説を開いた出題単位。解説は読み物なのでセッションには保存しない
   const [guideOf, setGuideOf] = useState<{ category: string; subcategory?: string } | null>(null);
+  // 解説をどこから開いたか。解いている途中なら問題に戻す
+  const [guideFrom, setGuideFrom] = useState<'home' | 'quiz'>('home');
 
   const reviewCount = useMemo(
     () => countReviewable(questions, progress.wrongIds),
@@ -234,6 +236,7 @@ export default function App() {
           onDeleteRecord={handleDeleteRecord}
           onOpenGuide={(of) => {
             setGuideOf(of);
+            setGuideFrom('home');
             setScreen('guide');
           }}
         />
@@ -242,21 +245,27 @@ export default function App() {
       {screen === 'guide' && guide && (
         <GuideView
           guide={guide}
-          targets={guide.targets.map((t) => ({
-            label: targetKey(t),
-            count: questions.filter(
-              (q) =>
-                q.category === t.category &&
-                (t.subcategory === undefined || q.subcategory === t.subcategory),
-            ).length,
-            onStart: () =>
-              startQuiz(
-                t.subcategory === undefined
-                  ? { kind: 'category', category: t.category }
-                  : { kind: 'subcategory', category: t.category, subcategory: t.subcategory },
-              ),
-          }))}
-          onBack={() => setScreen('home')}
+          // 解いている途中で開いたときは、いまのセッションを壊さないよう出題ボタンを出さない
+          targets={
+            guideFrom === 'quiz'
+              ? []
+              : guide.targets.map((t) => ({
+                  label: targetKey(t),
+                  count: questions.filter(
+                    (q) =>
+                      q.category === t.category &&
+                      (t.subcategory === undefined || q.subcategory === t.subcategory),
+                  ).length,
+                  onStart: () =>
+                    startQuiz(
+                      t.subcategory === undefined
+                        ? { kind: 'category', category: t.category }
+                        : { kind: 'subcategory', category: t.category, subcategory: t.subcategory },
+                    ),
+                }))
+          }
+          backLabel={guideFrom === 'quiz' ? '問題に戻る' : 'ホームへ'}
+          onBack={() => setScreen(guideFrom)}
         />
       )}
 
@@ -273,6 +282,15 @@ export default function App() {
             onConfidence={handleConfidence}
             onNext={handleNext}
             onPrev={handlePrev}
+            guideTitle={
+              findGuide(order[cursor].category, order[cursor].subcategory)?.title ?? undefined
+            }
+            onOpenGuide={() => {
+              const q = order[cursor];
+              setGuideOf({ category: q.category, subcategory: q.subcategory });
+              setGuideFrom('quiz');
+              setScreen('guide');
+            }}
             note={notes[order[cursor].id] ?? ''}
             onNoteChange={(text) => handleNoteChange(order[cursor].id, text)}
           />

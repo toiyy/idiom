@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { questions } from '../data/questions';
 import { parseBackup } from '../lib/backup';
-import { guides } from '../data/guides';
+import { findGuide, guides } from '../data/guides';
 
 type User = ReturnType<typeof userEvent.setup>;
 type Label = '自信あり' | '迷った' | '勘';
@@ -42,6 +42,14 @@ function sessionTotal(): number {
   const total = Number(text.split('/')[1]?.trim());
   if (!Number.isFinite(total)) throw new Error(`問題数を読み取れませんでした: "${text}"`);
   return total;
+}
+
+/** 選択 → 自信度まで進める。「次へ」は押さないので同じ問題に留まる。 */
+async function answerCurrent(user: User, opts: { correct: boolean; confidence: Label }) {
+  const q = currentQuestion();
+  const pick = opts.correct ? q.answerIndex : (q.answerIndex + 1) % 4;
+  await user.click(choiceButtons()[pick]);
+  await user.click(screen.getByRole('button', { name: new RegExp(opts.confidence) }));
 }
 
 /** セッションを最後まで解き切る。plan(i) が i 問目の解き方を返す。 */
@@ -987,5 +995,58 @@ describe('学習記録', () => {
     });
     await user.click(screen.getByRole('button', { name: '読み込む' }));
     expect(screen.getByRole('heading', { name: '記録（1 件）' })).toBeInTheDocument();
+  });
+});
+
+describe('問題から解説へ飛ぶ', () => {
+  it('回答するとその論点の解説リンクが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    expect(screen.queryByRole('button', { name: /解説を読む/ })).toBeNull();
+
+    const q = currentQuestion();
+    await user.click(choiceButtons()[q.answerIndex]);
+    await user.click(screen.getByRole('button', { name: /自信あり/ }));
+
+    const guide = findGuide(q.category, q.subcategory)!;
+    expect(screen.getByRole('button', { name: `${guide.title} の解説を読む` })).toBeInTheDocument();
+  });
+
+  it('解説から問題に戻ると同じ問題が同じ状態で出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    const q = currentQuestion();
+    await answerCurrent(user, { correct: false, confidence: '勘' });
+
+    await user.click(screen.getByRole('button', { name: /解説を読む/ }));
+    expect(screen.getByRole('heading', { name: findGuide(q.category)!.title })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: '問題に戻る' }));
+    expect(currentQuestion()).toBe(q);
+    // 正誤も自信度もそのまま
+    expect(document.querySelector('.card__verdict')).toHaveTextContent('不正解');
+    expect(document.querySelector('.card__verdict')).toHaveTextContent('勘');
+  });
+
+  it('解いている途中に開いた解説には出題ボタンを出さない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await answerCurrent(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: /解説を読む/ }));
+
+    // ここで出題を始めると解きかけのセッションが消えてしまう
+    expect(screen.queryByRole('button', { name: /を解く（/ })).toBeNull();
+    expect(screen.queryByRole('button', { name: 'ホームへ' })).toBeNull();
+  });
+
+  it('ホームから開いた解説には出題ボタンが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: '解説（数量詞）' }));
+    expect(screen.getByRole('button', { name: /^数量詞を解く（/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'ホームへ' })).toBeInTheDocument();
   });
 });

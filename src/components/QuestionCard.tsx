@@ -14,6 +14,9 @@ interface QuestionCardProps {
   onNext: () => void;
   /** 直前の問題を見返す。1 問目では呼ばれない。 */
   onPrev: () => void;
+  /** この問題のカテゴリの解説名。解説がなければ undefined。 */
+  guideTitle?: string;
+  onOpenGuide: () => void;
   /** この問題に付けたメモ。未記入なら空文字。 */
   note: string;
   onNoteChange: (text: string) => void;
@@ -43,6 +46,8 @@ export function QuestionCard({
   onConfidence,
   onNext,
   onPrev,
+  guideTitle,
+  onOpenGuide,
   note,
   onNoteChange,
 }: QuestionCardProps) {
@@ -118,6 +123,13 @@ export function QuestionCard({
           </p>
           <p className="card__translation">{question.translation}</p>
           <p className="card__explanation">{question.explanation}</p>
+
+          {/* 解説へは回答後にだけ行けるようにする。カテゴリ名は解く前だとヒントになるため */}
+          {guideTitle !== undefined && (
+            <button type="button" className="card__guide" onClick={onOpenGuide}>
+              {guideTitle} の解説を読む
+            </button>
+          )}
 
           {/* 間違えた理由や自分なりの覚え方を残す。入力するそばから保存する */}
           <label className="note">

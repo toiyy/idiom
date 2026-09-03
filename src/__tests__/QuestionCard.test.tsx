@@ -26,6 +26,7 @@ function setup(selectedIndex: number | null, confidence: Confidence | null, inde
   const onConfidence = vi.fn();
   const onNext = vi.fn();
   const onPrev = vi.fn();
+  const onOpenGuide = vi.fn();
   const onNoteChange = vi.fn();
   render(
     <QuestionCard
@@ -38,11 +39,13 @@ function setup(selectedIndex: number | null, confidence: Confidence | null, inde
       onConfidence={onConfidence}
       onNext={onNext}
       onPrev={onPrev}
+      guideTitle="時制"
+      onOpenGuide={onOpenGuide}
       note={note}
       onNoteChange={onNoteChange}
     />,
   );
-  return { onSelect, onConfidence, onNext, onPrev, onNoteChange };
+  return { onSelect, onConfidence, onNext, onPrev, onOpenGuide, onNoteChange };
 }
 
 describe('QuestionCard', () => {
@@ -172,5 +175,25 @@ describe('前後の移動', () => {
     setup(2, 'sure', 1);
     expect(screen.getByRole('button', { name: /前へ/ })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /次の問題へ/ })).toBeInTheDocument();
+  });
+});
+
+describe('解説へのリンク', () => {
+  it('回答前は出ない', () => {
+    setup(null, null);
+    expect(screen.queryByRole('button', { name: /解説を読む/ })).toBeNull();
+  });
+
+  it('自信度を申告するまでは出ない', () => {
+    // カテゴリ名が見えると答えのヒントになるため
+    setup(2, null);
+    expect(screen.queryByRole('button', { name: /解説を読む/ })).toBeNull();
+  });
+
+  it('回答後に押すと通知する', async () => {
+    const user = userEvent.setup();
+    const { onOpenGuide } = setup(2, 'sure');
+    await user.click(screen.getByRole('button', { name: '時制 の解説を読む' }));
+    expect(onOpenGuide).toHaveBeenCalledTimes(1);
   });
 });

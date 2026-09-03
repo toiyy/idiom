@@ -3,8 +3,12 @@ import type { Guide } from '../types/guide';
 
 interface GuideViewProps {
   guide: Guide;
-  /** 受け持つ出題単位。読み終えてすぐ解きに行けるようにする。 */
+  /**
+   * 受け持つ出題単位。読み終えてすぐ解きに行けるようにする。
+   * 解いている途中で開いたときは、いまのセッションを壊さないよう空にする。
+   */
   targets: { label: string; count: number; onStart: () => void }[];
+  backLabel: string;
   onBack: () => void;
 }
 
@@ -14,7 +18,7 @@ interface GuideViewProps {
  * 覚えるべき要点だけを並べて通しで復習できるようにし、
  * 詳しい説明・表・例文は畳んでおいて必要なときだけ開く。
  */
-export function GuideView({ guide, targets, onBack }: GuideViewProps) {
+export function GuideView({ guide, targets, backLabel, onBack }: GuideViewProps) {
   const [openSections, setOpenSections] = useState<ReadonlySet<string>>(new Set());
   const allOpen = openSections.size === guide.sections.length;
 
@@ -153,7 +157,7 @@ export function GuideView({ guide, targets, onBack }: GuideViewProps) {
           </button>
         ))}
         <button type="button" className="btn btn--ghost" onClick={onBack}>
-          ホームへ
+          {backLabel}
         </button>
       </div>
     </section>
