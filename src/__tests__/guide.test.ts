@@ -4,7 +4,8 @@ import { findGuide, guides } from '../data/guides';
 import { questions } from '../data/questions';
 
 const valid = {
-  category: '数量詞',
+  title: '数量詞',
+  categories: ['数量詞'],
   summary: 'まず名詞が可算か不可算かを見る。',
   sections: [
     { heading: '1. 可算か不可算か', point: '名詞を先に見る。', body: ['後ろの名詞で決まる。'] },
@@ -79,12 +80,16 @@ describe('同梱データ', () => {
   it('解説のカテゴリが実在する', () => {
     const known = new Set(questions.map((q) => q.category));
     for (const g of guides) {
-      expect(known, `${g.category} というカテゴリはない`).toContain(g.category);
+      for (const c of g.categories) {
+        expect(known, `${c} というカテゴリはない`).toContain(c);
+      }
     }
   });
 
   it('findGuide でカテゴリ名から引ける', () => {
-    for (const g of guides) expect(findGuide(g.category)).toBe(g);
+    for (const g of guides) {
+      for (const c of g.categories) expect(findGuide(c)).toBe(g);
+    }
     expect(findGuide('存在しないカテゴリ')).toBeUndefined();
   });
 
@@ -98,7 +103,7 @@ describe('同梱データ', () => {
   it('例文に空所が残っていない', () => {
     for (const g of guides) {
       for (const ex of g.sections.flatMap((s) => s.examples ?? [])) {
-        expect(ex.en, `${g.category}: 空所が残っている`).not.toContain('___');
+        expect(ex.en, `${g.title}: 空所が残っている`).not.toContain('___');
       }
     }
   });
@@ -107,9 +112,7 @@ describe('同梱データ', () => {
     for (const g of guides) {
       for (const s of g.sections) {
         if (s.point === undefined) continue;
-        expect(s.point.length, `${g.category} / ${s.heading} の要点が長い`).toBeLessThanOrEqual(
-          120,
-        );
+        expect(s.point.length, `${g.title} / ${s.heading} の要点が長い`).toBeLessThanOrEqual(120);
       }
     }
   });
@@ -120,10 +123,9 @@ describe('同梱データ', () => {
       for (const s of g.sections) {
         for (const c of s.columns ?? []) {
           for (const item of c.items) {
-            expect(
-              item.length,
-              `${g.category} / ${c.title} の「${item}」が長い`,
-            ).toBeLessThanOrEqual(40);
+            expect(item.length, `${g.title} / ${c.title} の「${item}」が長い`).toBeLessThanOrEqual(
+              40,
+            );
           }
         }
       }
@@ -134,7 +136,7 @@ describe('同梱データ', () => {
     for (const g of guides) {
       for (const c of g.sections.flatMap((s) => s.columns ?? [])) {
         for (const item of c.items) {
-          expect(item, `${g.category} / ${c.title}`).not.toContain('　');
+          expect(item, `${g.title} / ${c.title}`).not.toContain('　');
         }
       }
     }
@@ -144,7 +146,7 @@ describe('同梱データ', () => {
     // 節をまとめたときに番号の振り直し漏れがあると読み手が混乱する
     for (const g of guides) {
       g.sections.forEach((s, i) => {
-        expect(s.heading, `${g.category} の ${i + 1} 番目`).toMatch(new RegExp(`^${i + 1}\\.`));
+        expect(s.heading, `${g.title} の ${i + 1} 番目`).toMatch(new RegExp(`^${i + 1}\\.`));
       });
     }
   });
@@ -152,7 +154,7 @@ describe('同梱データ', () => {
   it('節の見出しが重複していない', () => {
     for (const g of guides) {
       const headings = g.sections.map((s) => s.heading);
-      expect(new Set(headings).size, `${g.category}: 見出しが重複`).toBe(headings.length);
+      expect(new Set(headings).size, `${g.title}: 見出しが重複`).toBe(headings.length);
     }
   });
 });

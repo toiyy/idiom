@@ -630,21 +630,28 @@ describe('前の問題に戻る', () => {
 });
 
 describe('カテゴリ解説', () => {
+  /** 数量詞の解説を開く。解説を増やしても指す先が変わらないよう名指しする。 */
+  const GUIDE = guides.find((g) => g.categories.includes('数量詞'))!;
+
+  async function openGuide(user: User) {
+    await user.click(screen.getByRole('button', { name: '数量詞 の解説' }));
+  }
+
   it('解説のあるカテゴリにだけ「解説」ボタンが出る', () => {
     render(<App />);
-    const guided = screen.getAllByRole('button', { name: '解説' });
+    const guided = screen.getAllByRole('button', { name: / の解説$/ });
     expect(guided.length).toBeGreaterThan(0);
     // 解説を持たないカテゴリの分まで出ていないこと
-    expect(guided).toHaveLength(guides.length);
+    expect(guided).toHaveLength(guides.flatMap((g) => g.categories).length);
   });
 
   it('開いた直後は全節の要点だけが並び、詳細は畳まれている', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
 
-    const guide = guides[0];
-    expect(screen.getByRole('heading', { name: guide.category })).toBeInTheDocument();
+    const guide = GUIDE;
+    expect(screen.getByRole('heading', { name: guide.title })).toBeInTheDocument();
     expect(screen.getByText(guide.summary)).toBeInTheDocument();
     for (const section of guide.sections) {
       expect(screen.getByRole('heading', { name: section.heading })).toBeInTheDocument();
@@ -663,7 +670,7 @@ describe('カテゴリ解説', () => {
   it('「詳しく」を押した節だけが開く', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
 
     const buttons = screen.getAllByRole('button', { name: /詳しく/ });
     const count = buttons.length;
@@ -676,7 +683,7 @@ describe('カテゴリ解説', () => {
   it('すべて開くと表と例文が出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
     await user.click(screen.getByRole('button', { name: 'すべて開く' }));
 
     expect(screen.queryAllByRole('button', { name: /詳しく/ })).toHaveLength(0);
@@ -687,16 +694,42 @@ describe('カテゴリ解説', () => {
     expect(screen.getAllByRole('button', { name: /詳しく/ }).length).toBeGreaterThan(0);
   });
 
+  it('複数カテゴリの解説には、カテゴリごとの開始ボタンが並ぶ', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    const multi = guides.find((g) => g.categories.length > 1);
+    if (!multi) return;
+
+    await user.click(screen.getByRole('button', { name: `${multi.categories[0]} の解説` }));
+    for (const category of multi.categories) {
+      const size = questions.filter((q) => q.category === category).length;
+      expect(
+        screen.getByRole('button', { name: `${category}を解く（${size} 問）` }),
+      ).toBeInTheDocument();
+    }
+  });
+
+  it('まとめた解説はどのカテゴリからでも同じものが開く', async () => {
+    const user = userEvent.setup();
+    const multi = guides.find((g) => g.categories.length > 1);
+    if (!multi) return;
+
+    for (const category of multi.categories) {
+      const { unmount } = render(<App />);
+      await user.click(screen.getByRole('button', { name: `${category} の解説` }));
+      expect(screen.getByRole('heading', { name: multi.title })).toBeInTheDocument();
+      unmount();
+    }
+  });
+
   it('解説からそのカテゴリを解き始められる', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
 
-    const category = guides[0].category;
+    const category = GUIDE.categories[0];
     const size = questions.filter((q) => q.category === category).length;
-    await user.click(
-      screen.getByRole('button', { name: new RegExp(`このカテゴリを解く（${size} 問）`) }),
-    );
+    await user.click(screen.getByRole('button', { name: `${category}を解く（${size} 問）` }));
 
     expect(sessionTotal()).toBe(size);
     expect(currentQuestion().category).toBe(category);
@@ -705,7 +738,7 @@ describe('カテゴリ解説', () => {
   it('解説からホームに戻れる', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
     await user.click(screen.getByRole('button', { name: 'ホームへ' }));
     expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
   });
@@ -717,7 +750,7 @@ describe('カテゴリ解説', () => {
     await answer(user, { correct: true, confidence: '自信あり' });
     await user.click(screen.getByRole('button', { name: '中断' }));
 
-    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await openGuide(user);
     await user.click(screen.getByRole('button', { name: 'ホームへ' }));
     expect(screen.getByRole('button', { name: SHORT.label })).toBeInTheDocument();
   });

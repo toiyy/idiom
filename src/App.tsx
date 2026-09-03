@@ -211,8 +211,11 @@ export default function App() {
       {screen === 'guide' && guide && (
         <GuideView
           guide={guide}
-          questionCount={questions.filter((q) => q.category === guide.category).length}
-          onStart={() => startQuiz({ kind: 'category', category: guide.category })}
+          targets={guide.categories.map((category) => ({
+            category,
+            count: questions.filter((q) => q.category === category).length,
+          }))}
+          onStart={(category) => startQuiz({ kind: 'category', category })}
           onBack={() => setScreen('home')}
         />
       )}

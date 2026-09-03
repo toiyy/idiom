@@ -1,0 +1,287 @@
+{
+  "title": "関係詞・名詞節",
+  "categories": ["関係詞", "名詞節"],
+  "summary": "関係詞も名詞節も、決め手は「空所の後ろが完全な文か、要素が欠けた不完全な文か」の一点。ここに「先行詞があるか」を掛け合わせれば、どの語が入るかは機械的に決まる。",
+  "sections": [
+    {
+      "heading": "1. 後ろの文と先行詞で決まる",
+      "point": "主語か目的語が欠けていれば不完全。何も欠けていなければ完全。先行詞の有無と組み合わせて 4 通りに分かれる。",
+      "columns": [
+        {
+          "title": "先行詞あり × 不完全 — 関係代名詞",
+          "items": [
+            "who 人・主語が欠けている",
+            "whom 人・目的語が欠けている",
+            "which もの",
+            "that 人ともの両方",
+            "whose + 無冠詞名詞"
+          ]
+        },
+        {
+          "title": "先行詞あり × 完全 — 関係副詞",
+          "items": ["where 場所", "when 時", "why 理由", "how 方法", "前置詞 + which"]
+        },
+        {
+          "title": "先行詞なし × 不完全 — what 型",
+          "items": [
+            "what 〜するもの・こと",
+            "Those who 〜する人々",
+            "whoever 〜する人は誰でも",
+            "whatever + 名詞",
+            "whichever + 名詞"
+          ]
+        },
+        {
+          "title": "先行詞なし × 完全 — 接続詞・疑問詞",
+          "items": [
+            "that 〜ということ",
+            "whether 〜かどうか",
+            "if 〜かどうか",
+            "疑問詞 + 主語 + 動詞",
+            "疑問詞 + to 不定詞"
+          ]
+        }
+      ],
+      "body": [
+        "「不完全な文」とは、主語か目的語、または前置詞の目的語が欠けている文のこと。The engineer ___ designed the system では designed の主語がないので不完全、March is the month ___ the company finalizes its budget では要素が揃っているので完全になる。",
+        "先行詞とは、関係詞が指し示す前の名詞のこと。The board approved ___ the committee had proposed のように前に名詞がなければ先行詞なしで、先行詞を含む what が入る。",
+        "この 2 つを見るだけで、関係代名詞・関係副詞・what・接続詞 that の 4 系統に絞り込める。人かモノかを見るのはそのあとでよい。"
+      ],
+      "table": {
+        "headers": ["先行詞", "後ろが不完全", "後ろが完全"],
+        "rows": [
+          [
+            "先行詞あり",
+            "who / whom / which / that / whose",
+            "where / when / why / 前置詞 + which"
+          ],
+          ["先行詞なし", "what / whoever / whatever", "that / whether / if / 疑問詞"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The engineer who designed the cooling system will present the findings.",
+          "ja": "冷却装置を設計した技術者が、その結果を発表する。",
+          "ok": true,
+          "note": "designed の主語が欠けている＝不完全。先行詞 engineer は人なので who"
+        },
+        {
+          "en": "March is the month when the company finalizes its budget.",
+          "ja": "3月は会社が予算を確定させる月だ。",
+          "ok": true,
+          "note": "要素が揃っている＝完全。先行詞 month は時なので関係副詞 when"
+        },
+        {
+          "en": "The board approved what the finance committee had proposed.",
+          "ja": "取締役会は、財務委員会が提案した内容を承認した。",
+          "ok": true,
+          "note": "proposed の目的語が欠けていて、前に先行詞もない。先行詞を含む what"
+        },
+        {
+          "en": "The announcement that the factory will close came as a shock.",
+          "ja": "工場が閉鎖されるという知らせは、衝撃をもって受け止められた。",
+          "ok": true,
+          "note": "後ろは完全な文。名詞の内容を説明する同格の that"
+        },
+        {
+          "en": "The distribution center which the company acquired will be expanded.",
+          "ja": "その会社が取得した配送センターは拡張される予定だ。",
+          "ok": true,
+          "note": "先行詞が場所でも、acquired の目的語が欠けていれば関係代名詞。where は入らない"
+        }
+      ],
+      "pitfall": "先行詞が場所や時であっても、後ろが不完全なら関係副詞は使えない。where と which の識別はここで決まる。"
+    },
+    {
+      "heading": "2. 前置詞・カンマの後ろは形が限られる",
+      "point": "前置詞の直後とカンマの後ろでは that が使えない。前置詞 + which の後ろは完全な文になる。",
+      "columns": [
+        {
+          "title": "前置詞の直後 — which か whom",
+          "items": [
+            "in which = where",
+            "on which = when",
+            "to whom 人",
+            "of which もの",
+            "後ろは完全な文"
+          ]
+        },
+        {
+          "title": "カンマの後ろ — 非制限用法",
+          "items": [
+            ", who 人",
+            ", which もの",
+            ", whose + 名詞",
+            ", when / where",
+            ", which は前の文全体も受ける"
+          ]
+        },
+        {
+          "title": "数量詞 + of + 関係代名詞",
+          "items": ["many of whom 人", "some of which もの", "all of which", "both of whom"]
+        }
+      ],
+      "body": [
+        "前置詞の直後に置けるのは which と whom だけ。that と who は置けない。前置詞が付いたぶん要素が埋まるので、後ろは完全な文になる。The laboratory in which the samples are stored の in which は where に置き換えられる。",
+        "カンマで区切る非制限用法では that が使えない。カンマ以降の which は、直前の名詞だけでなく前の文全体を受けることもある。",
+        "「many of whom」のように数量詞 + of + 関係代名詞にすると、接続詞なしで 2 つの文をつなげる。them のような代名詞では文をつなげない。"
+      ],
+      "examples": [
+        {
+          "en": "The laboratory in which the tissue samples are stored is kept cold.",
+          "ja": "組織サンプルが保管されている研究室は低温に保たれている。",
+          "ok": true,
+          "note": "in which の後ろは完全な文。where に置き換えられる"
+        },
+        {
+          "en": "The factory expanded its output, which exceeded the original forecast.",
+          "ja": "その工場は生産量を拡大し、それは当初の予測を上回った。",
+          "ok": true,
+          "note": "カンマ以降の which が前の文全体を受けている。that は非制限用法では使えない"
+        },
+        {
+          "en": "The firm employs sixty engineers, many of whom specialize in analysis.",
+          "ja": "その会社は60人の技術者を雇用しており、その多くは解析を専門としている。",
+          "ok": true,
+          "note": "many of them では接続詞がなく 2 文をつなげない"
+        }
+      ],
+      "pitfall": "that は「前置詞の直後」と「カンマの後ろ」の 2 か所で使えない。この 2 つを覚えておけば that を選ぶ場面かどうかが判断できる。"
+    },
+    {
+      "heading": "3. 名詞節で問われること",
+      "point": "whether と if は置ける場所が違う。間接疑問は疑問文の語順に戻さない。",
+      "columns": [
+        {
+          "title": "whether だけが使える",
+          "items": ["前置詞の後ろ", "or not の直前", "to 不定詞の前", "文の主語・補語"]
+        },
+        {
+          "title": "if も使える",
+          "items": ["ask / know / wonder の目的語", "see if / check if"]
+        },
+        {
+          "title": "間接疑問の語順",
+          "items": ["疑問詞 + 主語 + 動詞", "when the address will begin", "疑問文の語順に戻さない"]
+        },
+        {
+          "title": "同格の that",
+          "items": [
+            "名詞 + that + 完全な文",
+            "the announcement that ...",
+            "the fact / news / idea + that"
+          ]
+        }
+      ],
+      "body": [
+        "whether と if はどちらも「〜かどうか」だが、if を置ける場所は動詞の目的語に限られる。前置詞の後ろ、or not の直前、to 不定詞の前、文の主語や補語では whether しか使えない。",
+        "疑問詞が名詞節を作るときは、疑問文の語順に戻さない。when will the address begin ではなく when the address will begin となる。",
+        "名詞の直後に that + 完全な文が続くのは同格。関係代名詞の that は後ろが不完全になるので、完全か不完全かで見分けられる。"
+      ],
+      "table": {
+        "headers": ["場所", "whether", "if"],
+        "rows": [
+          ["動詞の目的語", "○", "○"],
+          ["前置詞の後ろ", "○", "×"],
+          ["or not の直前", "○", "×"],
+          ["to 不定詞の前", "○", "×"],
+          ["文の主語・補語", "○", "×"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The final decision depends on whether the supplier can meet our schedule.",
+          "ja": "最終決定は、その業者が我々の日程に間に合うかどうかによる。",
+          "ok": true,
+          "note": "前置詞 on の後ろなので if は使えない"
+        },
+        {
+          "en": "Please indicate whether or not you will require overnight accommodation.",
+          "ja": "宿泊が必要かどうかをお知らせください。",
+          "ok": true,
+          "note": "or not が直後にあるので whether"
+        },
+        {
+          "en": "The organizers have not yet decided when the keynote address will begin.",
+          "ja": "主催者は基調講演の開始時刻をまだ決めていない。",
+          "ok": true,
+          "note": "間接疑問なので when will ではなく when + 主語 + 動詞"
+        }
+      ],
+      "pitfall": "同格の that と関係代名詞の that は形が同じ。後ろが完全なら同格、不完全なら関係代名詞と判断する。"
+    },
+    {
+      "heading": "4. 複合関係詞",
+      "point": "-ever は名詞節と副詞節の両方を作る。however だけは直後に形容詞か副詞が来る。",
+      "columns": [
+        {
+          "title": "名詞を修飾する",
+          "items": ["whatever + 名詞 どんな〜でも", "whichever + 名詞 どちらの〜でも"]
+        },
+        {
+          "title": "単独で使う",
+          "items": [
+            "whoever 〜する人は誰でも",
+            "whomever 目的格",
+            "whenever 〜するときはいつでも",
+            "wherever 〜する場所ならどこでも"
+          ]
+        },
+        {
+          "title": "however 型 — 形容詞・副詞が続く",
+          "items": [
+            "However + 形容詞 + 主語 + 動詞",
+            "However + 副詞 + 主語 + 動詞",
+            "No matter how + 形容詞 + 主語 + 動詞"
+          ]
+        }
+      ],
+      "body": [
+        "whatever と whichever は直後に名詞を置いて修飾できる。whoever / whenever / wherever は単独で使う。",
+        "however は「どれほど〜でも」の意味で、直後に形容詞か副詞が来るのが目印。However complex the request may be のように、その後ろに主語と動詞が続く。No matter how で言い換えられる。",
+        "whoever は名詞節の中で主語になるときの形。前置詞や動詞の目的語になるなら whomever を使う。"
+      ],
+      "examples": [
+        {
+          "en": "The department will implement whatever solution the consultants recommend.",
+          "ja": "その部署は、コンサルタントが推奨するどんな解決策でも実行する。",
+          "ok": true,
+          "note": "直後に名詞 solution が続いている"
+        },
+        {
+          "en": "However complex the request may be, the team responds within one day.",
+          "ja": "要望がどれほど複雑でも、チームは1営業日以内に対応する。",
+          "ok": true,
+          "note": "直後に形容詞 complex。この位置に来られるのは however だけ"
+        },
+        {
+          "en": "Whoever submits the winning design will receive a paid residency.",
+          "ja": "入賞作品を提出した人は誰でも、有給の滞在機会を得られる。",
+          "ok": true,
+          "note": "名詞節の中で submits の主語なので主格の Whoever"
+        }
+      ]
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "人かモノかを見るのは最後でよい。まず後ろの文、次に先行詞。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の後ろが完全か不完全か",
+            "② 前に先行詞があるか",
+            "③ 前置詞やカンマの直後ではないか",
+            "④ 最後に人かモノかで who / which"
+          ]
+        }
+      ],
+      "body": [
+        "空所の後ろを見て、主語か目的語が欠けていないかを確かめる。欠けていれば関係代名詞か what、欠けていなければ関係副詞か接続詞 that。",
+        "空所の前に名詞があるかを見る。あれば関係詞、なければ what / whether / that / 疑問詞。",
+        "空所が前置詞の直後かカンマの後ろなら、that は候補から外れる。前置詞の直後なら which か whom に絞られる。",
+        "ここまで来てはじめて、先行詞が人かモノかで who と which を選ぶ。この順番で見れば、選択肢の意味を考えずに済む問題が多い。"
+      ]
+    }
+  ]
+}

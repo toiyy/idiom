@@ -110,6 +110,7 @@ export function HomeScreen({
                 <button
                   type="button"
                   className="category__guide"
+                  aria-label={`${c.category} の解説`}
                   onClick={() => onOpenGuide(c.category)}
                 >
                   解説
@@ -122,15 +123,27 @@ export function HomeScreen({
         {/* サブカテゴリを持つカテゴリは、見出し + サブカテゴリの 2 段で出す */}
         {nested.map((c) => (
           <div className="category-group" key={c.category}>
-            <button
-              type="button"
-              className="category-group__head"
-              onClick={() => onStart({ kind: 'category', category: c.category })}
-            >
-              <span className="category-group__name">{c.category}</span>
-              <span className="category-group__all">すべて</span>
-              <Count total={c.total} wrong={c.wrong} />
-            </button>
+            <div className="category-group__bar">
+              <button
+                type="button"
+                className="category-group__head"
+                onClick={() => onStart({ kind: 'category', category: c.category })}
+              >
+                <span className="category-group__name">{c.category}</span>
+                <span className="category-group__all">すべて</span>
+                <Count total={c.total} wrong={c.wrong} />
+              </button>
+              {findGuide(c.category) && (
+                <button
+                  type="button"
+                  className="category__guide"
+                  aria-label={`${c.category} の解説`}
+                  onClick={() => onOpenGuide(c.category)}
+                >
+                  解説
+                </button>
+              )}
+            </div>
             <div className="category-list">
               {c.subcategories.map((s) => (
                 <button

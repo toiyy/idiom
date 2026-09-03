@@ -74,8 +74,13 @@ const SectionSchema = z
 
 export const GuideSchema = z
   .object({
-    /** 対応するカテゴリ名。問題データの category と一致させる。 */
-    category: z.string().min(1),
+    /** 画面に出す見出し。複数カテゴリをまとめた解説では「関係詞・名詞節」のようになる。 */
+    title: z.string().min(1),
+    /**
+     * この解説が受け持つカテゴリ名。問題データの category と一致させる。
+     * 同じ軸で説明できるカテゴリは 1 本の解説にまとめられる。
+     */
+    categories: z.array(z.string().min(1)).min(1),
     /** 冒頭の要約。このカテゴリで何が問われるかを 1〜2 文で。 */
     summary: z.string().min(1),
     sections: z.array(SectionSchema).min(1),
@@ -83,12 +88,15 @@ export const GuideSchema = z
   .strict();
 
 export const GuideListSchema = z.array(GuideSchema).superRefine((guides, ctx) => {
+  // 1 つのカテゴリを 2 本の解説が取り合うと、どちらを開くか決められなくなる
   const seen = new Set<string>();
   for (const g of guides) {
-    if (seen.has(g.category)) {
-      ctx.addIssue({ code: z.ZodIssueCode.custom, message: `カテゴリが重複: ${g.category}` });
+    for (const category of g.categories) {
+      if (seen.has(category)) {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, message: `カテゴリが重複: ${category}` });
+      }
+      seen.add(category);
     }
-    seen.add(g.category);
   }
 });
 

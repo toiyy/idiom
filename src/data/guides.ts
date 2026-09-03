@@ -20,7 +20,8 @@ function loadAll(): Guide[] {
 
 export const guides: Guide[] = loadAll();
 
-const byCategory = new Map(guides.map((g) => [g.category, g]));
+// 1 本の解説が複数カテゴリを受け持つので、カテゴリ名から引けるよう展開しておく
+const byCategory = new Map(guides.flatMap((g) => g.categories.map((c) => [c, g] as const)));
 
 export function findGuide(category: string): Guide | undefined {
   return byCategory.get(category);
