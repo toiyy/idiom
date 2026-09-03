@@ -1,0 +1,244 @@
+{
+  "title": "助動詞",
+  "targets": [
+    {
+      "category": "助動詞"
+    }
+  ],
+  "summary": "助動詞の後ろは必ず原形。過去のことを言うときは助動詞を過去形にせず、後ろを have + 過去分詞にする。あとは形の決まった慣用表現をいくつ知っているかで決まる。",
+  "sections": [
+    {
+      "heading": "1. 助動詞の後ろは原形",
+      "point": "助動詞が並ぶことはないので、2 つ重ねたいときは片方を代用形に置き換える。",
+      "columns": [
+        {
+          "title": "基本の助動詞",
+          "items": [
+            "can できる",
+            "will するだろう",
+            "may かもしれない",
+            "must しなければならない",
+            "should すべきだ",
+            "ought to すべきだ"
+          ]
+        },
+        {
+          "title": "代用形 — 時制を付けられる",
+          "items": [
+            "be able to = can",
+            "have to = must",
+            "be going to = will",
+            "be allowed to = may"
+          ]
+        },
+        {
+          "title": "助動詞を重ねたいとき",
+          "items": [
+            "will be able to できるようになる",
+            "will have to しなければならなくなる",
+            "may have to かもしれない",
+            "had to しなければならなかった"
+          ]
+        }
+      ],
+      "body": [
+        "助動詞の直後は必ず動詞の原形。must wear であって must wears でも must to wear でもない。",
+        "助動詞は 2 つ並べられないので、will can とは言えない。can を be able to に置き換えて will be able to とする。過去のことなら must の代わりに had to を使う。",
+        "ought to だけは to を伴う。ought to be inspected のように、to の後ろが原形になる。"
+      ],
+      "examples": [
+        {
+          "en": "Once the new server is installed, staff will be able to access the database.",
+          "ja": "新サーバーが導入されれば、職員はデータベースにアクセスできるようになる。",
+          "ok": true,
+          "note": "will can とは言えないので be able to に置き換える"
+        },
+        {
+          "en": "Because the server failed, the team had to recreate three months of records by hand.",
+          "ja": "サーバーが故障したため、チームは3か月分の記録を手作業で作り直さねばならなかった。",
+          "ok": true,
+          "note": "must に過去形はないので had to を使う"
+        }
+      ]
+    },
+    {
+      "heading": "2. 過去のことは have + 過去分詞",
+      "point": "助動詞を過去形にしても過去にはならない。過去についての推量や後悔は「助動詞 + have + 過去分詞」で表す。",
+      "columns": [
+        {
+          "title": "過去の推量",
+          "items": [
+            "must have + 過去分詞 したに違いない",
+            "may / might have + 過去分詞 したかもしれない",
+            "cannot have + 過去分詞 したはずがない",
+            "could have + 過去分詞 できたのに"
+          ]
+        },
+        {
+          "title": "過去への後悔・非難",
+          "items": [
+            "should have + 過去分詞 すべきだったのに",
+            "ought to have + 過去分詞 同上",
+            "need not have + 過去分詞 する必要はなかったのに"
+          ]
+        },
+        {
+          "title": "見分ける手がかり",
+          "items": [
+            "後ろの文が事実を述べている",
+            "but や however で結果が続く",
+            "実際にどうだったかが書かれている"
+          ]
+        }
+      ],
+      "body": [
+        "must have been delivered は「配達されたに違いない」。The package must have been delivered to the wrong address; it never reached our office のように、後ろに根拠となる事実が続くことが多い。",
+        "should have + 過去分詞は「すべきだったのに実際はしなかった」。We should have reserved the larger room; twelve people could not find seats のように、実際の結果が後ろに書かれる。",
+        "need not have + 過去分詞は「する必要はなかったのに実際はした」。did not need to do（する必要がなかったので実際もしていない）とは意味が違う。"
+      ],
+      "table": {
+        "headers": ["形", "意味", "実際は"],
+        "rows": [
+          ["must have done", "したに違いない", "した"],
+          ["cannot have done", "したはずがない", "していない"],
+          ["should have done", "すべきだったのに", "していない"],
+          ["need not have done", "する必要はなかったのに", "した"],
+          ["did not need to do", "する必要がなかった", "していない"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The package must have been delivered to the wrong address; it never reached our office.",
+          "ja": "その荷物は誤った住所に配達されたに違いない。当社には届かなかった。",
+          "ok": true,
+          "note": "後ろの事実が根拠。過去の推量なので must have + 過去分詞"
+        },
+        {
+          "en": "You need not have submitted the receipts twice; a single copy would have been sufficient.",
+          "ja": "領収書を二度提出する必要はなかった。1部で十分だっただろう。",
+          "ok": true,
+          "note": "実際には二度出している。need not have + 過去分詞"
+        }
+      ],
+      "pitfall": "could / would / might は形は過去でも意味は過去ではない。過去のことを言いたければ have + 過去分詞を続ける。"
+    },
+    {
+      "heading": "3. 形が決まっている表現",
+      "point": "語順ごと覚える。than / as / to など、後ろに何が来るかが目印になる。",
+      "columns": [
+        {
+          "title": "原形が続く",
+          "items": [
+            "had better do したほうがよい",
+            "would rather do むしろしたい",
+            "may as well do してもよい",
+            "may well do 十分ありそうだ",
+            "cannot but do せざるをえない"
+          ]
+        },
+        {
+          "title": "相手の語が目印",
+          "items": [
+            "would rather A than B",
+            "may as well A as B",
+            "had better not do 否定の語順",
+            "would rather not do 否定の語順"
+          ]
+        },
+        {
+          "title": "be + 過去分詞 + to do",
+          "items": [
+            "be supposed to do ことになっている",
+            "be required to do 求められる",
+            "be expected to do 見込まれる",
+            "be allowed to do 許されている"
+          ]
+        }
+      ],
+      "body": [
+        "had better は過去形に見えるが意味は現在・未来。否定は had not better ではなく had better not と、not が後ろに来る。would rather も同じで would rather not do になる。",
+        "would rather A than B は「B よりむしろ A したい」。than が見えたら rather が入る。",
+        "may well do は「十分に〜しそうだ」、may as well do は「〜してもよい」。どちらも後ろは原形で、well の位置が違うだけなので語順で見分ける。"
+      ],
+      "examples": [
+        {
+          "en": "You had better confirm the shipping address before the order is processed.",
+          "ja": "注文が処理される前に配送先住所を確認したほうがよい。",
+          "ok": true,
+          "note": "had は過去形だが意味は現在・未来"
+        },
+        {
+          "en": "The client would rather receive the report electronically than by postal mail.",
+          "ja": "顧客は報告書を郵送より電子的に受け取りたいと思っている。",
+          "ok": true,
+          "note": "than と組むのは rather"
+        },
+        {
+          "en": "Given the current pace, the project may well finish ahead of schedule.",
+          "ja": "現在の進み具合なら、その事業は予定より早く終わりそうだ。",
+          "ok": true,
+          "note": "may well + 原形。may be の後ろには形容詞や名詞が来る"
+        }
+      ]
+    },
+    {
+      "heading": "4. used to と be used to",
+      "point": "be 動詞があるかどうかで意味が変わる。後ろが原形か -ing かも連動する。",
+      "columns": [
+        {
+          "title": "used to do — 以前は〜した",
+          "items": ["主語 + used to + 原形", "今はしていないという含み", "be 動詞は付かない"]
+        },
+        {
+          "title": "be used to doing — 慣れている",
+          "items": ["主語 + be used to + 動名詞", "この to は前置詞", "get used to doing 慣れる"]
+        },
+        {
+          "title": "be used to do — 〜するために使われる",
+          "items": ["受動態 + to 不定詞", "「使う」の use が元"]
+        }
+      ],
+      "body": [
+        "used to do は「以前は〜していた（今は違う）」。The company used to publish its newsletter quarterly, but it now appears every month のように、but 以下で現在との対比が示されることが多い。",
+        "be used to doing は「〜に慣れている」。この to は前置詞なので後ろは動名詞になる。The technicians are used to working in extreme temperatures。",
+        "見分け方は be 動詞の有無。be があれば「慣れている」で -ing、なければ「以前は〜した」で原形。"
+      ],
+      "examples": [
+        {
+          "en": "The company used to publish its newsletter quarterly, but it now appears every month.",
+          "ja": "その会社は以前は会報を四半期ごとに出していたが、今は毎月出ている。",
+          "ok": true,
+          "note": "but 以下が現在との対比。be 動詞がないので used to + 原形"
+        },
+        {
+          "en": "After twelve years, the technicians are used to working in extreme temperatures.",
+          "ja": "12年を経て、技術者たちは極端な温度の中で働くことに慣れている。",
+          "ok": true,
+          "note": "be 動詞があるので「慣れている」。後ろは動名詞"
+        }
+      ],
+      "pitfall": "この 3 つは 1 語の差で意味が変わる。be 動詞の有無と、後ろが原形か -ing かの 2 点で切り分ける。"
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "空所の前後を見て、原形が続くのか have + 過去分詞が続くのかをまず決める。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の後ろは原形か have + 過去分詞か",
+            "② have + 過去分詞なら過去の推量・後悔",
+            "③ than / as / not の位置で慣用表現を特定",
+            "④ 助動詞が 2 つ要るなら代用形",
+            "⑤ be 動詞の有無で used to を判別"
+          ]
+        }
+      ],
+      "body": [
+        "空所の後ろが原形なら現在・未来の話、have + 過去分詞なら過去の話。この 2 つを分けるだけで候補が半分になる。",
+        "文の後半に事実が書かれていれば過去の推量か後悔。「実際はどうだったか」を読めば must have / should have / need not have のどれかが決まる。",
+        "than があれば would rather、well があれば may well か may as well、not の位置が後ろなら had better not / would rather not。"
+      ]
+    }
+  ]
+}

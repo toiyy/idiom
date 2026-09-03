@@ -95,7 +95,7 @@ describe('サブカテゴリ出題', () => {
   it('サブカテゴリを選ぶとその 15 問だけが出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^句動詞 15 問/ }));
+    await user.click(screen.getByRole('button', { name: /^句動詞/ }));
     expect(screen.getByText('1 / 15')).toBeInTheDocument();
     expect(screen.getByText('語彙 / 句動詞')).toBeInTheDocument();
   });
@@ -634,12 +634,12 @@ describe('カテゴリ解説', () => {
   const GUIDE = guides.find((g) => g.targets.some((t) => t.category === '数量詞'))!;
 
   async function openGuide(user: User) {
-    await user.click(screen.getByRole('button', { name: '数量詞 の解説' }));
+    await user.click(screen.getByRole('button', { name: '解説（数量詞）' }));
   }
 
   it('解説のあるカテゴリにだけ「解説」ボタンが出る', () => {
     render(<App />);
-    const guided = screen.getAllByRole('button', { name: / の解説$/ });
+    const guided = screen.getAllByRole('button', { name: /^解説（/ });
     expect(guided.length).toBeGreaterThan(0);
     // 解説を持たないカテゴリの分まで出ていないこと
     expect(guided).toHaveLength(guides.flatMap((g) => g.targets).length);
@@ -694,13 +694,21 @@ describe('カテゴリ解説', () => {
     expect(screen.getAllByRole('button', { name: /詳しく/ }).length).toBeGreaterThan(0);
   });
 
+  it('解説ボタンの名前がカテゴリ選択ボタンと衝突しない', async () => {
+    render(<App />);
+    // 「解説（品詞）」のように前置きを付けないと、/^品詞/ でカテゴリを指せなくなる
+    for (const button of screen.getAllByRole('button', { name: /^解説（/ })) {
+      expect(button).toHaveAccessibleName(/^解説（.+）$/);
+    }
+  });
+
   it('複数カテゴリの解説には、カテゴリごとの開始ボタンが並ぶ', async () => {
     const user = userEvent.setup();
     render(<App />);
     const multi = guides.find((g) => g.targets.length > 1 && !g.targets[0].subcategory);
     if (!multi) return;
 
-    await user.click(screen.getByRole('button', { name: `${multi.targets[0].category} の解説` }));
+    await user.click(screen.getByRole('button', { name: `解説（${multi.targets[0].category}）` }));
     for (const t of multi.targets) {
       const size = questions.filter((q) => q.category === t.category).length;
       expect(
@@ -716,7 +724,7 @@ describe('カテゴリ解説', () => {
 
     for (const t of multi.targets) {
       const { unmount } = render(<App />);
-      await user.click(screen.getByRole('button', { name: `${t.category} の解説` }));
+      await user.click(screen.getByRole('button', { name: `解説（${t.category}）` }));
       expect(screen.getByRole('heading', { name: multi.title })).toBeInTheDocument();
       unmount();
     }
@@ -729,7 +737,7 @@ describe('カテゴリ解説', () => {
     if (!sub) return;
 
     const target = sub.targets.find((t) => t.subcategory)!;
-    await user.click(screen.getByRole('button', { name: `${target.subcategory} の解説` }));
+    await user.click(screen.getByRole('button', { name: `解説（${target.subcategory}）` }));
     expect(screen.getByRole('heading', { name: sub.title })).toBeInTheDocument();
 
     // 開始ボタンはサブカテゴリ単位で、そのぶんだけ出題される

@@ -110,7 +110,7 @@ export function HomeScreen({
                 <button
                   type="button"
                   className="category__guide"
-                  aria-label={`${c.category} の解説`}
+                  aria-label={`解説（${c.category}）`}
                   onClick={() => onOpenGuide({ category: c.category })}
                 >
                   解説
@@ -137,7 +137,7 @@ export function HomeScreen({
                 <button
                   type="button"
                   className="category__guide"
-                  aria-label={`${c.category} の解説`}
+                  aria-label={`解説（${c.category}）`}
                   onClick={() => onOpenGuide({ category: c.category })}
                 >
                   解説
@@ -166,7 +166,7 @@ export function HomeScreen({
                     <button
                       type="button"
                       className="category__guide"
-                      aria-label={`${s.subcategory} の解説`}
+                      aria-label={`解説（${s.subcategory}）`}
                       onClick={() =>
                         onOpenGuide({ category: c.category, subcategory: s.subcategory })
                       }

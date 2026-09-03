@@ -1,0 +1,296 @@
+{
+  "title": "動詞の形 — 一致と態",
+  "targets": [
+    {
+      "category": "主述の一致"
+    },
+    {
+      "category": "態"
+    },
+    {
+      "category": "難問",
+      "subcategory": "構造の取り違え"
+    }
+  ],
+  "summary": "動詞の形を問う問題は、①主語はどれか ②単数か複数か ③する側かされる側か、の 3 つを順に決めれば片づく。難しく見えるのは主語が遠いだけで、判断そのものは変わらない。",
+  "sections": [
+    {
+      "heading": "1. まず主語を見つける",
+      "point": "主語と動詞の間に入るかたまりは、いくら長くても主語ではない。切り落として残った名詞が主語。",
+      "columns": [
+        {
+          "title": "主語から切り離すもの",
+          "items": [
+            "of + 名詞",
+            "前置詞句（in / at / on ...）",
+            "分詞句（printed on ... / made by ...）",
+            "関係詞節（that ... / which ...）",
+            "to 不定詞句"
+          ]
+        },
+        {
+          "title": "主語に加えない挿入句",
+          "items": [
+            "along with 〜",
+            "as well as 〜",
+            "together with 〜",
+            "including 〜",
+            "in addition to 〜",
+            "accompanied by 〜"
+          ]
+        },
+        {
+          "title": "主語になる形",
+          "items": ["名詞・代名詞", "動名詞（Reviewing the logs）", "to 不定詞", "that 節・what 節"]
+        }
+      ],
+      "body": [
+        "The list of approved vendors ___ の主語は The list であって vendors ではない。of 以下は list を説明しているだけなので、動詞は単数の is になる。直前の複数名詞に引きずられるのが最も多い失点。",
+        "分詞句や関係詞節が挟まると距離が開く。The instructions printed on the back of the package ___ では、printed 以下を取り除くと The instructions が残るので動詞は複数。",
+        "along with / as well as / together with / including は挿入句で、主語には加えない。The chief engineer, along with two technicians, ___ の主語は単数の The chief engineer。and でつなぐ場合とは扱いが違う。"
+      ],
+      "examples": [
+        {
+          "en": "The list of approved vendors is updated on the company intranet every March.",
+          "ja": "承認済み業者の一覧は、毎年3月に社内イントラネットで更新される。",
+          "ok": true,
+          "note": "主語は The list。of approved vendors は修飾句"
+        },
+        {
+          "en": "The instructions printed on the back of the package are difficult to read.",
+          "ja": "包装の裏に印刷された説明は読みにくい。",
+          "ok": true,
+          "note": "printed 以下を外すと The instructions が残る"
+        },
+        {
+          "en": "The chief engineer, along with two senior technicians, is scheduled to inspect the site.",
+          "ja": "主任技師は、2名の上級技術者とともに現場を視察する予定だ。",
+          "ok": true,
+          "note": "along with は挿入句なので主語に加えない"
+        }
+      ],
+      "pitfall": "A and B なら複数だが、A, along with B や A as well as B は A だけが主語。and かどうかで扱いが変わる。"
+    },
+    {
+      "heading": "2. 単数か複数か",
+      "point": "主語が決まったら数を決める。冠詞ひとつ、語尾ひとつで逆になるものがあるので形で覚える。",
+      "columns": [
+        {
+          "title": "単数で受ける",
+          "items": [
+            "each / every + 名詞",
+            "either of / neither of",
+            "one of + 複数名詞",
+            "the number of + 複数名詞",
+            "動名詞・to 不定詞・that 節",
+            "Economics / Physics など学問名"
+          ]
+        },
+        {
+          "title": "複数で受ける",
+          "items": [
+            "a number of + 複数名詞",
+            "both of / several of / many of",
+            "A and B",
+            "Not only A but also B は B に合わせる"
+          ]
+        },
+        {
+          "title": "中身の名詞に合わせる",
+          "items": [
+            "all of / most of / some of",
+            "half of / none of / the rest of",
+            "割合・分数 + of",
+            "there 構文は後ろの名詞"
+          ]
+        },
+        {
+          "title": "近いほうに合わせる",
+          "items": [
+            "either A or B",
+            "neither A nor B",
+            "not only A but also B",
+            "動詞に近い B で決まる"
+          ]
+        }
+      ],
+      "body": [
+        "the number of は「〜の数」で単数、a number of は「多くの〜」で複数。冠詞ひとつで逆になるので、意味ではなく形で判断する。",
+        "all / most / some / half / none は of の後ろの名詞に合わせる。All of the equipment は equipment が不可算なので単数、All of the machines なら複数になる。割合や分数も同じで、sixty percent of the raw material は単数扱い。",
+        "either A or B と neither A nor B は動詞に近いほうに合わせる。Either the director or the branch managers ___ なら managers に合わせて複数になる。",
+        "there 構文では there は主語ではない。後ろに来る名詞で決まるので、There are several discrepancies、There is a discrepancy となる。"
+      ],
+      "table": {
+        "headers": ["形", "数", "注意"],
+        "rows": [
+          ["the number of + 複数名詞", "単数", "「〜の数」"],
+          ["a number of + 複数名詞", "複数", "「多くの〜」"],
+          ["each / every + 名詞", "単数", "each A and each B も単数"],
+          ["either of / neither of", "単数", "対象は 2 つ"],
+          ["all / most / some / half of", "中身次第", "不可算なら単数"],
+          ["either A or B", "B に合わせる", "neither A nor B も同じ"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The number of applications submitted online has risen sharply.",
+          "ja": "オンラインで提出された申請の数が急増している。",
+          "ok": true,
+          "note": "the number of は「〜の数」で単数"
+        },
+        {
+          "en": "A number of employees have expressed interest in the new mentoring program.",
+          "ja": "多くの従業員が新しい指導制度に関心を示している。",
+          "ok": true,
+          "note": "a number of は「多くの〜」で複数"
+        },
+        {
+          "en": "Either the regional director or the branch managers are responsible for approving it.",
+          "ja": "地域統括か支店長のいずれかが承認の責任を負う。",
+          "ok": true,
+          "note": "動詞に近い managers に合わせて複数"
+        }
+      ],
+      "pitfall": "one of the few engineers who ___ の who が受けているのは複数の engineers であって one ではない。動詞は複数になる。"
+    },
+    {
+      "heading": "3. する側かされる側か",
+      "point": "主語が動作をするなら能動、されるなら受動。自動詞はそもそも受動にできないので、まず動詞の種類を見る。",
+      "columns": [
+        {
+          "title": "受動の形",
+          "items": [
+            "be + 過去分詞",
+            "is being + 過去分詞 されている最中",
+            "has been + 過去分詞 完了",
+            "had been + 過去分詞 過去完了",
+            "will have been + 過去分詞",
+            "助動詞 + be + 過去分詞"
+          ]
+        },
+        {
+          "title": "受動にできない自動詞",
+          "items": [
+            "occur 起こる",
+            "happen 起こる",
+            "arise 生じる",
+            "rise 上がる",
+            "appear 現れる",
+            "remain のままである",
+            "consist 成る"
+          ]
+        },
+        {
+          "title": "主語で判断する",
+          "items": [
+            "人が提出する → submit",
+            "報告書が提出される → be submitted",
+            "従業員が求められる → be required to",
+            "問題が起こる → occurred"
+          ]
+        }
+      ],
+      "body": [
+        "空所の主語がその動作をする側かされる側かを見る。All expense reports must ___ では、報告書は提出される側なので be submitted になる。",
+        "自動詞は目的語をとらないので受動にできない。occur / happen / arise / rise / appear / remain がその代表で、A serious problem occurred とは言えても was occurred とは言えない。",
+        "助動詞の後ろでは be + 過去分詞。過去のことなら should have been detected のように have been + 過去分詞になる。"
+      ],
+      "examples": [
+        {
+          "en": "All expense reports must be submitted to the accounting department by the fifth.",
+          "ja": "すべての経費報告書は5日までに経理部へ提出しなければならない。",
+          "ok": true,
+          "note": "報告書は提出される側。助動詞の後ろなので be + 過去分詞"
+        },
+        {
+          "en": "A serious problem occurred during the final stage of the software migration.",
+          "ja": "ソフトウェア移行の最終段階で重大な問題が発生した。",
+          "ok": true,
+          "note": "occur は自動詞なので was occurred とは言えない"
+        },
+        {
+          "en": "The east parking lot is being resurfaced this week.",
+          "ja": "東側の駐車場は今週、舗装をやり直している最中だ。",
+          "ok": true,
+          "note": "進行中の受動なので is being + 過去分詞"
+        }
+      ],
+      "pitfall": "occur / happen / rise / arise は日本語で「〜される」と訳せそうでも自動詞。受動の選択肢は最初から候補外になる。"
+    },
+    {
+      "heading": "4. 受動で形が決まっている表現",
+      "point": "by 以外の前置詞をとる受動がある。組み合わせごと覚える。",
+      "columns": [
+        {
+          "title": "with をとる",
+          "items": [
+            "be filled with 満たされている",
+            "be covered with 覆われている",
+            "be satisfied with 満足している",
+            "be equipped with 備えている"
+          ]
+        },
+        {
+          "title": "to / in をとる",
+          "items": [
+            "be exposed to さらされる",
+            "be devoted to 打ち込む",
+            "be interested in 関心がある",
+            "be involved in 関わる"
+          ]
+        },
+        {
+          "title": "to 不定詞が続く",
+          "items": [
+            "be required to do 求められる",
+            "be expected to do 見込まれる",
+            "be supposed to do ことになっている",
+            "be said to do と言われる",
+            "be known to do 知られている"
+          ]
+        }
+      ],
+      "body": [
+        "be filled with のように、動作主でない前置詞をとる受動がある。by を選ばないよう、表現ごと覚える。",
+        "be said to / be known to / be expected to は「〜と言われる・知られる・見込まれる」。The new alloy is said to be more durable のように、主語の性質を述べるときに使う。",
+        "be known は前置詞で意味が変わる。be known for は「〜で有名」、be known as は「〜として知られる」、be known to は「〜に知られている」。"
+      ],
+      "examples": [
+        {
+          "en": "The auditorium was filled with delegates from more than thirty countries.",
+          "ja": "講堂は30か国を超える代表者で埋まっていた。",
+          "ok": true,
+          "note": "be filled with は定型。by ではない"
+        },
+        {
+          "en": "Employees are required to submit their expense reports through the online portal.",
+          "ja": "従業員は経費報告書をオンラインポータルから提出することが求められている。",
+          "ok": true,
+          "note": "従業員は求められる側なので be required to do"
+        }
+      ]
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "主語を切り出す → 数を決める → 態を決める。この順で見れば長い文でも変わらない。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 修飾句・挿入句を取り除く",
+            "② 残った名詞が主語",
+            "③ 単数か複数かを決める",
+            "④ する側かされる側かを決める",
+            "⑤ 時制は文中の語句で確認"
+          ]
+        }
+      ],
+      "body": [
+        "of 句・前置詞句・分詞句・関係詞節・挿入句をすべて取り除く。文が短くなれば主語は自然に見える。",
+        "主語が決まったら、each / every / the number of なら単数、a number of / A and B なら複数、all / most / some なら of の後ろに合わせる、と形で判断する。",
+        "主語がその動作をする側かされる側かを見る。自動詞なら受動は候補から外れる。",
+        "最後に時制。since があれば現在完了、by the time なら未来完了、といった手がかりで確認する。"
+      ]
+    }
+  ]
+}
