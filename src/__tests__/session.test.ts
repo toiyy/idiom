@@ -22,9 +22,11 @@ const base = {
   mode: { kind: 'category', category: 'テスト' } as const,
   orderIds: ['q2', 'q3', 'q1'],
   cursor: 1,
-  selectedIndex: 2,
-  confidence: 'unsure' as const,
-  sessionCorrect: 1,
+  answers: [
+    { selectedIndex: 0, confidence: 'sure' as const },
+    { selectedIndex: 2, confidence: 'unsure' as const },
+    null,
+  ],
   onQuiz: true,
 };
 
@@ -43,9 +45,7 @@ describe('saveSession / loadSession', () => {
     expect(s?.mode).toEqual(base.mode);
     expect(s?.order.map((q) => q.id)).toEqual(['q2', 'q3', 'q1']);
     expect(s?.cursor).toBe(1);
-    expect(s?.selectedIndex).toBe(2);
-    expect(s?.confidence).toBe('unsure');
-    expect(s?.sessionCorrect).toBe(1);
+    expect(s?.answers).toEqual(base.answers);
     expect(s?.onQuiz).toBe(true);
   });
 
@@ -96,21 +96,50 @@ describe('復元できない保存内容は破棄する', () => {
 });
 
 describe('中途半端な状態は正規化する', () => {
-  it('選択肢を選んでいないのに自信度が残っていたら捨てる', () => {
-    saveSession({ ...base, selectedIndex: null, confidence: 'sure' });
-    const s = loadSession(pool);
-    expect(s?.selectedIndex).toBeNull();
-    expect(s?.confidence).toBeNull();
+  /** answers の 1 件だけ差し替えて保存する。 */
+  function saveWithAnswer(answer: unknown) {
+    localStorage.setItem(
+      'idiom.session.v1',
+      JSON.stringify({ ...base, answers: [base.answers[0], answer, null] }),
+    );
+  }
+
+  it('選択肢を選んでいないのに自信度が残っていたら未回答にする', () => {
+    saveWithAnswer({ selectedIndex: null, confidence: 'sure' });
+    expect(loadSession(pool)?.answers[1]).toBeNull();
   });
 
   it('自信度の値が不正なら null にする', () => {
-    localStorage.setItem('idiom.session.v1', JSON.stringify({ ...base, confidence: 'maybe' }));
-    expect(loadSession(pool)?.confidence).toBeNull();
+    saveWithAnswer({ selectedIndex: 2, confidence: 'maybe' });
+    expect(loadSession(pool)?.answers[1]).toEqual({ selectedIndex: 2, confidence: null });
   });
 
-  it('selectedIndex が範囲外なら null にする', () => {
-    localStorage.setItem('idiom.session.v1', JSON.stringify({ ...base, selectedIndex: 7 }));
-    expect(loadSession(pool)?.selectedIndex).toBeNull();
+  it('selectedIndex が範囲外なら未回答にする', () => {
+    saveWithAnswer({ selectedIndex: 7, confidence: 'sure' });
+    expect(loadSession(pool)?.answers[1]).toBeNull();
+  });
+
+  it('answers の長さが出題順と合わなくても、足りないぶんは未回答で埋める', () => {
+    localStorage.setItem('idiom.session.v1', JSON.stringify({ ...base, answers: [] }));
+    expect(loadSession(pool)?.answers).toEqual([null, null, null]);
+  });
+
+  it('answers を持たない旧形式は、いま解いている 1 問として引き継ぐ', () => {
+    localStorage.setItem(
+      'idiom.session.v1',
+      JSON.stringify({
+        ...base,
+        answers: undefined,
+        selectedIndex: 3,
+        confidence: 'guess',
+        sessionCorrect: 1,
+      }),
+    );
+    expect(loadSession(pool)?.answers).toEqual([
+      null,
+      { selectedIndex: 3, confidence: 'guess' },
+      null,
+    ]);
   });
 });
 

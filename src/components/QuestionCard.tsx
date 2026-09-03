@@ -12,6 +12,8 @@ interface QuestionCardProps {
   onSelect: (index: number) => void;
   onConfidence: (confidence: Confidence) => void;
   onNext: () => void;
+  /** 直前の問題を見返す。1 問目では呼ばれない。 */
+  onPrev: () => void;
   /** この問題に付けたメモ。未記入なら空文字。 */
   note: string;
   onNoteChange: (text: string) => void;
@@ -40,6 +42,7 @@ export function QuestionCard({
   onSelect,
   onConfidence,
   onNext,
+  onPrev,
   note,
   onNoteChange,
 }: QuestionCardProps) {
@@ -127,10 +130,22 @@ export function QuestionCard({
               onChange={(e) => onNoteChange(e.target.value)}
             />
           </label>
+        </div>
+      )}
 
-          <button type="button" className="btn btn--primary" onClick={onNext}>
-            {index + 1 === total ? '結果を見る' : '次の問題へ'}
-          </button>
+      {/* 「前へ」は未回答でも押せる。直前の解説をもう一度見たいことがあるため */}
+      {(index > 0 || revealed) && (
+        <div className="card__nav">
+          {index > 0 && (
+            <button type="button" className="btn btn--ghost card__prev" onClick={onPrev}>
+              ← 前へ
+            </button>
+          )}
+          {revealed && (
+            <button type="button" className="btn btn--primary" onClick={onNext}>
+              {index + 1 === total ? '結果を見る' : '次の問題へ'}
+            </button>
+          )}
         </div>
       )}
     </section>

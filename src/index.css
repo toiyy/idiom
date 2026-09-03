@@ -642,3 +642,17 @@ body {
   white-space: pre-wrap;
   line-height: 1.6;
 }
+
+/* --- 問題間の移動 --- */
+
+.card__nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+/* 「前へ」だけのときも左端に置き、「次の問題へ」は常に右端に来る */
+.card__prev {
+  margin-right: auto;
+}

@@ -14,10 +14,14 @@ function choiceButtons(): HTMLButtonElement[] {
 }
 
 /** 表示中の英文から、いま出題されている問題を特定する。
- *  is / are / be / being のように選択肢が完全に一致する問題どうしがあるため、英文で照合する。 */
+ *  is / are / be / being のように選択肢が完全に一致する問題どうしがあるため、英文で照合する。
+ *  回答後は空所が正解で埋まって表示されるので、両方の形と突き合わせる。 */
 function currentQuestion() {
   const sentence = document.querySelector('.card__sentence')?.textContent ?? '';
-  const found = questions.find((q) => q.sentence === sentence);
+  const found = questions.find(
+    (q) =>
+      q.sentence === sentence || q.sentence.replace('___', q.choices[q.answerIndex]) === sentence,
+  );
   if (!found) throw new Error(`出題中の問題を特定できませんでした: ${sentence}`);
   return found;
 }
@@ -515,5 +519,111 @@ describe('メモ', () => {
     await user.click(screen.getByRole('button', { name: '読み込む' }));
     expect(screen.getByRole('heading', { name: 'メモ（1 件）' })).toBeInTheDocument();
     expect(screen.getByText('もちだす')).toBeInTheDocument();
+  });
+});
+
+describe('前の問題に戻る', () => {
+  /** 累計の回答数。進捗が二重に記録されていないかを見る。 */
+  function lifetimeAnswered(): number {
+    return JSON.parse(localStorage.getItem('idiom.progress.v2') ?? '{}').answered ?? 0;
+  }
+
+  function verdict(): string {
+    return document.querySelector('.card__verdict')?.textContent ?? '';
+  }
+
+  it('1 問目には「前へ」が出ない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    expect(screen.queryByRole('button', { name: /前へ/ })).toBeNull();
+  });
+
+  it('戻ると解答済みの状態のまま表示される', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+
+    const first = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    expect(currentQuestion()).not.toBe(first);
+
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    expect(currentQuestion()).toBe(first);
+    // 正誤・自信度・解説がそのまま戻る
+    expect(verdict()).toContain('不正解');
+    expect(verdict()).toContain('勘');
+    expect(screen.getByText(first.explanation)).toBeInTheDocument();
+  });
+
+  it('戻ってからもう一度進めても進捗を二重に記録しない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    expect(lifetimeAnswered()).toBe(1);
+
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    await user.click(screen.getByRole('button', { name: /次の問題へ/ }));
+    expect(lifetimeAnswered()).toBe(1);
+  });
+
+  it('戻った先では選び直せない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const first = currentQuestion();
+    await answer(user, { correct: true, confidence: '自信あり' });
+
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    await user.click(choiceButtons()[(first.answerIndex + 1) % 4]);
+    expect(verdict()).toContain('正解');
+    expect(lifetimeAnswered()).toBe(1);
+  });
+
+  it('未回答の問題からでも戻れる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const first = currentQuestion();
+    await answer(user, { correct: true, confidence: '自信あり' });
+
+    // 2 問目は手を付けていない状態でも「前へ」は押せる
+    expect(screen.queryByRole('button', { name: /次の問題へ/ })).toBeNull();
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    expect(currentQuestion()).toBe(first);
+  });
+
+  it('セッションを再開しても戻れる状態が保たれる', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const first = currentQuestion();
+    await answer(user, { correct: false, confidence: '迷った' });
+    unmount();
+
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    expect(currentQuestion()).toBe(first);
+    expect(verdict()).toContain('迷った');
+  });
+
+  it('戻ってもセッションの正解数は変わらない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const total = sessionTotal();
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await answer(user, { correct: false, confidence: '勘' });
+
+    // 1 問目まで戻ってから、最後まで解き切る
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    await user.click(screen.getByRole('button', { name: /次の問題へ/ }));
+    await user.click(screen.getByRole('button', { name: /次の問題へ/ }));
+    for (let i = 2; i < total; i++) {
+      await answer(user, { correct: true, confidence: '自信あり' });
+    }
+    expect(screen.getByText(`${total - 1} / ${total}`)).toBeInTheDocument();
   });
 });

@@ -25,6 +25,7 @@ function setup(selectedIndex: number | null, confidence: Confidence | null, inde
   const onSelect = vi.fn();
   const onConfidence = vi.fn();
   const onNext = vi.fn();
+  const onPrev = vi.fn();
   const onNoteChange = vi.fn();
   render(
     <QuestionCard
@@ -36,11 +37,12 @@ function setup(selectedIndex: number | null, confidence: Confidence | null, inde
       onSelect={onSelect}
       onConfidence={onConfidence}
       onNext={onNext}
+      onPrev={onPrev}
       note={note}
       onNoteChange={onNoteChange}
     />,
   );
-  return { onSelect, onConfidence, onNext, onNoteChange };
+  return { onSelect, onConfidence, onNext, onPrev, onNoteChange };
 }
 
 describe('QuestionCard', () => {
@@ -144,5 +146,31 @@ describe('メモ欄', () => {
     await user.type(screen.getByLabelText('メモ'), 'ab');
     expect(onNoteChange).toHaveBeenCalledTimes(2);
     expect(onNoteChange).toHaveBeenLastCalledWith('b');
+  });
+});
+
+describe('前後の移動', () => {
+  it('1 問目には「前へ」を出さない', () => {
+    setup(null, null, 0);
+    expect(screen.queryByRole('button', { name: /前へ/ })).toBeNull();
+  });
+
+  it('2 問目以降は未回答でも「前へ」を押せる', async () => {
+    const user = userEvent.setup();
+    const { onPrev } = setup(null, null, 1);
+    await user.click(screen.getByRole('button', { name: /前へ/ }));
+    expect(onPrev).toHaveBeenCalledTimes(1);
+  });
+
+  it('「次の問題へ」は自信度を申告するまで出ない', () => {
+    setup(2, null, 1);
+    expect(screen.queryByRole('button', { name: /次の問題へ/ })).toBeNull();
+    expect(screen.getByRole('button', { name: /前へ/ })).toBeInTheDocument();
+  });
+
+  it('回答後は「前へ」と「次の問題へ」が並ぶ', () => {
+    setup(2, 'sure', 1);
+    expect(screen.getByRole('button', { name: /前へ/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /次の問題へ/ })).toBeInTheDocument();
   });
 });

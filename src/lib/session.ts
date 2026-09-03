@@ -7,6 +7,7 @@
 import type { Question } from '../types/question';
 import type { QuizMode } from './quiz';
 import type { Confidence } from './storage';
+import type { Answer, Answers } from './answers';
 
 const SESSION_KEY = 'idiom.session.v1';
 
@@ -15,9 +16,8 @@ export interface SavedSession {
   /** 出題順。問題そのものではなく id で持ち、復元時にプールから引き直す。 */
   orderIds: string[];
   cursor: number;
-  selectedIndex: number | null;
-  confidence: Confidence | null;
-  sessionCorrect: number;
+  /** 出題順と同じ長さの回答一覧。前に戻ったときの再表示に使う。 */
+  answers: Answers;
   /**
    * 保存時にクイズ画面にいたか。
    * true なら次回起動時にそのまま再開し、false（中断ボタンでホームに戻った）なら
@@ -46,6 +46,35 @@ function safeGetStorage(): Storage | null {
 
 function isConfidence(v: unknown): v is Confidence {
   return v === 'sure' || v === 'unsure' || v === 'guess';
+}
+
+function toSelectedIndex(v: unknown): number | null {
+  return typeof v === 'number' && Number.isInteger(v) && v >= 0 && v <= 3 ? v : null;
+}
+
+/** 保存済みの 1 件を Answer に正規化する。壊れていれば null（未回答扱い）。 */
+function toAnswer(raw: unknown): Answer | null {
+  if (typeof raw !== 'object' || raw === null) return null;
+  const selectedIndex = toSelectedIndex((raw as { selectedIndex?: unknown }).selectedIndex);
+  if (selectedIndex === null) return null;
+  const confidence = (raw as { confidence?: unknown }).confidence;
+  // 選択肢を選んでいないのに自信度だけ残っている状態は作らない
+  return { selectedIndex, confidence: isConfidence(confidence) ? confidence : null };
+}
+
+/**
+ * 回答一覧を復元する。
+ * 1 問ぶんしか持っていなかった旧形式は、いま解いている位置の 1 件として引き継ぐ。
+ */
+function toAnswers(parsed: Partial<SavedSession>, size: number, cursor: number): Answers {
+  const answers: (Answer | null)[] = Array.from({ length: size }, () => null);
+  if (Array.isArray(parsed.answers)) {
+    for (let i = 0; i < size; i++) answers[i] = toAnswer(parsed.answers[i]);
+    return answers;
+  }
+  const legacy = parsed as { selectedIndex?: unknown; confidence?: unknown };
+  answers[cursor] = toAnswer(legacy);
+  return answers;
 }
 
 function isMode(v: unknown): v is QuizMode {
@@ -132,26 +161,11 @@ export function loadSession(pool: readonly Question[]): RestoredSession | null {
     return null;
   }
 
-  const selectedIndex =
-    typeof parsed.selectedIndex === 'number' &&
-    Number.isInteger(parsed.selectedIndex) &&
-    parsed.selectedIndex >= 0 &&
-    parsed.selectedIndex <= 3
-      ? parsed.selectedIndex
-      : null;
-
   return {
     mode: parsed.mode,
     order,
     cursor,
-    selectedIndex,
-    // 選択肢を選んでいないのに自信度だけ残っている状態は作らない
-    confidence:
-      selectedIndex !== null && isConfidence(parsed.confidence) ? parsed.confidence : null,
-    sessionCorrect:
-      typeof parsed.sessionCorrect === 'number' && parsed.sessionCorrect >= 0
-        ? parsed.sessionCorrect
-        : 0,
+    answers: toAnswers(parsed, order.length, cursor),
     onQuiz: parsed.onQuiz === true,
     updatedAt: typeof parsed.updatedAt === 'string' ? parsed.updatedAt : new Date(0).toISOString(),
   };

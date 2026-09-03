@@ -19,6 +19,7 @@ import {
   type Confidence,
 } from './lib/storage';
 import { clearSession, loadSession, saveSession } from './lib/session';
+import { countCorrect, emptyAnswers, setAnswer, type Answers } from './lib/answers';
 import { loadNotes, saveNotes, setNote, type Notes } from './lib/notes';
 import type { Backup } from './lib/backup';
 import { HomeScreen } from './components/HomeScreen';
@@ -35,12 +36,14 @@ export default function App() {
   const [mode, setMode] = useState<QuizMode>(restored?.mode ?? { kind: 'all' });
   const [order, setOrder] = useState<Question[]>(restored?.order ?? []);
   const [cursor, setCursor] = useState(restored?.cursor ?? 0);
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(
-    restored?.selectedIndex ?? null,
-  );
-  const [confidence, setConfidence] = useState<Confidence | null>(restored?.confidence ?? null);
-  const [sessionCorrect, setSessionCorrect] = useState(restored?.sessionCorrect ?? 0);
+  // 前の問題に戻れるよう、現在の 1 問ぶんではなく出題順ぶんまとめて持つ
+  const [answers, setAnswers] = useState<Answers>(restored?.answers ?? []);
   const [progress, setProgress] = useState(() => loadProgress());
+
+  const current = answers[cursor] ?? null;
+  const selectedIndex = current?.selectedIndex ?? null;
+  const confidence = current?.confidence ?? null;
+  const sessionCorrect = useMemo(() => countCorrect(order, answers), [order, answers]);
   const [notes, setNotes] = useState<Notes>(() => loadNotes());
 
   const reviewCount = useMemo(
@@ -83,13 +86,11 @@ export default function App() {
       mode,
       orderIds: order.map((q) => q.id),
       cursor,
-      selectedIndex,
-      confidence,
-      sessionCorrect,
+      answers,
       // クイズ画面で離れたなら次回はそのまま再開、中断でホームに戻ったなら「続きから」で待つ
       onQuiz: screen === 'quiz',
     });
-  }, [screen, mode, order, cursor, selectedIndex, confidence, sessionCorrect]);
+  }, [screen, mode, order, cursor, answers]);
 
   function startQuiz(next: QuizMode) {
     const selected = selectQuestions(questions, next, progress.wrongIds);
@@ -98,28 +99,27 @@ export default function App() {
       setScreen('home');
       return;
     }
+    const nextOrder = buildQuizOrder(selected);
     setMode(next);
-    setOrder(buildQuizOrder(selected));
+    setOrder(nextOrder);
     setCursor(0);
-    setSelectedIndex(null);
-    setConfidence(null);
-    setSessionCorrect(0);
+    setAnswers(emptyAnswers(nextOrder.length));
     setScreen('quiz');
   }
 
   function handleSelect(index: number) {
-    if (selectedIndex !== null) return;
-    setSelectedIndex(index);
+    // 解答済みの問題に戻ってきたときは選び直せない。進捗を二重に記録しないため
+    if (current !== null) return;
+    setAnswers(setAnswer(answers, cursor, { selectedIndex: index, confidence: null }));
   }
 
   /** 自信度が決まって初めて正誤を確定し、進捗に記録する。 */
   function handleConfidence(next: Confidence) {
-    if (selectedIndex === null || confidence !== null) return;
-    const current = order[cursor];
-    const correct = isCorrect(current, selectedIndex);
-    setConfidence(next);
-    if (correct) setSessionCorrect((n) => n + 1);
-    const updated = recordAnswer(progress, current.id, correct, next);
+    if (current === null || current.confidence !== null) return;
+    const question = order[cursor];
+    const correct = isCorrect(question, current.selectedIndex);
+    setAnswers(setAnswer(answers, cursor, { ...current, confidence: next }));
+    const updated = recordAnswer(progress, question.id, correct, next);
     setProgress(updated);
     saveProgress(updated);
   }
@@ -130,8 +130,11 @@ export default function App() {
       return;
     }
     setCursor((c) => c + 1);
-    setSelectedIndex(null);
-    setConfidence(null);
+  }
+
+  /** 直前の問題を見返す。解答済みの状態のまま表示され、進捗は動かない。 */
+  function handlePrev() {
+    setCursor((c) => Math.max(0, c - 1));
   }
 
   function handleResetProgress() {
@@ -157,9 +160,7 @@ export default function App() {
   function handleFinishToHome() {
     setOrder([]);
     setCursor(0);
-    setSelectedIndex(null);
-    setConfidence(null);
-    setSessionCorrect(0);
+    setAnswers([]);
     setScreen('home');
   }
 
@@ -209,6 +210,7 @@ export default function App() {
             onSelect={handleSelect}
             onConfidence={handleConfidence}
             onNext={handleNext}
+            onPrev={handlePrev}
             note={notes[order[cursor].id] ?? ''}
             onNoteChange={(text) => handleNoteChange(order[cursor].id, text)}
           />
