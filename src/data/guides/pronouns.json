@@ -1,0 +1,245 @@
+{
+  "title": "代名詞",
+  "targets": [
+    {
+      "category": "代名詞"
+    }
+  ],
+  "summary": "代名詞は「何を指しているか」で決まる。同じものか同種の別物か、2 つのうちの一方か 3 つ以上の残りか、単数か複数か。この 3 点を確かめれば選べる。",
+  "sections": [
+    {
+      "heading": "1. 前に出た名詞を受ける",
+      "point": "まったく同じものを指すのか、同じ種類の別物を指すのかで語が変わる。",
+      "columns": [
+        {
+          "title": "同じもの — it / them",
+          "items": ["it 単数の同一物", "them 複数の同一物", "前に出た名詞そのもの"]
+        },
+        {
+          "title": "同種の別物 — one / ones",
+          "items": [
+            "one 単数の不特定",
+            "ones 複数の不特定",
+            "the one 特定の 1 つ",
+            "a new one 新しい別の 1 つ"
+          ]
+        },
+        {
+          "title": "比較で名詞を繰り返さない",
+          "items": [
+            "that 単数の名詞を受ける",
+            "those 複数の名詞を受ける",
+            "that of / those of の形"
+          ]
+        }
+      ],
+      "body": [
+        "If the current printer breaks down, the office will purchase a new ___ では、壊れた同じプリンターを買い直すのではなく別の 1 台なので one が入る。it だと同一物になってしまう。",
+        "比較の対象を示すときは that / those を使う。The sales figures are higher than ___ of last year では figures が複数なので those。The output of the Kyoto plant exceeds ___ of Nagoya なら output が単数なので that。",
+        "that / those は必ず of や前置詞句を伴って「〜のそれ」の形になる。単独では使わない。"
+      ],
+      "table": {
+        "headers": ["語", "指すもの", "数"],
+        "rows": [
+          ["it", "まったく同じもの", "単数"],
+          ["them", "まったく同じもの", "複数"],
+          ["one", "同じ種類の別物", "単数"],
+          ["ones", "同じ種類の別物", "複数"],
+          ["that of", "繰り返しを避ける", "単数"],
+          ["those of", "繰り返しを避ける", "複数"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "If the current printer breaks down again, the office will purchase a new one.",
+          "ja": "現在のプリンターがまた故障したら、事務所は新しいものを購入する。",
+          "ok": true,
+          "note": "同じ種類の別の 1 台なので one。it だと同一物になる"
+        },
+        {
+          "en": "The sales figures for this quarter are higher than those of the same period last year.",
+          "ja": "今四半期の売上高は、昨年同期のそれより高い。",
+          "ok": true,
+          "note": "figures が複数なので those"
+        }
+      ]
+    },
+    {
+      "heading": "2. 「もう一方」と「残り」",
+      "point": "全部でいくつあるか、残りが特定されるかで語が決まる。the が付けば特定。",
+      "columns": [
+        {
+          "title": "2 つのうち",
+          "items": [
+            "one 一方",
+            "the other もう一方",
+            "both 両方",
+            "the latter 後者 / the former 前者"
+          ]
+        },
+        {
+          "title": "3 つ以上のうち",
+          "items": [
+            "one 1 つ",
+            "another もう 1 つ（不特定）",
+            "others 他のもの（不特定）",
+            "the others 残り全部（特定）"
+          ]
+        },
+        {
+          "title": "each other 型",
+          "items": [
+            "each other 2 者間で互いに",
+            "one another 3 者以上で互いに",
+            "主語ではなく目的語になる"
+          ]
+        }
+      ],
+      "body": [
+        "2 つしかないとき、残る 1 つは自動的に特定されるので the other になる。One of the two proposals focuses on cost reduction, while ___ emphasizes growth では the other が入る。",
+        "3 つ以上あるとき、残り全部を指すなら the others、残りの一部なら others。Three of the five machines have been serviced; ___ are scheduled for next week は残り 2 台が特定されるので the others。",
+        "Some of the attendees preferred the morning session, while ___ found the afternoon easier のように、全体を尽くしていない場合は others になる。"
+      ],
+      "table": {
+        "headers": ["形", "意味", "特定されるか"],
+        "rows": [
+          ["the other", "2 つのうちのもう一方", "特定"],
+          ["another", "3 つ以上のうちのもう 1 つ", "不特定"],
+          ["others", "他のいくつか", "不特定"],
+          ["the others", "残り全部", "特定"],
+          ["the rest", "残り全部", "特定"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "One of the two proposals focuses on cost reduction, while the other emphasizes growth.",
+          "ja": "2つの提案のうち一方は費用削減に、もう一方は成長に重きを置いている。",
+          "ok": true,
+          "note": "2 つしかないので残りは特定される。the other"
+        },
+        {
+          "en": "Three of the five machines have been serviced; the others are scheduled for next week.",
+          "ja": "5台のうち3台は整備済みで、残りは来週の予定だ。",
+          "ok": true,
+          "note": "残り 2 台が特定されるので the others"
+        }
+      ],
+      "pitfall": "another は「an + other」なので必ず単数。ただし another two weeks のように数詞が続くときは複数名詞を伴える。"
+    },
+    {
+      "heading": "3. 再帰代名詞と所有代名詞",
+      "point": "主語と同じ人・物を指すなら -self。所有代名詞は後ろに名詞を置かない。",
+      "columns": [
+        {
+          "title": "-self — 主語と同じもの",
+          "items": [
+            "動詞の目的語が主語と同じ",
+            "「自分で」と強調する",
+            "by oneself 一人で",
+            "in itself それ自体で"
+          ]
+        },
+        {
+          "title": "所有代名詞 — 名詞を含む",
+          "items": [
+            "mine = my + 名詞",
+            "hers = her + 名詞",
+            "theirs = their + 名詞",
+            "後ろに名詞は続かない"
+          ]
+        },
+        {
+          "title": "所有格 — 名詞が必要",
+          "items": ["my / her / their + 名詞", "its + 名詞", "単独では使えない"]
+        }
+      ],
+      "body": [
+        "Ms. Reyes configured the new server ___ は「彼女自身で」と強調しているので herself。強調の再帰代名詞は取り除いても文が成り立つ。",
+        "The device will shut ___ down では、止めるのも止められるのも同じ装置なので itself。目的語が主語と同じときは必ず -self になる。",
+        "The blue folder is mine; the one on the shelf must be ___ は「彼女のもの」なので hers。her なら後ろに名詞が必要になる。"
+      ],
+      "examples": [
+        {
+          "en": "Because the technician was unavailable, Ms. Reyes configured the new server herself.",
+          "ja": "技術者が不在だったため、レイエス氏は自分で新しいサーバーを設定した。",
+          "ok": true,
+          "note": "「自分で」と強調する再帰代名詞。取り除いても文になる"
+        },
+        {
+          "en": "The device will shut itself down if the internal temperature exceeds the safe range.",
+          "ja": "内部温度が安全範囲を超えると、その装置は自動的に停止する。",
+          "ok": true,
+          "note": "止める側と止められる側が同じなので itself"
+        }
+      ],
+      "pitfall": "shut itself down の語順に注意。目的語が代名詞のときは動詞と副詞の間に入るので、shut down itself とは言えない。"
+    },
+    {
+      "heading": "4. 形式主語と形式目的語の it",
+      "point": "本当の主語や目的語が後ろにあるとき、位置だけを埋めるのが it。this や that では代用できない。",
+      "columns": [
+        {
+          "title": "形式主語の it",
+          "items": [
+            "It is + 形容詞 + to do",
+            "It is + 形容詞 + that 節",
+            "It takes + 時間 + to do",
+            "It seems that ..."
+          ]
+        },
+        {
+          "title": "形式目的語の it",
+          "items": [
+            "find it + 形容詞 + to do",
+            "make it + 形容詞 + to do",
+            "think it + 形容詞 + that 節"
+          ]
+        },
+        {
+          "title": "天候・時間・距離の it",
+          "items": ["It is raining.", "It is five o’clock.", "It is ten miles to the station."]
+        }
+      ],
+      "body": [
+        "It takes approximately forty minutes to travel from the airport では、本当の主語は to travel 以下。この位置を埋めるのは it だけで、This や That では言い換えられない。",
+        "The committee found ___ difficult to reach a consensus では、found の目的語の位置を it が埋め、本当の目的語は to reach 以下になる。"
+      ],
+      "examples": [
+        {
+          "en": "It takes approximately forty minutes to travel from the airport to the center.",
+          "ja": "空港から会場までは約40分かかる。",
+          "ok": true,
+          "note": "本当の主語は to travel 以下。位置を埋めるのは it"
+        },
+        {
+          "en": "The committee found it difficult to reach a consensus on the budget allocation.",
+          "ja": "委員会は予算配分について合意に達するのが難しいと感じた。",
+          "ok": true,
+          "note": "found の目的語の位置を埋める形式目的語"
+        }
+      ]
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "何を指しているかを先に決める。数と特定・不特定はそのあとで確かめる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 何を指しているか探す",
+            "② 同一物か同種の別物か",
+            "③ 全部でいくつあるか",
+            "④ 残りが特定されるか",
+            "⑤ 主語と同じなら -self"
+          ]
+        }
+      ],
+      "body": [
+        "空所が指しているものを前から探す。見つからなければ形式主語・形式目的語の it を疑う。",
+        "まったく同じものなら it / them、同じ種類の別物なら one / ones、比較で名詞を繰り返さないなら that / those。",
+        "「もう一方」「残り」を選ぶときは、全体がいくつあるかを数える。2 つなら the other、3 つ以上で残り全部なら the others、一部なら others。",
+        "動詞の目的語が主語と同じ人・物を指すなら -self。取り除いても文が成り立つなら強調の用法。"
+      ]
+    }
+  ]
+}

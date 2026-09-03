@@ -1,0 +1,220 @@
+{
+  "title": "倒置・強調・相関表現",
+  "targets": [
+    {
+      "category": "倒置・強調・省略"
+    },
+    {
+      "category": "相関表現"
+    }
+  ],
+  "summary": "相関表現は 2 つで 1 組なので、片方が見えればもう片方は決まる。否定語が文頭に出たら疑問文の語順に変わる。この 2 つを知っていれば、見た目の難しさに惑わされない。",
+  "sections": [
+    {
+      "heading": "1. 2 つで 1 組の相関表現",
+      "point": "文中に片方が見えていれば、空所に入る語は決まる。意味を考えるより先に相方を探す。",
+      "columns": [
+        {
+          "title": "定番の組",
+          "items": [
+            "both A and B",
+            "either A or B",
+            "neither A nor B",
+            "not only A but also B",
+            "not A but B",
+            "A as well as B"
+          ]
+        },
+        {
+          "title": "程度・結果",
+          "items": [
+            "so + 形容詞 + that",
+            "such + a + 形容詞 + 名詞 + that",
+            "too + 形容詞 + to do",
+            "形容詞 + enough + to do"
+          ]
+        },
+        {
+          "title": "比較・選択",
+          "items": [
+            "not so much A as B",
+            "rather than 〜よりむしろ",
+            "would rather A than B",
+            "prefer A to B"
+          ]
+        },
+        {
+          "title": "範囲を示す",
+          "items": [
+            "between A and B",
+            "from A to B",
+            "distinguish between A and B",
+            "range from A to B"
+          ]
+        }
+      ],
+      "body": [
+        "both は and、either は or、neither は nor、not only は but also と組む。文中に and が見えていれば both、nor が見えていれば neither が入る。",
+        "so と such は後ろの形で見分ける。so の後ろは形容詞か副詞、such の後ろは冠詞 + 形容詞 + 名詞。so great that と such a successful launch that の違いはここにある。",
+        "as well as は「A だけでなく B も」だが重点は A にある。動詞の一致でも A に合わせるので、not only A but also B（B に合わせる）とは扱いが逆になる。"
+      ],
+      "table": {
+        "headers": ["前半", "後半", "注意"],
+        "rows": [
+          ["both", "and", "複数扱い"],
+          ["either", "or", "近いほうに一致"],
+          ["neither", "nor", "近いほうに一致"],
+          ["not only", "but also", "B に一致"],
+          ["A as well as B", "—", "A に一致"],
+          ["so + 形容詞", "that", "副詞も可"],
+          ["such + a + 形容詞 + 名詞", "that", "名詞が要る"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The renovation not only improved energy efficiency but also reduced maintenance costs.",
+          "ja": "その改修は省エネ性能を高めただけでなく、維持費も削減した。",
+          "ok": true,
+          "note": "not only が見えているので but also"
+        },
+        {
+          "en": "It was such a successful launch that the company doubled its production target.",
+          "ja": "それは非常に成功した発売だったので、その会社は生産目標を倍にした。",
+          "ok": true,
+          "note": "冠詞 + 形容詞 + 名詞が続くので such。so なら形容詞が直接続く"
+        }
+      ],
+      "pitfall": "as well as は A に一致、not only A but also B は B に一致。似た意味なのに動詞の合わせ方が逆になる。"
+    },
+    {
+      "heading": "2. 否定語が文頭に出たら倒置",
+      "point": "否定の語句が文頭に出ると、その後ろは疑問文の語順になる。空所の後ろに主語があれば倒置を疑う。",
+      "columns": [
+        {
+          "title": "倒置を起こす否定語",
+          "items": [
+            "Never / Never before",
+            "Little 少しも〜ない",
+            "Rarely / Seldom めったに",
+            "Under no circumstances 決して",
+            "Not until 〜まで…ない",
+            "No sooner 〜するやいなや"
+          ]
+        },
+        {
+          "title": "倒置後の語順",
+          "items": [
+            "一般動詞なら do / does / did + 主語 + 原形",
+            "be 動詞なら be + 主語",
+            "助動詞なら助動詞 + 主語",
+            "完了形なら have / has + 主語"
+          ]
+        },
+        {
+          "title": "否定語以外の倒置",
+          "items": [
+            "Only after / Only when + 節",
+            "so + 動詞 + 主語 前も同じ",
+            "neither + 動詞 + 主語 前も同様でない",
+            "Enclosed is 〜 補語が前に出る"
+          ]
+        }
+      ],
+      "body": [
+        "Never before ___ the company recorded such an increase では、Never before が文頭に出ているので has + 主語 + 過去分詞の語順になる。",
+        "Not until the third inspection ___ the engineers discover the crack のように、一般動詞のときは did + 主語 + 原形になる。discovered ではなく discover になる点に注意。",
+        "前の内容を受けて「〜もそうだ」は so + 動詞 + 主語、「〜も違う」は neither + 動詞 + 主語。and so did the Nagoya office、and neither did the second のように使う。"
+      ],
+      "examples": [
+        {
+          "en": "Never before has the company recorded such a sharp increase in overseas orders.",
+          "ja": "これまでその会社が海外受注のこれほど急激な伸びを記録したことはない。",
+          "ok": true,
+          "note": "完了形なので has + 主語 + 過去分詞"
+        },
+        {
+          "en": "Not until the third inspection did the engineers discover the crack in the beam.",
+          "ja": "3度目の点検になって初めて、技術者たちは梁のひび割れを発見した。",
+          "ok": true,
+          "note": "一般動詞なので did + 主語 + 原形。discovered にはしない"
+        },
+        {
+          "en": "The Osaka branch exceeded its annual target, and so did the Nagoya office.",
+          "ja": "大阪支店は年間目標を上回り、名古屋支店も同様だった。",
+          "ok": true,
+          "note": "肯定を受けるので so。否定を受けるなら neither"
+        }
+      ],
+      "pitfall": "倒置になると動詞は原形に戻る。did the engineers discover であって did ... discovered ではない。"
+    },
+    {
+      "heading": "3. 強調と省略",
+      "point": "強調構文は It is と that の間に強調したい語句が入る。省略は繰り返しを避けるための形。",
+      "columns": [
+        {
+          "title": "強調構文",
+          "items": [
+            "It is 〜 that ... 〜こそが…",
+            "It was not until 〜 that ...",
+            "人なら that の代わりに who",
+            "取り除いても文が成り立つ"
+          ]
+        },
+        {
+          "title": "動詞の強調",
+          "items": ["do / does / did + 原形", "「確かに〜する」の意味", "肯定文にしか使わない"]
+        },
+        {
+          "title": "繰り返しを避ける省略",
+          "items": [
+            "代不定詞 to だけ残す",
+            "if any もしあれば",
+            "if necessary 必要なら",
+            "while doing 主語 + be の省略"
+          ]
+        }
+      ],
+      "body": [
+        "It was the marketing team that first identified the shift では、It was と that を取り除くと The marketing team first identified the shift という完全な文が残る。これが強調構文の見分け方。",
+        "It was not until the audit was complete that the discrepancy came to light は「監査が終わって初めて明らかになった」。not until と組む強調構文で頻出。",
+        "The revised manual does address the issue の does は「確かに扱っている」という強調。肯定文の動詞の前に置き、後ろは原形になる。",
+        "they were simply unable ___ の空所は to だけ。前に出た to submit the report の繰り返しを避ける代不定詞。"
+      ],
+      "examples": [
+        {
+          "en": "It was not until the audit was complete that the discrepancy finally came to light.",
+          "ja": "監査が完了して初めて、その食い違いが明らかになった。",
+          "ok": true,
+          "note": "not until と組む強調構文。that が入る"
+        },
+        {
+          "en": "Please note any defects, if any, on the inspection form before signing it.",
+          "ja": "署名前に、欠陥があれば点検表に記入してください。",
+          "ok": true,
+          "note": "if there are any の省略形"
+        }
+      ]
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "文中に相方があるかをまず探す。文頭に否定語があれば語順を確かめる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① and / or / nor / but also を探す",
+            "② あれば相方が空所に入る",
+            "③ 文頭が否定語なら倒置",
+            "④ 倒置後は疑問文の語順",
+            "⑤ It is 〜 that を外して文になるか"
+          ]
+        }
+      ],
+      "body": [
+        "文中に and / or / nor / but also / than / as が見えていれば相関表現。相方を思い出すだけで解ける。so と such は後ろが形容詞か名詞かで見分ける。",
+        "文頭が Never / Little / Rarely / Not until / Under no circumstances なら倒置。後ろに主語が来ていることを確かめ、疑問文の語順に合う形を選ぶ。",
+        "It is と that を取り除いて完全な文が残るなら強調構文。残らないなら形式主語の it。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "title": "品詞識別",
+  "targets": [
+    {
+      "category": "品詞識別"
+    }
+  ],
+  "summary": "選択肢が同じ語の名詞・形容詞・副詞・動詞形で並んでいたら、意味を考える必要はない。空所の前後の形だけで入る品詞が決まる。語尾を見れば品詞は判別できる。",
+  "sections": [
+    {
+      "heading": "1. 空所の位置で品詞が決まる",
+      "point": "空所の直前と直後に何があるかを見る。文の意味を読まなくても品詞は決まる。",
+      "columns": [
+        {
+          "title": "名詞が入る",
+          "items": [
+            "冠詞 the / a の後ろ",
+            "所有格 its / our の後ろ",
+            "形容詞の後ろ",
+            "前置詞の後ろ",
+            "他動詞の目的語",
+            "文の主語"
+          ]
+        },
+        {
+          "title": "形容詞が入る",
+          "items": [
+            "冠詞と名詞の間",
+            "名詞の直前",
+            "be 動詞の後ろ",
+            "remain / become / seem の後ろ",
+            "keep / find / make + 目的語 の後ろ"
+          ]
+        },
+        {
+          "title": "副詞が入る",
+          "items": [
+            "動詞の前後",
+            "助動詞と動詞の間",
+            "be 動詞と過去分詞の間",
+            "形容詞・副詞の直前",
+            "文頭でカンマの前",
+            "完全な文から取り除ける位置"
+          ]
+        }
+      ],
+      "body": [
+        "空所の前が冠詞や所有格、後ろが動詞なら名詞。The board praised the team for the ___ of its campaign では、the と of に挟まれているので名詞の creativity が入る。",
+        "冠詞と名詞に挟まれていれば形容詞。The revised handbook provides a ___ explanation では a と explanation の間なので clear。",
+        "副詞はいちばん見分けやすい。取り除いても文が成り立つ位置にあれば副詞。The technician will ___ inspect the system は空所を消しても文になるので thoroughly が入る。"
+      ],
+      "table": {
+        "headers": ["空所の位置", "入る品詞", "例"],
+        "rows": [
+          ["the ___ of", "名詞", "the creativity of"],
+          ["a ___ 名詞", "形容詞", "a clear explanation"],
+          ["be 動詞 + ___", "形容詞", "is optional"],
+          ["助動詞 + ___ + 動詞", "副詞", "will thoroughly inspect"],
+          ["be + ___ + 過去分詞", "副詞", "are carefully reviewed"],
+          ["___ + 形容詞", "副詞", "remarkably consistent"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The board praised the marketing team for the creativity of its new campaign.",
+          "ja": "取締役会は新しい広告活動の独創性について営業部を称賛した。",
+          "ok": true,
+          "note": "the と of に挟まれているので名詞"
+        },
+        {
+          "en": "All submissions are carefully reviewed by two independent editors.",
+          "ja": "すべての投稿は2名の独立した編集者によって入念に審査される。",
+          "ok": true,
+          "note": "be 動詞と過去分詞の間なので副詞"
+        },
+        {
+          "en": "The pilot results were remarkably consistent with the initial hypothesis.",
+          "ja": "試験結果は当初の仮説と驚くほど一致していた。",
+          "ok": true,
+          "note": "形容詞 consistent の直前なので副詞"
+        }
+      ],
+      "pitfall": "空所を取り除いて文が成り立つなら副詞、成り立たないなら名詞か形容詞。この一手で候補が半分になる。"
+    },
+    {
+      "heading": "2. 語尾で品詞を見分ける",
+      "point": "選択肢の語尾を見れば品詞は分かる。意味を知らない単語でも解ける。",
+      "columns": [
+        {
+          "title": "名詞の語尾",
+          "items": [
+            "-tion / -sion 分配 distribution",
+            "-ment 約束 commitment",
+            "-ness / -ity 独創性 creativity",
+            "-ance / -ence 出席 attendance",
+            "-al 承認 approval",
+            "-th 成長 growth"
+          ]
+        },
+        {
+          "title": "人を表す名詞の語尾",
+          "items": [
+            "-er / -or 従業員 employer",
+            "-ant / -ent 応募者 applicant",
+            "-ee 受け手 employee",
+            "-ist 専門家 specialist"
+          ]
+        },
+        {
+          "title": "形容詞の語尾",
+          "items": [
+            "-able / -ible 利用できる available",
+            "-ive 効果的な effective",
+            "-ous 重大な serious",
+            "-ful / -less 有用な useful",
+            "-al / -ial 財務の financial",
+            "-ic / -ical 経済の economic"
+          ]
+        },
+        {
+          "title": "副詞の語尾",
+          "items": [
+            "-ly が基本",
+            "ただし形容詞にも -ly はある",
+            "friendly / costly / timely は形容詞"
+          ]
+        }
+      ],
+      "body": [
+        "語尾で品詞が分かるので、意味を知らない単語が選択肢に並んでいても解ける。distribution が名詞、distributing が動名詞・現在分詞、distributed が過去分詞、distribute が動詞と、形だけで判別できる。",
+        "-al は名詞にも形容詞にもある。approval / proposal / arrival は名詞、financial / critical / typical は形容詞。よく出るものは語ごと覚える。",
+        "-ly が付いていれば副詞と決めつけない。friendly / costly / timely / likely / lively は形容詞なので、名詞を修飾する位置に入る。"
+      ],
+      "examples": [
+        {
+          "en": "Distribution of the new software will begin in the eastern region next month.",
+          "ja": "新しいソフトウェアの配布は来月、東部地域で始まる。",
+          "ok": true,
+          "note": "文の主語なので名詞。Distributing でも主語になれるが of が続くので名詞"
+        },
+        {
+          "en": "The grant provides financial support for early-stage research.",
+          "ja": "その助成金は初期段階の研究に対する資金援助を提供する。",
+          "ok": true,
+          "note": "-al だが名詞 support を修飾しているので形容詞"
+        }
+      ],
+      "pitfall": "-ly で終わる形容詞（friendly / costly / timely / likely）に注意。副詞だと思って動詞の前に入れると外す。"
+    },
+    {
+      "heading": "3. 紛らわしい名詞の使い分け",
+      "point": "同じ語源で名詞が 2 つあるとき、人を指すか行為・物を指すかで決まる。",
+      "columns": [
+        {
+          "title": "人を指す",
+          "items": [
+            "applicant 応募者",
+            "employee 従業員",
+            "participant 参加者",
+            "consultant 相談役",
+            "attendant 係員"
+          ]
+        },
+        {
+          "title": "行為・物を指す",
+          "items": [
+            "application 申請書",
+            "employment 雇用",
+            "participation 参加",
+            "consultation 相談",
+            "attendance 出席"
+          ]
+        },
+        {
+          "title": "見分ける手がかり",
+          "items": [
+            "動詞 submit / attend の主語なら人",
+            "be reviewed / be required なら物",
+            "every / each の後ろは人が多い"
+          ]
+        }
+      ],
+      "body": [
+        "Each ___ will be reviewed by two members なら「審査される」側なので application、Every ___ must submit a portfolio なら「提出する」側なので applicant になる。動詞との関係で決まる。",
+        "attendance（出席という行為）と attendant（係員）、employment（雇用）と employee（従業員）も同じ関係。空所が何をするのか、何をされるのかを見る。"
+      ],
+      "examples": [
+        {
+          "en": "Each application will be reviewed by two members of the admissions committee.",
+          "ja": "各申請書は入学委員会の2名によって審査される。",
+          "ok": true,
+          "note": "審査される側なので application"
+        },
+        {
+          "en": "Every applicant must submit a portfolio along with the registration form.",
+          "ja": "すべての応募者は登録用紙とともに作品集を提出しなければならない。",
+          "ok": true,
+          "note": "提出する側なので applicant"
+        }
+      ]
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "選択肢が同じ語の変化形なら、意味は読まない。空所の前後だけ見る。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 選択肢が同じ語の変化形か確認",
+            "② 空所を取り除いて文が成り立つか",
+            "③ 成り立つなら副詞",
+            "④ 成り立たないなら前後を見る",
+            "⑤ 冠詞・所有格の後ろなら名詞"
+          ]
+        }
+      ],
+      "body": [
+        "選択肢に create / creative / creatively / creativity のように同じ語の変化形が並んでいたら、これは品詞問題。文の意味を読む必要はない。",
+        "空所を取り除いてみる。文が成り立つなら副詞が入る。成り立たないなら、文の骨格に必要な名詞か形容詞が入る。",
+        "前が冠詞・所有格・形容詞、または前置詞なら名詞。前が冠詞で後ろが名詞、または be 動詞の後ろなら形容詞。",
+        "この手順なら 10 秒で解ける。品詞問題で時間を使わないぶん、語彙問題に時間を回せる。"
+      ]
+    }
+  ]
+}

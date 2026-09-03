@@ -1,0 +1,214 @@
+{
+  "title": "冠詞・限定詞",
+  "targets": [
+    {
+      "category": "冠詞・限定詞"
+    }
+  ],
+  "summary": "a と an は綴りではなく発音で決まる。the は「どれのことか特定できる」ときに付く。あとは後ろの名詞が単数か複数か不可算かで、置ける限定詞が決まる。",
+  "sections": [
+    {
+      "heading": "1. a と an は発音で決まる",
+      "point": "母音字で始まるかではなく、母音の音で始まるかで選ぶ。",
+      "columns": [
+        {
+          "title": "an を使う — 母音の音",
+          "items": [
+            "an MBA エム",
+            "an hour アワー",
+            "an honest 発音しない h",
+            "an item / an approval"
+          ]
+        },
+        {
+          "title": "a を使う — 子音の音",
+          "items": [
+            "a university ユニ",
+            "a European ユーロ",
+            "a one-year contract ワン",
+            "a uniform ユニ"
+          ]
+        },
+        {
+          "title": "a が「〜につき」の意味",
+          "items": ["200 dollars an hour 1時間につき", "twice a week 週に2回", "per と同じ働き"]
+        }
+      ],
+      "body": [
+        "university は綴りは u で始まるが発音は「ユ」で子音の音なので a。MBA は綴りは M だが発音は「エム」で母音の音なので an になる。綴りではなく音で決める。",
+        "hour / honest / honor は h を発音しないので an。同じ h でも hotel / history は発音するので a。",
+        "「〜につき」の意味の a / an もある。200 dollars an hour は「1時間あたり200ドル」で、per hour と同じ。"
+      ],
+      "examples": [
+        {
+          "en": "The successful candidate holds an MBA from a well-known European business school.",
+          "ja": "採用者は著名な欧州のビジネススクールでMBAを取得している。",
+          "ok": true,
+          "note": "MBA は「エム」で母音の音なので an。European は「ユー」なので a"
+        },
+        {
+          "en": "The consultant charges 200 dollars an hour for on-site technical support.",
+          "ja": "そのコンサルタントは現地技術支援に1時間あたり200ドルを請求する。",
+          "ok": true,
+          "note": "hour は h を発音しない。「〜につき」の意味の an"
+        }
+      ]
+    },
+    {
+      "heading": "2. the が付く場面",
+      "point": "聞き手がどれのことか特定できるときに the が付く。特定させる語句が近くにある。",
+      "columns": [
+        {
+          "title": "後ろの語句で特定される",
+          "items": [
+            "the + 名詞 + of ...",
+            "the + 名詞 + 関係詞節",
+            "the same 〜 as",
+            "the number of"
+          ]
+        },
+        {
+          "title": "1 つしかないと決まる",
+          "items": [
+            "the only 唯一の",
+            "the first / the second 序数",
+            "the last 最後の",
+            "最上級 the best"
+          ]
+        },
+        {
+          "title": "the + 形容詞 = 人々",
+          "items": [
+            "the elderly 高齢者",
+            "the unemployed 失業者",
+            "the injured 負傷者",
+            "複数扱いになる"
+          ]
+        },
+        {
+          "title": "the whole / all",
+          "items": [
+            "the whole + 単数名詞",
+            "all the + 名詞",
+            "half of the + 名詞",
+            "both the + 複数名詞"
+          ]
+        }
+      ],
+      "body": [
+        "only / first / third / last / 最上級は「どれか」を 1 つに絞る語なので the が付く。This is the third time the deadline has been extended。",
+        "the + 形容詞で「〜な人々」を表す。the elderly は高齢者全体を指し、複数扱いになる。",
+        "the same 〜 as と組む。the same extended warranty as its competitors のように、as が続くのが目印。"
+      ],
+      "examples": [
+        {
+          "en": "Ms. Ferrara was the only applicant with experience in both fields.",
+          "ja": "フェラーラ氏は両分野の経験を持つ唯一の応募者だった。",
+          "ok": true,
+          "note": "only は 1 人に絞る語なので the"
+        },
+        {
+          "en": "The museum offers discounted memberships to the elderly and full-time students.",
+          "ja": "その博物館は高齢者と常勤学生に割引会員資格を提供している。",
+          "ok": true,
+          "note": "the + 形容詞で「〜な人々」"
+        }
+      ]
+    },
+    {
+      "heading": "3. 後ろの名詞で置ける語が決まる",
+      "point": "限定詞は後ろの名詞の数に合わせる。単数名詞につく語は限られている。",
+      "columns": [
+        {
+          "title": "単数名詞につく",
+          "items": [
+            "every + 単数名詞",
+            "each + 単数名詞",
+            "another + 単数名詞",
+            "this / that + 単数名詞",
+            "the whole + 単数名詞"
+          ]
+        },
+        {
+          "title": "複数名詞につく",
+          "items": [
+            "these / those + 複数名詞",
+            "both + 複数名詞",
+            "several / many + 複数名詞",
+            "all + 複数名詞"
+          ]
+        },
+        {
+          "title": "of を伴う形",
+          "items": [
+            "all of the + 名詞",
+            "most of the + 名詞",
+            "half of the + 名詞",
+            "none of the + 名詞",
+            "of の後ろには限定詞が要る"
+          ]
+        },
+        {
+          "title": "数詞を伴える語",
+          "items": [
+            "another two weeks もう 2 週間",
+            "every three months 3か月ごとに",
+            "数詞が入ると複数名詞になる"
+          ]
+        }
+      ],
+      "body": [
+        "every / each / another / this は単数名詞にしか付かない。___ employee must complete the course では employee が単数なので Every が入る。All や Most なら複数名詞が必要になる。",
+        "of を使うときは後ろに the / these / my などの限定詞が要る。most of students とは言わず、most students か most of the students のどちらかになる。",
+        "another は「an + other」なので単数が原則だが、数詞が入ると複数名詞を伴える。another two weeks は「もう 2 週間」でひとまとまりとして扱う。"
+      ],
+      "table": {
+        "headers": ["語", "後ろの名詞", "例"],
+        "rows": [
+          ["every / each", "単数", "every department"],
+          ["another", "単数（数詞があれば複数）", "another two weeks"],
+          ["this / that", "単数", "this kind of defect"],
+          ["these / those", "複数", "those figures"],
+          ["the whole", "単数", "the whole building"],
+          ["all / most / half + of", "限定詞が必要", "all of the equipment"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Every employee must complete the compliance course before the end of the year.",
+          "ja": "すべての従業員は年末までに法令順守講習を修了しなければならない。",
+          "ok": true,
+          "note": "employee が単数なので Every。All なら複数名詞が要る"
+        },
+        {
+          "en": "The engineering team will require another two weeks to complete the final testing.",
+          "ja": "技術チームは最終試験を終えるのにもう2週間必要とする。",
+          "ok": true,
+          "note": "数詞が入るので another でも複数名詞を伴える"
+        }
+      ],
+      "pitfall": "This kind of defect のように kind / type / sort は単数扱い。These kind とは言わず、This kind か These kinds になる。"
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "後ろの名詞を見る。数が合わない選択肢はそれだけで消える。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 後ろの名詞は単数か複数か不可算か",
+            "② 数の合わない限定詞を消す",
+            "③ of があれば後ろに限定詞が要る",
+            "④ a / an は発音で選ぶ",
+            "⑤ 特定できるなら the"
+          ]
+        }
+      ],
+      "body": [
+        "空所の後ろの名詞を見る。単数なら every / each / another / this、複数なら these / both / several、of が続くなら all of / most of の形になる。",
+        "a と an は綴りではなく発音。u で始まっても「ユ」なら a、M で始まっても「エム」なら an。",
+        "only / first / last / 最上級、of 句や関係詞節で限定されている名詞には the が付く。"
+      ]
+    }
+  ]
+}
