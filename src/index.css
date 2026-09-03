@@ -941,3 +941,48 @@ body {
   padding-top: 20px;
   border-top: 1px solid var(--border);
 }
+
+/* --- 学習記録 --- */
+
+.snapshot__table-wrap {
+  overflow-x: auto;
+  margin-bottom: 12px;
+}
+
+.snapshot__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.snapshot__table th,
+.snapshot__table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.snapshot__table th:first-child,
+.snapshot__table td:first-child {
+  text-align: left;
+}
+
+.snapshot__table th {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* 実力の目安になる列なので目立たせる */
+.snapshot__sure {
+  color: var(--correct);
+  font-weight: 600;
+}
+
+.snapshot__note {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}

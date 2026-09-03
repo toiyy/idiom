@@ -3,6 +3,8 @@ import type { Progress } from '../lib/storage';
 import { ConfidenceTable } from './ConfidenceTable';
 import { ProgressTransfer } from './ProgressTransfer';
 import { NoteList } from './NoteList';
+import { SnapshotList } from './SnapshotList';
+import type { Snapshot } from '../lib/snapshots';
 import type { Notes } from '../lib/notes';
 import type { Backup } from '../lib/backup';
 import { findGuide } from '../data/guides';
@@ -23,6 +25,9 @@ interface HomeScreenProps {
   pool: readonly Question[];
   onDeleteNote: (questionId: string) => void;
   onOpenGuide: (of: { category: string; subcategory?: string }) => void;
+  snapshots: Snapshot[];
+  onTakeSnapshot: () => void;
+  onDeleteSnapshot: (takenAt: string) => void;
 }
 
 /** 「12 問」のような件数表示。カテゴリとサブカテゴリで共用する。 */
@@ -70,6 +75,9 @@ export function HomeScreen({
   pool,
   onDeleteNote,
   onOpenGuide,
+  snapshots,
+  onTakeSnapshot,
+  onDeleteSnapshot,
 }: HomeScreenProps) {
   const accuracy = progress.answered === 0 ? 0 : progress.correct / progress.answered;
   const flat = categories.filter((c) => c.subcategories.length === 0);
@@ -237,9 +245,11 @@ export function HomeScreen({
         </button>
       </section>
 
+      <SnapshotList snapshots={snapshots} onTake={onTakeSnapshot} onDelete={onDeleteSnapshot} />
+
       <NoteList notes={notes} pool={pool} onDelete={onDeleteNote} />
 
-      <ProgressTransfer backup={{ progress, notes }} onImport={onImportBackup} />
+      <ProgressTransfer backup={{ progress, notes, snapshots }} onImport={onImportBackup} />
     </>
   );
 }

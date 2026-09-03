@@ -5,16 +5,18 @@
 
 import { normalizeProgress, type Progress } from './storage';
 import { normalizeNotes, type Notes } from './notes';
+import { normalizeSnapshots, type Snapshot } from './snapshots';
 
 export interface Backup {
   progress: Progress;
   notes: Notes;
+  snapshots: Snapshot[];
 }
 
 interface BackupPayload extends Backup {
   app: 'idiom';
   kind: 'backup';
-  version: 3;
+  version: 4;
   exportedAt: string;
 }
 
@@ -22,10 +24,11 @@ export function exportBackup(backup: Backup): string {
   const payload: BackupPayload = {
     app: 'idiom',
     kind: 'backup',
-    version: 3,
+    version: 4,
     exportedAt: new Date().toISOString(),
     progress: backup.progress,
     notes: backup.notes,
+    snapshots: backup.snapshots,
   };
   return JSON.stringify(payload, null, 2);
 }
@@ -37,7 +40,7 @@ function isCount(n: unknown): n is number {
 /**
  * 書き出した JSON を Backup に戻す。取り込めない入力は null を返す。
  * 包んだ形と、localStorage の進捗の生の値の両方を受け付ける。
- * メモを持たない古い書き出しは、メモなしとして取り込む。
+ * メモや記録を持たない古い書き出しは、それらなしとして取り込む。
  */
 export function parseBackup(text: string): Backup | null {
   let parsed: unknown;
@@ -60,7 +63,8 @@ export function parseBackup(text: string): Backup | null {
 
   return {
     progress: normalizeProgress(body),
-    // メモは包んだ形のときだけ入っている
+    // メモと記録は包んだ形のときだけ入っている
     notes: wrapped ? normalizeNotes((parsed as { notes?: unknown }).notes) : {},
+    snapshots: wrapped ? normalizeSnapshots((parsed as { snapshots?: unknown }).snapshots) : [],
   };
 }
