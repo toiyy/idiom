@@ -656,3 +656,164 @@ body {
 .card__prev {
   margin-right: auto;
 }
+
+/* --- ホーム: カテゴリの解説ボタン --- */
+
+.category-item {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+}
+
+.category-item .category {
+  flex: 1;
+  min-width: 0;
+}
+
+.category__guide {
+  flex: none;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.category__guide:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* --- カテゴリ解説 --- */
+
+.guide__summary {
+  margin: 0 0 8px;
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--bg);
+  line-height: 1.8;
+}
+
+.guide__section {
+  margin-top: 28px;
+}
+
+.guide__heading {
+  margin: 0 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--primary);
+  font-size: 1rem;
+}
+
+.guide__body {
+  margin: 0 0 10px;
+  line-height: 1.9;
+}
+
+.guide__table-wrap {
+  overflow-x: auto;
+  margin: 14px 0;
+}
+
+.guide__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.guide__table th,
+.guide__table td {
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.guide__table th {
+  background: var(--bg);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.guide__examples {
+  list-style: none;
+  margin: 14px 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.guide__example {
+  padding: 10px 12px;
+  border-left: 3px solid var(--border);
+  background: var(--bg);
+  border-radius: 0 8px 8px 0;
+}
+
+.guide__example.is-ok {
+  border-left-color: var(--correct);
+}
+
+.guide__example.is-wrong {
+  border-left-color: var(--wrong);
+}
+
+.guide__mark {
+  margin-right: 6px;
+  font-weight: 700;
+}
+
+.guide__example.is-ok .guide__mark {
+  color: var(--correct);
+}
+
+.guide__example.is-wrong .guide__mark {
+  color: var(--wrong);
+}
+
+.guide__en {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.guide__ja {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.guide__note {
+  margin: 6px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.guide__pitfall {
+  margin: 14px 0 0;
+  padding: 10px 12px;
+  border: 1px solid var(--wrong);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.guide__pitfall strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--wrong);
+  font-size: 0.8rem;
+}
+
+.guide__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}

@@ -4,6 +4,7 @@ import userEvent from '@testing-library/user-event';
 import App from '../App';
 import { questions } from '../data/questions';
 import { parseBackup } from '../lib/backup';
+import { guides } from '../data/guides';
 
 type User = ReturnType<typeof userEvent.setup>;
 type Label = '自信あり' | '迷った' | '勘';
@@ -625,5 +626,65 @@ describe('前の問題に戻る', () => {
       await answer(user, { correct: true, confidence: '自信あり' });
     }
     expect(screen.getByText(`${total - 1} / ${total}`)).toBeInTheDocument();
+  });
+});
+
+describe('カテゴリ解説', () => {
+  it('解説のあるカテゴリにだけ「解説」ボタンが出る', () => {
+    render(<App />);
+    const guided = screen.getAllByRole('button', { name: '解説' });
+    expect(guided.length).toBeGreaterThan(0);
+    // 解説を持たないカテゴリの分まで出ていないこと
+    expect(guided).toHaveLength(guides.length);
+  });
+
+  it('解説を開くと見出しと表と例文が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+
+    const guide = guides[0];
+    expect(screen.getByRole('heading', { name: guide.category })).toBeInTheDocument();
+    expect(screen.getByText(guide.summary)).toBeInTheDocument();
+    for (const section of guide.sections) {
+      expect(screen.getByRole('heading', { name: section.heading })).toBeInTheDocument();
+    }
+    expect(document.querySelectorAll('.guide__table').length).toBeGreaterThan(0);
+    expect(document.querySelectorAll('.guide__example').length).toBeGreaterThan(0);
+  });
+
+  it('解説からそのカテゴリを解き始められる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+
+    const category = guides[0].category;
+    const size = questions.filter((q) => q.category === category).length;
+    await user.click(
+      screen.getByRole('button', { name: new RegExp(`このカテゴリを解く（${size} 問）`) }),
+    );
+
+    expect(sessionTotal()).toBe(size);
+    expect(currentQuestion().category).toBe(category);
+  });
+
+  it('解説からホームに戻れる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await user.click(screen.getByRole('button', { name: 'ホームへ' }));
+    expect(screen.getByRole('button', { name: /^全問/ })).toBeInTheDocument();
+  });
+
+  it('解説を開いても解きかけのセッションは消えない', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await user.click(screen.getByRole('button', { name: 'ホームへ' }));
+    expect(screen.getByRole('button', { name: SHORT.label })).toBeInTheDocument();
   });
 });

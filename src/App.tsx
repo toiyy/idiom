@@ -23,11 +23,13 @@ import { countCorrect, emptyAnswers, setAnswer, type Answers } from './lib/answe
 import { loadNotes, saveNotes, setNote, type Notes } from './lib/notes';
 import type { Backup } from './lib/backup';
 import { HomeScreen } from './components/HomeScreen';
+import { GuideView } from './components/GuideView';
+import { findGuide } from './data/guides';
 import { QuestionCard } from './components/QuestionCard';
 import { ResultView } from './components/ResultView';
 import type { Question } from './types/question';
 
-type Screen = 'home' | 'quiz' | 'result';
+type Screen = 'home' | 'quiz' | 'result' | 'guide';
 
 export default function App() {
   // マウント時に一度だけ読む。解きかけのセッションがあればその状態から始める
@@ -45,6 +47,8 @@ export default function App() {
   const confidence = current?.confidence ?? null;
   const sessionCorrect = useMemo(() => countCorrect(order, answers), [order, answers]);
   const [notes, setNotes] = useState<Notes>(() => loadNotes());
+  // 表示中の解説のカテゴリ。解説は読み物なのでセッションには保存しない
+  const [guideCategory, setGuideCategory] = useState<string | null>(null);
 
   const reviewCount = useMemo(
     () => countReviewable(questions, progress.wrongIds),
@@ -78,7 +82,7 @@ export default function App() {
   // 解きかけの状態を毎回書き出しておき、タブを閉じても続きから戻れるようにする。
   // 結果画面まで到達したセッションは用済みなので消す。
   useEffect(() => {
-    if (screen === 'result' || order.length === 0) {
+    if (screen === 'result' || screen === 'guide' || order.length === 0) {
       if (screen === 'result') clearSession();
       return;
     }
@@ -164,6 +168,8 @@ export default function App() {
     setScreen('home');
   }
 
+  const guide = guideCategory === null ? undefined : findGuide(guideCategory);
+
   // ホームに戻っていて、まだ解き終えていないセッションが残っている状態
   const suspended =
     screen === 'home' && order.length > 0
@@ -195,6 +201,19 @@ export default function App() {
           notes={notes}
           pool={questions}
           onDeleteNote={(id) => handleNoteChange(id, '')}
+          onOpenGuide={(category) => {
+            setGuideCategory(category);
+            setScreen('guide');
+          }}
+        />
+      )}
+
+      {screen === 'guide' && guide && (
+        <GuideView
+          guide={guide}
+          questionCount={questions.filter((q) => q.category === guide.category).length}
+          onStart={() => startQuiz({ kind: 'category', category: guide.category })}
+          onBack={() => setScreen('home')}
         />
       )}
 

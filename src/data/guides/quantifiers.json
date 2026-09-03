@@ -1,0 +1,280 @@
+{
+  "category": "数量詞",
+  "summary": "数量詞の問題は、ほとんどが「空所の後ろの名詞が可算か不可算か」で決まる。語の意味を覚える前に、まず名詞を見る癖をつけると正答率が一気に上がる。",
+  "sections": [
+    {
+      "heading": "1. すべての出発点は「可算か不可算か」",
+      "body": [
+        "空所に入る数量詞を選ぶとき、最初に見るのは数量詞そのものではなく、その後ろにある名詞。名詞が可算名詞の複数形なら many / few / fewer / several、不可算名詞なら much / little / less / a great deal of と、対応が機械的に決まる。",
+        "英語では可算でも日本語の感覚では数えられそうな名詞が落とし穴になる。TOEIC に繰り返し出る不可算名詞は数が限られているので、下の表はそのまま覚えてしまうのが早い。"
+      ],
+      "table": {
+        "headers": ["よく問われる不可算名詞", "意味", "数えたいときの言い方"],
+        "rows": [
+          ["information", "情報", "a piece of information"],
+          ["equipment", "機器", "a piece of equipment"],
+          ["furniture", "家具", "a piece of furniture"],
+          ["machinery", "機械類", "a piece of machinery"],
+          ["baggage / luggage", "手荷物", "a piece of baggage"],
+          ["advice", "助言", "a piece of advice"],
+          ["news", "知らせ", "a piece of news"],
+          ["progress", "進捗", "（不可算のまま）"],
+          ["damage", "損害", "（不可算。damages は「損害賠償金」）"],
+          ["research", "研究", "a research project"],
+          ["evidence", "証拠", "a piece of evidence"],
+          ["feedback", "意見・反応", "（不可算のまま）"],
+          ["paperwork", "事務書類", "（不可算のまま）"],
+          ["merchandise", "商品", "an item of merchandise"],
+          ["access / permission", "利用権・許可", "（不可算のまま）"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The department has made considerable progress on the migration project.",
+          "ja": "その部署は移行プロジェクトでかなりの進展を遂げた。",
+          "ok": true,
+          "note": "progress は不可算。many / a few / numerous はいずれも使えない"
+        },
+        {
+          "en": "The department has made many progresses on the migration project.",
+          "ja": "—",
+          "ok": false,
+          "note": "progress に複数形はない"
+        }
+      ],
+      "pitfall": "information / equipment / furniture は日本語では数えられるので、つい many を選んでしまう。これが数量詞の失点で一番多いパターン。"
+    },
+    {
+      "heading": "2. many / much、few / little、fewer / less",
+      "body": [
+        "可算と不可算で語を使い分ける組が 3 つある。意味は同じで、後ろの名詞に合わせて形だけが変わる。"
+      ],
+      "table": {
+        "headers": ["意味", "可算名詞の複数形につく", "不可算名詞につく"],
+        "rows": [
+          [
+            "多くの",
+            "many / a great many / a number of",
+            "much / a great deal of / a large amount of"
+          ],
+          ["ほとんどない", "few", "little"],
+          ["より少ない（比較級）", "fewer", "less"],
+          [
+            "たくさんの（両方可）",
+            "plenty of / a lot of / lots of",
+            "plenty of / a lot of / lots of"
+          ]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The new process requires fewer steps than the one it replaced.",
+          "ja": "新しい工程は、置き換える前のものより手順が少ない。",
+          "ok": true,
+          "note": "steps は可算名詞の複数形なので fewer"
+        },
+        {
+          "en": "The compact model is less expensive than the standard version.",
+          "ja": "小型モデルは標準版より安い。",
+          "ok": true,
+          "note": "この less は形容詞 expensive を修飾する副詞。名詞の可算・不可算とは無関係"
+        },
+        {
+          "en": "The committee did not have much time to review all the submissions.",
+          "ja": "委員会には、すべての提出物を検討する時間があまりなかった。",
+          "ok": true,
+          "note": "time は不可算なので much"
+        }
+      ],
+      "pitfall": "日常会話では less than 10 people のように可算名詞に less を使うことがあるが、TOEIC では必ず fewer が正解になる。"
+    },
+    {
+      "heading": "3. a few / few、a little / little — a があるかないかで意味が逆になる",
+      "body": [
+        "a が付くと「少しはある」という肯定的な意味、a が付かないと「ほとんどない」という否定的な意味になる。文全体が前向きか後ろ向きかを読めば判断できる。"
+      ],
+      "table": {
+        "headers": ["形", "意味", "含み"],
+        "rows": [
+          ["a few + 可算複数", "少しはある", "肯定的"],
+          ["few + 可算複数", "ほとんどない", "否定的"],
+          ["a little + 不可算", "少しはある", "肯定的"],
+          ["little + 不可算", "ほとんどない", "否定的"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Very few applicants met the five-year experience requirement, so the search was extended.",
+          "ja": "5年の経験という要件を満たす応募者はごくわずかだったため、募集は延長された。",
+          "ok": true,
+          "note": "募集を延長した = 足りなかった。否定的な few"
+        },
+        {
+          "en": "Unfortunately there was little time left to review the final section.",
+          "ja": "あいにく、最終節を見直す時間はほとんど残っていなかった。",
+          "ok": true,
+          "note": "Unfortunately が否定的な流れを示している。a little なら「少しはあった」で矛盾する"
+        }
+      ],
+      "pitfall": "few / little の直前に very が付いていたら、ほぼ確実に「ほとんどない」の意味。a few に very は付かない。"
+    },
+    {
+      "heading": "4. 「数量詞 + of + the 名詞」と動詞の一致",
+      "body": [
+        "Either of the two candidates ___ のような形では、動詞を単数にするか複数にするかが問われる。of の直後にある複数名詞に引きずられず、先頭の数量詞で決めるのが原則。",
+        "なお of を伴うときは the / these / my などの限定詞が必要になる。some of students とは言わず、some students か some of the students のどちらかになる。"
+      ],
+      "table": {
+        "headers": ["数量詞", "動詞", "対象の数"],
+        "rows": [
+          ["each of / every one of", "単数", "3つ以上"],
+          ["either of / neither of", "単数", "ちょうど2つ"],
+          ["one of", "単数", "—"],
+          ["both of", "複数", "ちょうど2つ"],
+          ["several of / many of / few of", "複数", "3つ以上"],
+          ["all of / most of / some of / half of / none of", "中身の名詞に一致", "—"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Either of the two candidates has the technical background required for the position.",
+          "ja": "2人の候補者のどちらも、その職に必要な技術的素養を備えている。",
+          "ok": true,
+          "note": "Either は単数扱いなので has"
+        },
+        {
+          "en": "Neither of the two shortlisted candidates was available for a second interview.",
+          "ja": "最終候補に残った2人とも、二次面接に応じられなかった。",
+          "ok": true,
+          "note": "Neither も単数扱い"
+        },
+        {
+          "en": "Much of the feedback collected during the trial period was overwhelmingly positive.",
+          "ja": "試用期間中に集められた意見の多くは、圧倒的に好意的だった。",
+          "ok": true,
+          "note": "feedback が不可算なので Much + was。可算なら Many + were"
+        },
+        {
+          "en": "All of the equipment in the new laboratory has been calibrated.",
+          "ja": "新しい研究室の機器はすべて較正済みだ。",
+          "ok": true,
+          "note": "All は中身次第。equipment が不可算なので has"
+        }
+      ],
+      "pitfall": "a number of + 複数名詞は「多くの〜」で複数扱い、the number of + 複数名詞は「〜の数」で単数扱い。冠詞ひとつで逆になるので、主述の一致でも狙われる。"
+    },
+    {
+      "heading": "5. no / none / not の使い分け",
+      "body": [
+        "同じ「〜がない」でも品詞が違う。no は形容詞なので名詞を直接修飾し、none は代名詞なので単独か of を伴って使う。not は副詞で、名詞を修飾できない。"
+      ],
+      "table": {
+        "headers": ["語", "品詞", "使い方"],
+        "rows": [
+          ["no", "形容詞", "no + 名詞（report no damage）"],
+          ["none", "代名詞", "単独、または none of + 限定詞 + 名詞"],
+          ["not", "副詞", "動詞や語句を打ち消す。名詞は修飾できない"],
+          ["nothing", "代名詞", "「何も〜ない」。後ろに名詞は続かない"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The technician reported no damage to the outer casing.",
+          "ja": "技術者は外装に損傷がないと報告した。",
+          "ok": true,
+          "note": "名詞 damage を直接修飾しているので no"
+        },
+        {
+          "en": "None of the three proposals met the committee’s budget requirements.",
+          "ja": "3つの提案のいずれも、委員会の予算要件を満たさなかった。",
+          "ok": true,
+          "note": "of を伴う代名詞なので None"
+        }
+      ]
+    },
+    {
+      "heading": "6. almost / most / almost every",
+      "body": [
+        "almost は副詞なので、名詞を直接修飾できない。almost all / almost every のように、間に別の限定詞を挟む必要がある。most は形容詞・代名詞なので単独で名詞につく。"
+      ],
+      "table": {
+        "headers": ["形", "可否", "備考"],
+        "rows": [
+          ["almost every + 単数名詞", "○", "almost が every を修飾している"],
+          ["almost all (of) the + 名詞", "○", "almost が all を修飾している"],
+          ["most + 名詞", "○", "「ほとんどの〜」。the は付けない"],
+          ["most of the + 名詞", "○", "of を使うときは限定詞が必要"],
+          ["almost + 名詞", "×", "almost people とは言えない"],
+          ["almost of the + 名詞", "×", "almost は of を直接とらない"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Almost every department has now migrated to the shared document system.",
+          "ja": "ほぼすべての部署が共有文書システムへ移行を終えている。",
+          "ok": true,
+          "note": "Most は形容詞なので every を修飾できない"
+        },
+        {
+          "en": "Most of the participants said they would attend the follow-up session.",
+          "ja": "参加者の大半が、追加のセッションにも出席すると答えた。",
+          "ok": true
+        }
+      ],
+      "pitfall": "The most は最上級を作る形。「ほとんどの」の意味では the を付けない。Mostly は副詞で「主に」の意味なので、名詞の前には置けない。"
+    },
+    {
+      "heading": "7. any の 4 つの顔",
+      "body": [
+        "any は否定文・疑問文で使うと習うが、TOEIC では条件節と肯定文の用法が問われる。特に if 節の any は「どれか1つでも」という意味で頻出。"
+      ],
+      "table": {
+        "headers": ["場面", "意味", "例"],
+        "rows": [
+          ["否定文", "少しも〜ない", "We do not have any spare parts."],
+          ["疑問文", "何か", "Do you have any questions?"],
+          ["条件節（if / unless）", "どれか1つでも", "If any of the sensors fails, ..."],
+          ["肯定文", "どんな〜でも", "Any employee may apply."]
+        ]
+      },
+      "examples": [
+        {
+          "en": "If any of the sensors fails, the control system will trigger an alert immediately.",
+          "ja": "いずれかのセンサーが故障した場合、制御システムは直ちに警報を発する。",
+          "ok": true,
+          "note": "any of + 複数名詞は「どれか1つでも」の意味で、単数扱いの fails を伴う"
+        }
+      ]
+    },
+    {
+      "heading": "8. 「ほとんどない」を作る副詞 — hardly / scarcely",
+      "body": [
+        "hardly any / scarcely any で「ほとんど〜ない」を表す。hardly 自体が否定語なので、not と一緒には使わない。"
+      ],
+      "examples": [
+        {
+          "en": "There were hardly any complaints about the new seating arrangement.",
+          "ja": "新しい座席配置についての苦情はほとんどなかった。",
+          "ok": true,
+          "note": "almost any とは言えない。almost は any を修飾できない"
+        },
+        {
+          "en": "There were not hardly any complaints.",
+          "ja": "—",
+          "ok": false,
+          "note": "hardly がすでに否定なので not と重ねられない"
+        }
+      ],
+      "pitfall": "hardly は「ほとんど〜ない」で頻度や程度の否定。hard（熱心に）とは別語なので、hardly worked は「ほとんど働かなかった」になる。"
+    },
+    {
+      "heading": "9. 解くときの手順",
+      "body": [
+        "空所の後ろの名詞を見る。可算名詞の複数形か、不可算名詞か、単数形か。",
+        "可算なら many / few / fewer / several / a number of、不可算なら much / little / less / a great deal of に候補を絞る。",
+        "of + 限定詞が続いているなら、動詞の形も確認する。either / neither / each は単数、both / several は複数、all / most / some / none は中身に合わせる。",
+        "文全体が肯定的か否定的かを見て、a few / few、a little / little を決める。"
+      ]
+    }
+  ]
+}

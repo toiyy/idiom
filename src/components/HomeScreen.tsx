@@ -5,6 +5,7 @@ import { ProgressTransfer } from './ProgressTransfer';
 import { NoteList } from './NoteList';
 import type { Notes } from '../lib/notes';
 import type { Backup } from '../lib/backup';
+import { findGuide } from '../data/guides';
 import type { Question } from '../types/question';
 
 interface HomeScreenProps {
@@ -21,6 +22,7 @@ interface HomeScreenProps {
   notes: Notes;
   pool: readonly Question[];
   onDeleteNote: (questionId: string) => void;
+  onOpenGuide: (category: string) => void;
 }
 
 /** 「12 問 / 要復習 3」のような件数表示。カテゴリとサブカテゴリで共用する。 */
@@ -45,6 +47,7 @@ export function HomeScreen({
   notes,
   pool,
   onDeleteNote,
+  onOpenGuide,
 }: HomeScreenProps) {
   const accuracy = progress.answered === 0 ? 0 : progress.correct / progress.answered;
   const flat = categories.filter((c) => c.subcategories.length === 0);
@@ -93,15 +96,26 @@ export function HomeScreen({
         {/* サブカテゴリを持たないカテゴリはグリッドにフラットに並べる */}
         <div className="category-list">
           {flat.map((c) => (
-            <button
-              key={c.category}
-              type="button"
-              className="category"
-              onClick={() => onStart({ kind: 'category', category: c.category })}
-            >
-              <span className="category__name">{c.category}</span>
-              <Count total={c.total} wrong={c.wrong} />
-            </button>
+            // 解説ボタンを入れ子にできないので、カテゴリと横並びの兄弟にする
+            <div className="category-item" key={c.category}>
+              <button
+                type="button"
+                className="category"
+                onClick={() => onStart({ kind: 'category', category: c.category })}
+              >
+                <span className="category__name">{c.category}</span>
+                <Count total={c.total} wrong={c.wrong} />
+              </button>
+              {findGuide(c.category) && (
+                <button
+                  type="button"
+                  className="category__guide"
+                  onClick={() => onOpenGuide(c.category)}
+                >
+                  解説
+                </button>
+              )}
+            </div>
           ))}
         </div>
 
