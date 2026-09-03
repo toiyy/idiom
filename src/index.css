@@ -944,43 +944,77 @@ body {
 
 /* --- 学習記録 --- */
 
-.snapshot__table-wrap {
-  overflow-x: auto;
-  margin-bottom: 12px;
+.record-list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
 }
 
-.snapshot__table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
+.record-item {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
-.snapshot__table th,
-.snapshot__table td {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--border);
-  text-align: right;
-  white-space: nowrap;
+.record-item__head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0 0 4px;
 }
 
-.snapshot__table th:first-child,
-.snapshot__table td:first-child {
-  text-align: left;
-}
-
-.snapshot__table th {
+.record-item__date {
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+}
+
+.record-item__span {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
-/* 実力の目安になる列なので目立たせる */
-.snapshot__sure {
+.record-item__score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.record-item__pct {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* 実力の目安になるので、正答率とは別に並べる */
+.record-item__sure {
   color: var(--correct);
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
-.snapshot__note {
+.record-item__review {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.record-item__down {
+  color: var(--correct);
+}
+
+.record-item__up {
+  color: var(--wrong);
+}
+
+.record__note {
   margin: 0 0 12px;
   color: var(--muted);
   font-size: 0.8rem;

@@ -48,7 +48,7 @@ export interface Progress {
  */
 export const MAX_WRONG_IDS = 2000;
 
-function emptyStats(): ConfidenceStats {
+export function emptyConfidenceStats(): ConfidenceStats {
   return {
     sure: { answered: 0, correct: 0 },
     unsure: { answered: 0, correct: 0 },
@@ -61,7 +61,7 @@ export function makeEmptyProgress(): Progress {
     answered: 0,
     correct: 0,
     wrongIds: [],
-    byConfidence: emptyStats(),
+    byConfidence: emptyConfidenceStats(),
     updatedAt: new Date(0).toISOString(),
   };
 }

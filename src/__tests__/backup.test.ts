@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 import { exportBackup, parseBackup } from '../lib/backup';
 import { makeEmptyProgress, recordAnswer, saveProgress } from '../lib/storage';
 import { setNote, type Notes } from '../lib/notes';
-import { takeSnapshot, type Snapshot } from '../lib/snapshots';
+import { takeRecord, type StudyRecord } from '../lib/records';
 
 beforeEach(() => {
   localStorage.clear();
@@ -18,42 +18,42 @@ const progress = (() => {
 
 const notes: Notes = setNote(setNote({}, 'q2', '後ろが不完全なので主格'), 'q3', 'be worth + -ing');
 
-const snapshots: Snapshot[] = [takeSnapshot(progress, 2, new Date('2026-09-03T00:00:00Z'))];
+const records: StudyRecord[] = [takeRecord(progress, 2, new Date('2026-09-03T00:00:00Z'))];
 
 describe('exportBackup / parseBackup', () => {
   it('書き出して取り込むと元に戻る', () => {
-    expect(parseBackup(exportBackup({ progress, notes, snapshots }))).toEqual({
+    expect(parseBackup(exportBackup({ progress, notes, records }))).toEqual({
       progress,
       notes,
-      snapshots,
+      records,
     });
   });
 
   it('書き出した JSON に目印が入っている', () => {
-    const payload = JSON.parse(exportBackup({ progress, notes, snapshots }));
+    const payload = JSON.parse(exportBackup({ progress, notes, records }));
     expect(payload.app).toBe('idiom');
     expect(payload.kind).toBe('backup');
-    expect(payload.version).toBe(4);
+    expect(payload.version).toBe(5);
     expect(typeof payload.exportedAt).toBe('string');
   });
 
   it('メモや記録が空でも往復できる', () => {
-    expect(parseBackup(exportBackup({ progress, notes: {}, snapshots: [] }))).toEqual({
+    expect(parseBackup(exportBackup({ progress, notes: {}, records: [] }))).toEqual({
       progress,
       notes: {},
-      snapshots: [],
+      records: [],
     });
   });
 
   it('localStorage の進捗の生の値をそのまま貼っても取り込める', () => {
     saveProgress(progress);
     const raw = localStorage.getItem('idiom.progress.v2') ?? '';
-    expect(parseBackup(raw)).toEqual({ progress, notes: {}, snapshots: [] });
+    expect(parseBackup(raw)).toEqual({ progress, notes: {}, records: [] });
   });
 
   it('メモや記録を持たない古い書き出しは、それらなしとして取り込む', () => {
     const old = JSON.stringify({ app: 'idiom', kind: 'progress', version: 2, progress });
-    expect(parseBackup(old)).toEqual({ progress, notes: {}, snapshots: [] });
+    expect(parseBackup(old)).toEqual({ progress, notes: {}, records: [] });
   });
 
   it('自信度の内訳が欠けていても既定値で埋めて取り込む', () => {

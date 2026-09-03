@@ -858,17 +858,17 @@ describe('カテゴリ内の要復習だけを解く', () => {
 });
 
 describe('学習記録', () => {
-  function snapshotRows(): HTMLTableRowElement[] {
-    return Array.from(document.querySelectorAll('.snapshot__table tbody tr'));
+  function recordItems(): HTMLElement[] {
+    return Array.from(document.querySelectorAll('.record-item'));
   }
 
   it('最初は 0 件で案内が出る', () => {
     render(<App />);
     expect(screen.getByRole('heading', { name: '記録（0 件）' })).toBeInTheDocument();
-    expect(snapshotRows()).toHaveLength(0);
+    expect(recordItems()).toHaveLength(0);
   });
 
-  it('記録すると累計と要復習が残る', async () => {
+  it('押した時点までに解いたぶんが 1 件になる', async () => {
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getByRole('button', { name: SHORT.name }));
@@ -876,21 +876,73 @@ describe('学習記録', () => {
     await answer(user, { correct: false, confidence: '勘' });
     await user.click(screen.getByRole('button', { name: '中断' }));
 
-    await user.click(screen.getByRole('button', { name: '今の成績を記録する' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
     expect(screen.getByRole('heading', { name: '記録（1 件）' })).toBeInTheDocument();
+    expect(recordItems()[0]).toHaveTextContent('前回から 2 問');
+    expect(recordItems()[0]).toHaveTextContent('1 / 2');
+    expect(recordItems()[0]).toHaveTextContent('自信あり 1/1');
+  });
 
-    const cells = Array.from(snapshotRows()[0].querySelectorAll('td')).map((c) => c.textContent);
-    // 日付 / 累計 / 正答率 / 自信あり / 要復習 / 削除
-    expect(cells[1]).toBe('1/2');
-    expect(cells[2]).toBe('50%');
-    expect(cells[3]).toBe('100%');
-    expect(cells[4]).toBe('1');
+  it('2 回目は前回からの差だけが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
+
+    // さらに 1 問だけ解いてから記録する
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
+
+    const [latest, first] = recordItems();
+    expect(latest).toHaveTextContent('前回から 1 問');
+    expect(latest).toHaveTextContent('0 / 1');
+    expect(first).toHaveTextContent('前回から 2 問');
+  });
+
+  it('複数カテゴリをまたいで解いても 1 件にまとまる', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    for (const name of [SHORT.name, /^時制/, /^比較/]) {
+      await user.click(screen.getByRole('button', { name }));
+      await answer(user, { correct: true, confidence: '自信あり' });
+      await user.click(screen.getByRole('button', { name: '中断' }));
+    }
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
+
+    expect(recordItems()).toHaveLength(1);
+    expect(recordItems()[0]).toHaveTextContent('前回から 3 問');
+    expect(recordItems()[0]).toHaveTextContent('3 / 3');
+  });
+
+  it('要復習の減り具合が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const missed = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
+    expect(recordItems()[0]).toHaveTextContent('要復習 1');
+
+    // 復習して習得すると要復習が減る
+    await user.click(screen.getByRole('button', { name: `要復習（${missed.category}）` }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: 'ホームへ' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
+
+    expect(recordItems()[0]).toHaveTextContent('要復習 0');
+    expect(recordItems()[0]).toHaveTextContent('−1');
   });
 
   it('記録は再マウント後も残る', async () => {
     const user = userEvent.setup();
     const { unmount } = render(<App />);
-    await user.click(screen.getByRole('button', { name: '今の成績を記録する' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
     unmount();
 
     render(<App />);
@@ -903,17 +955,16 @@ describe('学習記録', () => {
     await user.click(screen.getByRole('button', { name: SHORT.name }));
     await answer(user, { correct: true, confidence: '自信あり' });
     await user.click(screen.getByRole('button', { name: '中断' }));
-    await user.click(screen.getByRole('button', { name: '今の成績を記録する' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
 
     await user.click(screen.getByRole('button', { name: '累計と復習リストをリセット' }));
     expect(screen.getByRole('heading', { name: '記録（1 件）' })).toBeInTheDocument();
-    expect(snapshotRows()[0].querySelectorAll('td')[1]).toHaveTextContent('1/1');
   });
 
   it('1 件ずつ削除できる', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: '今の成績を記録する' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
     await user.click(screen.getByRole('button', { name: /の記録を削除$/ }));
     expect(screen.getByRole('heading', { name: '記録（0 件）' })).toBeInTheDocument();
   });
@@ -921,11 +972,11 @@ describe('学習記録', () => {
   it('書き出しに記録が含まれ、取り込むと復元される', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: '今の成績を記録する' }));
+    await user.click(screen.getByRole('button', { name: 'ここまでを記録する' }));
 
     await user.click(screen.getByRole('button', { name: '書き出す' }));
     const json = (document.querySelector('.transfer__area') as HTMLTextAreaElement).value;
-    expect(parseBackup(json)?.snapshots).toHaveLength(1);
+    expect(parseBackup(json)?.records).toHaveLength(1);
 
     await user.click(screen.getByRole('button', { name: /の記録を削除$/ }));
     expect(screen.getByRole('heading', { name: '記録（0 件）' })).toBeInTheDocument();

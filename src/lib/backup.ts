@@ -5,18 +5,18 @@
 
 import { normalizeProgress, type Progress } from './storage';
 import { normalizeNotes, type Notes } from './notes';
-import { normalizeSnapshots, type Snapshot } from './snapshots';
+import { normalizeRecords, type StudyRecord } from './records';
 
 export interface Backup {
   progress: Progress;
   notes: Notes;
-  snapshots: Snapshot[];
+  records: StudyRecord[];
 }
 
 interface BackupPayload extends Backup {
   app: 'idiom';
   kind: 'backup';
-  version: 4;
+  version: 5;
   exportedAt: string;
 }
 
@@ -24,11 +24,11 @@ export function exportBackup(backup: Backup): string {
   const payload: BackupPayload = {
     app: 'idiom',
     kind: 'backup',
-    version: 4,
+    version: 5,
     exportedAt: new Date().toISOString(),
     progress: backup.progress,
     notes: backup.notes,
-    snapshots: backup.snapshots,
+    records: backup.records,
   };
   return JSON.stringify(payload, null, 2);
 }
@@ -65,6 +65,6 @@ export function parseBackup(text: string): Backup | null {
     progress: normalizeProgress(body),
     // メモと記録は包んだ形のときだけ入っている
     notes: wrapped ? normalizeNotes((parsed as { notes?: unknown }).notes) : {},
-    snapshots: wrapped ? normalizeSnapshots((parsed as { snapshots?: unknown }).snapshots) : [],
+    records: wrapped ? normalizeRecords((parsed as { records?: unknown }).records) : [],
   };
 }

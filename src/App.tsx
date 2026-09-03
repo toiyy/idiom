@@ -22,13 +22,13 @@ import { clearSession, loadSession, saveSession } from './lib/session';
 import { countCorrect, emptyAnswers, setAnswer, type Answers } from './lib/answers';
 import { loadNotes, saveNotes, setNote, type Notes } from './lib/notes';
 import {
-  addSnapshot,
-  loadSnapshots,
-  removeSnapshot,
-  saveSnapshots,
-  takeSnapshot,
-  type Snapshot,
-} from './lib/snapshots';
+  addRecord,
+  loadRecords,
+  removeRecord,
+  saveRecords,
+  takeRecord,
+  type StudyRecord,
+} from './lib/records';
 import type { Backup } from './lib/backup';
 import { HomeScreen } from './components/HomeScreen';
 import { GuideView } from './components/GuideView';
@@ -56,7 +56,7 @@ export default function App() {
   const confidence = current?.confidence ?? null;
   const sessionCorrect = useMemo(() => countCorrect(order, answers), [order, answers]);
   const [notes, setNotes] = useState<Notes>(() => loadNotes());
-  const [snapshots, setSnapshots] = useState<Snapshot[]>(() => loadSnapshots());
+  const [records, setRecords] = useState<StudyRecord[]>(() => loadRecords());
   // 表示中の解説を開いた出題単位。解説は読み物なのでセッションには保存しない
   const [guideOf, setGuideOf] = useState<{ category: string; subcategory?: string } | null>(null);
 
@@ -161,21 +161,24 @@ export default function App() {
     saveProgress(next.progress);
     setNotes(next.notes);
     saveNotes(next.notes);
-    setSnapshots(next.snapshots);
-    saveSnapshots(next.snapshots);
+    setRecords(next.records);
+    saveRecords(next.records);
   }
 
-  /** いまの成績を日付つきで残す。累計をリセットしても記録は消えない。 */
-  function handleTakeSnapshot() {
-    const next = addSnapshot(snapshots, takeSnapshot(progress, reviewCount));
-    setSnapshots(next);
-    saveSnapshots(next);
+  /**
+   * ここまでを 1 件として残す。保存するのはその時点の累計で、
+   * 表示するときに前の記録との差を取るので「前回からやったぶん」が 1 件になる。
+   */
+  function handleTakeRecord() {
+    const next = addRecord(records, takeRecord(progress, reviewCount));
+    setRecords(next);
+    saveRecords(next);
   }
 
-  function handleDeleteSnapshot(takenAt: string) {
-    const next = removeSnapshot(snapshots, takenAt);
-    setSnapshots(next);
-    saveSnapshots(next);
+  function handleDeleteRecord(takenAt: string) {
+    const next = removeRecord(records, takenAt);
+    setRecords(next);
+    saveRecords(next);
   }
 
   /** メモは打つそばから保存する。保存ボタンを挟むとスマホで書き捨てになりやすい。 */
@@ -226,9 +229,9 @@ export default function App() {
           notes={notes}
           pool={questions}
           onDeleteNote={(id) => handleNoteChange(id, '')}
-          snapshots={snapshots}
-          onTakeSnapshot={handleTakeSnapshot}
-          onDeleteSnapshot={handleDeleteSnapshot}
+          records={records}
+          onTakeRecord={handleTakeRecord}
+          onDeleteRecord={handleDeleteRecord}
           onOpenGuide={(of) => {
             setGuideOf(of);
             setScreen('guide');
