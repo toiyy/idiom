@@ -95,7 +95,7 @@ describe('サブカテゴリ出題', () => {
   it('サブカテゴリを選ぶとその 15 問だけが出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^句動詞/ }));
+    await user.click(screen.getByRole('button', { name: /^句動詞 15 問/ }));
     expect(screen.getByText('1 / 15')).toBeInTheDocument();
     expect(screen.getByText('語彙 / 句動詞')).toBeInTheDocument();
   });
@@ -631,7 +631,7 @@ describe('前の問題に戻る', () => {
 
 describe('カテゴリ解説', () => {
   /** 数量詞の解説を開く。解説を増やしても指す先が変わらないよう名指しする。 */
-  const GUIDE = guides.find((g) => g.categories.includes('数量詞'))!;
+  const GUIDE = guides.find((g) => g.targets.some((t) => t.category === '数量詞'))!;
 
   async function openGuide(user: User) {
     await user.click(screen.getByRole('button', { name: '数量詞 の解説' }));
@@ -642,7 +642,7 @@ describe('カテゴリ解説', () => {
     const guided = screen.getAllByRole('button', { name: / の解説$/ });
     expect(guided.length).toBeGreaterThan(0);
     // 解説を持たないカテゴリの分まで出ていないこと
-    expect(guided).toHaveLength(guides.flatMap((g) => g.categories).length);
+    expect(guided).toHaveLength(guides.flatMap((g) => g.targets).length);
   });
 
   it('開いた直後は全節の要点だけが並び、詳細は畳まれている', async () => {
@@ -697,29 +697,52 @@ describe('カテゴリ解説', () => {
   it('複数カテゴリの解説には、カテゴリごとの開始ボタンが並ぶ', async () => {
     const user = userEvent.setup();
     render(<App />);
-    const multi = guides.find((g) => g.categories.length > 1);
+    const multi = guides.find((g) => g.targets.length > 1 && !g.targets[0].subcategory);
     if (!multi) return;
 
-    await user.click(screen.getByRole('button', { name: `${multi.categories[0]} の解説` }));
-    for (const category of multi.categories) {
-      const size = questions.filter((q) => q.category === category).length;
+    await user.click(screen.getByRole('button', { name: `${multi.targets[0].category} の解説` }));
+    for (const t of multi.targets) {
+      const size = questions.filter((q) => q.category === t.category).length;
       expect(
-        screen.getByRole('button', { name: `${category}を解く（${size} 問）` }),
+        screen.getByRole('button', { name: `${t.category}を解く（${size} 問）` }),
       ).toBeInTheDocument();
     }
   });
 
   it('まとめた解説はどのカテゴリからでも同じものが開く', async () => {
     const user = userEvent.setup();
-    const multi = guides.find((g) => g.categories.length > 1);
+    const multi = guides.find((g) => g.targets.length > 1 && !g.targets[0].subcategory);
     if (!multi) return;
 
-    for (const category of multi.categories) {
+    for (const t of multi.targets) {
       const { unmount } = render(<App />);
-      await user.click(screen.getByRole('button', { name: `${category} の解説` }));
+      await user.click(screen.getByRole('button', { name: `${t.category} の解説` }));
       expect(screen.getByRole('heading', { name: multi.title })).toBeInTheDocument();
       unmount();
     }
+  });
+
+  it('サブカテゴリ専用の解説はサブカテゴリ側から開く', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    const sub = guides.find((g) => g.targets.some((t) => t.subcategory));
+    if (!sub) return;
+
+    const target = sub.targets.find((t) => t.subcategory)!;
+    await user.click(screen.getByRole('button', { name: `${target.subcategory} の解説` }));
+    expect(screen.getByRole('heading', { name: sub.title })).toBeInTheDocument();
+
+    // 開始ボタンはサブカテゴリ単位で、そのぶんだけ出題される
+    const size = questions.filter(
+      (q) => q.category === target.category && q.subcategory === target.subcategory,
+    ).length;
+    await user.click(
+      screen.getByRole('button', {
+        name: `${target.category} / ${target.subcategory}を解く（${size} 問）`,
+      }),
+    );
+    expect(sessionTotal()).toBe(size);
+    expect(currentQuestion().subcategory).toBe(target.subcategory);
   });
 
   it('解説からそのカテゴリを解き始められる', async () => {
@@ -727,7 +750,7 @@ describe('カテゴリ解説', () => {
     render(<App />);
     await openGuide(user);
 
-    const category = GUIDE.categories[0];
+    const category = GUIDE.targets[0].category;
     const size = questions.filter((q) => q.category === category).length;
     await user.click(screen.getByRole('button', { name: `${category}を解く（${size} 問）` }));
 

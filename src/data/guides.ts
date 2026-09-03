@@ -1,4 +1,4 @@
-import { GuideListSchema, type Guide } from '../types/guide';
+import { GuideListSchema, targetKey, type Guide } from '../types/guide';
 
 /**
  * カテゴリ解説の読み込み口。問題データと同じく JSON を置くだけで増える。
@@ -20,9 +20,17 @@ function loadAll(): Guide[] {
 
 export const guides: Guide[] = loadAll();
 
-// 1 本の解説が複数カテゴリを受け持つので、カテゴリ名から引けるよう展開しておく
-const byCategory = new Map(guides.flatMap((g) => g.categories.map((c) => [c, g] as const)));
+// 1 本の解説が複数の出題単位を受け持つので、引けるよう展開しておく
+const byTarget = new Map(guides.flatMap((g) => g.targets.map((t) => [targetKey(t), g] as const)));
 
-export function findGuide(category: string): Guide | undefined {
-  return byCategory.get(category);
+/**
+ * その出題単位の解説を返す。
+ * サブカテゴリ専用の解説がなければ、カテゴリ全体の解説を探す。
+ */
+export function findGuide(category: string, subcategory?: string): Guide | undefined {
+  if (subcategory !== undefined) {
+    const specific = byTarget.get(targetKey({ category, subcategory }));
+    if (specific) return specific;
+  }
+  return byTarget.get(category);
 }

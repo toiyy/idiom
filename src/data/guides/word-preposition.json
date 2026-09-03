@@ -1,0 +1,310 @@
+{
+  "title": "語と前置詞の組み合わせ",
+  "targets": [
+    {
+      "category": "語彙",
+      "subcategory": "動詞＋前置詞"
+    },
+    {
+      "category": "語彙",
+      "subcategory": "形容詞＋前置詞"
+    },
+    {
+      "category": "語彙",
+      "subcategory": "句動詞"
+    }
+  ],
+  "summary": "この 3 つはどれも「その語がどの前置詞と組むか」を問う。規則はないので、組み合わせごと覚えるしかない。逆に言えば、組み合わせさえ入っていれば意味を考えずに解ける。",
+  "sections": [
+    {
+      "heading": "1. 動詞 — 前置詞が要るか要らないか",
+      "point": "空所の後ろに前置詞があれば自動詞、名詞が直接続いていれば他動詞。日本語では「〜を」でも英語では前置詞が要る動詞がある。",
+      "columns": [
+        {
+          "title": "+ to",
+          "items": [
+            "adhere to 従う",
+            "object to 反対する",
+            "refer to 参照する",
+            "respond to 応じる",
+            "contribute to 貢献する",
+            "subscribe to 購読する"
+          ]
+        },
+        {
+          "title": "+ for",
+          "items": [
+            "apply for 申し込む",
+            "account for 占める",
+            "compensate for 補償する",
+            "allow for 考慮に入れる",
+            "wait for 待つ"
+          ]
+        },
+        {
+          "title": "+ in / on",
+          "items": [
+            "participate in 参加する",
+            "result in 結果として生じる",
+            "specialize in 専門とする",
+            "comment on 論評する",
+            "rely on 頼る",
+            "focus on 集中する"
+          ]
+        },
+        {
+          "title": "+ with / of",
+          "items": [
+            "cope with 対処する",
+            "comply with 従う",
+            "deal with 扱う",
+            "dispose of 処分する",
+            "consist of から成る",
+            "approve of 賛成する"
+          ]
+        },
+        {
+          "title": "前置詞が要らない — 他動詞",
+          "items": [
+            "discuss 話し合う",
+            "reach 着く",
+            "enter 入る",
+            "approach 打診する",
+            "attend 出席する",
+            "mention 言及する",
+            "answer 答える",
+            "contact 連絡する",
+            "oppose 反対する",
+            "resemble 似ている"
+          ]
+        }
+      ],
+      "body": [
+        "同じ意味でも自動詞と他動詞で形が変わる。participate in と attend はどちらも「出席する」だが、attend に in は付かない。object to と oppose も同じ関係で、oppose は前置詞をとらない。",
+        "日本語で「〜を」と訳せる動詞ほど間違えやすい。discuss the proposal（× discuss about）、reach the center（× reach to）、enter the facility（× enter into）はいずれも前置詞なしが正しい。",
+        "受動態でも前置詞は消えない。The proposal was objected to by several members のように、自動詞 + 前置詞はひとかたまりで動く。"
+      ],
+      "table": {
+        "headers": ["意味", "前置詞が要る", "前置詞が要らない"],
+        "rows": [
+          ["出席・参加する", "participate in", "attend"],
+          ["反対する", "object to", "oppose"],
+          ["着く", "get to / arrive at", "reach"],
+          ["話し合う", "talk about", "discuss"],
+          ["言及する", "refer to", "mention"],
+          ["答える", "reply to", "answer"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "More than 200 employees participated in the annual charity run.",
+          "ja": "200名を超える従業員が年次のチャリティーランに参加した。",
+          "ok": true,
+          "note": "participate は自動詞なので in が要る。attend なら前置詞なし"
+        },
+        {
+          "en": "The committee will discuss the revised proposal at next Monday’s meeting.",
+          "ja": "委員会は次の月曜の会議で改定案を話し合う。",
+          "ok": true,
+          "note": "discuss は他動詞。discuss about とは言わない"
+        },
+        {
+          "en": "The merger is expected to result in significant cost savings.",
+          "ja": "その合併は大幅なコスト削減につながると見込まれている。",
+          "ok": true,
+          "note": "result in は「結果として〜になる」。result from なら原因を表す"
+        }
+      ],
+      "pitfall": "result in（結果）と result from（原因）のように、同じ動詞でも前置詞で意味が変わるものがある。consist of（構成要素）と consist in（本質）も同様。"
+    },
+    {
+      "heading": "2. 形容詞 — どの前置詞と組むか",
+      "point": "be 動詞の後ろに形容詞が来たら、その形容詞が決める前置詞を選ぶ。訳から推測しない。",
+      "columns": [
+        {
+          "title": "+ to",
+          "items": [
+            "attributable to 起因する",
+            "subject to 次第である",
+            "accustomed to 慣れている",
+            "comparable to 匹敵する",
+            "opposed to 反対している",
+            "entitled to 権利がある"
+          ]
+        },
+        {
+          "title": "+ for",
+          "items": [
+            "eligible for 資格がある",
+            "responsible for 責任がある",
+            "suitable for 適している",
+            "famous for 有名である",
+            "grateful for 感謝している"
+          ]
+        },
+        {
+          "title": "+ with",
+          "items": [
+            "consistent with 一致する",
+            "familiar with 精通している",
+            "satisfied with 満足している",
+            "compatible with 互換性がある",
+            "involved with 関わっている"
+          ]
+        },
+        {
+          "title": "+ of",
+          "items": [
+            "capable of 能力がある",
+            "aware of 気づいている",
+            "short of 不足している",
+            "typical of 典型的である",
+            "independent of 独立している"
+          ]
+        },
+        {
+          "title": "+ on / from",
+          "items": [
+            "dependent on 依存している",
+            "based on 基づいている",
+            "keen on 熱心である",
+            "different from 異なる",
+            "absent from 欠席している"
+          ]
+        }
+      ],
+      "body": [
+        "意味が近くても前置詞は共有しない。eligible for と entitled to、familiar with と aware of はいずれも組む前置詞が違う。",
+        "to の後ろが動名詞になる形に注意。be committed to doing、be accustomed to doing、look forward to doing の to は前置詞なので、原形ではなく -ing が続く。",
+        "similar to と comparable to は to、consistent with と compatible with は with。「〜と同じ」系でも割れるので、語ごと覚えるほうが早い。"
+      ],
+      "examples": [
+        {
+          "en": "Employees who work more than 20 hours per week are eligible for the health plan.",
+          "ja": "週20時間を超えて働く従業員は健康保険制度の対象となる。",
+          "ok": true,
+          "note": "eligible は for。entitled なら to になる"
+        },
+        {
+          "en": "New hires quickly become accustomed to the flexible scheduling system.",
+          "ja": "新入社員はすぐに柔軟な勤務時間制度に慣れる。",
+          "ok": true,
+          "note": "この to は前置詞。後ろに動詞が来るなら -ing になる"
+        },
+        {
+          "en": "This quarter’s figures are consistent with the projections we presented.",
+          "ja": "今四半期の数値は、我々が示した予測と一致している。",
+          "ok": true,
+          "note": "consistent は with。similar や comparable なら to"
+        }
+      ],
+      "pitfall": "be used to doing（慣れている）と used to do（以前は〜した）は別物。to の後ろが -ing か原形かで見分ける。"
+    },
+    {
+      "heading": "3. 句動詞 — 副詞の種類ごとに覚える",
+      "point": "空所は動詞の側になることが多い。後ろの副詞を見て、その組み合わせで意味が通る動詞を選ぶ。",
+      "columns": [
+        {
+          "title": "___ up",
+          "items": [
+            "back up 保存する",
+            "set up 設置する",
+            "come up with 思いつく",
+            "hold up 遅らせる",
+            "take up 取り上げる",
+            "draw up 作成する"
+          ]
+        },
+        {
+          "title": "___ out",
+          "items": [
+            "carry out 実施する",
+            "fill out 記入する",
+            "run out of 使い果たす",
+            "hand out 配る",
+            "point out 指摘する",
+            "roll out 展開する"
+          ]
+        },
+        {
+          "title": "___ down",
+          "items": [
+            "turn down 断る",
+            "cut down 削減する",
+            "shut down 停止する",
+            "step down 退任する",
+            "break down 故障する"
+          ]
+        },
+        {
+          "title": "___ off",
+          "items": [
+            "put off 延期する",
+            "call off 中止する",
+            "take off 離陸する",
+            "lay off 解雇する",
+            "set off 出発する"
+          ]
+        },
+        {
+          "title": "その他",
+          "items": [
+            "take over 引き継ぐ",
+            "look into 調査する",
+            "cut back on 削減する",
+            "hand in 提出する",
+            "look over 目を通す",
+            "file a complaint 苦情を申し立てる"
+          ]
+        }
+      ],
+      "body": [
+        "句動詞は動詞と副詞のどちらが空所になるかで見かたが変わる。動詞が空所なら副詞を手がかりに、副詞が空所なら動詞を手がかりに、意味の通る組み合わせを探す。",
+        "同じ副詞でも動詞が変われば意味は大きく変わる。turn down は「断る」、cut down は「削減する」、shut down は「停止する」で互いに置き換えられない。文脈のどこが決め手になるかを見る。",
+        "目的語が代名詞のときは動詞と副詞の間に入る。turn them off とは言えるが turn off them とは言えない。名詞なら前後どちらでもよい。"
+      ],
+      "examples": [
+        {
+          "en": "The IT department will back up the database before installing the update.",
+          "ja": "IT部門は更新を導入する前にデータベースのバックアップを取る。",
+          "ok": true,
+          "note": "before installing the update がバックアップを示している"
+        },
+        {
+          "en": "The chief financial officer will step down at the end of the fiscal year.",
+          "ja": "最高財務責任者は年度末に退任する。",
+          "ok": true,
+          "note": "step down は「退任する」。人が主語のときに使う"
+        },
+        {
+          "en": "The technician checked each monitor and then turned them off.",
+          "ja": "技術者は各モニターを点検し、それから電源を切った。",
+          "ok": true,
+          "note": "目的語が代名詞なので turn off them とは言えない"
+        }
+      ],
+      "pitfall": "look into（調査する）、look over（目を通す）、look after（世話をする）、look up（調べる）のように、同じ動詞でも副詞が変われば別の語になる。動詞だけ見て選ばない。"
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "意味から前置詞を推測しない。空所の前後の形を見て、覚えた組み合わせを当てはめる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の後ろに前置詞があるか",
+            "② あればその前置詞と組む語を選ぶ",
+            "③ なければ他動詞を選ぶ",
+            "④ 句動詞は副詞から組み合わせを探す"
+          ]
+        }
+      ],
+      "body": [
+        "空所の直後を見る。to / for / in / on / with / of があれば、その前置詞と組む語だけが候補になる。選択肢の意味を比べる前にここで絞れる。",
+        "前置詞がなく名詞が直接続いていれば、前置詞をとらない他動詞を選ぶ。discuss / reach / enter / attend / mention / answer がこの型の常連。",
+        "句動詞は副詞のほうが残っていることが多い。up / out / down / off を見て、文脈に合う動詞を選ぶ。",
+        "この 3 分野は規則がないので、間違えた組み合わせをメモに残して繰り返すのが一番早い。"
+      ]
+    }
+  ]
+}

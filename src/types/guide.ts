@@ -77,28 +77,47 @@ export const GuideSchema = z
     /** 画面に出す見出し。複数カテゴリをまとめた解説では「関係詞・名詞節」のようになる。 */
     title: z.string().min(1),
     /**
-     * この解説が受け持つカテゴリ名。問題データの category と一致させる。
-     * 同じ軸で説明できるカテゴリは 1 本の解説にまとめられる。
+     * この解説が受け持つ出題単位。問題データの category / subcategory と一致させる。
+     * 同じ軸で説明できるものは 1 本の解説にまとめられる。
+     * subcategory を省くとカテゴリ全体を受け持つ。
      */
-    categories: z.array(z.string().min(1)).min(1),
+    targets: z
+      .array(
+        z
+          .object({
+            category: z.string().min(1),
+            subcategory: z.string().min(1).optional(),
+          })
+          .strict(),
+      )
+      .min(1),
     /** 冒頭の要約。このカテゴリで何が問われるかを 1〜2 文で。 */
     summary: z.string().min(1),
     sections: z.array(SectionSchema).min(1),
   })
   .strict();
 
+/** 出題単位を 1 本の文字列にして突き合わせる。 */
+export function targetKey(target: { category: string; subcategory?: string }): string {
+  return target.subcategory === undefined
+    ? target.category
+    : `${target.category} / ${target.subcategory}`;
+}
+
 export const GuideListSchema = z.array(GuideSchema).superRefine((guides, ctx) => {
-  // 1 つのカテゴリを 2 本の解説が取り合うと、どちらを開くか決められなくなる
+  // 同じ出題単位を 2 本の解説が取り合うと、どちらを開くか決められなくなる
   const seen = new Set<string>();
   for (const g of guides) {
-    for (const category of g.categories) {
-      if (seen.has(category)) {
-        ctx.addIssue({ code: z.ZodIssueCode.custom, message: `カテゴリが重複: ${category}` });
+    for (const target of g.targets) {
+      const key = targetKey(target);
+      if (seen.has(key)) {
+        ctx.addIssue({ code: z.ZodIssueCode.custom, message: `出題単位が重複: ${key}` });
       }
-      seen.add(category);
+      seen.add(key);
     }
   }
 });
 
 export type Guide = z.infer<typeof GuideSchema>;
+export type GuideTarget = z.infer<typeof GuideSchema>['targets'][number];
 export type GuideSection = z.infer<typeof SectionSchema>;

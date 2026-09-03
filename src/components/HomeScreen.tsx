@@ -22,7 +22,7 @@ interface HomeScreenProps {
   notes: Notes;
   pool: readonly Question[];
   onDeleteNote: (questionId: string) => void;
-  onOpenGuide: (category: string) => void;
+  onOpenGuide: (of: { category: string; subcategory?: string }) => void;
 }
 
 /** 「12 問 / 要復習 3」のような件数表示。カテゴリとサブカテゴリで共用する。 */
@@ -111,7 +111,7 @@ export function HomeScreen({
                   type="button"
                   className="category__guide"
                   aria-label={`${c.category} の解説`}
-                  onClick={() => onOpenGuide(c.category)}
+                  onClick={() => onOpenGuide({ category: c.category })}
                 >
                   解説
                 </button>
@@ -138,7 +138,7 @@ export function HomeScreen({
                   type="button"
                   className="category__guide"
                   aria-label={`${c.category} の解説`}
-                  onClick={() => onOpenGuide(c.category)}
+                  onClick={() => onOpenGuide({ category: c.category })}
                 >
                   解説
                 </button>
@@ -146,21 +146,35 @@ export function HomeScreen({
             </div>
             <div className="category-list">
               {c.subcategories.map((s) => (
-                <button
-                  key={s.subcategory}
-                  type="button"
-                  className="category"
-                  onClick={() =>
-                    onStart({
-                      kind: 'subcategory',
-                      category: c.category,
-                      subcategory: s.subcategory,
-                    })
-                  }
-                >
-                  <span className="category__name">{s.subcategory}</span>
-                  <Count total={s.total} wrong={s.wrong} />
-                </button>
+                <div className="category-item" key={s.subcategory}>
+                  <button
+                    type="button"
+                    className="category"
+                    onClick={() =>
+                      onStart({
+                        kind: 'subcategory',
+                        category: c.category,
+                        subcategory: s.subcategory,
+                      })
+                    }
+                  >
+                    <span className="category__name">{s.subcategory}</span>
+                    <Count total={s.total} wrong={s.wrong} />
+                  </button>
+                  {/* カテゴリ全体の解説しかない場合は、サブカテゴリ側には出さない */}
+                  {findGuide(c.category, s.subcategory) !== findGuide(c.category) && (
+                    <button
+                      type="button"
+                      className="category__guide"
+                      aria-label={`${s.subcategory} の解説`}
+                      onClick={() =>
+                        onOpenGuide({ category: c.category, subcategory: s.subcategory })
+                      }
+                    >
+                      解説
+                    </button>
+                  )}
+                </div>
               ))}
             </div>
           </div>

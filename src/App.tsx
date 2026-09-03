@@ -25,6 +25,7 @@ import type { Backup } from './lib/backup';
 import { HomeScreen } from './components/HomeScreen';
 import { GuideView } from './components/GuideView';
 import { findGuide } from './data/guides';
+import { targetKey } from './types/guide';
 import { QuestionCard } from './components/QuestionCard';
 import { ResultView } from './components/ResultView';
 import type { Question } from './types/question';
@@ -47,8 +48,8 @@ export default function App() {
   const confidence = current?.confidence ?? null;
   const sessionCorrect = useMemo(() => countCorrect(order, answers), [order, answers]);
   const [notes, setNotes] = useState<Notes>(() => loadNotes());
-  // 表示中の解説のカテゴリ。解説は読み物なのでセッションには保存しない
-  const [guideCategory, setGuideCategory] = useState<string | null>(null);
+  // 表示中の解説を開いた出題単位。解説は読み物なのでセッションには保存しない
+  const [guideOf, setGuideOf] = useState<{ category: string; subcategory?: string } | null>(null);
 
   const reviewCount = useMemo(
     () => countReviewable(questions, progress.wrongIds),
@@ -168,7 +169,7 @@ export default function App() {
     setScreen('home');
   }
 
-  const guide = guideCategory === null ? undefined : findGuide(guideCategory);
+  const guide = guideOf === null ? undefined : findGuide(guideOf.category, guideOf.subcategory);
 
   // ホームに戻っていて、まだ解き終えていないセッションが残っている状態
   const suspended =
@@ -201,8 +202,8 @@ export default function App() {
           notes={notes}
           pool={questions}
           onDeleteNote={(id) => handleNoteChange(id, '')}
-          onOpenGuide={(category) => {
-            setGuideCategory(category);
+          onOpenGuide={(of) => {
+            setGuideOf(of);
             setScreen('guide');
           }}
         />
@@ -211,11 +212,20 @@ export default function App() {
       {screen === 'guide' && guide && (
         <GuideView
           guide={guide}
-          targets={guide.categories.map((category) => ({
-            category,
-            count: questions.filter((q) => q.category === category).length,
+          targets={guide.targets.map((t) => ({
+            label: targetKey(t),
+            count: questions.filter(
+              (q) =>
+                q.category === t.category &&
+                (t.subcategory === undefined || q.subcategory === t.subcategory),
+            ).length,
+            onStart: () =>
+              startQuiz(
+                t.subcategory === undefined
+                  ? { kind: 'category', category: t.category }
+                  : { kind: 'subcategory', category: t.category, subcategory: t.subcategory },
+              ),
           }))}
-          onStart={(category) => startQuiz({ kind: 'category', category })}
           onBack={() => setScreen('home')}
         />
       )}

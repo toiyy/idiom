@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest';
-import { GuideListSchema, GuideSchema } from '../types/guide';
+import { GuideListSchema, GuideSchema, targetKey } from '../types/guide';
 import { findGuide, guides } from '../data/guides';
 import { questions } from '../data/questions';
 
 const valid = {
   title: '数量詞',
-  categories: ['数量詞'],
+  targets: [{ category: '数量詞' }],
   summary: 'まず名詞が可算か不可算かを見る。',
   sections: [
     { heading: '1. 可算か不可算か', point: '名詞を先に見る。', body: ['後ろの名詞で決まる。'] },
@@ -67,8 +67,13 @@ describe('GuideSchema', () => {
     expect(GuideSchema.safeParse(bad).success).toBe(false);
   });
 
-  it('カテゴリの重複を弾く', () => {
+  it('同じ出題単位を 2 本が取り合うのを弾く', () => {
     expect(GuideListSchema.safeParse([valid, { ...valid }]).success).toBe(false);
+  });
+
+  it('カテゴリ全体とサブカテゴリは別の出題単位として扱う', () => {
+    const sub = { ...valid, targets: [{ category: '数量詞', subcategory: '可算' }] };
+    expect(GuideListSchema.safeParse([valid, sub]).success).toBe(true);
   });
 });
 
@@ -77,20 +82,30 @@ describe('同梱データ', () => {
     expect(guides.length).toBeGreaterThanOrEqual(1);
   });
 
-  it('解説のカテゴリが実在する', () => {
-    const known = new Set(questions.map((q) => q.category));
+  it('解説の出題単位が実在する', () => {
+    const known = new Set(
+      questions.flatMap((q) => [
+        q.category,
+        ...(q.subcategory ? [`${q.category} / ${q.subcategory}`] : []),
+      ]),
+    );
     for (const g of guides) {
-      for (const c of g.categories) {
-        expect(known, `${c} というカテゴリはない`).toContain(c);
+      for (const t of g.targets) {
+        expect(known, `${targetKey(t)} という出題単位はない`).toContain(targetKey(t));
       }
     }
   });
 
-  it('findGuide でカテゴリ名から引ける', () => {
+  it('findGuide で出題単位から引ける', () => {
     for (const g of guides) {
-      for (const c of g.categories) expect(findGuide(c)).toBe(g);
+      for (const t of g.targets) expect(findGuide(t.category, t.subcategory)).toBe(g);
     }
     expect(findGuide('存在しないカテゴリ')).toBeUndefined();
+  });
+
+  it('サブカテゴリ専用の解説がなければカテゴリ全体の解説を返す', () => {
+    // 数量詞にサブカテゴリはないが、指定しても同じ解説が返る
+    expect(findGuide('数量詞', '存在しないサブカテゴリ')).toBe(findGuide('数量詞'));
   });
 
   it('数量詞の解説が表と例文を備えている', () => {
