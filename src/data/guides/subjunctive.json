@@ -1,0 +1,255 @@
+{
+  "title": "仮定法",
+  "targets": [
+    {
+      "category": "仮定法"
+    }
+  ],
+  "summary": "仮定法の骨は「時制を 1 つ前にずらす」の一点。今のことを言うなら過去形、過去のことを言うなら過去完了にする。wish や as if も同じずらし方をする。原形を使う仮定法現在だけが別系統。",
+  "sections": [
+    {
+      "heading": "1. 時制を 1 つ前にずらす",
+      "point": "いつのことを言っているかで形が決まる。今のことなら過去形、過去のことなら過去完了。ずらすのは事実ではないという合図。",
+      "columns": [
+        {
+          "title": "今・未来のこと — 過去形にする",
+          "items": [
+            "If + 主語 + 過去形",
+            "主節は would / could / might + 原形",
+            "be 動詞は主語に関係なく were"
+          ]
+        },
+        {
+          "title": "過去のこと — 過去完了にする",
+          "items": ["If + 主語 + had + 過去分詞", "主節は would / could + have + 過去分詞"]
+        },
+        {
+          "title": "過去の原因 → 今の結果",
+          "items": ["If + 主語 + had + 過去分詞", "主節は would + 原形", "today / now が目印"]
+        }
+      ],
+      "body": [
+        "仮定法は「事実ではない」ことを表すために、時制をわざと 1 つ前にずらす。今のことを言うのに過去形を使い、過去のことを言うのに過去完了を使う。この 1 つの操作がすべての土台になる。",
+        "if 節と主節はセットで決まる。if 節が過去形なら主節は would + 原形、if 節が過去完了なら主節は would have + 過去分詞。片方が見えていればもう片方は自動的に決まるので、空所がどちらにあっても解ける。",
+        "例外が混合型。原因が過去で結果が今なら、if 節は過去完了、主節は would + 原形になる。文末の today や now が手がかりになる。"
+      ],
+      "table": {
+        "headers": ["いつのことか", "if 節", "主節"],
+        "rows": [
+          ["今・未来", "過去形（be は were）", "would / could / might + 原形"],
+          ["過去", "had + 過去分詞", "would / could + have + 過去分詞"],
+          ["過去の原因 → 今の結果", "had + 過去分詞", "would + 原形"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "If the company had more warehouse space, it could stock a wider range of products.",
+          "ja": "もし倉庫にもっと余裕があれば、その会社はより幅広い商品を扱えるだろう。",
+          "ok": true,
+          "note": "主節が could + 原形なので、if 節は過去形の had"
+        },
+        {
+          "en": "If the supplier had notified us earlier, we could have adjusted the schedule.",
+          "ja": "その業者がもっと早く知らせてくれていれば、我々は日程を調整できただろう。",
+          "ok": true,
+          "note": "主節が could have + 過去分詞なので、if 節は過去完了"
+        },
+        {
+          "en": "If the company had invested in automation earlier, it would be far more competitive today.",
+          "ja": "もっと早く自動化に投資していれば、その会社は今もっと競争力があるだろう。",
+          "ok": true,
+          "note": "原因は過去、結果は今。文末の today が混合型の目印"
+        }
+      ],
+      "pitfall": "if 節に would は入れない。If the company would have more space とは言わず If the company had more space となる。would は主節に置く。"
+    },
+    {
+      "heading": "2. 同じずらし方をする表現",
+      "point": "wish・as if・It is time・would rather も、今のことなら過去形、過去のことなら過去完了。",
+      "columns": [
+        {
+          "title": "今のこと — 過去形",
+          "items": [
+            "I wish I knew 知っていればなあ",
+            "as if he were 〜であるかのように",
+            "It is time we replaced そろそろ〜する時だ",
+            "would rather it were held むしろ〜してほしい"
+          ]
+        },
+        {
+          "title": "過去のこと — 過去完了",
+          "items": [
+            "I wish I had known 知っていればよかった",
+            "as if it had been 〜であったかのように",
+            "wish they had allocated 割いていればよかった"
+          ]
+        }
+      ],
+      "body": [
+        "wish は「〜であればなあ」という事実に反する願望。今のことなら過去形、過去のことなら過去完了になる。hope が事実として起こりうることに使うのと対照的。",
+        "as if / as though も同じ。今の様子を言うなら過去形、過去のことを言うなら過去完了。The system responds as if it had been trained は、実際には訓練されていないことを含む。",
+        "It is time + 主語 + 過去形は「そろそろ〜してもよいころだ」。まだしていないという含みがある。It is time we replaced the system は、まだ交換していないことを表す。",
+        "would rather + 主語 + 過去形は「むしろ〜してほしい」。would rather の直後に主語が来ない場合は would rather + 原形（〜したい）になるので、後ろに主語があるかを見る。"
+      ],
+      "examples": [
+        {
+          "en": "The project team wishes they had allocated more time to the testing phase.",
+          "ja": "プロジェクトチームは、試験期間にもっと時間を割いておけばよかったと思っている。",
+          "ok": true,
+          "note": "過去にできなかったことへの願望なので過去完了"
+        },
+        {
+          "en": "It is time the department replaced its outdated inventory tracking system.",
+          "ja": "その部署はそろそろ古い在庫管理システムを交換してもよいころだ。",
+          "ok": true,
+          "note": "It is time の後ろは過去形。まだ交換していないという含み"
+        },
+        {
+          "en": "The client would rather the presentation were held on Thursday than on Friday.",
+          "ja": "顧客は、発表を金曜より木曜に行ってほしいと思っている。",
+          "ok": true,
+          "note": "would rather の後ろに主語があるので過去形。were held と受動になる"
+        }
+      ],
+      "pitfall": "would rather の直後が主語なら過去形、動詞なら原形。would rather receive（〜したい）と would rather it were（〜してほしい）を混同しない。"
+    },
+    {
+      "heading": "3. if を使わない形",
+      "point": "if を省くと Were / Had / Should が主語の前に出る。Without や But for は if 節そのものの代わり。",
+      "columns": [
+        {
+          "title": "if を省いて倒置",
+          "items": [
+            "Were + 主語（If ... were）",
+            "Had + 主語 + 過去分詞",
+            "Should + 主語 + 原形",
+            "Were it not for 〜がなければ",
+            "Had it not been for 〜がなかったら"
+          ]
+        },
+        {
+          "title": "if 節の代わりになる語",
+          "items": [
+            "Without 〜 〜がなければ",
+            "But for 〜 〜がなければ",
+            "With 〜 〜があれば",
+            "Otherwise さもなければ"
+          ]
+        }
+      ],
+      "body": [
+        "if 節の中に were / had / should があるとき、if を省いてその語を主語の前に出せる。Were the budget approved は If the budget were approved と同じで、書き言葉でよく使われる。",
+        "空所が文頭にあって、直後が主語なら倒置を疑う。主節に would / could があるかを確かめると確実になる。",
+        "Without や But for は if 節ひとかたまりの代わり。主節の形を見て、would + 原形なら今のこと、would have + 過去分詞なら過去のことと判断する。"
+      ],
+      "examples": [
+        {
+          "en": "Were the budget approved, the department would hire two additional analysts.",
+          "ja": "予算が承認されれば、その部署はアナリストをもう2名雇うだろう。",
+          "ok": true,
+          "note": "If the budget were approved の if を省いた形"
+        },
+        {
+          "en": "Had the supplier informed us of the delay, we could have rescheduled the installation.",
+          "ja": "その業者が遅延を知らせてくれていれば、我々は据付を組み直せただろう。",
+          "ok": true,
+          "note": "If the supplier had informed us の if を省いた形"
+        },
+        {
+          "en": "Without the generous support of local sponsors, the festival would have been cancelled.",
+          "ja": "地元後援者の手厚い支援がなければ、その催しは中止になっていただろう。",
+          "ok": true,
+          "note": "主節が would have + 過去分詞なので過去のこと。But for でも同じ"
+        }
+      ],
+      "pitfall": "Unless は「〜でない限り」で直説法。仮定法の if の代わりにはならないので、would を含む主節とは組まない。"
+    },
+    {
+      "heading": "4. 仮定法現在 — 原形にする",
+      "point": "提案・要求・命令を表す語の後ろの that 節では、主語が何でも動詞は原形。時制をずらす仮定法とは別系統。",
+      "columns": [
+        {
+          "title": "提案・要求・命令の動詞",
+          "items": [
+            "suggest 提案する",
+            "recommend 勧める",
+            "propose 提案する",
+            "insist 主張する",
+            "demand 要求する",
+            "require 要求する",
+            "request 依頼する",
+            "order 命じる"
+          ]
+        },
+        {
+          "title": "同じ働きの形容詞",
+          "items": [
+            "essential 不可欠な",
+            "important 重要な",
+            "necessary 必要な",
+            "vital きわめて重要な",
+            "imperative 絶対必要な",
+            "advisable 望ましい"
+          ]
+        },
+        {
+          "title": "that 節の形",
+          "items": [
+            "that + 主語 + 動詞の原形",
+            "三人称単数でも s を付けない",
+            "受動なら be + 過去分詞",
+            "否定は not + 原形"
+          ]
+        }
+      ],
+      "body": [
+        "提案・要求・命令を表す動詞や形容詞の後ろの that 節では、動詞を原形にする。まだ実現していないことを述べるためで、主語が三人称単数でも s は付かない。",
+        "受動になるときは be + 過去分詞。The regulations require that every container be clearly labeled のように、is ではなく be を使う。",
+        "同じ動詞でも意味が変わると原形にならない。insist が「主張する」ではなく「言い張る」の意味で事実を述べるときは、普通の時制になる。suggest が「示唆する」の意味のときも同じ。"
+      ],
+      "examples": [
+        {
+          "en": "The auditor recommended that the company review its inventory records every quarter.",
+          "ja": "監査人は、四半期ごとに在庫記録を見直すようその会社に勧めた。",
+          "ok": true,
+          "note": "主語が the company でも reviews ではなく原形の review"
+        },
+        {
+          "en": "The regulations require that every container be clearly labeled before shipment.",
+          "ja": "規則では、出荷前にすべての容器へ明確に表示することが求められている。",
+          "ok": true,
+          "note": "受動なので is ではなく be + 過去分詞"
+        },
+        {
+          "en": "It is essential that every applicant hold a valid work permit at the time of hiring.",
+          "ja": "採用時にすべての応募者が有効な就労許可を持っていることが不可欠だ。",
+          "ok": true,
+          "note": "形容詞 essential の後ろなので holds ではなく hold"
+        }
+      ],
+      "pitfall": "この形だけは時制をずらさない。1〜3 節の「過去形・過去完了にする」を当てはめると必ず外す。動詞や形容詞を見て切り替える。"
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "まず仮定法現在かどうかを分ける。そうでなければ、主節の形からいつのことかを読む。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 提案・要求の動詞や形容詞があるか",
+            "② あれば that 節は原形",
+            "③ なければ主節の would の形を見る",
+            "④ would + 原形なら今、would have なら過去",
+            "⑤ 文頭が Were / Had なら if の省略"
+          ]
+        }
+      ],
+      "body": [
+        "suggest / recommend / require / essential / necessary などが見えたら、時制をずらす仮定法ではない。that 節の動詞を原形にする。",
+        "そうでなければ主節を見る。would / could + 原形なら今のこと、would / could have + 過去分詞なら過去のこと。if 節の形はそれに合わせて決まる。",
+        "空所が主節にあるなら、逆に if 節を見る。過去形なら would + 原形、過去完了なら would have + 過去分詞。ただし文末に today や now があれば混合型で would + 原形になる。",
+        "文頭が Were / Had / Should で直後が主語なら、if が省かれた倒置。Without / But for なら if 節ごと置き換わっている。"
+      ]
+    }
+  ]
+}

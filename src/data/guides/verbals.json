@@ -1,0 +1,324 @@
+{
+  "title": "準動詞",
+  "targets": [
+    {
+      "category": "準動詞"
+    }
+  ],
+  "summary": "不定詞・動名詞・分詞は、動詞を名詞や形容詞や副詞として使うための形。何になっているかが分かれば形は決まる。動名詞と不定詞の争いは動詞ごとの語法、分詞は能動か受動かで決まる。",
+  "sections": [
+    {
+      "heading": "1. どちらをとる動詞か",
+      "point": "目的語に動名詞をとるか to 不定詞をとるかは動詞ごとに決まっている。訳では判断できないので、動詞の側を覚える。",
+      "columns": [
+        {
+          "title": "動名詞だけ",
+          "items": [
+            "consider 検討する",
+            "avoid 避ける",
+            "finish 終える",
+            "suggest 提案する",
+            "deny 否定する",
+            "mind 気にする",
+            "postpone 延期する",
+            "enjoy 楽しむ",
+            "admit 認める"
+          ]
+        },
+        {
+          "title": "to 不定詞だけ",
+          "items": [
+            "refuse 断る",
+            "decide 決める",
+            "promise 約束する",
+            "hope 望む",
+            "agree 同意する",
+            "expect 見込む",
+            "manage どうにか〜する",
+            "afford 余裕がある"
+          ]
+        },
+        {
+          "title": "両方とれるが意味が変わる",
+          "items": [
+            "remember doing した記憶",
+            "remember to do 忘れずにする",
+            "stop doing やめる",
+            "stop to do 立ち止まってする",
+            "forget doing した記憶",
+            "try doing 試しにする"
+          ]
+        },
+        {
+          "title": "目的語 + to 不定詞",
+          "items": [
+            "encourage 促す",
+            "allow 許す",
+            "remind 思い出させる",
+            "require 求める",
+            "ask 頼む",
+            "advise 助言する"
+          ]
+        }
+      ],
+      "body": [
+        "動名詞だけをとる動詞と to 不定詞だけをとる動詞は、意味の傾向では割り切れない。suggest は「提案する」で未来のことなのに動名詞、hope も未来のことだが to 不定詞になる。語ごと覚えるほうが早い。",
+        "両方とれる動詞では意味が変わる。remember doing は過去にしたことの記憶、remember to do はこれからすることを忘れない。文中の last Tuesday のような語が手がかりになる。",
+        "encourage / allow / remind のような動詞は「目的語 + to 不定詞」の形をとる。受動態になると be encouraged to do のように to 不定詞が残る。"
+      ],
+      "table": {
+        "headers": ["動詞", "動名詞", "to 不定詞"],
+        "rows": [
+          ["remember", "（過去に）〜したのを覚えている", "忘れずに〜する"],
+          ["forget", "〜したのを忘れる", "〜するのを忘れる"],
+          ["stop", "〜するのをやめる", "〜するために立ち止まる"],
+          ["try", "試しに〜してみる", "〜しようと努める"],
+          ["regret", "〜したことを後悔する", "残念ながら〜する"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The committee is considering extending the deadline by two weeks.",
+          "ja": "委員会は期限を2週間延ばすことを検討している。",
+          "ok": true,
+          "note": "consider は動名詞のみ。to extend とは言えない"
+        },
+        {
+          "en": "The union refused to accept the revised terms.",
+          "ja": "労働組合は改定条件を受け入れることを拒んだ。",
+          "ok": true,
+          "note": "refuse は to 不定詞のみ。accepting とは言えない"
+        },
+        {
+          "en": "I clearly remember sending the signed invoice last Tuesday.",
+          "ja": "先週の火曜に署名済みの請求書を送ったことをはっきり覚えている。",
+          "ok": true,
+          "note": "last Tuesday があるので過去の記憶。to send なら意味が変わる"
+        }
+      ],
+      "pitfall": "suggest は動名詞、hope は to 不定詞。どちらも未来のことを言うのに形が割れるので、意味から推測しない。"
+    },
+    {
+      "heading": "2. to が前置詞か不定詞か",
+      "point": "to の後ろが原形か -ing かは、その to が不定詞の to か前置詞の to かで決まる。前置詞なら -ing。",
+      "columns": [
+        {
+          "title": "前置詞の to — 後ろは -ing",
+          "items": [
+            "look forward to doing 楽しみにする",
+            "be used to doing 慣れている",
+            "be accustomed to doing 慣れている",
+            "be committed to doing 尽力する",
+            "object to doing 反対する",
+            "contribute to doing 貢献する"
+          ]
+        },
+        {
+          "title": "不定詞の to — 後ろは原形",
+          "items": [
+            "used to do 以前は〜した",
+            "be able to do できる",
+            "be about to do まさに〜しようとする",
+            "have to do しなければならない"
+          ]
+        },
+        {
+          "title": "前置詞の後ろは必ず -ing",
+          "items": [
+            "for doing / by doing",
+            "before doing / after doing",
+            "without doing / instead of doing",
+            "in doing / on doing"
+          ]
+        }
+      ],
+      "body": [
+        "to の後ろに何が来るかで迷ったら、その to を含むかたまりが決まった形かどうかを見る。look forward to / be used to / be accustomed to / be committed to の to は前置詞で、後ろは動名詞になる。",
+        "be used to doing（慣れている）と used to do（以前は〜した）は形が似ていて意味が違う。be 動詞があるかどうかで見分ける。",
+        "to 以外の前置詞の後ろも必ず動名詞。by switching all lighting to LED のように、原形や to 不定詞は置けない。"
+      ],
+      "examples": [
+        {
+          "en": "We look forward to hearing from you regarding the revised proposal.",
+          "ja": "改定案についてご連絡をいただけるのを楽しみにしております。",
+          "ok": true,
+          "note": "look forward to の to は前置詞。to hear とは言えない"
+        },
+        {
+          "en": "The technicians are used to working in extreme temperatures.",
+          "ja": "技術者たちは極端な温度の中で働くことに慣れている。",
+          "ok": true,
+          "note": "be used to doing は「慣れている」。used to work なら「以前は働いていた」"
+        },
+        {
+          "en": "The plant reduced its energy costs by switching all lighting to LED fixtures.",
+          "ja": "その工場は照明をすべてLEDに切り替えることで電力費を削減した。",
+          "ok": true,
+          "note": "前置詞 by の後ろなので動名詞"
+        }
+      ],
+      "pitfall": "be used to と used to は 1 語違いで意味が逆に近い。be 動詞があれば「慣れている」で後ろは -ing、なければ「以前は〜した」で後ろは原形。"
+    },
+    {
+      "heading": "3. 不定詞の決まった形",
+      "point": "不定詞は名詞・形容詞・副詞のどれとしても働く。語順と意味上の主語が問われやすい。",
+      "columns": [
+        {
+          "title": "語順が決まっている",
+          "items": [
+            "形容詞 + enough + to do",
+            "too + 形容詞 + to do",
+            "in order to do 〜するために",
+            "so as to do 〜するために",
+            "only to do 結局〜しただけ"
+          ]
+        },
+        {
+          "title": "意味上の主語",
+          "items": [
+            "for A to do 一般の形容詞",
+            "of A to do 人の性質を評価する形容詞",
+            "kind / careless / wise は of",
+            "essential / difficult は for"
+          ]
+        },
+        {
+          "title": "形を変える",
+          "items": ["to have + 過去分詞 主節より前", "to be + 過去分詞 受動", "not to do 否定"]
+        },
+        {
+          "title": "名詞を後ろから修飾",
+          "items": [
+            "the first / the last + to do",
+            "the only + to do",
+            "最上級 + to do",
+            "authority to approve など"
+          ]
+        }
+      ],
+      "body": [
+        "enough は形容詞を後ろから修飾する。large enough to hold であって enough large ではない。too + 形容詞 + to do は「〜するには…すぎる」で、so や very では作れない。",
+        "意味上の主語は for A to do が基本で、kind / careless / wise のように人の性質を評価する形容詞のときだけ of A to do になる。",
+        "主節より前の出来事を表すときは to have + 過去分詞。The shipment appears to have been held は、留め置かれたのが appears より前であることを表す。"
+      ],
+      "examples": [
+        {
+          "en": "The storage room is large enough to hold the entire winter inventory.",
+          "ja": "その保管室は冬季在庫すべてを収められる広さがある。",
+          "ok": true,
+          "note": "enough は形容詞の後ろ。enough large とは言えない"
+        },
+        {
+          "en": "It was careless of the supplier to ship the wrong model.",
+          "ja": "誤った型番を出荷したのは、その業者の不注意だった。",
+          "ok": true,
+          "note": "careless は人の性質を評価する形容詞なので of"
+        },
+        {
+          "en": "Two licensing issues remain to be resolved before the release.",
+          "ja": "公開前に、ライセンスに関する2つの問題が未解決のまま残っている。",
+          "ok": true,
+          "note": "issues は解決される側なので受動の to be + 過去分詞"
+        }
+      ]
+    },
+    {
+      "heading": "4. 分詞 — 能動か受動か",
+      "point": "修飾される名詞や文の主語が「する側」なら現在分詞、「される側」なら過去分詞。この一点で決まる。",
+      "columns": [
+        {
+          "title": "名詞を修飾する",
+          "items": [
+            "-ing する側（employees participating）",
+            "過去分詞 される側（items purchased）",
+            "being + 過去分詞 されている最中",
+            "1 語なら名詞の前（revised figures）"
+          ]
+        },
+        {
+          "title": "分詞構文",
+          "items": [
+            "-ing 主語がする側",
+            "過去分詞 主語がされる側",
+            "Having + 過去分詞 主節より前",
+            "Not + 分詞 否定"
+          ]
+        },
+        {
+          "title": "目的語の後ろに置く",
+          "items": [
+            "have + 目的語 + 過去分詞 してもらう",
+            "知覚動詞 + 目的語 + -ing 進行中",
+            "with + 目的語 + 分詞 付帯状況"
+          ]
+        },
+        {
+          "title": "形が決まっている",
+          "items": [
+            "Judging from 〜から判断すると",
+            "Compared with 〜と比べると",
+            "resulting in その結果〜になる",
+            "existing / remaining は -ing"
+          ]
+        }
+      ],
+      "body": [
+        "分詞の判断はほぼ一点、能動か受動か。名詞を修飾するなら、その名詞が動作をする側なら現在分詞、される側なら過去分詞。分詞構文なら文の主語で同じことを判断する。",
+        "自動詞は受動にできないので、名詞を修飾するときも現在分詞のまま。the existing database、the remaining tickets が -ing なのはこのため。",
+        "「have + 目的語 + 過去分詞」は「〜してもらう・〜される」。had the defective units replaced は、交換したのが自分ではないことを表す。",
+        "意味上の主語が文の主語と一致しない慣用表現がある。Judging from / Compared with / Speaking of は形が決まっているので、そのまま覚える。"
+      ],
+      "table": {
+        "headers": ["場面", "する側", "される側"],
+        "rows": [
+          ["名詞を後ろから修飾", "employees participating", "items purchased"],
+          ["分詞構文", "Knowing the risk, ...", "Founded in 1998, ..."],
+          ["目的語の後ろ", "noticed coolant leaking", "had the units replaced"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Founded in 1998, Harrow Manufacturing now employs over 400 people.",
+          "ja": "1998年に設立されたハロー製造社は、現在400人以上を雇用している。",
+          "ok": true,
+          "note": "主語は設立される側なので過去分詞"
+        },
+        {
+          "en": "The new system will run alongside the existing database until the migration is complete.",
+          "ja": "新システムは移行が完了するまで既存のデータベースと並行して稼働する。",
+          "ok": true,
+          "note": "exist は自動詞なので受動にできない。existed とは言えない"
+        },
+        {
+          "en": "The company had all the defective units replaced by the manufacturer.",
+          "ja": "その会社は不良品をすべてメーカーに交換してもらった。",
+          "ok": true,
+          "note": "units は交換される側なので過去分詞"
+        }
+      ],
+      "pitfall": "自動詞は過去分詞で名詞を修飾できない。existing / remaining / lasting は -ing のまま使う。"
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "空所が動詞の目的語なのか、名詞を修飾しているのか、文をつないでいるのかをまず見る。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の前が動詞なら語法で決まる",
+            "② 前が前置詞なら必ず -ing",
+            "③ 名詞を修飾するなら能動か受動か",
+            "④ カンマ区切りなら分詞構文",
+            "⑤ 主語がする側か される側かを見る"
+          ]
+        }
+      ],
+      "body": [
+        "空所の直前が動詞なら、その動詞が動名詞をとるか to 不定詞をとるかで決まる。意味を考える前に語法を思い出す。",
+        "直前が前置詞なら迷わず動名詞。to のときだけ、前置詞の to か不定詞の to かを確かめる。",
+        "空所が名詞の前後にあるなら分詞。その名詞が動作をする側か、される側かだけを見る。",
+        "カンマで区切られていて主語が見当たらないなら分詞構文。文の主語がする側なら -ing、される側なら過去分詞。主節より前のことなら Having + 過去分詞。"
+      ]
+    }
+  ]
+}
