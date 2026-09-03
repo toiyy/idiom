@@ -201,3 +201,55 @@ describe('modeLabel', () => {
     );
   });
 });
+
+describe('カテゴリ内の要復習だけを解く', () => {
+  const pool = [
+    makeQuestion('a1', '時制'),
+    makeQuestion('a2', '時制'),
+    makeQuestion('a3', '時制'),
+    makeQuestion('b1', '比較'),
+    makeQuestion('b2', '比較'),
+  ];
+
+  it('そのカテゴリの要復習だけに絞る', () => {
+    const selected = selectQuestions(pool, { kind: 'category', category: '時制', review: true }, [
+      'a2',
+      'b1',
+    ]);
+    expect(selected.map((q) => q.id)).toEqual(['a2']);
+  });
+
+  it('review を立てなければカテゴリ全問が出る', () => {
+    const selected = selectQuestions(pool, { kind: 'category', category: '時制' }, ['a2']);
+    expect(selected.map((q) => q.id)).toEqual(['a1', 'a2', 'a3']);
+  });
+
+  it('要復習がなければ空になる', () => {
+    const selected = selectQuestions(pool, { kind: 'category', category: '時制', review: true }, [
+      'b1',
+    ]);
+    expect(selected).toEqual([]);
+  });
+
+  it('サブカテゴリでも絞れる', () => {
+    const sub = [
+      makeQuestion('v1', '語彙', 0, '句動詞'),
+      makeQuestion('v2', '語彙', 0, '句動詞'),
+      makeQuestion('v3', '語彙', 0, '名詞の語彙'),
+    ];
+    const selected = selectQuestions(
+      sub,
+      { kind: 'subcategory', category: '語彙', subcategory: '句動詞', review: true },
+      ['v2', 'v3'],
+    );
+    expect(selected.map((q) => q.id)).toEqual(['v2']);
+  });
+
+  it('モード名に「の復習」が付く', () => {
+    expect(modeLabel({ kind: 'category', category: '時制', review: true })).toBe('時制 の復習');
+    expect(modeLabel({ kind: 'category', category: '時制' })).toBe('時制');
+    expect(
+      modeLabel({ kind: 'subcategory', category: '語彙', subcategory: '句動詞', review: true }),
+    ).toBe('語彙 / 句動詞 の復習');
+  });
+});

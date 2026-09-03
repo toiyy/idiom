@@ -171,10 +171,6 @@ body {
   font-size: 0.75rem;
 }
 
-.category__wrong {
-  color: var(--wrong);
-}
-
 /* --- ホーム: サブカテゴリを持つカテゴリ --- */
 
 .category-group {
@@ -679,7 +675,8 @@ body {
   min-width: 0;
 }
 
-.category__guide {
+.category__guide,
+.category__review {
   flex: none;
   padding: 0 10px;
   border: 1px solid var(--border);
@@ -695,6 +692,17 @@ body {
 .category__guide:hover {
   border-color: var(--primary);
   color: var(--primary);
+}
+
+/* 要復習の件数はここにだけ出す。押すとそのカテゴリの要復習だけを解ける */
+.category__review {
+  border-color: var(--wrong);
+  color: var(--wrong);
+}
+
+.category__review:hover {
+  background: var(--wrong);
+  color: #fff;
 }
 
 /* --- カテゴリ解説 --- */

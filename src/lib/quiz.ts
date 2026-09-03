@@ -6,8 +6,9 @@ export type RandomFn = () => number;
 export type QuizMode =
   | { kind: 'all' }
   | { kind: 'review' }
-  | { kind: 'category'; category: string }
-  | { kind: 'subcategory'; category: string; subcategory: string };
+  /** review を立てると、そのカテゴリの要復習だけを出す。 */
+  | { kind: 'category'; category: string; review?: boolean }
+  | { kind: 'subcategory'; category: string; subcategory: string; review?: boolean };
 
 /**
  * Fisher–Yates シャッフル。元配列は破壊しない。
@@ -31,17 +32,27 @@ export function selectQuestions(
   mode: QuizMode,
   wrongIds: readonly string[] = [],
 ): Question[] {
+  /** 要復習だけに絞る。プールに存在しない id は自然に無視される。 */
+  const onlyReview = (questions: Question[]) => {
+    const target = new Set(wrongIds);
+    return questions.filter((q) => target.has(q.id));
+  };
+
   switch (mode.kind) {
     case 'all':
       return [...pool];
-    case 'review': {
-      const target = new Set(wrongIds);
-      return pool.filter((q) => target.has(q.id));
+    case 'review':
+      return onlyReview([...pool]);
+    case 'category': {
+      const selected = pool.filter((q) => q.category === mode.category);
+      return mode.review ? onlyReview(selected) : selected;
     }
-    case 'category':
-      return pool.filter((q) => q.category === mode.category);
-    case 'subcategory':
-      return pool.filter((q) => q.category === mode.category && q.subcategory === mode.subcategory);
+    case 'subcategory': {
+      const selected = pool.filter(
+        (q) => q.category === mode.category && q.subcategory === mode.subcategory,
+      );
+      return mode.review ? onlyReview(selected) : selected;
+    }
   }
 }
 
@@ -141,8 +152,10 @@ export function modeLabel(mode: QuizMode): string {
     case 'review':
       return '復習';
     case 'category':
-      return mode.category;
-    case 'subcategory':
-      return `${mode.category} / ${mode.subcategory}`;
+      return mode.review ? `${mode.category} の復習` : mode.category;
+    case 'subcategory': {
+      const name = `${mode.category} / ${mode.subcategory}`;
+      return mode.review ? `${name} の復習` : name;
+    }
   }
 }

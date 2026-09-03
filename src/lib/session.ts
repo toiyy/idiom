@@ -77,17 +77,25 @@ function toAnswers(parsed: Partial<SavedSession>, size: number, cursor: number):
   return answers;
 }
 
+function isOptionalBoolean(v: unknown): boolean {
+  return v === undefined || typeof v === 'boolean';
+}
+
 function isMode(v: unknown): v is QuizMode {
   if (typeof v !== 'object' || v === null) return false;
-  const m = v as { kind?: unknown; category?: unknown; subcategory?: unknown };
+  const m = v as { kind?: unknown; category?: unknown; subcategory?: unknown; review?: unknown };
   switch (m.kind) {
     case 'all':
     case 'review':
       return true;
     case 'category':
-      return typeof m.category === 'string';
+      return typeof m.category === 'string' && isOptionalBoolean(m.review);
     case 'subcategory':
-      return typeof m.category === 'string' && typeof m.subcategory === 'string';
+      return (
+        typeof m.category === 'string' &&
+        typeof m.subcategory === 'string' &&
+        isOptionalBoolean(m.review)
+      );
     default:
       return false;
   }

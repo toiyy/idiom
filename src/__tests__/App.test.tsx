@@ -784,3 +784,75 @@ describe('カテゴリ解説', () => {
     expect(screen.getByRole('button', { name: SHORT.label })).toBeInTheDocument();
   });
 });
+
+describe('カテゴリ内の要復習だけを解く', () => {
+  it('要復習がなければボタンは出ない', () => {
+    render(<App />);
+    expect(screen.queryAllByRole('button', { name: /^要復習（/ })).toHaveLength(0);
+  });
+
+  it('間違えるとそのカテゴリに要復習ボタンが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const missed = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    const button = screen.getByRole('button', { name: `要復習（${missed.category}）` });
+    expect(button).toHaveTextContent('要復習 1');
+  });
+
+  it('押すとそのカテゴリの要復習だけが出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    // 2 カテゴリで 1 問ずつ落とし、片方のカテゴリだけを復習する
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const missed = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getByRole('button', { name: /^時制/ }));
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    // 全体の復習では 2 問だが、カテゴリ内の復習では 1 問だけ
+    expect(screen.getByRole('button', { name: /^復習/ })).toHaveTextContent('2 問');
+    await user.click(screen.getByRole('button', { name: `要復習（${missed.category}）` }));
+    expect(sessionTotal()).toBe(1);
+    expect(currentQuestion()).toBe(missed);
+  });
+
+  it('自信ありで正解すると要復習ボタンが消える', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const missed = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+
+    await user.click(screen.getByRole('button', { name: `要復習（${missed.category}）` }));
+    await answer(user, { correct: true, confidence: '自信あり' });
+    await user.click(screen.getByRole('button', { name: 'ホームへ' }));
+
+    expect(screen.queryByRole('button', { name: `要復習（${missed.category}）` })).toBeNull();
+  });
+
+  it('中断しても「続きから」にカテゴリ内の復習として戻れる', async () => {
+    const user = userEvent.setup();
+    const { unmount } = render(<App />);
+    await user.click(screen.getByRole('button', { name: SHORT.name }));
+    const missed = currentQuestion();
+    await answer(user, { correct: false, confidence: '勘' });
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    await user.click(screen.getByRole('button', { name: `要復習（${missed.category}）` }));
+    await user.click(screen.getByRole('button', { name: '中断' }));
+    unmount();
+
+    render(<App />);
+    expect(
+      screen.getByRole('button', { name: new RegExp(`^${missed.category} の復習`) }),
+    ).toBeInTheDocument();
+  });
+});

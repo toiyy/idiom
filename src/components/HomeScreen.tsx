@@ -25,12 +25,34 @@ interface HomeScreenProps {
   onOpenGuide: (of: { category: string; subcategory?: string }) => void;
 }
 
-/** 「12 問 / 要復習 3」のような件数表示。カテゴリとサブカテゴリで共用する。 */
-function Count({ total, wrong }: { total: number; wrong: number }) {
+/** 「12 問」のような件数表示。カテゴリとサブカテゴリで共用する。 */
+function Count({ total }: { total: number }) {
+  return <span className="category__count">{total} 問</span>;
+}
+
+/**
+ * そのカテゴリの要復習だけを解くボタン。要復習がなければ出さない。
+ * 件数はここに出すので、カテゴリ名の横には総数だけを添える。
+ */
+function ReviewButton({
+  name,
+  wrong,
+  onStart,
+}: {
+  name: string;
+  wrong: number;
+  onStart: () => void;
+}) {
+  if (wrong === 0) return null;
   return (
-    <span className="category__count">
-      {total} 問{wrong > 0 && <span className="category__wrong"> / 要復習 {wrong}</span>}
-    </span>
+    <button
+      type="button"
+      className="category__review"
+      aria-label={`要復習（${name}）`}
+      onClick={onStart}
+    >
+      要復習 {wrong}
+    </button>
   );
 }
 
@@ -104,8 +126,13 @@ export function HomeScreen({
                 onClick={() => onStart({ kind: 'category', category: c.category })}
               >
                 <span className="category__name">{c.category}</span>
-                <Count total={c.total} wrong={c.wrong} />
+                <Count total={c.total} />
               </button>
+              <ReviewButton
+                name={c.category}
+                wrong={c.wrong}
+                onStart={() => onStart({ kind: 'category', category: c.category, review: true })}
+              />
               {findGuide(c.category) && (
                 <button
                   type="button"
@@ -131,8 +158,13 @@ export function HomeScreen({
               >
                 <span className="category-group__name">{c.category}</span>
                 <span className="category-group__all">すべて</span>
-                <Count total={c.total} wrong={c.wrong} />
+                <Count total={c.total} />
               </button>
+              <ReviewButton
+                name={c.category}
+                wrong={c.wrong}
+                onStart={() => onStart({ kind: 'category', category: c.category, review: true })}
+              />
               {findGuide(c.category) && (
                 <button
                   type="button"
@@ -159,8 +191,20 @@ export function HomeScreen({
                     }
                   >
                     <span className="category__name">{s.subcategory}</span>
-                    <Count total={s.total} wrong={s.wrong} />
+                    <Count total={s.total} />
                   </button>
+                  <ReviewButton
+                    name={s.subcategory}
+                    wrong={s.wrong}
+                    onStart={() =>
+                      onStart({
+                        kind: 'subcategory',
+                        category: c.category,
+                        subcategory: s.subcategory,
+                        review: true,
+                      })
+                    }
+                  />
                   {/* カテゴリ全体の解説しかない場合は、サブカテゴリ側には出さない */}
                   {findGuide(c.category, s.subcategory) !== findGuide(c.category) && (
                     <button
