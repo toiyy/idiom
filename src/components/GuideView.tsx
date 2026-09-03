@@ -50,7 +50,23 @@ export function GuideView({ guide, questionCount, onStart, onBack }: GuideViewPr
         return (
           <section className="guide__section" key={section.heading}>
             <h3 className="guide__heading">{section.heading}</h3>
-            <p className="guide__point">{section.point}</p>
+            {section.point && <p className="guide__point">{section.point}</p>}
+
+            {/* 覚える中身はここ。畳まずに常に出しておく */}
+            {section.columns && (
+              <div className="guide__columns">
+                {section.columns.map((column) => (
+                  <div className={`guide__column is-${column.tone ?? 'plain'}`} key={column.title}>
+                    <p className="guide__column-title">{column.title}</p>
+                    <ul className="guide__column-items">
+                      {column.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            )}
 
             <button
               type="button"

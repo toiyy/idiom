@@ -648,8 +648,13 @@ describe('カテゴリ解説', () => {
     expect(screen.getByText(guide.summary)).toBeInTheDocument();
     for (const section of guide.sections) {
       expect(screen.getByRole('heading', { name: section.heading })).toBeInTheDocument();
-      expect(screen.getByText(section.point)).toBeInTheDocument();
+      if (section.point) expect(screen.getByText(section.point)).toBeInTheDocument();
+      for (const column of section.columns ?? []) {
+        expect(screen.getByText(column.title)).toBeInTheDocument();
+      }
     }
+    // 単語のリストは畳まずに見えている
+    expect(screen.getByText('information 情報')).toBeInTheDocument();
     for (const button of screen.getAllByRole('button', { name: /詳しく/ })) {
       expect(button).toHaveAttribute('aria-expanded', 'false');
     }

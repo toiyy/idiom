@@ -33,15 +33,29 @@ const TableSchema = z
     }
   });
 
+/**
+ * 常に表示する対比ブロックの 1 列。
+ * 「可算につく語 / 不可算につく語」のように、覚える単位を列に分けて一目で見比べる。
+ */
+const ColumnSchema = z
+  .object({
+    title: z.string().min(1),
+    /** 見出しの色。ok = 正しい形、ng = 誤った形。省略時は中立。 */
+    tone: z.union([z.literal('ok'), z.literal('ng')]).optional(),
+    items: z.array(z.string().min(1)).min(1),
+  })
+  .strict();
+
 const SectionSchema = z
   .object({
     heading: z.string().min(1),
     /**
      * 一目で覚える要点。常に表示するので、これだけ読めば復習になる 1〜2 文にする。
-     * 詳細（body / table / examples / pitfall）は畳んでおき、必要なときだけ開く。
      */
-    point: z.string().min(1),
-    /** 段落。1 要素 1 段落。 */
+    point: z.string().min(1).optional(),
+    /** 常に表示する対比リスト。暗記の核はここに置く。 */
+    columns: z.array(ColumnSchema).min(1).optional(),
+    /** 以下は「詳しく」を開いたときだけ出す。 */
     body: z.array(z.string().min(1)).optional(),
     table: TableSchema.optional(),
     examples: z.array(ExampleSchema).optional(),
@@ -50,6 +64,9 @@ const SectionSchema = z
   })
   .strict()
   .superRefine((s, ctx) => {
+    if (!s.point && !s.columns) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: '常に表示する中身がない節です' });
+    }
     if (!s.body && !s.table && !s.examples && !s.pitfall) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, message: '展開する中身のない節です' });
     }

@@ -4,7 +4,53 @@
   "sections": [
     {
       "heading": "1. すべての出発点は「可算か不可算か」",
-      "point": "空所の後ろの名詞を先に見る。information / equipment / furniture / progress / damage / feedback / paperwork は不可算。",
+      "point": "空所の後ろの名詞を先に見る。左の語には many / few / fewer が付けられない。",
+      "columns": [
+        {
+          "title": "不可算 — 複数形にしない",
+          "tone": "ng",
+          "items": [
+            "information 情報",
+            "equipment 機器",
+            "furniture 家具",
+            "machinery 機械類",
+            "baggage / luggage 手荷物",
+            "advice 助言",
+            "news 知らせ",
+            "progress 進捗",
+            "damage 損害",
+            "research 研究",
+            "evidence 証拠",
+            "feedback 意見・反応",
+            "paperwork 事務書類",
+            "merchandise 商品",
+            "access 利用権",
+            "permission 許可",
+            "work 仕事"
+          ]
+        },
+        {
+          "title": "同じ意味で可算 — こちらは複数形にする",
+          "tone": "ok",
+          "items": [
+            "a fact → facts 事実",
+            "a device → devices 機器",
+            "a desk / a chair → 家具の個々",
+            "a machine → machines 機械",
+            "a suitcase → suitcases かばん",
+            "a suggestion → suggestions 助言",
+            "a report → reports 報告",
+            "a step → steps 段階",
+            "a defect → defects 欠陥",
+            "a study → studies 研究",
+            "a detail → details 詳細",
+            "a comment → comments 意見",
+            "a form → forms 書類",
+            "an item → items 品目",
+            "a job / a task → 仕事"
+          ]
+        }
+      ],
       "body": [
         "空所に入る数量詞を選ぶとき、最初に見るのは数量詞そのものではなく、その後ろにある名詞。名詞が可算名詞の複数形なら many / few / fewer / several、不可算名詞なら much / little / less / a great deal of と、対応が機械的に決まる。",
         "英語では可算でも日本語の感覚では数えられそうな名詞が落とし穴になる。TOEIC に繰り返し出る不可算名詞は数が限られているので、下の表はそのまま覚えてしまうのが早い。"
@@ -47,7 +93,43 @@
     },
     {
       "heading": "2. many / much、few / little、fewer / less",
-      "point": "可算の複数形には many・few・fewer、不可算には much・little・less。plenty of と a lot of はどちらにも使える。",
+      "columns": [
+        {
+          "title": "可算の複数形につく",
+          "items": [
+            "many 多くの",
+            "a great many 非常に多くの",
+            "a number of 多くの",
+            "few ほとんどない",
+            "a few 少しはある",
+            "fewer より少ない",
+            "several いくつかの",
+            "both / either / neither 2つの"
+          ]
+        },
+        {
+          "title": "不可算につく",
+          "items": [
+            "much 多くの",
+            "a great deal of 多くの",
+            "a large amount of 多量の",
+            "little ほとんどない",
+            "a little 少しはある",
+            "less より少ない",
+            "a bit of 少しの"
+          ]
+        },
+        {
+          "title": "どちらにも使える",
+          "items": [
+            "plenty of たっぷりの",
+            "a lot of / lots of 多くの",
+            "some / any",
+            "most / all",
+            "no"
+          ]
+        }
+      ],
       "body": [
         "可算と不可算で語を使い分ける組が 3 つある。意味は同じで、後ろの名詞に合わせて形だけが変わる。"
       ],
@@ -92,7 +174,28 @@
     },
     {
       "heading": "3. a few / few、a little / little — a があるかないかで意味が逆になる",
-      "point": "a が付けば「少しはある」、付かなければ「ほとんどない」。very が付いていたら必ず後者。",
+      "point": "very が付いていたら必ず「ほとんどない」のほう。",
+      "columns": [
+        {
+          "title": "a が付く — 少しはある（肯定的）",
+          "tone": "ok",
+          "items": [
+            "a few + 可算の複数形",
+            "a little + 不可算",
+            "例) We still have a few days left."
+          ]
+        },
+        {
+          "title": "a が付かない — ほとんどない（否定的）",
+          "tone": "ng",
+          "items": [
+            "few + 可算の複数形",
+            "little + 不可算",
+            "very few / very little でさらに強調",
+            "例) Very few applicants met the requirement."
+          ]
+        }
+      ],
       "body": [
         "a が付くと「少しはある」という肯定的な意味、a が付かないと「ほとんどない」という否定的な意味になる。文全体が前向きか後ろ向きかを読めば判断できる。"
       ],
@@ -123,7 +226,21 @@
     },
     {
       "heading": "4. 「数量詞 + of + the 名詞」と動詞の一致",
-      "point": "either・neither・each・one は単数、both・several・many は複数。all・most・some・half・none は of の後ろの名詞に合わせる。",
+      "point": "of の直後にある複数名詞に引きずられず、先頭の数量詞で動詞を決める。",
+      "columns": [
+        {
+          "title": "単数で受ける",
+          "items": ["each of", "every one of", "either of", "neither of", "one of"]
+        },
+        {
+          "title": "複数で受ける",
+          "items": ["both of", "several of", "many of", "a few of", "a number of"]
+        },
+        {
+          "title": "of の後ろの名詞に合わせる",
+          "items": ["all of", "most of", "some of", "half of", "none of", "the rest of"]
+        }
+      ],
       "body": [
         "Either of the two candidates ___ のような形では、動詞を単数にするか複数にするかが問われる。of の直後にある複数名詞に引きずられず、先頭の数量詞で決めるのが原則。",
         "なお of を伴うときは the / these / my などの限定詞が必要になる。some of students とは言わず、some students か some of the students のどちらかになる。"
@@ -169,7 +286,25 @@
     },
     {
       "heading": "5. no / none / not の使い分け",
-      "point": "no は名詞に直接付く形容詞、none は代名詞で単独か of を伴う。not は副詞なので名詞を修飾できない。",
+      "columns": [
+        {
+          "title": "no — 形容詞",
+          "items": ["no + 名詞", "report no damage", "no complaints were received"]
+        },
+        {
+          "title": "none — 代名詞",
+          "items": [
+            "単独で使う",
+            "none of + the / these / my + 名詞",
+            "None of the proposals met ..."
+          ]
+        },
+        {
+          "title": "not — 副詞 / nothing — 代名詞",
+          "tone": "ng",
+          "items": ["not は名詞を修飾できない", "nothing の後ろに名詞は続かない"]
+        }
+      ],
       "body": [
         "同じ「〜がない」でも品詞が違う。no は形容詞なので名詞を直接修飾し、none は代名詞なので単独か of を伴って使う。not は副詞で、名詞を修飾できない。"
       ],
@@ -199,7 +334,30 @@
     },
     {
       "heading": "6. almost / most / almost every",
-      "point": "almost は副詞。almost every / almost all とは言えるが、almost people や almost of the とは言えない。",
+      "point": "almost は副詞なので、名詞との間に every / all を挟む必要がある。",
+      "columns": [
+        {
+          "title": "言える形",
+          "tone": "ok",
+          "items": [
+            "almost every + 単数名詞",
+            "almost all (of) the + 名詞",
+            "most + 名詞（the は付けない）",
+            "most of the + 名詞",
+            "nearly all / nearly every"
+          ]
+        },
+        {
+          "title": "言えない形",
+          "tone": "ng",
+          "items": [
+            "almost + 名詞（almost people ✗）",
+            "almost of the + 名詞 ✗",
+            "the most + 名詞（「ほとんど」の意味では ✗）",
+            "mostly + 名詞（mostly は副詞 ✗）"
+          ]
+        }
+      ],
       "body": [
         "almost は副詞なので、名詞を直接修飾できない。almost all / almost every のように、間に別の限定詞を挟む必要がある。most は形容詞・代名詞なので単独で名詞につく。"
       ],
@@ -231,7 +389,24 @@
     },
     {
       "heading": "7. any の 4 つの顔",
-      "point": "条件節の any は「どれか1つでも」。if any of the sensors fails のように単数扱いになる。",
+      "columns": [
+        {
+          "title": "否定文 — 少しも〜ない",
+          "items": ["We do not have any spare parts."]
+        },
+        {
+          "title": "疑問文 — 何か",
+          "items": ["Do you have any questions?"]
+        },
+        {
+          "title": "条件節 — どれか1つでも",
+          "items": ["If any of the sensors fails, ...", "※ any of + 複数名詞は単数扱い"]
+        },
+        {
+          "title": "肯定文 — どんな〜でも",
+          "items": ["Any employee may apply."]
+        }
+      ],
       "body": [
         "any は否定文・疑問文で使うと習うが、TOEIC では条件節と肯定文の用法が問われる。特に if 節の any は「どれか1つでも」という意味で頻出。"
       ],
@@ -255,7 +430,18 @@
     },
     {
       "heading": "8. 「ほとんどない」を作る副詞 — hardly / scarcely",
-      "point": "hardly any = ほとんどない。hardly 自体が否定語なので not と重ねない。",
+      "columns": [
+        {
+          "title": "「ほとんどない」を作れる",
+          "tone": "ok",
+          "items": ["hardly any + 名詞", "scarcely any + 名詞", "few + 可算複数", "little + 不可算"]
+        },
+        {
+          "title": "作れない",
+          "tone": "ng",
+          "items": ["not hardly any（否定の重複）", "almost any（almost は any を修飾できない）"]
+        }
+      ],
       "body": [
         "hardly any / scarcely any で「ほとんど〜ない」を表す。hardly 自体が否定語なので、not と一緒には使わない。"
       ],
@@ -277,7 +463,17 @@
     },
     {
       "heading": "9. 解くときの手順",
-      "point": "名詞を見る → 可算か不可算かで候補を絞る → of があれば動詞の一致を確認 → 文脈で a few / few を決める。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の後ろの名詞を見る（可算の複数形か、不可算か）",
+            "② 可算なら many / few / fewer / several、不可算なら much / little / less に絞る",
+            "③ of + 限定詞が続くなら、動詞が単数か複数かを確認する",
+            "④ 文全体が肯定的か否定的かで a few / few、a little / little を決める"
+          ]
+        }
+      ],
       "body": [
         "空所の後ろの名詞を見る。可算名詞の複数形か、不可算名詞か、単数形か。",
         "可算なら many / few / fewer / several / a number of、不可算なら much / little / less / a great deal of に候補を絞る。",

@@ -24,8 +24,30 @@ describe('GuideSchema', () => {
     expect(GuideSchema.safeParse({ ...valid, sections: [] }).success).toBe(false);
   });
 
-  it('要点のない節を弾く', () => {
+  it('常に表示する中身がない節を弾く', () => {
     const bad = { ...valid, sections: [{ heading: '見出し', body: ['本文'] }] };
+    expect(GuideSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('要点がなくても対比リストがあれば受理する', () => {
+    const ok = {
+      ...valid,
+      sections: [
+        {
+          heading: '見出し',
+          columns: [{ title: '不可算', tone: 'ng', items: ['information'] }],
+          body: ['本文'],
+        },
+      ],
+    };
+    expect(GuideSchema.safeParse(ok).success).toBe(true);
+  });
+
+  it('中身が空の列を弾く', () => {
+    const bad = {
+      ...valid,
+      sections: [{ heading: '見出し', columns: [{ title: '不可算', items: [] }], body: ['本文'] }],
+    };
     expect(GuideSchema.safeParse(bad).success).toBe(false);
   });
 
@@ -84,6 +106,7 @@ describe('同梱データ', () => {
   it('要点は一目で読める長さに収まっている', () => {
     for (const g of guides) {
       for (const s of g.sections) {
+        if (s.point === undefined) continue;
         expect(s.point.length, `${g.category} / ${s.heading} の要点が長い`).toBeLessThanOrEqual(
           120,
         );
