@@ -277,6 +277,7 @@
     },
     {
       "heading": "5. no / none / not の使い分け",
+      "point": "no は形容詞、none は代名詞。not と nothing は名詞に付けられない。",
       "columns": [
         {
           "title": "no — 形容詞",
@@ -285,11 +286,6 @@
         {
           "title": "none — 代名詞",
           "items": ["none 単独", "none of the + 名詞", "none of them"]
-        },
-        {
-          "title": "not / nothing — 名詞に付けない",
-          "tone": "ng",
-          "items": ["not + 名詞", "nothing + 名詞"]
         }
       ],
       "body": [
@@ -400,22 +396,16 @@
       ]
     },
     {
-      "heading": "8. 「ほとんどない」を作る副詞 — hardly / scarcely",
+      "heading": "8. 「ほとんどない」の作り方",
+      "point": "hardly・scarcely・barely はそれ自体が否定語。not と重ねない。",
       "columns": [
         {
-          "title": "「ほとんどない」を作れる",
-          "tone": "ok",
-          "items": [
-            "hardly any + 名詞",
-            "scarcely any + 名詞",
-            "few + 可算の複数形",
-            "little + 不可算"
-          ]
+          "title": "副詞 — any と組んで名詞を否定",
+          "items": ["hardly any + 名詞", "scarcely any + 名詞", "barely any + 名詞"]
         },
         {
-          "title": "作れない",
-          "tone": "ng",
-          "items": ["not hardly any", "almost any"]
+          "title": "形容詞 — 単独で名詞を否定",
+          "items": ["few + 可算の複数形", "little + 不可算"]
         }
       ],
       "body": [
@@ -426,7 +416,7 @@
           "en": "There were hardly any complaints about the new seating arrangement.",
           "ja": "新しい座席配置についての苦情はほとんどなかった。",
           "ok": true,
-          "note": "almost any とは言えない。almost は any を修飾できない"
+          "note": "almost any は「ほとんどどんな〜でも」の意味。数の少なさは表せない"
         },
         {
           "en": "There were not hardly any complaints.",
@@ -444,8 +434,7 @@
           "title": "解く手順",
           "items": [
             "① 空所の後ろの名詞を見る",
-            "② 可算 → many / few / fewer",
-            "② 不可算 → much / little / less",
+            "② 可算なら many / few、不可算なら much / little",
             "③ of があれば動詞の単複を確認",
             "④ 文脈で a few / few を決める"
           ]
