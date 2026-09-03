@@ -690,23 +690,80 @@ body {
 
 /* --- カテゴリ解説 --- */
 
+.guide__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.guide__header .section__title {
+  margin: 0;
+}
+
+.guide__toggle-all {
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
 .guide__summary {
-  margin: 0 0 8px;
+  margin: 12px 0 0;
   padding: 12px;
   border-radius: 10px;
   background: var(--bg);
   line-height: 1.8;
 }
 
+/* 要点だけを縦に並べたときに 1 枚のまとめとして読めるよう、節の間隔は詰める */
 .guide__section {
-  margin-top: 28px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
 }
 
 .guide__heading {
-  margin: 0 0 10px;
-  padding-bottom: 6px;
-  border-bottom: 2px solid var(--primary);
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+/* 常に見えている暗記の核。ここだけ拾えば復習になる */
+.guide__point {
+  margin: 0;
+  padding-left: 10px;
+  border-left: 3px solid var(--primary);
   font-size: 1rem;
+  line-height: 1.8;
+}
+
+.guide__more {
+  margin-top: 8px;
+  padding: 4px 0;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.guide__more:hover {
+  color: var(--primary);
+}
+
+.guide__caret {
+  display: inline-block;
+  margin-left: 4px;
+  transition: transform 0.15s;
+}
+
+.guide__caret.is-open {
+  transform: rotate(180deg);
+}
+
+.guide__detail {
+  margin-top: 4px;
 }
 
 .guide__body {

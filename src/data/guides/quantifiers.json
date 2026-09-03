@@ -4,6 +4,7 @@
   "sections": [
     {
       "heading": "1. すべての出発点は「可算か不可算か」",
+      "point": "空所の後ろの名詞を先に見る。information / equipment / furniture / progress / damage / feedback / paperwork は不可算。",
       "body": [
         "空所に入る数量詞を選ぶとき、最初に見るのは数量詞そのものではなく、その後ろにある名詞。名詞が可算名詞の複数形なら many / few / fewer / several、不可算名詞なら much / little / less / a great deal of と、対応が機械的に決まる。",
         "英語では可算でも日本語の感覚では数えられそうな名詞が落とし穴になる。TOEIC に繰り返し出る不可算名詞は数が限られているので、下の表はそのまま覚えてしまうのが早い。"
@@ -46,6 +47,7 @@
     },
     {
       "heading": "2. many / much、few / little、fewer / less",
+      "point": "可算の複数形には many・few・fewer、不可算には much・little・less。plenty of と a lot of はどちらにも使える。",
       "body": [
         "可算と不可算で語を使い分ける組が 3 つある。意味は同じで、後ろの名詞に合わせて形だけが変わる。"
       ],
@@ -90,6 +92,7 @@
     },
     {
       "heading": "3. a few / few、a little / little — a があるかないかで意味が逆になる",
+      "point": "a が付けば「少しはある」、付かなければ「ほとんどない」。very が付いていたら必ず後者。",
       "body": [
         "a が付くと「少しはある」という肯定的な意味、a が付かないと「ほとんどない」という否定的な意味になる。文全体が前向きか後ろ向きかを読めば判断できる。"
       ],
@@ -120,6 +123,7 @@
     },
     {
       "heading": "4. 「数量詞 + of + the 名詞」と動詞の一致",
+      "point": "either・neither・each・one は単数、both・several・many は複数。all・most・some・half・none は of の後ろの名詞に合わせる。",
       "body": [
         "Either of the two candidates ___ のような形では、動詞を単数にするか複数にするかが問われる。of の直後にある複数名詞に引きずられず、先頭の数量詞で決めるのが原則。",
         "なお of を伴うときは the / these / my などの限定詞が必要になる。some of students とは言わず、some students か some of the students のどちらかになる。"
@@ -165,6 +169,7 @@
     },
     {
       "heading": "5. no / none / not の使い分け",
+      "point": "no は名詞に直接付く形容詞、none は代名詞で単独か of を伴う。not は副詞なので名詞を修飾できない。",
       "body": [
         "同じ「〜がない」でも品詞が違う。no は形容詞なので名詞を直接修飾し、none は代名詞なので単独か of を伴って使う。not は副詞で、名詞を修飾できない。"
       ],
@@ -194,6 +199,7 @@
     },
     {
       "heading": "6. almost / most / almost every",
+      "point": "almost は副詞。almost every / almost all とは言えるが、almost people や almost of the とは言えない。",
       "body": [
         "almost は副詞なので、名詞を直接修飾できない。almost all / almost every のように、間に別の限定詞を挟む必要がある。most は形容詞・代名詞なので単独で名詞につく。"
       ],
@@ -225,6 +231,7 @@
     },
     {
       "heading": "7. any の 4 つの顔",
+      "point": "条件節の any は「どれか1つでも」。if any of the sensors fails のように単数扱いになる。",
       "body": [
         "any は否定文・疑問文で使うと習うが、TOEIC では条件節と肯定文の用法が問われる。特に if 節の any は「どれか1つでも」という意味で頻出。"
       ],
@@ -248,6 +255,7 @@
     },
     {
       "heading": "8. 「ほとんどない」を作る副詞 — hardly / scarcely",
+      "point": "hardly any = ほとんどない。hardly 自体が否定語なので not と重ねない。",
       "body": [
         "hardly any / scarcely any で「ほとんど〜ない」を表す。hardly 自体が否定語なので、not と一緒には使わない。"
       ],
@@ -269,6 +277,7 @@
     },
     {
       "heading": "9. 解くときの手順",
+      "point": "名詞を見る → 可算か不可算かで候補を絞る → of があれば動詞の一致を確認 → 文脈で a few / few を決める。",
       "body": [
         "空所の後ろの名詞を見る。可算名詞の複数形か、不可算名詞か、単数形か。",
         "可算なら many / few / fewer / several / a number of、不可算なら much / little / less / a great deal of に候補を絞る。",

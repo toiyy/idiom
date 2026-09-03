@@ -36,6 +36,11 @@ const TableSchema = z
 const SectionSchema = z
   .object({
     heading: z.string().min(1),
+    /**
+     * 一目で覚える要点。常に表示するので、これだけ読めば復習になる 1〜2 文にする。
+     * 詳細（body / table / examples / pitfall）は畳んでおき、必要なときだけ開く。
+     */
+    point: z.string().min(1),
     /** 段落。1 要素 1 段落。 */
     body: z.array(z.string().min(1)).optional(),
     table: TableSchema.optional(),
@@ -46,7 +51,7 @@ const SectionSchema = z
   .strict()
   .superRefine((s, ctx) => {
     if (!s.body && !s.table && !s.examples && !s.pitfall) {
-      ctx.addIssue({ code: z.ZodIssueCode.custom, message: '中身のない節です' });
+      ctx.addIssue({ code: z.ZodIssueCode.custom, message: '展開する中身のない節です' });
     }
   });
 

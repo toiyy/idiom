@@ -6,7 +6,9 @@ import { questions } from '../data/questions';
 const valid = {
   category: '数量詞',
   summary: 'まず名詞が可算か不可算かを見る。',
-  sections: [{ heading: '1. 可算か不可算か', body: ['名詞を先に見る。'] }],
+  sections: [
+    { heading: '1. 可算か不可算か', point: '名詞を先に見る。', body: ['後ろの名詞で決まる。'] },
+  ],
 };
 
 describe('GuideSchema', () => {
@@ -22,15 +24,22 @@ describe('GuideSchema', () => {
     expect(GuideSchema.safeParse({ ...valid, sections: [] }).success).toBe(false);
   });
 
-  it('中身のない節を弾く', () => {
-    const bad = { ...valid, sections: [{ heading: '見出しだけ' }] };
+  it('要点のない節を弾く', () => {
+    const bad = { ...valid, sections: [{ heading: '見出し', body: ['本文'] }] };
+    expect(GuideSchema.safeParse(bad).success).toBe(false);
+  });
+
+  it('展開する中身のない節を弾く', () => {
+    const bad = { ...valid, sections: [{ heading: '見出し', point: '要点' }] };
     expect(GuideSchema.safeParse(bad).success).toBe(false);
   });
 
   it('表の列数が見出しと合わなければ弾く', () => {
     const bad = {
       ...valid,
-      sections: [{ heading: '表', table: { headers: ['a', 'b'], rows: [['1', '2', '3']] } }],
+      sections: [
+        { heading: '表', point: '要点', table: { headers: ['a', 'b'], rows: [['1', '2', '3']] } },
+      ],
     };
     expect(GuideSchema.safeParse(bad).success).toBe(false);
   });
@@ -68,6 +77,16 @@ describe('同梱データ', () => {
     for (const g of guides) {
       for (const ex of g.sections.flatMap((s) => s.examples ?? [])) {
         expect(ex.en, `${g.category}: 空所が残っている`).not.toContain('___');
+      }
+    }
+  });
+
+  it('要点は一目で読める長さに収まっている', () => {
+    for (const g of guides) {
+      for (const s of g.sections) {
+        expect(s.point.length, `${g.category} / ${s.heading} の要点が長い`).toBeLessThanOrEqual(
+          120,
+        );
       }
     }
   });

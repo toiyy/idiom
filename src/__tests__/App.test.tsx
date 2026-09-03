@@ -638,7 +638,7 @@ describe('カテゴリ解説', () => {
     expect(guided).toHaveLength(guides.length);
   });
 
-  it('解説を開くと見出しと表と例文が出る', async () => {
+  it('開いた直後は全節の要点だけが並び、詳細は畳まれている', async () => {
     const user = userEvent.setup();
     render(<App />);
     await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
@@ -648,9 +648,38 @@ describe('カテゴリ解説', () => {
     expect(screen.getByText(guide.summary)).toBeInTheDocument();
     for (const section of guide.sections) {
       expect(screen.getByRole('heading', { name: section.heading })).toBeInTheDocument();
+      expect(screen.getByText(section.point)).toBeInTheDocument();
     }
+    for (const button of screen.getAllByRole('button', { name: /詳しく/ })) {
+      expect(button).toHaveAttribute('aria-expanded', 'false');
+    }
+  });
+
+  it('「詳しく」を押した節だけが開く', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+
+    const buttons = screen.getAllByRole('button', { name: /詳しく/ });
+    const count = buttons.length;
+    await user.click(buttons[0]);
+
+    expect(screen.getByRole('button', { name: /閉じる/ })).toHaveAttribute('aria-expanded', 'true');
+    expect(screen.getAllByRole('button', { name: /詳しく/ })).toHaveLength(count - 1);
+  });
+
+  it('すべて開くと表と例文が出る', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+    await user.click(screen.getAllByRole('button', { name: '解説' })[0]);
+    await user.click(screen.getByRole('button', { name: 'すべて開く' }));
+
+    expect(screen.queryAllByRole('button', { name: /詳しく/ })).toHaveLength(0);
     expect(document.querySelectorAll('.guide__table').length).toBeGreaterThan(0);
     expect(document.querySelectorAll('.guide__example').length).toBeGreaterThan(0);
+
+    await user.click(screen.getByRole('button', { name: 'すべて閉じる' }));
+    expect(screen.getAllByRole('button', { name: /詳しく/ }).length).toBeGreaterThan(0);
   });
 
   it('解説からそのカテゴリを解き始められる', async () => {
