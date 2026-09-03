@@ -1,0 +1,169 @@
+{
+  "title": "比較",
+  "targets": [
+    {
+      "category": "比較"
+    }
+  ],
+  "summary": "比較は形がすべて決まっている。than があれば比較級、as に挟まれていれば原級、the が付いていれば最上級。組み合わせを崩さないことが唯一の規則。",
+  "sections": [
+    {
+      "heading": "1. 3 つの型",
+      "point": "文中の than / as / the を探す。それがどの型かを教えてくれる。",
+      "columns": [
+        {
+          "title": "原級 — as ... as",
+          "items": [
+            "as + 形容詞・副詞の原形 + as",
+            "not as ... as 〜ほど…でない",
+            "as many as 〜もの数",
+            "as much as 〜もの量",
+            "as ... as possible できるだけ"
+          ]
+        },
+        {
+          "title": "比較級 — than",
+          "items": [
+            "比較級 + than",
+            "less + 原形 + than より少なく",
+            "no later than 遅くとも",
+            "比較級 and 比較級 ますます",
+            "the 比較級, the 比較級"
+          ]
+        },
+        {
+          "title": "最上級 — the",
+          "items": [
+            "the + 最上級",
+            "the + 最上級 + of / in",
+            "2 つのうちなら the + 比較級",
+            "one of the + 最上級 + 複数名詞"
+          ]
+        }
+      ],
+      "body": [
+        "as ... as に挟まれた部分は必ず原級。twice as fast as the model it replaced のように、倍数は最初の as の前に置く。",
+        "than があれば比較級。ただし 2 つのうちで比べるときは the + 比較級になる。Of the two proposals, the second is the more practical。",
+        "数なら as many as、量なら as much as。As many as two hundred delegates attended は「200名もの」という意味になる。"
+      ],
+      "table": {
+        "headers": ["目印", "入る形", "例"],
+        "rows": [
+          ["as ... as", "原級", "as fast as"],
+          ["than", "比較級", "higher than"],
+          ["the + of / in", "最上級", "the best facilities"],
+          ["of the two", "the + 比較級", "the more practical"],
+          ["数を強調", "as many as", "as many as 200"],
+          ["量を強調", "as much as", "as much as 30 percent"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The new packaging machine operates nearly twice as fast as the model it replaced.",
+          "ja": "新しい包装機は、置き換える前の機種のほぼ2倍の速さで動く。",
+          "ok": true,
+          "note": "as ... as に挟まれるので原級。倍数は前に置く"
+        },
+        {
+          "en": "Of the two proposals, the second is the more practical for our staffing level.",
+          "ja": "2つの提案のうち、2つ目のほうが今の人員には現実的だ。",
+          "ok": true,
+          "note": "2 つのうちなので the + 比較級"
+        }
+      ],
+      "pitfall": "「2 つのうちで最も」は最上級ではなく the + 比較級。of the two が見えたら比較級を選ぶ。"
+    },
+    {
+      "heading": "2. 比較級を強める語",
+      "point": "比較級の前に置ける語と、原級の前に置ける語は別。very は比較級を修飾できない。",
+      "columns": [
+        {
+          "title": "比較級を強める",
+          "items": ["much より", "far ずっと", "even さらに", "still なお", "a lot はるかに"]
+        },
+        {
+          "title": "原級を強める",
+          "items": ["very とても", "so それほど", "quite かなり", "too 〜すぎる"]
+        },
+        {
+          "title": "最上級を強める",
+          "items": ["by far 断然", "much 最も", "the very まさに"]
+        }
+      ],
+      "body": [
+        "much more efficient / far higher のように、比較級には much / far / even / still を置く。very more とは言えない。",
+        "very は原級専用。very efficient は言えるが very more efficient は言えない。"
+      ],
+      "examples": [
+        {
+          "en": "The revised floor layout is much more efficient than the one it replaced.",
+          "ja": "改訂後の配置は、以前のものよりずっと効率的だ。",
+          "ok": true,
+          "note": "比較級を強めるのは much。very は使えない"
+        }
+      ]
+    },
+    {
+      "heading": "3. 数と量で分かれる語",
+      "point": "可算名詞なら fewer / many、不可算なら less / much。比較でも同じ区別が続く。",
+      "columns": [
+        {
+          "title": "可算名詞につく",
+          "items": ["many / more", "few / fewer / fewest", "a number of"]
+        },
+        {
+          "title": "不可算名詞につく",
+          "items": ["much / more", "little / less / least", "a great deal of"]
+        },
+        {
+          "title": "形容詞を修飾する less",
+          "items": [
+            "less + 形容詞 + than",
+            "名詞の可算・不可算とは無関係",
+            "less expensive より安い"
+          ]
+        }
+      ],
+      "body": [
+        "fewer steps / less time のように、後ろの名詞で fewer と less を選ぶ。数量詞の規則がそのまま比較にも及ぶ。",
+        "less expensive の less は形容詞 expensive を修飾する副詞なので、名詞の可算・不可算とは関係がない。"
+      ],
+      "examples": [
+        {
+          "en": "The new process requires fewer steps than the one it replaced.",
+          "ja": "新しい工程は、以前のものより手順が少ない。",
+          "ok": true,
+          "note": "steps は可算名詞の複数形なので fewer"
+        },
+        {
+          "en": "The compact model is less expensive than the standard version.",
+          "ja": "小型モデルは標準版より安い。",
+          "ok": true,
+          "note": "この less は形容詞を修飾する副詞"
+        }
+      ]
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "than / as / the のどれが見えているかで型を決める。あとは形を崩さない。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① than / as / the を探す",
+            "② as ... as なら原級",
+            "③ than なら比較級",
+            "④ of the two なら the + 比較級",
+            "⑤ 強める語は very か much か"
+          ]
+        }
+      ],
+      "body": [
+        "文中の than / as / the を探す。それがどの型かを決めてくれるので、意味を読む必要はない。",
+        "as ... as に挟まれていれば必ず原級。比較級や最上級は入らない。",
+        "2 つのうちで比べるときだけ the + 比較級になる。of the two が目印。",
+        "空所が強める語なら、後ろが比較級か原級かを見る。比較級なら much / far / even、原級なら very / so。"
+      ]
+    }
+  ]
+}

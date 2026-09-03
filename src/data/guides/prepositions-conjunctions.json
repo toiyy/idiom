@@ -1,0 +1,202 @@
+{
+  "title": "前置詞・接続詞",
+  "targets": [
+    {
+      "category": "前置詞"
+    },
+    {
+      "category": "接続詞・前置詞の識別"
+    }
+  ],
+  "summary": "空所の後ろが名詞のかたまりなら前置詞、主語と動詞のある節なら接続詞。意味が同じでも品詞が違えば入らないので、まず後ろの形を見る。",
+  "sections": [
+    {
+      "heading": "1. 後ろが名詞句か節か",
+      "point": "空所の後ろに主語と動詞があれば接続詞、名詞だけなら前置詞。意味が同じ組でも形で選び分ける。",
+      "columns": [
+        {
+          "title": "前置詞 — 後ろは名詞句",
+          "items": [
+            "despite / in spite of 〜にもかかわらず",
+            "because of / due to / owing to 〜のせいで",
+            "during 〜のあいだ",
+            "as a result of 〜の結果",
+            "in case of 〜の場合に備えて"
+          ]
+        },
+        {
+          "title": "接続詞 — 後ろは主語 + 動詞",
+          "items": [
+            "although / though / even though 〜だが",
+            "because / since / as 〜なので",
+            "while 〜のあいだ",
+            "so that 〜するように",
+            "in case 〜する場合に備えて"
+          ]
+        },
+        {
+          "title": "どちらでも使える",
+          "items": [
+            "since 〜以来 / 〜なので",
+            "as 〜として / 〜なので",
+            "before / after / until",
+            "given 〜を考えると"
+          ]
+        }
+      ],
+      "body": [
+        "意味が同じでも品詞が違う組がある。despite と although、because of と because、during と while はそれぞれ前置詞と接続詞の対で、後ろの形で選び分ける。",
+        "___ the heavy rain のように後ろが名詞句なら Despite、___ the technicians were replacing the server のように主語と動詞があるなら While になる。",
+        "given は「〜を考えると」で名詞句を、given that は節をとる。that の有無で品詞が変わるので、後ろの形と合わせて確認する。"
+      ],
+      "table": {
+        "headers": ["意味", "前置詞（名詞句）", "接続詞（節）"],
+        "rows": [
+          ["〜にもかかわらず", "despite / in spite of", "although / though / even though"],
+          ["〜のせいで", "because of / due to / owing to", "because / since / as"],
+          ["〜のあいだ", "during", "while"],
+          ["〜の結果", "as a result of", "—"],
+          ["〜に備えて", "in case of", "in case"],
+          ["〜を考えると", "given", "given that"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Despite the heavy rain, the outdoor product launch proceeded as scheduled.",
+          "ja": "大雨にもかかわらず、屋外での製品発表は予定どおり行われた。",
+          "ok": true,
+          "note": "後ろが名詞句なので前置詞。Although なら主語と動詞が要る"
+        },
+        {
+          "en": "While the technicians were replacing the server, all online services remained unavailable.",
+          "ja": "技術者がサーバーを交換しているあいだ、オンラインサービスはすべて停止していた。",
+          "ok": true,
+          "note": "後ろが主語 + 動詞なので接続詞。During なら名詞句が要る"
+        }
+      ],
+      "pitfall": "in case of は「〜の場合に備えて」で名詞句、in case は節をとる。of ひとつで品詞が変わる。"
+    },
+    {
+      "heading": "2. 時を表す前置詞",
+      "point": "点を指すか、期間を指すか、期限を指すかで使い分ける。",
+      "columns": [
+        {
+          "title": "時点を指す",
+          "items": ["at + 時刻", "on + 日付・曜日", "in + 月・年・季節", "as of 〜の時点で"]
+        },
+        {
+          "title": "期間を指す",
+          "items": [
+            "for + 期間の長さ",
+            "during + 出来事",
+            "throughout 〜のあいだずっと",
+            "within 〜以内に"
+          ]
+        },
+        {
+          "title": "期限・範囲を指す",
+          "items": [
+            "by 〜までに（完了）",
+            "until 〜までずっと（継続）",
+            "from A to B",
+            "Monday through Friday 両端を含む"
+          ]
+        }
+      ],
+      "body": [
+        "by と until は混同しやすい。by は「〜までに終える」で期限、until は「〜までずっと続く」で継続を表す。Please submit by Friday は金曜までに提出せよ、という期限になる。",
+        "for と during は後ろの形で分かれる。for six weeks のように長さを表す語が続けば for、during the renovation のように出来事を表す名詞が続けば during。",
+        "within five business days は「5営業日以内に」。期限の内側であることを表す。"
+      ],
+      "examples": [
+        {
+          "en": "Please submit your travel receipts by Friday afternoon.",
+          "ja": "出張の領収書は金曜の午後までに提出してください。",
+          "ok": true,
+          "note": "期限なので by。until なら金曜まで提出し続ける意味になる"
+        },
+        {
+          "en": "Refunds are normally processed within five business days of receiving the item.",
+          "ja": "返金は通常、商品受領から5営業日以内に処理される。",
+          "ok": true,
+          "note": "「〜以内に」は within"
+        }
+      ]
+    },
+    {
+      "heading": "3. 形が決まっている前置詞句",
+      "point": "前置詞と名詞がひとかたまりで意味を作る。組み合わせごと覚える。",
+      "columns": [
+        {
+          "title": "in + 名詞",
+          "items": [
+            "in charge of 〜を担当して",
+            "in accordance with 〜に従って",
+            "in addition to 〜に加えて",
+            "in response to 〜に応じて",
+            "in terms of 〜の点で"
+          ]
+        },
+        {
+          "title": "on / at + 名詞",
+          "items": [
+            "on behalf of 〜を代表して",
+            "on account of 〜のために",
+            "at the expense of 〜を犠牲にして",
+            "at the latest 遅くとも"
+          ]
+        },
+        {
+          "title": "その他",
+          "items": [
+            "out of order 故障中で",
+            "prior to 〜より前に",
+            "regarding 〜について",
+            "according to 〜によれば",
+            "by means of 〜によって"
+          ]
+        }
+      ],
+      "body": [
+        "in accordance with のように、名詞の形が決まっているものがある。according は「according to」の形でしか使わず、in accordance with とは形が違う。",
+        "prior to は「〜より前に」で to が必要。before と同じ意味だが、prior だけでは前置詞にならない。",
+        "on behalf of は「〜を代表して」。in behalf of とは言わない。"
+      ],
+      "examples": [
+        {
+          "en": "The tissue samples were handled in accordance with the written safety protocol.",
+          "ja": "組織サンプルは文書化された安全手順に従って取り扱われた。",
+          "ok": true,
+          "note": "in accordance with が定型。according なら to が続く"
+        },
+        {
+          "en": "All equipment must be inspected prior to its first use on a construction site.",
+          "ja": "すべての機器は建設現場での初回使用より前に点検されねばならない。",
+          "ok": true,
+          "note": "prior to で「〜より前に」。prior 単独では使えない"
+        }
+      ]
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "空所の後ろを見て、名詞句か節かを決める。それだけで候補が半分になる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の後ろに主語と動詞があるか",
+            "② あれば接続詞、なければ前置詞",
+            "③ 意味の対で選び分ける",
+            "④ 時なら点・期間・期限のどれか",
+            "⑤ 定型句なら組み合わせで判断"
+          ]
+        }
+      ],
+      "body": [
+        "空所の後ろを見る。主語と動詞がそろっていれば接続詞、名詞や動名詞だけなら前置詞。この 1 手で選択肢の半分が消えることが多い。",
+        "前置詞と決まったら、意味の対を思い出す。「にもかかわらず」なら despite / in spite of、「のせいで」なら because of / due to / owing to。",
+        "時を表すなら、時点なら at / on / in、期間なら for / during / throughout、期限なら by / until / within。"
+      ]
+    }
+  ]
+}

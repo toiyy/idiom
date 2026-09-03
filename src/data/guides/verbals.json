@@ -1,8 +1,11 @@
 {
-  "title": "準動詞",
+  "title": "準動詞・分詞形容詞",
   "targets": [
     {
       "category": "準動詞"
+    },
+    {
+      "category": "分詞形容詞"
     }
   ],
   "summary": "不定詞・動名詞・分詞は、動詞を名詞や形容詞や副詞として使うための形。何になっているかが分かれば形は決まる。動名詞と不定詞の争いは動詞ごとの語法、分詞は能動か受動かで決まる。",
@@ -299,7 +302,75 @@
       "pitfall": "自動詞は過去分詞で名詞を修飾できない。existing / remaining / lasting は -ing のまま使う。"
     },
     {
-      "heading": "5. 解くときの手順",
+      "heading": "5. 感情を表す分詞形容詞",
+      "point": "感情を表す動詞は「〜させる」の意味。人が主語なら過去分詞、物や事が主語なら現在分詞になる。",
+      "columns": [
+        {
+          "title": "人が主語 — 過去分詞",
+          "items": [
+            "interested 関心がある",
+            "satisfied 満足している",
+            "surprised 驚いている",
+            "confused 混乱している",
+            "frustrated いらだっている",
+            "pleased 喜んでいる"
+          ]
+        },
+        {
+          "title": "物・事が主語 — 現在分詞",
+          "items": [
+            "interesting 興味深い",
+            "satisfying 満足のいく",
+            "surprising 驚くべき",
+            "confusing 紛らわしい",
+            "disappointing 期待外れの",
+            "challenging 手ごたえのある"
+          ]
+        },
+        {
+          "title": "感情以外でも同じ判断",
+          "items": [
+            "existing 既存の 自動詞なので -ing",
+            "remaining 残りの 自動詞なので -ing",
+            "revised 修正された 受動なので -ed",
+            "registered 登録済みの 受動なので -ed"
+          ]
+        }
+      ],
+      "body": [
+        "interest は「興味を持たせる」という意味の動詞。だから人は「興味を持たされる」側で interested、物は「興味を持たせる」側で interesting になる。",
+        "Many customers were confused by the change は、顧客が混乱させられた側なので過去分詞。The instructions were misleading は、説明書が誤解させる側なので現在分詞。",
+        "感情以外でも判断は同じ。exist / remain は自動詞で受動にできないので、名詞を修飾するときも existing / remaining と現在分詞のままになる。"
+      ],
+      "table": {
+        "headers": ["動詞", "人が主語", "物・事が主語"],
+        "rows": [
+          ["interest", "interested", "interesting"],
+          ["satisfy", "satisfied", "satisfying"],
+          ["surprise", "surprised", "surprising"],
+          ["confuse", "confused", "confusing"],
+          ["disappoint", "disappointed", "disappointing"],
+          ["excite", "excited", "exciting"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Many customers were confused by the sudden change in the return policy.",
+          "ja": "多くの顧客が返品規定の急な変更に戸惑った。",
+          "ok": true,
+          "note": "顧客は混乱させられる側なので過去分詞"
+        },
+        {
+          "en": "The instructions on the packaging were misleading and led users to assemble it wrongly.",
+          "ja": "包装の説明が紛らわしく、利用者は誤って組み立ててしまった。",
+          "ok": true,
+          "note": "説明が誤解させる側なので現在分詞"
+        }
+      ],
+      "pitfall": "人が主語でも、その人が相手に感情を起こさせる側なら現在分詞になる。He is boring は「彼は退屈な人だ」で、He is bored「彼は退屈している」とは別の意味。"
+    },
+    {
+      "heading": "6. 解くときの手順",
       "point": "空所が動詞の目的語なのか、名詞を修飾しているのか、文をつないでいるのかをまず見る。",
       "columns": [
         {
@@ -309,7 +380,8 @@
             "② 前が前置詞なら必ず -ing",
             "③ 名詞を修飾するなら能動か受動か",
             "④ カンマ区切りなら分詞構文",
-            "⑤ 主語がする側か される側かを見る"
+            "⑤ 主語がする側か される側かを見る",
+            "⑥ 感情の語なら人か物かで決める"
           ]
         }
       ],

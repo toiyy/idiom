@@ -1,0 +1,184 @@
+{
+  "title": "時制",
+  "targets": [
+    {
+      "category": "時制"
+    }
+  ],
+  "summary": "時制は文中の語句が決めてくれる。since があれば現在完了、by the time なら未来完了、when + 過去形なら過去進行形。目印を探すのが最短。",
+  "sections": [
+    {
+      "heading": "1. 目印になる語句",
+      "point": "文中の副詞句を探す。それだけで時制はほぼ決まる。",
+      "columns": [
+        {
+          "title": "現在完了の目印",
+          "items": [
+            "since + 起点",
+            "for + 期間",
+            "so far / up to now",
+            "not yet / already",
+            "in the past three years"
+          ]
+        },
+        {
+          "title": "過去形の目印",
+          "items": [
+            "last week / last year",
+            "yesterday",
+            "in 2019 など年",
+            "ago",
+            "過去の出来事を述べる節"
+          ]
+        },
+        {
+          "title": "未来完了の目印",
+          "items": ["by the time + 現在形", "by next Monday", "by the end of next quarter"]
+        },
+        {
+          "title": "過去完了の目印",
+          "items": ["before + 過去形", "by the time + 過去形", "すでに過去の出来事がある"]
+        }
+      ],
+      "body": [
+        "since は「〜以来ずっと」で現在完了と組む。Ms. Tanaka has served as director since 2019 のように、起点が示されていれば現在完了になる。",
+        "last year / yesterday / in 2019 のように過去の一点を示す語があれば過去形。現在完了は使えない。",
+        "by the time の後ろが現在形なら主節は未来完了、過去形なら主節は過去完了。by the time の中は未来のことでも現在形で書く。",
+        "過去より前のことを言うなら過去完了。The shipment had reached the warehouse before the warning was issued は、到着が警報より前であることを表す。"
+      ],
+      "table": {
+        "headers": ["目印", "時制", "例"],
+        "rows": [
+          ["since / for", "現在完了", "has served since 2019"],
+          ["last week / ago", "過去形", "signed last April"],
+          ["by the time + 現在形", "未来完了", "will have completed"],
+          ["before + 過去形", "過去完了", "had reached"],
+          ["when + 過去形", "過去進行形", "was testing"],
+          ["every / usually", "現在形", "departs at 6:15"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "Ms. Tanaka has served as the regional director since the branch opened in 2019.",
+          "ja": "田中氏は2019年に支店が開設して以来、地域統括を務めている。",
+          "ok": true,
+          "note": "since があるので現在完了"
+        },
+        {
+          "en": "By the time the auditors arrive next Monday, the team will have completed the reports.",
+          "ja": "来週月曜に監査人が到着するころには、チームは報告書を仕上げ終えているだろう。",
+          "ok": true,
+          "note": "by the time + 現在形なので主節は未来完了"
+        }
+      ],
+      "pitfall": "過去の一点を示す語（last year / yesterday / in 2019）があれば現在完了は使えない。since と混同しない。"
+    },
+    {
+      "heading": "2. 時と条件の副詞節は現在形",
+      "point": "未来のことでも、時や条件を表す副詞節の中は現在形で書く。",
+      "columns": [
+        {
+          "title": "現在形にする接続詞",
+          "items": ["when / after / before", "as soon as / until", "if / unless", "by the time"]
+        },
+        {
+          "title": "will を使ってよい場合",
+          "items": ["名詞節の中（know when ...）", "主節", "疑問文の目的語になる節"]
+        },
+        {
+          "title": "見分けかた",
+          "items": [
+            "「〜するとき」なら副詞節 → 現在形",
+            "「〜かどうか」なら名詞節 → will 可",
+            "節を取り除いて文が成り立つなら副詞節"
+          ]
+        }
+      ],
+      "body": [
+        "The schedule will be posted as soon as the director approves the version では、as soon as 以下は時を表す副詞節なので will approves ではなく approves になる。",
+        "同じ when でも名詞節なら will が使える。No one knows when the parts will arrive は「いつ届くか」という名詞節なので未来形のまま。",
+        "見分けるには、その節を取り除いて文が成り立つかを見る。成り立てば副詞節で現在形、成り立たなければ名詞節で will が使える。"
+      ],
+      "examples": [
+        {
+          "en": "The revised schedule will be posted as soon as the director approves the final version.",
+          "ja": "部長が最終版を承認し次第、改訂日程が掲示される。",
+          "ok": true,
+          "note": "時を表す副詞節なので現在形"
+        },
+        {
+          "en": "No one in the logistics department knows yet when the replacement parts will arrive.",
+          "ja": "物流部門では、交換部品がいつ届くかまだ誰も分からない。",
+          "ok": true,
+          "note": "knows の目的語になる名詞節なので will が使える"
+        }
+      ]
+    },
+    {
+      "heading": "3. 進行形と完了進行形",
+      "point": "「その時点で進行中」なら進行形。「ある時点まで続いている」なら完了進行形。",
+      "columns": [
+        {
+          "title": "過去進行形",
+          "items": ["when + 過去形 と組む", "その時点で進行中だった", "was / were + -ing"]
+        },
+        {
+          "title": "現在完了進行形",
+          "items": ["since / for と組む", "今も続いている", "has / have been + -ing"]
+        },
+        {
+          "title": "過去完了進行形",
+          "items": ["before + 過去形 と組む", "その時点まで続いていた", "had been + -ing"]
+        },
+        {
+          "title": "進行形にしない動詞",
+          "items": [
+            "know / believe / understand",
+            "require / contain / consist",
+            "belong / resemble"
+          ]
+        }
+      ],
+      "body": [
+        "When the fire alarm sounded, the team was testing the generator は、警報が鳴った時点で試験中だったことを表す。過去形の節と組むのが目印。",
+        "The crew has been working since early this morning は、今朝から今まで作業が続いていることを表す。since と現在完了進行形の組み合わせ。",
+        "状態を表す動詞は進行形にしない。require / contain / consist / belong は普通の現在形で使う。"
+      ],
+      "examples": [
+        {
+          "en": "When the fire alarm sounded, the maintenance team was testing the emergency generator.",
+          "ja": "火災警報が鳴ったとき、保守班は非常用発電機を試験していた。",
+          "ok": true,
+          "note": "when + 過去形なので過去進行形"
+        },
+        {
+          "en": "The negotiators had been talking for more than six hours before they reached an agreement.",
+          "ja": "交渉者たちは合意に至る前、6時間以上話し合いを続けていた。",
+          "ok": true,
+          "note": "before + 過去形なので過去完了進行形"
+        }
+      ]
+    },
+    {
+      "heading": "4. 解くときの手順",
+      "point": "時を表す語句を先に探す。見つかれば時制は決まる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① since / for / last / by the time を探す",
+            "② 見つかれば時制はほぼ決まる",
+            "③ 節の中なら副詞節か名詞節か",
+            "④ 副詞節なら未来でも現在形",
+            "⑤ 進行中かどうかで進行形を決める"
+          ]
+        }
+      ],
+      "body": [
+        "まず文中の副詞句を探す。since / for なら現在完了、last week / ago なら過去形、by the time なら完了形。",
+        "空所が接続詞に続く節の中なら、副詞節か名詞節かを見分ける。時や条件を表す副詞節なら未来のことでも現在形。",
+        "「その時点で進行中だったか」を考える。進行中なら進行形、ある時点まで続いていたなら完了進行形。"
+      ]
+    }
+  ]
+}

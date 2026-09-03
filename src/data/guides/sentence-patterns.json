@@ -1,0 +1,267 @@
+{
+  "title": "文型・語順",
+  "targets": [
+    {
+      "category": "文型・語順"
+    }
+  ],
+  "summary": "動詞ごとに、後ろに何をいくつ置けるかが決まっている。目的語を 2 つとるのか、目的語のあとに原形が来るのか、前置詞が要るのか。動詞の側を覚えれば語順は決まる。",
+  "sections": [
+    {
+      "heading": "1. 目的語を 2 つとる動詞",
+      "point": "「人 + もの」の順に並べる。前置詞を使う形に書き換えるとき、to か for かは動詞で決まる。",
+      "columns": [
+        {
+          "title": "人 + もの の順で置ける",
+          "items": [
+            "give 人 もの",
+            "send 人 もの",
+            "offer 人 もの",
+            "buy 人 もの",
+            "show 人 もの",
+            "award 人 もの"
+          ]
+        },
+        {
+          "title": "書き換えは to",
+          "items": ["give / send / offer / show", "もの + to + 人", "相手に届くもの"]
+        },
+        {
+          "title": "書き換えは for",
+          "items": ["buy / make / find / cook", "もの + for + 人", "相手のためにするもの"]
+        },
+        {
+          "title": "人を直接置けない動詞",
+          "items": [
+            "explain to 人 もの",
+            "suggest to 人 もの",
+            "announce to 人 もの",
+            "describe to 人 もの"
+          ]
+        }
+      ],
+      "body": [
+        "The department bought the supervisor a new chair のように、buy は「人 + もの」の順に置ける。The supervisor に for は要らない。",
+        "explain / suggest / announce / describe は人を直接置けない。The manager explained to the team the revised procedure のように to が必要になる。explained the team とは言えない。",
+        "書き換えの前置詞は動詞で決まる。届ける相手なら to、その人のためにするなら for。"
+      ],
+      "table": {
+        "headers": ["動詞", "人を直接置ける", "書き換え"],
+        "rows": [
+          ["give / send / offer", "○", "to + 人"],
+          ["buy / make / find", "○", "for + 人"],
+          ["explain / suggest", "×", "to + 人 が必須"],
+          ["announce / describe", "×", "to + 人 が必須"]
+        ]
+      },
+      "examples": [
+        {
+          "en": "The department bought the supervisor a new ergonomic chair as a retirement gift.",
+          "ja": "その部署は退職祝いとして上司に人間工学に基づいた椅子を買った。",
+          "ok": true,
+          "note": "buy は人を直接置ける"
+        },
+        {
+          "en": "The manager patiently explained to the team the revised procedure.",
+          "ja": "部長はチームに改訂手順を根気よく説明した。",
+          "ok": true,
+          "note": "explain は人を直接置けないので to が必要"
+        }
+      ]
+    },
+    {
+      "heading": "2. 目的語のあとに何が来るか",
+      "point": "原形か to 不定詞か過去分詞か。動詞ごとに決まっている。",
+      "columns": [
+        {
+          "title": "目的語 + 原形",
+          "items": [
+            "make 人 do させる",
+            "let 人 do させてやる",
+            "have 人 do してもらう",
+            "知覚動詞 see / hear 人 do"
+          ]
+        },
+        {
+          "title": "目的語 + to 不定詞",
+          "items": [
+            "allow 人 to do",
+            "encourage 人 to do",
+            "remind 人 to do",
+            "require 人 to do",
+            "ask / advise 人 to do"
+          ]
+        },
+        {
+          "title": "目的語 + 過去分詞",
+          "items": [
+            "have もの 過去分詞 してもらう",
+            "get もの 過去分詞",
+            "keep もの 過去分詞 保つ",
+            "find もの 過去分詞"
+          ]
+        },
+        {
+          "title": "目的語 + 形容詞",
+          "items": [
+            "keep 目的語 形容詞",
+            "find 目的語 形容詞",
+            "make 目的語 形容詞",
+            "leave 目的語 形容詞"
+          ]
+        }
+      ],
+      "body": [
+        "make / let / have は使役動詞で、目的語のあとに原形が来る。The step makes employees verify their identity は to verify ではなく verify になる。",
+        "allow / encourage / remind / require は to 不定詞をとる。同じ「させる」系でも形が違うので、動詞ごとに覚える。",
+        "have + もの + 過去分詞は「してもらう・される」。had the defective units replaced は、自分ではなく相手が交換したことを表す。",
+        "keep the storage room locked のように、目的語のあとに形容詞や過去分詞を置いて状態を表す形もある。"
+      ],
+      "examples": [
+        {
+          "en": "The new authentication step makes employees verify their identity twice.",
+          "ja": "新しい認証手順により、従業員は本人確認を2回行うことになる。",
+          "ok": true,
+          "note": "使役動詞 make なので原形"
+        },
+        {
+          "en": "The revised policy lets employees adjust their own schedules.",
+          "ja": "改訂方針により、従業員は自分の勤務時間を調整できる。",
+          "ok": true,
+          "note": "let も原形。to adjust とは言えない"
+        },
+        {
+          "en": "Please keep the storage room locked at all times when it is not in use.",
+          "ja": "使用していないときは常に保管室を施錠しておいてください。",
+          "ok": true,
+          "note": "目的語のあとに過去分詞を置いて状態を表す"
+        }
+      ],
+      "pitfall": "make / let / have は原形、allow / encourage / remind は to 不定詞。どちらも「させる」だが形が逆になる。"
+    },
+    {
+      "heading": "3. 前置詞とセットで使う動詞",
+      "point": "目的語のあとに決まった前置詞が続く。組み合わせごと覚える。",
+      "columns": [
+        {
+          "title": "A as B",
+          "items": ["regard A as B 〜とみなす", "view A as B", "describe A as B", "refer to A as B"]
+        },
+        {
+          "title": "A with B",
+          "items": [
+            "provide A with B 供給する",
+            "supply A with B",
+            "equip A with B",
+            "present A with B"
+          ]
+        },
+        {
+          "title": "A of B",
+          "items": [
+            "inform A of B 知らせる",
+            "notify A of B",
+            "remind A of B 思い出させる",
+            "accuse A of B"
+          ]
+        },
+        {
+          "title": "A from B",
+          "items": [
+            "prevent A from doing 妨げる",
+            "keep A from doing",
+            "stop A from doing",
+            "distinguish A from B"
+          ]
+        }
+      ],
+      "body": [
+        "regard A as B の as は省けない。The board regards the pilot program as a success となる。",
+        "provide は 2 通りある。provide A with B と provide B for A で、A と B の位置が入れ替わる。",
+        "remind は 2 通り。remind A of B は「B を思い出させる」、remind A to do は「〜するよう念を押す」。"
+      ],
+      "examples": [
+        {
+          "en": "The board regards the six-month pilot program as a significant success.",
+          "ja": "取締役会はその6か月の試験運用を大きな成功とみなしている。",
+          "ok": true,
+          "note": "regard A as B。as は省けない"
+        },
+        {
+          "en": "The company provides all new hires with a comprehensive safety handbook.",
+          "ja": "その会社は新入社員全員に総合的な安全手引書を提供する。",
+          "ok": true,
+          "note": "provide A with B。to や for ではない"
+        }
+      ]
+    },
+    {
+      "heading": "4. there 構文と語順の決まり",
+      "point": "there is / are の後ろが本当の主語。目的語が代名詞なら副詞の前に置く。",
+      "columns": [
+        {
+          "title": "there 構文",
+          "items": [
+            "There + be動詞 + 名詞",
+            "動詞は後ろの名詞に合わせる",
+            "There seems to be 〜",
+            "There have been 〜"
+          ]
+        },
+        {
+          "title": "句動詞の目的語",
+          "items": [
+            "名詞なら前後どちらでも",
+            "代名詞なら動詞と副詞の間",
+            "turn them off ○",
+            "turn off them ×"
+          ]
+        },
+        {
+          "title": "副詞の位置",
+          "items": ["頻度の副詞は一般動詞の前", "be 動詞・助動詞の後ろ", "enough は形容詞の後ろ"]
+        }
+      ],
+      "body": [
+        "There have been several complaints では、動詞は there ではなく後ろの complaints に合わせる。複数なので have been になる。",
+        "There seems to be some confusion のように、seem を挟む形もある。この場合も後ろの名詞で単複が決まる。",
+        "句動詞の目的語が代名詞のときは、動詞と副詞のあいだに入れる。turned them off とは言えるが turned off them とは言えない。"
+      ],
+      "examples": [
+        {
+          "en": "There have been several complaints about the noise from the ventilation system.",
+          "ja": "換気装置の騒音について何件か苦情が出ている。",
+          "ok": true,
+          "note": "後ろの complaints が複数なので have been"
+        },
+        {
+          "en": "The technician checked each monitor and then turned them off.",
+          "ja": "技術者は各モニターを点検し、それから電源を切った。",
+          "ok": true,
+          "note": "目的語が代名詞なので動詞と副詞のあいだ"
+        }
+      ]
+    },
+    {
+      "heading": "5. 解くときの手順",
+      "point": "空所の前にある動詞を見る。その動詞が後ろに何を要求するかで決まる。",
+      "columns": [
+        {
+          "title": "解く手順",
+          "items": [
+            "① 空所の前の動詞を確認",
+            "② 使役・知覚動詞なら原形",
+            "③ allow / remind 系なら to 不定詞",
+            "④ 決まった前置詞をとるか",
+            "⑤ 目的語が代名詞なら位置に注意"
+          ]
+        }
+      ],
+      "body": [
+        "空所の前の動詞を見る。make / let / have / 知覚動詞なら原形、allow / encourage / remind / require なら to 不定詞。",
+        "regard / provide / inform / prevent のように決まった前置詞をとる動詞なら、その前置詞を選ぶ。",
+        "目的語が 2 つ並ぶなら「人 + もの」の順。explain / suggest / announce は人を直接置けないので to が要る。"
+      ]
+    }
+  ]
+}

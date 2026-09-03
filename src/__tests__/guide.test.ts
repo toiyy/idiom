@@ -108,6 +108,19 @@ describe('同梱データ', () => {
     expect(findGuide('数量詞', '存在しないサブカテゴリ')).toBe(findGuide('数量詞'));
   });
 
+  it('規則で解けるカテゴリにはすべて解説がある', () => {
+    // 語彙と難問は覚えるしかない分野なので解説を作らない。それ以外は網羅する
+    const ruleBased = new Set(
+      questions.map((q) => q.category).filter((c) => c !== '語彙' && c !== '難問'),
+    );
+    for (const c of ruleBased) {
+      expect(findGuide(c), `${c} の解説がない`).toBeDefined();
+    }
+    // 語彙のうち前置詞との組み合わせだけは規則があるので用意した
+    expect(findGuide('語彙', '動詞＋前置詞')).toBeDefined();
+    expect(findGuide('語彙', 'コロケーション')).toBeUndefined();
+  });
+
   it('数量詞の解説が表と例文を備えている', () => {
     const g = findGuide('数量詞');
     expect(g).toBeDefined();
