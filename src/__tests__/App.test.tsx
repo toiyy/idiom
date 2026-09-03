@@ -71,23 +71,20 @@ describe('ホーム画面', () => {
     expect(screen.getByRole('button', { name: /^復習/ })).toBeDisabled();
   });
 
-  it('サブカテゴリを持たない 16 カテゴリがフラットに並ぶ', () => {
+  it('サブカテゴリを持たないカテゴリがフラットに並ぶ', () => {
     render(<App />);
     const flatGrid = document.querySelector('.card .category-list');
-    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(16);
+    expect(flatGrid?.querySelectorAll('.category')).toHaveLength(19);
   });
 
-  it('5 カテゴリが 2 段グループになる', () => {
+  it('2 段グループになるのは語彙と難問だけ', () => {
     render(<App />);
     const groups = Array.from(document.querySelectorAll('.category-group'));
-    // 並びは問題ファイル名順（hard-* → relatives-* → verbals-* → vocabulary-* → word-form-*）
+    // 並びは問題ファイル名順（hard-* → vocabulary-*）
     const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
-    expect(names).toEqual(['難問', '関係詞', '準動詞', '語彙', '品詞識別']);
+    expect(names).toEqual(['難問', '語彙']);
     expect(groups[0].querySelectorAll('.category')).toHaveLength(3);
-    expect(groups[1].querySelectorAll('.category')).toHaveLength(2);
-    expect(groups[2].querySelectorAll('.category')).toHaveLength(3);
-    expect(groups[3].querySelectorAll('.category')).toHaveLength(7);
-    expect(groups[4].querySelectorAll('.category')).toHaveLength(3);
+    expect(groups[1].querySelectorAll('.category')).toHaveLength(7);
   });
 });
 
@@ -114,12 +111,13 @@ describe('サブカテゴリ出題', () => {
     expect(screen.getByText('1 / 45')).toBeInTheDocument();
   });
 
-  it('副詞の位置を選ぶとその 15 問だけが出る', async () => {
+  it('品詞識別は 45 問がまとめて出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^副詞の位置/ }));
-    expect(screen.getByText('1 / 15')).toBeInTheDocument();
-    expect(screen.getByText('品詞識別 / 副詞の位置')).toBeInTheDocument();
+    // 「副詞の位置」を選べた頃は、選んだ時点で答えが副詞形だと割れていた
+    expect(screen.queryByRole('button', { name: /^副詞の位置/ })).toBeNull();
+    await user.click(screen.getByRole('button', { name: /^品詞識別/ }));
+    expect(screen.getByText('1 / 45')).toBeInTheDocument();
   });
 });
 

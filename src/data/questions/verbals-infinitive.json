@@ -3,7 +3,6 @@
     "id": "p5-verbal-inf-01",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "Employees are encouraged ___ the online training module before the end of the quarter.",
     "choices": ["completion", "complete", "completing", "to complete"],
     "answerIndex": 3,
@@ -15,13 +14,12 @@
       "completing": "動名詞。be encouraged to do の形が決まっている"
     },
     "difficulty": 1,
-    "tags": ["to不定詞", "encourage"]
+    "tags": ["不定詞", "to不定詞", "encourage"]
   },
   {
     "id": "p5-verbal-inf-02",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The company installed additional sensors ___ energy consumption in real time.",
     "choices": ["to monitor", "monitoring", "monitored", "monitor"],
     "answerIndex": 0,
@@ -33,13 +31,12 @@
       "monitor": "動詞の原形。1 つの文に述語動詞が 2 つ並ぶことはできない"
     },
     "difficulty": 1,
-    "tags": ["to不定詞", "目的"]
+    "tags": ["不定詞", "to不定詞", "目的"]
   },
   {
     "id": "p5-verbal-inf-03",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The revised guidelines are easy ___ and require no additional staff training.",
     "choices": ["follow", "to follow", "following", "followed"],
     "answerIndex": 1,
@@ -51,13 +48,12 @@
       "following": "動名詞。easy following とは言わない"
     },
     "difficulty": 2,
-    "tags": ["to不定詞", "形容詞+to do"]
+    "tags": ["不定詞", "to不定詞", "形容詞+to do"]
   },
   {
     "id": "p5-verbal-inf-04",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "It is essential ___ all confidential documents in the locked cabinet at the end of the day.",
     "choices": ["store", "to store", "storing", "stored"],
     "answerIndex": 1,
@@ -69,13 +65,12 @@
       "store": "動詞の原形。essential の後ろに原形は置けない"
     },
     "difficulty": 2,
-    "tags": ["to不定詞", "形式主語"]
+    "tags": ["不定詞", "to不定詞", "形式主語"]
   },
   {
     "id": "p5-verbal-inf-05",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The conference room is ___ to accommodate all forty participants comfortably.",
     "choices": ["large enough", "enough large", "too large", "as large"],
     "answerIndex": 0,
@@ -87,13 +82,12 @@
       "too large": "「大きすぎる」となり、収容できるという文意と矛盾する"
     },
     "difficulty": 3,
-    "tags": ["enough to"]
+    "tags": ["不定詞", "enough to"]
   },
   {
     "id": "p5-verbal-inf-06",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The original deadline was ___ tight for the team to complete a full quality review.",
     "choices": ["enough", "too", "so", "very"],
     "answerIndex": 1,
@@ -105,13 +99,12 @@
       "so": "so ... that の形になり、for A to do とは組まない"
     },
     "difficulty": 3,
-    "tags": ["too ... to"]
+    "tags": ["不定詞", "too ... to"]
   },
   {
     "id": "p5-verbal-inf-07",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The committee has no authority ___ contracts worth more than fifty thousand dollars.",
     "choices": ["approving", "approved", "approve", "to approve"],
     "answerIndex": 3,
@@ -123,13 +116,12 @@
       "approve": "動詞の原形。名詞の後ろに原形は置けない"
     },
     "difficulty": 2,
-    "tags": ["to不定詞", "名詞修飾"]
+    "tags": ["不定詞", "to不定詞", "名詞修飾"]
   },
   {
     "id": "p5-verbal-inf-08",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The plant reduced its night shift ___ to lower overtime expenses during the off-season.",
     "choices": ["so that", "because", "due", "in order"],
     "answerIndex": 3,
@@ -141,13 +133,12 @@
       "due": "due to は前置詞句なので後ろは名詞。to lower の to とは別物"
     },
     "difficulty": 2,
-    "tags": ["in order to"]
+    "tags": ["不定詞", "in order to"]
   },
   {
     "id": "p5-verbal-inf-09",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The container shipment appears ___ been held at customs since the end of last month.",
     "choices": ["having", "had", "to be", "to have"],
     "answerIndex": 3,
@@ -159,13 +150,12 @@
       "had": "過去形。appears の後ろには to 不定詞が必要"
     },
     "difficulty": 3,
-    "tags": ["完了不定詞", "to have + 過去分詞"]
+    "tags": ["不定詞", "完了不定詞", "to have + 過去分詞"]
   },
   {
     "id": "p5-verbal-inf-10",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "Two licensing issues remain ___ before the software can be released to the public.",
     "choices": ["resolved", "to resolve", "resolving", "to be resolved"],
     "answerIndex": 3,
@@ -177,13 +167,12 @@
       "resolved": "remain resolved では「解決されたままだ」となり文意が逆になる"
     },
     "difficulty": 3,
-    "tags": ["受動の不定詞", "to be + 過去分詞"]
+    "tags": ["不定詞", "受動の不定詞", "to be + 過去分詞"]
   },
   {
     "id": "p5-verbal-inf-11",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The team rushed to complete the prototype, ___ discover a critical flaw during final testing.",
     "choices": ["so as to", "only to", "in order to", "such as to"],
     "answerIndex": 1,
@@ -195,13 +184,12 @@
       "such as to": "such as to は「〜するほどの」の意味で、この位置では使えない"
     },
     "difficulty": 3,
-    "tags": ["only to", "結果の不定詞"]
+    "tags": ["不定詞", "only to", "結果の不定詞"]
   },
   {
     "id": "p5-verbal-inf-12",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "It is essential ___ every applicant to submit two references before the interview.",
     "choices": ["for", "to", "that", "of"],
     "answerIndex": 0,
@@ -213,13 +201,12 @@
       "that": "後ろは節でなければならず、to 不定詞は続けられない"
     },
     "difficulty": 3,
-    "tags": ["意味上の主語", "for + to 不定詞"]
+    "tags": ["不定詞", "意味上の主語", "for + to 不定詞"]
   },
   {
     "id": "p5-verbal-inf-13",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "Ms. Nakamura was the first ___ identify the discrepancy in the quarterly inventory count.",
     "choices": ["for", "identifying", "to", "identified"],
     "answerIndex": 2,
@@ -231,13 +218,12 @@
       "for": "前置詞の後ろに動詞の原形は続かない"
     },
     "difficulty": 2,
-    "tags": ["序数 + to 不定詞", "the first to do"]
+    "tags": ["不定詞", "序数 + to 不定詞", "the first to do"]
   },
   {
     "id": "p5-verbal-inf-14",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "The union refused ___ the revised terms until the safety clause was reinstated.",
     "choices": ["to accept", "accept", "accepted", "accepting"],
     "answerIndex": 0,
@@ -249,13 +235,12 @@
       "accepted": "過去形・過去分詞。目的語の位置に置けない"
     },
     "difficulty": 2,
-    "tags": ["refuse", "不定詞のみ"]
+    "tags": ["不定詞", "refuse", "不定詞のみ"]
   },
   {
     "id": "p5-verbal-inf-15",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "不定詞",
     "sentence": "It was careless ___ the supplier to ship the wrong model to our largest client.",
     "choices": ["with", "to", "for", "of"],
     "answerIndex": 3,
@@ -267,6 +252,6 @@
       "to": "意味上の主語を示す働きがない"
     },
     "difficulty": 3,
-    "tags": ["意味上の主語", "of + to 不定詞"]
+    "tags": ["不定詞", "意味上の主語", "of + to 不定詞"]
   }
 ]

@@ -3,7 +3,6 @@
     "id": "p5-verbal-ger-01",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The committee is considering ___ the deadline for grant applications by two weeks.",
     "choices": ["extending", "extension", "extended", "to extend"],
     "answerIndex": 0,
@@ -21,7 +20,6 @@
     "id": "p5-verbal-ger-02",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The technician is responsible for ___ the calibration records at the end of every quarter.",
     "choices": ["updating", "updated", "update", "to update"],
     "answerIndex": 0,
@@ -39,7 +37,6 @@
     "id": "p5-verbal-ger-03",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "Drivers should avoid ___ the loading area between seven and nine in the morning.",
     "choices": ["entering", "entered", "enter", "to enter"],
     "answerIndex": 0,
@@ -57,7 +54,6 @@
     "id": "p5-verbal-ger-04",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The crew finished ___ the warehouse roof two days before the scheduled inspection.",
     "choices": ["repair", "to repair", "repairing", "repaired"],
     "answerIndex": 2,
@@ -75,7 +71,6 @@
     "id": "p5-verbal-ger-05",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "We look forward to ___ from you regarding the revised proposal.",
     "choices": ["hear", "to hear", "hearing", "heard"],
     "answerIndex": 2,
@@ -93,7 +88,6 @@
     "id": "p5-verbal-ger-06",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "___ the filters regularly extends the life of the ventilation system significantly.",
     "choices": ["Replaced", "Replacing", "Replacement", "Replace"],
     "answerIndex": 1,
@@ -111,7 +105,6 @@
     "id": "p5-verbal-ger-07",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The older equipment is still worth ___ rather than replacing outright.",
     "choices": ["repair", "to repair", "repairing", "repaired"],
     "answerIndex": 2,
@@ -129,7 +122,6 @@
     "id": "p5-verbal-ger-08",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The team stopped ___ the legacy database in 2023 and moved everything to the cloud.",
     "choices": ["update", "to update", "updating", "updated"],
     "answerIndex": 2,
@@ -147,7 +139,6 @@
     "id": "p5-verbal-ger-09",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The consultant suggested ___ the two regional offices into a single location.",
     "choices": ["merged", "to merge", "merging", "merge"],
     "answerIndex": 2,
@@ -159,13 +150,12 @@
       "merged": "過去形・過去分詞。目的語の位置に置けない"
     },
     "difficulty": 2,
-    "tags": ["suggest", "動名詞のみ"]
+    "tags": ["動名詞", "suggest", "動名詞のみ"]
   },
   {
     "id": "p5-verbal-ger-10",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The intake filters need ___ every three months, even in low-dust environments.",
     "choices": ["replacing", "to replace", "replace", "replaced"],
     "answerIndex": 0,
@@ -177,13 +167,12 @@
       "replaced": "過去分詞。need の後ろには置けない"
     },
     "difficulty": 3,
-    "tags": ["need doing", "受動の意味"]
+    "tags": ["動名詞", "need doing", "受動の意味"]
   },
   {
     "id": "p5-verbal-ger-11",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The design team spent nearly three weeks ___ the interface before the usability trial.",
     "choices": ["refine", "to refine", "refining", "refined"],
     "answerIndex": 2,
@@ -195,13 +184,12 @@
       "refined": "過去分詞。目的語 the interface をとる形にならない"
     },
     "difficulty": 2,
-    "tags": ["spend 時間 doing"]
+    "tags": ["動名詞", "spend 時間 doing"]
   },
   {
     "id": "p5-verbal-ger-12",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "The plant reduced its energy costs by ___ all lighting to LED fixtures last autumn.",
     "choices": ["switching", "switch", "to switch", "switched"],
     "answerIndex": 0,
@@ -213,13 +201,12 @@
       "switched": "過去分詞。前置詞の後ろで目的語をとる形にならない"
     },
     "difficulty": 2,
-    "tags": ["by doing", "前置詞+動名詞"]
+    "tags": ["動名詞", "by doing", "前置詞+動名詞"]
   },
   {
     "id": "p5-verbal-ger-13",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "We greatly appreciate ___ submitting the compliance report ahead of the deadline.",
     "choices": ["you are", "your", "yours", "of you"],
     "answerIndex": 1,
@@ -231,13 +218,12 @@
       "of you": "前置詞句。appreciate の目的語にならない"
     },
     "difficulty": 3,
-    "tags": ["意味上の主語", "所有格+動名詞"]
+    "tags": ["動名詞", "意味上の主語", "所有格+動名詞"]
   },
   {
     "id": "p5-verbal-ger-14",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "I clearly remember ___ the signed invoice to the accounting department last Tuesday.",
     "choices": ["send", "sent", "to send", "sending"],
     "answerIndex": 3,
@@ -249,13 +235,12 @@
       "sent": "過去形・過去分詞。remember の目的語にならない"
     },
     "difficulty": 3,
-    "tags": ["remember doing", "動名詞と不定詞の意味差"]
+    "tags": ["動名詞", "remember doing", "動名詞と不定詞の意味差"]
   },
   {
     "id": "p5-verbal-ger-15",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "動名詞",
     "sentence": "New users often have difficulty ___ the reporting module without a short tutorial.",
     "choices": ["navigating", "navigated", "navigate", "to navigate"],
     "answerIndex": 0,
@@ -267,6 +252,6 @@
       "navigated": "過去分詞。目的語 the reporting module をとる形にならない"
     },
     "difficulty": 3,
-    "tags": ["have difficulty doing"]
+    "tags": ["動名詞", "have difficulty doing"]
   }
 ]

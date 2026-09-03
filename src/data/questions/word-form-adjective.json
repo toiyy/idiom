@@ -3,7 +3,6 @@
     "id": "p5-wf-adj-01",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The revised handbook provides a ___ explanation of the reimbursement procedure.",
     "choices": ["clear", "clearly", "clarity", "clarify"],
     "answerIndex": 0,
@@ -15,13 +14,12 @@
       "clarity": "名詞「明快さ」。a clarity explanation とは言わない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "冠詞+名詞"]
+    "tags": ["形容詞の位置", "形容詞", "冠詞+名詞"]
   },
   {
     "id": "p5-wf-adj-02",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "Attendance at the Friday seminar is ___ for employees hired before June.",
     "choices": ["optional", "option", "options", "optionally"],
     "answerIndex": 0,
@@ -33,13 +31,12 @@
       "optionally": "副詞。be 動詞の補語にはなれない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "補語"]
+    "tags": ["形容詞の位置", "形容詞", "補語"]
   },
   {
     "id": "p5-wf-adj-03",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The firm specializes in ___ solutions for mid-sized manufacturers.",
     "choices": ["innovatively", "innovative", "innovate", "innovation"],
     "answerIndex": 1,
@@ -51,13 +48,12 @@
       "innovate": "動詞。前置詞 in の後ろに原形は置けない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "名詞修飾"]
+    "tags": ["形容詞の位置", "形容詞", "名詞修飾"]
   },
   {
     "id": "p5-wf-adj-04",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "Despite the market downturn, the company's outlook remains ___.",
     "choices": ["optimist", "optimistic", "optimism", "optimistically"],
     "answerIndex": 1,
@@ -69,13 +65,12 @@
       "optimist": "名詞「楽観主義者」。outlook は人ではない"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "remain"]
+    "tags": ["形容詞の位置", "形容詞", "remain"]
   },
   {
     "id": "p5-wf-adj-05",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "Their ___ response to the complaint prevented the situation from escalating.",
     "choices": ["promptly", "promptness", "prompted", "prompt"],
     "answerIndex": 3,
@@ -87,13 +82,12 @@
       "promptness": "名詞「迅速さ」。Their promptness response とは言わない"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "所有格+名詞"]
+    "tags": ["形容詞の位置", "形容詞", "所有格+名詞"]
   },
   {
     "id": "p5-wf-adj-06",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "Many ___ employees volunteered to lead the community outreach program.",
     "choices": ["enthusiast", "enthusiasm", "enthusiastic", "enthusiastically"],
     "answerIndex": 2,
@@ -105,13 +99,12 @@
       "enthusiasm": "名詞「熱意」。Many enthusiasm employees とは言わない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "名詞修飾"]
+    "tags": ["形容詞の位置", "形容詞", "名詞修飾"]
   },
   {
     "id": "p5-wf-adj-07",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The training platform has become ___ to employees in all twelve offices.",
     "choices": ["access", "accessibility", "accessible", "accessibly"],
     "answerIndex": 2,
@@ -123,13 +116,12 @@
       "accessibility": "名詞「利用しやすさ」。プラットフォーム自体がそれになるわけではない"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "become"]
+    "tags": ["形容詞の位置", "形容詞", "become"]
   },
   {
     "id": "p5-wf-adj-08",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The updated dashboard makes quarterly trends much more ___ to regional managers.",
     "choices": ["visibly", "visible", "vision", "visibility"],
     "answerIndex": 1,
@@ -141,13 +133,12 @@
       "vision": "名詞「視力・展望」。trends の状態を表さない"
     },
     "difficulty": 3,
-    "tags": ["形容詞", "make O C"]
+    "tags": ["形容詞の位置", "形容詞", "make O C"]
   },
   {
     "id": "p5-wf-adj-09",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The relocation offers a ___ advantage in terms of shipping costs.",
     "choices": ["signify", "significantly", "significance", "significant"],
     "answerIndex": 3,
@@ -159,13 +150,12 @@
       "significance": "名詞「重要性」。a significance advantage とは言わない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "冠詞+名詞"]
+    "tags": ["形容詞の位置", "形容詞", "冠詞+名詞"]
   },
   {
     "id": "p5-wf-adj-10",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The initial cost estimates seemed ___ given the scale of the project.",
     "choices": ["reasonably", "reasonable", "reasoning", "reason"],
     "answerIndex": 1,
@@ -177,13 +167,12 @@
       "reasonably": "副詞。seem の補語にはなれない"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "seem"]
+    "tags": ["形容詞の位置", "形容詞", "seem"]
   },
   {
     "id": "p5-wf-adj-11",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The grant provides ___ support for early-stage research in renewable energy.",
     "choices": ["financial", "financier", "finance", "financially"],
     "answerIndex": 0,
@@ -195,13 +184,12 @@
       "financially": "副詞。名詞 support を修飾できない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "名詞修飾"]
+    "tags": ["形容詞の位置", "形容詞", "名詞修飾"]
   },
   {
     "id": "p5-wf-adj-12",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The mobile application is ___ to anyone who has completed the safety course.",
     "choices": ["available", "availed", "availability", "avail"],
     "answerIndex": 0,
@@ -213,13 +201,12 @@
       "avail": "動詞・名詞。be avail という形はない"
     },
     "difficulty": 1,
-    "tags": ["形容詞", "補語"]
+    "tags": ["形容詞の位置", "形容詞", "補語"]
   },
   {
     "id": "p5-wf-adj-13",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The renovation caused ___ disruption to daily warehouse operations.",
     "choices": ["considerably", "consider", "consideration", "considerable"],
     "answerIndex": 3,
@@ -231,13 +218,12 @@
       "consider": "動詞。caused の目的語の前には形容詞が必要"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "名詞修飾"]
+    "tags": ["形容詞の位置", "形容詞", "名詞修飾"]
   },
   {
     "id": "p5-wf-adj-14",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "Safety remains the most ___ factor in every design decision the team makes.",
     "choices": ["critical", "criticism", "critically", "critic"],
     "answerIndex": 0,
@@ -249,13 +235,12 @@
       "critic": "名詞「批評家」。factor を修飾する形にならない"
     },
     "difficulty": 2,
-    "tags": ["形容詞", "最上級"]
+    "tags": ["形容詞の位置", "形容詞", "最上級"]
   },
   {
     "id": "p5-wf-adj-15",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "形容詞の位置",
     "sentence": "The backup generator proved ___ when the power failed during last month's storm.",
     "choices": ["rely", "reliably", "reliance", "reliable"],
     "answerIndex": 3,
@@ -267,6 +252,6 @@
       "reliably": "副詞。prove の補語にはなれない"
     },
     "difficulty": 3,
-    "tags": ["形容詞", "prove"]
+    "tags": ["形容詞の位置", "形容詞", "prove"]
   }
 ]

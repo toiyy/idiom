@@ -3,7 +3,6 @@
     "id": "p5-wf-noun-01",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The board praised the marketing team for the ___ of its new digital campaign.",
     "choices": ["creative", "creativity", "creatively", "create"],
     "answerIndex": 1,
@@ -15,13 +14,12 @@
       "creative": "形容詞「創造的な」。修飾する名詞が後ろにない"
     },
     "difficulty": 1,
-    "tags": ["名詞", "the ... of"]
+    "tags": ["名詞の位置", "名詞", "the ... of"]
   },
   {
     "id": "p5-wf-noun-02",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Construction cannot begin without the ___ of the city planning council.",
     "choices": ["approved", "approval", "approve", "approving"],
     "answerIndex": 1,
@@ -33,13 +31,12 @@
       "approve": "動詞の原形。冠詞 the の後ろには置けない"
     },
     "difficulty": 1,
-    "tags": ["名詞", "the ... of"]
+    "tags": ["名詞の位置", "名詞", "the ... of"]
   },
   {
     "id": "p5-wf-noun-03",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Our ___ to protecting customer data has never wavered.",
     "choices": ["committed", "commitment", "committing", "commit"],
     "answerIndex": 1,
@@ -51,13 +48,12 @@
       "committed": "過去分詞。文の主語になれない"
     },
     "difficulty": 2,
-    "tags": ["名詞", "所有格の後"]
+    "tags": ["名詞の位置", "名詞", "所有格の後"]
   },
   {
     "id": "p5-wf-noun-04",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The finance team submitted its ___ for next year's marketing budget on Friday.",
     "choices": ["propose", "proposal", "proposed", "proposing"],
     "answerIndex": 1,
@@ -69,13 +65,12 @@
       "propose": "動詞の原形。所有格 its の後ろには名詞が必要"
     },
     "difficulty": 1,
-    "tags": ["名詞", "目的語"]
+    "tags": ["名詞の位置", "名詞", "目的語"]
   },
   {
     "id": "p5-wf-noun-05",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "___ of the new software will begin in the eastern region next month.",
     "choices": ["Distributed", "Distributing", "Distribute", "Distribution"],
     "answerIndex": 3,
@@ -87,13 +82,12 @@
       "Distribute": "動詞の原形。文の主語にはならない"
     },
     "difficulty": 2,
-    "tags": ["名詞", "主語"]
+    "tags": ["名詞の位置", "名詞", "主語"]
   },
   {
     "id": "p5-wf-noun-06",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The museum received a substantial ___ from a private foundation last spring.",
     "choices": ["donated", "donating", "donation", "donate"],
     "answerIndex": 2,
@@ -105,13 +99,12 @@
       "donating": "動名詞。a を付けて数えることはできない"
     },
     "difficulty": 1,
-    "tags": ["名詞", "冠詞+形容詞の後"]
+    "tags": ["名詞の位置", "名詞", "冠詞+形容詞の後"]
   },
   {
     "id": "p5-wf-noun-07",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Several ___ have been made to the original blueprint since the review in March.",
     "choices": ["revisions", "revised", "revise", "revising"],
     "answerIndex": 0,
@@ -123,13 +116,12 @@
       "revise": "動詞の原形。数量詞 Several の後ろには名詞が必要"
     },
     "difficulty": 2,
-    "tags": ["名詞", "数量詞の後"]
+    "tags": ["名詞の位置", "名詞", "数量詞の後"]
   },
   {
     "id": "p5-wf-noun-08",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "All visitors must sign in at the ___ desk before entering the laboratory.",
     "choices": ["reception", "receive", "receptive", "received"],
     "answerIndex": 0,
@@ -141,13 +133,12 @@
       "received": "過去分詞。「受け取られた机」となり意味が通らない"
     },
     "difficulty": 2,
-    "tags": ["名詞", "複合名詞"]
+    "tags": ["名詞の位置", "名詞", "複合名詞"]
   },
   {
     "id": "p5-wf-noun-09",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Punctuality is a strict ___ for all client-facing staff.",
     "choices": ["required", "requirement", "requiring", "require"],
     "answerIndex": 1,
@@ -159,13 +150,12 @@
       "requiring": "動名詞。a を付けて数えられない"
     },
     "difficulty": 1,
-    "tags": ["名詞", "補語"]
+    "tags": ["名詞の位置", "名詞", "補語"]
   },
   {
     "id": "p5-wf-noun-10",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Each ___ will be reviewed by two members of the admissions committee.",
     "choices": ["apply", "application", "applied", "applicant"],
     "answerIndex": 1,
@@ -177,13 +167,12 @@
       "applied": "過去分詞。名詞が必要な位置"
     },
     "difficulty": 3,
-    "tags": ["名詞", "人vs事柄"]
+    "tags": ["名詞の位置", "名詞", "人vs事柄"]
   },
   {
     "id": "p5-wf-noun-11",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "Every ___ must submit a portfolio along with the completed registration form.",
     "choices": ["applied", "application", "apply", "applicant"],
     "answerIndex": 3,
@@ -195,13 +184,12 @@
       "apply": "動詞の原形。Every の後ろには単数名詞が必要"
     },
     "difficulty": 3,
-    "tags": ["名詞", "人vs事柄"]
+    "tags": ["名詞の位置", "名詞", "人vs事柄"]
   },
   {
     "id": "p5-wf-noun-12",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The consultant offered valuable ___ on restructuring the sales division.",
     "choices": ["advised", "advising", "advice", "advise"],
     "answerIndex": 2,
@@ -213,13 +201,12 @@
       "advising": "動名詞。valuable advising とは言わない"
     },
     "difficulty": 2,
-    "tags": ["名詞", "advice / advise"]
+    "tags": ["名詞の位置", "名詞", "advice / advise"]
   },
   {
     "id": "p5-wf-noun-13",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The supervisor is responsible for the ___ of all incoming shipments.",
     "choices": ["inspected", "inspect", "inspection", "inspecting"],
     "answerIndex": 2,
@@ -231,13 +218,12 @@
       "inspected": "過去分詞。名詞が必要な位置"
     },
     "difficulty": 2,
-    "tags": ["名詞", "動名詞との区別"]
+    "tags": ["名詞の位置", "名詞", "動名詞との区別"]
   },
   {
     "id": "p5-wf-noun-14",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "___ in the manufacturing sector has slowed considerably this quarter.",
     "choices": ["Grown", "Grow", "Growing", "Growth"],
     "answerIndex": 3,
@@ -249,13 +235,12 @@
       "Grown": "過去分詞。主語の位置には名詞が必要"
     },
     "difficulty": 2,
-    "tags": ["名詞", "主語"]
+    "tags": ["名詞の位置", "名詞", "主語"]
   },
   {
     "id": "p5-wf-noun-15",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "名詞の位置",
     "sentence": "The claim was rejected due to insufficient ___ of the repair costs.",
     "choices": ["documenting", "documented", "document", "documentation"],
     "answerIndex": 3,
@@ -267,6 +252,6 @@
       "document": "名詞でもあるが可算名詞なので、冠詞か複数形が必要"
     },
     "difficulty": 3,
-    "tags": ["名詞", "不可算"]
+    "tags": ["名詞の位置", "名詞", "不可算"]
   }
 ]

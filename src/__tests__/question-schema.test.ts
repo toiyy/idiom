@@ -92,11 +92,20 @@ describe('同梱データ', () => {
     }
   });
 
-  it('サブカテゴリを持たない 16 カテゴリはすべて 15 問に揃っている', () => {
+  it('サブカテゴリを持たないカテゴリの問題数が揃っている', () => {
     const flat = listCategories(questions).filter((c) => c.subcategories.length === 0);
-    expect(flat).toHaveLength(16);
+    expect(flat).toHaveLength(19);
     for (const c of flat) {
-      expect(c.total, `${c.category} の問題数`).toBe(15);
+      // 準動詞 45 / 品詞識別 45 / 関係詞 30 は複数分野を 1 カテゴリにまとめたもの
+      expect([15, 30, 45], `${c.category} の問題数`).toContain(c.total);
+    }
+  });
+
+  it('サブカテゴリ名が答えの形を名指ししていない', () => {
+    // 「動名詞」や「副詞の位置」を選べた頃は、選んだ時点で答えの形が割れていた
+    const subcategories = new Set(questions.map((q) => q.subcategory));
+    for (const name of ['不定詞', '動名詞', '分詞', '形容詞の位置', '副詞の位置', '名詞の位置']) {
+      expect(subcategories, `${name} がサブカテゴリに残っている`).not.toContain(name);
     }
   });
 
@@ -132,36 +141,31 @@ describe('同梱データ', () => {
     }
   });
 
-  it('品詞識別カテゴリが 3 サブカテゴリ × 15 問を持つ', () => {
-    const wf = listCategories(questions).find((c) => c.category === '品詞識別');
-    expect(wf?.total).toBe(45);
-    expect(wf?.subcategories.map((s) => s.subcategory)).toEqual([
-      '形容詞の位置',
-      '副詞の位置',
-      '名詞の位置',
-    ]);
-    for (const s of wf?.subcategories ?? []) {
-      expect(s.total).toBe(15);
-    }
-  });
-
-  it('準動詞と関係詞のサブカテゴリも 15 問に揃っている', () => {
-    // 実際に解いた結果、この 5 つの落とし方が突出していたので他と同じ厚みまで増やした
-    const cats = listCategories(questions).filter(
-      (c) => c.category === '準動詞' || c.category === '関係詞',
-    );
-    for (const c of cats) {
-      for (const s of c.subcategories) {
-        expect(s.total, `${c.category} / ${s.subcategory} の問題数`).toBe(15);
-      }
-    }
-  });
-
-  it('サブカテゴリを持つのは 5 カテゴリ', () => {
+  it('サブカテゴリを持つのは語彙と難問だけ', () => {
+    // 答えの形を名指しするサブカテゴリは廃止した。この 2 つは選んでも答えが割れない
     const nested = listCategories(questions)
       .filter((c) => c.subcategories.length > 0)
       .map((c) => c.category);
-    expect(nested.sort()).toEqual(['品詞識別', '準動詞', '語彙', '関係詞', '難問']);
+    expect(nested.sort()).toEqual(['語彙', '難問']);
+  });
+
+  it('平坦にしたカテゴリの分野ごとの厚みがタグに残っている', () => {
+    // サブカテゴリは廃止したが、どの分野の問題かはタグで追える
+    for (const tag of [
+      '不定詞',
+      '動名詞',
+      '分詞',
+      '形容詞の位置',
+      '副詞の位置',
+      '名詞の位置',
+      '関係代名詞',
+      '関係副詞',
+    ]) {
+      expect(
+        questions.filter((q) => q.tags?.includes(tag)),
+        `${tag} の問題数`,
+      ).toHaveLength(15);
+    }
   });
 
   it('難問カテゴリが 3 サブカテゴリ × 35 問を持ち、すべて難易度 3', () => {
@@ -175,21 +179,6 @@ describe('同梱データ', () => {
     for (const q of questions.filter((q) => q.category === '難問')) {
       expect(q.difficulty, `${q.id} は難易度 3 であるべき`).toBe(3);
     }
-  });
-
-  it('準動詞が 3 サブカテゴリ、関係詞が 2 サブカテゴリに分かれている', () => {
-    const cats = listCategories(questions);
-    const verbals = cats.find((c) => c.category === '準動詞');
-    expect(verbals?.subcategories.map((s) => s.subcategory).sort()).toEqual([
-      '不定詞',
-      '分詞',
-      '動名詞',
-    ]);
-    const relatives = cats.find((c) => c.category === '関係詞');
-    expect(relatives?.subcategories.map((s) => s.subcategory).sort()).toEqual([
-      '関係代名詞',
-      '関係副詞',
-    ]);
   });
 
   it('サブカテゴリ内のカテゴリ名が一貫している', () => {

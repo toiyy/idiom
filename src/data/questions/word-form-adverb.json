@@ -3,7 +3,6 @@
     "id": "p5-wf-adv-01",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "Attendance at the optional workshops has risen ___ since the sessions were moved online.",
     "choices": ["steady", "steadier", "steadily", "steadiness"],
     "answerIndex": 2,
@@ -15,13 +14,12 @@
       "steadier": "形容詞の比較級。than もなく、動詞も修飾できない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "動詞修飾"]
+    "tags": ["副詞の位置", "副詞", "動詞修飾"]
   },
   {
     "id": "p5-wf-adv-02",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The technician will ___ inspect the ventilation system before the annual audit.",
     "choices": ["thoroughness", "through", "thoroughly", "thorough"],
     "answerIndex": 2,
@@ -33,13 +31,12 @@
       "thoroughness": "名詞。助動詞と動詞の間には入らない"
     },
     "difficulty": 2,
-    "tags": ["副詞", "助動詞+動詞の間"]
+    "tags": ["副詞の位置", "副詞", "助動詞+動詞の間"]
   },
   {
     "id": "p5-wf-adv-03",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "All submissions are ___ reviewed by two independent editors before publication.",
     "choices": ["carefully", "careful", "caring", "care"],
     "answerIndex": 0,
@@ -51,13 +48,12 @@
       "care": "名詞・動詞。be と過去分詞の間には入らない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "受動態の間"]
+    "tags": ["副詞の位置", "副詞", "受動態の間"]
   },
   {
     "id": "p5-wf-adv-04",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The pilot results were ___ consistent with the team's initial hypothesis.",
     "choices": ["remarking", "remark", "remarkably", "remarkable"],
     "answerIndex": 2,
@@ -69,13 +65,12 @@
       "remark": "名詞・動詞。consistent の前には副詞が必要"
     },
     "difficulty": 2,
-    "tags": ["副詞", "形容詞修飾"]
+    "tags": ["副詞の位置", "副詞", "形容詞修飾"]
   },
   {
     "id": "p5-wf-adv-05",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "Sales in the northern region have ___ exceeded projections for the past three years.",
     "choices": ["consist", "consistency", "consistent", "consistently"],
     "answerIndex": 3,
@@ -87,13 +82,12 @@
       "consist": "動詞。have consist という形はない"
     },
     "difficulty": 2,
-    "tags": ["副詞", "完了形の間"]
+    "tags": ["副詞の位置", "副詞", "完了形の間"]
   },
   {
     "id": "p5-wf-adv-06",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The contract negotiations concluded ___ after three days of intensive discussion.",
     "choices": ["success", "successful", "successfully", "succeed"],
     "answerIndex": 2,
@@ -105,13 +99,12 @@
       "success": "名詞。concluded は目的語をとらない自動詞"
     },
     "difficulty": 1,
-    "tags": ["副詞", "動詞修飾"]
+    "tags": ["副詞の位置", "副詞", "動詞修飾"]
   },
   {
     "id": "p5-wf-adv-07",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "___, the replacement parts arrived two days before the holiday closure.",
     "choices": ["Fortunately", "Fortune", "Fortunes", "Fortunate"],
     "answerIndex": 0,
@@ -123,13 +116,12 @@
       "Fortune": "名詞「幸運・財産」。カンマで区切って文を修飾する形にならない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "文修飾"]
+    "tags": ["副詞の位置", "副詞", "文修飾"]
   },
   {
     "id": "p5-wf-adv-08",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The auditor examined the expense records ___ before issuing her final report.",
     "choices": ["close", "closeness", "closely", "closer"],
     "answerIndex": 2,
@@ -141,13 +133,12 @@
       "closer": "形容詞の比較級。than もなく、動詞も修飾できない"
     },
     "difficulty": 2,
-    "tags": ["副詞", "動詞修飾"]
+    "tags": ["副詞の位置", "副詞", "動詞修飾"]
   },
   {
     "id": "p5-wf-adv-09",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The bridge project was completed ___ two weeks ahead of the revised schedule.",
     "choices": ["approximate", "approximation", "approximately", "approximated"],
     "answerIndex": 2,
@@ -159,13 +150,12 @@
       "approximation": "名詞。was completed の後ろには入らない"
     },
     "difficulty": 2,
-    "tags": ["副詞", "数量修飾"]
+    "tags": ["副詞の位置", "副詞", "数量修飾"]
   },
   {
     "id": "p5-wf-adv-10",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The riverside venue is ___ suitable for events of more than 500 people.",
     "choices": ["particulars", "particular", "particularly", "particularize"],
     "answerIndex": 2,
@@ -177,13 +167,12 @@
       "particulars": "名詞「詳細」。suitable の前には副詞が必要"
     },
     "difficulty": 2,
-    "tags": ["副詞", "形容詞修飾"]
+    "tags": ["副詞の位置", "副詞", "形容詞修飾"]
   },
   {
     "id": "p5-wf-adv-11",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The two departments now communicate ___ through a shared project board.",
     "choices": ["efficient", "efficiency", "efficiencies", "efficiently"],
     "answerIndex": 3,
@@ -195,13 +184,12 @@
       "efficiencies": "名詞の複数形。動詞を修飾できない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "動詞修飾"]
+    "tags": ["副詞の位置", "副詞", "動詞修飾"]
   },
   {
     "id": "p5-wf-adv-12",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The revised safety guidelines are ___ enforced at all twelve manufacturing sites.",
     "choices": ["stricter", "strictness", "strictly", "strict"],
     "answerIndex": 2,
@@ -213,13 +201,12 @@
       "strict": "形容詞。動詞を修飾できない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "受動態の間"]
+    "tags": ["副詞の位置", "副詞", "受動態の間"]
   },
   {
     "id": "p5-wf-adv-13",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "Managers should ___ review their team's progress against the quarterly targets.",
     "choices": ["regular", "regularity", "regularly", "regulate"],
     "answerIndex": 2,
@@ -231,13 +218,12 @@
       "regulate": "動詞「規制する」。should の後ろに動詞は 1 つしか置けない"
     },
     "difficulty": 1,
-    "tags": ["副詞", "助動詞+動詞の間"]
+    "tags": ["副詞の位置", "副詞", "助動詞+動詞の間"]
   },
   {
     "id": "p5-wf-adv-14",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "___ all of the participants rated the introductory seminar as excellent.",
     "choices": ["Nearest", "Nearly", "Nearness", "Near"],
     "answerIndex": 1,
@@ -249,13 +235,12 @@
       "Nearest": "形容詞の最上級。数量表現を修飾できない"
     },
     "difficulty": 3,
-    "tags": ["副詞", "数量修飾"]
+    "tags": ["副詞の位置", "副詞", "数量修飾"]
   },
   {
     "id": "p5-wf-adv-15",
     "part": 5,
     "category": "品詞識別",
-    "subcategory": "副詞の位置",
     "sentence": "The latest model runs ___ more quietly than the version it replaced.",
     "choices": ["significance", "significantly", "significant", "signify"],
     "answerIndex": 1,
@@ -267,6 +252,6 @@
       "significant": "形容詞。副詞 more quietly を修飾できない"
     },
     "difficulty": 2,
-    "tags": ["副詞", "比較級修飾"]
+    "tags": ["副詞の位置", "副詞", "比較級修飾"]
   }
 ]

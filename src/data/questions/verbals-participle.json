@@ -3,7 +3,6 @@
     "id": "p5-verbal-ptcp-01",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ in 1985, Harrow Manufacturing has grown into the region's largest private employer.",
     "choices": ["To found", "Founds", "Founding", "Founded"],
     "answerIndex": 3,
@@ -15,13 +14,12 @@
       "Founds": "三単現の動詞。カンマの前に述語動詞は置けない"
     },
     "difficulty": 3,
-    "tags": ["分詞構文", "過去分詞"]
+    "tags": ["分詞", "分詞構文", "過去分詞"]
   },
   {
     "id": "p5-verbal-ptcp-02",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "The employees ___ in the pilot program will receive additional training credits.",
     "choices": ["to participate", "participate", "participating", "participated"],
     "answerIndex": 2,
@@ -39,7 +37,6 @@
     "id": "p5-verbal-ptcp-03",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "All items ___ during the clearance sale are eligible for exchange within fourteen days.",
     "choices": ["purchased", "to purchase", "purchase", "purchasing"],
     "answerIndex": 0,
@@ -57,7 +54,6 @@
     "id": "p5-verbal-ptcp-04",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ that the shipment would be delayed, the manager notified all affected clients.",
     "choices": ["To know", "Know", "Knowing", "Known"],
     "answerIndex": 2,
@@ -69,13 +65,12 @@
       "Known": "過去分詞。部長は知っている側なので能動が必要"
     },
     "difficulty": 3,
-    "tags": ["分詞構文", "現在分詞"]
+    "tags": ["分詞", "分詞構文", "現在分詞"]
   },
   {
     "id": "p5-verbal-ptcp-05",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ with the previous model, the new printer uses forty percent less toner.",
     "choices": ["Comparing", "Compared", "To compare", "Compare"],
     "answerIndex": 1,
@@ -87,13 +82,12 @@
       "Compare": "動詞の原形。カンマの前に述語動詞は置けない"
     },
     "difficulty": 3,
-    "tags": ["分詞構文", "compared with"]
+    "tags": ["分詞", "分詞構文", "compared with"]
   },
   {
     "id": "p5-verbal-ptcp-06",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "When ___ the cutting machine, always wear insulated gloves and safety goggles.",
     "choices": ["operate", "operating", "operated", "to operate"],
     "answerIndex": 1,
@@ -111,7 +105,6 @@
     "id": "p5-verbal-ptcp-07",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "The ___ figures show a twelve percent increase over the same period last year.",
     "choices": ["revision", "revise", "revising", "revised"],
     "answerIndex": 3,
@@ -129,7 +122,6 @@
     "id": "p5-verbal-ptcp-08",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ by heavy snowfall, the delivery trucks arrived four hours behind schedule.",
     "choices": ["Delay", "Delaying", "Delayed", "To delay"],
     "answerIndex": 2,
@@ -141,13 +133,12 @@
       "Delaying": "現在分詞。トラックは遅らされた側なので受動が必要"
     },
     "difficulty": 3,
-    "tags": ["分詞構文", "過去分詞"]
+    "tags": ["分詞", "分詞構文", "過去分詞"]
   },
   {
     "id": "p5-verbal-ptcp-09",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "A maintenance worker noticed coolant ___ from a cracked seal on the second pump.",
     "choices": ["leak", "leaking", "leaked", "to leak"],
     "answerIndex": 1,
@@ -159,13 +150,12 @@
       "to leak": "知覚動詞は目的語の後ろに to 不定詞をとらない"
     },
     "difficulty": 3,
-    "tags": ["知覚動詞", "現在分詞"]
+    "tags": ["分詞", "知覚動詞", "現在分詞"]
   },
   {
     "id": "p5-verbal-ptcp-10",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "With the lobby renovation ___, the building will reopen to tenants on Monday morning.",
     "choices": ["to complete", "completing", "completed", "complete"],
     "answerIndex": 2,
@@ -177,13 +167,12 @@
       "to complete": "with + 目的語の後ろに to 不定詞は続かない"
     },
     "difficulty": 3,
-    "tags": ["with + O + 分詞", "付帯状況"]
+    "tags": ["分詞", "with + O + 分詞", "付帯状況"]
   },
   {
     "id": "p5-verbal-ptcp-11",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ worked in three different countries, Mr. Diaz brings an unusually broad perspective to the role.",
     "choices": ["Have", "Had", "Having", "Having been"],
     "answerIndex": 2,
@@ -195,13 +184,12 @@
       "Having been": "受動の形。work は自動詞なので受動にできない"
     },
     "difficulty": 3,
-    "tags": ["完了分詞構文", "Having + 過去分詞"]
+    "tags": ["分詞", "完了分詞構文", "Having + 過去分詞"]
   },
   {
     "id": "p5-verbal-ptcp-12",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ knowing that the submission deadline had been moved up, several team members filed their reports late.",
     "choices": ["Nothing", "None", "No", "Not"],
     "answerIndex": 3,
@@ -213,13 +201,12 @@
       "Nothing": "代名詞なので分詞の前には置けない"
     },
     "difficulty": 3,
-    "tags": ["分詞構文の否定", "Not + 分詞"]
+    "tags": ["分詞", "分詞構文の否定", "Not + 分詞"]
   },
   {
     "id": "p5-verbal-ptcp-13",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "The prototype ___ tested in the Munich laboratory was donated by a local engineering firm.",
     "choices": ["is", "been", "being", "be"],
     "answerIndex": 2,
@@ -231,13 +218,12 @@
       "is": "定形動詞。関係代名詞なしでは名詞を修飾できない"
     },
     "difficulty": 3,
-    "tags": ["being + 過去分詞", "後置修飾"]
+    "tags": ["分詞", "being + 過去分詞", "後置修飾"]
   },
   {
     "id": "p5-verbal-ptcp-14",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "Three major suppliers raised their prices in June, ___ in a twelve percent increase in production costs.",
     "choices": ["resulting", "to result", "result", "resulted"],
     "answerIndex": 0,
@@ -249,13 +235,12 @@
       "to result": "目的を表す形になり、実際に起きた結果を表せない"
     },
     "difficulty": 2,
-    "tags": ["結果の分詞構文", "resulting in"]
+    "tags": ["分詞", "結果の分詞構文", "resulting in"]
   },
   {
     "id": "p5-verbal-ptcp-15",
     "part": 5,
     "category": "準動詞",
-    "subcategory": "分詞",
     "sentence": "___ from the preliminary sales figures, the autumn campaign comfortably exceeded its targets.",
     "choices": ["Judgment", "Judge", "Judged", "Judging"],
     "answerIndex": 3,
@@ -267,6 +252,6 @@
       "Judgment": "名詞。分詞構文にならない"
     },
     "difficulty": 3,
-    "tags": ["慣用的分詞構文", "judging from"]
+    "tags": ["分詞", "慣用的分詞構文", "judging from"]
   }
 ]

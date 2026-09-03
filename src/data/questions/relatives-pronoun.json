@@ -3,7 +3,6 @@
     "id": "p5-relpron-01",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The consultant ___ recommendations we adopted last year has been invited to speak again.",
     "choices": ["whose", "which", "who", "whom"],
     "answerIndex": 0,
@@ -15,13 +14,12 @@
       "which": "先行詞が人なので不可。所有関係も表せない"
     },
     "difficulty": 3,
-    "tags": ["whose", "所有格"]
+    "tags": ["関係代名詞", "whose", "所有格"]
   },
   {
     "id": "p5-relpron-02",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "Ms. Alvarez submitted a proposal ___ impressed every member of the review panel.",
     "choices": ["who", "which", "whose", "what"],
     "answerIndex": 1,
@@ -33,13 +31,12 @@
       "whose": "所有格。後ろに名詞が続いていない"
     },
     "difficulty": 2,
-    "tags": ["which", "主格"]
+    "tags": ["関係代名詞", "which", "主格"]
   },
   {
     "id": "p5-relpron-03",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The engineer ___ designed the cooling system will present the findings at the conference.",
     "choices": ["which", "whose", "who", "whom"],
     "answerIndex": 2,
@@ -51,13 +48,12 @@
       "whom": "目的格。後ろは主語が欠けているので主格が必要"
     },
     "difficulty": 1,
-    "tags": ["who", "主格"]
+    "tags": ["関係代名詞", "who", "主格"]
   },
   {
     "id": "p5-relpron-04",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The candidate to ___ we offered the position has accepted all of our terms.",
     "choices": ["which", "that", "who", "whom"],
     "answerIndex": 3,
@@ -69,13 +65,12 @@
       "who": "主格。前置詞 to の直後には目的格 whom が入る"
     },
     "difficulty": 3,
-    "tags": ["whom", "前置詞+関係代名詞"]
+    "tags": ["関係代名詞", "whom", "前置詞+関係代名詞"]
   },
   {
     "id": "p5-relpron-05",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The laboratory in ___ the tissue samples are stored is kept at a constant temperature.",
     "choices": ["where", "what", "that", "which"],
     "answerIndex": 3,
@@ -87,13 +82,12 @@
       "that": "前置詞の直後には置けない"
     },
     "difficulty": 3,
-    "tags": ["which", "前置詞+関係代名詞"]
+    "tags": ["関係代名詞", "which", "前置詞+関係代名詞"]
   },
   {
     "id": "p5-relpron-06",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The factory expanded its output by thirty percent, ___ exceeded the original forecast.",
     "choices": ["that", "which", "what", "it"],
     "answerIndex": 1,
@@ -105,13 +99,12 @@
       "that": "非制限用法（カンマの後）では使えない"
     },
     "difficulty": 3,
-    "tags": ["which", "非制限用法"]
+    "tags": ["関係代名詞", "which", "非制限用法"]
   },
   {
     "id": "p5-relpron-07",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The supplier ___ delivery times were the shortest received the highest overall rating.",
     "choices": ["whose", "whom", "who", "which"],
     "answerIndex": 0,
@@ -123,13 +116,12 @@
       "who": "主格。所有関係を表せない"
     },
     "difficulty": 3,
-    "tags": ["whose", "所有格"]
+    "tags": ["関係代名詞", "whose", "所有格"]
   },
   {
     "id": "p5-relpron-08",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The training materials ___ the consultant prepared were praised by every attendee.",
     "choices": ["that", "whose", "what", "who"],
     "answerIndex": 0,
@@ -141,13 +133,12 @@
       "who": "先行詞 materials は人ではない"
     },
     "difficulty": 2,
-    "tags": ["that", "目的格"]
+    "tags": ["関係代名詞", "that", "目的格"]
   },
   {
     "id": "p5-relpron-09",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "___ who complete the certification will be eligible for the senior technician role.",
     "choices": ["Whom", "Those", "They", "Them"],
     "answerIndex": 1,
@@ -159,13 +150,12 @@
       "They": "関係代名詞 who の先行詞にはなれない"
     },
     "difficulty": 2,
-    "tags": ["those who"]
+    "tags": ["関係代名詞", "those who"]
   },
   {
     "id": "p5-relpron-10",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "Ms. Tan, ___ has managed the Osaka office since 2019, will lead the merger team.",
     "choices": ["that", "which", "whose", "who"],
     "answerIndex": 3,
@@ -177,13 +167,12 @@
       "whose": "所有格。後ろに名詞が続いていない"
     },
     "difficulty": 2,
-    "tags": ["非制限用法", "who"]
+    "tags": ["関係代名詞", "非制限用法", "who"]
   },
   {
     "id": "p5-relpron-11",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The firm employs sixty engineers, many of ___ specialize in structural analysis.",
     "choices": ["whom", "who", "which", "them"],
     "answerIndex": 0,
@@ -195,13 +184,12 @@
       "which": "先行詞が人なので使えない"
     },
     "difficulty": 3,
-    "tags": ["数量詞+of+関係代名詞", "whom"]
+    "tags": ["関係代名詞", "数量詞+of+関係代名詞", "whom"]
   },
   {
     "id": "p5-relpron-12",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The auditors examined all the invoices ___ had been issued during the third quarter.",
     "choices": ["what", "that", "who", "whose"],
     "answerIndex": 1,
@@ -213,13 +201,12 @@
       "whose": "所有格。後ろに名詞が続いていない"
     },
     "difficulty": 2,
-    "tags": ["that", "all+that"]
+    "tags": ["関係代名詞", "that", "all+that"]
   },
   {
     "id": "p5-relpron-13",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The dealership offers the same extended warranty ___ its two largest competitors do.",
     "choices": ["as", "that", "which", "what"],
     "answerIndex": 0,
@@ -231,13 +218,12 @@
       "what": "先行詞をとらない関係代名詞。すでに warranty がある"
     },
     "difficulty": 3,
-    "tags": ["the same as", "擬似関係代名詞"]
+    "tags": ["関係代名詞", "the same as", "擬似関係代名詞"]
   },
   {
     "id": "p5-relpron-14",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The startup, ___ founder previously worked at a major investment bank, raised twelve million dollars.",
     "choices": ["that", "who", "which", "whose"],
     "answerIndex": 3,
@@ -249,13 +235,12 @@
       "who": "後ろに名詞が続いているので所有格が必要"
     },
     "difficulty": 3,
-    "tags": ["whose", "非制限用法"]
+    "tags": ["関係代名詞", "whose", "非制限用法"]
   },
   {
     "id": "p5-relpron-15",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係代名詞",
     "sentence": "The candidate ___ we believe is best qualified for the position has withdrawn her application.",
     "choices": ["whom", "who", "whose", "which"],
     "answerIndex": 1,
@@ -267,6 +252,6 @@
       "which": "先行詞が人なので使えない"
     },
     "difficulty": 3,
-    "tags": ["who", "連鎖関係代名詞"]
+    "tags": ["関係代名詞", "who", "連鎖関係代名詞"]
   }
 ]

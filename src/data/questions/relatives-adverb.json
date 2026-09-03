@@ -3,7 +3,6 @@
     "id": "p5-reladv-01",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The conference hall ___ the annual shareholders' meeting is held seats up to 800 people.",
     "choices": ["where", "what", "whose", "which"],
     "answerIndex": 0,
@@ -15,13 +14,12 @@
       "what": "先行詞をとらない関係代名詞。すでに hall がある"
     },
     "difficulty": 3,
-    "tags": ["where"]
+    "tags": ["関係副詞", "where"]
   },
   {
     "id": "p5-reladv-02",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "March is the month ___ the company finalizes its budget for the following fiscal year.",
     "choices": ["when", "what", "whom", "which"],
     "answerIndex": 0,
@@ -33,13 +31,12 @@
       "what": "先行詞をとらない関係代名詞。すでに the month がある"
     },
     "difficulty": 2,
-    "tags": ["when"]
+    "tags": ["関係副詞", "when"]
   },
   {
     "id": "p5-reladv-03",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The report does not explain the reason ___ the shipment was rerouted through Seattle.",
     "choices": ["what", "how", "which", "why"],
     "answerIndex": 3,
@@ -51,13 +48,12 @@
       "what": "先行詞をとらない関係代名詞。すでに the reason がある"
     },
     "difficulty": 2,
-    "tags": ["why"]
+    "tags": ["関係副詞", "why"]
   },
   {
     "id": "p5-reladv-04",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The manual describes ___ the filters should be cleaned and reinstalled after each use.",
     "choices": ["what", "where", "how", "which"],
     "answerIndex": 2,
@@ -69,13 +65,12 @@
       "where": "場所を表す。フィルターの洗浄方法という文脈に合わない"
     },
     "difficulty": 3,
-    "tags": ["how"]
+    "tags": ["関係副詞", "how"]
   },
   {
     "id": "p5-reladv-05",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The service is available ___ a stable internet connection can be established.",
     "choices": ["whenever", "wherever", "whichever", "however"],
     "answerIndex": 1,
@@ -87,13 +82,12 @@
       "whenever": "「いつでも」。接続が確立できる場所を指す文脈に合わない"
     },
     "difficulty": 3,
-    "tags": ["wherever", "複合関係副詞"]
+    "tags": ["関係副詞", "wherever", "複合関係副詞"]
   },
   {
     "id": "p5-reladv-06",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "___ complex the request may be, the support team responds within one business day.",
     "choices": ["However", "Whatever", "Whenever", "Wherever"],
     "answerIndex": 0,
@@ -105,13 +99,12 @@
       "Whatever": "「何でも」。直後には名詞が来る形になる"
     },
     "difficulty": 3,
-    "tags": ["however", "複合関係副詞"]
+    "tags": ["関係副詞", "however", "複合関係副詞"]
   },
   {
     "id": "p5-reladv-07",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The monitoring system sends an alert ___ the storage temperature exceeds five degrees.",
     "choices": ["whoever", "however", "wherever", "whenever"],
     "answerIndex": 3,
@@ -123,13 +116,12 @@
       "however": "「どれほど〜でも」の意味で、直後に形容詞か副詞が必要"
     },
     "difficulty": 2,
-    "tags": ["whenever"]
+    "tags": ["関係副詞", "whenever"]
   },
   {
     "id": "p5-reladv-08",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The department will implement ___ solution the external consultants recommend.",
     "choices": ["whatever", "wherever", "however", "whenever"],
     "answerIndex": 0,
@@ -141,13 +133,12 @@
       "wherever": "場所を表す副詞なので名詞を修飾できない"
     },
     "difficulty": 2,
-    "tags": ["whatever"]
+    "tags": ["関係副詞", "whatever"]
   },
   {
     "id": "p5-reladv-09",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "___ how carefully the glassware is packed, a small percentage always arrives broken.",
     "choices": ["Even", "Regardless", "No matter", "Whether"],
     "answerIndex": 2,
@@ -159,13 +150,12 @@
       "Regardless": "regardless は of が必要で、単独では how を続けられない"
     },
     "difficulty": 3,
-    "tags": ["no matter how", "however"]
+    "tags": ["関係副詞", "no matter how", "however"]
   },
   {
     "id": "p5-reladv-10",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The negotiations have reached a point ___ neither side is willing to make further concessions.",
     "choices": ["where", "what", "when", "which"],
     "answerIndex": 0,
@@ -177,13 +167,12 @@
       "when": "先行詞が時を表していないので合わない"
     },
     "difficulty": 3,
-    "tags": ["where", "抽象名詞の先行詞"]
+    "tags": ["関係副詞", "where", "抽象名詞の先行詞"]
   },
   {
     "id": "p5-reladv-11",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The audit will begin in early October, ___ most of the accounting staff have returned from leave.",
     "choices": ["when", "where", "that", "which"],
     "answerIndex": 0,
@@ -195,13 +184,12 @@
       "where": "先行詞が場所ではないので合わない"
     },
     "difficulty": 3,
-    "tags": ["when", "非制限用法"]
+    "tags": ["関係副詞", "when", "非制限用法"]
   },
   {
     "id": "p5-reladv-12",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "Page four lists the date ___ which the revised payment terms take effect.",
     "choices": ["at", "in", "on", "for"],
     "answerIndex": 2,
@@ -213,13 +201,12 @@
       "for": "期間を表す前置詞で、発効する時点を示せない"
     },
     "difficulty": 3,
-    "tags": ["前置詞+which", "on which"]
+    "tags": ["関係副詞", "前置詞+which", "on which"]
   },
   {
     "id": "p5-reladv-13",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "Please store the tissue samples ___ the temperature remains below five degrees at all times.",
     "choices": ["where", "what", "which", "that"],
     "answerIndex": 0,
@@ -231,13 +218,12 @@
       "what": "「〜のもの」の意味で場所を表せない"
     },
     "difficulty": 3,
-    "tags": ["where", "先行詞なし"]
+    "tags": ["関係副詞", "where", "先行詞なし"]
   },
   {
     "id": "p5-reladv-14",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "Employees may select ___ health plan best suits their family situation.",
     "choices": ["whichever", "however", "whoever", "whenever"],
     "answerIndex": 0,
@@ -249,13 +235,12 @@
       "however": "直後に形容詞か副詞が必要"
     },
     "difficulty": 2,
-    "tags": ["whichever"]
+    "tags": ["関係副詞", "whichever"]
   },
   {
     "id": "p5-reladv-15",
     "part": 5,
     "category": "関係詞",
-    "subcategory": "関係副詞",
     "sentence": "The distribution center ___ the company acquired last spring will be expanded next year.",
     "choices": ["when", "what", "where", "which"],
     "answerIndex": 3,
@@ -267,6 +252,6 @@
       "what": "先行詞をとらない関係代名詞。すでに center がある"
     },
     "difficulty": 3,
-    "tags": ["where と which の識別", "不完全な文"]
+    "tags": ["関係副詞", "where と which の識別", "不完全な文"]
   }
 ]
