@@ -35,7 +35,7 @@
           "items": [
             "a fact → facts 事実",
             "a device → devices 機器",
-            "a desk / a chair → 家具の個々",
+            "a desk → desks 机",
             "a machine → machines 機械",
             "a suitcase → suitcases かばん",
             "a suggestion → suggestions 助言",
@@ -47,7 +47,7 @@
             "a comment → comments 意見",
             "a form → forms 書類",
             "an item → items 品目",
-            "a job / a task → 仕事"
+            "a job → jobs 仕事"
           ]
         }
       ],
@@ -177,23 +177,14 @@
       "point": "very が付いていたら必ず「ほとんどない」のほう。",
       "columns": [
         {
-          "title": "a が付く — 少しはある（肯定的）",
+          "title": "a が付く — 少しはある",
           "tone": "ok",
-          "items": [
-            "a few + 可算の複数形",
-            "a little + 不可算",
-            "例) We still have a few days left."
-          ]
+          "items": ["a few + 可算の複数形", "a little + 不可算"]
         },
         {
-          "title": "a が付かない — ほとんどない（否定的）",
+          "title": "a が付かない — ほとんどない",
           "tone": "ng",
-          "items": [
-            "few + 可算の複数形",
-            "little + 不可算",
-            "very few / very little でさらに強調",
-            "例) Very few applicants met the requirement."
-          ]
+          "items": ["few + 可算の複数形", "little + 不可算", "very few", "very little"]
         }
       ],
       "body": [
@@ -289,20 +280,16 @@
       "columns": [
         {
           "title": "no — 形容詞",
-          "items": ["no + 名詞", "report no damage", "no complaints were received"]
+          "items": ["no + 名詞", "no damage", "no delays"]
         },
         {
           "title": "none — 代名詞",
-          "items": [
-            "単独で使う",
-            "none of + the / these / my + 名詞",
-            "None of the proposals met ..."
-          ]
+          "items": ["none 単独", "none of the + 名詞", "none of them"]
         },
         {
-          "title": "not — 副詞 / nothing — 代名詞",
+          "title": "not / nothing — 名詞に付けない",
           "tone": "ng",
-          "items": ["not は名詞を修飾できない", "nothing の後ろに名詞は続かない"]
+          "items": ["not + 名詞", "nothing + 名詞"]
         }
       ],
       "body": [
@@ -334,28 +321,23 @@
     },
     {
       "heading": "6. almost / most / almost every",
-      "point": "almost は副詞なので、名詞との間に every / all を挟む必要がある。",
+      "point": "almost は副詞。名詞との間に every / all を挟む。",
       "columns": [
         {
           "title": "言える形",
           "tone": "ok",
           "items": [
             "almost every + 単数名詞",
-            "almost all (of) the + 名詞",
-            "most + 名詞（the は付けない）",
+            "almost all the + 名詞",
+            "most + 名詞",
             "most of the + 名詞",
-            "nearly all / nearly every"
+            "nearly every / nearly all"
           ]
         },
         {
           "title": "言えない形",
           "tone": "ng",
-          "items": [
-            "almost + 名詞（almost people ✗）",
-            "almost of the + 名詞 ✗",
-            "the most + 名詞（「ほとんど」の意味では ✗）",
-            "mostly + 名詞（mostly は副詞 ✗）"
-          ]
+          "items": ["almost + 名詞", "almost of the + 名詞", "the most + 名詞", "mostly + 名詞"]
         }
       ],
       "body": [
@@ -391,20 +373,17 @@
       "heading": "7. any の 4 つの顔",
       "columns": [
         {
-          "title": "否定文 — 少しも〜ない",
-          "items": ["We do not have any spare parts."]
+          "title": "よく知られている用法",
+          "items": ["否定文 — 少しも〜ない", "疑問文 — 何か"]
         },
         {
-          "title": "疑問文 — 何か",
-          "items": ["Do you have any questions?"]
-        },
-        {
-          "title": "条件節 — どれか1つでも",
-          "items": ["If any of the sensors fails, ...", "※ any of + 複数名詞は単数扱い"]
-        },
-        {
-          "title": "肯定文 — どんな〜でも",
-          "items": ["Any employee may apply."]
+          "title": "TOEIC で問われる用法",
+          "tone": "ok",
+          "items": [
+            "条件節 — どれか1つでも",
+            "肯定文 — どんな〜でも",
+            "any of + 複数名詞 は単数扱い"
+          ]
         }
       ],
       "body": [
@@ -434,12 +413,17 @@
         {
           "title": "「ほとんどない」を作れる",
           "tone": "ok",
-          "items": ["hardly any + 名詞", "scarcely any + 名詞", "few + 可算複数", "little + 不可算"]
+          "items": [
+            "hardly any + 名詞",
+            "scarcely any + 名詞",
+            "few + 可算の複数形",
+            "little + 不可算"
+          ]
         },
         {
           "title": "作れない",
           "tone": "ng",
-          "items": ["not hardly any（否定の重複）", "almost any（almost は any を修飾できない）"]
+          "items": ["not hardly any", "almost any"]
         }
       ],
       "body": [
@@ -467,10 +451,11 @@
         {
           "title": "解く手順",
           "items": [
-            "① 空所の後ろの名詞を見る（可算の複数形か、不可算か）",
-            "② 可算なら many / few / fewer / several、不可算なら much / little / less に絞る",
-            "③ of + 限定詞が続くなら、動詞が単数か複数かを確認する",
-            "④ 文全体が肯定的か否定的かで a few / few、a little / little を決める"
+            "① 空所の後ろの名詞を見る",
+            "② 可算 → many / few / fewer",
+            "② 不可算 → much / little / less",
+            "③ of があれば動詞の単複を確認",
+            "④ 文脈で a few / few を決める"
           ]
         }
       ],

@@ -114,6 +114,32 @@ describe('同梱データ', () => {
     }
   });
 
+  it('列の項目は一目で追える短さに収まっている', () => {
+    // 説明や例文を項目に混ぜると列が重くなって読めなくなるので、短さで縛る
+    for (const g of guides) {
+      for (const s of g.sections) {
+        for (const c of s.columns ?? []) {
+          for (const item of c.items) {
+            expect(
+              item.length,
+              `${g.category} / ${c.title} の「${item}」が長い`,
+            ).toBeLessThanOrEqual(40);
+          }
+        }
+      }
+    }
+  });
+
+  it('列の項目に全角空白でのぶら下げがない', () => {
+    for (const g of guides) {
+      for (const c of g.sections.flatMap((s) => s.columns ?? [])) {
+        for (const item of c.items) {
+          expect(item, `${g.category} / ${c.title}`).not.toContain('　');
+        }
+      }
+    }
+  });
+
   it('節の見出しが重複していない', () => {
     for (const g of guides) {
       const headings = g.sections.map((s) => s.heading);
