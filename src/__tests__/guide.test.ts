@@ -140,6 +140,15 @@ describe('同梱データ', () => {
     }
   });
 
+  it('節の見出しの番号が 1 から通しで振られている', () => {
+    // 節をまとめたときに番号の振り直し漏れがあると読み手が混乱する
+    for (const g of guides) {
+      g.sections.forEach((s, i) => {
+        expect(s.heading, `${g.category} の ${i + 1} 番目`).toMatch(new RegExp(`^${i + 1}\\.`));
+      });
+    }
+  });
+
   it('節の見出しが重複していない', () => {
     for (const g of guides) {
       const headings = g.sections.map((s) => s.heading);

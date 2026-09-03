@@ -276,28 +276,55 @@
       "pitfall": "a number of + 複数名詞は「多くの〜」で複数扱い、the number of + 複数名詞は「〜の数」で単数扱い。冠詞ひとつで逆になるので、主述の一致でも狙われる。"
     },
     {
-      "heading": "5. no / none / not の使い分け",
-      "point": "no は形容詞、none は代名詞。not と nothing は名詞に付けられない。",
+      "heading": "5. まぎらわしい語の品詞",
+      "point": "品詞が分かれば置ける位置が決まる。副詞は名詞を直接修飾できない。",
       "columns": [
         {
-          "title": "no — 形容詞",
-          "items": ["no + 名詞", "no damage", "no delays"]
+          "title": "形容詞 — 名詞に直接つく",
+          "items": [
+            "no + 名詞",
+            "most + 名詞",
+            "few + 可算の複数形",
+            "little + 不可算",
+            "every / each + 単数名詞"
+          ]
         },
         {
-          "title": "none — 代名詞",
-          "items": ["none 単独", "none of the + 名詞", "none of them"]
+          "title": "代名詞 — 単独か of を伴う",
+          "items": [
+            "none / nothing",
+            "none of the + 名詞",
+            "most of the + 名詞",
+            "either of / neither of",
+            "both of"
+          ]
+        },
+        {
+          "title": "副詞 — every / all / any を間に挟む",
+          "items": [
+            "almost every / almost all",
+            "nearly every / nearly all",
+            "hardly any + 名詞",
+            "scarcely any / barely any",
+            "mostly は動詞や文を修飾"
+          ]
         }
       ],
       "body": [
-        "同じ「〜がない」でも品詞が違う。no は形容詞なので名詞を直接修飾し、none は代名詞なので単独か of を伴って使う。not は副詞で、名詞を修飾できない。"
+        "同じ「〜がない」でも品詞が違う。no は形容詞なので名詞を直接修飾し、none は代名詞なので単独か of を伴う。not は副詞なので名詞を修飾できない。",
+        "almost / nearly / hardly / scarcely / barely はすべて副詞で、名詞を直接は修飾できない。every / all / any を間に挟むことで名詞にかかる。almost people や hardly complaints とは言えず、almost every department、hardly any complaints となる。",
+        "most は形容詞・代名詞なので単独で名詞につく。the most は最上級を作る形なので、「ほとんどの」の意味では the を付けない。"
       ],
       "table": {
-        "headers": ["語", "品詞", "使い方"],
+        "headers": ["語", "品詞", "名詞にかけるときの形"],
         "rows": [
-          ["no", "形容詞", "no + 名詞（report no damage）"],
-          ["none", "代名詞", "単独、または none of + 限定詞 + 名詞"],
-          ["not", "副詞", "動詞や語句を打ち消す。名詞は修飾できない"],
-          ["nothing", "代名詞", "「何も〜ない」。後ろに名詞は続かない"]
+          ["no", "形容詞", "no + 名詞"],
+          ["most", "形容詞・代名詞", "most + 名詞 / most of the + 名詞"],
+          ["none", "代名詞", "none 単独 / none of the + 名詞"],
+          ["not", "副詞", "名詞は修飾できない"],
+          ["almost / nearly", "副詞", "almost every / almost all the + 名詞"],
+          ["hardly / scarcely / barely", "副詞", "hardly any + 名詞"],
+          ["mostly", "副詞", "動詞や文を修飾する"]
         ]
       },
       "examples": [
@@ -312,37 +339,7 @@
           "ja": "3つの提案のいずれも、委員会の予算要件を満たさなかった。",
           "ok": true,
           "note": "of を伴う代名詞なので None"
-        }
-      ]
-    },
-    {
-      "heading": "6. almost / most / almost every",
-      "point": "almost・nearly・mostly は副詞、most は形容詞・代名詞。副詞は名詞を直接修飾できない。",
-      "columns": [
-        {
-          "title": "副詞 — 名詞に直接つかない",
-          "items": ["almost + every / all / no", "nearly + every / all", "mostly は動詞や文を修飾"]
         },
-        {
-          "title": "形容詞・代名詞 — 名詞に直接つく",
-          "items": ["most + 名詞", "most of the + 名詞", "the most は最上級を作る"]
-        }
-      ],
-      "body": [
-        "almost は副詞なので、名詞を直接修飾できない。almost all / almost every のように、間に別の限定詞を挟む必要がある。most は形容詞・代名詞なので単独で名詞につく。"
-      ],
-      "table": {
-        "headers": ["形", "可否", "備考"],
-        "rows": [
-          ["almost every + 単数名詞", "○", "almost が every を修飾している"],
-          ["almost all (of) the + 名詞", "○", "almost が all を修飾している"],
-          ["most + 名詞", "○", "「ほとんどの〜」。the は付けない"],
-          ["most of the + 名詞", "○", "of を使うときは限定詞が必要"],
-          ["almost + 名詞", "×", "almost people とは言えない"],
-          ["almost of the + 名詞", "×", "almost は of を直接とらない"]
-        ]
-      },
-      "examples": [
         {
           "en": "Almost every department has now migrated to the shared document system.",
           "ja": "ほぼすべての部署が共有文書システムへ移行を終えている。",
@@ -353,12 +350,24 @@
           "en": "Most of the participants said they would attend the follow-up session.",
           "ja": "参加者の大半が、追加のセッションにも出席すると答えた。",
           "ok": true
+        },
+        {
+          "en": "There were hardly any complaints about the new seating arrangement.",
+          "ja": "新しい座席配置についての苦情はほとんどなかった。",
+          "ok": true,
+          "note": "almost any は「ほとんどどんな〜でも」の意味。数の少なさは表せない"
+        },
+        {
+          "en": "There were not hardly any complaints.",
+          "ja": "—",
+          "ok": false,
+          "note": "hardly がすでに否定なので not と重ねられない"
         }
       ],
-      "pitfall": "The most は最上級を作る形。「ほとんどの」の意味では the を付けない。Mostly は副詞で「主に」の意味なので、名詞の前には置けない。"
+      "pitfall": "hardly / scarcely / barely はそれ自体が否定語なので、not と重ねない。また hard（熱心に）とは別語で、hardly worked は「ほとんど働かなかった」になる。"
     },
     {
-      "heading": "7. any の 4 つの顔",
+      "heading": "6. any の 4 つの顔",
       "columns": [
         {
           "title": "よく知られている用法",
@@ -396,39 +405,7 @@
       ]
     },
     {
-      "heading": "8. 「ほとんどない」の作り方",
-      "point": "hardly・scarcely・barely はそれ自体が否定語。not と重ねない。",
-      "columns": [
-        {
-          "title": "副詞 — any と組んで名詞を否定",
-          "items": ["hardly any + 名詞", "scarcely any + 名詞", "barely any + 名詞"]
-        },
-        {
-          "title": "形容詞 — 単独で名詞を否定",
-          "items": ["few + 可算の複数形", "little + 不可算"]
-        }
-      ],
-      "body": [
-        "hardly any / scarcely any で「ほとんど〜ない」を表す。hardly 自体が否定語なので、not と一緒には使わない。"
-      ],
-      "examples": [
-        {
-          "en": "There were hardly any complaints about the new seating arrangement.",
-          "ja": "新しい座席配置についての苦情はほとんどなかった。",
-          "ok": true,
-          "note": "almost any は「ほとんどどんな〜でも」の意味。数の少なさは表せない"
-        },
-        {
-          "en": "There were not hardly any complaints.",
-          "ja": "—",
-          "ok": false,
-          "note": "hardly がすでに否定なので not と重ねられない"
-        }
-      ],
-      "pitfall": "hardly は「ほとんど〜ない」で頻度や程度の否定。hard（熱心に）とは別語なので、hardly worked は「ほとんど働かなかった」になる。"
-    },
-    {
-      "heading": "9. 解くときの手順",
+      "heading": "7. 解くときの手順",
       "columns": [
         {
           "title": "解く手順",
