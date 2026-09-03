@@ -321,23 +321,15 @@
     },
     {
       "heading": "6. almost / most / almost every",
-      "point": "almost は副詞。名詞との間に every / all を挟む。",
+      "point": "almost・nearly・mostly は副詞、most は形容詞・代名詞。副詞は名詞を直接修飾できない。",
       "columns": [
         {
-          "title": "言える形",
-          "tone": "ok",
-          "items": [
-            "almost every + 単数名詞",
-            "almost all the + 名詞",
-            "most + 名詞",
-            "most of the + 名詞",
-            "nearly every / nearly all"
-          ]
+          "title": "副詞 — 名詞に直接つかない",
+          "items": ["almost + every / all / no", "nearly + every / all", "mostly は動詞や文を修飾"]
         },
         {
-          "title": "言えない形",
-          "tone": "ng",
-          "items": ["almost + 名詞", "almost of the + 名詞", "the most + 名詞", "mostly + 名詞"]
+          "title": "形容詞・代名詞 — 名詞に直接つく",
+          "items": ["most + 名詞", "most of the + 名詞", "the most は最上級を作る"]
         }
       ],
       "body": [
