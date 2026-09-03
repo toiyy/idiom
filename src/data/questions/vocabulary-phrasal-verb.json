@@ -59,14 +59,14 @@
     "category": "語彙",
     "subcategory": "句動詞",
     "sentence": "The IT department will ___ up the database before installing the security update.",
-    "choices": ["hold", "set", "keep", "back"],
+    "choices": ["hold", "take", "keep", "back"],
     "answerIndex": 3,
-    "explanation": "back up = バックアップを取る。set up は「設置する」、hold up は「遅らせる」、keep up は「維持する」で文脈に合わない。",
+    "explanation": "back up = バックアップを取る。更新の前にデータを保全する文脈。hold up は「遅らせる」、keep up は「維持する」、take up は「取り上げる」で意味が合わない。",
     "translation": "IT部門はセキュリティ更新を導入する前に、データベースのバックアップを取る。",
     "choiceNotes": {
-      "set": "set up は「設置する」。データの保存の意味にならない",
       "keep": "keep up は「維持する」で文脈に合わない",
-      "hold": "hold up は「遅らせる・持ちこたえる」の意味"
+      "hold": "hold up は「遅らせる・持ちこたえる」の意味",
+      "take": "take up は「（時間や場所を）取る・取り上げる」の意味"
     },
     "difficulty": 1,
     "tags": ["back up"]
@@ -77,14 +77,14 @@
     "category": "語彙",
     "subcategory": "句動詞",
     "sentence": "We had to ___ down the proposal because it exceeded our annual budget.",
-    "choices": ["break", "put", "cut", "turn"],
+    "choices": ["break", "put", "hold", "turn"],
     "answerIndex": 3,
-    "explanation": "turn down = 断る、却下する。cut down は「削減する」、break down は「故障する」、put down は「書き留める」。",
+    "explanation": "turn down = 断る、却下する。break down は「故障する」、put down は「書き留める」、hold down は「低く抑える」。",
     "translation": "年間予算を超過していたため、我々はその提案を断らざるを得なかった。",
     "choiceNotes": {
       "break": "break down は「故障する・内訳を示す」の意味",
       "put": "put down は「書き留める・置く」で却下の意味にならない",
-      "cut": "cut down は「削減する・切り倒す」の意味"
+      "hold": "hold down は「（費用などを）低く抑える」の意味"
     },
     "difficulty": 2,
     "tags": ["turn down"]
@@ -221,14 +221,14 @@
     "category": "語彙",
     "subcategory": "句動詞",
     "sentence": "The department was asked to ___ back on discretionary spending this quarter.",
-    "choices": ["turn", "cut", "hold", "bring"],
+    "choices": ["turn", "cut", "put", "bring"],
     "answerIndex": 1,
-    "explanation": "cut back on = 〜を削減する。hold back は「抑える」、bring back は「戻す」、turn back は「引き返す」。",
+    "explanation": "cut back on = 〜を削減する。turn back は「引き返す」、bring back は「戻す」、put back は「戻す・延期する」。",
     "translation": "その部署は今四半期、裁量的な支出を削減するよう求められた。",
     "choiceNotes": {
-      "hold": "hold back は「抑える・引き止める」の意味",
       "bring": "bring back は「戻す・思い出させる」の意味",
-      "turn": "turn back は「引き返す」で削減の意味にならない"
+      "turn": "turn back は「引き返す」で削減の意味にならない",
+      "put": "put back は「戻す・延期する」で、on を伴って削減を表さない"
     },
     "difficulty": 2,
     "tags": ["cut back on"]
@@ -239,14 +239,14 @@
     "category": "語彙",
     "subcategory": "句動詞",
     "sentence": "The compliance officer will ___ into the discrepancy in last month's inventory report.",
-    "choices": ["watch", "check", "see", "look"],
+    "choices": ["watch", "view", "see", "look"],
     "answerIndex": 3,
-    "explanation": "look into = 調査する。see / watch / check は into と結びついて句動詞を作らない。",
+    "explanation": "look into = 調査する。see into は「見通す」、watch into と view into は句動詞として成立しない。",
     "translation": "コンプライアンス担当者が、先月の在庫報告書の食い違いを調査する。",
     "choiceNotes": {
       "watch": "watch into という句動詞はない",
-      "check": "check into は「宿泊手続きをする」の意味",
-      "see": "see into は「見通す」で調査の意味にはならない"
+      "see": "see into は「見通す」で調査の意味にはならない",
+      "view": "view into という句動詞はない"
     },
     "difficulty": 2,
     "tags": ["look into"]

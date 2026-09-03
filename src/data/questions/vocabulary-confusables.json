@@ -40,15 +40,15 @@
     "part": 5,
     "category": "語彙",
     "subcategory": "紛らわしい類義語",
-    "sentence": "The manual provides a ___ overview of every function available in the software.",
+    "sentence": "The new policy provides ___ coverage for both equipment damage and business interruption.",
     "choices": ["comprehensible", "comprehending", "comprehensive", "comprehension"],
     "answerIndex": 2,
-    "explanation": "comprehensive = 包括的な、網羅的な。comprehensible = 理解できる。「すべての機能を扱う概要」なので comprehensive が正解。",
-    "translation": "その手引書には、ソフトウェアで利用できる全機能の包括的な概要が載っている。",
+    "explanation": "comprehensive coverage = 包括的な補償。comprehensive は「網羅的な」で、発音の似た comprehensible（理解できる）とは意味が異なる。",
+    "translation": "その新しい保険は、設備の損害と事業中断の両方に対する包括的な補償を提供する。",
     "choiceNotes": {
-      "comprehending": "現在分詞「理解している」。概要の性質を表さない",
-      "comprehension": "名詞「理解力」。overview を修飾できない",
-      "comprehensible": "「理解できる」。全機能を扱うという網羅性は表さない"
+      "comprehending": "現在分詞「理解している」。coverage の性質を表さない",
+      "comprehension": "名詞「理解力」。coverage を修飾できない",
+      "comprehensible": "「理解できる」。補償の範囲を表さず coverage とは組まない"
     },
     "difficulty": 3,
     "tags": ["comprehensive", "comprehensible"]

@@ -173,15 +173,15 @@
     "id": "p5-pronoun-011",
     "part": 5,
     "category": "代名詞",
-    "sentence": "Some of the attendees preferred the morning session, while ___ found the afternoon slot easier.",
+    "sentence": "Some of the attendees preferred the morning session, while ___ found the afternoon slot easier; a few had no preference at all.",
     "choices": ["others", "the others", "another", "other"],
     "answerIndex": 0,
-    "explanation": "Some 〜, others … =「〜する人もいれば、…する人もいる」。残り全体を指しているわけではないので the others ではない。",
-    "translation": "午前の部を好む参加者もいれば、午後の枠のほうが都合がよいという人もいた。",
+    "explanation": "Some 〜, others … =「〜する人もいれば、…する人もいる」。希望なしの層が別にいるので、残り全部を指す the others は使えない。",
+    "translation": "午前の部を好む参加者もいれば、午後の枠のほうが都合がよいという人もいた。まったく希望のない人も少数いた。",
     "choiceNotes": {
       "another": "「もう1つ」という単数。動詞 found の主語として複数を受けられない",
       "other": "単独では代名詞にならず、後ろに名詞が必要",
-      "the others": "「残り全部」と特定する形。ここは残り全員とは限らない"
+      "the others": "「残りの全員」と特定する形。希望なしの人が別にいるので当てはまらない"
     },
     "difficulty": 2,
     "tags": ["some ... others"]
