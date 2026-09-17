@@ -83,9 +83,9 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('21 カテゴリすべてに 8 問以上ある', () => {
+  it('22 カテゴリすべてに 8 問以上ある', () => {
     const categories = listCategories(questions);
-    expect(categories).toHaveLength(21);
+    expect(categories).toHaveLength(22);
     // フェーズ4 で薄いカテゴリを解消したので、以後 8 問を下限として維持する
     for (const c of categories) {
       expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(8);
@@ -141,16 +141,18 @@ describe('同梱データ', () => {
     }
   });
 
-  it('サブカテゴリを持つのは語彙と難問だけ', () => {
-    // 答えの形を名指しするサブカテゴリは廃止した。この 2 つは選んでも答えが割れない
+  it('サブカテゴリを持つのは語彙と難問とロジカル英文法だけ', () => {
+    // 答えの形を名指しするサブカテゴリは廃止した。この 3 つは選んでも答えが割れない
     const nested = listCategories(questions)
       .filter((c) => c.subcategories.length > 0)
       .map((c) => c.category);
-    expect(nested.sort()).toEqual(['語彙', '難問']);
+    expect(nested.sort()).toEqual(['ロジカル英文法', '語彙', '難問']);
   });
 
   it('平坦にしたカテゴリの分野ごとの厚みがタグに残っている', () => {
     // サブカテゴリは廃止したが、どの分野の問題かはタグで追える
+    // ロジカル英文法は別教材由来なので、この分野タグの集計対象から外す
+    const main = questions.filter((q) => q.category !== 'ロジカル英文法');
     for (const tag of [
       '不定詞',
       '動名詞',
@@ -162,7 +164,7 @@ describe('同梱データ', () => {
       '関係副詞',
     ]) {
       expect(
-        questions.filter((q) => q.tags?.includes(tag)),
+        main.filter((q) => q.tags?.includes(tag)),
         `${tag} の問題数`,
       ).toHaveLength(15);
     }

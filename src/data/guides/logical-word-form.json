@@ -1,0 +1,128 @@
+{
+  "title": "品詞",
+  "targets": [
+    {
+      "category": "ロジカル英文法",
+      "subcategory": "品詞"
+    }
+  ],
+  "summary": "選択肢が同じ語の名詞・形容詞・副詞・動詞形で並んでいたら、意味を考える必要はない。空所の前後の形だけで入る品詞が決まる。",
+  "sections": [
+    {
+      "heading": "1. 空所の位置で品詞が決まる",
+      "point": "空所の直前と直後に何があるかを見る。文の意味を読まなくても品詞は決まる。",
+      "columns": [
+        {
+          "title": "名詞が入る",
+          "items": [
+            "冠詞 the / a の後ろ",
+            "所有格 its / our の後ろ",
+            "他動詞の目的語",
+            "前置詞の後ろ",
+            "文の主語"
+          ]
+        },
+        {
+          "title": "形容詞が入る",
+          "items": [
+            "冠詞と名詞の間",
+            "be 動詞の後ろ",
+            "seem / become の後ろ",
+            "find A to be の後ろ"
+          ]
+        },
+        {
+          "title": "副詞が入る",
+          "items": ["動詞の直前", "完全な文から取り除ける位置"]
+        }
+      ],
+      "body": [
+        "他動詞の直後なら名詞。Before the cruise, his travel agent sent ___ では sent の目的語なので recommendations が入る。",
+        "find A to be の補語なら形容詞。Sarah found the seminar to be ___ では informative が入る。",
+        "動詞を修飾する位置なら副詞。struggling to ___ staff では sufficiently が入る。"
+      ],
+      "examples": [
+        {
+          "en": "His travel agent sent recommendations for onshore excursions.",
+          "ja": "彼の旅行代理店は陸上観光ツアーのおすすめ情報を送ってきた。",
+          "ok": true,
+          "note": "sent の目的語なので名詞"
+        },
+        {
+          "en": "Sarah found the seminar to be informative.",
+          "ja": "サラはそのセミナーが有益だと感じた。",
+          "ok": true,
+          "note": "find A to be の補語なので形容詞"
+        }
+      ],
+      "pitfall": "空所を取り除いて文が成り立つなら副詞、成り立たないなら名詞か形容詞。この一手で候補が半分になる。"
+    },
+    {
+      "heading": "2. 語尾で品詞を見分ける",
+      "point": "選択肢の語尾を見れば品詞は分かる。意味を知らない単語でも解ける。",
+      "columns": [
+        {
+          "title": "名詞の語尾",
+          "items": [
+            "-tion 推薦 recommendation",
+            "-ment 約束 commitment",
+            "-ness / -ity 独創性 creativity",
+            "-ance / -ence 出席 attendance"
+          ]
+        },
+        {
+          "title": "形容詞の語尾",
+          "items": [
+            "-able / -ible 利用できる available",
+            "-ive 有益な informative",
+            "-ous 重大な serious"
+          ]
+        },
+        {
+          "title": "副詞の語尾",
+          "items": ["-ly が基本", "friendly / timely は形容詞"]
+        }
+      ],
+      "body": [
+        "recommendation（名詞）/ recommended（過去分詞）/ recommending（動名詞）/ recommend（動詞）と、形だけで品詞を判別できる。",
+        "-ly が付いていれば副詞と決めつけない。friendly / timely / likely は形容詞なので、名詞を修飾する位置に入る。"
+      ],
+      "examples": [
+        {
+          "en": "Prices that are comparable to those of similar products.",
+          "ja": "同種の製品の価格と同等の価格。",
+          "ok": true,
+          "note": "be 動詞の補語なので形容詞 comparable"
+        }
+      ],
+      "pitfall": "-ly で終わる形容詞（friendly / timely / likely）に注意。副詞だと思って動詞の前に入れると外す。"
+    },
+    {
+      "heading": "3. 受動態の過去分詞と動名詞の区別",
+      "point": "be 動詞の後ろは過去分詞、前置詞の後ろは動名詞。",
+      "columns": [
+        {
+          "title": "be + 過去分詞",
+          "items": ["受動態を作る", "was published", "is recommended"]
+        },
+        {
+          "title": "前置詞 + 動名詞",
+          "items": ["of / for / to の後ろ", "with the hope of boosting", "close to completing"]
+        }
+      ],
+      "body": [
+        "be 動詞の後ろなら過去分詞で受動態。The press release was ___ では published が入る。",
+        "前置詞 of / for / to の後ろなら動名詞。close to の to は前置詞なので completing が入る。"
+      ],
+      "examples": [
+        {
+          "en": "The press release was published last Monday.",
+          "ja": "そのプレスリリースは先週の月曜日に公表された。",
+          "ok": true,
+          "note": "be + 過去分詞の受動態"
+        }
+      ],
+      "pitfall": "close to / look forward to の to は前置詞。後ろは不定詞ではなく動名詞が来る。"
+    }
+  ]
+}
