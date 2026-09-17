@@ -5,178 +5,286 @@
     "category": "ロジカル英文法",
     "subcategory": "品詞",
     "sentence": "Before Mr. Wallace embarked on the cruise, his travel agent sent ___ for onshore excursions.",
-    "choices": ["recommend", "recommendations", "recommended", "recommending"],
-    "answerIndex": 1,
-    "explanation": "他動詞 sent の目的語にあたる位置なので名詞が入る。recommendations（おすすめ・推薦）が正解。recommend は動詞、recommended は過去分詞、recommending は動名詞。",
-    "translation": "ウォレス氏がクルーズに出発する前に、彼の旅行代理店は陸上観光ツアーのおすすめ情報を送ってきた。",
+    "choices": ["recommends", "recommendable", "recommendations", "recommend"],
+    "answerIndex": 2,
+    "explanation": "空所は他動詞 sent の目的語の位置なので名詞が必要。複数形の名詞 recommendations が適切。recommends は三人称単数現在の動詞、recommendable は形容詞、recommend は動詞の原形。",
+    "translation": "ウォレス氏がクルーズに乗り出す前に、彼の旅行代理店は寄港地観光の推薦情報を送っていた。",
     "choiceNotes": {
-      "recommend": "動詞の原形。sent の目的語には名詞が必要",
-      "recommended": "過去分詞。目的語の位置には名詞が入る",
-      "recommending": "動名詞。目的語としては名詞 recommendations が自然"
+      "recommends": "三人称単数現在の動詞。sent の目的語には名詞が必要",
+      "recommendable": "形容詞「推薦に値する」。目的語の位置には名詞が入る",
+      "recommend": "動詞の原形。「推薦」という名詞は recommendations"
     },
-    "difficulty": 2,
-    "tags": ["名詞の位置", "目的語"]
+    "difficulty": 1,
+    "tags": ["名詞の位置", "目的語", "600点レベル"]
   },
   {
     "id": "p5-lg-wf-002",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "The manager delivered a motivational speech with the hope of ___ employee morale and increasing productivity.",
-    "choices": ["boost", "boosting", "boosted", "to boost"],
-    "answerIndex": 1,
-    "explanation": "前置詞 of の後ろなので動名詞（-ing 形）が入る。boosting が正解。並列の increasing も動名詞で、形を揃える。",
-    "translation": "マネージャーは、従業員の士気を高め生産性を上げたいという期待を込めて、意欲を引き出すスピーチを行った。",
+    "sentence": "The manager delivered a ___ speech with the hope of boosting employee morale and increasing productivity.",
+    "choices": ["motivate", "motivation", "motivational", "motivator"],
+    "answerIndex": 2,
+    "explanation": "空所は名詞 speech を修飾する位置なので形容詞が必要。形容詞 motivational（やる気にさせる）が適切。motivate は動詞、motivation は名詞、motivator は名詞（動機づける人・もの）。",
+    "translation": "その部長は、社員の士気を高め生産性を向上させることを願って、やる気にさせるスピーチを行った。",
     "choiceNotes": {
-      "boost": "動詞の原形。前置詞 of の後ろには動名詞が必要",
-      "boosted": "過去分詞。of の後ろには -ing 形が来る",
-      "to boost": "to 不定詞。前置詞 of の後ろには置けない"
+      "motivate": "動詞「やる気にさせる」。名詞 speech を修飾する形容詞が必要",
+      "motivation": "名詞「動機づけ」。名詞を前から修飾できない",
+      "motivator": "名詞「動機づける人・もの」。名詞の修飾には形容詞 motivational"
     },
-    "difficulty": 2,
-    "tags": ["動名詞", "前置詞の後"]
+    "difficulty": 1,
+    "tags": ["形容詞の位置", "名詞修飾", "600点レベル"]
   },
   {
     "id": "p5-lg-wf-003",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "Sarah found the seminar for business owners, which she participated in yesterday, to be ___.",
-    "choices": ["information", "informative", "inform", "informatively"],
-    "answerIndex": 1,
-    "explanation": "find A to be + 補語の形。補語の位置には形容詞が入る。informative（有益な・情報量の多い）が正解。",
-    "translation": "サラは、昨日参加した経営者向けセミナーが有益だと感じた。",
+    "sentence": "The school boasts a remarkable ___ rate in placing its students at leading companies.",
+    "choices": ["succeed", "successfully", "successful", "success"],
+    "answerIndex": 3,
+    "explanation": "空所の後が名詞 rate なので、名詞を修飾する語（名詞＋名詞）が必要。名詞 success が rate を修飾し複合名詞 success rate（成功率）を作る。succeed は動詞、successfully は副詞、successful は形容詞。",
+    "translation": "その学校は、生徒を一流企業に就職させる際の目覚ましい成功率を誇っている。",
     "choiceNotes": {
-      "information": "名詞。to be の補語には形容詞が必要",
-      "inform": "動詞の原形。補語の位置には形容詞が入る",
-      "informatively": "副詞。to be の後ろで補語になるのは形容詞"
+      "succeed": "動詞「成功する」。名詞 rate を修飾する語が入る",
+      "successfully": "副詞「うまく」。名詞を前から修飾できない",
+      "successful": "形容詞「成功した」。ここは success rate（複合名詞）を作る名詞が入る"
     },
-    "difficulty": 2,
-    "tags": ["形容詞の位置", "補語"]
+    "difficulty": 3,
+    "tags": ["名詞の位置", "複合名詞", "900点レベル"]
   },
   {
     "id": "p5-lg-wf-004",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "The press release announcing the new CEO at Alpha Motors was ___ last Monday as planned.",
-    "choices": ["publish", "published", "publishing", "publication"],
-    "answerIndex": 1,
-    "explanation": "be + 過去分詞の受動態。was に続くので published（公表された）が正解。",
-    "translation": "アルファモーターズの新しい最高経営責任者を発表するプレスリリースは、予定通り先週の月曜日に公表された。",
+    "sentence": "Khana Appliances strives to maintain prices that are ___ to those of similar products in the market.",
+    "choices": ["comparable", "comparison", "comparing", "comparably"],
+    "answerIndex": 0,
+    "explanation": "be動詞 are の後は補語になる形容詞が必要。be comparable to ～（～と比較できる、匹敵する）で用いる形容詞 comparable が適切。comparison は名詞、comparing は分詞、comparably は副詞。",
+    "translation": "Khana Appliances は、市場の類似製品の価格と匹敵する価格を維持するよう努めている。",
     "choiceNotes": {
-      "publish": "動詞の原形。was の後ろには過去分詞が必要（受動態）",
-      "publishing": "現在分詞。受動態にするには過去分詞を使う",
-      "publication": "名詞。was publication では文として成り立たない"
+      "comparison": "名詞。are の補語には形容詞が必要",
+      "comparing": "分詞。be の補語として「匹敵する」の意味にならない",
+      "comparably": "副詞。補語の位置には形容詞 comparable が入る"
     },
-    "difficulty": 1,
-    "tags": ["受動態", "過去分詞"]
+    "difficulty": 3,
+    "tags": ["形容詞の位置", "be補語", "900点レベル"]
   },
   {
     "id": "p5-lg-wf-005",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "The project manager clearly outlined the proposed timeline for ___ the construction of the hotel.",
-    "choices": ["complete", "completing", "completed", "completion"],
-    "answerIndex": 1,
-    "explanation": "前置詞 for の後ろなので動名詞が入る。completing が正解。後ろに目的語 the construction を直接取れる。",
-    "translation": "プロジェクトマネージャーは、ホテル建設を完了させるための提案されたスケジュールを明確に説明した。",
+    "sentence": "Sara found the seminar for business owners, which she participated in yesterday, ___.",
+    "choices": ["to be informative", "information", "inform", "informatively"],
+    "answerIndex": 0,
+    "explanation": "find + 目的語 + 補語の第5文型。補語には形容詞（句）が入り、to be informative（ためになる）が適切。information は名詞、inform は動詞、informatively は副詞。",
+    "translation": "サラは、昨日参加した経営者向けセミナーをためになると感じた。",
     "choiceNotes": {
-      "complete": "動詞の原形。前置詞 for の後ろには動名詞が必要",
-      "completed": "過去分詞。for の後ろには -ing 形が来る",
-      "completion": "名詞。completion なら後ろに of が必要で、目的語を直接取れない"
+      "information": "名詞。find + O + C の補語には形容詞（句）が必要",
+      "inform": "動詞。補語の位置には入らない",
+      "informatively": "副詞。補語になるのは形容詞（句）"
     },
     "difficulty": 2,
-    "tags": ["動名詞", "前置詞の後"]
+    "tags": ["形容詞の位置", "第5文型", "700点レベル"]
   },
   {
     "id": "p5-lg-wf-006",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "The CEO's ___ leadership style helped distinguish him as a visionary and strategic thinker in the industry.",
-    "choices": ["innovation", "innovative", "innovate", "innovatively"],
-    "answerIndex": 1,
-    "explanation": "名詞 leadership style を前から修飾する位置なので形容詞が入る。innovative（革新的な）が正解。",
-    "translation": "その CEO の革新的なリーダーシップスタイルが、彼を業界の先見性のある戦略的思考家として際立たせる一助となった。",
+    "sentence": "Sales of our new spring fashions may ___ due to changes in temperatures and market preferences.",
+    "choices": ["fluctuating", "fluctuations", "fluctuation", "fluctuate"],
+    "answerIndex": 3,
+    "explanation": "助動詞 may の後は動詞の原形が必要。fluctuate（変動する）が適切。fluctuating は分詞、fluctuations／fluctuation は名詞。",
+    "translation": "春の新作ファッションの売上は、気温や市場の好みの変化により変動する可能性がある。",
     "choiceNotes": {
-      "innovation": "名詞。名詞を前から修飾する位置には形容詞が必要",
-      "innovate": "動詞の原形。形容詞の位置には入らない",
-      "innovatively": "副詞。名詞を修飾するのは形容詞"
+      "fluctuating": "分詞。助動詞 may の後は動詞の原形",
+      "fluctuations": "名詞（複数）。may の後に述語動詞が必要",
+      "fluctuation": "名詞。助動詞の後には原形動詞が続く"
     },
     "difficulty": 1,
-    "tags": ["形容詞の位置", "名詞修飾"]
+    "tags": ["動詞の原形", "助動詞の後", "600点レベル"]
   },
   {
     "id": "p5-lg-wf-007",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "The school ___ a remarkable success rate in placing its students at leading companies.",
-    "choices": ["boast", "boasts", "boasting", "boastful"],
+    "sentence": "One of our staff members helped Mr. Peters understand how to use the new software as ___ as possible.",
+    "choices": ["smooth", "smoothly", "smoothen", "smoothness"],
     "answerIndex": 1,
-    "explanation": "主語 The school（三人称単数）に対する述語動詞が入る。boasts（誇る）が正解。",
-    "translation": "その学校は、卒業生を一流企業に就職させるという点で、目覚ましい成功率を誇っている。",
+    "explanation": "as ～ as possible の間には副詞の原級が入り、動詞 use を修飾する smoothly（スムーズに）が適切。smooth は形容詞、smoothen は動詞、smoothness は名詞。",
+    "translation": "当社のスタッフの一人が、ピーターズ氏に新しいソフトのできるだけスムーズな使い方を説明するのを手伝った。",
     "choiceNotes": {
-      "boast": "原形。主語が三人称単数なので -s が必要",
-      "boasting": "現在分詞。述語動詞としては使えない",
-      "boastful": "形容詞「自慢好きな」。述語動詞の位置には入らない"
+      "smooth": "形容詞。as ～ as possible の間で動詞 use を修飾する副詞が必要",
+      "smoothen": "動詞「滑らかにする」。動詞を修飾できない",
+      "smoothness": "名詞。動詞 use を修飾するのは副詞"
     },
-    "difficulty": 1,
-    "tags": ["主語・動詞一致", "三人称単数"]
+    "difficulty": 2,
+    "tags": ["副詞の位置", "as~as", "700点レベル"]
   },
   {
     "id": "p5-lg-wf-008",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "Kana Appliances strives to maintain prices that are ___ to those of similar products in the market.",
-    "choices": ["compare", "comparable", "comparably", "comparison"],
-    "answerIndex": 1,
-    "explanation": "be 動詞 are の補語で、後ろに to を伴うので形容詞 comparable（比較できる）が正解。be comparable to で「〜と同等である」。",
-    "translation": "カナ電器は、市場の同種製品と同等の価格を維持しようと努めている。",
+    "sentence": "Timothy Keller's latest article in Travelers Magazine is concise but at the same time ___.",
+    "choices": ["descriptive", "description", "descriptively", "describing"],
+    "answerIndex": 0,
+    "explanation": "be動詞 is の補語で、形容詞 concise と並列になる形容詞が必要。descriptive（描写に富む）が適切。description は名詞、descriptively は副詞、describing は分詞。",
+    "translation": "Travelers Magazine に掲載されたティモシー・ケラーの最新記事は、簡潔でありながら同時に描写に富んでいる。",
     "choiceNotes": {
-      "compare": "動詞の原形。are の補語には形容詞が必要",
-      "comparably": "副詞。補語の位置には形容詞が入る",
-      "comparison": "名詞。are の補語にはなれない（in comparison with の形なら可）"
+      "description": "名詞。be の補語で形容詞 concise と並列になる形容詞が必要",
+      "descriptively": "副詞。補語の位置には形容詞が入る",
+      "describing": "分詞。補語として「描写に富む」の意味にならない"
     },
     "difficulty": 2,
-    "tags": ["形容詞の位置", "be + 形容詞 + to"]
+    "tags": ["形容詞の位置", "be補語", "800点レベル"]
   },
   {
     "id": "p5-lg-wf-009",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "We are nearly at the end of the negotiation process, with our sales team close to ___ the deal.",
-    "choices": ["complete", "completing", "completed", "completion"],
-    "answerIndex": 1,
-    "explanation": "be close to の後ろなので動名詞が入る。completing が正解。ここでの to は不定詞の to ではなく前置詞。",
-    "translation": "営業チームが契約成立に近づいており、交渉プロセスはほぼ終盤に差し掛かっている。",
+    "sentence": "Ortiz Aviation is seeking ___ artisans to conduct inspections and uphold safety standards at its aerospace manufacturing facility.",
+    "choices": ["qualification", "qualifying", "qualified", "qualifier"],
+    "answerIndex": 2,
+    "explanation": "空所は名詞 artisans を修飾する形容詞が必要。qualified（資格のある）が適切。qualification は名詞、qualifying は分詞（予選の）、qualifier は名詞。",
+    "translation": "Ortiz Aviation は、航空宇宙製造施設で検査を行い安全基準を維持する資格のある職人を探している。",
     "choiceNotes": {
-      "complete": "動詞の原形。close to の to は前置詞なので動名詞が続く",
-      "completed": "過去分詞。close to の後ろには -ing 形が来る",
-      "completion": "名詞。目的語 the deal を直接取れない"
+      "qualification": "名詞。名詞 artisans を修飾する形容詞が必要",
+      "qualifying": "分詞（予選の）。artisans を修飾して「資格のある」の意味にならない",
+      "qualifier": "名詞「予選・資格を与える人」。名詞を前から修飾できない"
     },
     "difficulty": 2,
-    "tags": ["動名詞", "close to"]
+    "tags": ["形容詞の位置", "名詞修飾", "800点レベル"]
   },
   {
     "id": "p5-lg-wf-010",
     "part": 5,
     "category": "ロジカル英文法",
     "subcategory": "品詞",
-    "sentence": "Mr. Sawada has been struggling to ___ staff his department this year.",
-    "choices": ["sufficient", "sufficiently", "sufficiency", "suffice"],
-    "answerIndex": 1,
-    "explanation": "動詞 staff を前から修飾する位置なので副詞が入る。sufficiently（十分に）が正解。",
-    "translation": "沢田氏は今年、自分の部門に十分な人員を配置することに苦労している。",
+    "sentence": "Job applicants should provide ___ references so that we can confirm their qualifications and professional background.",
+    "choices": ["verify", "verifiably", "verification", "verifiable"],
+    "answerIndex": 3,
+    "explanation": "空所は名詞 references を修飾する形容詞が必要。verifiable（検証可能な）が適切。verify は動詞、verifiably は副詞、verification は名詞。",
+    "translation": "求職者は、当社がその資格や職歴を確認できるよう、検証可能な推薦状を提出すべきである。",
     "choiceNotes": {
-      "sufficient": "形容詞。動詞を修飾するには副詞が必要",
-      "sufficiency": "名詞。動詞 staff を修飾できない",
-      "suffice": "動詞「足りる」。ここでは動詞 staff を修飾する副詞が入る"
+      "verify": "動詞。名詞 references を修飾する形容詞が必要",
+      "verifiably": "副詞。名詞を前から修飾できない",
+      "verification": "名詞。references を修飾する形容詞 verifiable が入る"
+    },
+    "difficulty": 3,
+    "tags": ["形容詞の位置", "名詞修飾", "900点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-011",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "Rajesh Patel appointed Mariko Kozue as a new chairperson ___ immediately.",
+    "choices": ["effect", "effecting", "effective", "effectively"],
+    "answerIndex": 2,
+    "explanation": "「～ effective immediately」で「即日発効で」という慣用表現。役職の後に置く形容詞 effective が適切。effect は名詞/動詞、effecting は分詞、effectively は副詞。",
+    "translation": "ラジェシュ・パテルは、マリコ・コズエを新しい議長に即日発効で任命した。",
+    "choiceNotes": {
+      "effect": "名詞/動詞。「effective immediately」の形容詞が必要",
+      "effecting": "分詞。役職の後に置くのは形容詞 effective",
+      "effectively": "副詞。この慣用表現では形容詞 effective を使う"
+    },
+    "difficulty": 3,
+    "tags": ["形容詞の位置", "慣用表現", "990点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-012",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "The press release announcing the new CEO at Alpha Motors was published last Monday as ___.",
+    "choices": ["planned", "to plan", "planner", "plan"],
+    "answerIndex": 0,
+    "explanation": "as planned（予定どおりに）という慣用表現。as の後は過去分詞 planned が適切。to plan は不定詞、planner／plan は名詞。",
+    "translation": "アルファ・モーターズの新CEOを発表するプレスリリースは、予定どおり先週の月曜日に公開された。",
+    "choiceNotes": {
+      "to plan": "to 不定詞。as planned（予定どおり）の慣用表現",
+      "planner": "名詞。as の後は過去分詞 planned",
+      "plan": "名詞/動詞。as planned で「予定どおりに」の意味になる"
     },
     "difficulty": 2,
-    "tags": ["副詞の位置", "動詞修飾"]
+    "tags": ["過去分詞", "慣用表現", "700点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-013",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "The project manager clearly outlined the ___ timeline for completing the construction of the hotel.",
+    "choices": ["proposal", "proposed", "proposing", "proposition"],
+    "answerIndex": 1,
+    "explanation": "空所は名詞 timeline を修飾する語が必要。「提案された」という受動の意味を表す過去分詞 proposed が適切。proposal は名詞、proposing は能動の分詞、proposition は名詞。",
+    "translation": "プロジェクトマネージャーは、ホテル建設を完了するための提案されたスケジュールを明確に示した。",
+    "choiceNotes": {
+      "proposal": "名詞。名詞 timeline を修飾する語が必要",
+      "proposing": "能動の分詞。ここは「提案された」という受動の過去分詞",
+      "proposition": "名詞「提案」。timeline を前から修飾できない"
+    },
+    "difficulty": 2,
+    "tags": ["過去分詞", "名詞修飾", "800点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-014",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "The CEO's innovative leadership style helped ___ him as a visionary and strategic thinker in the industry.",
+    "choices": ["distinguish", "distinguishably", "distinguishing", "distinguishingly"],
+    "answerIndex": 0,
+    "explanation": "help (to) do の形で動詞の原形が必要。distinguish A as B（AをBとして際立たせる）が適切。distinguishably／distinguishingly は副詞、distinguishing は分詞。",
+    "translation": "そのCEOの革新的なリーダーシップスタイルは、彼を業界の先見的かつ戦略的な思想家として際立たせるのに役立った。",
+    "choiceNotes": {
+      "distinguishably": "副詞。help (to) do の後は動詞の原形",
+      "distinguishing": "分詞。help の後には原形が続く",
+      "distinguishingly": "副詞。help の目的語となる原形動詞が必要"
+    },
+    "difficulty": 2,
+    "tags": ["動詞の原形", "help do", "800点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-015",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "We are nearly at the end of the negotiation process, with our sales team close to ___ the deal.",
+    "choices": ["complete", "completing", "be completed", "have completed"],
+    "answerIndex": 1,
+    "explanation": "be close to ～ing（もう少しで～するところだ）の形なので動名詞 completing が適切。complete は原形、be completed は受動、have completed は完了形。",
+    "translation": "交渉プロセスはほぼ終わりに近づいており、当社の営業チームはもう少しで契約をまとめるところだ。",
+    "choiceNotes": {
+      "complete": "動詞の原形。close to の to は前置詞なので動名詞が必要",
+      "be completed": "受動の原形。前置詞 to の後には動名詞が続く",
+      "have completed": "完了形。前置詞の後ろには置けない"
+    },
+    "difficulty": 3,
+    "tags": ["動名詞", "前置詞の後", "990点レベル"]
+  },
+  {
+    "id": "p5-lg-wf-016",
+    "part": 5,
+    "category": "ロジカル英文法",
+    "subcategory": "品詞",
+    "sentence": "Mr. Sawada has been struggling to ___ staff his department this year.",
+    "choices": ["sufficient", "sufficiently", "be sufficient", "sufficiency"],
+    "answerIndex": 1,
+    "explanation": "空所は動詞 staff を修飾する副詞が必要。sufficiently（十分に）が適切。sufficient は形容詞、be sufficient は動詞句、sufficiency は名詞。",
+    "translation": "沢田氏は今年、自分の部署に十分な人員を配置することに苦労している。",
+    "choiceNotes": {
+      "sufficient": "形容詞。動詞 staff を修飾するには副詞が必要",
+      "be sufficient": "動詞句。動詞 staff を修飾できない",
+      "sufficiency": "名詞。動詞を修飾するのは副詞"
+    },
+    "difficulty": 3,
+    "tags": ["副詞の位置", "動詞修飾", "990点レベル"]
   }
 ]

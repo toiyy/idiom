@@ -38,7 +38,7 @@
       ],
       "body": [
         "他動詞の直後なら名詞。Before the cruise, his travel agent sent ___ では sent の目的語なので recommendations が入る。",
-        "find A to be の補語なら形容詞。Sarah found the seminar to be ___ では informative が入る。",
+        "find A to be の補語なら形容詞。Sara found the seminar ... to be informative のように、補語の位置には to be informative が入る。",
         "動詞を修飾する位置なら副詞。struggling to ___ staff では sufficiently が入る。"
       ],
       "examples": [
@@ -49,10 +49,10 @@
           "note": "sent の目的語なので名詞"
         },
         {
-          "en": "Sarah found the seminar to be informative.",
-          "ja": "サラはそのセミナーが有益だと感じた。",
+          "en": "Sara found the seminar, which she participated in yesterday, to be informative.",
+          "ja": "サラは、昨日参加したセミナーをためになると感じた。",
           "ok": true,
-          "note": "find A to be の補語なので形容詞"
+          "note": "find + O + C の補語なので形容詞句"
         }
       ],
       "pitfall": "空所を取り除いて文が成り立つなら副詞、成り立たないなら名詞か形容詞。この一手で候補が半分になる。"
@@ -89,8 +89,8 @@
       ],
       "examples": [
         {
-          "en": "Prices that are comparable to those of similar products.",
-          "ja": "同種の製品の価格と同等の価格。",
+          "en": "Khana Appliances maintains prices that are comparable to those of similar products.",
+          "ja": "カナ電器は市場の類似製品と匹敵する価格を維持している。",
           "ok": true,
           "note": "be 動詞の補語なので形容詞 comparable"
         }
@@ -111,15 +111,15 @@
         }
       ],
       "body": [
-        "be 動詞の後ろなら過去分詞で受動態。The press release was ___ では published が入る。",
-        "前置詞 of / for / to の後ろなら動名詞。close to の to は前置詞なので completing が入る。"
+        "名詞の前を修飾するなら過去分詞。the proposed timeline では「提案された」という受動の過去分詞 proposed が入る。",
+        "前置詞の後ろなら動名詞。be close to の to は前置詞なので completing が入る。"
       ],
       "examples": [
         {
-          "en": "The press release was published last Monday.",
-          "ja": "そのプレスリリースは先週の月曜日に公表された。",
+          "en": "The project manager outlined the proposed timeline.",
+          "ja": "プロジェクトマネージャーは提案されたスケジュールを示した。",
           "ok": true,
-          "note": "be + 過去分詞の受動態"
+          "note": "名詞 timeline を修飾する過去分詞 proposed"
         }
       ],
       "pitfall": "close to / look forward to の to は前置詞。後ろは不定詞ではなく動名詞が来る。"
