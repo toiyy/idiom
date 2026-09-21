@@ -50,5 +50,7 @@ export default defineConfig({
     globals: true,
     setupFiles: ['./src/test/setup.ts'],
     include: ['src/**/*.{test,spec}.{ts,tsx}'],
+    // 問題数が増え、UI 操作を伴うテストが並列実行で 5 秒を超えるようになった
+    testTimeout: 20000,
   },
 });

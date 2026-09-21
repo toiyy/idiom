@@ -92,7 +92,7 @@ describe('ホーム画面', () => {
     const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
     expect(names).toEqual(['難問', 'ロジカル英文法', '語彙']);
     expect(groups[0].querySelectorAll('.category')).toHaveLength(3);
-    expect(groups[1].querySelectorAll('.category')).toHaveLength(1);
+    expect(groups[1].querySelectorAll('.category')).toHaveLength(7);
     expect(groups[2].querySelectorAll('.category')).toHaveLength(7);
   });
 });
@@ -109,7 +109,8 @@ describe('サブカテゴリ出題', () => {
   it('語彙の「すべて」を選ぶと 105 問が出る', async () => {
     const user = userEvent.setup();
     render(<App />);
-    await user.click(screen.getByRole('button', { name: /^語彙/ }));
+    // 「語彙・語法」サブカテゴリと衝突しないよう、カテゴリ見出しの「すべて」で選ぶ
+    await user.click(screen.getByRole('button', { name: /^語彙.*すべて/ }));
     expect(screen.getByText('1 / 105')).toBeInTheDocument();
   });
 

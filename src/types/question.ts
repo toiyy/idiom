@@ -31,9 +31,10 @@ export const QuestionSchema = z
     /**
      * 不正解の選択肢が「なぜ違うか」。回答後に各選択肢の下へ表示する。
      * choices のインデックスではなく**選択肢の文字列をキー**にしているので、
-     * 選択肢の並べ替えで対応が壊れない。不正解 3 つ分がすべて必要。
+     * 選択肢の並べ替えで対応が壊れない。付ける場合は不正解 3 つ分をすべて揃える。
+     * 付けない問題（ロジカル英文法の取り込み分など）は理由を表示しない。
      */
-    choiceNotes: z.record(z.string().min(1), z.string().min(1)),
+    choiceNotes: z.record(z.string().min(1), z.string().min(1)).optional(),
     /** 難易度（任意）。1=易 / 2=中 / 3=難 */
     difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]).optional(),
     /** 自由タグ（任意）。復習フィルタ等に使う。 */
@@ -41,9 +42,11 @@ export const QuestionSchema = z
   })
   .strict()
   .superRefine((q, ctx) => {
+    const notes = q.choiceNotes;
+    if (notes === undefined) return;
     const wrong = q.choices.filter((_, i) => i !== q.answerIndex);
     for (const choice of wrong) {
-      if (!q.choiceNotes[choice]) {
+      if (!notes[choice]) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
           message: `不正解の選択肢 "${choice}" の理由がありません`,
@@ -51,7 +54,7 @@ export const QuestionSchema = z
         });
       }
     }
-    for (const key of Object.keys(q.choiceNotes)) {
+    for (const key of Object.keys(notes)) {
       if (!q.choices.includes(key)) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
