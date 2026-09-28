@@ -1,4 +1,5 @@
 import type { Question } from '../types/question';
+import { sourceLabel } from '../lib/source';
 import { CONFIDENCES, CONFIDENCE_LABELS, type Confidence } from '../lib/storage';
 import { ChoiceButton, type ChoiceState } from './ChoiceButton';
 
@@ -55,6 +56,8 @@ export function QuestionCard({
   const revealed = picked && confidence !== null;
   const correct = revealed && selectedIndex === question.answerIndex;
   const [before, after] = question.sentence.split('___');
+  // 元教材での位置づけ（例: 実践 800）。回答後にカテゴリと並べて出す
+  const source = sourceLabel(question);
 
   return (
     <section className="card">
@@ -66,6 +69,7 @@ export function QuestionCard({
         {revealed && (
           <span>
             Part {question.part} ・ {question.subcategory ?? question.category}
+            {source !== undefined && <> ・ {source}</>}
           </span>
         )}
       </header>
