@@ -109,9 +109,9 @@ describe('同梱データ', () => {
   });
 
   it('規則で解けるカテゴリにはすべて解説がある', () => {
-    // 語彙と難問は覚えるしかない分野なので解説を作らない。それ以外は網羅する
+    // 語彙・難問は覚えるしかない分野、模試は実力試しなので解説を作らない
     const ruleBased = new Set(
-      questions.map((q) => q.category).filter((c) => c !== '語彙' && c !== '難問'),
+      questions.map((q) => q.category).filter((c) => c !== '語彙' && c !== '難問' && c !== '模試'),
     );
     for (const c of ruleBased) {
       // ロジカル英文法は別教材で、章ごとの解説を後回しにしている

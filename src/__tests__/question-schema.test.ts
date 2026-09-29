@@ -83,9 +83,9 @@ describe('同梱データ', () => {
     expect(result.success).toBe(true);
   });
 
-  it('22 カテゴリすべてに 8 問以上ある', () => {
+  it('23 カテゴリすべてに 8 問以上ある', () => {
     const categories = listCategories(questions);
-    expect(categories).toHaveLength(22);
+    expect(categories).toHaveLength(23);
     // フェーズ4 で薄いカテゴリを解消したので、以後 8 問を下限として維持する
     for (const c of categories) {
       expect(c.total, `${c.category} の問題数`).toBeGreaterThanOrEqual(8);
@@ -141,12 +141,12 @@ describe('同梱データ', () => {
     }
   });
 
-  it('サブカテゴリを持つのは語彙と難問とロジカル英文法だけ', () => {
-    // 答えの形を名指しするサブカテゴリは廃止した。この 3 つは選んでも答えが割れない
+  it('サブカテゴリを持つのは語彙と難問とロジカル英文法と模試だけ', () => {
+    // 答えの形を名指しするサブカテゴリは廃止した。これらは選んでも答えが割れない
     const nested = listCategories(questions)
       .filter((c) => c.subcategories.length > 0)
       .map((c) => c.category);
-    expect(nested.sort()).toEqual(['ロジカル英文法', '語彙', '難問']);
+    expect(nested.sort()).toEqual(['ロジカル英文法', '模試', '語彙', '難問']);
   });
 
   it('平坦にしたカテゴリの分野ごとの厚みがタグに残っている', () => {

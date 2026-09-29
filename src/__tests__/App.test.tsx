@@ -85,15 +85,16 @@ describe('ホーム画面', () => {
     expect(flatGrid?.querySelectorAll('.category')).toHaveLength(19);
   });
 
-  it('2 段グループになるのは語彙と難問とロジカル英文法だけ', () => {
+  it('2 段グループになるのは語彙と難問とロジカル英文法と模試だけ', () => {
     render(<App />);
     const groups = Array.from(document.querySelectorAll('.category-group'));
-    // 並びは問題ファイル名順（hard-* → logical-* → vocabulary-*）
+    // 並びは問題ファイル名順（hard-* → logical-* → mock-* → vocabulary-*）
     const names = groups.map((g) => g.querySelector('.category-group__name')?.textContent);
-    expect(names).toEqual(['難問', 'ロジカル英文法', '語彙']);
+    expect(names).toEqual(['難問', 'ロジカル英文法', '模試', '語彙']);
     expect(groups[0].querySelectorAll('.category')).toHaveLength(3);
     expect(groups[1].querySelectorAll('.category')).toHaveLength(7);
-    expect(groups[2].querySelectorAll('.category')).toHaveLength(7);
+    expect(groups[2].querySelectorAll('.category')).toHaveLength(10);
+    expect(groups[3].querySelectorAll('.category')).toHaveLength(7);
   });
 });
 
